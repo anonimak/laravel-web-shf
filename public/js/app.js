@@ -49700,10 +49700,9 @@ Vue.component('example-component', __webpack_require__(/*! ./components/ExampleC
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-
-var app = new Vue({
-  el: '#app'
-});
+// const app = new Vue({
+//     el: '#app',
+// });
 
 /***/ }),
 
@@ -49821,10 +49820,21 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/sass/app.scss":
-/*!*********************************!*\
-  !*** ./resources/sass/app.scss ***!
-  \*********************************/
+/***/ "./resources/sass/app-admin.scss":
+/*!***************************************!*\
+  !*** ./resources/sass/app-admin.scss ***!
+  \***************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/sass/frontend/main.scss":
+/*!*******************************************!*\
+  !*** ./resources/sass/frontend/main.scss ***!
+  \*******************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -49833,14 +49843,15 @@ __webpack_require__.r(__webpack_exports__);
 /***/ }),
 
 /***/ 0:
-/*!*************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ***!
-  \*************************************************************/
+/*!*******************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/frontend/main.scss ./resources/sass/app-admin.scss ***!
+  \*******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! C:\wamp64\www\2020\laravel\shf\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\wamp64\www\2020\laravel\shf\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\wamp64\www\2020\laravel\shf\resources\sass\frontend\main.scss */"./resources/sass/frontend/main.scss");
+module.exports = __webpack_require__(/*! C:\wamp64\www\2020\laravel\shf\resources\sass\app-admin.scss */"./resources/sass/app-admin.scss");
 
 
 /***/ })
