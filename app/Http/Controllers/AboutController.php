@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Inertia\Inertia;
+use Illuminate\Support\Facades\Config;
 
 class AboutController extends Controller
 {
@@ -11,10 +13,10 @@ class AboutController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+    // public function __construct()
+    // {
+    //     $this->middleware('auth');
+    // }
 
     /**
      * Show the application dashboard.
@@ -23,6 +25,14 @@ class AboutController extends Controller
      */
     public function index()
     {
-        return view('pages.about');
+        // Synchronously
+        Inertia::share('app.name', Config::get('app.name'));
+        // return view('public.home');
+        return Inertia::render('Profile/About', [
+            'meta' => [
+                'title' => 'tests',
+                'foo' => 'bar'
+            ]
+        ]);
     }
 }

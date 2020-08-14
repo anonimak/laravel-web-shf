@@ -9,7 +9,12 @@ window._ = require('lodash');
 try {
     window.Popper = require('popper.js').default;
     window.$ = window.jQuery = require('jquery');
-
+    // const {
+    //     $,
+    //     jQuery
+    // } = require('jquery');
+    // global.$ = $;
+    // global.jQuery = jQuery;
     require('bootstrap');
 } catch (e) {}
 

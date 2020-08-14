@@ -1,31 +1,79 @@
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
-require('./bootstrap');
+require("./bootstrap");
 
-window.Vue = require('vue');
+import AOS from "aos";
+import "aos/dist/aos.css";
 
-/**
- * The following block of code may be used to automatically register your
- * Vue components. It will recursively scan this directory for the Vue
- * components and automatically register them with their "basename".
- *
- * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
- */
+import { InertiaApp } from "@inertiajs/inertia-vue";
 
-// const files = require.context('./', true, /\.vue$/i)
-// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
+import Vue from "vue";
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+// meta tools
+import VueMeta from "vue-meta";
 
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
+import BootstrapVue from "bootstrap-vue";
+import FlashMessage from "@smartweb/vue-flash-message";
+import VueCarousel from "vue-carousel";
 
-// const app = new Vue({
-//     el: '#app',
-// });
+//global registration form wizard
+import VueFormWizard from "vue-form-wizard";
+import "vue-form-wizard/dist/vue-form-wizard.min.css";
+
+// particle js
+import VueParticles from "vue-particles";
+
+// untuk moment js
+const moment = require("moment");
+require("moment/locale/id");
+
+Vue.use(VueMeta);
+
+Vue.use(require("vue-moment"), {
+    moment
+});
+
+// untuk dorm wizard
+Vue.use(VueParticles);
+
+// untuk dorm wizard
+Vue.use(VueFormWizard);
+
+// untuk carousel
+Vue.use(VueCarousel);
+
+// bootstrap framework
+Vue.use(BootstrapVue);
+
+// untuk flash message
+Vue.use(FlashMessage);
+Vue.use(InertiaApp);
+
+Vue.mixin({
+    methods: {
+        route: window.route,
+        isRoute(...routes) {
+            return routes.some(route => this.route().current(route));
+        }
+    }
+});
+
+const app = document.getElementById("app");
+
+new Vue({
+    metaInfo: {
+        titleTemplate: title =>
+            title
+                ? `${title} - Sinarmas Hana Finance`
+                : "Sinarmas Hana Finanaces"
+    },
+    created() {
+        AOS.init();
+    },
+    render: h =>
+        h(InertiaApp, {
+            props: {
+                initialPage: JSON.parse(app.dataset.page),
+                resolveComponent: name =>
+                    import(`./Pages/${name}`).then(module => module.default)
+            }
+        })
+}).$mount(app);

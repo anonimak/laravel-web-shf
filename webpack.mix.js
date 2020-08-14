@@ -1,4 +1,4 @@
-const mix = require('laravel-mix');
+const mix = require("laravel-mix");
 
 /*
  |--------------------------------------------------------------------------
@@ -11,10 +11,57 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/frontend/main.scss', 'public/css');
 
+mix
+    .js("resources/js/app.js", "public/js")
+    .js('resources/js/app.js', 'public/admin/js')
+    .sass('resources/sass/app-admin.scss', 'public/css')
+    .sass(
+        "resources/sass/frontend/main.scss",
+        "public/css"
+    )
+    .webpackConfig({
+        resolve: {
+            extensions: ['.js', '.vue', '.json'],
+            alias: {
+                vue$: 'vue/dist/vue.runtime.esm.js',
+                '@': path.resolve('resources/js'),
+            },
+        },
+        output: {
+            chunkFilename: 'js/[name].js?id=[chunkhash]'
+        },
+        optimization: {
+            splitChunks: {
+                cacheGroups: {
+                    default: false,
+                    vendors: {
+                        chunks: 'initial',
+                        name: 'vendor',
+                        filename: 'js/[name].js'
+                    }
+                }
+            },
+        },
+    })
+    .version()
+    .babelConfig({
+        plugins: ['@babel/plugin-syntax-dynamic-import'],
+    });
 
 // mix to admin
-mix.js('resources/js/app.js', 'public/admin/js')
-    .sass('resources/sass/app-admin.scss', 'public/admin/css');
+// mix.js('resources/js/app.js', 'public/admin/js')
+//     .sass('resources/sass/app-admin.scss', 'public/admin/css');
+
+// mix.webpackConfig({
+//         output: {
+//             chunkFilename: 'js/[name].js?id=[chunkhash]'
+//         },
+//         resolve: {
+//             alias: {
+//                 vue$: 'vue/dist/vue.runtime.esm.js',
+//                 '@': path.resolve('resources/js'),
+//             },
+//         },
+//     })
+//     .version();

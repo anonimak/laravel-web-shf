@@ -27,12 +27,23 @@ Auth::routes();
 |
 |
 */
-Route::get('/', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('home')->middleware('guest');
+
+// test
+Route::get('test', 'Test@index')->name('test')->middleware('guest');
 
 // produk
-Route::get('produk/simulasi_kredit', function(){
-    return view('public.products.creditsimulation');
-});
+Route::get('product/promo', 'Product\Promo@index')->name('promo')->middleware('remember', 'guest');
+Route::get('product/promo/detail/{id}', 'Product\Promo@detail')->name('promodetail')->middleware('guest');
+Route::get('product/kendaraan', 'Product\Kendaraan@index')->name('kendaraan')->middleware('guest');
+Route::get('product/pinjaman_dana', 'Product\PinjamanDana@index')->name('pinjamandana')->middleware('guest');
+Route::get('product/simulasi_kredit', 'Product\SimulasiKredit@index')->name('simulasikredit')->middleware('guest');
+Route::get('product/umrah', 'Product\Umrah@index')->name('umrah')->middleware('guest');
+
+// profil
+Route::get('profile/about', 'AboutController@index')->name('about')->middleware('guest');
+Route::get('profile/visi-misi', 'Profile\VisiController@index')->name('visimisi')->middleware('guest');
+
 
 Route::get('career', 'CareerController@index')->name('career');
 Route::get('contact', 'ContactController@index')->name('contact');
@@ -58,6 +69,6 @@ Route::get('admin/dashboard', 'DashboardController@adminDashboard')
     ->middleware('is_admin');
 // Route::get('/home', 'HomeController@index')->name('home');
 
-Auth::routes();
+// Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');
