@@ -1,30 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>SB Admin 2 - Dashboard</title>
+
+    <script src="{{ asset('/js/app.js') }}" defer></script>
+    <script src="{{ asset('/js/vendor.js') }}"></script>
+    <script src="{{ asset('/js/vendor/share.js') }}" type="text/javascript"></script>
+
+    <!-- Custom fonts for this template-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet">
 
     <!-- Styles -->
-    <link href="{{ asset('/css/main.css') }}" rel="stylesheet" />
-
-    {{-- <link href="{{ asset('css/vendor/aos.css') }}" rel="stylesheet"> --}}
-
-    <script src="{{ asset('/admin/js/app.js') }}" defer></script>
-    {{-- <script src="{{ asset('js/vendor/share.js') }}" type="text/javascript"></script> --}}
-    {{-- <script src="{{ asset('js/functions.js') }}" type="text/javascript"></script> --}}
-    <!-- Animation -->
-    {{-- <script src="{{ asset('js/vendor/aos.js')}}" type="text/javascript"></script> --}}
-    <!-- Fonts -->
-    {{-- <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
-        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous"> --}}
-    {{-- <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> --}}
-
+    <link href="{{ asset('/css/admin-main.css') }}" rel="stylesheet" />
+    @routes
 </head>
 
-<body> @inertia </body>
+
+<body id="page-top"> @inertia </body>
 
 </html>

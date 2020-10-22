@@ -11,6 +11,7 @@ use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Request;
 use Illuminate\Pagination\LengthAwarePaginator;
+use App\Providers\TelescopeServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -28,6 +29,12 @@ class AppServiceProvider extends ServiceProvider
             Inertia::setRootView('app');
         }
         $this->registerLengthAwarePaginator();
+
+        // register telescope
+        if ($this->app->isLocal()) {
+            $this->app->register(\Laravel\Telescope\TelescopeServiceProvider::class);
+            $this->app->register(TelescopeServiceProvider::class);
+        }
     }
 
     /**
@@ -42,9 +49,30 @@ class AppServiceProvider extends ServiceProvider
             return [
                 'success' => Session::get('success'),
                 'error' => Session::get('error'),
-                'info' => Session::get('info'),
+                'info' => Session::get('info')
             ];
         });
+
+        // share locale
+        Inertia::share([
+            'locale' => function () {
+                return app()->getLocale();
+            },
+            'language' => function () {
+                return translations(
+                    resource_path('lang/' . app()->getLocale() . '.json')
+                );
+            },
+        ]);
+
+        // share error
+        Inertia::share([
+            'errors' => function () {
+                return Session::get('errors')
+                    ? Session::get('errors')->getBag('default')->getMessages()
+                    : (object) [];
+            },
+        ]);
     }
 
     private function registerLengthAwarePaginator()

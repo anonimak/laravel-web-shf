@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -34,6 +36,9 @@ Route::get('test', 'Test@index')->name('test')->middleware('guest');
 
 // produk
 Route::get('product/promo', 'Product\Promo@index')->name('promo')->middleware('remember', 'guest');
+Route::get('product/promo/delete/{id}', 'Product\Promo@delete')->name('promo.delete')->middleware('guest');
+Route::get('product/promo/restore/{id}', 'Product\Promo@restore')->name('promo.restore')->middleware('guest');
+
 Route::get('product/promo/detail/{id}', 'Product\Promo@detail')->name('promodetail')->middleware('guest');
 Route::get('product/kendaraan', 'Product\Kendaraan@index')->name('kendaraan')->middleware('guest');
 Route::get('product/pinjaman_dana', 'Product\PinjamanDana@index')->name('pinjamandana')->middleware('guest');
@@ -41,8 +46,10 @@ Route::get('product/simulasi_kredit', 'Product\SimulasiKredit@index')->name('sim
 Route::get('product/umrah', 'Product\Umrah@index')->name('umrah')->middleware('guest');
 
 // profil
-Route::get('profile/about', 'AboutController@index')->name('about')->middleware('guest');
-Route::get('profile/visi-misi', 'Profile\VisiController@index')->name('visimisi')->middleware('guest');
+Route::get('profile/about', 'Profile\AboutController@index')->name('profile.about')->middleware('guest');
+Route::get('profile/visi-misi', 'Profile\VisiController@index')->name('profile.visimisi')->middleware('guest');
+Route::get('profile/team-management', 'Profile\TeamManagement@index')->name('profile.teammanagement')->middleware('guest');
+
 
 
 Route::get('career', 'CareerController@index')->name('career');
@@ -64,11 +71,55 @@ Route::get('dashboard', 'DashboardController@index')
 |
 |
 */
-Route::get('admin/dashboard', 'DashboardController@adminDashboard')
+Route::get('admin/dashboard', 'Admin\DashboardController@index')
     ->name('admin.dashboard')
-    ->middleware('is_admin');
+    ->middleware('auth', 'is_admin');
+
+// Page
+Route::get('admin/page/home', 'Admin\CfgHomeController@index')
+    ->name('admin.page.home')
+    ->middleware('auth', 'is_admin');
+
+Route::get('admin/page/product', 'Admin\CfgHomeController@index')
+    ->name('admin.page.product')
+    ->middleware('auth', 'is_admin');
+
+Route::get('admin/page/profile', 'Admin\CfgHomeController@index')
+    ->name('admin.page.profile')
+    ->middleware('auth', 'is_admin');
+
+// Post
+Route::get('admin/post', 'Admin\CfgHomeController@index')
+    ->name('admin.post')
+    ->middleware('auth', 'is_admin');
+
+// Setting
+Route::get('admin/setting/meta', 'Admin\CfgHomeController@index')
+    ->name('admin.setting.meta')
+    ->middleware('auth', 'is_admin');
+
+Route::get('admin/setting/system', 'Admin\CfgHomeController@index')
+    ->name('admin.setting.system')
+    ->middleware('auth', 'is_admin');
 // Route::get('/home', 'HomeController@index')->name('home');
 
 // Auth::routes();
 
 // Route::get('/home', 'HomeController@index')->name('home');
+
+// clear cache
+Route::get('/clear-cache', function () {
+    Artisan::call('cache:clear');
+});
+
+
+// Language
+Route::get('language/{language}', function ($language) {
+    Session()->put('locale', $language);
+
+    return redirect()->back();
+})->name('language');
+
+
+// Logout
+Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');

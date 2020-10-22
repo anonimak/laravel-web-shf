@@ -6,6 +6,10 @@ use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Session;
+use Inertia\Inertia;
 
 class LoginController extends Controller
 {
@@ -39,26 +43,50 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
     }
 
+    public function showLoginForm()
+    {
+        return Inertia::render('Auth/Login', [
+            'meta' => [
+                'title' => 'tests',
+                'foo' => 'bar'
+            ]
+        ]);
+    }
+
     public function login(Request $request)
-    {   
+    {
         $input = $request->all();
+
+        // $request->validate([
+        //     'email' => ['required', 'email'],
+        //     'password' => ['required'],
+        // ]);
 
         $this->validate($request, [
             'email' => 'required|email',
             'password' => 'required',
         ]);
 
-        if(auth()->attempt(array('email' => $input['email'], 'password' => $input['password'])))
-        {
+        if (auth()->attempt(array('email' => $input['email'], 'password' => $input['password']))) {
             if (auth()->user()->is_admin == 1) {
-                return redirect()->route('admin.dashboard');
-            }else{
-                return redirect()->route('user.dashboard');
+                return redirectWithoutInertia('admin.dashboard');
+            } else {
+                return redirectWithoutInertia('user.dashboard');
             }
-        }else{
-            return redirect()->route('login')
-                ->with('error','Email-Address And Password Are Wrong.');
+        } else {
+            // var_dump(Session::get('errors')
+            //     ? Session::get('errors')->getBag('default')->getMessages()
+            //     : '');
+            return Redirect()->route('login')
+                ->with('error', 'Email-Address And Password Are Wrong.');
         }
+    }
 
+    public function logout()
+    {
+        //logout user
+        Auth::logout();
+        // redirect to homepage
+        return Redirect::route('home');
     }
 }

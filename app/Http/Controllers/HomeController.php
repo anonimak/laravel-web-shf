@@ -2,10 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\ConfigApp;
+use App\Promo;
+use App\Slider;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
 use Inertia\Inertia;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Route;
 
 class HomeController extends Controller
 {
@@ -22,16 +26,22 @@ class HomeController extends Controller
         // } else {
         //     echo 'Tidak ada data dalam session.';
         // }
-        visitor()->visit();
+        // get
 
         // Synchronously
-        Inertia::share('app.name', Config::get('app.name'));
+        Inertia::share([
+            'app.name', Config::get('app.name')
+        ]);
+
         // return view('public.home');
         return Inertia::render('Home', [
             'meta' => [
                 'title' => 'tests',
                 'foo' => 'bar'
-            ]
+            ],
+            'dataSlider' => Slider::getWhereShow(),
+            'listPromo' => Promo::getAllBanner(),
+            '__config' => $request['__config']
         ]);
 
         // contoh redirect

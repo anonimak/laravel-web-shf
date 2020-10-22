@@ -21,25 +21,27 @@
       <div class="navbar-collapse collapse" id="navbarColor02">
         <ul class="navbar-nav navbar-bottom-nav mr-auto d-flex">
           <li
-            :class="
-                            isRoute('home') ? 'nav-item active' : 'nav-item'
-                        "
+            :class="isRoute('home') ? 'nav-item active' : 'nav-item'"
+            class="cool-link"
           >
-            <inertia-link class="nav-link py-3" :href="route('home')">Beranda</inertia-link>
+            <inertia-link class="nav-link py-3" :href="route('home')">{{
+              __("Home")
+            }}</inertia-link>
           </li>
           <li
             :class="
-                            isRoute(
-                                'promo',
-                                'promodetail',
-                                'simulasikredit',
-                                'kendaraan',
-                                'pinjamandana',
-                                'umrah'
-                            )
-                                ? 'nav-item dropdown active'
-                                : 'nav-item dropdown'
-                        "
+              isRoute(
+                'promo',
+                'promodetail',
+                'simulasikredit',
+                'kendaraan',
+                'pinjamandana',
+                'umrah'
+              )
+                ? 'nav-item dropdown active'
+                : 'nav-item dropdown'
+            "
+            class="cool-link"
           >
             <a
               class="nav-link py-3 dropdown-toggle"
@@ -49,56 +51,65 @@
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
-            >Produk</a>
+              >{{ __("Product") }}</a
+            >
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <inertia-link
                 :href="route('simulasikredit')"
                 :class="
-                                    isRoute('simulasikredit')
-                                        ? 'dropdown-item active'
-                                        : 'dropdown-item'
-                                "
-              >Simulasi Kredit</inertia-link>
+                  isRoute('simulasikredit')
+                    ? 'dropdown-item active'
+                    : 'dropdown-item'
+                "
+                >{{ __("Product.Cs") }}</inertia-link
+              >
               <inertia-link
                 :href="route('promo')"
                 :class="
-                                    isRoute('promo', 'promodetail')
-                                        ? 'dropdown-item active'
-                                        : 'dropdown-item'
-                                "
-              >Promo</inertia-link>
+                  isRoute('promo', 'promodetail')
+                    ? 'dropdown-item active'
+                    : 'dropdown-item'
+                "
+                >{{ __("Product.Pr") }}</inertia-link
+              >
               <inertia-link
                 :href="route('kendaraan')"
                 :class="
-                                    isRoute('kendaraan')
-                                        ? 'dropdown-item active'
-                                        : 'dropdown-item'
-                                "
-              >Kendaraan Bermotor</inertia-link>
+                  isRoute('kendaraan')
+                    ? 'dropdown-item active'
+                    : 'dropdown-item'
+                "
+                >{{ __("Product.Vh") }}</inertia-link
+              >
               <inertia-link
                 :href="route('pinjamandana')"
                 :class="
-                                    isRoute('pinjamandana')
-                                        ? 'dropdown-item active'
-                                        : 'dropdown-item'
-                                "
-              >Pinjaman Dana</inertia-link>
+                  isRoute('pinjamandana')
+                    ? 'dropdown-item active'
+                    : 'dropdown-item'
+                "
+                >{{ __("Product.Ln") }}</inertia-link
+              >
               <inertia-link
                 :href="route('umrah')"
                 :class="
-                                    isRoute('umrah')
-                                        ? 'dropdown-item active'
-                                        : 'dropdown-item'
-                                "
-              >Umrah</inertia-link>
+                  isRoute('umrah') ? 'dropdown-item active' : 'dropdown-item'
+                "
+                >{{ __("Product.Um") }}</inertia-link
+              >
             </div>
           </li>
           <li
             :class="
-                            isRoute('about', 'visimisi')
-                                ? 'nav-item dropdown active'
-                                : 'nav-item dropdown'
-                        "
+              isRoute(
+                'profile.about',
+                'profile.visimisi',
+                'profile.teammanagement'
+              )
+                ? 'nav-item dropdown active'
+                : 'nav-item dropdown'
+            "
+            class="cool-link"
           >
             <a
               class="nav-link py-3 dropdown-toggle"
@@ -108,28 +119,43 @@
               data-toggle="dropdown"
               aria-haspopup="true"
               aria-expanded="false"
-            >Profil</a>
+              >{{ __("Profile") }}</a
+            >
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <inertia-link
-                :href="route('about')"
+                :href="route('profile.about')"
                 :class="
-                                    isRoute('about')
-                                        ? 'dropdown-item active'
-                                        : 'dropdown-item'
-                                "
-              >Tentang Perusahaan</inertia-link>
+                  isRoute('profile.about')
+                    ? 'dropdown-item active'
+                    : 'dropdown-item'
+                "
+                >Tentang Perusahaan</inertia-link
+              >
               <inertia-link
-                :href="route('visimisi')"
+                :href="route('profile.visimisi')"
                 :class="
-                                    isRoute('visimisi')
-                                        ? 'dropdown-item active'
-                                        : 'dropdown-item'
-                                "
-              >Visi, Misi & Nilai</inertia-link>
-              <a class="dropdown-item" href="./landing.html">Strategi Perusahaan</a>
-              <a class="dropdown-item" href="./landing.html">Tim Management</a>
+                  isRoute('profile.visimisi')
+                    ? 'dropdown-item active'
+                    : 'dropdown-item'
+                "
+                >Visi, Misi & Nilai</inertia-link
+              >
+              <a class="dropdown-item" href="./landing.html"
+                >Strategi Perusahaan</a
+              >
+              <inertia-link
+                :href="route('profile.teammanagement')"
+                :class="
+                  isRoute('profile.teammanagement')
+                    ? 'dropdown-item active'
+                    : 'dropdown-item'
+                "
+                >Team Management & Structure</inertia-link
+              >
               <a class="dropdown-item" href="./login.html">Pemegang Saham</a>
-              <a class="dropdown-item" href="./blog.html">Tanggung Jawab Sosial</a>
+              <a class="dropdown-item" href="./blog.html"
+                >Tanggung Jawab Sosial</a
+              >
               <a class="dropdown-item" href="./page.html">Penghargaan</a>
             </div>
           </li>
@@ -223,6 +249,36 @@ export default {
     border-top: 0px solid #fff;
     border-left: 0px solid #fff;
     transform: rotate(45deg);
+  }
+
+  .cool-link {
+    display: inline-block;
+    color: whitesmoke;
+    text-decoration: none;
+  }
+
+  .cool-link::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: whitesmoke;
+    transition: width 0.3s;
+    transition-timing-function: ease;
+  }
+
+  .cool-link:hover::after {
+    width: 100%;
+  }
+
+  li.active {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+  }
+
+  li.active::before {
+    width: 100%;
   }
 }
 </style>

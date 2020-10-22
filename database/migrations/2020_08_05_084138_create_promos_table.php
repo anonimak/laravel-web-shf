@@ -23,6 +23,7 @@ class CreatePromosTable extends Migration
             $table->dateTime('end_date');
             $table->boolean('status')->default(true);
             $table->boolean('set_banner')->default(false);
+            $table->softDeletes();
             $table->timestamps();
         });
     }

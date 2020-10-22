@@ -15,20 +15,8 @@
 </template>
 <script>
 export default {
-  data() {
-    return {
-      lengthStr: 25,
-    };
-  },
   props: {
     itemImage: Object,
-  },
-  methods: {
-    cutStr(str) {
-      if (str.length > this.lengthStr)
-        return str.substr(0, this.lengthStr) + "...";
-      return str;
-    },
   },
 };
 </script>

@@ -1,4 +1,8 @@
 require("./bootstrap");
+import "bootstrap-vue/dist/bootstrap-vue.css";
+
+// hover css
+import "hover.css/css/hover-min.css";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -20,6 +24,9 @@ import "vue-form-wizard/dist/vue-form-wizard.min.css";
 
 // particle js
 import VueParticles from "vue-particles";
+
+
+import fullscreen from "vue-fullscreen";
 
 // untuk moment js
 const moment = require("moment");
@@ -47,23 +54,17 @@ Vue.use(BootstrapVue);
 Vue.use(FlashMessage);
 Vue.use(InertiaApp);
 
-Vue.mixin({
-    methods: {
-        route: window.route,
-        isRoute(...routes) {
-            return routes.some(route => this.route().current(route));
-        }
-    }
-});
+// untuk fullscreen
+Vue.use(fullscreen);
+
+Vue.mixin(require("./base"));
 
 const app = document.getElementById("app");
 
 new Vue({
     metaInfo: {
         titleTemplate: title =>
-            title
-                ? `${title} - Sinarmas Hana Finance`
-                : "Sinarmas Hana Finanaces"
+            title ? `${title} - Sinarmas Hana Finance` : "Sinarmas Hana Finance"
     },
     created() {
         AOS.init();
