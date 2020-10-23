@@ -443,78 +443,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
  //import layouts
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -1190,7 +1118,7 @@ var render = function() {
             },
             [
               _c("i", { staticClass: "fas fa-download fa-sm text-white-50" }),
-              _vm._v("\n                Generate Report")
+              _vm._v(" Generate\n        Report")
             ]
           )
         ]
@@ -1216,7 +1144,7 @@ var render = function() {
                         },
                         [
                           _vm._v(
-                            "\n                                    Earnings (Monthly)\n                                "
+                            "\n                  Earnings (Monthly)\n                "
                           )
                         ]
                       ),
@@ -1228,7 +1156,7 @@ var render = function() {
                         },
                         [
                           _vm._v(
-                            "\n                                    $40,000\n                                "
+                            "\n                  $40,000\n                "
                           )
                         ]
                       )
@@ -1265,7 +1193,7 @@ var render = function() {
                         },
                         [
                           _vm._v(
-                            "\n                                    Earnings (Annual)\n                                "
+                            "\n                  Earnings (Annual)\n                "
                           )
                         ]
                       ),
@@ -1277,7 +1205,7 @@ var render = function() {
                         },
                         [
                           _vm._v(
-                            "\n                                    $215,000\n                                "
+                            "\n                  $215,000\n                "
                           )
                         ]
                       )
@@ -1312,11 +1240,7 @@ var render = function() {
                           staticClass:
                             "text-xs font-weight-bold text-info text-uppercase mb-1"
                         },
-                        [
-                          _vm._v(
-                            "\n                                    Tasks\n                                "
-                          )
-                        ]
+                        [_vm._v("\n                  Tasks\n                ")]
                       ),
                       _vm._v(" "),
                       _c(
@@ -1332,7 +1256,7 @@ var render = function() {
                               },
                               [
                                 _vm._v(
-                                  "\n                                            50%\n                                        "
+                                  "\n                      50%\n                    "
                                 )
                               ]
                             )
@@ -1391,7 +1315,7 @@ var render = function() {
                         },
                         [
                           _vm._v(
-                            "\n                                    Pending Requests\n                                "
+                            "\n                  Pending Requests\n                "
                           )
                         ]
                       ),
@@ -1401,11 +1325,7 @@ var render = function() {
                         {
                           staticClass: "h5 mb-0 font-weight-bold text-gray-800"
                         },
-                        [
-                          _vm._v(
-                            "\n                                    18\n                                "
-                          )
-                        ]
+                        [_vm._v("18")]
                       )
                     ]),
                     _vm._v(" "),
@@ -1433,9 +1353,7 @@ var render = function() {
               },
               [
                 _c("h6", { staticClass: "m-0 font-weight-bold text-primary" }, [
-                  _vm._v(
-                    "\n                            Earnings Overview\n                        "
-                  )
+                  _vm._v("\n              Earnings Overview\n            ")
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "dropdown no-arrow" }, [
@@ -1469,9 +1387,7 @@ var render = function() {
                     },
                     [
                       _c("div", { staticClass: "dropdown-header" }, [
-                        _vm._v(
-                          "\n                                    Dropdown Header:\n                                "
-                        )
+                        _vm._v("Dropdown Header:")
                       ]),
                       _vm._v(" "),
                       _c(
@@ -1517,9 +1433,7 @@ var render = function() {
               },
               [
                 _c("h6", { staticClass: "m-0 font-weight-bold text-primary" }, [
-                  _vm._v(
-                    "\n                            Revenue Sources\n                        "
-                  )
+                  _vm._v("Revenue Sources")
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "dropdown no-arrow" }, [
@@ -1553,9 +1467,7 @@ var render = function() {
                     },
                     [
                       _c("div", { staticClass: "dropdown-header" }, [
-                        _vm._v(
-                          "\n                                    Dropdown Header:\n                                "
-                        )
+                        _vm._v("Dropdown Header:")
                       ]),
                       _vm._v(" "),
                       _c(
@@ -1591,23 +1503,17 @@ var render = function() {
               _c("div", { staticClass: "mt-4 text-center small" }, [
                 _c("span", { staticClass: "mr-2" }, [
                   _c("i", { staticClass: "fas fa-circle text-primary" }),
-                  _vm._v(
-                    "\n                                Direct\n                            "
-                  )
+                  _vm._v("\n                Direct\n              ")
                 ]),
                 _vm._v(" "),
                 _c("span", { staticClass: "mr-2" }, [
                   _c("i", { staticClass: "fas fa-circle text-success" }),
-                  _vm._v(
-                    "\n                                Social\n                            "
-                  )
+                  _vm._v("\n                Social\n              ")
                 ]),
                 _vm._v(" "),
                 _c("span", { staticClass: "mr-2" }, [
                   _c("i", { staticClass: "fas fa-circle text-info" }),
-                  _vm._v(
-                    "\n                                Referral\n                            "
-                  )
+                  _vm._v("\n                Referral\n              ")
                 ])
               ])
             ])
@@ -1620,17 +1526,13 @@ var render = function() {
           _c("div", { staticClass: "card shadow mb-4" }, [
             _c("div", { staticClass: "card-header py-3" }, [
               _c("h6", { staticClass: "m-0 font-weight-bold text-primary" }, [
-                _vm._v(
-                  "\n                            Projects\n                        "
-                )
+                _vm._v("Projects")
               ])
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "card-body" }, [
               _c("h4", { staticClass: "small font-weight-bold" }, [
-                _vm._v(
-                  "\n                            Server Migration\n                            "
-                ),
+                _vm._v("\n              Server Migration\n              "),
                 _c("span", { staticClass: "float-right" }, [_vm._v("20%")])
               ]),
               _vm._v(" "),
@@ -1648,9 +1550,7 @@ var render = function() {
               ]),
               _vm._v(" "),
               _c("h4", { staticClass: "small font-weight-bold" }, [
-                _vm._v(
-                  "\n                            Sales Tracking\n                            "
-                ),
+                _vm._v("\n              Sales Tracking\n              "),
                 _c("span", { staticClass: "float-right" }, [_vm._v("40%")])
               ]),
               _vm._v(" "),
@@ -1668,9 +1568,7 @@ var render = function() {
               ]),
               _vm._v(" "),
               _c("h4", { staticClass: "small font-weight-bold" }, [
-                _vm._v(
-                  "\n                            Customer Database\n                            "
-                ),
+                _vm._v("\n              Customer Database\n              "),
                 _c("span", { staticClass: "float-right" }, [_vm._v("60%")])
               ]),
               _vm._v(" "),
@@ -1688,9 +1586,7 @@ var render = function() {
               ]),
               _vm._v(" "),
               _c("h4", { staticClass: "small font-weight-bold" }, [
-                _vm._v(
-                  "\n                            Payout Details\n                            "
-                ),
+                _vm._v("\n              Payout Details\n              "),
                 _c("span", { staticClass: "float-right" }, [_vm._v("80%")])
               ]),
               _vm._v(" "),
@@ -1708,9 +1604,7 @@ var render = function() {
               ]),
               _vm._v(" "),
               _c("h4", { staticClass: "small font-weight-bold" }, [
-                _vm._v(
-                  "\n                            Account Setup\n                            "
-                ),
+                _vm._v("\n              Account Setup\n              "),
                 _c("span", { staticClass: "float-right" }, [
                   _vm._v("Complete!")
                 ])
@@ -1735,13 +1629,9 @@ var render = function() {
             _c("div", { staticClass: "col-lg-6 mb-4" }, [
               _c("div", { staticClass: "card bg-primary text-white shadow" }, [
                 _c("div", { staticClass: "card-body" }, [
-                  _vm._v(
-                    "\n                                Primary\n                                "
-                  ),
+                  _vm._v("\n                Primary\n                "),
                   _c("div", { staticClass: "text-white-50 small" }, [
-                    _vm._v(
-                      "\n                                    #4e73df\n                                "
-                    )
+                    _vm._v("#4e73df")
                   ])
                 ])
               ])
@@ -1750,13 +1640,9 @@ var render = function() {
             _c("div", { staticClass: "col-lg-6 mb-4" }, [
               _c("div", { staticClass: "card bg-success text-white shadow" }, [
                 _c("div", { staticClass: "card-body" }, [
-                  _vm._v(
-                    "\n                                Success\n                                "
-                  ),
+                  _vm._v("\n                Success\n                "),
                   _c("div", { staticClass: "text-white-50 small" }, [
-                    _vm._v(
-                      "\n                                    #1cc88a\n                                "
-                    )
+                    _vm._v("#1cc88a")
                   ])
                 ])
               ])
@@ -1765,13 +1651,9 @@ var render = function() {
             _c("div", { staticClass: "col-lg-6 mb-4" }, [
               _c("div", { staticClass: "card bg-info text-white shadow" }, [
                 _c("div", { staticClass: "card-body" }, [
-                  _vm._v(
-                    "\n                                Info\n                                "
-                  ),
+                  _vm._v("\n                Info\n                "),
                   _c("div", { staticClass: "text-white-50 small" }, [
-                    _vm._v(
-                      "\n                                    #36b9cc\n                                "
-                    )
+                    _vm._v("#36b9cc")
                   ])
                 ])
               ])
@@ -1780,13 +1662,9 @@ var render = function() {
             _c("div", { staticClass: "col-lg-6 mb-4" }, [
               _c("div", { staticClass: "card bg-warning text-white shadow" }, [
                 _c("div", { staticClass: "card-body" }, [
-                  _vm._v(
-                    "\n                                Warning\n                                "
-                  ),
+                  _vm._v("\n                Warning\n                "),
                   _c("div", { staticClass: "text-white-50 small" }, [
-                    _vm._v(
-                      "\n                                    #f6c23e\n                                "
-                    )
+                    _vm._v("#f6c23e")
                   ])
                 ])
               ])
@@ -1795,13 +1673,9 @@ var render = function() {
             _c("div", { staticClass: "col-lg-6 mb-4" }, [
               _c("div", { staticClass: "card bg-danger text-white shadow" }, [
                 _c("div", { staticClass: "card-body" }, [
-                  _vm._v(
-                    "\n                                Danger\n                                "
-                  ),
+                  _vm._v("\n                Danger\n                "),
                   _c("div", { staticClass: "text-white-50 small" }, [
-                    _vm._v(
-                      "\n                                    #e74a3b\n                                "
-                    )
+                    _vm._v("#e74a3b")
                   ])
                 ])
               ])
@@ -1813,13 +1687,9 @@ var render = function() {
                 { staticClass: "card bg-secondary text-white shadow" },
                 [
                   _c("div", { staticClass: "card-body" }, [
-                    _vm._v(
-                      "\n                                Secondary\n                                "
-                    ),
+                    _vm._v("\n                Secondary\n                "),
                     _c("div", { staticClass: "text-white-50 small" }, [
-                      _vm._v(
-                        "\n                                    #858796\n                                "
-                      )
+                      _vm._v("#858796")
                     ])
                   ])
                 ]
@@ -1829,13 +1699,9 @@ var render = function() {
             _c("div", { staticClass: "col-lg-6 mb-4" }, [
               _c("div", { staticClass: "card bg-light text-black shadow" }, [
                 _c("div", { staticClass: "card-body" }, [
-                  _vm._v(
-                    "\n                                Light\n                                "
-                  ),
+                  _vm._v("\n                Light\n                "),
                   _c("div", { staticClass: "text-black-50 small" }, [
-                    _vm._v(
-                      "\n                                    #f8f9fc\n                                "
-                    )
+                    _vm._v("#f8f9fc")
                   ])
                 ])
               ])
@@ -1844,13 +1710,9 @@ var render = function() {
             _c("div", { staticClass: "col-lg-6 mb-4" }, [
               _c("div", { staticClass: "card bg-dark text-white shadow" }, [
                 _c("div", { staticClass: "card-body" }, [
-                  _vm._v(
-                    "\n                                Dark\n                                "
-                  ),
+                  _vm._v("\n                Dark\n                "),
                   _c("div", { staticClass: "text-white-50 small" }, [
-                    _vm._v(
-                      "\n                                    #5a5c69\n                                "
-                    )
+                    _vm._v("#5a5c69")
                   ])
                 ])
               ])
@@ -1862,9 +1724,7 @@ var render = function() {
           _c("div", { staticClass: "card shadow mb-4" }, [
             _c("div", { staticClass: "card-header py-3" }, [
               _c("h6", { staticClass: "m-0 font-weight-bold text-primary" }, [
-                _vm._v(
-                  "\n                            Illustrations\n                        "
-                )
+                _vm._v("Illustrations")
               ])
             ]),
             _vm._v(" "),
@@ -1879,7 +1739,7 @@ var render = function() {
               _vm._v(" "),
               _c("p", [
                 _vm._v(
-                  "\n                            Add some quality, svg illustrations to your\n                            project courtesy of\n                            "
+                  "\n              Add some quality, svg illustrations to your project courtesy of\n              "
                 ),
                 _c(
                   "a",
@@ -1893,7 +1753,7 @@ var render = function() {
                   [_vm._v("unDraw")]
                 ),
                 _vm._v(
-                  ", a constantly updated collection of beautiful\n                            svg images that you can use completely free and\n                            without attribution!\n                        "
+                  ", a constantly updated collection of beautiful svg images that\n              you can use completely free and without attribution!\n            "
                 )
               ]),
               _vm._v(" "),
@@ -1914,22 +1774,20 @@ var render = function() {
           _c("div", { staticClass: "card shadow mb-4" }, [
             _c("div", { staticClass: "card-header py-3" }, [
               _c("h6", { staticClass: "m-0 font-weight-bold text-primary" }, [
-                _vm._v(
-                  "\n                            Development Approach\n                        "
-                )
+                _vm._v("\n              Development Approach\n            ")
               ])
             ]),
             _vm._v(" "),
             _c("div", { staticClass: "card-body" }, [
               _c("p", [
                 _vm._v(
-                  "\n                            SB Admin 2 makes extensive use of Bootstrap 4\n                            utility classes in order to reduce CSS bloat and\n                            poor page performance. Custom CSS classes are\n                            used to create custom components and custom\n                            utility classes.\n                        "
+                  "\n              SB Admin 2 makes extensive use of Bootstrap 4 utility classes in\n              order to reduce CSS bloat and poor page performance. Custom CSS\n              classes are used to create custom components and custom utility\n              classes.\n            "
                 )
               ]),
               _vm._v(" "),
               _c("p", { staticClass: "mb-0" }, [
                 _vm._v(
-                  "\n                            Before working with this theme, you should\n                            become familiar with the Bootstrap framework,\n                            especially the utility classes.\n                        "
+                  "\n              Before working with this theme, you should become familiar with\n              the Bootstrap framework, especially the utility classes.\n            "
                 )
               ])
             ])
