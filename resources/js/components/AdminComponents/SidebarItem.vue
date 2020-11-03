@@ -63,7 +63,7 @@ export default {
           if (this.isRoute(data.child[index].link)) {
             return true;
           }
-          console.log("ada");
+          // console.log("ada");
         }
 
         return false;

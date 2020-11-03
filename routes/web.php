@@ -80,6 +80,10 @@ Route::get('admin/page/home', 'Admin\CfgHomeController@index')
     ->name('admin.page.home')
     ->middleware('auth', 'is_admin');
 
+Route::get('admin/page/home/add', 'Admin\CfgHomeController@add')
+    ->name('admin.page.home.add')
+    ->middleware('auth', 'is_admin');
+
 Route::get('admin/page/product', 'Admin\CfgHomeController@index')
     ->name('admin.page.product')
     ->middleware('auth', 'is_admin');

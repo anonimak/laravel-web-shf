@@ -1064,9 +1064,8 @@ __webpack_require__.r(__webpack_exports__);
         for (var index = 0; index < data.child.length; index++) {
           if (this.isRoute(data.child[index].link)) {
             return true;
-          }
+          } // console.log("ada");
 
-          console.log("ada");
         }
 
         return false;

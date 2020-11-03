@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
 use Inertia\Inertia;
+use App\Slider;
 
 class CfgHomeController extends Controller
 {
@@ -30,9 +31,21 @@ class CfgHomeController extends Controller
         // Synchronously
         return Inertia::render('Admin/CfgHome', [
             'meta' => [
-                'title' => 'tests',
-                'foo' => 'bar'
-            ]
+                'title'     => 'tests',
+                'foo'       => 'bar'
+            ],
+            'dataSlider'    => Slider::get()
+        ]);
+    }
+
+    public function add()
+    {
+        return Inertia::render('Admin/CfgHome/add', [
+            'meta' => [
+                'title'     => 'tests',
+                'foo'       => 'bar'
+            ],
+            'dataSlider'    => Slider::get()
         ]);
     }
 }
