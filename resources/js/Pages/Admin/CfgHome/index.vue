@@ -1,7 +1,7 @@
 <template>
     <Layout>
         <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Home Page</h1>
+            <h1 class="h3 mb-0 text-gray-800">{{(isButtonAdd) ? 'Add Slider' : 'Home Page'}}</h1>
         </div>
         <div class="row">
           <div class="col-12">
@@ -16,12 +16,20 @@
                            <!-- <inertia-link :href="route('admin.page.home.add')" class="btn btn-primary my-2 float-right"> <i class="fas fa-plus"></i> Tambah</inertia-link> -->
                         </div>
                         <read-slider :dataSlider="dataSlider" :class="(isButtonAdd) ? 'd-none' : ''"/>
-                    
+                        <add-slider :class="(isButtonAdd) ? '' : 'd-none'"></add-slider>
 
                       </div>
                     </b-tab>
-                    <b-tab title="Product"><p>I'm the second tab</p></b-tab>
-                    <b-tab title="Galery"><p>I'm a disabled tab!</p></b-tab>
+                    <b-tab title="Product">
+                      <div class="text-center">
+                        <b-spinner variant="primary" label="Text Centered"></b-spinner>
+                      </div>
+                    </b-tab>
+                    <b-tab title="Galery">
+                      <div class="text-center">
+                        <b-spinner variant="primary" label="Text Centered"></b-spinner>
+                      </div>
+                    </b-tab>
                   </b-tabs>
                 </div>
               </b-card>
@@ -30,10 +38,11 @@
         </div>
     </Layout>
 </template>
-<script>
-import Layout from "@/Shared/AdminLayout"; //import layouts
-import VueGridLayout from "vue-grid-layout";
-import ReadSlider from "@/components/AdminComponents/ReadSlider";
+<script>  
+import Layout         from "@/Shared/AdminLayout"; //import layouts
+import VueGridLayout  from "vue-grid-layout";
+import ReadSlider     from "@/components/AdminComponents/ReadSlider";
+import AddSlider      from "@/components/AdminComponents/AddSlider";
 
 export default {
     metaInfo: { title: "Page Home" },
@@ -48,12 +57,15 @@ export default {
                 { x: 0, y: 8, w: 1, h: 2, i: "4" },
                 { x: 0, y: 10, w: 1, h: 2, i: "5" },
                 { x: 0, y: 12, w: 1, h: 2, i: "6" }
-            ]
+            ],
+           
+           
         };
     },
     components: {
         Layout,
         ReadSlider,
+        AddSlider,
         GridLayout: VueGridLayout.GridLayout,
         GridItem: VueGridLayout.GridItem
     },
@@ -64,7 +76,9 @@ export default {
         },
         add: function(){
             this.isButtonAdd = (this.isButtonAdd) ? false : true
-        }
+        },
+        
+    
         
     }
 };
