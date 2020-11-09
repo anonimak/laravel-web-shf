@@ -15934,7 +15934,7 @@ var render = function() {
       _vm._l(_vm.dataSlider, function(itemSlider) {
         return _c(
           "div",
-          { key: itemSlider.id, staticClass: "col-2" },
+          { key: itemSlider.id, staticClass: "col-4" },
           [
             _c(
               "b-card",

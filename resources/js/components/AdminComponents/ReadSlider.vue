@@ -1,7 +1,7 @@
 <template>
     <div class="col-12">
         <div class="row">
-            <div class="col-2" v-for="itemSlider in dataSlider" :key="itemSlider.id">
+            <div class="col-4" v-for="itemSlider in dataSlider" :key="itemSlider.id">
                 <b-card
                 :title="cutStr(itemSlider.caption,10)"
                 :img-src="itemSlider.image"
