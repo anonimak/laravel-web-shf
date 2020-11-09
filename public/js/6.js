@@ -61,6 +61,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
  //import layouts
 
  //import card team
@@ -90,6 +101,25 @@ __webpack_require__.r(__webpack_exports__);
         title: "Komisaris",
         desc: "Warga Negara Indonesia, menjabat sebagai Komisaris PT Sinarmas Hana Finance.\n                  Mengawai karir sebagai Analis Kredit di bagian kredit Koperasi Bank Indonesia pada tahun 1983. Beliau kemudian melanjutkan studi Master dan lulus pada tahun 1989 di University of Illinois, Amerika Serikat.\n                  Berpengalaman dalam memimpin dan mengkoordinir pengumpulan dan penyajian data ekonomi moneter, serta tugas pengawasan bank sampai tahun 2012. Kemudian dipercaya untuk memimpin Bank Indonesia di Medan dan ditunjuk sebagai Koordinator 4 KBI hingga tahun 2012. Jabatan terkini beliau adalah sebagai Komisaris di PT Bank KEB Hana Indonesia. ",
         img: "nasser-atorf.png"
+      }],
+      listdireksi: [{
+        id: 1,
+        name: "Seo Jisu",
+        title: "Direktur Utama",
+        desc: "Warga Negara Korea Selatan, menjabat sebagai Direktur Utama PT Sinarmas Hana Finance sejak tahun 2015.\n                  Beliau meraih gelar Sarjana Ekonomi di Yonsei University. Sebelum bergabung di PT Sinarmas Hana Finance, beliau sudah berkarir selama 26 tahun di Hana Financial Group, diawali pada tahun 1992 di HFG  Apgujeong Branch dengan jabatan Associate.\n                  Berbagai posisi dan jabatan strategis di Hana Financial Group sudah dijalani beliau, diantaranya 3 tahun sebagai Branch Manager Bank KEB Hana Singapore dan menjabat di Hana Financial Group sebagai Relationship & General Manager, Large Corporate Business Division 3 pada tahun 2014.",
+        img: "seo.png"
+      }, {
+        id: 2,
+        name: "Andrew Ludy",
+        title: "Direktur",
+        desc: "Warga Negara Indonesia, menjabat sebagai Direktur PT Sinarmas Hana Finance sejak tahun 2016.\n                Beliau menyelesaikan pendidikannya dan memperoleh gelar sarjana Ekonomi dari Perguruan Tinggi Universitas Katholik Widya Mandala, Surabaya pada tahun 2002.\n                Beliau memulai karir sebagai Marketing di PT Sinar Mas Multifinance di tahun 2003. Karir beliau berlanjut dan menjabat berbagai posisi strategis, salah satunya Regional Coordinator dan Branch Manager PT Sinar Mas Multifinance (2003 \u2013 2016).",
+        img: "andrew-ludy.png"
+      }, {
+        id: 3,
+        name: "Agustinus Budi Antoro",
+        title: "Direktur",
+        desc: "Warga Negara Indonesia, menjabat sebagai Direktur Kepatuhan dan Manajemen Risiko PT Sinarmas Hana Finance sejak tahun 2019.\n                  Beliau menyelesaikan pendidikannya di Universitas Atma Jaya Yogyakarta dengan gelar Sarjana Manajemen Ekonomi di tahun 2000 dengan konsentrasi Manajemen Keuangan.\n                  Memulai karir sebagai Credit Marketing Officer di PT Tunas Finance. Terhitung dari tahun 2003, beliau sudah berkarir di industri pembiayaan selama 16 tahun.\n                  Bergabung dengan PT Sinarmas Hana Finance di tahun 2015 sebagai Branch Manager. Selanjutnya  menjabat sebagai Area Manager dan General Manager Kepatuhan dan Manajemen Risiko.",
+        img: "agustinus.png"
       }]
     };
   },
@@ -382,6 +412,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
 //
 //
 //
@@ -979,7 +1010,26 @@ var render = function() {
                     _c(
                       "b-tab",
                       { attrs: { title: "Dewan direksi" } },
-                      [_c("b-card-text", [_vm._v("Tab contents 2")])],
+                      [
+                        _c("b-card-text", [
+                          _c(
+                            "div",
+                            { staticClass: "row gap-y" },
+                            _vm._l(_vm.listdireksi, function(item) {
+                              return _c("card-team-management", {
+                                key: item.id,
+                                attrs: {
+                                  name: item.name,
+                                  title: item.title,
+                                  desc: item.desc,
+                                  img: item.img
+                                }
+                              })
+                            }),
+                            1
+                          )
+                        ])
+                      ],
                       1
                     )
                   ],
@@ -1375,6 +1425,7 @@ var render = function() {
         [
           _c("b-img", {
             attrs: {
+              thumbnail: "",
               rounded: "circle",
               alt: "image",
               width: "80px",
@@ -1431,11 +1482,16 @@ var staticRenderFns = [
       _c("div", { staticClass: "container" }, [
         _c("div", { staticClass: "row" }, [
           _c("div", { staticClass: "col-12 col-md mr-4" }, [
-            _c("i", { staticClass: "fas fa-copyright text-white" }),
-            _vm._v(" "),
             _c("small", { staticClass: "d-block mt-3 mb-3 text-muted" }, [
-              _vm._v("© 2021 Anchor Bootstrap")
-            ])
+              _c("i", { staticClass: "fas fa-copyright text-white" }),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v("\n          2021 PT. Sinarmas Hana Finance\n          "),
+              _c("br"),
+              _vm._v("\n          registered and supervised by\n          ")
+            ]),
+            _vm._v(" "),
+            _c("img", { attrs: { src: "/img/ojk-icon.bmp" } })
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "col-md" }, [

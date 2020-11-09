@@ -3,6 +3,7 @@
     <div class="media">
       <div class="mr-4">
         <b-img
+          thumbnail
           rounded="circle"
           alt="image"
           width="80px"

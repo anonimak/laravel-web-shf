@@ -25,7 +25,18 @@
                 </b-card-text>
               </b-tab>
               <b-tab title="Dewan direksi"
-                ><b-card-text>Tab contents 2</b-card-text></b-tab
+                ><b-card-text>
+                <div class="row gap-y">
+                    <card-team-management
+                      v-for="item in listdireksi"
+                      :key="item.id"
+                      :name="item.name"
+                      :title="item.title"
+                      :desc="item.desc"
+                      :img="item.img"
+                    />
+                  </div>  
+                </b-card-text></b-tab
               >
             </b-tabs>
           </b-card>
@@ -93,6 +104,37 @@ export default {
           img: "nasser-atorf.png",
         },
       ],
+
+      listdireksi: [
+        {
+          id: 1,
+          name: "Seo Jisu",
+          title: "Direktur Utama",
+          desc: `Warga Negara Korea Selatan, menjabat sebagai Direktur Utama PT Sinarmas Hana Finance sejak tahun 2015.
+                  Beliau meraih gelar Sarjana Ekonomi di Yonsei University. Sebelum bergabung di PT Sinarmas Hana Finance, beliau sudah berkarir selama 26 tahun di Hana Financial Group, diawali pada tahun 1992 di HFG  Apgujeong Branch dengan jabatan Associate.
+                  Berbagai posisi dan jabatan strategis di Hana Financial Group sudah dijalani beliau, diantaranya 3 tahun sebagai Branch Manager Bank KEB Hana Singapore dan menjabat di Hana Financial Group sebagai Relationship & General Manager, Large Corporate Business Division 3 pada tahun 2014.`,
+          img: "seo.png",
+        },
+        {
+          id: 2,
+          name: "Andrew Ludy",
+          title: "Direktur",
+          desc: `Warga Negara Indonesia, menjabat sebagai Direktur PT Sinarmas Hana Finance sejak tahun 2016.
+                Beliau menyelesaikan pendidikannya dan memperoleh gelar sarjana Ekonomi dari Perguruan Tinggi Universitas Katholik Widya Mandala, Surabaya pada tahun 2002.
+                Beliau memulai karir sebagai Marketing di PT Sinar Mas Multifinance di tahun 2003. Karir beliau berlanjut dan menjabat berbagai posisi strategis, salah satunya Regional Coordinator dan Branch Manager PT Sinar Mas Multifinance (2003 – 2016).`,
+          img: "andrew-ludy.png",
+        },
+        {
+          id: 3,
+          name: "Agustinus Budi Antoro",
+          title: "Direktur",
+          desc: `Warga Negara Indonesia, menjabat sebagai Direktur Kepatuhan dan Manajemen Risiko PT Sinarmas Hana Finance sejak tahun 2019.
+                  Beliau menyelesaikan pendidikannya di Universitas Atma Jaya Yogyakarta dengan gelar Sarjana Manajemen Ekonomi di tahun 2000 dengan konsentrasi Manajemen Keuangan.
+                  Memulai karir sebagai Credit Marketing Officer di PT Tunas Finance. Terhitung dari tahun 2003, beliau sudah berkarir di industri pembiayaan selama 16 tahun.
+                  Bergabung dengan PT Sinarmas Hana Finance di tahun 2015 sebagai Branch Manager. Selanjutnya  menjabat sebagai Area Manager dan General Manager Kepatuhan dan Manajemen Risiko.`,
+          img: "agustinus.png",
+        },
+      ]
     };
   },
 

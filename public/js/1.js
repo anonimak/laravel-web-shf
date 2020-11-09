@@ -1947,156 +1947,7 @@ var render = function() {
             ],
             1
           )
-        ]),
-        _vm._v(" "),
-        _c(
-          "div",
-          {
-            staticClass: "container pt-5 pb-5 mt-4",
-            attrs: { "data-aos": "fade-up" }
-          },
-          [
-            _c("div", { staticClass: "row gap-y" }, [
-              _c("div", { staticClass: "col-md-6 col-xl-4" }, [
-                _c("div", { staticClass: "media" }, [
-                  _c(
-                    "div",
-                    {
-                      staticClass:
-                        "iconbox iconmedium rounded-circle text-info mr-4"
-                    },
-                    [_c("i", { staticClass: "fab fa-html5" })]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "media-body" }, [
-                    _c("h5", [_vm._v("Responsive")]),
-                    _vm._v(" "),
-                    _c("p", { staticClass: "text-muted" }, [
-                      _vm._v(
-                        "\n                  Your website works on any device: desktop, tablet or mobile.\n                "
-                      )
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-md-6 col-xl-4" }, [
-                _c("div", { staticClass: "media" }, [
-                  _c(
-                    "div",
-                    {
-                      staticClass:
-                        "iconbox iconmedium rounded-circle text-purple mr-4"
-                    },
-                    [_c("i", { staticClass: "fab fa-gulp" })]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "media-body" }, [
-                    _c("h5", [_vm._v("Gulp")]),
-                    _vm._v(" "),
-                    _c("p", { staticClass: "text-muted" }, [
-                      _vm._v(
-                        "\n                  You can easily read, edit, and write your own code, or change\n                  everything.\n                "
-                      )
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-md-6 col-xl-4" }, [
-                _c("div", { staticClass: "media" }, [
-                  _c(
-                    "div",
-                    {
-                      staticClass:
-                        "iconbox iconmedium rounded-circle text-info mr-4"
-                    },
-                    [_c("i", { staticClass: "fab fa-amazon" })]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "media-body" }, [
-                    _c("h5", [_vm._v("UI Kit")]),
-                    _vm._v(" "),
-                    _c("p", { staticClass: "text-muted" }, [
-                      _vm._v(
-                        "\n                  There is a bunch of useful and necessary elements for\n                  developing your website.\n                "
-                      )
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-md-6 col-xl-4" }, [
-                _c("div", { staticClass: "media" }, [
-                  _c(
-                    "div",
-                    {
-                      staticClass:
-                        "iconbox iconmedium rounded-circle text-warning mr-4"
-                    },
-                    [_c("i", { staticClass: "fab fa-sass" })]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "media-body" }, [
-                    _c("h5", [_vm._v("Bootstrap 4.1.x")]),
-                    _vm._v(" "),
-                    _c("p", { staticClass: "text-muted" }, [
-                      _vm._v(
-                        "\n                  You can find our code well organized, commented and readable.\n                "
-                      )
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-md-6 col-xl-4" }, [
-                _c("div", { staticClass: "media" }, [
-                  _c(
-                    "div",
-                    {
-                      staticClass:
-                        "iconbox iconmedium rounded-circle text-info mr-4"
-                    },
-                    [_c("i", { staticClass: "fas fa-layer-group" })]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "media-body" }, [
-                    _c("h5", [_vm._v("Clean Code")]),
-                    _vm._v(" "),
-                    _c("p", { staticClass: "text-muted" }, [
-                      _vm._v(
-                        "\n                  As you can see in the source code, we provided a clean code.\n                "
-                      )
-                    ])
-                  ])
-                ])
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "col-md-6 col-xl-4" }, [
-                _c("div", { staticClass: "media" }, [
-                  _c(
-                    "div",
-                    {
-                      staticClass:
-                        "iconbox iconmedium rounded-circle text-salmon mr-4"
-                    },
-                    [_c("i", { staticClass: "fas fa-burn" })]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "media-body" }, [
-                    _c("h5", [_vm._v("Support")]),
-                    _vm._v(" "),
-                    _c("p", { staticClass: "text-muted" }, [
-                      _vm._v(
-                        "\n                  When you download this template, you'll freely receive future\n                  updates.\n                "
-                      )
-                    ])
-                  ])
-                ])
-              ])
-            ])
-          ]
-        )
+        ])
       ],
       1
     )
@@ -7452,11 +7303,16 @@ var staticRenderFns = [
       _c("div", { staticClass: "container" }, [
         _c("div", { staticClass: "row" }, [
           _c("div", { staticClass: "col-12 col-md mr-4" }, [
-            _c("i", { staticClass: "fas fa-copyright text-white" }),
-            _vm._v(" "),
             _c("small", { staticClass: "d-block mt-3 mb-3 text-muted" }, [
-              _vm._v("© 2021 Anchor Bootstrap")
-            ])
+              _c("i", { staticClass: "fas fa-copyright text-white" }),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v("\n          2021 PT. Sinarmas Hana Finance\n          "),
+              _c("br"),
+              _vm._v("\n          registered and supervised by\n          ")
+            ]),
+            _vm._v(" "),
+            _c("img", { attrs: { src: "/img/ojk-icon.bmp" } })
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "col-md" }, [

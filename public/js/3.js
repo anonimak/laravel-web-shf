@@ -1745,11 +1745,16 @@ var staticRenderFns = [
       _c("div", { staticClass: "container" }, [
         _c("div", { staticClass: "row" }, [
           _c("div", { staticClass: "col-12 col-md mr-4" }, [
-            _c("i", { staticClass: "fas fa-copyright text-white" }),
-            _vm._v(" "),
             _c("small", { staticClass: "d-block mt-3 mb-3 text-muted" }, [
-              _vm._v("© 2021 Anchor Bootstrap")
-            ])
+              _c("i", { staticClass: "fas fa-copyright text-white" }),
+              _vm._v(" "),
+              _c("br"),
+              _vm._v("\n          2021 PT. Sinarmas Hana Finance\n          "),
+              _c("br"),
+              _vm._v("\n          registered and supervised by\n          ")
+            ]),
+            _vm._v(" "),
+            _c("img", { attrs: { src: "/img/ojk-icon.bmp" } })
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "col-md" }, [

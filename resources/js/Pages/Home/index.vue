@@ -308,7 +308,7 @@
       <!--------------------------------------
 FEATURES
       --------------------------------------->
-      <div class="container pt-5 pb-5 mt-4" data-aos="fade-up">
+      <!-- <div class="container pt-5 pb-5 mt-4" data-aos="fade-up">
         <div class="row gap-y">
           <div class="col-md-6 col-xl-4">
             <div class="media">
@@ -392,7 +392,7 @@ FEATURES
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </Layout>
 </template>
