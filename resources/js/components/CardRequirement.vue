@@ -61,7 +61,7 @@
           <span v-else class="fa fa-times text-danger"></span>
         </li>
       </ul>
-      <button type="button" class="btn" :class="btnBackground">Sign up for free</button>
+      <!-- <button type="button" class="btn" :class="btnBackground">Sign up for free</button> -->
     </div>
   </div>
 </template>

@@ -36,19 +36,14 @@
                     >
                         <div class="col-lg-9">
                             <h5 class="font-weight-light text-dark">
-                                Free Bootstrap 4.1.3
-                                <strong>UI Kit</strong> with
-                                <strong>
-                                    <i class="fab fa-sass fa-2x"></i>
-                                </strong>
-                                for rapid development
+                                Simulasi Budget Total DP & Budget Angsuran
                             </h5>
                         </div>
                         <div
                             class="col-lg-3 text-md-center text-lg-right mt-4 mb-4"
                         >
                             <a href="#" class="btn btn-lg btn-outline-dark"
-                                >Call to action</a
+                                >Klik Disini</a
                             >
                         </div>
                     </div>
@@ -103,6 +98,22 @@
                 </div>
             </div>
             <!-- End Content -->
+
+                  <!-- Section Produk Pembiayaan -->
+            <section class="pt-5 pb-5 bg-white">
+                <div class="container">
+                <div class="row row-grid align-items-center">
+                    <div class="col text-center" data-aos="fade-down">
+                        <h3>
+                        <strong>Ajukan sekarang</strong>
+                        </h3>
+                        <b-button  class="btn text-white bg-primary" v-b-modal.modal-pengajuan>Pengajuan Online</b-button>
+                    </div>
+                </div>
+                </div>
+            </section>
+            
+            <modal-form-pengajuan/>
         </div>
     </Layout>
 </template>
@@ -110,7 +121,17 @@
 import Layout from "@/Shared/Layout"; //import layouts
 import CardRequirement from "@/components/CardRequirement";
 
+import VehicleSvg from "@/Shared/img/vehicleSVG";
+
+import ModalFormPengajuan from "@/components/ModalFormPengajuan";
+
 export default {
+    components: {
+        Layout,
+        CardRequirement,
+        VehicleSvg,
+        ModalFormPengajuan
+    },
     metaInfo: { title: "Produk Kendaraan" },
     data() {
         return {
@@ -174,10 +195,6 @@ export default {
                 }
             ]
         };
-    },
-    components: {
-        Layout,
-        CardRequirement
     }
 };
 </script>

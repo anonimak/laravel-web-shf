@@ -169,9 +169,7 @@
                 <h3>
                   <strong>Produk Pembiayaan Sinarmas Hana Finance</strong>
                 </h3>
-                <inertia-link class="btn text-white bg-primary" href="/"
-                  >Pengajuan Online</inertia-link
-                >
+                <b-button  class="btn text-white bg-primary" v-b-modal.modal-pengajuan>Pengajuan Online</b-button>
               </div>
             </div>
           </div>
@@ -393,6 +391,12 @@ FEATURES
           </div>
         </div>
       </div> -->
+    
+
+
+    <!-- modal pengajuan -->
+      <modal-form-pengajuan/>
+    <!-- end modal pengajuan -->
     </div>
   </Layout>
 </template>
@@ -408,6 +412,9 @@ import ProfileSvg from "@/Shared/img/profileSVG";
 import VehicleSvg from "@/Shared/img/vehicleSVG";
 import CalculatorSvg from "@/Shared/img/calculatorSVG";
 
+// modal pengajuan
+import ModalFormPengajuan from "@/components/ModalFormPengajuan";
+
 export default {
   components: {
     Layout,
@@ -418,6 +425,7 @@ export default {
     CardNews,
     carousel,
     CardPromo,
+    ModalFormPengajuan
   },
   metaInfo: { title: "Beranda" },
   data() {

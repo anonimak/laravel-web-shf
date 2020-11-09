@@ -1597,16 +1597,6 @@ var render = function() {
               : _c("span", { staticClass: "fa fa-times text-danger" })
           ])
         ]
-      ),
-      _vm._v(" "),
-      _c(
-        "button",
-        {
-          staticClass: "btn",
-          class: _vm.btnBackground,
-          attrs: { type: "button" }
-        },
-        [_vm._v("Sign up for free")]
       )
     ])
   ])
