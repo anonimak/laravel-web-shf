@@ -159,8 +159,13 @@
               <a class="dropdown-item" href="./page.html">Penghargaan</a>
             </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link py-3" href="./docs.html">Docs</a>
+          <li
+            :class="isRoute('contact') ? 'nav-item active' : 'nav-item'"
+            class="cool-link"
+          >
+            <inertia-link class="nav-link py-3" :href="route('contact')">{{
+              __("Contact")
+            }}</inertia-link>
           </li>
         </ul>
       </div>

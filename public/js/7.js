@@ -646,6 +646,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -2137,7 +2142,26 @@ var render = function() {
                   ]
                 ),
                 _vm._v(" "),
-                _vm._m(1)
+                _c(
+                  "li",
+                  {
+                    staticClass: "cool-link",
+                    class: _vm.isRoute("contact")
+                      ? "nav-item active"
+                      : "nav-item"
+                  },
+                  [
+                    _c(
+                      "inertia-link",
+                      {
+                        staticClass: "nav-link py-3",
+                        attrs: { href: _vm.route("contact") }
+                      },
+                      [_vm._v(_vm._s(_vm.__("Contact")))]
+                    )
+                  ],
+                  1
+                )
               ]
             )
           ]
@@ -2166,18 +2190,6 @@ var staticRenderFns = [
       },
       [_c("span", { staticClass: "navbar-toggler-icon" })]
     )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("li", { staticClass: "nav-item" }, [
-      _c(
-        "a",
-        { staticClass: "nav-link py-3", attrs: { href: "./docs.html" } },
-        [_vm._v("Docs")]
-      )
-    ])
   }
 ]
 render._withStripped = true

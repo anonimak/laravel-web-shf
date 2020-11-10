@@ -53,7 +53,7 @@ Route::get('profile/team-management', 'Profile\TeamManagement@index')->name('pro
 
 
 Route::get('career', 'CareerController@index')->name('career');
-Route::get('contact', 'ContactController@index')->name('contact');
+Route::get('contact', 'ContactController@index')->name('contact')->middleware('guest');
 Route::get('network', 'NetworkController@index')->name('network');
 
 /*
