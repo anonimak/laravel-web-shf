@@ -1,7 +1,7 @@
 - footer disamakan. (oke)
 - link ke form pengajuan dari setiap produk (oke).
 - buat component modal form pengajuan (oke).
-- buat kontak kami.
+- buat kontak kami(oke).
 - berita di hide dulu.
 - buat faq.
 - galeri sinarmas on hover gambar resize.

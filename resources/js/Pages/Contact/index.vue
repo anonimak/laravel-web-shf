@@ -4,54 +4,50 @@
       <div class="pb-5 container">
         <div data-aos="fade-down">
           <h2 class="text-center text-secondary">
-            <strong>TENTANG PERUSAHAAN</strong>
+            <strong>Sinarmas Hana Finance</strong>
           </h2>
           <hr class="border-secondary" />
           <p>
-            PT Sinarmas Hana Finance adalah perusahaan patungan antara PT Sinar
-            Mas Multiartha Tbk dengan Hana Financial Group yang berbasis di
-            Korea Selatan. Perusahaan resmi berdiri pada tanggal 9 Juni 2015,
-            dengan akta pendirian nomor 14 oleh notaris Edwar. Perusahaan
-            mendapatkan surat izin usaha dari Otoritas jasa Keuangan (OJK) pada
-            tanggal 18 November 2015 dan telah menjalankan bisnisnya di bidang
-            pembiayaan.
+            PT Sinarmas Hana Finance adalah perusahaan Gabungan antara PT
+            SinarMas Multiartha Tbk dengan Hana Financial Group yang berbasis di
+            Korea Selatan.
           </p>
-          <p>
-            PT Sinarmas Hana Finance dimiliki oleh
-            <strong>Hana Capital Co. Ltd</strong> sebesar 55% (lima puluh lima
-            persen), <strong>PT Bank KEB Hana Indonesia</strong> sebesar 30%
-            (tiga puluh persen) dan
-            <strong>PT Sinar Mas Multiartha Tbk</strong> sebesar 15% (lima belas
-            persen).
-          </p>
-          <p>
-            <strong>Hana Capital Co. Ltd</strong> berdiri sejak 1987 dan telah
-            bergabung dengan Hana Financial Group sejak 2005.
-            <strong>Hana Capital Co. Ltd</strong> memberikan pelayanan dalam
-            pembiayaan mobil, pembiayaan non-mobil seperti mesin, IT dan
-            peralatan medical dan pinjaman komersil seperti KPR dan Pinjaman
-            Kredit.
-          </p>
-          <p>
-            <strong>PT Bank KEB Hana Indonesia</strong> berdiri sejak tahun
-            2014, hasil merger dari PT Bank KEB Hana Indonesia dan PT KEB
-            Indonesia. PT Bank KEB Hana Indonesia memiliki 4 pemegang saham,
-            KEB, Hana Bank, (kedua pemegang saham tersebut dikendalikan oleh HFG
-            sebagai ultimate shareholder), IFC, Bambang Setijo dan sisanya
-            dimiliki oleh PT Bank KEB Hana Indonesia.
-          </p>
-          <p>
-            <strong>PT Sinar Mas Multiartha Tbk</strong>, merupakan perusahaan
-            dari Sinar Mas Group, salah satu institusi keuangan terdepan di
-            Indonesia. Pelayanannya merliputi Perbankan, Asuransi, Pembiayaan,
-            Aset Manajemen, Sekuritas dan IT
-          </p>
-          <p>
-            Sampai saat ini, perusahaan telah memiliki beberapa kantor cabang,
-            diantaranya : Jakarta, Bekasi, Tangerang, Depok, Bandung, Surabaya,
-            Bogor, Semarang, Surakarta, Kediri, Malang dan juga Marketing point
-            Cikarang.
-          </p>
+          <div class="row mt-4">
+            <div class="col">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253823.23071047236!2d106.75660637751643!3d-6.265310422166139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6202c35969aee5d9!2sPT%20SINARMAS%20HANA%20FINANCE%20ROXY%20SQUARE!5e0!3m2!1sid!2sid!4v1604978419416!5m2!1sid!2sid"
+                width="100%"
+                height="450"
+                frameborder="0"
+                style="border: 0"
+                allowfullscreen=""
+                aria-hidden="false"
+                tabindex="0"
+              ></iframe>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="mt-2 col-md-6 col-lg-6">
+              <h4 class="text-primary">
+                Jam Kerja
+                <i class="fa fa-clock" aria-hidden="true"></i>
+              </h4>
+              <p>Pusat : Senin - Jum'at : 8.00-17.00 WIB</p>
+              <p>Cabang : Senin - Jum'at : 8.30-16.30 WIB Sabtu : 8.30-14.30</p>
+            </div>
+            <div class="mt-2 col-md-6 col-lg-6">
+              <h4 class="text-primary">
+                Alamat Kantor Pusat
+                <i class="fa fa-map-marker-alt" aria-hidden="true"></i>
+              </h4>
+              <p>
+                Gedung Roxy Square Lt. 3 B 001 No. 02 Jl. Kyai Tapa No.1,
+                Tomang, Grogol Petamburan, Jakarta Barat 11440
+              </p>
+              <p>Email:info@shf.co.id</p>
+              <p>Phone : 021-5695-4670</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>

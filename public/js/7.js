@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[7],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=script&lang=js&":
-/*!**********************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=script&lang=js& ***!
-  \**********************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Contact/index.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Contact/index.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -66,124 +66,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
  //import layouts
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  metaInfo: {
-    title: "Simulasi Kredit"
-  },
-  data: function data() {
-    return {
-      form: {
-        email: "",
-        name: "",
-        jenisSimulasi: null,
-        jenisBudget: 1,
-        tjh: 1,
-        checked: []
-      },
-      itemjenis: [{
-        text: "Pilih Simulasi",
-        value: null
-      }, {
-        text: "Budget",
-        value: 1
-      }, {
-        text: "Kredit",
-        value: 2
-      }],
-      itemtjh: [{
-        text: "Ya",
-        value: 1
-      }],
-      itembudget: [{
-        text: "Berdasarkan Besar DP",
-        value: 1
-      }, {
-        text: "Berdasarkan Besar Cicilan",
-        value: 2
-      }],
-      show: true
-    };
-  },
-  methods: {
-    pilihJenisSimulasi: function pilihJenisSimulasi(jenis) {
-      if (this.form.jenisSimulasi == jenis) this.form.jenisSimulasi = null;else this.form.jenisSimulasi = jenis;
-    }
-  },
   components: {
     Layout: _Shared_Layout__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
@@ -763,7 +648,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\nfooter[data-v-61a7c374] {\r\n  margin-top: -1px;\n}\r\n", ""]);
+exports.push([module.i, "\nfooter[data-v-61a7c374] {\r\n    margin-top: -1px;\n}\r\n", ""]);
 
 // exports
 
@@ -958,10 +843,10 @@ if(false) {}
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=template&id=4b74e8c6&":
-/*!**************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=template&id=4b74e8c6& ***!
-  \**************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Contact/index.vue?vue&type=template&id=6c9f31ca&":
+/*!***********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Contact/index.vue?vue&type=template&id=6c9f31ca& ***!
+  \***********************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -974,417 +859,80 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("Layout", [
-    _c("div", [
-      _c(
-        "div",
-        {
-          staticClass:
-            "jumbotron jumbotron-md jumbotron-fluid mb-0 pb-3 bg-secondary position-relative"
-        },
-        [
-          _c("div", { staticClass: "container-fluid text-white h-100" }, [
-            _c(
-              "div",
-              {
-                staticClass:
-                  "d-lg-flex align-items-center justify-content-between text-center pl-lg-5"
-              },
-              [
-                _c("div", { staticClass: "col pt-4 pb-4" }, [
-                  _c("h1", { staticClass: "display-3" }, [
-                    _vm._v("Kredit & Simulasi")
-                  ]),
-                  _vm._v(" "),
-                  _c("h5", { staticClass: "font-weight-light mb-4" }, [
-                    _vm._v(
-                      "\n              Gunakan Kalkulator Pintar untuk membantu\n              perhitungan kredit anda.\n            "
-                    )
-                  ])
-                ]),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  {
-                    staticClass: "col align-self-bottom justify-content-center"
-                  },
-                  [
-                    _c(
-                      "span",
-                      {
-                        staticClass: "text-warning",
-                        staticStyle: { "font-size": "16em" }
-                      },
-                      [_c("i", { staticClass: "fas fa-coins" })]
-                    )
-                  ]
-                )
-              ]
+    _c("section", { staticClass: "pt-5 pb-5" }, [
+      _c("div", { staticClass: "pb-5 container" }, [
+        _c("div", { attrs: { "data-aos": "fade-down" } }, [
+          _c("h2", { staticClass: "text-center text-secondary" }, [
+            _c("strong", [_vm._v("Sinarmas Hana Finance")])
+          ]),
+          _vm._v(" "),
+          _c("hr", { staticClass: "border-secondary" }),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "\n          PT Sinarmas Hana Finance adalah perusahaan Gabungan antara PT\n          SinarMas Multiartha Tbk dengan Hana Financial Group yang berbasis di\n          Korea Selatan.\n        "
             )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row mt-4" }, [
+            _c("div", { staticClass: "col" }, [
+              _c("iframe", {
+                staticStyle: { border: "0" },
+                attrs: {
+                  src:
+                    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253823.23071047236!2d106.75660637751643!3d-6.265310422166139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6202c35969aee5d9!2sPT%20SINARMAS%20HANA%20FINANCE%20ROXY%20SQUARE!5e0!3m2!1sid!2sid!4v1604978419416!5m2!1sid!2sid",
+                  width: "100%",
+                  height: "450",
+                  frameborder: "0",
+                  allowfullscreen: "",
+                  "aria-hidden": "false",
+                  tabindex: "0"
+                }
+              })
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row mt-4" }, [
+            _c("div", { staticClass: "mt-2 col-md-6 col-lg-6" }, [
+              _c("h4", { staticClass: "text-primary" }, [
+                _vm._v("\n              Jam Kerja\n              "),
+                _c("i", {
+                  staticClass: "fa fa-clock",
+                  attrs: { "aria-hidden": "true" }
+                })
+              ]),
+              _vm._v(" "),
+              _c("p", [_vm._v("Pusat : Senin - Jum'at : 8.00-17.00 WIB")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "Cabang : Senin - Jum'at : 8.30-16.30 WIB Sabtu : 8.30-14.30"
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "mt-2 col-md-6 col-lg-6" }, [
+              _c("h4", { staticClass: "text-primary" }, [
+                _vm._v("\n              Alamat Kantor Pusat\n              "),
+                _c("i", {
+                  staticClass: "fa fa-map-marker-alt",
+                  attrs: { "aria-hidden": "true" }
+                })
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n              Gedung Roxy Square Lt. 3 B 001 No. 02 Jl. Kyai Tapa No.1,\n              Tomang, Grogol Petamburan, Jakarta Barat 11440\n            "
+                )
+              ]),
+              _vm._v(" "),
+              _c("p", [_vm._v("Email:info@shf.co.id")]),
+              _vm._v(" "),
+              _c("p", [_vm._v("Phone : 021-5695-4670")])
+            ])
           ])
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "container mt-4" },
-        [
-          _c(
-            "form-wizard",
-            {
-              attrs: {
-                title: "Form Perhitungan Kredit",
-                subtitle: "And a new subtitle"
-              }
-            },
-            [
-              _c(
-                "tab-content",
-                {
-                  attrs: {
-                    title: "Pilih Kredit yang diinginkan",
-                    icon: "fa fa-car"
-                  }
-                },
-                [
-                  _c(
-                    "div",
-                    { staticClass: "container mt-4" },
-                    [
-                      _c("h4", { staticClass: "text-secondary" }, [
-                        _c(
-                          "div",
-                          {
-                            staticClass: "iconbox iconsmall rounded-circle mr-2"
-                          },
-                          [_c("i", { staticClass: "fas fa-coins" })]
-                        ),
-                        _vm._v(
-                          "Perhitungan Kredit yang di inginkan\n            "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "b-container",
-                        { staticClass: "bv-example-row mb-4 mt-4" },
-                        [
-                          _c(
-                            "b-card-group",
-                            { attrs: { deck: "" } },
-                            [
-                              _c(
-                                "b-link",
-                                {
-                                  staticClass: "card text-white",
-                                  class:
-                                    _vm.form.jenisSimulasi == 1
-                                      ? "bg-primary overlay shadow-lg"
-                                      : "bg-dark",
-                                  attrs: { href: "#" },
-                                  on: {
-                                    click: function($event) {
-                                      $event.preventDefault()
-                                      return _vm.pilihJenisSimulasi(1)
-                                    }
-                                  }
-                                },
-                                [
-                                  _c("b-card-body", [
-                                    _c("h4", [
-                                      _vm._v(
-                                        "\n                      Budget\n                      "
-                                      ),
-                                      _c(
-                                        "span",
-                                        { staticClass: "float-right" },
-                                        [
-                                          _c("i", {
-                                            staticClass: "fas fa-coins"
-                                          })
-                                        ]
-                                      )
-                                    ])
-                                  ])
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "b-link",
-                                {
-                                  staticClass: "card text-white",
-                                  class:
-                                    _vm.form.jenisSimulasi == 2
-                                      ? "bg-primary overlay shadow-lg"
-                                      : "bg-dark",
-                                  attrs: { href: "#" },
-                                  on: {
-                                    click: function($event) {
-                                      $event.preventDefault()
-                                      return _vm.pilihJenisSimulasi(2)
-                                    }
-                                  }
-                                },
-                                [
-                                  _c("b-card-body", [
-                                    _c("h4", [
-                                      _vm._v(
-                                        "\n                      Kredit\n                      "
-                                      ),
-                                      _c(
-                                        "span",
-                                        { staticClass: "float-right" },
-                                        [
-                                          _c("i", {
-                                            staticClass:
-                                              "fas fa-money-bill-wave"
-                                          })
-                                        ]
-                                      )
-                                    ])
-                                  ])
-                                ],
-                                1
-                              )
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      )
-                    ],
-                    1
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "tab-content",
-                { attrs: { title: "Data Simulasi", icon: "fas fa-file-alt" } },
-                [
-                  _c("b-form", { staticClass: "mt-4" }, [
-                    _vm.form.jenisSimulasi == 1
-                      ? _c(
-                          "div",
-                          [
-                            _c(
-                              "b-form-group",
-                              {
-                                attrs: {
-                                  id: "input-group-2",
-                                  label: "TJH:",
-                                  "label-for": "input-2"
-                                }
-                              },
-                              [
-                                _c("b-form-select", {
-                                  attrs: {
-                                    id: "input-2",
-                                    options: _vm.itemtjh,
-                                    required: ""
-                                  },
-                                  model: {
-                                    value: _vm.form.tjh,
-                                    callback: function($$v) {
-                                      _vm.$set(_vm.form, "tjh", $$v)
-                                    },
-                                    expression: "form.tjh"
-                                  }
-                                })
-                              ],
-                              1
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "b-form-group",
-                              {
-                                attrs: {
-                                  id: "input-group-3",
-                                  label: "Jenis Simulasi Budget:",
-                                  "label-for": "input-3"
-                                }
-                              },
-                              [
-                                _c("b-form-select", {
-                                  attrs: {
-                                    id: "input-3",
-                                    options: _vm.itembudget,
-                                    required: ""
-                                  },
-                                  model: {
-                                    value: _vm.form.jenisBudget,
-                                    callback: function($$v) {
-                                      _vm.$set(_vm.form, "jenisBudget", $$v)
-                                    },
-                                    expression: "form.jenisBudget"
-                                  }
-                                })
-                              ],
-                              1
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "b-form-group",
-                              {
-                                attrs: {
-                                  id: "input-group-1",
-                                  label: "Email address:",
-                                  "label-for": "input-1",
-                                  description:
-                                    "We'll never share your email with anyone else."
-                                }
-                              },
-                              [
-                                _c("b-form-input", {
-                                  attrs: {
-                                    id: "input-1",
-                                    type: "email",
-                                    required: "",
-                                    placeholder: "Enter email"
-                                  },
-                                  model: {
-                                    value: _vm.form.email,
-                                    callback: function($$v) {
-                                      _vm.$set(_vm.form, "email", $$v)
-                                    },
-                                    expression: "form.email"
-                                  }
-                                })
-                              ],
-                              1
-                            )
-                          ],
-                          1
-                        )
-                      : _vm.form.jenisSimulasi == 2
-                      ? _c(
-                          "div",
-                          [
-                            _c(
-                              "b-form-group",
-                              {
-                                attrs: {
-                                  id: "input-group-2",
-                                  label: "Your Name:",
-                                  "label-for": "input-2"
-                                }
-                              },
-                              [
-                                _c("b-form-input", {
-                                  attrs: {
-                                    id: "input-2",
-                                    required: "",
-                                    placeholder: "Enter name"
-                                  },
-                                  model: {
-                                    value: _vm.form.name,
-                                    callback: function($$v) {
-                                      _vm.$set(_vm.form, "name", $$v)
-                                    },
-                                    expression: "form.name"
-                                  }
-                                })
-                              ],
-                              1
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "b-form-group",
-                              { attrs: { id: "input-group-4" } },
-                              [
-                                _c(
-                                  "b-form-checkbox-group",
-                                  {
-                                    attrs: { id: "checkboxes-4" },
-                                    model: {
-                                      value: _vm.form.checked,
-                                      callback: function($$v) {
-                                        _vm.$set(_vm.form, "checked", $$v)
-                                      },
-                                      expression: "form.checked"
-                                    }
-                                  },
-                                  [
-                                    _c(
-                                      "b-form-checkbox",
-                                      { attrs: { value: "me" } },
-                                      [_vm._v("Check me out")]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "b-form-checkbox",
-                                      { attrs: { value: "that" } },
-                                      [_vm._v("Check that out")]
-                                    )
-                                  ],
-                                  1
-                                )
-                              ],
-                              1
-                            )
-                          ],
-                          1
-                        )
-                      : _vm._e()
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "tab-content",
-                {
-                  attrs: {
-                    title: "Data Diri Pengaju Kredit",
-                    icon: "fas fa-id-card"
-                  }
-                },
-                [_vm._v("My second tab content")]
-              ),
-              _vm._v(" "),
-              _c(
-                "tab-content",
-                {
-                  attrs: {
-                    title: "Rangkuman Biaya Kredit",
-                    icon: "fas fa-money-check"
-                  }
-                },
-                [_vm._v("Yuhuuu! This seems pretty damn simple")]
-              ),
-              _vm._v(" "),
-              _c(
-                "b-button",
-                { attrs: { slot: "prev", variant: "danger" }, slot: "prev" },
-                [_vm._v("Prev")]
-              ),
-              _vm._v(" "),
-              _c(
-                "b-button",
-                {
-                  attrs: {
-                    slot: "next",
-                    variant: "success",
-                    disabled: !_vm.form.jenisSimulasi
-                  },
-                  slot: "next"
-                },
-                [_vm._v("Next")]
-              ),
-              _vm._v(" "),
-              _c(
-                "b-button",
-                {
-                  attrs: { slot: "finish", variant: "outline-primary" },
-                  slot: "finish"
-                },
-                [_vm._v("Finish")]
-              )
-            ],
-            1
-          )
-        ],
-        1
-      )
+        ])
+      ])
     ])
   ])
 }
@@ -1755,9 +1303,13 @@ var staticRenderFns = [
               _c("i", { staticClass: "fas fa-copyright text-white" }),
               _vm._v(" "),
               _c("br"),
-              _vm._v("\n          2021 PT. Sinarmas Hana Finance\n          "),
+              _vm._v(
+                "\n                    2020 PT. Sinarmas Hana Finance\n                    "
+              ),
               _c("br"),
-              _vm._v("\n          registered and supervised by\n          ")
+              _vm._v(
+                "\n                    registered and supervised by\n                "
+              )
             ]),
             _vm._v(" "),
             _c("img", { attrs: { src: "/img/ojk-icon.bmp" } })
@@ -2244,18 +1796,18 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Product/SimulasiKredit/index.vue":
-/*!*************************************************************!*\
-  !*** ./resources/js/Pages/Product/SimulasiKredit/index.vue ***!
-  \*************************************************************/
+/***/ "./resources/js/Pages/Contact/index.vue":
+/*!**********************************************!*\
+  !*** ./resources/js/Pages/Contact/index.vue ***!
+  \**********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _index_vue_vue_type_template_id_4b74e8c6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.vue?vue&type=template&id=4b74e8c6& */ "./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=template&id=4b74e8c6&");
-/* harmony import */ var _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _index_vue_vue_type_template_id_6c9f31ca___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.vue?vue&type=template&id=6c9f31ca& */ "./resources/js/Pages/Contact/index.vue?vue&type=template&id=6c9f31ca&");
+/* harmony import */ var _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Contact/index.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -2265,8 +1817,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _index_vue_vue_type_template_id_4b74e8c6___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _index_vue_vue_type_template_id_4b74e8c6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _index_vue_vue_type_template_id_6c9f31ca___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _index_vue_vue_type_template_id_6c9f31ca___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -2276,38 +1828,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/Pages/Product/SimulasiKredit/index.vue"
+component.options.__file = "resources/js/Pages/Contact/index.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=script&lang=js&":
-/*!**************************************************************************************!*\
-  !*** ./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=script&lang=js& ***!
-  \**************************************************************************************/
+/***/ "./resources/js/Pages/Contact/index.vue?vue&type=script&lang=js&":
+/*!***********************************************************************!*\
+  !*** ./resources/js/Pages/Contact/index.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Contact/index.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=template&id=4b74e8c6&":
-/*!********************************************************************************************!*\
-  !*** ./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=template&id=4b74e8c6& ***!
-  \********************************************************************************************/
+/***/ "./resources/js/Pages/Contact/index.vue?vue&type=template&id=6c9f31ca&":
+/*!*****************************************************************************!*\
+  !*** ./resources/js/Pages/Contact/index.vue?vue&type=template&id=6c9f31ca& ***!
+  \*****************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_4b74e8c6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=template&id=4b74e8c6& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=template&id=4b74e8c6&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_4b74e8c6___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_6c9f31ca___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=template&id=6c9f31ca& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Contact/index.vue?vue&type=template&id=6c9f31ca&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_6c9f31ca___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_4b74e8c6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_6c9f31ca___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
