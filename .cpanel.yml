@@ -1,0 +1,5 @@
+---
+deployment:
+tasks:
+  - export DEPLOYPATH=/home/shfcoid/webdev.shf.co.id
+  - /bin/cp -r * $DEPLOYPATH
