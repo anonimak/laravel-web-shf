@@ -104,7 +104,8 @@
               isRoute(
                 'profile.about',
                 'profile.visimisi',
-                'profile.teammanagement'
+                'profile.teammanagement',
+                'profile.pemegangsaham'
               )
                 ? 'nav-item dropdown active'
                 : 'nav-item dropdown'
@@ -152,7 +153,15 @@
                 "
                 >Team Management & Structure</inertia-link
               >
-              <a class="dropdown-item" href="./login.html">Pemegang Saham</a>
+              <inertia-link
+                :href="route('profile.pemegangsaham')"
+                :class="
+                  isRoute('profile.pemegangsaham')
+                    ? 'dropdown-item active'
+                    : 'dropdown-item'
+                "
+                >Pemegang Saham</inertia-link
+              >
               <a class="dropdown-item" href="./blog.html"
                 >Tanggung Jawab Sosial</a
               >

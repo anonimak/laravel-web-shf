@@ -6,7 +6,7 @@
 - buat faq.
 - galeri sinarmas on hover gambar resize.
 - nilai perusahaan.
-- hubungan investor & pemegang saham.
+- hubungan investor & pemegang saham (oke).
 
 
 

@@ -48,7 +48,8 @@ Route::get('product/umrah', 'Product\Umrah@index')->name('umrah')->middleware('g
 // profil
 Route::get('profile/about', 'Profile\AboutController@index')->name('profile.about')->middleware('guest');
 Route::get('profile/visi-misi', 'Profile\VisiController@index')->name('profile.visimisi')->middleware('guest');
-Route::get('profile/team-management', 'Profile\TeamManagement@index')->name('profile.teammanagement')->middleware('guest');
+Route::get('profile/team-management', 'Profile\TeamManagementController@index')->name('profile.teammanagement')->middleware('guest');
+Route::get('profile/pemegang-saham', 'Profile\PemegangSahamController@index')->name('profile.pemegangsaham')->middleware('guest');
 
 
 

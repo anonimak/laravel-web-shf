@@ -838,6 +838,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -4311,7 +4320,8 @@ var render = function() {
                     class: _vm.isRoute(
                       "profile.about",
                       "profile.visimisi",
-                      "profile.teammanagement"
+                      "profile.teammanagement",
+                      "profile.pemegangsaham"
                     )
                       ? "nav-item dropdown active"
                       : "nav-item dropdown"
@@ -4383,10 +4393,12 @@ var render = function() {
                         ),
                         _vm._v(" "),
                         _c(
-                          "a",
+                          "inertia-link",
                           {
-                            staticClass: "dropdown-item",
-                            attrs: { href: "./login.html" }
+                            class: _vm.isRoute("profile.pemegangsaham")
+                              ? "dropdown-item active"
+                              : "dropdown-item",
+                            attrs: { href: _vm.route("profile.pemegangsaham") }
                           },
                           [_vm._v("Pemegang Saham")]
                         ),
