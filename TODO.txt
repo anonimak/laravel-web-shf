@@ -1,0 +1,12 @@
+- footer disamakan. (oke)
+- link ke form pengajuan dari setiap produk (oke).
+- buat component modal form pengajuan (oke).
+- buat kontak kami.
+- berita di hide dulu.
+- buat faq.
+- galeri sinarmas on hover gambar resize.
+- nilai perusahaan.
+- hubungan investor & pemegang saham.
+
+
+
