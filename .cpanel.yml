@@ -2,7 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/shfcoid/webdev.shf.co.id/
-    - /bin/cp -R public $DEPLOYPATH/
-    #    - /bin/cp -r ./public/* $DEPLOYPATH/
-    #- /bin/cp ./public/js/*.js $DEPLOYPATH/js
-    #- /bin/cp ./public/css/*.css $DEPLOYPATH/css
+    - /bin/cp -R public $DEPLOYPATH
