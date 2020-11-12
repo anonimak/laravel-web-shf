@@ -22,7 +22,7 @@
               </b-tab>
               <b-tab title="Pemegang Saham Pengendali">
                 <img
-                  src="/Img/pemegang-saham/pemegang-saham.png"
+                  src="/img/pemegang-saham/pemegang-saham.png"
                   alt=""
                   class="my-4"
                   width="100%"
