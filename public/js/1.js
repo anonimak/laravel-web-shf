@@ -422,6 +422,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
  //import layouts
 
 
@@ -467,6 +476,7 @@ __webpack_require__.r(__webpack_exports__);
         image: "/img/demo/blog2.jpg",
         id_category: 3
       }],
+      listNew: null,
       filteredPeople: [{
         id: 1,
         link: "a",
@@ -494,19 +504,19 @@ __webpack_require__.r(__webpack_exports__);
       }],
       listGalery: [{
         id: 1,
-        src: "https://shf.co.id/wp-content/uploads/2020/02/rakernas-shf-kantor-pusat-leasing-kredit-mobil-dan-pinjaman-dana-online-600x338.jpg"
+        src: "/img/galeri/rakernas-shf-kantor-pusat-leasing-kredit-mobil-dan-pinjaman-dana-online-1280x720.jpg"
       }, {
         id: 2,
-        src: "https://shf.co.id/wp-content/uploads/2020/02/ulang-tahun-shf-kantor-pusat-leasing-kredit-mobil-dan-pinjaman-dana-online-600x338.jpg"
+        src: "/img/galeri/ulang-tahun-shf-kantor-pusat-leasing-kredit-mobil-dan-pinjaman-dana-online-1280x720.jpg"
       }, {
         id: 3,
-        src: "https://shf.co.id/wp-content/uploads/2020/02/mr-yoon-visit-shf-perusahaan-leasing-kredit-mobil-dan-pinjaman-dana-online-600x338.jpg"
+        src: "/img/galeri/mr-yoon-visit-shf-perusahaan-leasing-kredit-mobil-dan-pinjaman-dana-online-1280x720.jpg"
       }, {
         id: 4,
-        src: "http://shf.co.id/wp-content/uploads/2020/02/mr-yoon-visit-shf-kantor-pusat-leasing-kredit-mobil-dan-pinjaman-dana-online-600x338.jpg"
+        src: "/img/galeri/mr-yoon-visit-shf-kantor-pusat-leasing-kredit-mobil-dan-pinjaman-dana-online-1280x720.jpg"
       }, {
         id: 5,
-        src: "https://shf.co.id/wp-content/uploads/2019/10/IMG_4173-resize-600x338.png"
+        src: "/img/galeri/IMG_4173-resize-1280x720.png"
       }]
     };
   },
@@ -1587,20 +1597,6 @@ var render = function() {
               attrs: { "data-aos": "fade-down" }
             },
             [
-              _c("div", { staticClass: "pb-5 pt-3 text-center" }, [
-                _c("h2", [
-                  _vm._v("\n              Predictive and\n              "),
-                  _c("strong", [_vm._v("imperative approach")]),
-                  _vm._v(" towards application.\n            ")
-                ]),
-                _vm._v(" "),
-                _c("p", { staticClass: "text-muted" }, [
-                  _vm._v(
-                    "\n              It’s a social collaboration trello software platform that\n              employees really love to use, with rich personalized interface\n            "
-                  )
-                ])
-              ]),
-              _vm._v(" "),
               _c(
                 "div",
                 { staticClass: "container card-deck card-pricing text-center" },
@@ -1629,7 +1625,12 @@ var render = function() {
                   staticClass: "col-md-6 order-md-1",
                   attrs: { "data-aos": "fade-down" }
                 },
-                [_c("calculator-svg", { staticClass: "m-auto d-block" })],
+                [
+                  _c("calculator-svg", {
+                    staticClass: "m-auto d-block",
+                    attrs: { width: "100%" }
+                  })
+                ],
                 1
               ),
               _vm._v(" "),
@@ -1759,7 +1760,7 @@ var render = function() {
                         "inertia-link",
                         {
                           staticClass: "btn btn-outline-dark",
-                          attrs: { href: "/" }
+                          attrs: { href: _vm.route("simulasikredit") }
                         },
                         [_vm._v("Simulasi")]
                       )
@@ -1781,7 +1782,12 @@ var render = function() {
                   staticClass: "col-md-6 order-md-2",
                   attrs: { "data-aos": "fade-down" }
                 },
-                [_c("profile-svg", { staticClass: "m-auto d-block" })],
+                [
+                  _c("profile-svg", {
+                    staticClass: "m-auto d-block",
+                    attrs: { width: "100%" }
+                  })
+                ],
                 1
               ),
               _vm._v(" "),
@@ -1817,7 +1823,12 @@ var render = function() {
                   staticClass: "col-md-6 order-md-1",
                   attrs: { "data-aos": "fade-down" }
                 },
-                [_c("vehicle-svg", { staticClass: "m-auto d-block" })],
+                [
+                  _c("vehicle-svg", {
+                    staticClass: "m-auto d-block",
+                    attrs: { width: "100%" }
+                  })
+                ],
                 1
               ),
               _vm._v(" "),
@@ -1877,157 +1888,35 @@ var render = function() {
               _c(
                 "div",
                 { staticClass: "row" },
-                [
-                  _vm._l(_vm.listNews, function(item) {
-                    return _c(
-                      "div",
-                      { key: item.id, staticClass: "col-lg-6" },
-                      [
-                        _c("card-news", {
-                          attrs: {
-                            itemid: item.id,
-                            title: item.title,
-                            date: item.created_at,
-                            content: item.content,
-                            category: item.category,
-                            image: item.image
-                          }
-                        })
-                      ],
-                      1
-                    )
-                  }),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-lg-6" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass: "card flex-md-row mb-4 box-shadow h-xl-300"
-                      },
-                      [
-                        _c(
-                          "div",
-                          {
-                            staticClass:
-                              "card-body d-flex flex-column align-items-start"
-                          },
-                          [
-                            _c(
-                              "strong",
-                              {
-                                staticClass: "d-inline-block mb-2 text-purple"
-                              },
-                              [_vm._v("Business")]
-                            ),
-                            _vm._v(" "),
-                            _c("h3", { staticClass: "mb-0" }, [
-                              _c(
-                                "a",
-                                {
-                                  staticClass: "text-dark",
-                                  attrs: { href: "#" }
-                                },
-                                [_vm._v("Living the Dream on a Sunny Island")]
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "mb-1 text-muted" }, [
-                              _vm._v("Nov 12")
-                            ]),
-                            _vm._v(" "),
-                            _c("p", { staticClass: "card-text mb-auto" }, [
-                              _vm._v(
-                                "\n                    This is a wider card with supporting text below as a natural\n                    lead-in to additional content.\n                  "
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c(
-                              "a",
-                              {
-                                staticClass: "text-gray",
-                                attrs: { href: "#" }
-                              },
-                              [_vm._v("Continue reading")]
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c("img", {
-                          staticClass:
-                            "card-img-right flex-auto d-none d-md-block",
-                          attrs: { src: "/img/demo/blog1.jpg" }
-                        })
-                      ]
-                    )
-                  ]),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-lg-6" }, [
-                    _c(
-                      "div",
-                      {
-                        staticClass: "card flex-md-row mb-4 box-shadow h-xl-300"
-                      },
-                      [
-                        _c(
-                          "div",
-                          {
-                            staticClass:
-                              "card-body d-flex flex-column align-items-start"
-                          },
-                          [
-                            _c(
-                              "strong",
-                              {
-                                staticClass: "d-inline-block mb-2 text-success"
-                              },
-                              [_vm._v("Marketing")]
-                            ),
-                            _vm._v(" "),
-                            _c("h3", { staticClass: "mb-0" }, [
-                              _c(
-                                "a",
-                                {
-                                  staticClass: "text-dark",
-                                  attrs: { href: "#" }
-                                },
-                                [_vm._v("Why your marketing can be improved")]
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c("div", { staticClass: "mb-1 text-muted" }, [
-                              _vm._v("Nov 12")
-                            ]),
-                            _vm._v(" "),
-                            _c("p", { staticClass: "card-text mb-auto" }, [
-                              _vm._v(
-                                "\n                    This is a wider card with supporting text below as a natural\n                    lead-in to additional content.\n                  "
-                              )
-                            ]),
-                            _vm._v(" "),
-                            _c(
-                              "a",
-                              {
-                                staticClass: "text-gray",
-                                attrs: { href: "#" }
-                              },
-                              [_vm._v("Continue reading")]
-                            )
-                          ]
-                        ),
-                        _vm._v(" "),
-                        _c("img", {
-                          staticClass:
-                            "card-img-right flex-auto d-none d-md-block",
-                          attrs: { src: "/img/demo/blog2.jpg" }
-                        })
-                      ]
-                    )
-                  ])
-                ],
-                2
+                _vm._l(_vm.listNew, function(item) {
+                  return _c(
+                    "div",
+                    { key: item.id, staticClass: "col-lg-6" },
+                    [
+                      _c("card-news", {
+                        attrs: {
+                          itemid: item.id,
+                          title: item.title,
+                          date: item.created_at,
+                          content: item.content,
+                          category: item.category,
+                          image: item.image
+                        }
+                      })
+                    ],
+                    1
+                  )
+                }),
+                0
               ),
               _vm._v(" "),
-              _c("p", [_vm._v("Semua Berita")])
+              _vm.listNew == null
+                ? _c("p", { staticClass: "text-muted" }, [
+                    _vm._v(
+                      "\n            Saat ini berita belum tersedia\n          "
+                    )
+                  ])
+                : _vm._e()
             ])
           ]
         ),
@@ -2060,7 +1949,15 @@ var render = function() {
                   )
                 }),
                 0
-              )
+              ),
+              _vm._v(" "),
+              _vm.list == null
+                ? _c("p", { staticClass: "text-muted" }, [
+                    _vm._v(
+                      "\n            Saat ini promo belum tersedia\n          "
+                    )
+                  ])
+                : _vm._e()
             ])
           ]
         ),
@@ -8096,15 +7993,6 @@ var render = function() {
                         ),
                         _vm._v(" "),
                         _c(
-                          "a",
-                          {
-                            staticClass: "dropdown-item",
-                            attrs: { href: "./landing.html" }
-                          },
-                          [_vm._v("Strategi Perusahaan")]
-                        ),
-                        _vm._v(" "),
-                        _c(
                           "inertia-link",
                           {
                             class: _vm.isRoute("profile.teammanagement")
@@ -8124,24 +8012,6 @@ var render = function() {
                             attrs: { href: _vm.route("profile.pemegangsaham") }
                           },
                           [_vm._v("Pemegang Saham")]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "a",
-                          {
-                            staticClass: "dropdown-item",
-                            attrs: { href: "./blog.html" }
-                          },
-                          [_vm._v("Tanggung Jawab Sosial")]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "a",
-                          {
-                            staticClass: "dropdown-item",
-                            attrs: { href: "./page.html" }
-                          },
-                          [_vm._v("Penghargaan")]
                         )
                       ],
                       1

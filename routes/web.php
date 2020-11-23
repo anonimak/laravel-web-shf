@@ -103,7 +103,7 @@ Route::get('admin/setting/meta', 'Admin\CfgHomeController@index')
     ->name('admin.setting.meta')
     ->middleware('auth', 'is_admin');
 
-Route::get('admin/setting/system', 'Admin\CfgHomeController@index')
+Route::get('admin/setting/system', 'Admin\SystemController@index')
     ->name('admin.setting.system')
     ->middleware('auth', 'is_admin');
 // Route::get('/home', 'HomeController@index')->name('home');

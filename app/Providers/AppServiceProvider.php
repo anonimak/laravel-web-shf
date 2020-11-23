@@ -100,7 +100,7 @@ class AppServiceProvider extends ServiceProvider
                 }
                 public function links($view = null, $data = [])
                 {
-                    $this->appends(Request::all());
+                    $this->appends(Request::except('__config'));
                     $window = UrlWindow::make($this);
                     $elements = array_filter([
                         $window['first'],

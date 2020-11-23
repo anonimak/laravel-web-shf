@@ -7,7 +7,9 @@ import "hover.css/css/hover-min.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import { InertiaApp } from "@inertiajs/inertia-vue";
+import {
+    InertiaApp
+} from "@inertiajs/inertia-vue";
 
 import Vue from "vue";
 
@@ -27,6 +29,10 @@ import VueParticles from "vue-particles";
 
 
 import fullscreen from "vue-fullscreen";
+
+// untuk handle cookies
+// import VueCookies from 'vue-cookies'
+
 
 // untuk moment js
 const moment = require("moment");
@@ -56,6 +62,9 @@ Vue.use(InertiaApp);
 
 // untuk fullscreen
 Vue.use(fullscreen);
+
+// untuk cookies
+// Vue.use(VueCookies);
 
 Vue.mixin(require("./base"));
 

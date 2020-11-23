@@ -141,9 +141,9 @@
                 "
                 >Visi, Misi & Nilai</inertia-link
               >
-              <a class="dropdown-item" href="./landing.html"
+              <!-- <a class="dropdown-item" href="./landing.html"
                 >Strategi Perusahaan</a
-              >
+              > -->
               <inertia-link
                 :href="route('profile.teammanagement')"
                 :class="
@@ -162,10 +162,10 @@
                 "
                 >Pemegang Saham</inertia-link
               >
-              <a class="dropdown-item" href="./blog.html"
+              <!-- <a class="dropdown-item" href="./blog.html"
                 >Tanggung Jawab Sosial</a
               >
-              <a class="dropdown-item" href="./page.html">Penghargaan</a>
+              <a class="dropdown-item" href="./page.html">Penghargaan</a> -->
             </div>
           </li>
           <li

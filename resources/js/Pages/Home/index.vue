@@ -26,7 +26,7 @@
       <!-- Section Product -->
       <section>
         <div class="pt-4 pb-4 bg-info" data-aos="fade-down">
-          <div class="pb-5 pt-3 text-center">
+          <!-- <div class="pb-5 pt-3 text-center">
             <h2>
               Predictive and
               <strong>imperative approach</strong> towards application.
@@ -35,7 +35,7 @@
               It’s a social collaboration trello software platform that
               employees really love to use, with rich personalized interface
             </p>
-          </div>
+          </div> -->
           <div class="container card-deck card-pricing text-center">
             <card-product
               v-for="item in bannerProducts"
@@ -53,7 +53,7 @@
         <div class="pb-3 pt-5 container">
           <div class="row row-grid align-items-center">
             <div class="col-md-6 order-md-1" data-aos="fade-down">
-              <calculator-svg class="m-auto d-block" />
+              <calculator-svg class="m-auto d-block" width="100%" />
             </div>
             <div class="col-md-6 order-md-2" data-aos="fade-right">
               <div class="pr-md-5">
@@ -122,7 +122,9 @@
                     </div>
                   </li>
                 </ul>
-                <inertia-link class="btn btn-outline-dark" href="/"
+                <inertia-link
+                  class="btn btn-outline-dark"
+                  :href="route('simulasikredit')"
                   >Simulasi</inertia-link
                 >
               </div>
@@ -136,7 +138,7 @@
         <div class="pb-3 pt-5 container">
           <div class="row row-grid align-items-center">
             <div class="col-md-6 order-md-2" data-aos="fade-down">
-              <profile-svg class="m-auto d-block" />
+              <profile-svg class="m-auto d-block" width="100%" />
             </div>
             <div class="col-md-6 order-md-1" data-aos="fade-right">
               <div class="pr-md-5">
@@ -162,14 +164,18 @@
         <div class="container">
           <div class="row row-grid align-items-center">
             <div class="col-md-6 order-md-1" data-aos="fade-down">
-              <vehicle-svg class="m-auto d-block" />
+              <vehicle-svg class="m-auto d-block" width="100%" />
             </div>
             <div class="col-md-6 order-md-2" data-aos="fade-left">
               <div class="pr-md-5">
                 <h3>
                   <strong>Produk Pembiayaan Sinarmas Hana Finance</strong>
                 </h3>
-                <b-button  class="btn text-white bg-primary" v-b-modal.modal-pengajuan>Pengajuan Online</b-button>
+                <b-button
+                  class="btn text-white bg-primary"
+                  v-b-modal.modal-pengajuan
+                  >Pengajuan Online</b-button
+                >
               </div>
             </div>
           </div>
@@ -188,7 +194,7 @@
           </div>
           <!-- Featured -->
           <div class="row">
-            <div class="col-lg-6" v-for="item in listNews" :key="item.id">
+            <div class="col-lg-6" v-for="item in listNew" :key="item.id">
               <card-news
                 :itemid="item.id"
                 :title="item.title"
@@ -198,7 +204,7 @@
                 :image="item.image"
               />
             </div>
-            <div class="col-lg-6">
+            <!-- <div class="col-lg-6">
               <div class="card flex-md-row mb-4 box-shadow h-xl-300">
                 <div class="card-body d-flex flex-column align-items-start">
                   <strong class="d-inline-block mb-2 text-purple"
@@ -245,9 +251,11 @@
                   src="/img/demo/blog2.jpg"
                 />
               </div>
-            </div>
+            </div> -->
           </div>
-          <p>Semua Berita</p>
+          <p class="text-muted" v-if="listNew == null">
+            Saat ini berita belum tersedia
+          </p>
         </div>
       </section>
 
@@ -271,6 +279,9 @@
               <card-promo :itemImage="list" />
             </div>
           </div>
+          <p class="text-muted" v-if="list == null">
+            Saat ini promo belum tersedia
+          </p>
           <!-- End Blog Cards -->
         </div>
       </section>
@@ -391,12 +402,10 @@ FEATURES
           </div>
         </div>
       </div> -->
-    
 
-
-    <!-- modal pengajuan -->
-      <modal-form-pengajuan/>
-    <!-- end modal pengajuan -->
+      <!-- modal pengajuan -->
+      <modal-form-pengajuan />
+      <!-- end modal pengajuan -->
     </div>
   </Layout>
 </template>
@@ -425,7 +434,7 @@ export default {
     CardNews,
     carousel,
     CardPromo,
-    ModalFormPengajuan
+    ModalFormPengajuan,
   },
   metaInfo: { title: "Beranda" },
   data() {
@@ -452,6 +461,7 @@ export default {
           id_category: 3,
         },
       ],
+      listNew: null,
       filteredPeople: [
         { id: 1, link: "a", hovertext: "coba coba" },
         { id: 2, link: "b", hovertext: "jkhk kjhkkj" },
@@ -480,27 +490,26 @@ export default {
         {
           id: 1,
           src:
-            "https://shf.co.id/wp-content/uploads/2020/02/rakernas-shf-kantor-pusat-leasing-kredit-mobil-dan-pinjaman-dana-online-600x338.jpg",
+            "/img/galeri/rakernas-shf-kantor-pusat-leasing-kredit-mobil-dan-pinjaman-dana-online-1280x720.jpg",
         },
         {
           id: 2,
           src:
-            "https://shf.co.id/wp-content/uploads/2020/02/ulang-tahun-shf-kantor-pusat-leasing-kredit-mobil-dan-pinjaman-dana-online-600x338.jpg",
+            "/img/galeri/ulang-tahun-shf-kantor-pusat-leasing-kredit-mobil-dan-pinjaman-dana-online-1280x720.jpg",
         },
         {
           id: 3,
           src:
-            "https://shf.co.id/wp-content/uploads/2020/02/mr-yoon-visit-shf-perusahaan-leasing-kredit-mobil-dan-pinjaman-dana-online-600x338.jpg",
+            "/img/galeri/mr-yoon-visit-shf-perusahaan-leasing-kredit-mobil-dan-pinjaman-dana-online-1280x720.jpg",
         },
         {
           id: 4,
           src:
-            "http://shf.co.id/wp-content/uploads/2020/02/mr-yoon-visit-shf-kantor-pusat-leasing-kredit-mobil-dan-pinjaman-dana-online-600x338.jpg",
+            "/img/galeri/mr-yoon-visit-shf-kantor-pusat-leasing-kredit-mobil-dan-pinjaman-dana-online-1280x720.jpg",
         },
         {
           id: 5,
-          src:
-            "https://shf.co.id/wp-content/uploads/2019/10/IMG_4173-resize-600x338.png",
+          src: "/img/galeri/IMG_4173-resize-1280x720.png",
         },
       ],
     };

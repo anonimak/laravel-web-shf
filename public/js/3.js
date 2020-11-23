@@ -4468,15 +4468,6 @@ var render = function() {
                         ),
                         _vm._v(" "),
                         _c(
-                          "a",
-                          {
-                            staticClass: "dropdown-item",
-                            attrs: { href: "./landing.html" }
-                          },
-                          [_vm._v("Strategi Perusahaan")]
-                        ),
-                        _vm._v(" "),
-                        _c(
                           "inertia-link",
                           {
                             class: _vm.isRoute("profile.teammanagement")
@@ -4496,24 +4487,6 @@ var render = function() {
                             attrs: { href: _vm.route("profile.pemegangsaham") }
                           },
                           [_vm._v("Pemegang Saham")]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "a",
-                          {
-                            staticClass: "dropdown-item",
-                            attrs: { href: "./blog.html" }
-                          },
-                          [_vm._v("Tanggung Jawab Sosial")]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "a",
-                          {
-                            staticClass: "dropdown-item",
-                            attrs: { href: "./page.html" }
-                          },
-                          [_vm._v("Penghargaan")]
                         )
                       ],
                       1
