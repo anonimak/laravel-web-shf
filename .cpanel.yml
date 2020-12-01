@@ -1,9 +1,9 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/shfcoid/webdev.shf.co.id/
-    - export DESTPATH=/home/shfcoid/public_html
-    - /bin/rm -rf !(".htaccess"|"index.php") $DESTPATH/*
+    - export DEPLOYPATH=/home/shfcoid/public_html
+    # - export DESTPATH=/home/shfcoid/public_html
+    - /bin/rm -rf !(".htaccess"|"index.php") $DEPLOYPATH/*
     - /bin/cp -r * !(".htaccess"|"index.php") $DEPLOYPATH #copy all from root
     #    - /bin/cp -r ./public/* $DEPLOYPATH/
     #- /bin/cp ./public/js/*.js $DEPLOYPATH/js
