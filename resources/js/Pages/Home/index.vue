@@ -146,10 +146,10 @@
                   <strong>Sinarmas Hana Finance</strong>
                 </h3>
                 <p>
-                  <strong>Sinarmas Hana Finance</strong> Adalah perusahaan joint
+                  <strong>Sinarmas Hana Finance</strong> adalah perusahaan joint
                   venture antara PT Sinar Mas Multiartha Tbk dengan Hana
                   Financial Group yang berbasis di Korea Selatan. Perusahaan
-                  mendapatkan surat izin usaha dari Otoritas jasa Keuangan (OJK)
+                  mendapatkan surat izin usaha dari Otoritas Jasa Keuangan (OJK)
                   pada tanggal 18 November 2015 dan telah menjalankan bisnisnya
                   di bidang pembiayaan kendaraan roda 4 (Mobil).
                 </p>
@@ -169,7 +169,10 @@
             <div class="col-md-6 order-md-2" data-aos="fade-left">
               <div class="pr-md-5">
                 <h3>
-                  <strong>Produk Pembiayaan Sinarmas Hana Finance</strong>
+                  <strong
+                    >Produk Pembiayaan <br />
+                    Sinarmas Hana Finance</strong
+                  >
                 </h3>
                 <b-button
                   class="btn text-white bg-primary"
@@ -479,12 +482,12 @@ export default {
           title: "Pinjaman Dana",
           link: "pinjamandana",
         },
-        {
-          id: 3,
-          imgSrc: "/img/demo/product3.png",
-          title: "Pembiayaan Umrah",
-          link: "umrah",
-        },
+        // {
+        //   id: 3,
+        //   imgSrc: "/img/demo/product3.png",
+        //   title: "Pembiayaan Umrah",
+        //   link: "umrah",
+        // },
       ],
       listGalery: [
         {

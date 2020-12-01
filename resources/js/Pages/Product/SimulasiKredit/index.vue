@@ -10,10 +10,10 @@
             class="d-lg-flex align-items-center justify-content-between text-center pl-lg-5"
           >
             <div class="col pt-2 pb-4">
-              <h1 class="display-3">Kredit &amp; Simulasi</h1>
+              <h1 class="display-3">Kredit Simulasi</h1>
               <h5 class="font-weight-light mb-4">
-                Gunakan Kalkulator Pintar untuk membantu perhitungan kredit
-                anda.
+                Gunakan kalkulator pintar untuk membantu perhitungan kredit
+                Anda.
               </h5>
             </div>
             <div class="col align-self-bottom justify-content-center">

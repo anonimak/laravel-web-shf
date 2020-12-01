@@ -1,8 +1,18 @@
 
 <template>
   <div>
-    <div data-aos="flip-left" class="card-header border-0 pt-4 pb-4" :class="background">
-      <h3 data-aos="fade-in" class="my-0 font-weight-normal mb-3" :class="titleColor">{{title}}</h3>
+    <div
+      data-aos="flip-left"
+      class="card-header border-0 pt-4 pb-4"
+      :class="background"
+    >
+      <h3
+        data-aos="fade-in"
+        class="my-0 font-weight-normal mb-3"
+        :class="titleColor"
+      >
+        {{ title }}
+      </h3>
     </div>
     <div class="card-body">
       <ul data-aos="fade-up" class="list-unstyled mt-3 mb-4">
@@ -12,11 +22,8 @@
           <span v-else class="fa fa-times text-danger"></span>
         </li>
         <li>
-          Kartu Keluarga & Surat NikahKartu Keluarga & Surat Nikah
-          <span
-            v-if="reqLists.kk"
-            class="fa fa-check text-success"
-          ></span>
+          Kartu Keluarga & Surat Nikah
+          <span v-if="reqLists.kk" class="fa fa-check text-success"></span>
           <span v-else class="fa fa-times text-danger"></span>
         </li>
         <li>
@@ -36,10 +43,7 @@
         </li>
         <li>
           Rekening Tabungan/Giro 3 bulan terakhir
-          <span
-            v-if="reqLists.rek"
-            class="fa fa-check text-success"
-          ></span>
+          <span v-if="reqLists.rek" class="fa fa-check text-success"></span>
           <span v-else class="fa fa-times text-danger"></span>
         </li>
         <li>
@@ -52,7 +56,10 @@
         </li>
         <li>
           Copy Ijin Praktek
-          <span v-if="reqLists.izinPraktek" class="fa fa-check text-success"></span>
+          <span
+            v-if="reqLists.izinPraktek"
+            class="fa fa-check text-success"
+          ></span>
           <span v-else class="fa fa-times text-danger"></span>
         </li>
         <li>

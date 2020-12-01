@@ -431,6 +431,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
  //import layouts
 
 
@@ -496,12 +499,13 @@ __webpack_require__.r(__webpack_exports__);
         imgSrc: "/img/demo/product2.png",
         title: "Pinjaman Dana",
         link: "pinjamandana"
-      }, {
-        id: 3,
-        imgSrc: "/img/demo/product3.png",
-        title: "Pembiayaan Umrah",
-        link: "umrah"
-      }],
+      } // {
+      //   id: 3,
+      //   imgSrc: "/img/demo/product3.png",
+      //   title: "Pembiayaan Umrah",
+      //   link: "umrah",
+      // },
+      ],
       listGalery: [{
         id: 1,
         src: "/img/galeri/rakernas-shf-kantor-pusat-leasing-kredit-mobil-dan-pinjaman-dana-online-1280x720.jpg"
@@ -1234,7 +1238,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -1347,7 +1350,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\nfooter[data-v-61a7c374] {\r\n    margin-top: -1px;\n}\r\n", ""]);
+exports.push([module.i, "\nfooter[data-v-61a7c374] {\r\n  margin-top: -1px;\n}\r\n", ""]);
 
 // exports
 
@@ -1804,7 +1807,7 @@ var render = function() {
                     _c("p", [
                       _c("strong", [_vm._v("Sinarmas Hana Finance")]),
                       _vm._v(
-                        " Adalah perusahaan joint\n                  venture antara PT Sinar Mas Multiartha Tbk dengan Hana\n                  Financial Group yang berbasis di Korea Selatan. Perusahaan\n                  mendapatkan surat izin usaha dari Otoritas jasa Keuangan (OJK)\n                  pada tanggal 18 November 2015 dan telah menjalankan bisnisnya\n                  di bidang pembiayaan kendaraan roda 4 (Mobil).\n                "
+                        " adalah perusahaan joint\n                  venture antara PT Sinar Mas Multiartha Tbk dengan Hana\n                  Financial Group yang berbasis di Korea Selatan. Perusahaan\n                  mendapatkan surat izin usaha dari Otoritas Jasa Keuangan (OJK)\n                  pada tanggal 18 November 2015 dan telah menjalankan bisnisnya\n                  di bidang pembiayaan kendaraan roda 4 (Mobil).\n                "
                       )
                     ])
                   ])
@@ -1845,7 +1848,9 @@ var render = function() {
                     [
                       _c("h3", [
                         _c("strong", [
-                          _vm._v("Produk Pembiayaan Sinarmas Hana Finance")
+                          _vm._v("Produk Pembiayaan "),
+                          _c("br"),
+                          _vm._v("\n                    Sinarmas Hana Finance")
                         ])
                       ]),
                       _vm._v(" "),
@@ -7378,13 +7383,9 @@ var staticRenderFns = [
               _c("i", { staticClass: "fas fa-copyright text-white" }),
               _vm._v(" "),
               _c("br"),
-              _vm._v(
-                "\n                    2020 PT. Sinarmas Hana Finance\n                    "
-              ),
+              _vm._v("\n          2020 PT. Sinarmas Hana Finance\n          "),
               _c("br"),
-              _vm._v(
-                "\n                    registered and supervised by\n                "
-              )
+              _vm._v("\n          registered and supervised by\n        ")
             ]),
             _vm._v(" "),
             _c("img", { attrs: { src: "/img/ojk-icon.bmp" } })
@@ -7398,15 +7399,15 @@ var staticRenderFns = [
             _c("ul", { staticClass: "list-unstyled text-small" }, [
               _c("li", [
                 _c("div", { staticClass: "rounded-circle text-light" }, [
-                  _c("i", { staticClass: "fas fa-phone-square mr-2" }),
+                  _c("i", { staticClass: "fab fa-whatsapp mr-2" }),
                   _vm._v(" "),
                   _c(
                     "a",
                     {
                       staticClass: "text-muted",
-                      attrs: { href: "tel:+621-5695-4670" }
+                      attrs: { href: "https://wa.me/6287776104111" }
                     },
-                    [_vm._v("+621-5695-4670")]
+                    [_vm._v("+62 8777-7610-4111")]
                   )
                 ])
               ]),
@@ -7843,8 +7844,7 @@ var render = function() {
                       "promodetail",
                       "simulasikredit",
                       "kendaraan",
-                      "pinjamandana",
-                      "umrah"
+                      "pinjamandana"
                     )
                       ? "nav-item dropdown active"
                       : "nav-item dropdown"
@@ -7915,17 +7915,6 @@ var render = function() {
                             attrs: { href: _vm.route("pinjamandana") }
                           },
                           [_vm._v(_vm._s(_vm.__("Product.Ln")))]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "inertia-link",
-                          {
-                            class: _vm.isRoute("umrah")
-                              ? "dropdown-item active"
-                              : "dropdown-item",
-                            attrs: { href: _vm.route("umrah") }
-                          },
-                          [_vm._v(_vm._s(_vm.__("Product.Um")))]
                         )
                       ],
                       1

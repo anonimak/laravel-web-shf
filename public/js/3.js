@@ -123,14 +123,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
  //import layouts
 
 
@@ -486,6 +478,13 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -921,7 +920,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -1034,7 +1032,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\nfooter[data-v-61a7c374] {\r\n    margin-top: -1px;\n}\r\n", ""]);
+exports.push([module.i, "\nfooter[data-v-61a7c374] {\r\n  margin-top: -1px;\n}\r\n", ""]);
 
 // exports
 
@@ -1285,7 +1283,7 @@ var render = function() {
                   },
                   [
                     _vm._v(
-                      "\n                    Pembiayaan untuk memenuhi berbagai kebutuhan, baik\n                    bersifat konsumtif (biaya pendidikan, kesehatan dan\n                    kecantikan, pernikahan, renovasi rumah, wisata, dan\n                    lain-lain) maupun produktif (modal usaha dan investasi),\n                    dengan jangka waktu pembiayaan mulai 1 hingga 4 tahun\n                    dan suku bunga tetap.\n                "
+                      "\n          Pembiayaan untuk memenuhi berbagai kebutuhan, baik bersifat\n          konsumtif (biaya pendidikan, kesehatan dan kecantikan, pernikahan,\n          renovasi rumah, wisata, dan lain-lain) maupun produktif (modal usaha\n          dan investasi), dengan jangka waktu pembiayaan mulai 1 hingga 4\n          tahun dan suku bunga tetap.\n        "
                     )
                   ]
                 )
@@ -1316,7 +1314,7 @@ var render = function() {
                   _c("div", { staticClass: "col-lg-9" }, [
                     _c("h5", { staticClass: "font-weight-light text-dark" }, [
                       _vm._v(
-                        "\n                            Simulasi Budget Total DP & Budget Angsuran\n                        "
+                        "\n              Simulasi Budget Total DP & Angsuran\n            "
                       )
                     ])
                   ]),
@@ -1334,7 +1332,7 @@ var render = function() {
                           staticClass: "btn btn-lg btn-outline-dark",
                           attrs: { href: "#" }
                         },
-                        [_vm._v("Klik Disini")]
+                        [_vm._v("Klik di sini")]
                       )
                     ]
                   )
@@ -1350,14 +1348,12 @@ var render = function() {
           [
             _c("div", { staticClass: "pb-4 pt-4 text-center" }, [
               _c("h2", { staticClass: "text-secondary" }, [
-                _vm._v(
-                  "\n                    Pinjaman Dana Sinarmas Hana Finance\n                "
-                )
+                _vm._v("Pinjaman Dana Sinarmas Hana Finance")
               ]),
               _vm._v(" "),
               _c("p", { staticClass: "text-muted" }, [
                 _vm._v(
-                  "\n                    Sinarmas Hana Finance sebagai salah satu perusahaan\n                    pembiayaan di Indonesia menawarkan kemudahan bagi para\n                    pelanggannya. Kami membantu mewujudkan mimpi Anda dengan\n                    membantu memenuhi kebutuhan biaya pendidikan, kesehatan\n                    dan kecantikan, pernikahan, renovasi rumah, wisata,\n                    modal usaha, investasi, dan lain-lain . Sinarmas Hana\n                    Finance akan selalu hadir dengan menyediakan produk dan\n                    layanan yang beragam sesuai siklus kehidupan konsumen\n                    dan memberikan pengalaman yang menguntungkan untuk\n                    pelanggannya.\n                "
+                  "\n          Sinarmas Hana Finance sebagai salah satu perusahaan pembiayaan di\n          Indonesia menawarkan kemudahan bagi para pelanggannya. Kami membantu\n          mewujudkan mimpi Anda dengan membantu memenuhi kebutuhan biaya\n          pendidikan, kesehatan dan kecantikan, pernikahan, renovasi rumah,\n          wisata, modal usaha, investasi, dan lain-lain . Sinarmas Hana\n          Finance akan selalu hadir dengan menyediakan produk dan layanan yang\n          beragam sesuai siklus kehidupan konsumen dan memberikan pengalaman\n          yang menguntungkan untuk pelanggannya.\n        "
                 )
               ])
             ]),
@@ -3732,7 +3728,7 @@ var render = function() {
             class: _vm.titleColor,
             attrs: { "data-aos": "fade-in" }
           },
-          [_vm._v(_vm._s(_vm.title))]
+          [_vm._v("\n      " + _vm._s(_vm.title) + "\n    ")]
         )
       ]
     ),
@@ -3753,9 +3749,7 @@ var render = function() {
           ]),
           _vm._v(" "),
           _c("li", [
-            _vm._v(
-              "\n        Kartu Keluarga & Surat NikahKartu Keluarga & Surat Nikah\n        "
-            ),
+            _vm._v("\n        Kartu Keluarga & Surat Nikah\n        "),
             _vm.reqLists.kk
               ? _c("span", { staticClass: "fa fa-check text-success" })
               : _c("span", { staticClass: "fa fa-times text-danger" })
@@ -3853,13 +3847,9 @@ var staticRenderFns = [
               _c("i", { staticClass: "fas fa-copyright text-white" }),
               _vm._v(" "),
               _c("br"),
-              _vm._v(
-                "\n                    2020 PT. Sinarmas Hana Finance\n                    "
-              ),
+              _vm._v("\n          2020 PT. Sinarmas Hana Finance\n          "),
               _c("br"),
-              _vm._v(
-                "\n                    registered and supervised by\n                "
-              )
+              _vm._v("\n          registered and supervised by\n        ")
             ]),
             _vm._v(" "),
             _c("img", { attrs: { src: "/img/ojk-icon.bmp" } })
@@ -3873,15 +3863,15 @@ var staticRenderFns = [
             _c("ul", { staticClass: "list-unstyled text-small" }, [
               _c("li", [
                 _c("div", { staticClass: "rounded-circle text-light" }, [
-                  _c("i", { staticClass: "fas fa-phone-square mr-2" }),
+                  _c("i", { staticClass: "fab fa-whatsapp mr-2" }),
                   _vm._v(" "),
                   _c(
                     "a",
                     {
                       staticClass: "text-muted",
-                      attrs: { href: "tel:+621-5695-4670" }
+                      attrs: { href: "https://wa.me/6287776104111" }
                     },
-                    [_vm._v("+621-5695-4670")]
+                    [_vm._v("+62 8777-7610-4111")]
                   )
                 ])
               ]),
@@ -4318,8 +4308,7 @@ var render = function() {
                       "promodetail",
                       "simulasikredit",
                       "kendaraan",
-                      "pinjamandana",
-                      "umrah"
+                      "pinjamandana"
                     )
                       ? "nav-item dropdown active"
                       : "nav-item dropdown"
@@ -4390,17 +4379,6 @@ var render = function() {
                             attrs: { href: _vm.route("pinjamandana") }
                           },
                           [_vm._v(_vm._s(_vm.__("Product.Ln")))]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "inertia-link",
-                          {
-                            class: _vm.isRoute("umrah")
-                              ? "dropdown-item active"
-                              : "dropdown-item",
-                            attrs: { href: _vm.route("umrah") }
-                          },
-                          [_vm._v(_vm._s(_vm.__("Product.Um")))]
                         )
                       ],
                       1
