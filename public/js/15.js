@@ -391,6 +391,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     items: {
@@ -1473,31 +1475,37 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("nav", { attrs: { "aria-label": "breadcrumb" } }, [
-    _c(
-      "ol",
-      { staticClass: "breadcrumb" },
-      _vm._l(_vm.items, function(item) {
-        return _c(
-          "li",
-          {
-            key: item.title,
-            staticClass: "breadcrumb-item",
-            class: { active: item.active }
-          },
-          [
-            !item.active
-              ? _c("inertia-link", { attrs: { href: _vm.route(item.href) } }, [
-                  _vm._v("\n        " + _vm._s(item.title) + "\n      ")
-                ])
-              : _c("span", [_vm._v(_vm._s(item.title))])
-          ],
-          1
-        )
-      }),
-      0
-    )
-  ])
+  return _c(
+    "ol",
+    { staticClass: "breadcrumb" },
+    _vm._l(_vm.items, function(item) {
+      return _c(
+        "li",
+        {
+          key: item.title,
+          staticClass: "breadcrumb-item",
+          class: { active: item.active }
+        },
+        [
+          !item.active
+            ? _c("inertia-link", { attrs: { href: _vm.route(item.href) } }, [
+                item.icon
+                  ? _c("i", { staticClass: "fas", class: item.icon })
+                  : _vm._e(),
+                _vm._v("\n      " + _vm._s(item.title) + "\n    ")
+              ])
+            : _c("span", [
+                item.icon
+                  ? _c("i", { staticClass: "fas", class: item.icon })
+                  : _vm._e(),
+                _vm._v("\n      " + _vm._s(item.title) + "\n    ")
+              ])
+        ],
+        1
+      )
+    }),
+    0
+  )
 }
 var staticRenderFns = []
 render._withStripped = true

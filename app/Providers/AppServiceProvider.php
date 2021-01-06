@@ -53,6 +53,11 @@ class AppServiceProvider extends ServiceProvider
             ];
         });
 
+        // share base url
+        Inertia::share('_baseUrl', function () {
+            return url('/');
+        });
+
         // share locale
         Inertia::share([
             'locale' => function () {

@@ -8,6 +8,28 @@
             <strong>TEAM MANAGEMENT</strong>
           </h2>
           <hr class="border-secondary" />
+<!-- 
+          <div class="row">
+            <div class="col-4">
+              <b-card
+                title="Wonsuk Chang"
+                body-class="pt-0"
+                img-src="https://picsum.photos/300/400/?image=25"
+                img-alt="Image"
+                img-top
+                tag="article"
+                style="max-width: 20rem"
+                class="mb-2"
+              >
+                <b-card-text class="text-muted">Komisaris</b-card-text>
+
+                <b-button class="btn-sm" href="#" variant="primary"
+                  >Profil Selengkapnya</b-button
+                >
+              </b-card>
+            </div>
+          </div> -->
+
           <b-card no-body>
             <b-tabs pills card vertical nav-wrapper-class="w-20">
               <b-tab title="Dewan Komisaris" active
@@ -26,7 +48,7 @@
               </b-tab>
               <b-tab title="Dewan direksi"
                 ><b-card-text>
-                <div class="row gap-y">
+                  <div class="row gap-y">
                     <card-team-management
                       v-for="item in listdireksi"
                       :key="item.id"
@@ -35,9 +57,8 @@
                       :desc="item.desc"
                       :img="item.img"
                     />
-                  </div>  
-                </b-card-text></b-tab
-              >
+                  </div> </b-card-text
+              ></b-tab>
             </b-tabs>
           </b-card>
         </div>
@@ -134,7 +155,7 @@ export default {
                   Bergabung dengan PT Sinarmas Hana Finance di tahun 2015 sebagai Branch Manager. Selanjutnya  menjabat sebagai Area Manager dan General Manager Kepatuhan dan Manajemen Risiko.`,
           img: "agustinus.png",
         },
-      ]
+      ],
     };
   },
 

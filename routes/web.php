@@ -77,12 +77,20 @@ Route::get('admin/dashboard', 'Admin\DashboardController@index')
     ->middleware('auth', 'is_admin');
 
 // Page
+// Page -> Home
 Route::get('admin/page/home', 'Admin\CfgHomeController@index')
     ->name('admin.page.home')
     ->middleware('auth', 'is_admin');
 
-Route::get('admin/page/home/add', 'Admin\CfgHomeController@add')
-    ->name('admin.page.home.add')
+// Page -> Home -> Slider
+Route::get('admin/page/home/slider/add', 'Admin\CfgHomeController@create')
+    ->name('admin.page.home.slider.add')
+    ->middleware('auth', 'is_admin');
+Route::get('admin/page/home/slider/{slider}/edit', 'Admin\CfgHomeController@edit')
+    ->name('admin.page.home.slider.edit')
+    ->middleware('auth', 'is_admin');
+Route::post('admin/page/home/slider/store', 'Admin\CfgHomeController@store')
+    ->name('admin.page.home.slider.store')
     ->middleware('auth', 'is_admin');
 
 Route::get('admin/page/product', 'Admin\CfgHomeController@index')

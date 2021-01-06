@@ -46,5 +46,10 @@ module.exports = {
                 return str.substr(0, lengthStr) + "...";
             return str;
         },
+
+        // baseUrl
+        baseUrl(strUrl) {
+            return (strUrl)?this.$page._baseUrl+strUrl: this.$page._baseUrl;
+        }
     },
 }

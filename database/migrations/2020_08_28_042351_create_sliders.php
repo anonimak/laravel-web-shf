@@ -16,10 +16,10 @@ class CreateSliders extends Migration
         Schema::create('sliders', function (Blueprint $table) {
             $table->id();
             $table->string('caption');
-            $table->longText('text');
-            $table->string('image')->nullable();
+            $table->longText('text')->nullable();
+            $table->string('image');
             $table->boolean('show');
-            $table->bigInteger('index')->nullable();
+            $table->integer('index')->nullable();
             $table->timestamps();
         });
     }

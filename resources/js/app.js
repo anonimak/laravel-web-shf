@@ -30,6 +30,10 @@ import VueParticles from "vue-particles";
 
 import fullscreen from "vue-fullscreen";
 
+// dropzone js
+// import vueDropzone from 'vue2-dropzone'
+// import 'vue2-dropzone/dist/vue2Dropzone.min.css'
+
 // untuk handle cookies
 // import VueCookies from 'vue-cookies'
 
@@ -62,6 +66,9 @@ Vue.use(InertiaApp);
 
 // untuk fullscreen
 Vue.use(fullscreen);
+
+// dropzone
+// Vue.use(vueDropzone);
 
 // untuk cookies
 // Vue.use(VueCookies);

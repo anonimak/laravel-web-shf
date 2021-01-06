@@ -1,10 +1,12 @@
 <template>
     <Layout>
+        <alert v-if="flash" :flash="flash"/>
         <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">
                 {{ isButtonAdd ? "Add Slider" : "Home Page" }}
             </h1>
         </div>
+        <breadcrumb :items="breadcrumbItems"/>
         <div class="row">
             <div class="col-12">
                 <div>
@@ -14,24 +16,9 @@
                                 <b-tab title="Slider">
                                     <div class="row">
                                         <div class="col-12">
-                                            <b-button
-                                                :variant="
-                                                    isButtonAdd
-                                                        ? 'danger'
-                                                        : 'primary'
-                                                "
-                                                class="my-2 float-right"
-                                                @click="add()"
-                                            >
-                                                {{
-                                                    isButtonAdd
-                                                        ? "Kembali"
-                                                        : "Tambah"
-                                                }}</b-button
-                                            >
-                                            <!-- <inertia-link :href="route('admin.page.home.add')" class="btn btn-primary my-2 float-right"> <i class="fas fa-plus"></i> Tambah</inertia-link> -->
+                                            <inertia-link :href="route('admin.page.home.slider.add')" class="btn btn-primary my-2 float-right"> <i class="fas fa-plus"></i> Tambah</inertia-link>
                                         </div>
-                                        <read-slider
+                                        <card-slider
                                             :dataSlider="dataSlider"
                                             :class="isButtonAdd ? 'd-none' : ''"
                                         />
@@ -67,34 +54,29 @@
 <script>
 import Layout from "@/Shared/AdminLayout"; //import layouts
 import VueGridLayout from "vue-grid-layout";
-import ReadSlider from "@/components/AdminComponents/ReadSlider";
+import CardSlider from "@/components/AdminComponents/CardSlider";
 import AddSlider from "@/components/AdminComponents/AddSlider";
+import Alert from "@/components/AdminComponents/Alert";
+import Breadcrumb from "@/components/Breadcrumb";
 
 export default {
     metaInfo: { title: "Page Home" },
     data() {
         return {
             isButtonAdd: false,
-            layout: [
-                { x: 0, y: 0, w: 1, h: 2, i: "Index" },
-                { x: 0, y: 2, w: 1, h: 2, i: "1" },
-                { x: 0, y: 4, w: 1, h: 2, i: "2" },
-                { x: 0, y: 6, w: 1, h: 2, i: "3" },
-                { x: 0, y: 8, w: 1, h: 2, i: "4" },
-                { x: 0, y: 10, w: 1, h: 2, i: "5" },
-                { x: 0, y: 12, w: 1, h: 2, i: "6" }
-            ],
             tabIndex: 1
         };
     },
     components: {
         Layout,
-        ReadSlider,
+        CardSlider,
         AddSlider,
+        Alert,
+        Breadcrumb,
         GridLayout: VueGridLayout.GridLayout,
         GridItem: VueGridLayout.GridItem
     },
-    props: ["meta", "dataSlider"],
+    props: ["meta", "dataSlider", "flash","breadcrumbItems"],
     methods: {
         test: function() {
             alert("oke");
