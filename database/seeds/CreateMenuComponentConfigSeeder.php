@@ -60,7 +60,7 @@ class CreateMenuComponentConfigSeeder extends Seeder
                 'name' => 'indicators',
                 'id_component' => 1,
                 'type' => 'boolean',
-                'values' => toString('boolean', true),
+                'values' => toString('boolean', false),
             ],
         ];
 
