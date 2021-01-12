@@ -498,7 +498,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -1384,8 +1383,7 @@ var render = function() {
                       "promo",
                       "promodetail",
                       "simulasikredit",
-                      "kendaraan",
-                      "pinjamandana"
+                      "kendaraan"
                     )
                       ? "nav-item dropdown active"
                       : "nav-item dropdown"
@@ -1445,17 +1443,6 @@ var render = function() {
                             attrs: { href: _vm.route("kendaraan") }
                           },
                           [_vm._v(_vm._s(_vm.__("Product.Vh")))]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "inertia-link",
-                          {
-                            class: _vm.isRoute("pinjamandana")
-                              ? "dropdown-item active"
-                              : "dropdown-item",
-                            attrs: { href: _vm.route("pinjamandana") }
-                          },
-                          [_vm._v(_vm._s(_vm.__("Product.Ln")))]
                         )
                       ],
                       1

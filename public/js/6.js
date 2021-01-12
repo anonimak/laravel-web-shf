@@ -128,7 +128,7 @@ __webpack_require__.r(__webpack_exports__);
         name: "Seo Jisu",
         title: "Direktur Utama",
         desc: "Warga Negara Korea Selatan, menjabat sebagai Direktur Utama PT Sinarmas Hana Finance sejak tahun 2015.\n                  Beliau meraih gelar Sarjana Ekonomi di Yonsei University. Sebelum bergabung di PT Sinarmas Hana Finance, beliau sudah berkarir selama 26 tahun di Hana Financial Group, diawali pada tahun 1992 di HFG  Apgujeong Branch dengan jabatan Associate.\n                  Berbagai posisi dan jabatan strategis di Hana Financial Group sudah dijalani beliau, diantaranya 3 tahun sebagai Branch Manager Bank KEB Hana Singapore dan menjabat di Hana Financial Group sebagai Relationship & General Manager, Large Corporate Business Division 3 pada tahun 2014.",
-        img: "seo.png"
+        img: "Seo.png"
       }, {
         id: 2,
         name: "Andrew Ludy",
@@ -482,7 +482,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
 //
 //
 //
@@ -1706,8 +1705,7 @@ var render = function() {
                       "promo",
                       "promodetail",
                       "simulasikredit",
-                      "kendaraan",
-                      "pinjamandana"
+                      "kendaraan"
                     )
                       ? "nav-item dropdown active"
                       : "nav-item dropdown"
@@ -1767,17 +1765,6 @@ var render = function() {
                             attrs: { href: _vm.route("kendaraan") }
                           },
                           [_vm._v(_vm._s(_vm.__("Product.Vh")))]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "inertia-link",
-                          {
-                            class: _vm.isRoute("pinjamandana")
-                              ? "dropdown-item active"
-                              : "dropdown-item",
-                            attrs: { href: _vm.route("pinjamandana") }
-                          },
-                          [_vm._v(_vm._s(_vm.__("Product.Ln")))]
                         )
                       ],
                       1

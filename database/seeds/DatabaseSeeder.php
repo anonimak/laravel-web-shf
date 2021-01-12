@@ -18,7 +18,7 @@ class DatabaseSeeder extends Seeder
         App\Slider::create([
             'caption' => '',
             'text' => '',
-            'image' => '/img/slider/Banner1.jpg',
+            'image' => 'public/sliders/SliderWeb-Des2019.png',
             'show' => true
         ]);
     }

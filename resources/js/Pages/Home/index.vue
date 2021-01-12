@@ -476,12 +476,12 @@ export default {
           title: "Kendaraan Bermotor",
           link: "kendaraan",
         },
-        {
-          id: 2,
-          imgSrc: "/img/demo/product2.png",
-          title: "Pinjaman Dana",
-          link: "pinjamandana",
-        },
+        // {
+        //   id: 2,
+        //   imgSrc: "/img/demo/product2.png",
+        //   title: "Pinjaman Dana",
+        //   link: "pinjamandana",
+        // },
         // {
         //   id: 3,
         //   imgSrc: "/img/demo/product3.png",
@@ -530,4 +530,11 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+
+.card-deck .card {
+    flex: none !important;
+    margin: auto;
+}
+
+</style>

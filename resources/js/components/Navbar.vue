@@ -34,8 +34,7 @@
                 'promo',
                 'promodetail',
                 'simulasikredit',
-                'kendaraan',
-                'pinjamandana'
+                'kendaraan'
               )
                 ? 'nav-item dropdown active'
                 : 'nav-item dropdown'
@@ -80,7 +79,7 @@
                 "
                 >{{ __("Product.Vh") }}</inertia-link
               >
-              <inertia-link
+              <!-- <inertia-link
                 :href="route('pinjamandana')"
                 :class="
                   isRoute('pinjamandana')
@@ -88,7 +87,7 @@
                     : 'dropdown-item'
                 "
                 >{{ __("Product.Ln") }}</inertia-link
-              >
+              > -->
               <!-- <inertia-link
                 :href="route('umrah')"
                 :class="
