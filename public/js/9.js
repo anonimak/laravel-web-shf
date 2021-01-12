@@ -1,19 +1,15 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[9],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Profile/About/index.vue?vue&type=script&lang=js&":
-/*!*************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Profile/About/index.vue?vue&type=script&lang=js& ***!
-  \*************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Contact/index.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Contact/index.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Shared_Layout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Shared/Layout */ "./resources/js/Shared/Layout.vue");
-//
-//
-//
-//
 //
 //
 //
@@ -855,10 +851,10 @@ if(false) {}
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Profile/About/index.vue?vue&type=template&id=38fdb131&":
-/*!*****************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Profile/About/index.vue?vue&type=template&id=38fdb131& ***!
-  \*****************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Contact/index.vue?vue&type=template&id=6c9f31ca&":
+/*!***********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Contact/index.vue?vue&type=template&id=6c9f31ca& ***!
+  \***********************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -875,60 +871,73 @@ var render = function() {
       _c("div", { staticClass: "pb-5 container" }, [
         _c("div", { attrs: { "data-aos": "fade-down" } }, [
           _c("h2", { staticClass: "text-center text-secondary" }, [
-            _c("strong", [_vm._v("TENTANG PERUSAHAAN")])
+            _c("strong", [_vm._v("Sinarmas Hana Finance")])
           ]),
           _vm._v(" "),
           _c("hr", { staticClass: "border-secondary" }),
           _vm._v(" "),
           _c("p", [
             _vm._v(
-              "\n          PT Sinarmas Hana Finance adalah perusahaan patungan antara PT Sinar\n          Mas Multiartha Tbk dengan Hana Financial Group yang berbasis di\n          Korea Selatan. Perusahaan resmi berdiri pada tanggal 9 Juni 2015,\n          dengan akta pendirian nomor 14 oleh notaris Edwar. Perusahaan\n          mendapatkan surat izin usaha dari Otoritas jasa Keuangan (OJK) pada\n          tanggal 18 November 2015 dan telah menjalankan bisnisnya di bidang\n          pembiayaan.\n        "
+              "\n          PT Sinarmas Hana Finance adalah perusahaan Gabungan antara PT\n          SinarMas Multiartha Tbk dengan Hana Financial Group yang berbasis di\n          Korea Selatan.\n        "
             )
           ]),
           _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "\n          PT Sinarmas Hana Finance dimiliki oleh\n          "
-            ),
-            _c("strong", [_vm._v("Hana Capital Co. Ltd")]),
-            _vm._v(" sebesar 55% (lima puluh lima\n          persen), "),
-            _c("strong", [_vm._v("PT Bank KEB Hana Indonesia")]),
-            _vm._v(
-              " sebesar 30%\n          (tiga puluh persen) dan\n          "
-            ),
-            _c("strong", [_vm._v("PT Sinar Mas Multiartha Tbk")]),
-            _vm._v(" sebesar 15% (lima belas\n          persen).\n        ")
+          _c("div", { staticClass: "row mt-4" }, [
+            _c("div", { staticClass: "col" }, [
+              _c("iframe", {
+                staticStyle: { border: "0" },
+                attrs: {
+                  src:
+                    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253823.23071047236!2d106.75660637751643!3d-6.265310422166139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6202c35969aee5d9!2sPT%20SINARMAS%20HANA%20FINANCE%20ROXY%20SQUARE!5e0!3m2!1sid!2sid!4v1604978419416!5m2!1sid!2sid",
+                  width: "100%",
+                  height: "450",
+                  frameborder: "0",
+                  allowfullscreen: "",
+                  "aria-hidden": "false",
+                  tabindex: "0"
+                }
+              })
+            ])
           ]),
           _vm._v(" "),
-          _c("p", [
-            _c("strong", [_vm._v("Hana Capital Co. Ltd")]),
-            _vm._v(
-              " berdiri sejak 1987 dan telah\n          bergabung dengan Hana Financial Group sejak 2005.\n          "
-            ),
-            _c("strong", [_vm._v("Hana Capital Co. Ltd")]),
-            _vm._v(
-              " memberikan pelayanan dalam\n          pembiayaan mobil, pembiayaan non-mobil seperti mesin, IT dan\n          peralatan medical dan pinjaman komersil seperti KPR dan Pinjaman\n          Kredit.\n        "
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _c("strong", [_vm._v("PT Bank KEB Hana Indonesia")]),
-            _vm._v(
-              " berdiri sejak tahun\n          2014, hasil merger dari PT Bank KEB Hana Indonesia dan PT KEB\n          Indonesia. PT Bank KEB Hana Indonesia memiliki 4 pemegang saham,\n          KEB, Hana Bank, (kedua pemegang saham tersebut dikendalikan oleh HFG\n          sebagai ultimate shareholder), IFC, Bambang Setijo dan sisanya\n          dimiliki oleh PT Bank KEB Hana Indonesia.\n        "
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _c("strong", [_vm._v("PT Sinar Mas Multiartha Tbk")]),
-            _vm._v(
-              ", merupakan perusahaan\n          dari Sinar Mas Group, salah satu institusi keuangan terdepan di\n          Indonesia. Pelayanannya merliputi Perbankan, Asuransi, Pembiayaan,\n          Aset Manajemen, Sekuritas dan IT\n        "
-            )
-          ]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v(
-              "\n          Sampai saat ini, perusahaan telah memiliki beberapa kantor cabang,\n          diantaranya : Jakarta, Bekasi, Tangerang, Depok, Bandung, Surabaya,\n          Bogor, Semarang, Surakarta, Kediri, Malang dan juga Marketing point\n          Cikarang.\n        "
-            )
+          _c("div", { staticClass: "row mt-4" }, [
+            _c("div", { staticClass: "mt-2 col-md-6 col-lg-6" }, [
+              _c("h4", { staticClass: "text-primary" }, [
+                _vm._v("\n              Jam Kerja\n              "),
+                _c("i", {
+                  staticClass: "fa fa-clock",
+                  attrs: { "aria-hidden": "true" }
+                })
+              ]),
+              _vm._v(" "),
+              _c("p", [_vm._v("Pusat : Senin - Jum'at : 8.00-17.00 WIB")]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "Cabang : Senin - Jum'at : 8.30-16.30 WIB Sabtu : 8.30-14.30"
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "mt-2 col-md-6 col-lg-6" }, [
+              _c("h4", { staticClass: "text-primary" }, [
+                _vm._v("\n              Alamat Kantor Pusat\n              "),
+                _c("i", {
+                  staticClass: "fa fa-map-marker-alt",
+                  attrs: { "aria-hidden": "true" }
+                })
+              ]),
+              _vm._v(" "),
+              _c("p", [
+                _vm._v(
+                  "\n              Gedung Roxy Square Lt. 3 B 001 No. 02 Jl. Kyai Tapa No.1,\n              Tomang, Grogol Petamburan, Jakarta Barat 11440\n            "
+                )
+              ]),
+              _vm._v(" "),
+              _c("p", [_vm._v("Email:info@shf.co.id")]),
+              _vm._v(" "),
+              _c("p", [_vm._v("Phone : 021-5695-4670")])
+            ])
           ])
         ])
       ])
@@ -1755,18 +1764,18 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Profile/About/index.vue":
-/*!****************************************************!*\
-  !*** ./resources/js/Pages/Profile/About/index.vue ***!
-  \****************************************************/
+/***/ "./resources/js/Pages/Contact/index.vue":
+/*!**********************************************!*\
+  !*** ./resources/js/Pages/Contact/index.vue ***!
+  \**********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _index_vue_vue_type_template_id_38fdb131___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.vue?vue&type=template&id=38fdb131& */ "./resources/js/Pages/Profile/About/index.vue?vue&type=template&id=38fdb131&");
-/* harmony import */ var _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Profile/About/index.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _index_vue_vue_type_template_id_6c9f31ca___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.vue?vue&type=template&id=6c9f31ca& */ "./resources/js/Pages/Contact/index.vue?vue&type=template&id=6c9f31ca&");
+/* harmony import */ var _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Contact/index.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -1776,8 +1785,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _index_vue_vue_type_template_id_38fdb131___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _index_vue_vue_type_template_id_38fdb131___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _index_vue_vue_type_template_id_6c9f31ca___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _index_vue_vue_type_template_id_6c9f31ca___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -1787,38 +1796,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/Pages/Profile/About/index.vue"
+component.options.__file = "resources/js/Pages/Contact/index.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Profile/About/index.vue?vue&type=script&lang=js&":
-/*!*****************************************************************************!*\
-  !*** ./resources/js/Pages/Profile/About/index.vue?vue&type=script&lang=js& ***!
-  \*****************************************************************************/
+/***/ "./resources/js/Pages/Contact/index.vue?vue&type=script&lang=js&":
+/*!***********************************************************************!*\
+  !*** ./resources/js/Pages/Contact/index.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Profile/About/index.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Contact/index.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Profile/About/index.vue?vue&type=template&id=38fdb131&":
-/*!***********************************************************************************!*\
-  !*** ./resources/js/Pages/Profile/About/index.vue?vue&type=template&id=38fdb131& ***!
-  \***********************************************************************************/
+/***/ "./resources/js/Pages/Contact/index.vue?vue&type=template&id=6c9f31ca&":
+/*!*****************************************************************************!*\
+  !*** ./resources/js/Pages/Contact/index.vue?vue&type=template&id=6c9f31ca& ***!
+  \*****************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_38fdb131___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=template&id=38fdb131& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Profile/About/index.vue?vue&type=template&id=38fdb131&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_38fdb131___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_6c9f31ca___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=template&id=6c9f31ca& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Contact/index.vue?vue&type=template&id=6c9f31ca&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_6c9f31ca___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_38fdb131___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_6c9f31ca___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

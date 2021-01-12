@@ -58,9 +58,9 @@ class CfgHomeController extends Controller
         ]);
     }
 
-    public function create()
+    public function createSlider()
     {
-        return Inertia::render('Admin/CfgHome/add', [
+        return Inertia::render('Admin/CfgHome/slideradd', [
             '_store_url' => URL::route('admin.page.home.slider.store'),
             '_token' => csrf_token()
             ,
@@ -86,15 +86,15 @@ class CfgHomeController extends Controller
         ]);
     }
 
-    public function store(Request $request)
+    public function storeSlider(Request $request)
     {
 
         $request->validate([
-            'caption' => 'required',
-            'show'  => 'required',
-            'text'  => 'nullable|max:250',
-            'index' => 'nullable|numeric',
-            'image' => 'required|image|mimes:jpg,jpeg,png|max:1024',
+            'caption'   => 'required',
+            'show'      => 'required',
+            'text'      => 'nullable|max:250',
+            'index'     => 'nullable|numeric',
+            'image'     => 'required|image|mimes:jpg,jpeg,png|max:1024',
         ]);
         
         // $imageName = time().'.'.$request->image->extension();  
@@ -113,45 +113,70 @@ class CfgHomeController extends Controller
         return Redirect::route('admin.page.home')->with('success', 'Slider created.');
     }
 
-    public function edit(Slider $slider)
+    public function detailSlider(Slider $slider)
     {
-        return Inertia::render('Admin/CfgHome/edit', [
-            'organization' => [
-                'id' => $slider->id,
-                'name' => $slider->caption,
-                'email' => $slider->text,
-                'phone' => $slider->show,
-                'address' => $slider->index,
+        return Inertia::render('Admin/CfgHome/slideredit', [
+            'dataSlider' => [
+                'id'        => $slider->id,
+                'caption'   => $slider->caption,
+                'text'      => $slider->text,
+                'image'     => $slider->image,
+                'show'      => $slider->show,
+                'index'     => $slider->index,
             ],
+            '_update_url' => URL::route('admin.page.home.slider.update', $slider->id),
+            '_delete_url' => URL::route('admin.page.home.slider.delete', $slider->id),
+            '_token' => csrf_token(),
+            'breadcrumbItems' => array(
+                [
+                    'icon'    => "fa-home",
+                    'title'   => "Dashboard",
+                    'href'    => "admin.dashboard"
+                ],
+                [
+                    'title'   => "Page",
+                    'active'  => true
+                ],
+                [
+                    'title'   => "Home",
+                    'href'    => "admin.page.home"
+                ],
+                [
+                    'title'   => "Detail Slider",
+                    'active'  => true,
+                ],
+            )
+
         ]);
     }
 
-    public function update(Slider $organization)
+    // public function updateSliderImage(Slider )
+    // {
+        
+    // }
+
+    public function updateSlider(Slider $slider)
     {
-        $organization->update(
+        $slider->update(
             Request::validate([
-                'name' => ['required', 'max:100'],
-                'email' => ['nullable', 'max:50', 'email'],
-                'phone' => ['nullable', 'max:50'],
-                'address' => ['nullable', 'max:150'],
-                'city' => ['nullable', 'max:50'],
-                'region' => ['nullable', 'max:50'],
-                'country' => ['nullable', 'max:2'],
-                'postal_code' => ['nullable', 'max:25'],
+                'caption'   => 'required',
+                'show'      => 'required',
+                'text'      => 'nullable|max:250',
+                'index'     => 'nullable|numeric'
             ])
-        );
+        );  
 
-        return Redirect::back()->with('success', 'Organization updated.');
+        return Redirect::back()->with('success', 'Slider updated.');
     }
 
-    public function destroy(Organization $organization)
+    public function destroySlider(Slider $slider)
     {
-        $organization->delete();
+        $slider->delete();
 
-        return Redirect::back()->with('success', 'Organization deleted.');
+        return Redirect::back()->with('success', 'Slider deleted.');
     }
 
-    public function restore(Organization $organization)
+    public function restoreSlider(Organization $organization)
     {
         $organization->restore();
 

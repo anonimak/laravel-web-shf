@@ -83,14 +83,20 @@ Route::get('admin/page/home', 'Admin\CfgHomeController@index')
     ->middleware('auth', 'is_admin');
 
 // Page -> Home -> Slider
-Route::get('admin/page/home/slider/add', 'Admin\CfgHomeController@create')
+Route::get('admin/page/home/slider/add', 'Admin\CfgHomeController@createSlider')
     ->name('admin.page.home.slider.add')
     ->middleware('auth', 'is_admin');
-Route::get('admin/page/home/slider/{slider}/edit', 'Admin\CfgHomeController@edit')
-    ->name('admin.page.home.slider.edit')
-    ->middleware('auth', 'is_admin');
-Route::post('admin/page/home/slider/store', 'Admin\CfgHomeController@store')
+Route::post('admin/page/home/slider/store', 'Admin\CfgHomeController@storeSlider')
     ->name('admin.page.home.slider.store')
+    ->middleware('auth', 'is_admin');
+Route::get('admin/page/home/slider/{slider}/detail', 'Admin\CfgHomeController@detailSlider')
+    ->name('admin.page.home.slider.detail')
+    ->middleware('auth', 'is_admin');
+Route::get('admin/page/home/slider/{slider}/update', 'Admin\CfgHomeController@updateSlider')
+    ->name('admin.page.home.slider.update')
+    ->middleware('auth', 'is_admin');
+Route::get('admin/page/home/slider/{slider}/delete', 'Admin\CfgHomeController@destroySlider')
+    ->name('admin.page.home.slider.delete')
     ->middleware('auth', 'is_admin');
 
 Route::get('admin/page/product', 'Admin\CfgHomeController@index')

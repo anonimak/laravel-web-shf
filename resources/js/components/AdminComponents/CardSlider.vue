@@ -44,7 +44,7 @@
                     ></b-button>
                     <!-- <b-button href="#" variant="outline-danger" title="Tidak Aktif"><i class="fas fa-eye-slash"></i></b-button> -->
 
-                    <inertia-link :href="route('admin.page.home.slider.edit', itemSlider.id)" class="btn btn-primary">Edit</inertia-link>
+                    <inertia-link :href="route('admin.page.home.slider.detail', itemSlider.id)" class="btn btn-primary">Detail</inertia-link>
                     <b-button href="#" variant="danger">Delete</b-button>
                 </b-card>
             </div>

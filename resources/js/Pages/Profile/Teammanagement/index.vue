@@ -134,7 +134,7 @@ export default {
           desc: `Warga Negara Korea Selatan, menjabat sebagai Direktur Utama PT Sinarmas Hana Finance sejak tahun 2015.
                   Beliau meraih gelar Sarjana Ekonomi di Yonsei University. Sebelum bergabung di PT Sinarmas Hana Finance, beliau sudah berkarir selama 26 tahun di Hana Financial Group, diawali pada tahun 1992 di HFG  Apgujeong Branch dengan jabatan Associate.
                   Berbagai posisi dan jabatan strategis di Hana Financial Group sudah dijalani beliau, diantaranya 3 tahun sebagai Branch Manager Bank KEB Hana Singapore dan menjabat di Hana Financial Group sebagai Relationship & General Manager, Large Corporate Business Division 3 pada tahun 2014.`,
-          img: "seo.png",
+          img: "Seo.png",
         },
         {
           id: 2,
