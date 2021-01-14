@@ -11,7 +11,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call([CreateUsersSeeder::class, CreateMenuComponentConfigSeeder::class]);
+        $this->call([
+                        CreateUsersSeeder::class,
+                        CreateMenuComponentConfigSeeder::class,
+                        CreateM_OfficeSeeder::class
+                    ]);
         // factory(App\User::class, 1)->create();
         factory(App\Promo::class, 0)->create();
         // factory(App\Slider::class, 5)->create();

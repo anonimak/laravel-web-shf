@@ -1,8 +1,8 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[7],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=script&lang=js&":
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Profile/Teammanagement/index.vue?vue&type=script&lang=js&":
 /*!**********************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=script&lang=js& ***!
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Profile/Teammanagement/index.vue?vue&type=script&lang=js& ***!
   \**********************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -10,104 +10,7 @@
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Shared_Layout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Shared/Layout */ "./resources/js/Shared/Layout.vue");
-/* harmony import */ var _Shared_img_creditSVG__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Shared/img/creditSVG */ "./resources/js/Shared/img/creditSVG.vue");
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* harmony import */ var _components_CardTeamManagement__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/components/CardTeamManagement */ "./resources/js/components/CardTeamManagement.vue");
 //
 //
 //
@@ -192,53 +95,54 @@ __webpack_require__.r(__webpack_exports__);
 //
  //import layouts
 
+ //import card team
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     Layout: _Shared_Layout__WEBPACK_IMPORTED_MODULE_0__["default"],
-    CreditSVG: _Shared_img_creditSVG__WEBPACK_IMPORTED_MODULE_1__["default"]
-  },
-  metaInfo: {
-    title: "Simulasi Kredit"
+    CardTeamManagement: _components_CardTeamManagement__WEBPACK_IMPORTED_MODULE_1__["default"]
   },
   data: function data() {
     return {
-      form: {
-        email: "",
-        name: "",
-        jenisSimulasi: null,
-        jenisBudget: 1,
-        tjh: 1,
-        checked: []
-      },
-      itemjenis: [{
-        text: "Pilih Simulasi",
-        value: null
+      listteamkomisaris: [{
+        id: 1,
+        name: "Wonsuk Chang",
+        title: "Komisaris Utama",
+        desc: "Warga Negara Korea Selatan, menjabat sebagai\n                            Komisaris Utama PT Sinarmas Hana Finance. Mengawali\n                            karir sebagai General Manager of Financing Risk\n                            Management di Samsung Life Insurance. Jabatan\n                            terkini beliau adalah sebagai General Manager of\n                            Risk Management Team in Hana Capital Co.Ltd, Korea\n                            Selatan.",
+        img: "won-suk-chang.png"
       }, {
-        text: "Budget",
-        value: 1
+        id: 2,
+        name: "Herry Hermana Sukriawidjaja",
+        title: "Komisaris Independen",
+        desc: "Warga Negara Indonesia, menjabat sebagai Komisaris Independen PT Sinarmas Hana Finance.\n                Beliau memulai karirnya di PT Bank Internasional Indonesia pada tahun 1981. Sebelumnya juga pernah bekerja di PT Internas Artha Leasing dan PT Sinar Mas Multiartha. Sebelum pensiun, beliau menjabat sebagai Unit Head of Human Resources di PT Sinar Mas Multifinance pada periode Juni 1996 \u2013 Maret 2011. ",
+        img: "herry-hermana.png"
       }, {
-        text: "Kredit",
-        value: 2
+        id: 3,
+        name: "Nasser Atorf",
+        title: "Komisaris",
+        desc: "Warga Negara Indonesia, menjabat sebagai Komisaris PT Sinarmas Hana Finance.\n                  Mengawai karir sebagai Analis Kredit di bagian kredit Koperasi Bank Indonesia pada tahun 1983. Beliau kemudian melanjutkan studi Master dan lulus pada tahun 1989 di University of Illinois, Amerika Serikat.\n                  Berpengalaman dalam memimpin dan mengkoordinir pengumpulan dan penyajian data ekonomi moneter, serta tugas pengawasan bank sampai tahun 2012. Kemudian dipercaya untuk memimpin Bank Indonesia di Medan dan ditunjuk sebagai Koordinator 4 KBI hingga tahun 2012. Jabatan terkini beliau adalah sebagai Komisaris di PT Bank KEB Hana Indonesia. ",
+        img: "nasser-atorf.png"
       }],
-      itemtjh: [{
-        text: "Ya",
-        value: 1
-      }],
-      itembudget: [{
-        text: "Berdasarkan Besar DP",
-        value: 1
+      listdireksi: [{
+        id: 1,
+        name: "Seo Jisu",
+        title: "Direktur Utama",
+        desc: "Warga Negara Korea Selatan, menjabat sebagai Direktur Utama PT Sinarmas Hana Finance sejak tahun 2015.\n                  Beliau meraih gelar Sarjana Ekonomi di Yonsei University. Sebelum bergabung di PT Sinarmas Hana Finance, beliau sudah berkarir selama 26 tahun di Hana Financial Group, diawali pada tahun 1992 di HFG  Apgujeong Branch dengan jabatan Associate.\n                  Berbagai posisi dan jabatan strategis di Hana Financial Group sudah dijalani beliau, diantaranya 3 tahun sebagai Branch Manager Bank KEB Hana Singapore dan menjabat di Hana Financial Group sebagai Relationship & General Manager, Large Corporate Business Division 3 pada tahun 2014.",
+        img: "Seo.png"
       }, {
-        text: "Berdasarkan Besar Cicilan",
-        value: 2
-      }],
-      show: true
+        id: 2,
+        name: "Andrew Ludy",
+        title: "Direktur",
+        desc: "Warga Negara Indonesia, menjabat sebagai Direktur PT Sinarmas Hana Finance sejak tahun 2016.\n                Beliau menyelesaikan pendidikannya dan memperoleh gelar sarjana Ekonomi dari Perguruan Tinggi Universitas Katholik Widya Mandala, Surabaya pada tahun 2002.\n                Beliau memulai karir sebagai Marketing di PT Sinar Mas Multifinance di tahun 2003. Karir beliau berlanjut dan menjabat berbagai posisi strategis, salah satunya Regional Coordinator dan Branch Manager PT Sinar Mas Multifinance (2003 \u2013 2016).",
+        img: "andrew-ludy.png"
+      }, {
+        id: 3,
+        name: "Agustinus Budi Antoro",
+        title: "Direktur",
+        desc: "Warga Negara Indonesia, menjabat sebagai Direktur Kepatuhan dan Manajemen Risiko PT Sinarmas Hana Finance sejak tahun 2019.\n                  Beliau menyelesaikan pendidikannya di Universitas Atma Jaya Yogyakarta dengan gelar Sarjana Manajemen Ekonomi di tahun 2000 dengan konsentrasi Manajemen Keuangan.\n                  Memulai karir sebagai Credit Marketing Officer di PT Tunas Finance. Terhitung dari tahun 2003, beliau sudah berkarir di industri pembiayaan selama 16 tahun.\n                  Bergabung dengan PT Sinarmas Hana Finance di tahun 2015 sebagai Branch Manager. Selanjutnya  menjabat sebagai Area Manager dan General Manager Kepatuhan dan Manajemen Risiko.",
+        img: "agustinus.png"
+      }]
     };
-  },
-  methods: {
-    pilihJenisSimulasi: function pilihJenisSimulasi(jenis) {
-      if (this.form.jenisSimulasi == jenis) this.form.jenisSimulasi = null;else this.form.jenisSimulasi = jenis;
-    }
   },
   props: ["meta"]
 });
@@ -515,6 +419,55 @@ __webpack_require__.r(__webpack_exports__);
     handleLogout: function handleLogout() {
       alert("Ini Sudah Logout");
     }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CardTeamManagement.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CardTeamManagement.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      url: "/img/team-management/",
+      newurl: "#"
+    };
+  },
+  props: ["name", "title", "desc", "img"],
+  mounted: function mounted() {
+    this.newurl = this.url + this.img;
   }
 });
 
@@ -1018,9 +971,9 @@ if(false) {}
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=template&id=4b74e8c6&":
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Profile/Teammanagement/index.vue?vue&type=template&id=27c7b8d2&":
 /*!**************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=template&id=4b74e8c6& ***!
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Profile/Teammanagement/index.vue?vue&type=template&id=27c7b8d2& ***!
   \**************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -1034,409 +987,114 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("Layout", [
-    _c("div", [
-      _c(
-        "div",
-        {
-          staticClass:
-            "jumbotron jumbotron-sm jumbotron-fluid mb-0 pb-1 bg-secondary position-relative"
-        },
-        [
-          _c("div", { staticClass: "container-fluid text-white h-100" }, [
+    _c("section", { staticClass: "pt-5 pb-5" }, [
+      _c("div", { staticClass: "pb-5 container" }, [
+        _c(
+          "div",
+          { attrs: { "data-aos": "fade-down" } },
+          [
+            _c("h2", { staticClass: "text-center text-secondary" }, [
+              _c("strong", [_vm._v("TEAM MANAGEMENT")])
+            ]),
+            _vm._v(" "),
+            _c("hr", { staticClass: "border-secondary" }),
+            _vm._v(" "),
             _c(
-              "div",
-              {
-                staticClass:
-                  "d-lg-flex align-items-center justify-content-between text-center pl-lg-5"
-              },
+              "b-card",
+              { attrs: { "no-body": "" } },
               [
-                _c("div", { staticClass: "col pt-2 pb-4" }, [
-                  _c("h1", { staticClass: "display-3" }, [
-                    _vm._v("Kredit Simulasi")
-                  ]),
-                  _vm._v(" "),
-                  _c("h5", { staticClass: "font-weight-light mb-4" }, [
-                    _vm._v(
-                      "\n              Gunakan kalkulator pintar untuk membantu perhitungan kredit\n              Anda.\n            "
-                    )
-                  ])
-                ]),
-                _vm._v(" "),
                 _c(
-                  "div",
+                  "b-tabs",
                   {
-                    staticClass: "col align-self-bottom justify-content-center"
+                    attrs: {
+                      pills: "",
+                      card: "",
+                      vertical: "",
+                      "nav-wrapper-class": "w-20"
+                    }
                   },
-                  [_c("CreditSVG")],
-                  1
-                )
-              ]
-            )
-          ])
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "container mt-4" },
-        [
-          _c(
-            "form-wizard",
-            {
-              attrs: {
-                title: "Form Perhitungan Kredit",
-                subtitle: "And a new subtitle"
-              }
-            },
-            [
-              _c(
-                "tab-content",
-                {
-                  attrs: {
-                    title: "Pilih Kredit yang diinginkan",
-                    icon: "fa fa-car"
-                  }
-                },
-                [
-                  _c(
-                    "div",
-                    { staticClass: "container mt-4" },
-                    [
-                      _c("h4", { staticClass: "text-secondary" }, [
-                        _c(
-                          "div",
-                          {
-                            staticClass: "iconbox iconsmall rounded-circle mr-2"
-                          },
-                          [_c("i", { staticClass: "fas fa-coins" })]
-                        ),
-                        _vm._v(
-                          "\n              Perhitungan Kredit yang di inginkan\n            "
-                        )
-                      ]),
-                      _vm._v(" "),
-                      _c(
-                        "b-container",
-                        { staticClass: "bv-example-row mb-4 mt-4" },
-                        [
+                  [
+                    _c(
+                      "b-tab",
+                      { attrs: { title: "Dewan Komisaris", active: "" } },
+                      [
+                        _c("b-card-text", [
                           _c(
-                            "b-card-group",
-                            { attrs: { deck: "" } },
-                            [
-                              _c(
-                                "b-link",
-                                {
-                                  staticClass: "card text-white",
-                                  class:
-                                    _vm.form.jenisSimulasi == 1
-                                      ? "bg-primary overlay shadow-lg"
-                                      : "bg-dark",
-                                  attrs: { href: "#" },
-                                  on: {
-                                    click: function($event) {
-                                      $event.preventDefault()
-                                      return _vm.pilihJenisSimulasi(1)
-                                    }
-                                  }
-                                },
-                                [
-                                  _c("b-card-body", [
-                                    _c("h4", [
-                                      _vm._v(
-                                        "\n                      Budget\n                      "
-                                      ),
-                                      _c(
-                                        "span",
-                                        { staticClass: "float-right" },
-                                        [
-                                          _c("i", {
-                                            staticClass: "fas fa-coins"
-                                          })
-                                        ]
-                                      )
-                                    ])
-                                  ])
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "b-link",
-                                {
-                                  staticClass: "card text-white",
-                                  class:
-                                    _vm.form.jenisSimulasi == 2
-                                      ? "bg-primary overlay shadow-lg"
-                                      : "bg-dark",
-                                  attrs: { href: "#" },
-                                  on: {
-                                    click: function($event) {
-                                      $event.preventDefault()
-                                      return _vm.pilihJenisSimulasi(2)
-                                    }
-                                  }
-                                },
-                                [
-                                  _c("b-card-body", [
-                                    _c("h4", [
-                                      _vm._v(
-                                        "\n                      Kredit\n                      "
-                                      ),
-                                      _c(
-                                        "span",
-                                        { staticClass: "float-right" },
-                                        [
-                                          _c("i", {
-                                            staticClass:
-                                              "fas fa-money-bill-wave"
-                                          })
-                                        ]
-                                      )
-                                    ])
-                                  ])
-                                ],
-                                1
-                              )
-                            ],
+                            "div",
+                            { staticClass: "row gap-y" },
+                            _vm._l(_vm.listteamkomisaris, function(item) {
+                              return _c("card-team-management", {
+                                key: item.id,
+                                attrs: {
+                                  name: item.name,
+                                  title: item.title,
+                                  desc: item.desc,
+                                  img: item.img
+                                }
+                              })
+                            }),
                             1
                           )
-                        ],
-                        1
-                      )
-                    ],
-                    1
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "tab-content",
-                { attrs: { title: "Data Simulasi", icon: "fas fa-file-alt" } },
-                [
-                  _c("b-form", { staticClass: "mt-4" }, [
-                    _vm.form.jenisSimulasi == 1
-                      ? _c(
-                          "div",
-                          [
-                            _c(
-                              "b-form-group",
-                              {
+                        ])
+                      ],
+                      1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "b-tab",
+                      { attrs: { title: "Dewan direksi" } },
+                      [
+                        _c("b-card-text", [
+                          _c(
+                            "div",
+                            { staticClass: "row gap-y" },
+                            _vm._l(_vm.listdireksi, function(item) {
+                              return _c("card-team-management", {
+                                key: item.id,
                                 attrs: {
-                                  id: "input-group-2",
-                                  label: "TJH:",
-                                  "label-for": "input-2"
+                                  name: item.name,
+                                  title: item.title,
+                                  desc: item.desc,
+                                  img: item.img
                                 }
-                              },
-                              [
-                                _c("b-form-select", {
-                                  attrs: {
-                                    id: "input-2",
-                                    options: _vm.itemtjh,
-                                    required: ""
-                                  },
-                                  model: {
-                                    value: _vm.form.tjh,
-                                    callback: function($$v) {
-                                      _vm.$set(_vm.form, "tjh", $$v)
-                                    },
-                                    expression: "form.tjh"
-                                  }
-                                })
-                              ],
-                              1
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "b-form-group",
-                              {
-                                attrs: {
-                                  id: "input-group-3",
-                                  label: "Jenis Simulasi Budget:",
-                                  "label-for": "input-3"
-                                }
-                              },
-                              [
-                                _c("b-form-select", {
-                                  attrs: {
-                                    id: "input-3",
-                                    options: _vm.itembudget,
-                                    required: ""
-                                  },
-                                  model: {
-                                    value: _vm.form.jenisBudget,
-                                    callback: function($$v) {
-                                      _vm.$set(_vm.form, "jenisBudget", $$v)
-                                    },
-                                    expression: "form.jenisBudget"
-                                  }
-                                })
-                              ],
-                              1
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "b-form-group",
-                              {
-                                attrs: {
-                                  id: "input-group-1",
-                                  label: "Email address:",
-                                  "label-for": "input-1",
-                                  description:
-                                    "We'll never share your email with anyone else."
-                                }
-                              },
-                              [
-                                _c("b-form-input", {
-                                  attrs: {
-                                    id: "input-1",
-                                    type: "email",
-                                    required: "",
-                                    placeholder: "Enter email"
-                                  },
-                                  model: {
-                                    value: _vm.form.email,
-                                    callback: function($$v) {
-                                      _vm.$set(_vm.form, "email", $$v)
-                                    },
-                                    expression: "form.email"
-                                  }
-                                })
-                              ],
-                              1
-                            )
-                          ],
-                          1
-                        )
-                      : _vm.form.jenisSimulasi == 2
-                      ? _c(
-                          "div",
-                          [
-                            _c(
-                              "b-form-group",
-                              {
-                                attrs: {
-                                  id: "input-group-2",
-                                  label: "Your Name:",
-                                  "label-for": "input-2"
-                                }
-                              },
-                              [
-                                _c("b-form-input", {
-                                  attrs: {
-                                    id: "input-2",
-                                    required: "",
-                                    placeholder: "Enter name"
-                                  },
-                                  model: {
-                                    value: _vm.form.name,
-                                    callback: function($$v) {
-                                      _vm.$set(_vm.form, "name", $$v)
-                                    },
-                                    expression: "form.name"
-                                  }
-                                })
-                              ],
-                              1
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "b-form-group",
-                              { attrs: { id: "input-group-4" } },
-                              [
-                                _c(
-                                  "b-form-checkbox-group",
-                                  {
-                                    attrs: { id: "checkboxes-4" },
-                                    model: {
-                                      value: _vm.form.checked,
-                                      callback: function($$v) {
-                                        _vm.$set(_vm.form, "checked", $$v)
-                                      },
-                                      expression: "form.checked"
-                                    }
-                                  },
-                                  [
-                                    _c(
-                                      "b-form-checkbox",
-                                      { attrs: { value: "me" } },
-                                      [_vm._v("Check me out")]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "b-form-checkbox",
-                                      { attrs: { value: "that" } },
-                                      [_vm._v("Check that out")]
-                                    )
-                                  ],
-                                  1
-                                )
-                              ],
-                              1
-                            )
-                          ],
-                          1
-                        )
-                      : _vm._e()
-                  ])
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "tab-content",
-                {
-                  attrs: {
-                    title: "Data Diri Pengaju Kredit",
-                    icon: "fas fa-id-card"
-                  }
-                },
-                [_vm._v("My second tab content")]
-              ),
-              _vm._v(" "),
-              _c(
-                "tab-content",
-                {
-                  attrs: {
-                    title: "Rangkuman Biaya Kredit",
-                    icon: "fas fa-money-check"
-                  }
-                },
-                [_vm._v("Yuhuuu! This seems pretty damn simple")]
-              ),
-              _vm._v(" "),
-              _c(
-                "b-button",
-                { attrs: { slot: "prev", variant: "danger" }, slot: "prev" },
-                [_vm._v("Prev")]
-              ),
-              _vm._v(" "),
-              _c(
-                "b-button",
-                {
-                  attrs: {
-                    slot: "next",
-                    variant: "success",
-                    disabled: !_vm.form.jenisSimulasi
-                  },
-                  slot: "next"
-                },
-                [_vm._v("Next")]
-              ),
-              _vm._v(" "),
-              _c(
-                "b-button",
-                {
-                  attrs: { slot: "finish", variant: "outline-primary" },
-                  slot: "finish"
-                },
-                [_vm._v("Finish")]
-              )
-            ],
-            1
-          )
-        ],
-        1
-      )
+                              })
+                            }),
+                            1
+                          )
+                        ])
+                      ],
+                      1
+                    )
+                  ],
+                  1
+                )
+              ],
+              1
+            )
+          ],
+          1
+        )
+      ])
+    ]),
+    _vm._v(" "),
+    _c("section", { staticClass: "pt-5 pb-5" }, [
+      _c("div", { staticClass: "pb-5 container" }, [
+        _c("div", { attrs: { "data-aos": "fade-down" } }, [
+          _c("h2", { staticClass: "text-center text-secondary" }, [
+            _c("strong", [_vm._v("STRUKTUR PERUSAHAAN")])
+          ]),
+          _vm._v(" "),
+          _c("hr", { staticClass: "border-secondary" }),
+          _vm._v(" "),
+          _c("img", {
+            attrs: {
+              src: "/img/struktur-organisasi.png",
+              alt: "",
+              width: "100%"
+            }
+          })
+        ])
+      ])
     ])
   ])
 }
@@ -1777,10 +1435,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Shared/img/creditSVG.vue?vue&type=template&id=1501075a&":
-/*!************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Shared/img/creditSVG.vue?vue&type=template&id=1501075a& ***!
-  \************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CardTeamManagement.vue?vue&type=template&id=dc55794a&":
+/*!*********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CardTeamManagement.vue?vue&type=template&id=dc55794a& ***!
+  \*********************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1792,333 +1450,37 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "svg",
-    {
-      attrs: {
-        id: "a139742c-031f-4297-9910-0b661ecf4262",
-        "data-name": "Layer 1",
-        xmlns: "http://www.w3.org/2000/svg",
-        width: "500",
-        height: "600",
-        viewBox: "0 0 700 600"
-      }
-    },
-    [
-      _c("title", [_vm._v("online_payments")]),
+  return _c("div", { staticClass: "col-md-12 col-xl-12" }, [
+    _c("div", { staticClass: "media" }, [
+      _c(
+        "div",
+        { staticClass: "mr-4" },
+        [
+          _c("b-img", {
+            attrs: {
+              thumbnail: "",
+              rounded: "circle",
+              alt: "image",
+              width: "80px",
+              height: "80px",
+              src: _vm.newurl
+            }
+          })
+        ],
+        1
+      ),
       _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M214.1947,574.21548l-5.333-21.03429A273.135,273.135,0,0,0,179.8838,542.7848l-.67337,9.77549L176.48,541.79069c-12.212-3.48717-20.51983-5.02321-20.51983-5.02321s11.22195,42.67366,34.7592,75.29821l27.426,4.81755-21.30654,3.072a110.50245,110.50245,0,0,0,9.53073,10.10012c34.24,31.78207,72.377,46.36387,85.18129,32.5693s-4.57282-50.7417-38.81286-82.52378c-10.61474-9.85276-23.94912-17.75951-37.29675-23.98229Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#e6e6e6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M264.9155,551.37272l6.30738-20.76292a273.13329,273.13329,0,0,0-19.4325-23.8785l-5.6294,8.02019,3.22943-10.63063C240.73891,494.82328,234.421,489.214,234.421,489.214s-12.45157,42.33122-9.16631,82.42573l20.98773,18.30061-19.82728-8.3836a110.50442,110.50442,0,0,0,2.938,13.57259c12.88281,44.90561,37.99241,77.10132,56.0839,71.91112s22.31392-45.80088,9.43111-90.70649c-3.9938-13.92118-11.32161-27.58227-19.53123-39.80866Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#e6e6e6"
-        }
-      }),
-      _vm._v(" "),
-      _c("rect", {
-        attrs: {
-          x: "0.07971",
-          y: "487.64984",
-          width: "888",
-          height: "2.24072",
-          fill: "#3f3d56"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M296.338,438.128s-6.91528,83.14848-8.40005,100.9657a126.7102,126.7102,0,0,1-7.42384,32.66491s-2.96954,5.93908-2.96954,11.87815v75.7232s-5.93907,0-4.4543,5.93908,2.96953,16.33245,2.96953,16.33245h22.27153s-1.48476-4.4543,2.96954-5.93907,0-13.36292,0-13.36292l23.7563-89.08612,35.63445-74.23843s20.78676,66.81459,25.24107,74.23843c0,0,16.33245,83.14705,19.302,90.57089s4.4543,7.42384,2.96953,10.39338-1.48476,5.93907,0,7.42384,29.69538,0,29.69538,0l-7.42385-105.41857L417.11284,450.00754l-68.29936-20.78676Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#2f2e41"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M292.39227,669.7533s-7.42384-26.72583-19.302-5.93907-11.87815,28.2106-11.87815,28.2106-19.302,28.21061,7.42384,25.24107,20.78676-16.33245,20.78676-16.33245,10.39338-5.93908,10.39338-10.39338S292.39227,669.7533,292.39227,669.7533Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#2f2e41"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M412.65853,666.78377s7.42384-26.72584,19.302-5.93908,11.87815,28.21061,11.87815,28.21061,19.302,28.2106-7.42384,25.24106-20.78676-16.33245-20.78676-16.33245-10.39338-5.93908-10.39338-10.39338S412.65853,666.78377,412.65853,666.78377Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#2f2e41"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M342.8744,237.68563s2.96954,19.302-5.93907,23.75629,19.302,20.78677,26.72584,20.78677S384.44793,267.381,384.44793,267.381s-7.42385-22.27153-5.93908-26.72584Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#a0616a"
-        }
-      }),
-      _vm._v(" "),
-      _c("circle", {
-        attrs: {
-          cx: "203.24671",
-          cy: "38.83808",
-          r: "31.18014",
-          fill: "#a0616a"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M420.08237,285.19822l-37.118-22.4886s-21.1191,23.97337-43.96746-2.75246l-39.18081,10.39338,5.93908,100.96426s-8.90861,40.08876-5.93908,47.5126-7.42384,10.39338-4.4543,11.87815,0,11.87815,0,11.87815,57.906,29.69537,121.751,7.42384l-5.93908-19.302a15.58017,15.58017,0,0,0-2.96954-14.84769s5.93908-8.90861-1.48476-16.33245c0,0,2.96953-13.36292-4.45431-19.302l-1.48477-20.78676,4.45431-10.39338Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#cfcce0"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M343.24976,206.87536s-3.7173,8.04469,11.15192,4.82681c0,0,5.576,3.21788,5.576-1.60893,0,0,7.43461,8.04469,9.29326,3.21787s5.576,1.60894,5.576,1.60894l3.7173-8.04469,3.71731,4.82681H395.292s3.7173-32.17875-40.89036-28.96087-22.663,54.20194-22.663,54.20194.35921-9.15169,4.07651-4.32487S343.24976,206.87536,343.24976,206.87536Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#2f2e41"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M433.44529,344.589l1.48477,31.18014s5.93908,57.906-5.93907,83.147v13.36291s-2.96954,34.14968-17.81723,32.66491,4.45431-48.99736,4.45431-48.99736l-2.96954-65.32982L409.689,353.49758Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#a0616a"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M403.74992,286.683l14.81131-2.40638a72.31337,72.31337,0,0,1,20.82314,38.04083c4.4543,23.7563,5.93907,28.2106,5.93907,28.2106L409.689,359.43666l-19.302-37.11922Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#cfcce0"
-        }
-      }),
-      _vm._v(" "),
-      _c("rect", {
-        attrs: {
-          x: "184.01662",
-          y: "87.22321",
-          width: "234.31056",
-          height: "116.39453",
-          fill: "#fff"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M365.56206,276.73782c-6.01967-3.62-13.278-3.3435-16.0373-3.067,1.05081,2.56549,4.20371,9.10919,10.22338,12.731,6.03437,3.62916,13.28306,3.34441,16.03823,3.06977C374.736,286.907,371.58266,280.36056,365.56206,276.73782Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M393.84906,348.57067H356.22553a8.4653,8.4653,0,1,0,0,16.93059h37.62353a8.4653,8.4653,0,1,0,0-16.93059Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M564.22146,259.21477H353.27787A18.68583,18.68583,0,0,0,334.592,277.90064V380.67657a18.68587,18.68587,0,0,0,18.68587,18.68587H564.22146a18.68587,18.68587,0,0,0,18.68587-18.68587V277.90064A18.68583,18.68583,0,0,0,564.22146,259.21477ZM348.05876,271.9614c.41656-.07532,10.29412-1.75626,18.47328,3.1653,8.17871,4.92063,11.32105,14.43582,11.45057,14.83815l.33067,1.026-1.06138.1883a28.17463,28.17463,0,0,1-4.57756.33619,27.25632,27.25632,0,0,1-13.89618-3.50241c-8.17871-4.91972-11.32059-14.43491-11.4501-14.83723l-.33068-1.026Zm45.7903,95.421H356.22553a10.34647,10.34647,0,0,1,0-20.69294h37.62353a10.34647,10.34647,0,1,1,0,20.69294Zm171.18709-1.88117a11.32027,11.32027,0,0,1-11.28706,11.28706H525.53144a11.32027,11.32027,0,0,1-11.28706-11.28706V348.57067a11.32023,11.32023,0,0,1,11.28706-11.28706h28.21765a11.32023,11.32023,0,0,1,11.28706,11.28706Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M534.467,362.2092H522.23938a3.29206,3.29206,0,0,0,0,6.58412H534.467a3.29206,3.29206,0,0,0,0-6.58412Zm0,4.70294H522.23938a1.41089,1.41089,0,1,1,0-2.82177H534.467a1.41089,1.41089,0,0,1,0,2.82177Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M557.04115,362.2092H544.8135a3.29206,3.29206,0,0,0,0,6.58412h12.22765a3.29206,3.29206,0,0,0,0-6.58412Zm0,4.70294H544.8135a1.41089,1.41089,0,1,1,0-2.82177h12.22765a1.41089,1.41089,0,0,1,0,2.82177Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M534.467,353.7439H522.23938a3.29206,3.29206,0,0,0,0,6.58412H534.467a3.29206,3.29206,0,0,0,0-6.58412Zm0,4.70294H522.23938a1.41088,1.41088,0,1,1,0-2.82176H534.467a1.41088,1.41088,0,1,1,0,2.82176Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M557.04115,353.7439H544.8135a3.29206,3.29206,0,0,0,0,6.58412h12.22765a3.29206,3.29206,0,0,0,0-6.58412Zm0,4.70294H544.8135a1.41088,1.41088,0,1,1,0-2.82176h12.22765a1.41088,1.41088,0,1,1,0,2.82176Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M534.467,345.27861H522.23938a3.29206,3.29206,0,0,0,0,6.58412H534.467a3.29206,3.29206,0,0,0,0-6.58412Zm0,4.70294H522.23938a1.41089,1.41089,0,1,1,0-2.82177H534.467a1.41089,1.41089,0,0,1,0,2.82177Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M557.04115,345.27861H544.8135a3.29206,3.29206,0,0,0,0,6.58412h12.22765a3.29206,3.29206,0,0,0,0-6.58412Zm0,4.70294H544.8135a1.41089,1.41089,0,1,1,0-2.82177h12.22765a1.41089,1.41089,0,0,1,0,2.82177Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M277.54458,326.77175s-13.36291,56.4212,2.96954,56.4212,54.93644-63.84505,54.93644-63.84505,40.08875-20.78676,23.7563-28.2106-37.11922,11.87815-37.11922,11.87815l-23.985,33.29991-1.2561-16.96746Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#a0616a"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M308.72473,279.25915l-8.90862-8.90861s-17.81722,10.39338-19.302,20.78676-8.90861,43.05829-8.90861,43.05829l27.46822,2.22715,8.90861-13.36292Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#cfcce0"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M730.74286,258.1379c-1.11855-3.30279-15.14535-14.52981-6.55009-16.41686l7.04866,9.39858,32.40661-32.406,3.25929,3.25929Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M730.74286,368.33187c-1.11855-3.30278-15.14535-14.5298-6.55009-16.41685l7.04866,9.39858,32.40661-32.406,3.25929,3.25929Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M730.74286,480.10005c-1.11855-3.30278-15.14535-14.5298-6.55009-16.41685l7.04866,9.39858,32.40661-32.406,3.25929,3.25928Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("circle", {
-        attrs: { cx: "672.94144", cy: "62.22326", r: "10", fill: "#3f3d56" }
-      }),
-      _vm._v(" "),
-      _c("rect", {
-        attrs: {
-          x: "710.44122",
-          y: "61.22319",
-          width: "161",
-          height: "2",
-          fill: "#3f3d56"
-        }
-      }),
-      _vm._v(" "),
-      _c("circle", {
-        attrs: { cx: "672.94144", cy: "172.41724", r: "10", fill: "#3f3d56" }
-      }),
-      _vm._v(" "),
-      _c("rect", {
-        attrs: {
-          x: "710.44122",
-          y: "171.41703",
-          width: "161",
-          height: "2",
-          fill: "#3f3d56"
-        }
-      }),
-      _vm._v(" "),
-      _c("circle", {
-        attrs: { cx: "672.94144", cy: "284.18542", r: "10", fill: "#3f3d56" }
-      }),
-      _vm._v(" "),
-      _c("rect", {
-        attrs: {
-          x: "710.44122",
-          y: "283.1851",
-          width: "161",
-          height: "2",
-          fill: "#3f3d56"
-        }
-      }),
-      _vm._v(" "),
-      _c("polygon", {
-        attrs: {
-          points:
-            "600.04 312.485 550.04 312.485 550.04 261.485 584.04 261.485 584.04 263.485 552.04 263.485 552.04 310.485 598.04 310.485 598.04 287.485 600.04 287.485 600.04 312.485",
-          fill: "#3f3d56"
-        }
-      }),
-      _vm._v(" "),
-      _c("polygon", {
-        attrs: {
-          points:
-            "600.04 200.485 550.04 200.485 550.04 149.485 584.04 149.485 584.04 151.485 552.04 151.485 552.04 198.485 598.04 198.485 598.04 175.485 600.04 175.485 600.04 200.485",
-          fill: "#3f3d56"
-        }
-      }),
-      _vm._v(" "),
-      _c("polygon", {
-        attrs: {
-          points:
-            "600.04 86.485 550.04 86.485 550.04 35.485 584.04 35.485 584.04 37.485 552.04 37.485 552.04 84.485 598.04 84.485 598.04 61.485 600.04 61.485 600.04 86.485",
-          fill: "#3f3d56"
-        }
-      })
-    ]
-  )
+      _c("div", { staticClass: "media-body" }, [
+        _c("h4", { staticClass: "mb-0" }, [_vm._v(_vm._s(_vm.name))]),
+        _vm._v(" "),
+        _c("p", { staticClass: "text-muted" }, [_vm._v(_vm._s(_vm.title))]),
+        _vm._v(" "),
+        _c("p", [_vm._v("\n        " + _vm._s(_vm.desc) + "\n      ")])
+      ])
+    ]),
+    _vm._v(" "),
+    _c("hr")
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -2598,17 +1960,17 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Product/SimulasiKredit/index.vue":
+/***/ "./resources/js/Pages/Profile/Teammanagement/index.vue":
 /*!*************************************************************!*\
-  !*** ./resources/js/Pages/Product/SimulasiKredit/index.vue ***!
+  !*** ./resources/js/Pages/Profile/Teammanagement/index.vue ***!
   \*************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _index_vue_vue_type_template_id_4b74e8c6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.vue?vue&type=template&id=4b74e8c6& */ "./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=template&id=4b74e8c6&");
-/* harmony import */ var _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=script&lang=js&");
+/* harmony import */ var _index_vue_vue_type_template_id_27c7b8d2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.vue?vue&type=template&id=27c7b8d2& */ "./resources/js/Pages/Profile/Teammanagement/index.vue?vue&type=template&id=27c7b8d2&");
+/* harmony import */ var _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Profile/Teammanagement/index.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -2619,8 +1981,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _index_vue_vue_type_template_id_4b74e8c6___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _index_vue_vue_type_template_id_4b74e8c6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _index_vue_vue_type_template_id_27c7b8d2___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _index_vue_vue_type_template_id_27c7b8d2___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -2630,38 +1992,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/Pages/Product/SimulasiKredit/index.vue"
+component.options.__file = "resources/js/Pages/Profile/Teammanagement/index.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=script&lang=js&":
+/***/ "./resources/js/Pages/Profile/Teammanagement/index.vue?vue&type=script&lang=js&":
 /*!**************************************************************************************!*\
-  !*** ./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=script&lang=js& ***!
+  !*** ./resources/js/Pages/Profile/Teammanagement/index.vue?vue&type=script&lang=js& ***!
   \**************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Profile/Teammanagement/index.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=template&id=4b74e8c6&":
+/***/ "./resources/js/Pages/Profile/Teammanagement/index.vue?vue&type=template&id=27c7b8d2&":
 /*!********************************************************************************************!*\
-  !*** ./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=template&id=4b74e8c6& ***!
+  !*** ./resources/js/Pages/Profile/Teammanagement/index.vue?vue&type=template&id=27c7b8d2& ***!
   \********************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_4b74e8c6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=template&id=4b74e8c6& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=template&id=4b74e8c6&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_4b74e8c6___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_27c7b8d2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=template&id=27c7b8d2& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Profile/Teammanagement/index.vue?vue&type=template&id=27c7b8d2&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_27c7b8d2___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_4b74e8c6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_27c7b8d2___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -2910,27 +2272,29 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/Shared/img/creditSVG.vue":
-/*!***********************************************!*\
-  !*** ./resources/js/Shared/img/creditSVG.vue ***!
-  \***********************************************/
+/***/ "./resources/js/components/CardTeamManagement.vue":
+/*!********************************************************!*\
+  !*** ./resources/js/components/CardTeamManagement.vue ***!
+  \********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _creditSVG_vue_vue_type_template_id_1501075a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./creditSVG.vue?vue&type=template&id=1501075a& */ "./resources/js/Shared/img/creditSVG.vue?vue&type=template&id=1501075a&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _CardTeamManagement_vue_vue_type_template_id_dc55794a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CardTeamManagement.vue?vue&type=template&id=dc55794a& */ "./resources/js/components/CardTeamManagement.vue?vue&type=template&id=dc55794a&");
+/* harmony import */ var _CardTeamManagement_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CardTeamManagement.vue?vue&type=script&lang=js& */ "./resources/js/components/CardTeamManagement.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
-var script = {}
+
+
 
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
-  script,
-  _creditSVG_vue_vue_type_template_id_1501075a___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _creditSVG_vue_vue_type_template_id_1501075a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _CardTeamManagement_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _CardTeamManagement_vue_vue_type_template_id_dc55794a___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _CardTeamManagement_vue_vue_type_template_id_dc55794a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -2940,24 +2304,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/Shared/img/creditSVG.vue"
+component.options.__file = "resources/js/components/CardTeamManagement.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/Shared/img/creditSVG.vue?vue&type=template&id=1501075a&":
-/*!******************************************************************************!*\
-  !*** ./resources/js/Shared/img/creditSVG.vue?vue&type=template&id=1501075a& ***!
-  \******************************************************************************/
+/***/ "./resources/js/components/CardTeamManagement.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/components/CardTeamManagement.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CardTeamManagement_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./CardTeamManagement.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CardTeamManagement.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CardTeamManagement_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/CardTeamManagement.vue?vue&type=template&id=dc55794a&":
+/*!***************************************************************************************!*\
+  !*** ./resources/js/components/CardTeamManagement.vue?vue&type=template&id=dc55794a& ***!
+  \***************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_creditSVG_vue_vue_type_template_id_1501075a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./creditSVG.vue?vue&type=template&id=1501075a& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Shared/img/creditSVG.vue?vue&type=template&id=1501075a&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_creditSVG_vue_vue_type_template_id_1501075a___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CardTeamManagement_vue_vue_type_template_id_dc55794a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./CardTeamManagement.vue?vue&type=template&id=dc55794a& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CardTeamManagement.vue?vue&type=template&id=dc55794a&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CardTeamManagement_vue_vue_type_template_id_dc55794a___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_creditSVG_vue_vue_type_template_id_1501075a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CardTeamManagement_vue_vue_type_template_id_dc55794a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
