@@ -2,8 +2,6 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/shfcoid/webtest.shf.co.id
-    - composer install
-    - composer dump-autoload
     - /bin/cp -rf * $DEPLOYPATH #copy all from root
     - /bin/chmod 757 $DEPLOYPATH/deploy.sh
     - /bin/chmod 757 $DEPLOYPATH/build.sh

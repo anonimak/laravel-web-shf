@@ -13,9 +13,9 @@ cd $DEPLOYPATH
 php artisan down
 
 # Install/update composer dependecies
-#composer install
+composer install
 # composer install --no-interaction --optimize-autoloader
-#composer dump-autoload
+composer dump-autoload
 
 # Set env
 cp $DEPLOYPATH/.env.webtest $DEPLOYPATH/.env
