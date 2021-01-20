@@ -17,7 +17,7 @@ composer install --no-interaction --optimize-autoloader
 composer dump-autoload
 
 # Run database migrations
-#php artisan migrate --force
+php artisan migrate --force --seed
 
 # Run database seeders
 #php artisan db:seed --class=NxxxxXxxxxYyy
@@ -37,7 +37,10 @@ php artisan config:clear
 php artisan config:cache
 
 # Clear view
-php artisan view:clear;
+php artisan view:clear
+
+# Create Symlink
+php artisan storage:link
 
 # Install node modules
 npm install
