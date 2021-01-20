@@ -3,4 +3,5 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/shfcoid/webtest.shf.co.id
     - /bin/cp -rf * $DEPLOYPATH #copy all from root
-    # - $DEPLOYPATH/deploy.sh 2>&1
+    - /bin/chmod 757 $DEPLOYPATH/deploy.sh
+    - $DEPLOYPATH/deploy.sh 2>&1
