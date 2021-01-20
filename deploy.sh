@@ -9,13 +9,13 @@ DEPLOYPATH=/home/shfcoid/webtest.shf.co.id
 # Change to the project directory
 cd $DEPLOYPATH
 
+# Install/update composer dependecies
+# composer install
+# composer install --no-interaction --optimize-autoloader
+# composer dump-autoload
+
 # Turn on maintenance mode
 php artisan down
-
-# Install/update composer dependecies
-composer install
-# composer install --no-interaction --optimize-autoloader
-composer dump-autoload
 
 # Set env
 cp $DEPLOYPATH/.env.webtest $DEPLOYPATH/.env
