@@ -11,8 +11,8 @@ cd $DEPLOYPATH
 
 # Install/update composer dependecies
 # composer install
-# composer install --no-interaction --optimize-autoloader
-# composer dump-autoload
+composer install --no-interaction --optimize-autoloader
+composer dump-autoload
 
 # Turn on maintenance mode
 php artisan down
