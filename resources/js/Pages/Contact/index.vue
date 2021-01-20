@@ -14,7 +14,7 @@
           </p>
           <div class="row mt-4">
             <div class="col">
-              <!-- <iframe
+              <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253823.23071047236!2d106.75660637751643!3d-6.265310422166139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6202c35969aee5d9!2sPT%20SINARMAS%20HANA%20FINANCE%20ROXY%20SQUARE!5e0!3m2!1sid!2sid!4v1604978419416!5m2!1sid!2sid"
                 width="100%"
                 height="450"
@@ -23,9 +23,9 @@
                 allowfullscreen=""
                 aria-hidden="false"
                 tabindex="0"
-              ></iframe> -->
+              ></iframe>
 
-            <hana-map class="hana-map" :datamarkers="data_offices"/>
+            <!-- <hana-map class="hana-map" :datamarkers="data_offices"/> -->
             </div>
           </div>
           <div class="row mt-4">
@@ -58,14 +58,17 @@
 
 <script>
 import Layout from "@/Shared/Layout"; //import layouts
-import HanaMap from "@/components/HanaMap";
+// import HanaMap from "@/components/HanaMap";
 
 export default {
   components: {
     Layout,
-    HanaMap
+    // HanaMap
   },
-  props: ["meta","data_offices"],
+  props: [
+    "meta",
+    // "data_offices"
+    ],
   
 };
 </script>
