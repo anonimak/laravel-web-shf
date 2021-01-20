@@ -16,6 +16,9 @@ php artisan down
 composer install --no-interaction --optimize-autoloader
 composer dump-autoload
 
+# Set env
+cp $DEPLOYPATH/.env.webtest $DEPLOYPATH/.env
+
 # Run database migrations
 php artisan migrate --force --seed
 
@@ -50,6 +53,9 @@ npm run dev
 
 # copy all file public to root
 cp -rf $DEPLOYPATH/public/* $DEPLOYPATH
+
+# replace index.php
+mv -f $DEPLOYPATH/index.php.server $DEPLOYPATH/index.php
 
 # Build assets using Laravel Mix
 #gulp --scope=all --production
