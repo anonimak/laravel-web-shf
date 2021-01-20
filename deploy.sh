@@ -13,7 +13,8 @@ cd $DEPLOYPATH
 php artisan down
 
 # Install/update composer dependecies
-composer install --no-interaction --optimize-autoloader
+composer install
+# composer install --no-interaction --optimize-autoloader
 composer dump-autoload
 
 # Set env
