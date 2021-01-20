@@ -5,4 +5,6 @@ deployment:
     - /bin/cp -rf * $DEPLOYPATH #copy all from root
     - /bin/chmod 757 $DEPLOYPATH/deploy.sh
     - /bin/chmod 757 $DEPLOYPATH/build.sh
+    - $DEPLOYPATH/composer install
+    - $DEPLOYPATH/composer dump-autoload
     - $DEPLOYPATH/deploy.sh 2>&1
