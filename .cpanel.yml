@@ -2,7 +2,7 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/shfcoid/webtest.shf.co.id
-    - export NPMPATH=/home/shfcoid/.nvm/versions/node/v14.15.4/bin
+    - export NPMPATH=/home/shfcoid/.nvm/versions/node/v15.6.0/bin
     - /bin/cp -af . $DEPLOYPATH #copy all from root
     - /bin/chmod 757 $DEPLOYPATH/deploy.sh
     - /bin/chmod 757 $DEPLOYPATH/build.sh
