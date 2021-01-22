@@ -5,14 +5,16 @@ set -x
 
 #deploypath here
 DEPLOYPATH=/home/shfcoid/webtest.shf.co.id
+COMPOSERPATH=/home/shfcoid/.composer/bin
+NPMPATH=/home/shfcoid/.nvm/versions/node/v14.15.4/bin
 
 # Change to the project directory
 cd $DEPLOYPATH
 
 # Install/update composer dependecies
 # composer install
-composer install --no-interaction --optimize-autoloader
-composer dump-autoload
+$COMPOSERPATH/composer install --no-interaction --optimize-autoloader
+$COMPOSERPATH/composer dump-autoload
 
 # Turn on maintenance mode
 php artisan down
@@ -47,10 +49,10 @@ php artisan view:clear
 php artisan storage:link
 
 # Install node modules
-npm install
+$NPMPATH/npm install
 
 # Run dev
-npm run dev
+$NPMPATH/npm run dev
 
 # copy all file public to root
 cp -rf $DEPLOYPATH/public/* $DEPLOYPATH
