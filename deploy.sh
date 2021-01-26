@@ -49,13 +49,13 @@ php artisan view:clear
 php artisan storage:link
 
 # Install node modules
-$NPMPATH/npm install
+# $NPMPATH/npm install
 
 # Run dev
-$NPMPATH/npm run dev
+# $NPMPATH/npm run dev
 
 # copy all file public to root
-cp -rf $DEPLOYPATH/public/* $DEPLOYPATH
+# cp -rf $DEPLOYPATH/public/* $DEPLOYPATH
 
 # replace index.php
 mv -f $DEPLOYPATH/index.php.server $DEPLOYPATH/index.php

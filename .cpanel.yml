@@ -9,4 +9,4 @@ deployment:
     - cd $DEPLOYPATH
     - $NPMPATH/npm install
     - $NPMPATH/npm run dev
-    # - $DEPLOYPATH/deploy.sh 2>&1
+    - $DEPLOYPATH/deploy.sh 2>&1
