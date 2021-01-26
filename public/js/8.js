@@ -2230,9 +2230,9 @@ var staticRenderFns = [
                     "a",
                     {
                       staticClass: "text-muted",
-                      attrs: { href: "https://instagram.com/shf.co.id" }
+                      attrs: { href: "https://instagram.com/hanafinance" }
                     },
-                    [_vm._v("shf.co.id")]
+                    [_vm._v("hanafinance")]
                   )
                 ])
               ]),

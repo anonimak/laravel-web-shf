@@ -12,7 +12,8 @@
                 <div>
                     <b-card>
                         <div>
-                            <b-tabs v-model="tabIndex" content-class="mt-3">
+                            <keep-alive>
+                            <b-tabs v-model="tabIndex.index" content-class="mt-3">
                                 <b-tab title="Slider">
                                     <div class="row">
                                         <div class="col-12">
@@ -44,6 +45,7 @@
                                     </div>
                                 </b-tab>
                             </b-tabs>
+                            </keep-alive>
                         </div>
                     </b-card>
                 </div>
@@ -58,13 +60,21 @@ import CardSlider from "@/components/AdminComponents/CardSlider";
 import AddSlider from "@/components/AdminComponents/AddSlider";
 import Alert from "@/components/AdminComponents/Alert";
 import Breadcrumb from "@/components/Breadcrumb";
+import {Tabs, Tab} from 'vue-tabs-component';
 
 export default {
     metaInfo: { title: "Page Home" },
+    remember: {
+        data: ['tabIndex'],
+        key: 'page/home',
+    },
     data() {
         return {
             isButtonAdd: false,
-            tabIndex: 1
+            tabIndex: {
+                index:0,
+                test:'fasf'
+            }
         };
     },
     components: {
@@ -74,7 +84,9 @@ export default {
         Alert,
         Breadcrumb,
         GridLayout: VueGridLayout.GridLayout,
-        GridItem: VueGridLayout.GridItem
+        GridItem: VueGridLayout.GridItem,
+        Tabs,
+        Tab
     },
     props: ["meta", "dataSlider", "flash","breadcrumbItems"],
     methods: {

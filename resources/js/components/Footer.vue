@@ -47,8 +47,8 @@
             <li>
               <div class="rounded-circle text-light">
                 <i class="fab fa-instagram mr-2"></i>
-                <a class="text-muted" href="https://instagram.com/shf.co.id"
-                  >shf.co.id</a
+                <a class="text-muted" href="https://instagram.com/hanafinance"
+                  >hanafinance</a
                 >
               </div>
             </li>

@@ -18,6 +18,6 @@ class Slider extends Model
 
     public function getImageAttribute($value)
     {
-        return Storage::url($value);
+        return 'public'.Storage::url($value);
     }
 }

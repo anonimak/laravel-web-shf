@@ -13,19 +13,19 @@
                 <b-form id="form" @submit.prevent="submit">
                     <b-card-header class="p-0">
                         <div class="float-right">
-                            <b-button variant="outline-primary" v-b-tooltip.hover title="Fullscreen" @click="toggleFullscreen">
+                            <!-- <b-button variant="outline-primary" v-b-tooltip.hover title="Fullscreen" @click="toggleFullscreen">
                                     <i class="fas fa-expand"></i>
-                            </b-button>
+                            </b-button> -->
                             <!-- <b-button variant="outline-primary" @click="previewFullscr">
                                     <i class="fas fa-cog"></i>
                             </b-button> -->
-                            <b-button variant="outline-danger" 
+                            <!-- <b-button variant="outline-danger" 
                                 v-b-tooltip.hover 
                                 title="Edit Data"
                                 :pressed="isEditmode"
                                 @click="doEditmode">
                                     <i class="fas fa-edit"></i>
-                            </b-button>
+                            </b-button> -->
                         </div>
                         <div 
                         @mouseenter="isHoverimg = true" 

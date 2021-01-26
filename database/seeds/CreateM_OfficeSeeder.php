@@ -50,7 +50,7 @@ class CreateM_OfficeSeeder extends Seeder
                 'longitude'=>106.80755775024797
             ],
             [
-                'name'=>'PT SINARMAS HANA FINANCE CIKARANG',
+                'name'=>'PT SINARMAS HANA FINANCE BEKASI',
                 'address'=>'Jl. MH. Thamrin, Cibatu, Cikarang Sel., Bekasi, Jawa Barat 17530',
                 'telp' => '+621899133331/+62189922003',
                 'latitude' => -6.330266095305013,

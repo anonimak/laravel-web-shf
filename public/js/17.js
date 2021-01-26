@@ -1089,51 +1089,7 @@ var render = function() {
                       "b-card-header",
                       { staticClass: "p-0" },
                       [
-                        _c(
-                          "div",
-                          { staticClass: "float-right" },
-                          [
-                            _c(
-                              "b-button",
-                              {
-                                directives: [
-                                  {
-                                    name: "b-tooltip",
-                                    rawName: "v-b-tooltip.hover",
-                                    modifiers: { hover: true }
-                                  }
-                                ],
-                                attrs: {
-                                  variant: "outline-primary",
-                                  title: "Fullscreen"
-                                },
-                                on: { click: _vm.toggleFullscreen }
-                              },
-                              [_c("i", { staticClass: "fas fa-expand" })]
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "b-button",
-                              {
-                                directives: [
-                                  {
-                                    name: "b-tooltip",
-                                    rawName: "v-b-tooltip.hover",
-                                    modifiers: { hover: true }
-                                  }
-                                ],
-                                attrs: {
-                                  variant: "outline-danger",
-                                  title: "Edit Data",
-                                  pressed: _vm.isEditmode
-                                },
-                                on: { click: _vm.doEditmode }
-                              },
-                              [_c("i", { staticClass: "fas fa-edit" })]
-                            )
-                          ],
-                          1
-                        ),
+                        _c("div", { staticClass: "float-right" }),
                         _vm._v(" "),
                         _c(
                           "div",

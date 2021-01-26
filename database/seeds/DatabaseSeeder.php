@@ -20,10 +20,11 @@ class DatabaseSeeder extends Seeder
         factory(App\Promo::class, 0)->create();
         // factory(App\Slider::class, 5)->create();
         App\Slider::create([
-            'caption' => '',
-            'text' => '',
-            'image' => 'public/sliders/SliderWeb-Des2019.png',
-            'show' => true
-        ]);
+                'caption' => '',
+                'text' => '',
+                'image' => 'public/sliders/SliderWeb-Des2019.png',
+                'show' => true
+            ]
+        );
     }
 }
