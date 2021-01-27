@@ -104,6 +104,32 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
  //import layouts
 
 
@@ -130,24 +156,24 @@ __webpack_require__.r(__webpack_exports__);
         thumbnailHeight: null,
         init: function init() {
           this.on("thumbnail", function (file, dataUrl) {
-            $('.dz-image').last().find('img').attr({
-              width: '100%',
-              height: '100%'
+            $(".dz-image").last().find("img").attr({
+              width: "100%",
+              height: "100%"
             });
           }), this.on("success", function (file) {
-            $('.dz-image').css({
-              "width": "100%",
-              "height": "auto"
+            $(".dz-image").css({
+              width: "100%",
+              height: "auto"
             });
           });
         },
         addRemoveLinks: true,
-        dictDefaultMessage: "<i class='fas fa-cloud-upload-alt'></i><br/>Drop your slider here"
+        dictDefaultMessage: "<i class='fas fa-cloud-upload-alt'></i><br/>Drop your image here"
       },
       form: {
-        caption: '',
-        index: null,
-        text: '',
+        caption: "",
+        index: "",
+        text: "",
         show: 1,
         image: null
       }
@@ -912,7 +938,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n.vue-dropzone[data-v-8250b40a] {\n    border: none !important;\n}\n#dropzone[data-v-8250b40a] {\n    padding: 0 !important;\n}\n.dropzone .dz-preview .dz-image-preview[data-v-8250b40a] {\n    margin: 0 !important;\n}\n", ""]);
+exports.push([module.i, "\n.vue-dropzone[data-v-8250b40a] {\r\n    border: none !important;\n}\n#dropzone[data-v-8250b40a] {\r\n    padding: 0 !important;\n}\n.dropzone .dz-preview .dz-image-preview[data-v-8250b40a] {\r\n    margin: 0 !important;\n}\r\n", ""]);
 
 // exports
 
@@ -1028,6 +1054,17 @@ var render = function() {
                     _c(
                       "b-card-body",
                       [
+                        _c("b-form-group", {
+                          attrs: {
+                            id: "input-group-caption",
+                            "label-for": "input-caption",
+                            "invalid-feedback": _vm.errors.image
+                              ? _vm.errors.image[0]
+                              : "",
+                            state: _vm.errors.image ? false : null
+                          }
+                        }),
+                        _vm._v(" "),
                         _c(
                           "b-form-group",
                           {
@@ -1099,7 +1136,11 @@ var render = function() {
                             attrs: {
                               id: "input-group-index",
                               label: "Index:",
-                              "label-for": "input-index"
+                              "label-for": "input-index",
+                              "invalid-feedback": _vm.errors.index
+                                ? _vm.errors.index[0]
+                                : "",
+                              state: _vm.errors.index ? false : null
                             }
                           },
                           [
@@ -1108,12 +1149,13 @@ var render = function() {
                                 id: "input-index",
                                 type: "number",
                                 name: "index",
+                                state: _vm.errors.index ? false : null,
                                 placeholder: "Input index"
                               },
                               model: {
                                 value: _vm.form.index,
                                 callback: function($$v) {
-                                  _vm.$set(_vm.form, "index", $$v)
+                                  _vm.$set(_vm.form, "index", _vm._n($$v))
                                 },
                                 expression: "form.index"
                               }

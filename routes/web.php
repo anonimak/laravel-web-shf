@@ -95,6 +95,9 @@ Route::get('admin/page/home/slider/{slider}/detail', 'Admin\CfgHomeController@de
 Route::get('admin/page/home/slider/{slider}/update', 'Admin\CfgHomeController@updateSlider')
     ->name('admin.page.home.slider.update')
     ->middleware('auth', 'is_admin');
+Route::post('admin/page/home/slider/{id}/updateImage', 'Admin\CfgHomeController@updateSliderImage')
+    ->name('admin.page.home.slider.updateImage')
+    ->middleware('auth', 'is_admin');
 Route::get('admin/page/home/slider/{slider}/delete', 'Admin\CfgHomeController@destroySlider')
     ->name('admin.page.home.slider.delete')
     ->middleware('auth', 'is_admin');

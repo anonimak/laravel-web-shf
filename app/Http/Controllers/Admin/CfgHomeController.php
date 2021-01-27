@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\File;
 use Inertia\Inertia;
 use App\Slider;
 
@@ -90,16 +91,12 @@ class CfgHomeController extends Controller
     {
 
         $request->validate([
-            'caption'   => 'required',
             'show'      => 'required',
             'text'      => 'nullable|max:250',
-            'index'     => 'nullable|numeric',
+            'index'     => 'nullable',
             'image'     => 'required|image|mimes:jpg,jpeg,png|max:1024',
         ]);
-        
-        // $imageName = time().'.'.$request->image->extension();  
-        // $request->image->move(public_path('img/slider'), $imageName);
-        // $path = base_path('img/slider/'.$imageName);
+
         // store in storage
         $path = $request->file('image')->store('public/sliders');
         Slider::create([
@@ -125,6 +122,7 @@ class CfgHomeController extends Controller
                 'index'     => $slider->index,
             ],
             '_update_url' => URL::route('admin.page.home.slider.update', $slider->id),
+            '_updateImage_url' => URL::route('admin.page.home.slider.updateImage', $slider->id),
             '_delete_url' => URL::route('admin.page.home.slider.delete', $slider->id),
             '_token' => csrf_token(),
             'breadcrumbItems' => array(
@@ -150,36 +148,60 @@ class CfgHomeController extends Controller
         ]);
     }
 
-    // public function updateSliderImage(Slider )
-    // {
-        
-    // }
+    public function updateSliderImage(Request $request)
+    {
+        $request->validate([
+            'image' => 'required|image|mimes:jpg,jpeg,png|max:1024',
+            ]);
+        if ($request->hasFile('image')) {
+            $slider = Slider::where('id',$request->id)->first();
+            if(File::exists(public_path($slider->image))){
+                File::delete(public_path($slider->image));
+            }
+            $path = $request->file('image')->store('public/sliders');
+            Slider::where('id',$request->id)->update(
+                [
+                    'image' => $path
+                ]
+            );
+        }
+        return Redirect::back()->with('success', 'Successful updating image Slider.');
+    }
 
     public function updateSlider(Slider $slider)
     {
+        // $request->validate([
+        //     'show'      => 'required',
+        //     'text'      => 'nullable|max:250',
+        //     'index'     => 'nullable',
+        // ]);
+
+        // $slider->update([
+        //     'show'  => $request->show,
+        //     'text'  => $request->text,
+        //     'index' => $request->index,
+        // ]);
+
         $slider->update(
-            Request::validate([
-                'caption'   => 'required',
+            $request->validate([
                 'show'      => 'required',
                 'text'      => 'nullable|max:250',
-                'index'     => 'nullable|numeric'
+                'index'     => 'nullable',
             ])
-        );  
+        );
 
-        return Redirect::back()->with('success', 'Slider updated.');
+        return Redirect::back()->with('success', 'Info Slider updated.');
     }
 
     public function destroySlider(Slider $slider)
     {
         $slider->delete();
-
         return Redirect::back()->with('success', 'Slider deleted.');
     }
 
     public function restoreSlider(Organization $organization)
     {
         $organization->restore();
-
         return Redirect::back()->with('success', 'Organization restored.');
     }
 }

@@ -15,6 +15,7 @@
     <script src="{{ asset('/js/vendor.js') }}"></script>
     <script src="{{ asset('/js/vendor/share.js') }}" type="text/javascript"></script>
     {{-- <script src="{{ asset('/js/functions.js') }}" type="text/javascript"></script> --}}
+    <link rel="shortcut icon" href="{{ asset('favicon.ico')}}" type="image/x-icon">
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:300,300i,400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"

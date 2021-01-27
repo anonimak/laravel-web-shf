@@ -155,6 +155,68 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
  //import layouts
 
 
@@ -181,27 +243,31 @@ __webpack_require__.r(__webpack_exports__);
         thumbnailHeight: null,
         init: function init() {
           this.on("thumbnail", function (file, dataUrl) {
-            $('.dz-image').last().find('img').attr({
-              width: '100%',
-              height: '100%'
+            $(".dz-image").last().find("img").attr({
+              width: "100%",
+              height: "100%"
             });
+          }), this.on("file-added", function (file) {
+            console.log(file);
           }), this.on("success", function (file) {
-            $('.dz-image').css({
-              "width": "100%",
-              "height": "auto"
+            $(".dz-image").css({
+              width: "100%",
+              height: "auto"
             });
           });
         },
         addRemoveLinks: true,
-        dictDefaultMessage: "<i class='fas fa-cloud-upload-alt'></i><br/>Drop your slider here"
+        dictDefaultMessage: "<i class='fas fa-cloud-upload-alt'></i><br/>Drop your slider here <br/>"
       },
       form: {
-        caption: '',
+        caption: "",
         index: null,
-        text: '',
+        text: "",
         show: 1,
         image: null
       },
+      isEditImagemode: false,
+      isSubmitImagemode: false,
       isEditmode: false,
       isHoverimg: false,
       fullscreen: false
@@ -220,16 +286,32 @@ __webpack_require__.r(__webpack_exports__);
       console.log(FormData);
       this.$inertia.post(this._store_url, formData);
     },
+    submitImage: function submitImage() {
+      var formData = new FormData();
+      formData.append("image", this.form.image);
+      this.$inertia.post(this._updateImage_url, formData);
+    },
     doEditmode: function doEditmode() {
       this.isEditmode = !this.isEditmode; // refill form
 
       this.fillDataform();
     },
+    doEditImagemode: function doEditImagemode() {
+      this.isEditImagemode = !this.isEditImagemode;
+    },
+    doCancelImagemode: function doCancelImagemode() {
+      this.isEditImagemode = !this.isEditImagemode;
+      this.$refs.myVueDropzone.removeAllFiles();
+      this.form.image = this.dataSlider.image;
+      this.isSubmitImagemode = false;
+    },
     dropzoneRemovedFile: function dropzoneRemovedFile(file, error, xhr) {
       this.form.image = null;
+      this.isSubmitImagemode = false;
     },
     dropzoneFileAdded: function dropzoneFileAdded(file) {
       this.form.image = file;
+      this.isSubmitImagemode = true;
     },
     dropzoneSendingEvent: function dropzoneSendingEvent(file, xhr, formData) {},
     fillDataform: function fillDataform() {
@@ -240,14 +322,14 @@ __webpack_require__.r(__webpack_exports__);
       this.form.image = this.dataSlider.image;
     },
     toggleFullscreen: function toggleFullscreen() {
-      this.$refs['fullscreen'].toggle(); // recommended
+      this.$refs["fullscreen"].toggle(); // recommended
       // this.fullscreen = !this.fullscreen // deprecated
     },
     fullscreenChange: function fullscreenChange(fullscreen) {
       this.fullscreen = fullscreen;
     }
   },
-  props: ["_update_url", "_token", "errors", "breadcrumbItems", "flash", "dataSlider"],
+  props: ["_update_url", "_updateImage_url", "_token", "errors", "breadcrumbItems", "flash", "dataSlider"],
   mounted: function mounted() {
     this.fillDataform();
   }
@@ -988,7 +1070,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n.vue-dropzone[data-v-70387ec0] {\n    border: none !important;\n}\n.dropzone[data-v-70387ec0] {\n    height: 100%;\n    background: none;\n}\n.dropzone .dz-preview .dz-image-preview[data-v-70387ec0] {\n    margin: 0 !important;\n}\n", ""]);
+exports.push([module.i, "\n.vue-dropzone[data-v-70387ec0] {\r\n    border: none !important;\n}\n.dropzone[data-v-70387ec0] {\r\n    height: 100%;\r\n    background: none;\n}\n.dropzone .dz-preview .dz-image-preview[data-v-70387ec0] {\r\n    margin: 0 !important;\n}\r\n", ""]);
 
 // exports
 
@@ -1073,10 +1155,213 @@ var render = function() {
               "b-card",
               { attrs: { "no-body": "" } },
               [
+                _c("b-card-header", { staticClass: "p-0" }, [
+                  _c("div", { staticClass: "float-right" }),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      class: !_vm.isEditImagemode ? "" : "d-none",
+                      on: {
+                        mouseenter: function($event) {
+                          _vm.isHoverimg = true
+                        },
+                        mouseleave: function($event) {
+                          _vm.isHoverimg = false
+                        }
+                      }
+                    },
+                    [
+                      _c(
+                        "b-overlay",
+                        {
+                          attrs: {
+                            show: _vm.isHoverimg,
+                            "no-center": "",
+                            variant: "dark"
+                          },
+                          scopedSlots: _vm._u([
+                            {
+                              key: "overlay",
+                              fn: function() {
+                                return [
+                                  _c(
+                                    "div",
+                                    {
+                                      staticClass:
+                                        "float-right position-absolute",
+                                      staticStyle: {
+                                        top: "12px",
+                                        right: "12px"
+                                      }
+                                    },
+                                    [
+                                      _c(
+                                        "b-button",
+                                        {
+                                          directives: [
+                                            {
+                                              name: "b-tooltip",
+                                              rawName: "v-b-tooltip.hover",
+                                              modifiers: { hover: true }
+                                            }
+                                          ],
+                                          attrs: {
+                                            variant: "outline-primary",
+                                            title: "Fullscreen"
+                                          },
+                                          on: { click: _vm.toggleFullscreen }
+                                        },
+                                        [
+                                          _c("i", {
+                                            staticClass: "fas fa-expand"
+                                          })
+                                        ]
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "b-button",
+                                        {
+                                          directives: [
+                                            {
+                                              name: "b-tooltip",
+                                              rawName: "v-b-tooltip.hover",
+                                              modifiers: { hover: true }
+                                            }
+                                          ],
+                                          attrs: {
+                                            variant: "outline-danger",
+                                            title: "Change Image",
+                                            pressed: _vm.isEditImagemode
+                                          },
+                                          on: { click: _vm.doEditImagemode }
+                                        },
+                                        [
+                                          _c("i", {
+                                            staticClass: "fas fa-edit"
+                                          })
+                                        ]
+                                      )
+                                    ],
+                                    1
+                                  )
+                                ]
+                              },
+                              proxy: true
+                            }
+                          ])
+                        },
+                        [
+                          _vm._v(" "),
+                          _c(
+                            "fullscreen",
+                            {
+                              ref: "fullscreen",
+                              on: { change: _vm.fullscreenChange }
+                            },
+                            [
+                              _c("b-img", {
+                                attrs: {
+                                  rounded: "top",
+                                  src: _vm.form.image,
+                                  "fluid-grow": "",
+                                  alt: "Responsive image"
+                                }
+                              })
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { class: !_vm.isEditImagemode ? "d-none" : "" },
+                    [
+                      _c(
+                        "div",
+                        {
+                          staticClass: "float-right position-absolute",
+                          staticStyle: {
+                            top: "12px",
+                            right: "12px",
+                            "z-index": "99"
+                          }
+                        },
+                        [
+                          _c(
+                            "b-button",
+                            {
+                              directives: [
+                                {
+                                  name: "b-tooltip",
+                                  rawName: "v-b-tooltip.hover",
+                                  modifiers: { hover: true }
+                                }
+                              ],
+                              class: !_vm.isSubmitImagemode ? "d-none" : "",
+                              attrs: {
+                                variant: "primary",
+                                type: "submit",
+                                title: "Upload"
+                              },
+                              on: {
+                                click: function($event) {
+                                  $event.preventDefault()
+                                  return _vm.submitImage($event)
+                                }
+                              }
+                            },
+                            [_c("i", { staticClass: "fas fa-upload" })]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "b-button",
+                            {
+                              directives: [
+                                {
+                                  name: "b-tooltip",
+                                  rawName: "v-b-tooltip.hover",
+                                  modifiers: { hover: true }
+                                }
+                              ],
+                              attrs: {
+                                variant: "secondary",
+                                title: "Cancel Upload"
+                              },
+                              on: { click: _vm.doCancelImagemode }
+                            },
+                            [_c("i", { staticClass: "fas fa-times" })]
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c("vue-dropzone", {
+                        ref: "myVueDropzone",
+                        attrs: {
+                          hidden: !_vm.isEditImagemode,
+                          id: "dropzone",
+                          options: _vm.dropzoneOptions
+                        },
+                        on: {
+                          "vdropzone-removed-file": _vm.dropzoneRemovedFile,
+                          "vdropzone-file-added": _vm.dropzoneFileAdded
+                        }
+                      })
+                    ],
+                    1
+                  )
+                ]),
+                _vm._v(" "),
                 _c(
                   "b-form",
                   {
-                    attrs: { id: "form" },
+                    attrs: { id: "formEdit" },
                     on: {
                       submit: function($event) {
                         $event.preventDefault()
@@ -1085,152 +1370,6 @@ var render = function() {
                     }
                   },
                   [
-                    _c(
-                      "b-card-header",
-                      { staticClass: "p-0" },
-                      [
-                        _c("div", { staticClass: "float-right" }),
-                        _vm._v(" "),
-                        _c(
-                          "div",
-                          {
-                            on: {
-                              mouseenter: function($event) {
-                                _vm.isHoverimg = true
-                              },
-                              mouseleave: function($event) {
-                                _vm.isHoverimg = false
-                              }
-                            }
-                          },
-                          [
-                            _c(
-                              "b-overlay",
-                              {
-                                attrs: {
-                                  show: _vm.isHoverimg,
-                                  "no-center": "",
-                                  variant: "dark"
-                                },
-                                scopedSlots: _vm._u([
-                                  {
-                                    key: "overlay",
-                                    fn: function() {
-                                      return [
-                                        _c(
-                                          "div",
-                                          {
-                                            staticClass:
-                                              "float-right position-absolute",
-                                            staticStyle: {
-                                              top: "12px",
-                                              right: "12px"
-                                            }
-                                          },
-                                          [
-                                            _c(
-                                              "b-button",
-                                              {
-                                                directives: [
-                                                  {
-                                                    name: "b-tooltip",
-                                                    rawName:
-                                                      "v-b-tooltip.hover",
-                                                    modifiers: { hover: true }
-                                                  }
-                                                ],
-                                                attrs: {
-                                                  variant: "outline-primary",
-                                                  title: "Fullscreen"
-                                                },
-                                                on: {
-                                                  click: _vm.toggleFullscreen
-                                                }
-                                              },
-                                              [
-                                                _c("i", {
-                                                  staticClass: "fas fa-expand"
-                                                })
-                                              ]
-                                            ),
-                                            _vm._v(" "),
-                                            _c(
-                                              "b-button",
-                                              {
-                                                directives: [
-                                                  {
-                                                    name: "b-tooltip",
-                                                    rawName:
-                                                      "v-b-tooltip.hover",
-                                                    modifiers: { hover: true }
-                                                  }
-                                                ],
-                                                attrs: {
-                                                  variant: "outline-danger",
-                                                  title: "Edit Data",
-                                                  pressed: _vm.isEditmode
-                                                },
-                                                on: { click: _vm.doEditmode }
-                                              },
-                                              [
-                                                _c("i", {
-                                                  staticClass: "fas fa-edit"
-                                                })
-                                              ]
-                                            )
-                                          ],
-                                          1
-                                        )
-                                      ]
-                                    },
-                                    proxy: true
-                                  }
-                                ])
-                              },
-                              [
-                                _vm._v(" "),
-                                _c(
-                                  "fullscreen",
-                                  {
-                                    ref: "fullscreen",
-                                    on: { change: _vm.fullscreenChange }
-                                  },
-                                  [
-                                    _c("b-img", {
-                                      attrs: {
-                                        rounded: "top",
-                                        src: _vm.form.image,
-                                        "fluid-grow": "",
-                                        alt: "Responsive image"
-                                      }
-                                    })
-                                  ],
-                                  1
-                                )
-                              ],
-                              1
-                            )
-                          ],
-                          1
-                        ),
-                        _vm._v(" "),
-                        _c("vue-dropzone", {
-                          ref: "myVueDropzone",
-                          attrs: {
-                            hidden: !_vm.isEditmode,
-                            id: "dropzone",
-                            options: _vm.dropzoneOptions
-                          },
-                          on: {
-                            "vdropzone-sending": _vm.dropzoneSendingEvent,
-                            "vdropzone-removed-file": _vm.dropzoneRemovedFile,
-                            "vdropzone-file-added": _vm.dropzoneFileAdded
-                          }
-                        })
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
                     _c(
                       "b-card-body",
                       [

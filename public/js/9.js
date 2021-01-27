@@ -378,6 +378,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ["dataSlider"]
 });
@@ -15443,11 +15448,7 @@ var render = function() {
                 _c("b-card-text", [
                   _vm._v(
                     "\n                    " +
-                      _vm._s(
-                        itemSlider.text != null
-                          ? _vm.cutStr(itemSlider.text, 20)
-                          : "#no-text#"
-                      ) +
+                      _vm._s(itemSlider.text) +
                       "\n                "
                   )
                 ]),

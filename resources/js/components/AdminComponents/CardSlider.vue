@@ -19,11 +19,7 @@
                     class="mb-5 mx-auto"
                 >
                     <b-card-text>
-                        {{
-                            itemSlider.text != null
-                                ? cutStr(itemSlider.text, 20)
-                                : "#no-text#"
-                        }}
+                        {{ itemSlider.text }}
                     </b-card-text>
 
                     <b-button
@@ -44,7 +40,16 @@
                     ></b-button>
                     <!-- <b-button href="#" variant="outline-danger" title="Tidak Aktif"><i class="fas fa-eye-slash"></i></b-button> -->
 
-                    <inertia-link :href="route('admin.page.home.slider.detail', itemSlider.id)" class="btn btn-primary">Detail</inertia-link>
+                    <inertia-link
+                        :href="
+                            route(
+                                'admin.page.home.slider.detail',
+                                itemSlider.id
+                            )
+                        "
+                        class="btn btn-primary"
+                        >Detail</inertia-link
+                    >
                     <b-button href="#" variant="danger">Delete</b-button>
                 </b-card>
             </div>
