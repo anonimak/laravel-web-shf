@@ -38,8 +38,7 @@ class CfgHomeController extends Controller
                 'title'     => 'tests',
                 'foo'       => 'bar'
             ],
-            'dataSlider'    => Slider::orderBy('index')->get()
-            ,
+            'dataSlider'    => Slider::orderBy('index')->get(),
             'breadcrumbItems' => array(
                 [
                     'icon'    => "fa-home",
@@ -62,7 +61,6 @@ class CfgHomeController extends Controller
     public function createSlider()
     {
         return Inertia::render('Admin/CfgHome/slideradd', [
-            '_store_url' => URL::route('admin.page.home.slider.store'),
             '_token' => csrf_token()
             ,
             'breadcrumbItems' => array(
@@ -168,35 +166,31 @@ class CfgHomeController extends Controller
         return Redirect::back()->with('success', 'Successful updating image Slider.');
     }
 
-    public function updateSlider(Slider $slider)
+    public function updateSlider(Request $request)
     {
-        // $request->validate([
-        //     'show'      => 'required',
-        //     'text'      => 'nullable|max:250',
-        //     'index'     => 'nullable',
-        // ]);
+        $request->validate([
+            'show'      => 'required',
+            'text'      => 'nullable|max:250',
+            'index'     => 'nullable',
+        ]);
 
-        // $slider->update([
-        //     'show'  => $request->show,
-        //     'text'  => $request->text,
-        //     'index' => $request->index,
-        // ]);
+        Slider::where('id',$request->id)->update([
+            'show'  => $request->show,
+            'text'  => $request->text,
+            'index' => $request->index,
+        ]);
 
-        $slider->update(
-            $request->validate([
-                'show'      => 'required',
-                'text'      => 'nullable|max:250',
-                'index'     => 'nullable',
-            ])
-        );
-
-        return Redirect::back()->with('success', 'Info Slider updated.');
+        return Redirect::back()->with('success', 'Successful update Info Slider.');
     }
 
     public function destroySlider(Slider $slider)
     {
+        $slider = Slider::where('id',$slider->id)->first();
+        if(File::exists(public_path($slider->image))){
+            File::delete(public_path($slider->image));
+        }
         $slider->delete();
-        return Redirect::back()->with('success', 'Slider deleted.');
+        return Redirect::route('admin.page.home')->with('success', 'Slider deleted.');
     }
 
     public function restoreSlider(Organization $organization)

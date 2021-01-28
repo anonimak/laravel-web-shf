@@ -63,8 +63,8 @@ Route::get('network', 'NetworkController@index')->name('network');
 |
 |
 */
-Route::get('dashboard', 'DashboardController@index')
-    ->name('user.dashboard');
+// Route::get('dashboard', 'DashboardController@index')
+//     ->name('user.dashboard');
 
 /*
 |
@@ -92,13 +92,13 @@ Route::post('admin/page/home/slider/store', 'Admin\CfgHomeController@storeSlider
 Route::get('admin/page/home/slider/{slider}/detail', 'Admin\CfgHomeController@detailSlider')
     ->name('admin.page.home.slider.detail')
     ->middleware('auth', 'is_admin');
-Route::get('admin/page/home/slider/{slider}/update', 'Admin\CfgHomeController@updateSlider')
+Route::put('admin/page/home/slider/{slider}/update', 'Admin\CfgHomeController@updateSlider')
     ->name('admin.page.home.slider.update')
     ->middleware('auth', 'is_admin');
 Route::post('admin/page/home/slider/{id}/updateImage', 'Admin\CfgHomeController@updateSliderImage')
     ->name('admin.page.home.slider.updateImage')
     ->middleware('auth', 'is_admin');
-Route::get('admin/page/home/slider/{slider}/delete', 'Admin\CfgHomeController@destroySlider')
+Route::delete('admin/page/home/slider/{slider}/delete', 'Admin\CfgHomeController@destroySlider')
     ->name('admin.page.home.slider.delete')
     ->middleware('auth', 'is_admin');
 

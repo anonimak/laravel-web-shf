@@ -43,7 +43,6 @@
         "vue-moment": "^4.1.0",
         "vue-owl-carousel2": "^2.0.7",
         "vue-particles": "^1.0.9",
-        "vue-tabs-component": "^1.5.0",
         "vue2-dropzone": "^3.6.0"
     }
 }

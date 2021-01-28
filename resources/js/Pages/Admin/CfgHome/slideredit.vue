@@ -177,20 +177,39 @@
                                 </b-form-radio-group>
                             </b-form-group>
                         </b-card-body>
-                        <b-card-footer :hidden="!isEditmode">
-                            <b-button
-                                :disabled="!isEditmode"
-                                type="submit"
-                                variant="primary"
-                                >Save</b-button
-                            >
-                            <b-button
-                                :disabled="!isEditmode"
-                                type="button"
-                                variant="secondary"
-                                @click="doEditmode"
-                                >Cancel</b-button
-                            >
+                        <b-card-footer>
+                            <div class="col" v-if="isEditmode">
+                                <b-button
+                                    :disabled="!isEditmode"
+                                    type="submit"
+                                    variant="primary"
+                                    >Save</b-button
+                                >
+                                <b-button
+                                    :disabled="!isEditmode"
+                                    type="button"
+                                    variant="secondary"
+                                    @click.prevent="doEditmode"
+                                    >Cancel</b-button
+                                >
+                            </div>
+                            <div class="col text-center" v-else>
+                                <b-button
+                                    :disabled="isEditmode"
+                                    type="button"
+                                    variant="secondary"
+                                    :pressed="isEditmode"
+                                    @click.prevent="doEditmode"
+                                    >Edit</b-button
+                                >
+                                <b-button
+                                    :disabled="isEditmode"
+                                    type="button"
+                                    variant="outline-danger"
+                                    @click="showMsgBoxDelete"
+                                    >delete</b-button
+                                >
+                            </div>
                         </b-card-footer>
                     </b-form>
                 </b-card>
@@ -246,6 +265,7 @@ export default {
                 dictDefaultMessage: `<i class='fas fa-cloud-upload-alt'></i><br/>Drop your slider here <br/>`
             },
             form: {
+                id: null,
                 caption: "",
                 index: null,
                 text: "",
@@ -261,26 +281,23 @@ export default {
     },
     methods: {
         submit() {
-            // alert("ok")
-            var formData = new FormData();
-            formData.append("caption", this.form.caption);
-            formData.append("index", this.form.index);
-            formData.append("text", this.form.text);
-            formData.append("show", this.form.show);
-            formData.append("image", this.form.image);
-            // formData.append("_token", this._token);
-
-            console.log(FormData);
-            this.$inertia.post(this._store_url, formData);
+            this.$inertia.put(
+                route("admin.page.home.slider.update", this.form.id),
+                this.form
+            );
         },
-        submitImage: function() {
+        submitImage() {
             var formData = new FormData();
             formData.append("image", this.form.image);
             this.$inertia.post(this._updateImage_url, formData);
         },
+        submitDelete() {
+            this.$inertia.delete(
+                route("admin.page.home.slider.delete", this.form.id)
+            );
+        },
         doEditmode: function() {
             this.isEditmode = !this.isEditmode;
-            // refill form
             this.fillDataform();
         },
         doEditImagemode: function() {
@@ -300,20 +317,43 @@ export default {
             this.form.image = file;
             this.isSubmitImagemode = true;
         },
-        dropzoneSendingEvent: function(file, xhr, formData) {},
         fillDataform: function() {
+            this.form.id = this.dataSlider.id;
             this.form.caption = this.dataSlider.caption;
             this.form.index = this.dataSlider.index;
             this.form.text = this.dataSlider.text;
             this.form.show = this.dataSlider.show;
             this.form.image = this.dataSlider.image;
         },
-        toggleFullscreen() {
+        toggleFullscreen: function() {
             this.$refs["fullscreen"].toggle(); // recommended
             // this.fullscreen = !this.fullscreen // deprecated
         },
-        fullscreenChange(fullscreen) {
+        fullscreenChange: function(fullscreen) {
             this.fullscreen = fullscreen;
+        },
+        showMsgBoxDelete: function() {
+            this.$bvModal
+                .msgBoxConfirm(
+                    "Please confirm that you want to delete this slider.",
+                    {
+                        title: "Please Confirm",
+                        size: "sm",
+                        buttonSize: "sm",
+                        okVariant: "danger",
+                        okTitle: "YES",
+                        cancelTitle: "NO",
+                        footerClass: "p-2",
+                        hideHeaderClose: false,
+                        centered: true
+                    }
+                )
+                .then(value => {
+                    this.submitDelete();
+                })
+                .catch(err => {
+                    // An error occurred
+                });
         }
     },
     props: [

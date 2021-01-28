@@ -149,7 +149,7 @@ __webpack_require__.r(__webpack_exports__);
         autoProcessQueue: false,
         paramName: "image",
         maxFilesize: 1024,
-        url: this._store_url,
+        url: "#",
         acceptedFiles: ".jpg,.jpeg,.png",
         maxFiles: 1,
         thumbnailWidth: null,
@@ -181,16 +181,13 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     submit: function submit() {
-      // alert("ok")
       var formData = new FormData();
       formData.append("caption", this.form.caption);
       formData.append("index", this.form.index);
       formData.append("text", this.form.text);
       formData.append("show", this.form.show);
-      formData.append("image", this.form.image); // formData.append("_token", this._token);
-
-      console.log(FormData);
-      this.$inertia.post(this._store_url, formData);
+      formData.append("image", this.form.image);
+      this.$inertia.post(route("admin.page.home.slider.store"), formData);
     },
     dropzoneRemovedFile: function dropzoneRemovedFile(file, error, xhr) {
       this.form.image = null;
@@ -200,7 +197,7 @@ __webpack_require__.r(__webpack_exports__);
     },
     dropzoneSendingEvent: function dropzoneSendingEvent(file, xhr, formData) {}
   },
-  props: ["_store_url", "_token", "errors", "breadcrumbItems", "flash"]
+  props: ["_token", "errors", "breadcrumbItems", "flash"]
 });
 
 /***/ }),

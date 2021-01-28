@@ -133,7 +133,7 @@ export default {
                 autoProcessQueue: false,
                 paramName: "image",
                 maxFilesize: 1024,
-                url: this._store_url,
+                url: "#",
                 acceptedFiles: ".jpg,.jpeg,.png",
                 maxFiles: 1,
                 thumbnailWidth: null,
@@ -167,17 +167,13 @@ export default {
     },
     methods: {
         submit() {
-            // alert("ok")
             var formData = new FormData();
             formData.append("caption", this.form.caption);
             formData.append("index", this.form.index);
             formData.append("text", this.form.text);
             formData.append("show", this.form.show);
             formData.append("image", this.form.image);
-            // formData.append("_token", this._token);
-
-            console.log(FormData);
-            this.$inertia.post(this._store_url, formData);
+            this.$inertia.post(route("admin.page.home.slider.store"), formData);
         },
         dropzoneRemovedFile: function(file, error, xhr) {
             this.form.image = null;
@@ -187,7 +183,7 @@ export default {
         },
         dropzoneSendingEvent: function(file, xhr, formData) {}
     },
-    props: ["_store_url", "_token", "errors", "breadcrumbItems", "flash"]
+    props: ["_token", "errors", "breadcrumbItems", "flash"]
 };
 </script>
 <style scoped>

@@ -217,6 +217,25 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
  //import layouts
 
 
@@ -260,6 +279,7 @@ __webpack_require__.r(__webpack_exports__);
         dictDefaultMessage: "<i class='fas fa-cloud-upload-alt'></i><br/>Drop your slider here <br/>"
       },
       form: {
+        id: null,
         caption: "",
         index: null,
         text: "",
@@ -275,25 +295,18 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     submit: function submit() {
-      // alert("ok")
-      var formData = new FormData();
-      formData.append("caption", this.form.caption);
-      formData.append("index", this.form.index);
-      formData.append("text", this.form.text);
-      formData.append("show", this.form.show);
-      formData.append("image", this.form.image); // formData.append("_token", this._token);
-
-      console.log(FormData);
-      this.$inertia.post(this._store_url, formData);
+      this.$inertia.put(route("admin.page.home.slider.update", this.form.id), this.form);
     },
     submitImage: function submitImage() {
       var formData = new FormData();
       formData.append("image", this.form.image);
       this.$inertia.post(this._updateImage_url, formData);
     },
+    submitDelete: function submitDelete() {
+      this.$inertia["delete"](route("admin.page.home.slider.delete", this.form.id));
+    },
     doEditmode: function doEditmode() {
-      this.isEditmode = !this.isEditmode; // refill form
-
+      this.isEditmode = !this.isEditmode;
       this.fillDataform();
     },
     doEditImagemode: function doEditImagemode() {
@@ -313,8 +326,8 @@ __webpack_require__.r(__webpack_exports__);
       this.form.image = file;
       this.isSubmitImagemode = true;
     },
-    dropzoneSendingEvent: function dropzoneSendingEvent(file, xhr, formData) {},
     fillDataform: function fillDataform() {
+      this.form.id = this.dataSlider.id;
       this.form.caption = this.dataSlider.caption;
       this.form.index = this.dataSlider.index;
       this.form.text = this.dataSlider.text;
@@ -327,6 +340,24 @@ __webpack_require__.r(__webpack_exports__);
     },
     fullscreenChange: function fullscreenChange(fullscreen) {
       this.fullscreen = fullscreen;
+    },
+    showMsgBoxDelete: function showMsgBoxDelete() {
+      var _this = this;
+
+      this.$bvModal.msgBoxConfirm("Please confirm that you want to delete this slider.", {
+        title: "Please Confirm",
+        size: "sm",
+        buttonSize: "sm",
+        okVariant: "danger",
+        okTitle: "YES",
+        cancelTitle: "NO",
+        footerClass: "p-2",
+        hideHeaderClose: false,
+        centered: true
+      }).then(function (value) {
+        _this.submitDelete();
+      })["catch"](function (err) {// An error occurred
+      });
     }
   },
   props: ["_update_url", "_updateImage_url", "_token", "errors", "breadcrumbItems", "flash", "dataSlider"],
@@ -1507,37 +1538,83 @@ var render = function() {
                       1
                     ),
                     _vm._v(" "),
-                    _c(
-                      "b-card-footer",
-                      { attrs: { hidden: !_vm.isEditmode } },
-                      [
-                        _c(
-                          "b-button",
-                          {
-                            attrs: {
-                              disabled: !_vm.isEditmode,
-                              type: "submit",
-                              variant: "primary"
-                            }
-                          },
-                          [_vm._v("Save")]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "b-button",
-                          {
-                            attrs: {
-                              disabled: !_vm.isEditmode,
-                              type: "button",
-                              variant: "secondary"
-                            },
-                            on: { click: _vm.doEditmode }
-                          },
-                          [_vm._v("Cancel")]
-                        )
-                      ],
-                      1
-                    )
+                    _c("b-card-footer", [
+                      _vm.isEditmode
+                        ? _c(
+                            "div",
+                            { staticClass: "col" },
+                            [
+                              _c(
+                                "b-button",
+                                {
+                                  attrs: {
+                                    disabled: !_vm.isEditmode,
+                                    type: "submit",
+                                    variant: "primary"
+                                  }
+                                },
+                                [_vm._v("Save")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "b-button",
+                                {
+                                  attrs: {
+                                    disabled: !_vm.isEditmode,
+                                    type: "button",
+                                    variant: "secondary"
+                                  },
+                                  on: {
+                                    click: function($event) {
+                                      $event.preventDefault()
+                                      return _vm.doEditmode($event)
+                                    }
+                                  }
+                                },
+                                [_vm._v("Cancel")]
+                              )
+                            ],
+                            1
+                          )
+                        : _c(
+                            "div",
+                            { staticClass: "col text-center" },
+                            [
+                              _c(
+                                "b-button",
+                                {
+                                  attrs: {
+                                    disabled: _vm.isEditmode,
+                                    type: "button",
+                                    variant: "secondary",
+                                    pressed: _vm.isEditmode
+                                  },
+                                  on: {
+                                    click: function($event) {
+                                      $event.preventDefault()
+                                      return _vm.doEditmode($event)
+                                    }
+                                  }
+                                },
+                                [_vm._v("Edit")]
+                              ),
+                              _vm._v(" "),
+                              _c(
+                                "b-button",
+                                {
+                                  attrs: {
+                                    disabled: _vm.isEditmode,
+                                    type: "button",
+                                    variant: "outline-danger"
+                                  },
+                                  on: { click: _vm.showMsgBoxDelete }
+                                },
+                                [_vm._v("delete")]
+                              )
+                            ],
+                            1
+                          )
+                    ])
                   ],
                   1
                 )
