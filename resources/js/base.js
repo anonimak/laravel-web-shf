@@ -52,4 +52,9 @@ module.exports = {
             return (strUrl)?this.$page._baseUrl+strUrl: this.$page._baseUrl;
         }
     },
+    computed: {
+        pageFlashes () {
+            return this.$page.flash
+        },
+    }
 }

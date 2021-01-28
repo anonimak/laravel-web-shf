@@ -1,35 +1,44 @@
 <template>
-    <b-alert v-if="flash.success"
-            show="3"
-            dismissible
-            fade
-            variant="success"
+    <b-alert
+        v-model="dismissCountDown"
+        dismissible
+        class="position-fixed fixed-bottom m-0 rounded-0"
+        style="z-index: 2000;"
+        fade
+        :variant="variant"
         >
-        {{ flash.success }}
-    </b-alert>
-    <b-alert v-else-if="flash.error"
-            show="3"
-            dismissible
-            fade
-            variant="error"
-        >
-        {{ flash.error }}
-    </b-alert>
-    <b-alert v-else-if="flash.info"
-            show="3"
-            dismissible
-            fade
-            variant="info"
-        >
-        {{ flash.info }}
+        {{ msg }}
     </b-alert>
 </template>
 <script>
 export default {
-    props:["flash"],
+    // props:["flash"],
+    
+    watch: {
+        pageFlashes: {
+          handler (flashes) {
+            _.each(flashes, (flash, index) => {
+                // set flash message here
+              if(flash){
+                  // disable edit when success
+                  if (index == 'success') {
+                      this.$emit('onSuccess')
+                  }
+                    this.dismissCountDown = 3
+                    this.variant = index
+                    this.msg = flash
+              }
+            })
+            
+          },
+          deep: true
+        }
+    },
     data() {
         return {
-            variant:null
+            variant:null,
+            dismissCountDown: null,
+            msg:''
         }
     }
 }

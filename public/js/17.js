@@ -236,6 +236,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
  //import layouts
 
 
@@ -245,9 +246,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     Layout: _Shared_AdminLayout__WEBPACK_IMPORTED_MODULE_0__["default"],
-    Alert: _components_AdminComponents_Alert__WEBPACK_IMPORTED_MODULE_1__["default"],
     Breadcrumb: _components_Breadcrumb__WEBPACK_IMPORTED_MODULE_2__["default"],
-    vueDropzone: vue2_dropzone__WEBPACK_IMPORTED_MODULE_3___default.a
+    vueDropzone: vue2_dropzone__WEBPACK_IMPORTED_MODULE_3___default.a,
+    FlashMsg: _components_AdminComponents_Alert__WEBPACK_IMPORTED_MODULE_1__["default"]
   },
   data: function data() {
     return {
@@ -266,8 +267,6 @@ __webpack_require__.r(__webpack_exports__);
               width: "100%",
               height: "100%"
             });
-          }), this.on("file-added", function (file) {
-            console.log(file);
           }), this.on("success", function (file) {
             $(".dz-image").css({
               width: "100%",
@@ -290,20 +289,31 @@ __webpack_require__.r(__webpack_exports__);
       isSubmitImagemode: false,
       isEditmode: false,
       isHoverimg: false,
-      fullscreen: false
+      fullscreen: false,
+      showTop: true
     };
   },
   methods: {
     submit: function submit() {
-      this.$inertia.put(route("admin.page.home.slider.update", this.form.id), this.form);
+      this.$inertia.put(route("admin.page.home.slider.update", this.form.id), this.form, {
+        preserveScroll: true,
+        resetOnSuccess: false
+      });
     },
     submitImage: function submitImage() {
       var formData = new FormData();
       formData.append("image", this.form.image);
-      this.$inertia.post(this._updateImage_url, formData);
+      this.$inertia.post(this._updateImage_url, formData, {
+        preserveScroll: true,
+        resetOnSuccess: false
+      });
     },
     submitDelete: function submitDelete() {
       this.$inertia["delete"](route("admin.page.home.slider.delete", this.form.id));
+    },
+    onSubmmitSuccess: function onSubmmitSuccess() {
+      this.isEditImagemode = false;
+      this.isEditmode = false;
     },
     doEditmode: function doEditmode() {
       this.isEditmode = !this.isEditmode;
@@ -326,6 +336,7 @@ __webpack_require__.r(__webpack_exports__);
       this.form.image = file;
       this.isSubmitImagemode = true;
     },
+    sendingEvent: function sendingEvent(file, xhr, formData) {},
     fillDataform: function fillDataform() {
       this.form.id = this.dataSlider.id;
       this.form.caption = this.dataSlider.caption;
@@ -439,25 +450,35 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ["flash"],
+  // props:["flash"],
+  watch: {
+    pageFlashes: {
+      handler: function handler(flashes) {
+        var _this = this;
+
+        _.each(flashes, function (flash, index) {
+          // set flash message here
+          if (flash) {
+            // disable edit when success
+            if (index == 'success') {
+              _this.$emit('onSuccess');
+            }
+
+            _this.dismissCountDown = 3;
+            _this.variant = index;
+            _this.msg = flash;
+          }
+        });
+      },
+      deep: true
+    }
+  },
   data: function data() {
     return {
-      variant: null
+      variant: null,
+      dismissCountDown: null,
+      msg: ''
     };
   }
 });
@@ -1156,7 +1177,7 @@ var render = function() {
   return _c(
     "layout",
     [
-      _c("alert", { attrs: { flash: _vm.flash } }),
+      _c("flash-msg", { on: { onSuccess: _vm.onSubmmitSuccess } }),
       _vm._v(" "),
       _c(
         "div",
@@ -1381,7 +1402,8 @@ var render = function() {
                         },
                         on: {
                           "vdropzone-removed-file": _vm.dropzoneRemovedFile,
-                          "vdropzone-file-added": _vm.dropzoneFileAdded
+                          "vdropzone-file-added": _vm.dropzoneFileAdded,
+                          "vdropzone-sending": _vm.sendingEvent
                         }
                       })
                     ],
@@ -1709,25 +1731,22 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm.flash.success
-    ? _c(
-        "b-alert",
-        { attrs: { show: "3", dismissible: "", fade: "", variant: "success" } },
-        [_vm._v("\n    " + _vm._s(_vm.flash.success) + "\n")]
-      )
-    : _vm.flash.error
-    ? _c(
-        "b-alert",
-        { attrs: { show: "3", dismissible: "", fade: "", variant: "error" } },
-        [_vm._v("\n    " + _vm._s(_vm.flash.error) + "\n")]
-      )
-    : _vm.flash.info
-    ? _c(
-        "b-alert",
-        { attrs: { show: "3", dismissible: "", fade: "", variant: "info" } },
-        [_vm._v("\n    " + _vm._s(_vm.flash.info) + "\n")]
-      )
-    : _vm._e()
+  return _c(
+    "b-alert",
+    {
+      staticClass: "position-fixed fixed-bottom m-0 rounded-0",
+      staticStyle: { "z-index": "2000" },
+      attrs: { dismissible: "", fade: "", variant: _vm.variant },
+      model: {
+        value: _vm.dismissCountDown,
+        callback: function($$v) {
+          _vm.dismissCountDown = $$v
+        },
+        expression: "dismissCountDown"
+      }
+    },
+    [_vm._v("\n    " + _vm._s(_vm.msg) + "\n")]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true

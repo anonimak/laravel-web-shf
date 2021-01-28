@@ -273,25 +273,35 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ["flash"],
+  // props:["flash"],
+  watch: {
+    pageFlashes: {
+      handler: function handler(flashes) {
+        var _this = this;
+
+        _.each(flashes, function (flash, index) {
+          // set flash message here
+          if (flash) {
+            // disable edit when success
+            if (index == 'success') {
+              _this.$emit('onSuccess');
+            }
+
+            _this.dismissCountDown = 3;
+            _this.variant = index;
+            _this.msg = flash;
+          }
+        });
+      },
+      deep: true
+    }
+  },
   data: function data() {
     return {
-      variant: null
+      variant: null,
+      dismissCountDown: null,
+      msg: ''
     };
   }
 });
@@ -1300,25 +1310,22 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm.flash.success
-    ? _c(
-        "b-alert",
-        { attrs: { show: "3", dismissible: "", fade: "", variant: "success" } },
-        [_vm._v("\n    " + _vm._s(_vm.flash.success) + "\n")]
-      )
-    : _vm.flash.error
-    ? _c(
-        "b-alert",
-        { attrs: { show: "3", dismissible: "", fade: "", variant: "error" } },
-        [_vm._v("\n    " + _vm._s(_vm.flash.error) + "\n")]
-      )
-    : _vm.flash.info
-    ? _c(
-        "b-alert",
-        { attrs: { show: "3", dismissible: "", fade: "", variant: "info" } },
-        [_vm._v("\n    " + _vm._s(_vm.flash.info) + "\n")]
-      )
-    : _vm._e()
+  return _c(
+    "b-alert",
+    {
+      staticClass: "position-fixed fixed-bottom m-0 rounded-0",
+      staticStyle: { "z-index": "2000" },
+      attrs: { dismissible: "", fade: "", variant: _vm.variant },
+      model: {
+        value: _vm.dismissCountDown,
+        callback: function($$v) {
+          _vm.dismissCountDown = $$v
+        },
+        expression: "dismissCountDown"
+      }
+    },
+    [_vm._v("\n    " + _vm._s(_vm.msg) + "\n")]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true

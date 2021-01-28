@@ -1,6 +1,6 @@
 <template>
     <layout>
-        <alert :flash="flash" />
+        <flash-msg @onSuccess="onSubmmitSuccess"/>
         <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">
                 {{ !isEditmode ? "Preview " : "Edit " }} Slider
@@ -108,6 +108,7 @@
                                 :options="dropzoneOptions"
                                 @vdropzone-removed-file="dropzoneRemovedFile"
                                 @vdropzone-file-added="dropzoneFileAdded"
+                                @vdropzone-sending="sendingEvent"
                             >
                             </vue-dropzone>
                         </div>
@@ -220,7 +221,7 @@
 
 <script>
 import Layout from "@/Shared/AdminLayout"; //import layouts
-import Alert from "@/components/AdminComponents/Alert";
+import FlashMsg from "@/components/AdminComponents/Alert";
 import Breadcrumb from "@/components/Breadcrumb";
 import vueDropzone from "vue2-dropzone";
 import "vue2-dropzone/dist/vue2Dropzone.min.css";
@@ -228,11 +229,10 @@ import "vue2-dropzone/dist/vue2Dropzone.min.css";
 export default {
     components: {
         Layout,
-        Alert,
         Breadcrumb,
-        vueDropzone
+        vueDropzone,
+        FlashMsg
     },
-
     data() {
         return {
             dropzoneOptions: {
@@ -251,9 +251,6 @@ export default {
                             .find("img")
                             .attr({ width: "100%", height: "100%" });
                     }),
-                        this.on("file-added", function(file) {
-                            console.log(file);
-                        }),
                         this.on("success", function(file) {
                             $(".dz-image").css({
                                 width: "100%",
@@ -276,25 +273,39 @@ export default {
             isSubmitImagemode: false,
             isEditmode: false,
             isHoverimg: false,
-            fullscreen: false
+            fullscreen: false,
+            showTop: true
         };
     },
+    
     methods: {
         submit() {
             this.$inertia.put(
                 route("admin.page.home.slider.update", this.form.id),
-                this.form
+                this.form,
+                {
+                    preserveScroll: true,
+                    resetOnSuccess: false,
+                }
             );
         },
         submitImage() {
             var formData = new FormData();
             formData.append("image", this.form.image);
-            this.$inertia.post(this._updateImage_url, formData);
+            this.$inertia.post(this._updateImage_url, formData,
+                {
+                    preserveScroll: true,
+                    resetOnSuccess: false,
+                });
         },
         submitDelete() {
             this.$inertia.delete(
                 route("admin.page.home.slider.delete", this.form.id)
             );
+        },
+        onSubmmitSuccess(){
+            this.isEditImagemode = false;
+            this.isEditmode = false;
         },
         doEditmode: function() {
             this.isEditmode = !this.isEditmode;
@@ -316,6 +327,9 @@ export default {
         dropzoneFileAdded: function(file) {
             this.form.image = file;
             this.isSubmitImagemode = true;
+        },
+        sendingEvent (file, xhr, formData) {
+            
         },
         fillDataform: function() {
             this.form.id = this.dataSlider.id;
