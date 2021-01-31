@@ -2,7 +2,7 @@
     <div class="col-12">
         <b-card
             :title="caption != null ? cutStr(caption, 10) : ''"
-            :img-src="baseUrl(image)"
+            :img-src="image"
             :img-alt="image"
             img-top
             style="max-width: 20rem;"

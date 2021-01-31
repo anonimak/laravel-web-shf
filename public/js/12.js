@@ -15248,7 +15248,7 @@ var render = function() {
           staticStyle: { "max-width": "20rem" },
           attrs: {
             title: _vm.caption != null ? _vm.cutStr(_vm.caption, 10) : "",
-            "img-src": _vm.baseUrl(_vm.image),
+            "img-src": _vm.image,
             "img-alt": _vm.image,
             "img-top": ""
           }
