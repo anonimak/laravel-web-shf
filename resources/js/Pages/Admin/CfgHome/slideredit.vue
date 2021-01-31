@@ -1,6 +1,6 @@
 <template>
     <layout>
-        <flash-msg @onSuccess="onSubmmitSuccess"/>
+        <flash-msg @onSuccess="onSubmmitSuccess" />
         <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">
                 {{ !isEditmode ? "Preview " : "Edit " }} Slider
@@ -11,21 +11,6 @@
             <div class="col-12">
                 <b-card no-body>
                     <b-card-header class="p-0">
-                        <div class="float-right">
-                            <!-- <b-button variant="outline-primary" v-b-tooltip.hover title="Fullscreen" @click="toggleFullscreen">
-                                    <i class="fas fa-expand"></i>
-                            </b-button> -->
-                            <!-- <b-button variant="outline-primary" @click="previewFullscr">
-                                    <i class="fas fa-cog"></i>
-                            </b-button> -->
-                            <!-- <b-button variant="outline-danger" 
-                                v-b-tooltip.hover 
-                                title="Edit Data"
-                                :pressed="isEditmode"
-                                @click="doEditmode">
-                                    <i class="fas fa-edit"></i>
-                            </b-button> -->
-                        </div>
                         <div
                             :class="!isEditImagemode ? '' : 'd-none'"
                             @mouseenter="isHoverimg = true"
@@ -49,9 +34,6 @@
                                         >
                                             <i class="fas fa-expand"></i>
                                         </b-button>
-                                        <!-- <b-button variant="outline-primary" @click="previewFullscr">
-                                            <i class="fas fa-cog"></i>
-                                    </b-button> -->
                                         <b-button
                                             variant="outline-danger"
                                             v-b-tooltip.hover
@@ -108,13 +90,21 @@
                                 :options="dropzoneOptions"
                                 @vdropzone-removed-file="dropzoneRemovedFile"
                                 @vdropzone-file-added="dropzoneFileAdded"
-                                @vdropzone-sending="sendingEvent"
                             >
                             </vue-dropzone>
                         </div>
                     </b-card-header>
                     <b-form id="formEdit" @submit.prevent="submit">
                         <b-card-body>
+                            <b-form-group
+                                id="input-group-caption"
+                                label-for="input-caption"
+                                :invalid-feedback="
+                                    errors.image ? errors.image[0] : ''
+                                "
+                                :state="errors.image ? false : null"
+                            >
+                            </b-form-group>
                             <b-form-group
                                 id="input-group-caption"
                                 label="Caption slider:"
@@ -156,6 +146,10 @@
                                 id="input-group-index"
                                 label="Index:"
                                 label-for="input-index"
+                                :invalid-feedback="
+                                    errors.index ? errors.index[0] : ''
+                                "
+                                :state="errors.index ? false : null"
                             >
                                 <b-form-input
                                     :disabled="!isEditmode"
@@ -163,6 +157,7 @@
                                     type="number"
                                     name="index"
                                     v-model="form.index"
+                                    :state="errors.index ? false : null"
                                     placeholder="Input index"
                                 ></b-form-input>
                             </b-form-group>
@@ -277,7 +272,7 @@ export default {
             showTop: true
         };
     },
-    
+
     methods: {
         submit() {
             this.$inertia.put(
@@ -285,27 +280,27 @@ export default {
                 this.form,
                 {
                     preserveScroll: true,
-                    resetOnSuccess: false,
+                    resetOnSuccess: false
                 }
             );
         },
         submitImage() {
             var formData = new FormData();
             formData.append("image", this.form.image);
-            this.$inertia.post(this._updateImage_url, formData,
-                {
-                    preserveScroll: true,
-                    resetOnSuccess: false,
-                });
+            this.$inertia.post(this._updateImage_url, formData, {
+                preserveScroll: true,
+                resetOnSuccess: false
+            });
         },
         submitDelete() {
             this.$inertia.delete(
                 route("admin.page.home.slider.delete", this.form.id)
             );
         },
-        onSubmmitSuccess(){
+        onSubmmitSuccess() {
             this.isEditImagemode = false;
             this.isEditmode = false;
+            this.fillDataform();
         },
         doEditmode: function() {
             this.isEditmode = !this.isEditmode;
@@ -327,9 +322,6 @@ export default {
         dropzoneFileAdded: function(file) {
             this.form.image = file;
             this.isSubmitImagemode = true;
-        },
-        sendingEvent (file, xhr, formData) {
-            
         },
         fillDataform: function() {
             this.form.id = this.dataSlider.id;
@@ -363,7 +355,7 @@ export default {
                     }
                 )
                 .then(value => {
-                    this.submitDelete();
+                    value && this.submitDelete();
                 })
                 .catch(err => {
                     // An error occurred
@@ -392,9 +384,14 @@ export default {
 .dropzone {
     height: 100%;
     background: none;
+    padding: 0 !important;
 }
 
-.dropzone .dz-preview .dz-image-preview {
-    margin: 0 !important;
+.dropzone .dz-preview {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin: 2px !important;
+    min-height: 100px;
 }
 </style>

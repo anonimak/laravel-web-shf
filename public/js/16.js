@@ -143,8 +143,10 @@ __webpack_require__.r(__webpack_exports__);
     Breadcrumb: _components_Breadcrumb__WEBPACK_IMPORTED_MODULE_2__["default"],
     vueDropzone: vue2_dropzone__WEBPACK_IMPORTED_MODULE_3___default.a
   },
+  props: ["_token", "errors", "breadcrumbItems", "flash"],
   data: function data() {
     return {
+      submitState: false,
       dropzoneOptions: {
         autoProcessQueue: false,
         paramName: "image",
@@ -196,8 +198,7 @@ __webpack_require__.r(__webpack_exports__);
       this.form.image = file;
     },
     dropzoneSendingEvent: function dropzoneSendingEvent(file, xhr, formData) {}
-  },
-  props: ["_token", "errors", "breadcrumbItems", "flash"]
+  }
 });
 
 /***/ }),
@@ -284,8 +285,8 @@ __webpack_require__.r(__webpack_exports__);
           // set flash message here
           if (flash) {
             // disable edit when success
-            if (index == 'success') {
-              _this.$emit('onSuccess');
+            if (index == "success") {
+              _this.$emit("onSuccess");
             }
 
             _this.dismissCountDown = 3;
@@ -301,7 +302,7 @@ __webpack_require__.r(__webpack_exports__);
     return {
       variant: null,
       dismissCountDown: null,
-      msg: ''
+      msg: ""
     };
   }
 });
@@ -1313,7 +1314,7 @@ var render = function() {
   return _c(
     "b-alert",
     {
-      staticClass: "position-fixed fixed-bottom m-0 rounded-0",
+      staticClass: "position-fixed fixed-top m-0 rounded-0",
       staticStyle: { "z-index": "2000" },
       attrs: { dismissible: "", fade: "", variant: _vm.variant },
       model: {

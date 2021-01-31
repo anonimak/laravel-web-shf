@@ -96,6 +96,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
  //import layouts
 
 
@@ -106,23 +115,15 @@ __webpack_require__.r(__webpack_exports__);
   metaInfo: {
     title: "Page Home"
   },
-  remember: {
-    data: ["tabIndex"],
-    key: "page/home"
-  },
   data: function data() {
     return {
-      isButtonAdd: false,
-      tabIndex: {
-        index: 0,
-        test: "fasf"
-      }
+      tabIndexCfgHome: 0
     };
   },
   components: {
     Layout: _Shared_AdminLayout__WEBPACK_IMPORTED_MODULE_0__["default"],
     CardSlider: _components_AdminComponents_CardSlider__WEBPACK_IMPORTED_MODULE_2__["default"],
-    Alert: _components_AdminComponents_Alert__WEBPACK_IMPORTED_MODULE_3__["default"],
+    FlashMsg: _components_AdminComponents_Alert__WEBPACK_IMPORTED_MODULE_3__["default"],
     Breadcrumb: _components_Breadcrumb__WEBPACK_IMPORTED_MODULE_4__["default"],
     GridLayout: vue_grid_layout__WEBPACK_IMPORTED_MODULE_1___default.a.GridLayout,
     GridItem: vue_grid_layout__WEBPACK_IMPORTED_MODULE_1___default.a.GridItem
@@ -131,9 +132,6 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     submitDelete: function submitDelete(id) {
       this.$inertia["delete"](route("admin.page.home.slider.delete", id));
-    },
-    add: function add() {
-      this.isButtonAdd = this.isButtonAdd ? false : true;
     },
     showMsgBoxDelete: function showMsgBoxDelete(state, id) {
       var _this = this;
@@ -154,6 +152,16 @@ __webpack_require__.r(__webpack_exports__);
         })["catch"](function (err) {// An error occurred
         });
       }
+    },
+    linkClass: function linkClass(idx) {
+      if (this.tabIndexCfgHome === idx) {
+        this.$ls.set("tabIndexCfgHome", idx);
+      }
+    }
+  },
+  beforeMount: function beforeMount() {
+    if (this.$ls.get("tabIndexCfgHome")) {
+      this.tabIndexCfgHome = this.$ls.get("tabIndexCfgHome");
     }
   }
 });
@@ -242,8 +250,8 @@ __webpack_require__.r(__webpack_exports__);
           // set flash message here
           if (flash) {
             // disable edit when success
-            if (index == 'success') {
-              _this.$emit('onSuccess');
+            if (index == "success") {
+              _this.$emit("onSuccess");
             }
 
             _this.dismissCountDown = 3;
@@ -259,7 +267,7 @@ __webpack_require__.r(__webpack_exports__);
     return {
       variant: null,
       dismissCountDown: null,
-      msg: ''
+      msg: ""
     };
   }
 });
@@ -14929,7 +14937,7 @@ var render = function() {
   return _c(
     "Layout",
     [
-      _vm.flash ? _c("alert", { attrs: { flash: _vm.flash } }) : _vm._e(),
+      _c("flash-msg"),
       _vm._v(" "),
       _c(
         "div",
@@ -14939,11 +14947,7 @@ var render = function() {
         },
         [
           _c("h1", { staticClass: "h3 mb-0 text-gray-800" }, [
-            _vm._v(
-              "\n            " +
-                _vm._s(_vm.isButtonAdd ? "Add Slider" : "Home Page") +
-                "\n        "
-            )
+            _vm._v("\n            Home Page\n        ")
           ])
         ]
       ),
@@ -14967,105 +14971,134 @@ var render = function() {
                           {
                             attrs: { "content-class": "mt-3" },
                             model: {
-                              value: _vm.tabIndex.index,
+                              value: _vm.tabIndexCfgHome,
                               callback: function($$v) {
-                                _vm.$set(_vm.tabIndex, "index", $$v)
+                                _vm.tabIndexCfgHome = $$v
                               },
-                              expression: "tabIndex.index"
+                              expression: "tabIndexCfgHome"
                             }
                           },
                           [
-                            _c("b-tab", { attrs: { title: "Slider" } }, [
-                              _c("div", { staticClass: "row" }, [
-                                _c(
-                                  "div",
-                                  { staticClass: "col-12" },
-                                  [
-                                    _c(
-                                      "inertia-link",
-                                      {
-                                        staticClass:
-                                          "btn btn-primary my-2 float-right",
-                                        attrs: {
-                                          href: _vm.route(
-                                            "admin.page.home.slider.add"
-                                          )
-                                        }
-                                      },
-                                      [
-                                        _c("i", { staticClass: "fas fa-plus" }),
-                                        _vm._v(
-                                          "\n                                                Tambah"
-                                        )
-                                      ]
-                                    )
-                                  ],
-                                  1
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c(
-                                "div",
-                                { staticClass: "row" },
-                                _vm._l(_vm.dataSlider, function(itemSlider) {
-                                  return _c(
+                            _c(
+                              "b-tab",
+                              {
+                                attrs: {
+                                  title: "Slider",
+                                  "title-link-class": _vm.linkClass(0)
+                                }
+                              },
+                              [
+                                _c("div", { staticClass: "row" }, [
+                                  _c(
                                     "div",
-                                    {
-                                      key: itemSlider.id,
-                                      staticClass: "col-lg-3 col-md-6"
-                                    },
+                                    { staticClass: "col-12" },
                                     [
-                                      _c("card-slider", {
-                                        attrs: {
-                                          sliderId: itemSlider.id,
-                                          caption: itemSlider.caption,
-                                          text: itemSlider.text,
-                                          image: itemSlider.image,
-                                          show: itemSlider.show
+                                      _c(
+                                        "inertia-link",
+                                        {
+                                          staticClass:
+                                            "btn btn-primary my-2 float-right",
+                                          attrs: {
+                                            href: _vm.route(
+                                              "admin.page.home.slider.add"
+                                            )
+                                          }
                                         },
-                                        on: {
-                                          deleteClicked: _vm.showMsgBoxDelete
-                                        }
-                                      })
+                                        [
+                                          _c("i", {
+                                            staticClass: "fas fa-plus"
+                                          }),
+                                          _vm._v(
+                                            "\n                                                Tambah"
+                                          )
+                                        ]
+                                      )
                                     ],
                                     1
                                   )
-                                }),
-                                0
-                              )
-                            ]),
+                                ]),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  { staticClass: "row" },
+                                  _vm._l(_vm.dataSlider, function(itemSlider) {
+                                    return _c(
+                                      "div",
+                                      {
+                                        key: itemSlider.id,
+                                        staticClass: "col-lg-3 col-md-6"
+                                      },
+                                      [
+                                        _c("card-slider", {
+                                          attrs: {
+                                            sliderId: itemSlider.id,
+                                            caption: itemSlider.caption,
+                                            text: itemSlider.text,
+                                            image: itemSlider.image,
+                                            show: itemSlider.show
+                                          },
+                                          on: {
+                                            deleteClicked: _vm.showMsgBoxDelete
+                                          }
+                                        })
+                                      ],
+                                      1
+                                    )
+                                  }),
+                                  0
+                                )
+                              ]
+                            ),
                             _vm._v(" "),
-                            _c("b-tab", { attrs: { title: "Product" } }, [
-                              _c(
-                                "div",
-                                { staticClass: "text-center" },
-                                [
-                                  _c("b-spinner", {
-                                    attrs: {
-                                      variant: "primary",
-                                      label: "Text Centered"
-                                    }
-                                  })
-                                ],
-                                1
-                              )
-                            ]),
+                            _c(
+                              "b-tab",
+                              {
+                                attrs: {
+                                  title: "Product",
+                                  "title-link-class": _vm.linkClass(1)
+                                }
+                              },
+                              [
+                                _c(
+                                  "div",
+                                  { staticClass: "text-center" },
+                                  [
+                                    _c("b-spinner", {
+                                      attrs: {
+                                        variant: "primary",
+                                        label: "Text Centered"
+                                      }
+                                    })
+                                  ],
+                                  1
+                                )
+                              ]
+                            ),
                             _vm._v(" "),
-                            _c("b-tab", { attrs: { title: "Galery" } }, [
-                              _c(
-                                "div",
-                                { staticClass: "text-center" },
-                                [
-                                  _c("b-spinner", {
-                                    attrs: {
-                                      variant: "primary",
-                                      label: "Text Centered"
-                                    }
-                                  })
-                                ],
-                                1
-                              )
-                            ])
+                            _c(
+                              "b-tab",
+                              {
+                                attrs: {
+                                  title: "Galery",
+                                  "title-link-class": _vm.linkClass(2)
+                                }
+                              },
+                              [
+                                _c(
+                                  "div",
+                                  { staticClass: "text-center" },
+                                  [
+                                    _c("b-spinner", {
+                                      attrs: {
+                                        variant: "primary",
+                                        label: "Text Centered"
+                                      }
+                                    })
+                                  ],
+                                  1
+                                )
+                              ]
+                            )
                           ],
                           1
                         )
@@ -15168,7 +15201,7 @@ var render = function() {
   return _c(
     "b-alert",
     {
-      staticClass: "position-fixed fixed-bottom m-0 rounded-0",
+      staticClass: "position-fixed fixed-top m-0 rounded-0",
       staticStyle: { "z-index": "2000" },
       attrs: { dismissible: "", fade: "", variant: _vm.variant },
       model: {

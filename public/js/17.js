@@ -232,11 +232,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
  //import layouts
 
 
@@ -314,6 +309,7 @@ __webpack_require__.r(__webpack_exports__);
     onSubmmitSuccess: function onSubmmitSuccess() {
       this.isEditImagemode = false;
       this.isEditmode = false;
+      this.fillDataform();
     },
     doEditmode: function doEditmode() {
       this.isEditmode = !this.isEditmode;
@@ -336,7 +332,6 @@ __webpack_require__.r(__webpack_exports__);
       this.form.image = file;
       this.isSubmitImagemode = true;
     },
-    sendingEvent: function sendingEvent(file, xhr, formData) {},
     fillDataform: function fillDataform() {
       this.form.id = this.dataSlider.id;
       this.form.caption = this.dataSlider.caption;
@@ -366,7 +361,7 @@ __webpack_require__.r(__webpack_exports__);
         hideHeaderClose: false,
         centered: true
       }).then(function (value) {
-        _this.submitDelete();
+        value && _this.submitDelete();
       })["catch"](function (err) {// An error occurred
       });
     }
@@ -461,8 +456,8 @@ __webpack_require__.r(__webpack_exports__);
           // set flash message here
           if (flash) {
             // disable edit when success
-            if (index == 'success') {
-              _this.$emit('onSuccess');
+            if (index == "success") {
+              _this.$emit("onSuccess");
             }
 
             _this.dismissCountDown = 3;
@@ -478,7 +473,7 @@ __webpack_require__.r(__webpack_exports__);
     return {
       variant: null,
       dismissCountDown: null,
-      msg: ''
+      msg: ""
     };
   }
 });
@@ -1122,7 +1117,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n.vue-dropzone[data-v-70387ec0] {\r\n    border: none !important;\n}\n.dropzone[data-v-70387ec0] {\r\n    height: 100%;\r\n    background: none;\n}\n.dropzone .dz-preview .dz-image-preview[data-v-70387ec0] {\r\n    margin: 0 !important;\n}\r\n", ""]);
+exports.push([module.i, "\n.vue-dropzone[data-v-70387ec0] {\r\n    border: none !important;\n}\n.dropzone[data-v-70387ec0] {\r\n    height: 100%;\r\n    background: none;\r\n    padding: 0 !important;\n}\n.dropzone .dz-preview[data-v-70387ec0] {\r\n    position: relative;\r\n    display: inline-block;\r\n    vertical-align: top;\r\n    margin: 2px !important;\r\n    min-height: 100px;\n}\r\n", ""]);
 
 // exports
 
@@ -1208,8 +1203,6 @@ var render = function() {
               { attrs: { "no-body": "" } },
               [
                 _c("b-card-header", { staticClass: "p-0" }, [
-                  _c("div", { staticClass: "float-right" }),
-                  _vm._v(" "),
                   _c(
                     "div",
                     {
@@ -1402,8 +1395,7 @@ var render = function() {
                         },
                         on: {
                           "vdropzone-removed-file": _vm.dropzoneRemovedFile,
-                          "vdropzone-file-added": _vm.dropzoneFileAdded,
-                          "vdropzone-sending": _vm.sendingEvent
+                          "vdropzone-file-added": _vm.dropzoneFileAdded
                         }
                       })
                     ],
@@ -1426,6 +1418,17 @@ var render = function() {
                     _c(
                       "b-card-body",
                       [
+                        _c("b-form-group", {
+                          attrs: {
+                            id: "input-group-caption",
+                            "label-for": "input-caption",
+                            "invalid-feedback": _vm.errors.image
+                              ? _vm.errors.image[0]
+                              : "",
+                            state: _vm.errors.image ? false : null
+                          }
+                        }),
+                        _vm._v(" "),
                         _c(
                           "b-form-group",
                           {
@@ -1499,7 +1502,11 @@ var render = function() {
                             attrs: {
                               id: "input-group-index",
                               label: "Index:",
-                              "label-for": "input-index"
+                              "label-for": "input-index",
+                              "invalid-feedback": _vm.errors.index
+                                ? _vm.errors.index[0]
+                                : "",
+                              state: _vm.errors.index ? false : null
                             }
                           },
                           [
@@ -1509,6 +1516,7 @@ var render = function() {
                                 id: "input-index",
                                 type: "number",
                                 name: "index",
+                                state: _vm.errors.index ? false : null,
                                 placeholder: "Input index"
                               },
                               model: {
@@ -1734,7 +1742,7 @@ var render = function() {
   return _c(
     "b-alert",
     {
-      staticClass: "position-fixed fixed-bottom m-0 rounded-0",
+      staticClass: "position-fixed fixed-top m-0 rounded-0",
       staticStyle: { "z-index": "2000" },
       attrs: { dismissible: "", fade: "", variant: _vm.variant },
       model: {

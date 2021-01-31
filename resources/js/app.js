@@ -7,9 +7,7 @@ import "hover.css/css/hover-min.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import {
-    InertiaApp
-} from "@inertiajs/inertia-vue";
+import { InertiaApp } from "@inertiajs/inertia-vue";
 
 import Vue from "vue";
 
@@ -27,16 +25,14 @@ import "vue-form-wizard/dist/vue-form-wizard.min.css";
 // particle js
 import VueParticles from "vue-particles";
 
-
 import fullscreen from "vue-fullscreen";
 
 // dropzone js
 // import vueDropzone from 'vue2-dropzone'
 // import 'vue2-dropzone/dist/vue2Dropzone.min.css'
 
-// untuk handle cookies
-// import VueCookies from 'vue-cookies'
-
+// untuk local storage
+import Storage from "vue-ls";
 
 // untuk moment js
 const moment = require("moment");
@@ -67,11 +63,8 @@ Vue.use(InertiaApp);
 // untuk fullscreen
 Vue.use(fullscreen);
 
-// dropzone
-// Vue.use(vueDropzone);
-
-// untuk cookies
-// Vue.use(VueCookies);
+// untuk localstorage
+Vue.use(Storage);
 
 Vue.mixin(require("./base"));
 

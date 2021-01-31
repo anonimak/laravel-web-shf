@@ -1,9 +1,9 @@
 <template>
     <Layout>
-        <alert v-if="flash" :flash="flash" />
+        <flash-msg />
         <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">
-                {{ isButtonAdd ? "Add Slider" : "Home Page" }}
+                Home Page
             </h1>
         </div>
         <breadcrumb :items="breadcrumbItems" />
@@ -14,10 +14,13 @@
                         <div>
                             <keep-alive>
                                 <b-tabs
-                                    v-model="tabIndex.index"
+                                    v-model="tabIndexCfgHome"
                                     content-class="mt-3"
                                 >
-                                    <b-tab title="Slider">
+                                    <b-tab
+                                        title="Slider"
+                                        :title-link-class="linkClass(0)"
+                                    >
                                         <div class="row">
                                             <div class="col-12">
                                                 <inertia-link
@@ -54,7 +57,10 @@
                                             </div>
                                         </div>
                                     </b-tab>
-                                    <b-tab title="Product">
+                                    <b-tab
+                                        title="Product"
+                                        :title-link-class="linkClass(1)"
+                                    >
                                         <div class="text-center">
                                             <b-spinner
                                                 variant="primary"
@@ -62,7 +68,10 @@
                                             ></b-spinner>
                                         </div>
                                     </b-tab>
-                                    <b-tab title="Galery">
+                                    <b-tab
+                                        title="Galery"
+                                        :title-link-class="linkClass(2)"
+                                    >
                                         <div class="text-center">
                                             <b-spinner
                                                 variant="primary"
@@ -83,28 +92,20 @@
 import Layout from "@/Shared/AdminLayout"; //import layouts
 import VueGridLayout from "vue-grid-layout";
 import CardSlider from "@/components/AdminComponents/CardSlider";
-import Alert from "@/components/AdminComponents/Alert";
+import FlashMsg from "@/components/AdminComponents/Alert";
 import Breadcrumb from "@/components/Breadcrumb";
 
 export default {
     metaInfo: { title: "Page Home" },
-    remember: {
-        data: ["tabIndex"],
-        key: "page/home"
-    },
     data() {
         return {
-            isButtonAdd: false,
-            tabIndex: {
-                index: 0,
-                test: "fasf"
-            }
+            tabIndexCfgHome: 0
         };
     },
     components: {
         Layout,
         CardSlider,
-        Alert,
+        FlashMsg,
         Breadcrumb,
         GridLayout: VueGridLayout.GridLayout,
         GridItem: VueGridLayout.GridItem
@@ -113,9 +114,6 @@ export default {
     methods: {
         submitDelete(id) {
             this.$inertia.delete(route("admin.page.home.slider.delete", id));
-        },
-        add: function() {
-            this.isButtonAdd = this.isButtonAdd ? false : true;
         },
         showMsgBoxDelete: function(state, id) {
             if (state) {
@@ -141,6 +139,16 @@ export default {
                         // An error occurred
                     });
             }
+        },
+        linkClass: function(idx) {
+            if (this.tabIndexCfgHome === idx) {
+                this.$ls.set("tabIndexCfgHome", idx);
+            }
+        }
+    },
+    beforeMount() {
+        if (this.$ls.get("tabIndexCfgHome")) {
+            this.tabIndexCfgHome = this.$ls.get("tabIndexCfgHome");
         }
     }
 };

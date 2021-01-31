@@ -127,8 +127,11 @@ export default {
         vueDropzone
     },
 
+    props: ["_token", "errors", "breadcrumbItems", "flash"],
+
     data() {
         return {
+            submitState: false,
             dropzoneOptions: {
                 autoProcessQueue: false,
                 paramName: "image",
@@ -182,8 +185,7 @@ export default {
             this.form.image = file;
         },
         dropzoneSendingEvent: function(file, xhr, formData) {}
-    },
-    props: ["_token", "errors", "breadcrumbItems", "flash"]
+    }
 };
 </script>
 <style scoped>
