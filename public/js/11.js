@@ -610,7 +610,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\nfooter[data-v-61a7c374] {\r\n  margin-top: -1px;\n}\r\n", ""]);
+exports.push([module.i, "\nfooter[data-v-61a7c374] {\r\n    margin-top: -1px;\n}\r\n", ""]);
 
 // exports
 
@@ -1197,9 +1197,13 @@ var staticRenderFns = [
               _c("i", { staticClass: "fas fa-copyright text-white" }),
               _vm._v(" "),
               _c("br"),
-              _vm._v("\n          2020 PT. Sinarmas Hana Finance\n          "),
+              _vm._v(
+                "\n                    2020 PT. Sinarmas Hana Finance\n                    "
+              ),
               _c("br"),
-              _vm._v("\n          registered and supervised by\n        ")
+              _vm._v(
+                "\n                    registered and supervised by\n                "
+              )
             ]),
             _vm._v(" "),
             _c("img", { attrs: { src: "/img/ojk-icon.bmp" } })
@@ -1218,7 +1222,7 @@ var staticRenderFns = [
                   _c(
                     "a",
                     {
-                      staticClass: "text-muted",
+                      staticClass: "text-white",
                       attrs: { href: "https://wa.me/6287776104111" }
                     },
                     [_vm._v("+62 8777-7610-4111")]
@@ -1233,7 +1237,7 @@ var staticRenderFns = [
                   _c(
                     "a",
                     {
-                      staticClass: "text-muted",
+                      staticClass: "text-white",
                       attrs: { href: "mailto:+621-5695-4670" }
                     },
                     [_vm._v("customercare@shf.co.id")]
@@ -1254,7 +1258,7 @@ var staticRenderFns = [
                   _c(
                     "a",
                     {
-                      staticClass: "text-muted",
+                      staticClass: "text-white",
                       attrs: { href: "https://facebook.com/shf.co.id" }
                     },
                     [_vm._v("Sinarmas Hana Finance")]
@@ -1269,7 +1273,7 @@ var staticRenderFns = [
                   _c(
                     "a",
                     {
-                      staticClass: "text-muted",
+                      staticClass: "text-white",
                       attrs: { href: "https://instagram.com/hanafinance" }
                     },
                     [_vm._v("hanafinance")]
@@ -1284,7 +1288,7 @@ var staticRenderFns = [
                   _c(
                     "a",
                     {
-                      staticClass: "text-muted",
+                      staticClass: "text-white",
                       attrs: { href: "https://twitter.com/shf_co_id" }
                     },
                     [_vm._v("@shf_co_id")]
