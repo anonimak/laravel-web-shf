@@ -306,10 +306,12 @@ __webpack_require__.r(__webpack_exports__);
     submitDelete: function submitDelete() {
       this.$inertia["delete"](route("admin.page.home.slider.delete", this.form.id));
     },
-    onSubmmitSuccess: function onSubmmitSuccess() {
-      this.isEditImagemode = false;
-      this.isEditmode = false;
-      this.fillDataform();
+    onSubmmitSuccess: function onSubmmitSuccess(value) {
+      if (value) {
+        this.isEditImagemode = false;
+        this.isEditmode = false;
+        this.fillDataform();
+      }
     },
     doEditmode: function doEditmode() {
       this.isEditmode = !this.isEditmode;
@@ -457,7 +459,7 @@ __webpack_require__.r(__webpack_exports__);
           if (flash) {
             // disable edit when success
             if (index == "success") {
-              _this.$emit("onSuccess");
+              _this.$emit("onSuccess", true);
             }
 
             _this.dismissCountDown = 3;

@@ -148,7 +148,7 @@ __webpack_require__.r(__webpack_exports__);
           hideHeaderClose: false,
           centered: true
         }).then(function (value) {
-          _this.submitDelete(id);
+          value && _this.submitDelete(id);
         })["catch"](function (err) {// An error occurred
         });
       }
@@ -251,7 +251,7 @@ __webpack_require__.r(__webpack_exports__);
           if (flash) {
             // disable edit when success
             if (index == "success") {
-              _this.$emit("onSuccess");
+              _this.$emit("onSuccess", true);
             }
 
             _this.dismissCountDown = 3;

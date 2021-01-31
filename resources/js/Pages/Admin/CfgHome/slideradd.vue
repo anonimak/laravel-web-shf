@@ -1,6 +1,6 @@
 <template>
     <layout>
-        <alert v-if="flash" :flash="flash" />
+        <flash-msg />
         <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">
                 Create New Slider
@@ -114,7 +114,7 @@
 
 <script>
 import Layout from "@/Shared/AdminLayout"; //import layouts
-import Alert from "@/components/AdminComponents/Alert";
+import FlashMsg from "@/components/AdminComponents/Alert";
 import Breadcrumb from "@/components/Breadcrumb";
 import vueDropzone from "vue2-dropzone";
 import "vue2-dropzone/dist/vue2Dropzone.min.css";
@@ -122,7 +122,7 @@ import "vue2-dropzone/dist/vue2Dropzone.min.css";
 export default {
     components: {
         Layout,
-        Alert,
+        FlashMsg,
         Breadcrumb,
         vueDropzone
     },

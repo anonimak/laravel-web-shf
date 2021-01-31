@@ -133,7 +133,7 @@ export default {
                         }
                     )
                     .then(value => {
-                        this.submitDelete(id);
+                        value && this.submitDelete(id);
                     })
                     .catch(err => {
                         // An error occurred

@@ -22,7 +22,7 @@ export default {
                     if (flash) {
                         // disable edit when success
                         if (index == "success") {
-                            this.$emit("onSuccess");
+                            this.$emit("onSuccess", true);
                         }
                         this.dismissCountDown = 3;
                         this.variant = index;

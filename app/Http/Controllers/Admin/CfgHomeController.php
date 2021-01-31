@@ -97,7 +97,7 @@ class CfgHomeController extends Controller
 
         // store in storage
         $path = $request->file('image')->store('public/sliders');
-        Slider::create([
+        $slider = Slider::create([
             'caption'   => $request->input('caption'),
             'text'      => $request->input('text'),
             'image'     => $path,
@@ -105,7 +105,7 @@ class CfgHomeController extends Controller
             'index'     => $request->input('index')
         ]);
 
-        return Redirect::route('admin.page.home')->with('success', 'Slider created.');
+        return Redirect::route('admin.page.home.slider.detail', $slider->id )->with('success', 'Slider created.');
     }
 
     public function detailSlider(Slider $slider)

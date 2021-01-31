@@ -139,7 +139,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     Layout: _Shared_AdminLayout__WEBPACK_IMPORTED_MODULE_0__["default"],
-    Alert: _components_AdminComponents_Alert__WEBPACK_IMPORTED_MODULE_1__["default"],
+    FlashMsg: _components_AdminComponents_Alert__WEBPACK_IMPORTED_MODULE_1__["default"],
     Breadcrumb: _components_Breadcrumb__WEBPACK_IMPORTED_MODULE_2__["default"],
     vueDropzone: vue2_dropzone__WEBPACK_IMPORTED_MODULE_3___default.a
   },
@@ -286,7 +286,7 @@ __webpack_require__.r(__webpack_exports__);
           if (flash) {
             // disable edit when success
             if (index == "success") {
-              _this.$emit("onSuccess");
+              _this.$emit("onSuccess", true);
             }
 
             _this.dismissCountDown = 3;
@@ -1001,7 +1001,7 @@ var render = function() {
   return _c(
     "layout",
     [
-      _vm.flash ? _c("alert", { attrs: { flash: _vm.flash } }) : _vm._e(),
+      _c("flash-msg"),
       _vm._v(" "),
       _c(
         "div",

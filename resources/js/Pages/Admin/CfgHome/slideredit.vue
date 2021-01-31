@@ -297,10 +297,12 @@ export default {
                 route("admin.page.home.slider.delete", this.form.id)
             );
         },
-        onSubmmitSuccess() {
-            this.isEditImagemode = false;
-            this.isEditmode = false;
-            this.fillDataform();
+        onSubmmitSuccess(value) {
+            if (value) {
+                this.isEditImagemode = false;
+                this.isEditmode = false;
+                this.fillDataform();
+            }
         },
         doEditmode: function() {
             this.isEditmode = !this.isEditmode;
