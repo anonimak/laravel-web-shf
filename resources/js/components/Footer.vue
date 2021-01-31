@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md mr-4">
-                    <small class="d-block mt-3 mb-3 text-muted">
+                    <small class="d-block mt-3 mb-3 text-white">
                         <i class="fas fa-copyright text-white"></i>
                         <br />
                         2020 PT. Sinarmas Hana Finance
