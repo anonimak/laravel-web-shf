@@ -47,7 +47,7 @@ export default {
           child: [
             {
               title: "Home",
-              link: "admin.page.home",
+              link: "admin.page.home.index",
             },
             {
               title: "Product",

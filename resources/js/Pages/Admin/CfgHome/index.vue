@@ -23,6 +23,18 @@
                                     >
                                         <div class="row">
                                             <div class="col-12">
+                                                <b-button
+                                                    class="mb-1 btn-sm"
+                                                    variant="danger"
+                                                    v-if="selected.length > 0"
+                                                    @click="showMsgBoxDeleteAll"
+                                                    >Delete Selected</b-button>
+                                                <b-button
+                                                    class="mb-1 btn-sm"
+                                                    variant="secondary"
+                                                    v-if="selected.length > 0"
+                                                    @click="uncheckAll"
+                                                    >Uncheck All</b-button>
                                                 <inertia-link
                                                     :href="
                                                         route(
@@ -53,6 +65,7 @@
                                                     @deleteClicked="
                                                         showMsgBoxDelete
                                                     "
+                                                    @checked="selecting"
                                                 />
                                             </div>
                                         </div>
@@ -99,7 +112,8 @@ export default {
     metaInfo: { title: "Page Home" },
     data() {
         return {
-            tabIndexCfgHome: 0
+            tabIndexCfgHome: 0,
+            selected:[]
         };
     },
     components: {
@@ -114,6 +128,16 @@ export default {
     methods: {
         submitDelete(id) {
             this.$inertia.delete(route("admin.page.home.slider.delete", id));
+        },
+        submitDeleteAll(idx){
+            this.$inertia.delete(route("admin.page.home.slider.delete-all", idx.join()));
+        },
+        selecting(id, status){
+            if(!this.selected.includes(id) && status){
+                this.selected.push(id)
+            } else {
+                this.selected = this.selected.filter( val => val != id );
+            }
         },
         showMsgBoxDelete: function(state, id) {
             if (state) {
@@ -140,10 +164,36 @@ export default {
                     });
             }
         },
+        showMsgBoxDeleteAll: function() {
+                this.$bvModal
+                    .msgBoxConfirm(
+                        "Please confirm that you want to delete this checked slider.",
+                        {
+                            title: "Please Confirm",
+                            size: "sm",
+                            buttonSize: "sm",
+                            okVariant: "danger",
+                            okTitle: "YES",
+                            cancelTitle: "NO",
+                            footerClass: "p-2",
+                            hideHeaderClose: false,
+                            centered: true
+                        }
+                    )
+                    .then(value => {
+                        value && this.submitDeleteAll(this.selected);
+                    })
+                    .catch(err => {
+                        // An error occurred
+                    });
+        },
         linkClass: function(idx) {
             if (this.tabIndexCfgHome === idx) {
                 this.$ls.set("tabIndexCfgHome", idx);
             }
+        },
+        uncheckAll: function(){
+            this.selected = []
         }
     },
     beforeMount() {

@@ -72,57 +72,76 @@ Route::get('network', 'NetworkController@index')->name('network');
 |
 |
 */
-Route::get('admin/dashboard', 'Admin\DashboardController@index')
-    ->name('admin.dashboard')
-    ->middleware('auth', 'is_admin');
+Route::middleware(['auth', 'is_admin'])->prefix('admin')->name('admin.')->group(function () {
+    // dashboard
+    // admin.dashboard
+    Route::get('/dashboard', 'Admin\DashboardController@index')
+    ->name('dashboard');
 
-// Page
-// Page -> Home
-Route::get('admin/page/home', 'Admin\CfgHomeController@index')
-    ->name('admin.page.home')
-    ->middleware('auth', 'is_admin');
+    // page
+    // admin.page
+    Route::prefix('/page')->name('page.')->group(function () {
+        // home
+        // admin.page.home
+        Route::prefix('/home')->name('home.')->group(function () {
+            // Page
+            // Page -> Home
+            
+            Route::get('/index', 'Admin\CfgHomeController@index')
+                ->name('index');
 
-// Page -> Home -> Slider
-Route::get('admin/page/home/slider/add', 'Admin\CfgHomeController@createSlider')
-    ->name('admin.page.home.slider.add')
-    ->middleware('auth', 'is_admin');
-Route::post('admin/page/home/slider/store', 'Admin\CfgHomeController@storeSlider')
-    ->name('admin.page.home.slider.store')
-    ->middleware('auth', 'is_admin');
-Route::get('admin/page/home/slider/{slider}/detail', 'Admin\CfgHomeController@detailSlider')
-    ->name('admin.page.home.slider.detail')
-    ->middleware('auth', 'is_admin');
-Route::put('admin/page/home/slider/{slider}/update', 'Admin\CfgHomeController@updateSlider')
-    ->name('admin.page.home.slider.update')
-    ->middleware('auth', 'is_admin');
-Route::post('admin/page/home/slider/{id}/updateImage', 'Admin\CfgHomeController@updateSliderImage')
-    ->name('admin.page.home.slider.updateImage')
-    ->middleware('auth', 'is_admin');
-Route::delete('admin/page/home/slider/{slider}/delete', 'Admin\CfgHomeController@destroySlider')
-    ->name('admin.page.home.slider.delete')
-    ->middleware('auth', 'is_admin');
+            // Page -> Home -> Slider
+            // admin.page.home.slider
+            Route::prefix('/slider')->name('slider.')->group(function () {
 
-Route::get('admin/page/product', 'Admin\CfgHomeController@index')
-    ->name('admin.page.product')
-    ->middleware('auth', 'is_admin');
+                Route::get('/add', 'Admin\CfgHomeController@createSlider')
+                ->name('add');
+                Route::post('/store', 'Admin\CfgHomeController@storeSlider')
+                ->name('store');
+                Route::get('/{slider}/detail', 'Admin\CfgHomeController@detailSlider')
+                ->name('detail');
+                Route::put('/{slider}/update', 'Admin\CfgHomeController@updateSlider')
+                ->name('update');
+                Route::post('/{id}/updateImage', 'Admin\CfgHomeController@updateSliderImage')
+                ->name('updateImage');
+                Route::delete('/{slider}/delete', 'Admin\CfgHomeController@destroySlider')
+                ->name('delete');
+                Route::delete('/deleteAll/{idx}', 'Admin\CfgHomeController@deleteSliderAll')
+                ->name('delete-all');
+            });
+            
+        });
 
-Route::get('admin/page/profile', 'Admin\CfgHomeController@index')
-    ->name('admin.page.profile')
-    ->middleware('auth', 'is_admin');
+        // Page -> Product
+        Route::get('/product', 'Admin\CfgHomeController@index')
+        ->name('product');
 
-// Post
-Route::get('admin/post', 'Admin\CfgHomeController@index')
-    ->name('admin.post')
-    ->middleware('auth', 'is_admin');
+        // Page -> Profile
+        Route::get('/profile', 'Admin\CfgHomeController@index')
+            ->name('profile');
+    });
 
-// Setting
-Route::get('admin/setting/meta', 'Admin\CfgHomeController@index')
-    ->name('admin.setting.meta')
-    ->middleware('auth', 'is_admin');
+    // Admin -> Post
+    Route::get('/post', 'Admin\CfgHomeController@index')
+    ->name('post');
 
-Route::get('admin/setting/system', 'Admin\SystemController@index')
-    ->name('admin.setting.system')
-    ->middleware('auth', 'is_admin');
+    // Admin -> Setting
+    // admin.setting
+    Route::prefix('/setting')->name('setting.')->group(function () {
+        //  Setting -> meta
+        Route::get('/meta', 'Admin\CfgHomeController@index')
+            ->name('meta');
+        // Setting -> system
+        Route::get('/system', 'Admin\SystemController@index')
+            ->name('system');
+    });
+
+});
+
+
+
+
+
 // Route::get('/home', 'HomeController@index')->name('home');
 
 // Auth::routes();

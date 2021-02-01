@@ -33,13 +33,22 @@
                 @click="$emit('deleteClicked', true, sliderId)"
                 >Delete</b-button
             >
+            <b-form-checkbox
+                name="checkbox-1"
+                :value="sliderId"
+                @change="$emit('checked',sliderId, $event)"
+                >
+                I accept the terms and use
+            </b-form-checkbox>
         </b-card>
     </div>
 </template>
 
 <script>
 export default {
-    props: ["caption", "image", "text", "sliderId", "show"]
+    props: ["caption", "image", "text", "sliderId", "show"],
+    methods: {
+    }
 };
 </script>
 

@@ -480,7 +480,7 @@ __webpack_require__.r(__webpack_exports__);
         icon: "fas fa-fw fa-folder",
         child: [{
           title: "Home",
-          link: "admin.page.home"
+          link: "admin.page.home.index"
         }, {
           title: "Product",
           link: "admin.page.product"

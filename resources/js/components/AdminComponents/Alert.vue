@@ -13,7 +13,19 @@
 <script>
 export default {
     // props:["flash"],
+    mounted(){
+        for (const [key, value] of Object.entries(this.pageFlashes)) {
+            if(value){
+                if (key == "success") {
+                    this.$emit("onSuccess", true);
+                }
+                this.dismissCountDown = 3;
+                this.variant = key;
+                this.msg = value;   
+            }
+        }
 
+    },
     watch: {
         pageFlashes: {
             handler(flashes) {

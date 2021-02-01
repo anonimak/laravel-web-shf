@@ -52,7 +52,7 @@ class CfgHomeController extends Controller
                 [
                     'title'   => "Home",
                     'active'  => true,
-                    'href'    => "admin.page.home"
+                    'href'    => "admin.page.home.index"
                 ],
             )
         ]);
@@ -75,7 +75,7 @@ class CfgHomeController extends Controller
                 ],
                 [
                     'title'   => "Home",
-                    'href'    => "admin.page.home"
+                    'href'    => "admin.page.home.index"
                 ],
                 [
                     'title'   => "Add Slider",
@@ -106,6 +106,7 @@ class CfgHomeController extends Controller
         ]);
 
         return Redirect::route('admin.page.home.slider.detail', $slider->id )->with('success', 'Slider created.');
+        // return Redirect::back()->with('success', 'Successful updating image Slider.');
     }
 
     public function detailSlider(Slider $slider)
@@ -135,7 +136,7 @@ class CfgHomeController extends Controller
                 ],
                 [
                     'title'   => "Home",
-                    'href'    => "admin.page.home"
+                    'href'    => "admin.page.home.index"
                 ],
                 [
                     'title'   => "Detail Slider",
@@ -190,7 +191,23 @@ class CfgHomeController extends Controller
             File::delete(public_path($slider->image));
         }
         $slider->delete();
-        return Redirect::route('admin.page.home')->with('success', 'Slider deleted.');
+        return Redirect::route('admin.page.home.index')->with('success', 'Slider deleted.');
+    }
+
+    public function deleteSliderAll($id)
+    {
+        $id = explode(",", $id);
+        // print_r($id);
+        $sliders = Slider::whereIn('id',$id)->get();
+        foreach($sliders as $slider) {
+            // delete file
+            if(File::exists(public_path($slider->image))){
+                File::delete(public_path($slider->image));
+            }
+        }
+        // delete record
+        $slider->destroy($id);
+        return Redirect::route('admin.page.home.index')->with('success', 'Sliders deleted.');
     }
 
     public function restoreSlider(Organization $organization)

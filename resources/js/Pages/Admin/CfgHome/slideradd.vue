@@ -165,18 +165,22 @@ export default {
                 text: "",
                 show: 1,
                 image: null
-            }
+            },
+            submitState : false
         };
     },
     methods: {
         submit() {
-            var formData = new FormData();
-            formData.append("caption", this.form.caption);
-            formData.append("index", this.form.index);
-            formData.append("text", this.form.text);
-            formData.append("show", this.form.show);
-            formData.append("image", this.form.image);
-            this.$inertia.post(route("admin.page.home.slider.store"), formData);
+            if(!this.submitState){
+                var formData = new FormData();
+                formData.append("caption", this.form.caption);
+                formData.append("index", this.form.index);
+                formData.append("text", this.form.text);
+                formData.append("show", this.form.show);
+                formData.append("image", this.form.image);
+                this.submitState = true;
+                this.$inertia.post(route("admin.page.home.slider.store"), formData);
+            }
         },
         dropzoneRemovedFile: function(file, error, xhr) {
             this.form.image = null;
