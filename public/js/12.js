@@ -118,6 +118,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
  //import layouts
 
 
@@ -131,7 +133,11 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       tabIndexCfgHome: 0,
-      selected: []
+      slider: this.dataSlider.map(function (value, index) {
+        value["selected"] = false;
+        return value;
+      }),
+      isCheched: false
     };
   },
   components: {
@@ -150,14 +156,10 @@ __webpack_require__.r(__webpack_exports__);
     submitDeleteAll: function submitDeleteAll(idx) {
       this.$inertia["delete"](route("admin.page.home.slider.delete-all", idx.join()));
     },
-    selecting: function selecting(id, status) {
-      if (!this.selected.includes(id) && status) {
-        this.selected.push(id);
-      } else {
-        this.selected = this.selected.filter(function (val) {
-          return val != id;
-        });
-      }
+    onChange: function onChange() {
+      console.log(this.slider.filter(function (value) {
+        return value.selected === true;
+      }).length);
     },
     showMsgBoxDelete: function showMsgBoxDelete(state, id) {
       var _this = this;
@@ -180,8 +182,6 @@ __webpack_require__.r(__webpack_exports__);
       }
     },
     showMsgBoxDeleteAll: function showMsgBoxDeleteAll() {
-      var _this2 = this;
-
       this.$bvModal.msgBoxConfirm("Please confirm that you want to delete this checked slider.", {
         title: "Please Confirm",
         size: "sm",
@@ -192,8 +192,7 @@ __webpack_require__.r(__webpack_exports__);
         footerClass: "p-2",
         hideHeaderClose: false,
         centered: true
-      }).then(function (value) {
-        value && _this2.submitDeleteAll(_this2.selected);
+      }).then(function (value) {// value && this.submitDeleteAll(this.selected);
       })["catch"](function (err) {// An error occurred
       });
     },
@@ -202,8 +201,15 @@ __webpack_require__.r(__webpack_exports__);
         this.$ls.set("tabIndexCfgHome", idx);
       }
     },
-    uncheckAll: function uncheckAll() {
-      this.selected = [];
+    uncheckAll: function uncheckAll() {// this.selected = []
+    }
+  },
+  watch: {
+    slider: {
+      handler: function handler(val) {
+        console.log("change made to selection");
+      },
+      deep: true
     }
   },
   beforeMount: function beforeMount() {
@@ -405,9 +411,21 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ["caption", "image", "text", "sliderId", "show"],
-  methods: {}
+  props: ["caption", "image", "text", "sliderId", "show", "selected"],
+  data: function data() {
+    return {
+      content: this.sliderId,
+      checked: false
+    };
+  },
+  methods: {
+    handleInput: function handleInput(e) {
+      this.checked = e;
+      this.$emit('input', e);
+    }
+  }
 });
 
 /***/ }),
@@ -15077,32 +15095,6 @@ var render = function() {
                                     "div",
                                     { staticClass: "col-12" },
                                     [
-                                      _vm.selected.length > 0
-                                        ? _c(
-                                            "b-button",
-                                            {
-                                              staticClass: "mb-1 btn-sm",
-                                              attrs: { variant: "danger" },
-                                              on: {
-                                                click: _vm.showMsgBoxDeleteAll
-                                              }
-                                            },
-                                            [_vm._v("Delete Selected")]
-                                          )
-                                        : _vm._e(),
-                                      _vm._v(" "),
-                                      _vm.selected.length > 0
-                                        ? _c(
-                                            "b-button",
-                                            {
-                                              staticClass: "mb-1 btn-sm",
-                                              attrs: { variant: "secondary" },
-                                              on: { click: _vm.uncheckAll }
-                                            },
-                                            [_vm._v("Uncheck All")]
-                                          )
-                                        : _vm._e(),
-                                      _vm._v(" "),
                                       _c(
                                         "inertia-link",
                                         {
@@ -15131,7 +15123,7 @@ var render = function() {
                                 _c(
                                   "div",
                                   { staticClass: "row" },
-                                  _vm._l(_vm.dataSlider, function(itemSlider) {
+                                  _vm._l(_vm.slider, function(itemSlider) {
                                     return _c(
                                       "div",
                                       {
@@ -15145,11 +15137,23 @@ var render = function() {
                                             caption: itemSlider.caption,
                                             text: itemSlider.text,
                                             image: itemSlider.image,
-                                            show: itemSlider.show
+                                            show: itemSlider.show,
+                                            selected: itemSlider.selected
                                           },
                                           on: {
                                             deleteClicked: _vm.showMsgBoxDelete,
-                                            checked: _vm.selecting
+                                            "on-change": _vm.onChange
+                                          },
+                                          model: {
+                                            value: itemSlider.selected,
+                                            callback: function($$v) {
+                                              _vm.$set(
+                                                itemSlider,
+                                                "selected",
+                                                $$v
+                                              )
+                                            },
+                                            expression: "itemSlider.selected"
                                           }
                                         })
                                       ],
@@ -15415,10 +15419,11 @@ var render = function() {
           _c(
             "b-form-checkbox",
             {
-              attrs: { name: "checkbox-1", value: _vm.sliderId },
+              attrs: { name: "checkbox-1", checked: _vm.selected },
               on: {
+                input: _vm.handleInput,
                 change: function($event) {
-                  return _vm.$emit("checked", _vm.sliderId, $event)
+                  return _vm.$emit("on-change")
                 }
               }
             },

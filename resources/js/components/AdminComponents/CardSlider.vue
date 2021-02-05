@@ -35,8 +35,9 @@
             >
             <b-form-checkbox
                 name="checkbox-1"
-                :value="sliderId"
-                @change="$emit('checked',sliderId, $event)"
+                @input="handleInput"
+                :checked="selected"
+                @change="$emit('on-change')"
                 >
                 I accept the terms and use
             </b-form-checkbox>
@@ -46,8 +47,18 @@
 
 <script>
 export default {
-    props: ["caption", "image", "text", "sliderId", "show"],
+    props: ["caption", "image", "text", "sliderId", "show", "selected"],
+    data () {
+    return {
+        content: this.sliderId,
+        checked: false,
+        }
+    },
     methods: {
+        handleInput (e) {
+            this.checked = e
+            this.$emit('input', e)
+        }
     }
 };
 </script>

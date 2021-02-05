@@ -23,7 +23,7 @@
                                     >
                                         <div class="row">
                                             <div class="col-12">
-                                                <b-button
+                                                <!-- <b-button
                                                     class="mb-1 btn-sm"
                                                     variant="danger"
                                                     v-if="selected.length > 0"
@@ -34,7 +34,7 @@
                                                     variant="secondary"
                                                     v-if="selected.length > 0"
                                                     @click="uncheckAll"
-                                                    >Uncheck All</b-button>
+                                                    >Uncheck All</b-button> -->
                                                 <inertia-link
                                                     :href="
                                                         route(
@@ -51,7 +51,7 @@
                                         <div class="row">
                                             <div
                                                 class="col-lg-3 col-md-6"
-                                                v-for="itemSlider in dataSlider"
+                                                v-for="itemSlider in slider"
                                                 :key="itemSlider.id"
                                             >
                                                 <card-slider
@@ -62,10 +62,12 @@
                                                     :text="itemSlider.text"
                                                     :image="itemSlider.image"
                                                     :show="itemSlider.show"
+                                                    :selected="itemSlider.selected"
                                                     @deleteClicked="
                                                         showMsgBoxDelete
                                                     "
-                                                    @checked="selecting"
+                                                    v-model="itemSlider.selected"
+                                                    @on-change="onChange"
                                                 />
                                             </div>
                                         </div>
@@ -113,7 +115,12 @@ export default {
     data() {
         return {
             tabIndexCfgHome: 0,
-            selected:[]
+            slider: this.dataSlider.map(function(value, index) {
+                    value["selected"]=false;
+                    return value;
+                })
+            ,
+            isCheched:false,
         };
     },
     components: {
@@ -132,12 +139,8 @@ export default {
         submitDeleteAll(idx){
             this.$inertia.delete(route("admin.page.home.slider.delete-all", idx.join()));
         },
-        selecting(id, status){
-            if(!this.selected.includes(id) && status){
-                this.selected.push(id)
-            } else {
-                this.selected = this.selected.filter( val => val != id );
-            }
+        onChange(){
+            console.log(this.slider.filter(value => value.selected === true).length)
         },
         showMsgBoxDelete: function(state, id) {
             if (state) {
@@ -181,7 +184,7 @@ export default {
                         }
                     )
                     .then(value => {
-                        value && this.submitDeleteAll(this.selected);
+                        // value && this.submitDeleteAll(this.selected);
                     })
                     .catch(err => {
                         // An error occurred
@@ -193,7 +196,15 @@ export default {
             }
         },
         uncheckAll: function(){
-            this.selected = []
+            // this.selected = []
+        }
+    },
+    watch:{
+        slider: {
+            handler:function(val){
+                console.log("change made to selection")
+            },
+            deep:true
         }
     },
     beforeMount() {
