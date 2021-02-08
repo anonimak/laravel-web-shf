@@ -34,20 +34,64 @@
                 Jam Kerja
                 <i class="fa fa-clock" aria-hidden="true"></i>
               </h4>
-              <p>Pusat : Senin - Jum'at : 8.00-17.00 WIB</p>
-              <p>Cabang : Senin - Jum'at : 8.30-16.30 WIB Sabtu : 8.30-14.30</p>
+              <table class="table table-borderless">
+                <tbody>
+                  <tr>
+                    <td>Pusat</td>
+                    <td>Senin - Jum'at : 8.00-17.00 WIB</td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td>Cabang</td>
+                    <td>Senin - Jum'at : 8.30-16.30 WIB Sabtu : 8.30-14.30</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <div class="mt-2 col-md-6 col-lg-6">
-              <h4 class="text-primary">
-                Alamat Kantor Pusat
-                <i class="fa fa-map-marker-alt" aria-hidden="true"></i>
-              </h4>
-              <p>
-                Gedung Roxy Square Lt. 3 B 001 No. 02 Jl. Kyai Tapa No.1,
-                Tomang, Grogol Petamburan, Jakarta Barat 11440
-              </p>
-              <p>Email:customercare@shf.co.id</p>
-              <p>Phone : 021-5695-4670</p>
+              <div class="mb-5">
+                <h4 class="text-primary">
+                  Alamat Kantor Pusat
+                  <i class="fa fa-map-marker-alt" aria-hidden="true"></i>
+                </h4>
+                <table class="table table-borderless">
+                  <tbody>
+                    <tr>
+                      <td colspan="4" class="py-0">Gedung Roxy Square Lt. 3 B 001 No. 02 Jl. Kyai Tapa No.1,
+                                      Tomang, Grogol Petamburan, Jakarta Barat 11440</td>
+                    </tr>
+                    <tr>
+                      <td class="py-0"><b>Email</b></td>
+                      <td class="py-0">customercare@shf.co.id</td>
+                      <td class="col-4"></td>
+                    </tr>
+                    <tr>
+                      <td class="py-0"><b>Phone</b></td>
+                      <td class="py-0">021-5695-4670</td>
+                      <td class="col-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div v-for="item in offices" :key="item.id" class="mb-5">
+                <h4 class="text-primary">
+                  {{ item.name }}
+                  <i class="fa fa-map-marker-alt" aria-hidden="true"></i>
+                </h4>
+                <table class="table table-borderless">
+                  <tbody>
+                    <tr>
+                      <td colspan="4" class="py-0">{{ item.address }}</td>
+                    </tr>
+                    <tr>
+                      <td class="py-0"><b>Phone</b></td>
+                      <td class="py-0">{{ item.telp }}</td>
+                      <td class="col-4"></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </div>
@@ -64,6 +108,11 @@ export default {
   components: {
     Layout,
     HanaMap
+  },
+  data(){
+    return {
+      "offices": this.data_offices
+    }
   },
   props: [
     "meta",

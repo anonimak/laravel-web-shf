@@ -81,6 +81,50 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
  //import layouts
 
 
@@ -88,6 +132,11 @@ __webpack_require__.r(__webpack_exports__);
   components: {
     Layout: _Shared_Layout__WEBPACK_IMPORTED_MODULE_0__["default"],
     HanaMap: _components_HanaMap__WEBPACK_IMPORTED_MODULE_1__["default"]
+  },
+  data: function data() {
+    return {
+      "offices": this.data_offices
+    };
   },
   props: ["meta", "data_offices"]
 });
@@ -3319,34 +3368,129 @@ var render = function() {
                 })
               ]),
               _vm._v(" "),
-              _c("p", [_vm._v("Pusat : Senin - Jum'at : 8.00-17.00 WIB")]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "Cabang : Senin - Jum'at : 8.30-16.30 WIB Sabtu : 8.30-14.30"
-                )
+              _c("table", { staticClass: "table table-borderless" }, [
+                _c("tbody", [
+                  _c("tr", [
+                    _c("td", [_vm._v("Pusat")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("Senin - Jum'at : 8.00-17.00 WIB")]),
+                    _vm._v(" "),
+                    _c("td")
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", [_vm._v("Cabang")]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _vm._v(
+                        "Senin - Jum'at : 8.30-16.30 WIB Sabtu : 8.30-14.30"
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("td")
+                  ])
+                ])
               ])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "mt-2 col-md-6 col-lg-6" }, [
-              _c("h4", { staticClass: "text-primary" }, [
-                _vm._v("\n              Alamat Kantor Pusat\n              "),
-                _c("i", {
-                  staticClass: "fa fa-map-marker-alt",
-                  attrs: { "aria-hidden": "true" }
+            _c(
+              "div",
+              { staticClass: "mt-2 col-md-6 col-lg-6" },
+              [
+                _c("div", { staticClass: "mb-5" }, [
+                  _c("h4", { staticClass: "text-primary" }, [
+                    _vm._v(
+                      "\n                Alamat Kantor Pusat\n                "
+                    ),
+                    _c("i", {
+                      staticClass: "fa fa-map-marker-alt",
+                      attrs: { "aria-hidden": "true" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("table", { staticClass: "table table-borderless" }, [
+                    _c("tbody", [
+                      _c("tr", [
+                        _c(
+                          "td",
+                          { staticClass: "py-0", attrs: { colspan: "4" } },
+                          [
+                            _vm._v(
+                              "Gedung Roxy Square Lt. 3 B 001 No. 02 Jl. Kyai Tapa No.1,\n                                    Tomang, Grogol Petamburan, Jakarta Barat 11440"
+                            )
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "py-0" }, [
+                          _c("b", [_vm._v("Email")])
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "py-0" }, [
+                          _vm._v("customercare@shf.co.id")
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "col-4" })
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "py-0" }, [
+                          _c("b", [_vm._v("Phone")])
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "py-0" }, [
+                          _vm._v("021-5695-4670")
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "col-4" })
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _vm._l(_vm.offices, function(item) {
+                  return _c("div", { key: item.id, staticClass: "mb-5" }, [
+                    _c("h4", { staticClass: "text-primary" }, [
+                      _vm._v(
+                        "\n                " +
+                          _vm._s(item.name) +
+                          "\n                "
+                      ),
+                      _c("i", {
+                        staticClass: "fa fa-map-marker-alt",
+                        attrs: { "aria-hidden": "true" }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("table", { staticClass: "table table-borderless" }, [
+                      _c("tbody", [
+                        _c("tr", [
+                          _c(
+                            "td",
+                            { staticClass: "py-0", attrs: { colspan: "4" } },
+                            [_vm._v(_vm._s(item.address))]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("tr", [
+                          _c("td", { staticClass: "py-0" }, [
+                            _c("b", [_vm._v("Phone")])
+                          ]),
+                          _vm._v(" "),
+                          _c("td", { staticClass: "py-0" }, [
+                            _vm._v(_vm._s(item.telp))
+                          ]),
+                          _vm._v(" "),
+                          _c("td", { staticClass: "col-4" })
+                        ])
+                      ])
+                    ])
+                  ])
                 })
-              ]),
-              _vm._v(" "),
-              _c("p", [
-                _vm._v(
-                  "\n              Gedung Roxy Square Lt. 3 B 001 No. 02 Jl. Kyai Tapa No.1,\n              Tomang, Grogol Petamburan, Jakarta Barat 11440\n            "
-                )
-              ]),
-              _vm._v(" "),
-              _c("p", [_vm._v("Email:customercare@shf.co.id")]),
-              _vm._v(" "),
-              _c("p", [_vm._v("Phone : 021-5695-4670")])
-            ])
+              ],
+              2
+            )
           ])
         ])
       ])
