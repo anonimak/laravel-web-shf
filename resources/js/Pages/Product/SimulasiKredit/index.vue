@@ -54,7 +54,7 @@
                   >
                     <b-card-body>
                       <h4>
-                        Budget
+                        Refinance
                         <span class="float-right">
                           <i class="fas fa-coins"></i>
                         </span>
@@ -73,9 +73,9 @@
                   >
                     <b-card-body>
                       <h4>
-                        Kredit
+                        Used Car
                         <span class="float-right">
-                          <i class="fas fa-money-bill-wave"></i>
+                          <i class="fas fa-car"></i>
                         </span>
                       </h4>
                     </b-card-body>
@@ -131,36 +131,43 @@
               <div v-else-if="form.jenisSimulasi == 2">
                 <b-form-group
                   id="input-group-2"
-                  label="Your Name:"
-                  label-for="input-2"
+                  label="Harga Kendaraan:"
+                  label-for="input-harga"
                 >
                   <b-form-input
-                    id="input-2"
-                    v-model="form.name"
+                    id="input-harga"
+                    v-model="form.harga"
                     required
-                    placeholder="Enter name"
+                    placeholder="Masukan Harga Kendaraan"
                   ></b-form-input>
                 </b-form-group>
-
-                <b-form-group id="input-group-4">
-                  <b-form-checkbox-group
-                    v-model="form.checked"
-                    id="checkboxes-4"
-                  >
-                    <b-form-checkbox value="me">Check me out</b-form-checkbox>
-                    <b-form-checkbox value="that"
-                      >Check that out</b-form-checkbox
-                    >
-                  </b-form-checkbox-group>
+                <b-form-group
+                  id="input-group-2"
+                  label="Uang Muka:"
+                  label-for="input-uang-muka"
+                >
+                  <b-form-input
+                    id="input-uang-muka"
+                    v-model="form.dp"
+                    required
+                    placeholder="Masukan Uang Muka"
+                  ></b-form-input>
+                </b-form-group>
+                <b-form-group
+                  id="input-group-2"
+                  label="Asuransi:"
+                  label-for="input-2"
+                >
+                  <b-form-select v-model="form.asuransi" :options="optasuransi"></b-form-select>
                 </b-form-group>
               </div>
             </b-form>
           </tab-content>
-          <tab-content title="Data Diri Pengaju Kredit" icon="fas fa-id-card"
+          <!-- <tab-content title="Data Diri Pengaju Kredit" icon="fas fa-id-card"
             >My second tab content</tab-content
-          >
-          <tab-content title="Rangkuman Biaya Kredit" icon="fas fa-money-check"
-            >Yuhuuu! This seems pretty damn simple</tab-content
+          > -->
+          <tab-content title="Rangkuman Simulasi Kredit" icon="fas fa-money-check"
+            >{{ 10000000 | numberIdr}}</tab-content
           >
           <b-button variant="danger" slot="prev">Prev</b-button>
           <b-button
@@ -190,8 +197,9 @@ export default {
   data() {
     return {
       form: {
-        email: "",
-        name: "",
+        harga: null,
+        dp: null,
+        asuransi: 0,
         jenisSimulasi: null,
         jenisBudget: 1,
         tjh: 1,
@@ -208,6 +216,303 @@ export default {
         { text: "Berdasarkan Besar DP", value: 1 },
         { text: "Berdasarkan Besar Cicilan", value: 2 },
       ],
+      optasuransi: [
+        { value: null, text: 'Pilih Asuransi' },
+        {value:0, text:"All Risk" },
+        {value:1, text:"TLO" },
+        {value:2, text:"Gabungan" },
+      ],
+      dataasuransi:[
+        {
+          category:1,
+          type:0,
+          asuransiregion:[
+            {
+              id:1,
+              value:4.20
+            },
+            {
+              id:2,
+              value:3.59
+            },
+            {
+              id:3,
+              value:2.78
+            },
+          ]
+        },
+        {
+          category:2,
+          type:0,
+          asuransiregion:[
+            {
+              id:1,
+              value:2.94
+            },
+            {
+              id:2,
+              value:2.72
+            },
+            {
+              id:3,
+              value:2.96
+            },
+          ]
+        },
+        {
+          category:3,
+          type:0,
+          asuransiregion:[
+            {
+              id:1,
+              value:2.40
+            },
+            {
+              id:2,
+              value:2.29
+            },
+            {
+              id:3,
+              value:1.97
+            },
+          ]
+        },
+        {
+          category:4,
+          type:0,
+          asuransiregion:[
+            {
+              id:1,
+              value:1.32
+            },
+            {
+              id:2,
+              value:1.32
+            },
+            {
+              id:3,
+              value:1.25
+            },
+          ]
+        },
+        {
+          category:5,
+          type:0,
+          asuransiregion:[
+            {
+              id:1,
+              value:1.16
+            },
+            {
+              id:2,
+              value:1.16
+            },
+            {
+              id:3,
+              value:1.16
+            },
+          ]
+        },
+        {
+          category:1,
+          type:1,
+          asuransiregion:[
+            {
+              id:1,
+              value:0.56
+            },
+            {
+              id:2,
+              value:0.78
+            },
+            {
+              id:3,
+              value:0.56
+            },
+          ]
+        },
+        {
+          category:2,
+          type:1,
+          asuransiregion:[
+            {
+              id:1,
+              value:0.69
+            },
+            {
+              id:2,
+              value:0.53
+            },
+            {
+              id:3,
+              value:0.48
+            },
+          ]
+        },
+        {
+          category:3,
+          type:1,
+          asuransiregion:[
+            {
+              id:1,
+              value:0.46
+            },
+            {
+              id:2,
+              value:0.42
+            },
+            {
+              id:3,
+              value:0.35
+            },
+          ]
+        },
+        {
+          category:4,
+          type:1,
+          asuransiregion:[
+            {
+              id:1,
+              value:0.30
+            },
+            {
+              id:2,
+              value:0.30
+            },
+            {
+              id:3,
+              value:0.27
+            },
+          ]
+        },
+        {
+          category:5,
+          type:1,
+          asuransiregion:[
+            {
+              id:1,
+              value: 0.24
+            },
+            {
+              id:2,
+              value:0.24
+            },
+            {
+              id:3,
+              value:0.24
+            },
+          ]
+        }
+      ],
+      datawilayah:[
+        {
+          id:1,
+          name:"Sumatera dan Kepulauan di sekitarnya"
+        },
+        {
+          id:2,
+          name:"DKI Jakarta, Jawa Barat dan Banten"
+        },
+        {
+          id:3,
+          name:"Selain Wilayah 1 dan 2"
+        }
+      ],
+      databunga:[
+        {
+          id:1,
+          id_tahun_kendaraan:1,
+          tahunbunga:[
+            {id:1, tahunke:1, value:7.50},
+            {id:2, tahunke:2, value:8.50},
+            {id:3, tahunke:3, value:9.50},
+            {id:4, tahunke:4, value:10.00},
+          ]
+        },
+        {
+          id:2,
+          id_tahun_kendaraan:2,
+          tahunbunga:[
+            {id:1, tahunke:1, value:8.00},
+            {id:2, tahunke:2, value:9.00},
+            {id:3, tahunke:3, value:10.00},
+            {id:4, tahunke:4, value:10.00},
+          ]
+        },
+        {
+          id:3,
+          id_tahun_kendaraan:3,
+          tahunbunga:[
+            {id:1, tahunke:1, value:8.50},
+            {id:2, tahunke:2, value:9.50},
+            {id:3, tahunke:3, value:10.50},
+            {id:4, tahunke:4, value:11.00},
+          ]
+        },
+        {
+          id:4,
+          id_tahun_kendaraan:4,
+          tahunbunga:[
+            {id:1, tahunke:1, value:11.50},
+            {id:2, tahunke:2, value:12.50},
+            {id:3, tahunke:3, value:13.50},
+          ]
+        }
+      ],
+      dataprovisi:[
+        {
+          id:1,
+          tahun:1,
+          biaya:1.00,
+        },
+        {
+          id:2,
+          tahun:2,
+          biaya:1.00,
+        },
+        {
+          id:3,
+          tahun:3,
+          biaya:2.00,
+        },
+        {
+          id:4,
+          tahun:4,
+          biaya:2.00,
+        },
+        {
+          id:5,
+          tahun:5,
+          biaya:2.00,
+        },
+      ],
+      datacreditshield:[
+        {
+          id:1,
+          tahun:1,
+          biaya:0.35,
+        },
+        {
+          id:2,
+          tahun:2,
+          biaya:0.75,
+        },
+        {
+          id:3,
+          tahun:3,
+          biaya:1.05,
+        },
+        {
+          id:4,
+          tahun:4,
+          biaya:1.40,
+        },
+        {
+          id:5,
+          tahun:5,
+          biaya:1.75,
+        },
+      ],
       show: true,
     };
   },
@@ -216,8 +521,125 @@ export default {
       if (this.form.jenisSimulasi == jenis) this.form.jenisSimulasi = null;
       else this.form.jenisSimulasi = jenis;
     },
+
+    hitungSimulasi:function(){
+      let tenor = 48
+      let tahun = tenor/12
+      let otr = this.form.harga
+      let penyusutan = 100
+      let tipeasuransi = this.form.asuransi
+      let wilayah = 3
+      let tahunkendaraan = 2013
+      let dp = 24.27
+      let dprupiah = (otr*dp)/100
+      let pokokhutang = otr - dprupiah
+      let phkapitalis
+      let asuransi = 0
+      let biayaFidusia = 500000
+      let administrasi = 4000000
+      let lainlain = 350000
+      let tjh = (tipeasuransi == 0 && tipeasuransi == 2)? 100000: 0 ;
+
+
+      // hitung asuransi
+      for (let index = 0; index < tahun; index++) {
+        // set tahun ke
+        let tahunke = (index >= 5)? null : index+1;
+        // set penyusutan
+        let newpenyusutan = (index >= 3)? 70: penyusutan ;
+        // kalau asuransi yg dipilih gabungan
+        let newtipesuransi = (tipeasuransi == 2)?(index == 0)?0:1:tipeasuransi;
+
+        let premi = this.hitungAsuransi(otr, newpenyusutan, newtipesuransi, wilayah, tahunke)
+        // console.log(premi)
+        // sum premi asuransi
+        asuransi = premi+asuransi
+        penyusutan = newpenyusutan-10
+      }
+      console.log("asuransi", asuransi)
+      phkapitalis = pokokhutang + asuransi
+      console.log("phkapitalis:", phkapitalis)
+
+      // hitung bunga
+      let bunga = this.hitungBunga(phkapitalis, tahunkendaraan, tahun)
+      // hitung biaya provisi
+      let biayaProvisi = this.hitungBiayaProvisi(phkapitalis, tahun)
+      // hihtung credit shield
+      let creditShield = this.hitungCreditShield(phkapitalis, tahun)
+      console.log("bunga", bunga)
+      let totalhutangbunga = phkapitalis+bunga
+      console.log("totalhutangbunga",totalhutangbunga)
+      let angsuran = Math.ceil((totalhutangbunga/tenor)/200)*200
+      console.log("angsuran",angsuran)
+      let totalbayar1 = angsuran+dprupiah+tjh+biayaFidusia+biayaProvisi+creditShield+administrasi+lainlain
+      console.log("totalbayar1",totalbayar1)
+
+    },
+    hitungAsuransi:function(otr, penyusutan, tipeasuransi, wilayah, tahunke){
+      const {log} = console
+      let premi = 100
+      // hitung penyusutan otr
+      let penyusutanotr = (otr*penyusutan)/100
+      // penetuan kategori
+      let category
+      if (otr <= 125000000)
+        category = 1
+      else if (otr <= 200000000)
+        category = 2
+      else if (otr <= 400000000)
+        category = 3
+      else if (otr <= 800000000)
+        category = 4
+      else
+        category = 5
+
+      // get rateasuransi dari data
+      let asuransi = this.dataasuransi.find(item => {
+        let test = item.asuransiregion.find(region => region.id == wilayah)
+        item.rateasuransi = test.value
+        return item.category == category && item.type == tipeasuransi
+      })
+
+      // hitung premi asuransi
+      if(tahunke)
+        premi = parseInt(penyusutanotr*asuransi.rateasuransi/100)
+      return premi
+    },
+    hitungBunga:function(phkapitalis, tahunkendaraan,rate){
+      // console.log(rate)
+      let idtahun
+      if(tahunkendaraan <= 2005)
+        idtahun = 4
+      else if(tahunkendaraan <= 2008)
+        idtahun = 3
+      else if(tahunkendaraan <= 2013)
+        idtahun = 2
+      else
+        idtahun = 1
+      
+      let bunga = this.databunga.find(bunga => {
+        // console.log(bunga.id_tahun_kendaraan)
+        let itembunga = bunga.tahunbunga.find(item => item.tahunke === rate)
+        bunga.value = itembunga.value
+        return bunga.id_tahun_kendaraan == idtahun
+      })
+      
+      // balik persentase bunga
+      return phkapitalis*bunga.value/100*rate
+    },
+    hitungBiayaProvisi:function(phkapitalis, tahunke){
+      const provisi = this.dataprovisi.find(value => value.tahun === tahunke)
+      return Math.round(phkapitalis*provisi.biaya/100)
+    },
+    hitungCreditShield(phkapitalis, tahunke){
+      const creditShield = this.datacreditshield.find(value => value.tahun === tahunke)
+      return Math.round(phkapitalis*creditShield.biaya/100)
+    }
   },
 
+  mounted: function () {
+    this.hitungSimulasi()
+  },
   props: ["meta"],
 };
 </script>

@@ -66,7 +66,12 @@ Vue.use(fullscreen);
 // untuk localstorage
 Vue.use(Storage);
 
+
+// import base.js
 Vue.mixin(require("./base"));
+
+// import filter.js
+require("./filter.js")
 
 const app = document.getElementById("app");
 

@@ -190,6 +190,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
  //import layouts
 
 
@@ -204,8 +211,9 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       form: {
-        email: "",
-        name: "",
+        harga: null,
+        dp: null,
+        asuransi: 0,
         jenisSimulasi: null,
         jenisBudget: 1,
         tjh: 1,
@@ -232,13 +240,386 @@ __webpack_require__.r(__webpack_exports__);
         text: "Berdasarkan Besar Cicilan",
         value: 2
       }],
+      optasuransi: [{
+        value: null,
+        text: 'Pilih Asuransi'
+      }, {
+        value: 0,
+        text: "All Risk"
+      }, {
+        value: 1,
+        text: "TLO"
+      }, {
+        value: 2,
+        text: "Gabungan"
+      }],
+      dataasuransi: [{
+        category: 1,
+        type: 0,
+        asuransiregion: [{
+          id: 1,
+          value: 4.20
+        }, {
+          id: 2,
+          value: 3.59
+        }, {
+          id: 3,
+          value: 2.78
+        }]
+      }, {
+        category: 2,
+        type: 0,
+        asuransiregion: [{
+          id: 1,
+          value: 2.94
+        }, {
+          id: 2,
+          value: 2.72
+        }, {
+          id: 3,
+          value: 2.96
+        }]
+      }, {
+        category: 3,
+        type: 0,
+        asuransiregion: [{
+          id: 1,
+          value: 2.40
+        }, {
+          id: 2,
+          value: 2.29
+        }, {
+          id: 3,
+          value: 1.97
+        }]
+      }, {
+        category: 4,
+        type: 0,
+        asuransiregion: [{
+          id: 1,
+          value: 1.32
+        }, {
+          id: 2,
+          value: 1.32
+        }, {
+          id: 3,
+          value: 1.25
+        }]
+      }, {
+        category: 5,
+        type: 0,
+        asuransiregion: [{
+          id: 1,
+          value: 1.16
+        }, {
+          id: 2,
+          value: 1.16
+        }, {
+          id: 3,
+          value: 1.16
+        }]
+      }, {
+        category: 1,
+        type: 1,
+        asuransiregion: [{
+          id: 1,
+          value: 0.56
+        }, {
+          id: 2,
+          value: 0.78
+        }, {
+          id: 3,
+          value: 0.56
+        }]
+      }, {
+        category: 2,
+        type: 1,
+        asuransiregion: [{
+          id: 1,
+          value: 0.69
+        }, {
+          id: 2,
+          value: 0.53
+        }, {
+          id: 3,
+          value: 0.48
+        }]
+      }, {
+        category: 3,
+        type: 1,
+        asuransiregion: [{
+          id: 1,
+          value: 0.46
+        }, {
+          id: 2,
+          value: 0.42
+        }, {
+          id: 3,
+          value: 0.35
+        }]
+      }, {
+        category: 4,
+        type: 1,
+        asuransiregion: [{
+          id: 1,
+          value: 0.30
+        }, {
+          id: 2,
+          value: 0.30
+        }, {
+          id: 3,
+          value: 0.27
+        }]
+      }, {
+        category: 5,
+        type: 1,
+        asuransiregion: [{
+          id: 1,
+          value: 0.24
+        }, {
+          id: 2,
+          value: 0.24
+        }, {
+          id: 3,
+          value: 0.24
+        }]
+      }],
+      datawilayah: [{
+        id: 1,
+        name: "Sumatera dan Kepulauan di sekitarnya"
+      }, {
+        id: 2,
+        name: "DKI Jakarta, Jawa Barat dan Banten"
+      }, {
+        id: 3,
+        name: "Selain Wilayah 1 dan 2"
+      }],
+      databunga: [{
+        id: 1,
+        id_tahun_kendaraan: 1,
+        tahunbunga: [{
+          id: 1,
+          tahunke: 1,
+          value: 7.50
+        }, {
+          id: 2,
+          tahunke: 2,
+          value: 8.50
+        }, {
+          id: 3,
+          tahunke: 3,
+          value: 9.50
+        }, {
+          id: 4,
+          tahunke: 4,
+          value: 10.00
+        }]
+      }, {
+        id: 2,
+        id_tahun_kendaraan: 2,
+        tahunbunga: [{
+          id: 1,
+          tahunke: 1,
+          value: 8.00
+        }, {
+          id: 2,
+          tahunke: 2,
+          value: 9.00
+        }, {
+          id: 3,
+          tahunke: 3,
+          value: 10.00
+        }, {
+          id: 4,
+          tahunke: 4,
+          value: 10.00
+        }]
+      }, {
+        id: 3,
+        id_tahun_kendaraan: 3,
+        tahunbunga: [{
+          id: 1,
+          tahunke: 1,
+          value: 8.50
+        }, {
+          id: 2,
+          tahunke: 2,
+          value: 9.50
+        }, {
+          id: 3,
+          tahunke: 3,
+          value: 10.50
+        }, {
+          id: 4,
+          tahunke: 4,
+          value: 11.00
+        }]
+      }, {
+        id: 4,
+        id_tahun_kendaraan: 4,
+        tahunbunga: [{
+          id: 1,
+          tahunke: 1,
+          value: 11.50
+        }, {
+          id: 2,
+          tahunke: 2,
+          value: 12.50
+        }, {
+          id: 3,
+          tahunke: 3,
+          value: 13.50
+        }]
+      }],
+      dataprovisi: [{
+        id: 1,
+        tahun: 1,
+        biaya: 1.00
+      }, {
+        id: 2,
+        tahun: 2,
+        biaya: 1.00
+      }, {
+        id: 3,
+        tahun: 3,
+        biaya: 2.00
+      }, {
+        id: 4,
+        tahun: 4,
+        biaya: 2.00
+      }, {
+        id: 5,
+        tahun: 5,
+        biaya: 2.00
+      }],
+      datacreditshield: [{
+        id: 1,
+        tahun: 1,
+        biaya: 0.35
+      }, {
+        id: 2,
+        tahun: 2,
+        biaya: 0.75
+      }, {
+        id: 3,
+        tahun: 3,
+        biaya: 1.05
+      }, {
+        id: 4,
+        tahun: 4,
+        biaya: 1.40
+      }, {
+        id: 5,
+        tahun: 5,
+        biaya: 1.75
+      }],
       show: true
     };
   },
   methods: {
     pilihJenisSimulasi: function pilihJenisSimulasi(jenis) {
       if (this.form.jenisSimulasi == jenis) this.form.jenisSimulasi = null;else this.form.jenisSimulasi = jenis;
+    },
+    hitungSimulasi: function hitungSimulasi() {
+      var tenor = 48;
+      var tahun = tenor / 12;
+      var otr = this.form.harga;
+      var penyusutan = 100;
+      var tipeasuransi = this.form.asuransi;
+      var wilayah = 3;
+      var tahunkendaraan = 2013;
+      var dp = 24.27;
+      var dprupiah = otr * dp / 100;
+      var pokokhutang = otr - dprupiah;
+      var phkapitalis;
+      var asuransi = 0;
+      var biayaFidusia = 500000;
+      var administrasi = 4000000;
+      var lainlain = 350000;
+      var tjh = tipeasuransi == 0 && tipeasuransi == 2 ? 100000 : 0; // hitung asuransi
+
+      for (var index = 0; index < tahun; index++) {
+        // set tahun ke
+        var tahunke = index >= 5 ? null : index + 1; // set penyusutan
+
+        var newpenyusutan = index >= 3 ? 70 : penyusutan; // kalau asuransi yg dipilih gabungan
+
+        var newtipesuransi = tipeasuransi == 2 ? index == 0 ? 0 : 1 : tipeasuransi;
+        var premi = this.hitungAsuransi(otr, newpenyusutan, newtipesuransi, wilayah, tahunke); // console.log(premi)
+        // sum premi asuransi
+
+        asuransi = premi + asuransi;
+        penyusutan = newpenyusutan - 10;
+      }
+
+      console.log("asuransi", asuransi);
+      phkapitalis = pokokhutang + asuransi;
+      console.log("phkapitalis:", phkapitalis); // hitung bunga
+
+      var bunga = this.hitungBunga(phkapitalis, tahunkendaraan, tahun); // hitung biaya provisi
+
+      var biayaProvisi = this.hitungBiayaProvisi(phkapitalis, tahun); // hihtung credit shield
+
+      var creditShield = this.hitungCreditShield(phkapitalis, tahun);
+      console.log("bunga", bunga);
+      var totalhutangbunga = phkapitalis + bunga;
+      console.log("totalhutangbunga", totalhutangbunga);
+      var angsuran = Math.ceil(totalhutangbunga / tenor / 200) * 200;
+      console.log("angsuran", angsuran);
+      var totalbayar1 = angsuran + dprupiah + tjh + biayaFidusia + biayaProvisi + creditShield + administrasi + lainlain;
+      console.log("totalbayar1", totalbayar1);
+    },
+    hitungAsuransi: function hitungAsuransi(otr, penyusutan, tipeasuransi, wilayah, tahunke) {
+      var _console = console,
+          log = _console.log;
+      var premi = 100; // hitung penyusutan otr
+
+      var penyusutanotr = otr * penyusutan / 100; // penetuan kategori
+
+      var category;
+      if (otr <= 125000000) category = 1;else if (otr <= 200000000) category = 2;else if (otr <= 400000000) category = 3;else if (otr <= 800000000) category = 4;else category = 5; // get rateasuransi dari data
+
+      var asuransi = this.dataasuransi.find(function (item) {
+        var test = item.asuransiregion.find(function (region) {
+          return region.id == wilayah;
+        });
+        item.rateasuransi = test.value;
+        return item.category == category && item.type == tipeasuransi;
+      }); // hitung premi asuransi
+
+      if (tahunke) premi = parseInt(penyusutanotr * asuransi.rateasuransi / 100);
+      return premi;
+    },
+    hitungBunga: function hitungBunga(phkapitalis, tahunkendaraan, rate) {
+      // console.log(rate)
+      var idtahun;
+      if (tahunkendaraan <= 2005) idtahun = 4;else if (tahunkendaraan <= 2008) idtahun = 3;else if (tahunkendaraan <= 2013) idtahun = 2;else idtahun = 1;
+      var bunga = this.databunga.find(function (bunga) {
+        // console.log(bunga.id_tahun_kendaraan)
+        var itembunga = bunga.tahunbunga.find(function (item) {
+          return item.tahunke === rate;
+        });
+        bunga.value = itembunga.value;
+        return bunga.id_tahun_kendaraan == idtahun;
+      }); // balik persentase bunga
+
+      return phkapitalis * bunga.value / 100 * rate;
+    },
+    hitungBiayaProvisi: function hitungBiayaProvisi(phkapitalis, tahunke) {
+      var provisi = this.dataprovisi.find(function (value) {
+        return value.tahun === tahunke;
+      });
+      return Math.round(phkapitalis * provisi.biaya / 100);
+    },
+    hitungCreditShield: function hitungCreditShield(phkapitalis, tahunke) {
+      var creditShield = this.datacreditshield.find(function (value) {
+        return value.tahun === tahunke;
+      });
+      return Math.round(phkapitalis * creditShield.biaya / 100);
     }
+  },
+  mounted: function mounted() {
+    this.hitungSimulasi();
   },
   props: ["meta"]
 });
@@ -1143,7 +1524,7 @@ var render = function() {
                                   _c("b-card-body", [
                                     _c("h4", [
                                       _vm._v(
-                                        "\n                      Budget\n                      "
+                                        "\n                      Refinance\n                      "
                                       ),
                                       _c(
                                         "span",
@@ -1180,17 +1561,12 @@ var render = function() {
                                   _c("b-card-body", [
                                     _c("h4", [
                                       _vm._v(
-                                        "\n                      Kredit\n                      "
+                                        "\n                      Used Car\n                      "
                                       ),
                                       _c(
                                         "span",
                                         { staticClass: "float-right" },
-                                        [
-                                          _c("i", {
-                                            staticClass:
-                                              "fas fa-money-bill-wave"
-                                          })
-                                        ]
+                                        [_c("i", { staticClass: "fas fa-car" })]
                                       )
                                     ])
                                   ])
@@ -1316,23 +1692,23 @@ var render = function() {
                               {
                                 attrs: {
                                   id: "input-group-2",
-                                  label: "Your Name:",
-                                  "label-for": "input-2"
+                                  label: "Harga Kendaraan:",
+                                  "label-for": "input-harga"
                                 }
                               },
                               [
                                 _c("b-form-input", {
                                   attrs: {
-                                    id: "input-2",
+                                    id: "input-harga",
                                     required: "",
-                                    placeholder: "Enter name"
+                                    placeholder: "Masukan Harga Kendaraan"
                                   },
                                   model: {
-                                    value: _vm.form.name,
+                                    value: _vm.form.harga,
                                     callback: function($$v) {
-                                      _vm.$set(_vm.form, "name", $$v)
+                                      _vm.$set(_vm.form, "harga", $$v)
                                     },
-                                    expression: "form.name"
+                                    expression: "form.harga"
                                   }
                                 })
                               ],
@@ -1341,35 +1717,52 @@ var render = function() {
                             _vm._v(" "),
                             _c(
                               "b-form-group",
-                              { attrs: { id: "input-group-4" } },
+                              {
+                                attrs: {
+                                  id: "input-group-2",
+                                  label: "Uang Muka:",
+                                  "label-for": "input-uang-muka"
+                                }
+                              },
                               [
-                                _c(
-                                  "b-form-checkbox-group",
-                                  {
-                                    attrs: { id: "checkboxes-4" },
-                                    model: {
-                                      value: _vm.form.checked,
-                                      callback: function($$v) {
-                                        _vm.$set(_vm.form, "checked", $$v)
-                                      },
-                                      expression: "form.checked"
-                                    }
+                                _c("b-form-input", {
+                                  attrs: {
+                                    id: "input-uang-muka",
+                                    required: "",
+                                    placeholder: "Masukan Uang Muka"
                                   },
-                                  [
-                                    _c(
-                                      "b-form-checkbox",
-                                      { attrs: { value: "me" } },
-                                      [_vm._v("Check me out")]
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "b-form-checkbox",
-                                      { attrs: { value: "that" } },
-                                      [_vm._v("Check that out")]
-                                    )
-                                  ],
-                                  1
-                                )
+                                  model: {
+                                    value: _vm.form.dp,
+                                    callback: function($$v) {
+                                      _vm.$set(_vm.form, "dp", $$v)
+                                    },
+                                    expression: "form.dp"
+                                  }
+                                })
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "b-form-group",
+                              {
+                                attrs: {
+                                  id: "input-group-2",
+                                  label: "Asuransi:",
+                                  "label-for": "input-2"
+                                }
+                              },
+                              [
+                                _c("b-form-select", {
+                                  attrs: { options: _vm.optasuransi },
+                                  model: {
+                                    value: _vm.form.asuransi,
+                                    callback: function($$v) {
+                                      _vm.$set(_vm.form, "asuransi", $$v)
+                                    },
+                                    expression: "form.asuransi"
+                                  }
+                                })
                               ],
                               1
                             )
@@ -1386,22 +1779,11 @@ var render = function() {
                 "tab-content",
                 {
                   attrs: {
-                    title: "Data Diri Pengaju Kredit",
-                    icon: "fas fa-id-card"
-                  }
-                },
-                [_vm._v("My second tab content")]
-              ),
-              _vm._v(" "),
-              _c(
-                "tab-content",
-                {
-                  attrs: {
-                    title: "Rangkuman Biaya Kredit",
+                    title: "Rangkuman Simulasi Kredit",
                     icon: "fas fa-money-check"
                   }
                 },
-                [_vm._v("Yuhuuu! This seems pretty damn simple")]
+                [_vm._v(_vm._s(_vm._f("numberIdr")(10000000)))]
               ),
               _vm._v(" "),
               _c(
