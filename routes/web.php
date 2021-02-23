@@ -29,7 +29,7 @@ Auth::routes();
 |
 |
 */
-Route::get('/', 'HomeController@index')->name('home')->middleware('guest');
+Route::get('/', 'HomeController@index')->name('home')->middleware('guest','visitor');
 
 // test
 Route::get('test', 'Test@index')->name('test')->middleware('guest');

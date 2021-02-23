@@ -27,7 +27,6 @@ class HomeController extends Controller
         //     echo 'Tidak ada data dalam session.';
         // }
         // get
-
         // Synchronously
         Inertia::share([
             'app.name', Config::get('app.name')
