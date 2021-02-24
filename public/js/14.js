@@ -510,9 +510,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     sidebarMenuHandle: function sidebarMenuHandle() {
-      if (window.innerWidth < 768) {
-        alert("ok");
-      }
+      if (window.innerWidth < 768) {}
 
       if ($(window).width() < 480 && !$(".sidebar").hasClass("toggled")) {}
     }

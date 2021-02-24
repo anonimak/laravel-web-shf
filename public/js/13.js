@@ -12,23 +12,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Shared_AdminLayout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Shared/AdminLayout */ "./resources/js/Shared/AdminLayout.vue");
 /* harmony import */ var _components_AdminComponents_ChartVisitors_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/components/AdminComponents/ChartVisitors.vue */ "./resources/js/components/AdminComponents/ChartVisitors.vue");
 /* harmony import */ var _components_AdminComponents_ChartVisitorDevices_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/components/AdminComponents/ChartVisitorDevices.vue */ "./resources/js/components/AdminComponents/ChartVisitorDevices.vue");
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 //
 //
 //
@@ -236,29 +225,68 @@ __webpack_require__.r(__webpack_exports__);
   metaInfo: {
     title: "Beranda"
   },
-  props: ["meta", "chartweek"],
-  data: function data() {
-    return {
-      chartVisitor: "Today",
-      chartOptions: {
-        responsive: true,
-        maintainAspectRatio: false
-      },
-      dataChart1: null
-    };
-  },
   components: {
     Layout: _Shared_AdminLayout__WEBPACK_IMPORTED_MODULE_0__["default"],
     ChartVisitors: _components_AdminComponents_ChartVisitors_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
     ChartVisitorDevices: _components_AdminComponents_ChartVisitorDevices_vue__WEBPACK_IMPORTED_MODULE_2__["default"]
   },
+  props: ["meta", "chartweek", "chartmonth"],
+  data: function data() {
+    return {
+      chartVisitor: "This Week",
+      chartOptions: {
+        responsive: true,
+        maintainAspectRatio: false,
+        scales: {
+          yAxes: [{
+            ticks: {
+              beginAtZero: true,
+              userCallback: function userCallback(label, index, labels) {
+                // when the floored value is the same as the value we have a whole number
+                if (Math.floor(label) === label) {
+                  return label;
+                }
+              }
+            }
+          }]
+        }
+      },
+      datacollection: {},
+      datachartweek: _objectSpread({}, this.chartweek),
+      datachartmonth: _objectSpread({}, this.chartmonth)
+    };
+  },
   mounted: function mounted() {
-    this.dataChart1 = this.chartweek;
+    this.fillData(this.chartVisitor);
   },
   methods: {
-    checkSortChartVisitor: function checkSortChartVisitor(chart) {
-      this.chartVisitor = chart;
-      this.dataChart1 = this.chartweek;
+    fillData: function fillData(chartVisitor) {
+      if (chartVisitor == 'This Week') this.datacollection = {
+        labels: this.datachartweek.labels,
+        datasets: [{
+          label: this.datachartweek.label,
+          backgroundColor: '#2874a6',
+          borderColor: '#36b9cc',
+          data: this.datachartweek.data,
+          cubicInterpolationMode: 'monotone',
+          fill: false
+        }]
+      };
+      if (chartVisitor == 'This Month') this.datacollection = {
+        labels: this.datachartmonth.labels,
+        datasets: [{
+          label: this.datachartmonth.label,
+          backgroundColor: '#2874a6',
+          borderColor: '#36b9cc',
+          data: this.datachartmonth.data,
+          cubicInterpolationMode: 'monotone',
+          fill: false
+        }]
+      };
+      this.chartVisitor = chartVisitor;
+    },
+    getRandomInt: function getRandomInt() {
+      return Math.floor(Math.random() * (50 - 5 + 1)) + 5;
     }
   }
 });
@@ -333,7 +361,7 @@ __webpack_require__.r(__webpack_exports__);
     this.renderChart({
       labels: ['windows', 'Android', 'IOS'],
       datasets: [{
-        backgroundColor: ['#2874a6', '#cb4335', '#e67e22', '#a569bd', '#2e4053', '#7fb3d5', '#45b39d', '#641e16', '#2c3e50', '#145a32'],
+        backgroundColor: ['#36b9cc', '#e74a3b', '#6610f2', '#5a5c69', '#2e4053', '#7fb3d5', '#45b39d', '#641e16', '#2c3e50', '#145a32'],
         data: [40, 2, 0]
       }]
     }, {
@@ -818,9 +846,7 @@ __webpack_require__.r(__webpack_exports__);
   },
   methods: {
     sidebarMenuHandle: function sidebarMenuHandle() {
-      if (window.innerWidth < 768) {
-        alert("ok");
-      }
+      if (window.innerWidth < 768) {}
 
       if ($(window).width() < 480 && !$(".sidebar").hasClass("toggled")) {}
     }
@@ -17526,7 +17552,7 @@ var render = function() {
                         },
                         [
                           _vm._v(
-                            "\n                  Earnings (Annual)\n                "
+                            "\n                  Most Devices Access\n                "
                           )
                         ]
                       ),
@@ -17538,7 +17564,7 @@ var render = function() {
                         },
                         [
                           _vm._v(
-                            "\n                  $215,000\n                "
+                            "\n                  Android 75%\n                "
                           )
                         ]
                       )
@@ -17546,7 +17572,7 @@ var render = function() {
                     _vm._v(" "),
                     _c("div", { staticClass: "col-auto" }, [
                       _c("i", {
-                        staticClass: "fas fa-dollar-sign fa-2x text-gray-300"
+                        staticClass: "fas fa-mobile fa-2x text-gray-300"
                       })
                     ])
                   ]
@@ -17573,54 +17599,25 @@ var render = function() {
                           staticClass:
                             "text-xs font-weight-bold text-info text-uppercase mb-1"
                         },
-                        [_vm._v("\n                  Tasks\n                ")]
+                        [
+                          _vm._v(
+                            "\n                  Page Hit This Month (map)\n                "
+                          )
+                        ]
                       ),
                       _vm._v(" "),
                       _c(
                         "div",
-                        { staticClass: "row no-gutters align-items-center" },
-                        [
-                          _c("div", { staticClass: "col-auto" }, [
-                            _c(
-                              "div",
-                              {
-                                staticClass:
-                                  "h5 mb-0 mr-3 font-weight-bold text-gray-800"
-                              },
-                              [
-                                _vm._v(
-                                  "\n                      50%\n                    "
-                                )
-                              ]
-                            )
-                          ]),
-                          _vm._v(" "),
-                          _c("div", { staticClass: "col" }, [
-                            _c(
-                              "div",
-                              { staticClass: "progress progress-sm mr-2" },
-                              [
-                                _c("div", {
-                                  staticClass: "progress-bar bg-info",
-                                  staticStyle: { width: "50%" },
-                                  attrs: {
-                                    role: "progressbar",
-                                    "aria-valuenow": "50",
-                                    "aria-valuemin": "0",
-                                    "aria-valuemax": "100"
-                                  }
-                                })
-                              ]
-                            )
-                          ])
-                        ]
-                      )
+                        {
+                          staticClass: "h5 mb-0 font-weight-bold text-gray-800"
+                        },
+                        [_vm._v("216")]
+                      ),
+                      _vm._v("\n                visitors\n              ")
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "col-auto" }, [
-                      _c("i", {
-                        staticClass: "fas fa-clipboard-list fa-2x text-gray-300"
-                      })
+                      _c("i", { staticClass: "fas fa-map fa-2x text-gray-300" })
                     ])
                   ]
                 )
@@ -17648,7 +17645,7 @@ var render = function() {
                         },
                         [
                           _vm._v(
-                            "\n                  Pending Requests\n                "
+                            "\n                  Page Hit Today (map)\n                "
                           )
                         ]
                       ),
@@ -17659,13 +17656,12 @@ var render = function() {
                           staticClass: "h5 mb-0 font-weight-bold text-gray-800"
                         },
                         [_vm._v("18")]
-                      )
+                      ),
+                      _vm._v("\n                visitors\n              ")
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "col-auto" }, [
-                      _c("i", {
-                        staticClass: "fas fa-comments fa-2x text-gray-300"
-                      })
+                      _c("i", { staticClass: "fas fa-map fa-2x text-gray-300" })
                     ])
                   ]
                 )
@@ -17727,24 +17723,10 @@ var render = function() {
                         "button",
                         {
                           staticClass: "dropdown-item",
-                          class: _vm.chartVisitor == "Today" && "active",
-                          on: {
-                            click: function($event) {
-                              return _vm.checkSortChartVisitor("Today")
-                            }
-                          }
-                        },
-                        [_vm._v("Today")]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "button",
-                        {
-                          staticClass: "dropdown-item",
                           class: _vm.chartVisitor == "This Week" && "active",
                           on: {
                             click: function($event) {
-                              return _vm.checkSortChartVisitor("This Week")
+                              return _vm.fillData("This Week")
                             }
                           }
                         },
@@ -17758,7 +17740,7 @@ var render = function() {
                           class: _vm.chartVisitor == "This Month" && "active",
                           on: {
                             click: function($event) {
-                              return _vm.checkSortChartVisitor("This Month")
+                              return _vm.fillData("This Month")
                             }
                           }
                         },
@@ -17772,7 +17754,7 @@ var render = function() {
                           class: _vm.chartVisitor == "This Year" && "active",
                           on: {
                             click: function($event) {
-                              return _vm.checkSortChartVisitor("This Year")
+                              return _vm.fillData("This Year")
                             }
                           }
                         },
@@ -17791,7 +17773,7 @@ var render = function() {
                 [
                   _c("chart-visitors", {
                     attrs: {
-                      "chart-data": _vm.dataChart1,
+                      chartData: _vm.datacollection,
                       options: _vm.chartOptions
                     }
                   })

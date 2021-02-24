@@ -87,7 +87,7 @@ export default {
   methods: {
     sidebarMenuHandle() {
       if (window.innerWidth < 768) {
-        alert("ok");
+        
       }
       if ($(window).width() < 480 && !$(".sidebar").hasClass("toggled")) {
       }

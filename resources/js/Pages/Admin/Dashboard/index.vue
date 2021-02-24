@@ -47,14 +47,14 @@
                   <div
                     class="text-xs font-weight-bold text-success text-uppercase mb-1"
                   >
-                    Earnings (Annual)
+                    Most Devices Access
                   </div>
                   <div class="h5 mb-0 font-weight-bold text-gray-800">
-                    $215,000
+                    Android 75%
                   </div>
                 </div>
                 <div class="col-auto">
-                  <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
+                  <i class="fas fa-mobile fa-2x text-gray-300"></i>
                 </div>
               </div>
             </div>
@@ -70,30 +70,13 @@
                   <div
                     class="text-xs font-weight-bold text-info text-uppercase mb-1"
                   >
-                    Tasks
+                    Page Hit This Month (map)
                   </div>
-                  <div class="row no-gutters align-items-center">
-                    <div class="col-auto">
-                      <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">
-                        50%
-                      </div>
-                    </div>
-                    <div class="col">
-                      <div class="progress progress-sm mr-2">
-                        <div
-                          class="progress-bar bg-info"
-                          role="progressbar"
-                          style="width: 50%"
-                          aria-valuenow="50"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        ></div>
-                      </div>
-                    </div>
-                  </div>
+                  <div class="h5 mb-0 font-weight-bold text-gray-800">216</div>
+                  visitors
                 </div>
                 <div class="col-auto">
-                  <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                  <i class="fas fa-map fa-2x text-gray-300"></i>
                 </div>
               </div>
             </div>
@@ -109,12 +92,13 @@
                   <div
                     class="text-xs font-weight-bold text-warning text-uppercase mb-1"
                   >
-                    Pending Requests
+                    Page Hit Today (map)
                   </div>
                   <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                  visitors
                 </div>
                 <div class="col-auto">
-                  <i class="fas fa-comments fa-2x text-gray-300"></i>
+                  <i class="fas fa-map fa-2x text-gray-300"></i>
                 </div>
               </div>
             </div>
@@ -152,17 +136,16 @@
                   aria-labelledby="dropdownMenuLink"
                 >
                   <div class="dropdown-header">Sort By:</div>
-                  <button class="dropdown-item" @click="checkSortChartVisitor('Today')"  :class="chartVisitor == 'Today' && 'active'">Today</button>
-                  <button class="dropdown-item" @click="checkSortChartVisitor('This Week')"  :class="chartVisitor == 'This Week' && 'active'">This Week</button>
-                  <button class="dropdown-item" @click="checkSortChartVisitor('This Month')"  :class="chartVisitor == 'This Month' && 'active'">This Month</button>
-                  <button class="dropdown-item" @click="checkSortChartVisitor('This Year')"  :class="chartVisitor == 'This Year' && 'active'">This Year</button>
+                  <button class="dropdown-item" @click="fillData('This Week')"  :class="chartVisitor == 'This Week' && 'active'">This Week</button>
+                  <button class="dropdown-item" @click="fillData('This Month')"  :class="chartVisitor == 'This Month' && 'active'">This Month</button>
+                  <button class="dropdown-item" @click="fillData('This Year')"  :class="chartVisitor == 'This Year' && 'active'">This Year</button>
                 </div>
               </div>
             </div>
             <!-- Card Body -->
             <div class="card-body">
               <div class="pt-4 pb-2">
-                <chart-visitors :chart-data="dataChart1" :options="chartOptions"/>
+                <chart-visitors :chartData="datacollection" :options="chartOptions"/>
               </div>
             </div>
           </div>
@@ -221,30 +204,77 @@ import ChartVisitorDevices from '@/components/AdminComponents/ChartVisitorDevice
 
 export default {
   metaInfo: { title: "Beranda" },
-  props: ["meta","chartweek"],
-  data() {
-    return {
-      chartVisitor:"Today",
-      chartOptions: {
-                responsive: true,
-                maintainAspectRatio: false
-      },
-      dataChart1:null,
-    };
-  },
   components: {
     Layout,
     ChartVisitors,
     ChartVisitorDevices
   },
-  mounted(){
-    this.dataChart1 = this.chartweek
+  props: ["meta","chartweek","chartmonth"],
+  data() {
+    return {
+      chartVisitor:"This Week",
+      chartOptions: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                  yAxes: [{
+                      ticks: {
+                          beginAtZero: true,
+                          userCallback: function(label, index, labels) {
+                              // when the floored value is the same as the value we have a whole number
+                              if (Math.floor(label) === label) {
+                                  return label;
+                              }
+
+                          },
+                      }
+                  }],
+                },
+      },
+      datacollection: {},
+      datachartweek:{...this.chartweek},
+      datachartmonth:{...this.chartmonth}
+    };
   },
+  mounted () {
+		this.fillData(this.chartVisitor)
+	},
   methods: {
-    checkSortChartVisitor: function(chart){
-      this.chartVisitor = chart
-      this.dataChart1 = this.chartweek
-    }
-  },
-};
+		fillData (chartVisitor) {
+        if(chartVisitor == 'This Week')
+          this.datacollection = {
+            labels: this.datachartweek.labels,
+            datasets: [
+              {
+                label: this.datachartweek.label,
+                backgroundColor: '#2874a6',
+                borderColor:'#36b9cc',
+                data: this.datachartweek.data,
+                cubicInterpolationMode:'monotone',
+                fill:false
+              }
+            ]
+          }
+        if(chartVisitor == 'This Month')
+          this.datacollection = {
+            labels: this.datachartmonth.labels,
+            datasets: [
+              {
+                label: this.datachartmonth.label,
+                backgroundColor: '#2874a6',
+                borderColor:'#36b9cc',
+                data: this.datachartmonth.data,
+                cubicInterpolationMode:'monotone',
+                fill:false
+              }
+            ]
+          }
+        
+        this.chartVisitor = chartVisitor
+      },
+    getRandomInt () {
+        return Math.floor(Math.random() * (50 - 5 + 1)) + 5
+      }
+	}
+}
 </script>
