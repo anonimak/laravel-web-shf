@@ -216,7 +216,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
  //import layouts
 
 
@@ -230,10 +229,12 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     ChartVisitors: _components_AdminComponents_ChartVisitors_vue__WEBPACK_IMPORTED_MODULE_1__["default"],
     ChartVisitorDevices: _components_AdminComponents_ChartVisitorDevices_vue__WEBPACK_IMPORTED_MODULE_2__["default"]
   },
-  props: ["meta", "chartweek", "chartmonth"],
+  props: ["meta", "chartweek", "chartmonth", "chartyear", "chartdevice", "chartdevicemonth", "chartdevicelastoneyear", "widget"],
   data: function data() {
     return {
       chartVisitor: "This Week",
+      chartVisitorsDevice: "This Month",
+      backgroundColor: ['#36b9cc', '#e74a3b', '#6610f2', '#5a5c69', '#2e4053', '#7fb3d5', '#45b39d', '#641e16', '#2c3e50', '#145a32'],
       chartOptions: {
         responsive: true,
         maintainAspectRatio: false,
@@ -251,13 +252,24 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           }]
         }
       },
+      chartDevicesOption: {
+        responsive: true,
+        maintainAspectRatio: false
+      },
       datacollection: {},
+      datacollectiondevice: {},
       datachartweek: _objectSpread({}, this.chartweek),
-      datachartmonth: _objectSpread({}, this.chartmonth)
+      datachartmonth: _objectSpread({}, this.chartmonth),
+      datachartyear: _objectSpread({}, this.chartyear),
+      datachartdevice: _objectSpread({}, this.chartdevice),
+      datachartdevicemonth: _objectSpread({}, this.chartdevicemonth),
+      datachartdevicelastoneyear: _objectSpread({}, this.chartdevicelastoneyear),
+      datawidget: _objectSpread({}, this.widget)
     };
   },
   mounted: function mounted() {
     this.fillData(this.chartVisitor);
+    this.fillDataDevice(this.chartVisitorsDevice);
   },
   methods: {
     fillData: function fillData(chartVisitor) {
@@ -283,10 +295,55 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
           fill: false
         }]
       };
+      if (chartVisitor == 'Last One Year') this.datacollection = {
+        labels: this.datachartyear.labels,
+        datasets: [{
+          label: this.datachartyear.label,
+          backgroundColor: '#2874a6',
+          borderColor: '#36b9cc',
+          data: this.datachartyear.data,
+          cubicInterpolationMode: 'monotone',
+          fill: false
+        }]
+      }; // cache index chart
+
+      this.$ls.set("chartVisitor", chartVisitor);
       this.chartVisitor = chartVisitor;
     },
-    getRandomInt: function getRandomInt() {
-      return Math.floor(Math.random() * (50 - 5 + 1)) + 5;
+    fillDataDevice: function fillDataDevice(chartVisitorsDevice) {
+      if (chartVisitorsDevice == 'This Month') this.datacollectiondevice = {
+        labels: this.datachartdevicemonth.labels,
+        datasets: [{
+          backgroundColor: this.backgroundColor,
+          data: this.datachartdevicemonth.data
+        }]
+      };
+      if (chartVisitorsDevice == 'Last One Year') this.datacollectiondevice = {
+        labels: this.datachartdevicelastoneyear.labels,
+        datasets: [{
+          backgroundColor: this.backgroundColor,
+          data: this.datachartdevicelastoneyear.data
+        }]
+      };
+      if (chartVisitorsDevice == 'All') this.datacollectiondevice = {
+        labels: this.datachartdevice.labels,
+        datasets: [{
+          backgroundColor: this.backgroundColor,
+          data: this.datachartdevice.data
+        }]
+      }; // cache index chart
+
+      this.$ls.set("chartVisitorsDevice", chartVisitorsDevice);
+      this.chartVisitorsDevice = chartVisitorsDevice;
+    }
+  },
+  beforeMount: function beforeMount() {
+    if (this.$ls.get("chartVisitorsDevice")) {
+      this.chartVisitorsDevice = this.$ls.get("chartVisitorsDevice");
+    }
+
+    if (this.$ls.get("chartVisitor")) {
+      this.chartVisitor = this.$ls.get("chartVisitor");
     }
   }
 });
@@ -354,20 +411,27 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_chartjs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-chartjs */ "./node_modules/vue-chartjs/es/index.js");
 
+var reactiveProp = vue_chartjs__WEBPACK_IMPORTED_MODULE_0__["mixins"].reactiveProp;
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "chart-visitor-devices",
+  mixins: [reactiveProp],
   "extends": vue_chartjs__WEBPACK_IMPORTED_MODULE_0__["Doughnut"],
+  props: {
+    options: {
+      type: Object
+    }
+  },
   mounted: function mounted() {
-    this.renderChart({
-      labels: ['windows', 'Android', 'IOS'],
-      datasets: [{
-        backgroundColor: ['#36b9cc', '#e74a3b', '#6610f2', '#5a5c69', '#2e4053', '#7fb3d5', '#45b39d', '#641e16', '#2c3e50', '#145a32'],
-        data: [40, 2, 0]
-      }]
-    }, {
-      responsive: true,
-      maintainAspectRatio: false
-    });
+    this.renderChart(this.chartData, this.options);
+  },
+  watch: {
+    options: {
+      deep: true,
+      handler: function handler() {
+        this.$data._chart.options = this.options;
+        this.updateChart();
+      }
+    }
   }
 });
 
@@ -17466,20 +17530,7 @@ var render = function() {
         [
           _c("h1", { staticClass: "h3 mb-0 text-gray-800" }, [
             _vm._v("Dashboard")
-          ]),
-          _vm._v(" "),
-          _c(
-            "a",
-            {
-              staticClass:
-                "d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm",
-              attrs: { href: "#" }
-            },
-            [
-              _c("i", { staticClass: "fas fa-download fa-sm text-white-50" }),
-              _vm._v(" Generate\n        Report")
-            ]
-          )
+          ])
         ]
       ),
       _vm._v(" "),
@@ -17487,7 +17538,7 @@ var render = function() {
         _c("div", { staticClass: "col-xl-3 col-md-6 mb-4" }, [
           _c(
             "div",
-            { staticClass: "card border-left-primary shadow h-100 py-2" },
+            { staticClass: "card border-left-danger shadow h-100 py-2" },
             [
               _c("div", { staticClass: "card-body" }, [
                 _c(
@@ -17499,11 +17550,11 @@ var render = function() {
                         "div",
                         {
                           staticClass:
-                            "text-xs font-weight-bold text-primary text-uppercase mb-1"
+                            "text-xs font-weight-bold text-danger text-uppercase mb-1"
                         },
                         [
                           _vm._v(
-                            "\n                  Earnings (Monthly)\n                "
+                            "\n                  Total Visitors\n                "
                           )
                         ]
                       ),
@@ -17515,7 +17566,11 @@ var render = function() {
                         },
                         [
                           _vm._v(
-                            "\n                  $40,000\n                "
+                            "\n                  " +
+                              _vm._s(
+                                _vm._f("number")(_vm.datawidget.totalVisitor)
+                              ) +
+                              "\n                "
                           )
                         ]
                       )
@@ -17523,7 +17578,7 @@ var render = function() {
                     _vm._v(" "),
                     _c("div", { staticClass: "col-auto" }, [
                       _c("i", {
-                        staticClass: "fas fa-calendar fa-2x text-gray-300"
+                        staticClass: "fas fa-users fa-2x text-gray-300"
                       })
                     ])
                   ]
@@ -17564,7 +17619,9 @@ var render = function() {
                         },
                         [
                           _vm._v(
-                            "\n                  Android 75%\n                "
+                            "\n                  " +
+                              _vm._s(_vm.datawidget.mostDevices) +
+                              "\n                "
                           )
                         ]
                       )
@@ -17601,7 +17658,7 @@ var render = function() {
                         },
                         [
                           _vm._v(
-                            "\n                  Page Hit This Month (map)\n                "
+                            "\n                  Page Hit This Month (googlemaps)\n                "
                           )
                         ]
                       ),
@@ -17611,7 +17668,7 @@ var render = function() {
                         {
                           staticClass: "h5 mb-0 font-weight-bold text-gray-800"
                         },
-                        [_vm._v("216")]
+                        [_vm._v(_vm._s(_vm.datawidget.mapHitMonth))]
                       ),
                       _vm._v("\n                visitors\n              ")
                     ]),
@@ -17645,7 +17702,7 @@ var render = function() {
                         },
                         [
                           _vm._v(
-                            "\n                  Page Hit Today (map)\n                "
+                            "\n                  Page Hit Today (googlemaps)\n                "
                           )
                         ]
                       ),
@@ -17655,7 +17712,7 @@ var render = function() {
                         {
                           staticClass: "h5 mb-0 font-weight-bold text-gray-800"
                         },
-                        [_vm._v("18")]
+                        [_vm._v(_vm._s(_vm.datawidget.mapHitToday))]
                       ),
                       _vm._v("\n                visitors\n              ")
                     ]),
@@ -17682,7 +17739,10 @@ var render = function() {
               },
               [
                 _c("h6", { staticClass: "m-0 font-weight-bold text-primary" }, [
-                  _vm._v("\n              Chart Visitors\n            ")
+                  _vm._v("\n              Chart Visitors "),
+                  _c("span", { staticClass: "font-weight-light text-muted" }, [
+                    _vm._v("(" + _vm._s(_vm.chartVisitor) + ")")
+                  ])
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "dropdown no-arrow" }, [
@@ -17716,7 +17776,7 @@ var render = function() {
                     },
                     [
                       _c("div", { staticClass: "dropdown-header" }, [
-                        _vm._v("Sort By:")
+                        _vm._v("Chart By:")
                       ]),
                       _vm._v(" "),
                       _c(
@@ -17751,14 +17811,15 @@ var render = function() {
                         "button",
                         {
                           staticClass: "dropdown-item",
-                          class: _vm.chartVisitor == "This Year" && "active",
+                          class:
+                            _vm.chartVisitor == "Last One Year" && "active",
                           on: {
                             click: function($event) {
-                              return _vm.fillData("This Year")
+                              return _vm.fillData("Last One Year")
                             }
                           }
                         },
-                        [_vm._v("This Year")]
+                        [_vm._v("Last One Year")]
                       )
                     ]
                   )
@@ -17794,7 +17855,10 @@ var render = function() {
               },
               [
                 _c("h6", { staticClass: "m-0 font-weight-bold text-primary" }, [
-                  _vm._v("Devices")
+                  _vm._v("Chart Devices "),
+                  _c("span", { staticClass: "font-weight-light text-muted" }, [
+                    _vm._v("(" + _vm._s(_vm.chartVisitorsDevice) + ")")
+                  ])
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "dropdown no-arrow" }, [
@@ -17828,27 +17892,52 @@ var render = function() {
                     },
                     [
                       _c("div", { staticClass: "dropdown-header" }, [
-                        _vm._v("Dropdown Header:")
+                        _vm._v("Chart By:")
                       ]),
                       _vm._v(" "),
                       _c(
-                        "a",
-                        { staticClass: "dropdown-item", attrs: { href: "#" } },
-                        [_vm._v("Action")]
+                        "button",
+                        {
+                          staticClass: "dropdown-item",
+                          class:
+                            _vm.chartVisitorsDevice == "This Month" && "active",
+                          on: {
+                            click: function($event) {
+                              return _vm.fillDataDevice("This Month")
+                            }
+                          }
+                        },
+                        [_vm._v("This Month")]
                       ),
                       _vm._v(" "),
                       _c(
-                        "a",
-                        { staticClass: "dropdown-item", attrs: { href: "#" } },
-                        [_vm._v("Another action")]
+                        "button",
+                        {
+                          staticClass: "dropdown-item",
+                          class:
+                            _vm.chartVisitorsDevice == "Last One Year" &&
+                            "active",
+                          on: {
+                            click: function($event) {
+                              return _vm.fillDataDevice("Last One Year")
+                            }
+                          }
+                        },
+                        [_vm._v("Last One Year")]
                       ),
                       _vm._v(" "),
-                      _c("div", { staticClass: "dropdown-divider" }),
-                      _vm._v(" "),
                       _c(
-                        "a",
-                        { staticClass: "dropdown-item", attrs: { href: "#" } },
-                        [_vm._v("Something else here")]
+                        "button",
+                        {
+                          staticClass: "dropdown-item",
+                          class: _vm.chartVisitorsDevice == "All" && "active",
+                          on: {
+                            click: function($event) {
+                              return _vm.fillDataDevice("All")
+                            }
+                          }
+                        },
+                        [_vm._v("All")]
                       )
                     ]
                   )
@@ -17860,7 +17949,14 @@ var render = function() {
               _c(
                 "div",
                 { staticClass: "pt-4 pb-2" },
-                [_c("chart-visitor-devices")],
+                [
+                  _c("chart-visitor-devices", {
+                    attrs: {
+                      chartData: _vm.datacollectiondevice,
+                      options: _vm.chartDevicesOption
+                    }
+                  })
+                ],
                 1
               )
             ])

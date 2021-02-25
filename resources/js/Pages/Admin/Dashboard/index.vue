@@ -5,33 +5,33 @@
       <!-- Page Heading -->
       <div class="d-sm-flex align-items-center justify-content-between mb-4">
         <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
-        <a
+        <!-- <a
           href="#"
           class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"
           ><i class="fas fa-download fa-sm text-white-50"></i> Generate
           Report</a
-        >
+        > -->
       </div>
 
       <!-- Content Row -->
       <div class="row">
         <!-- Earnings (Monthly) Card Example -->
         <div class="col-xl-3 col-md-6 mb-4">
-          <div class="card border-left-primary shadow h-100 py-2">
+          <div class="card border-left-danger shadow h-100 py-2">
             <div class="card-body">
               <div class="row no-gutters align-items-center">
                 <div class="col mr-2">
                   <div
-                    class="text-xs font-weight-bold text-primary text-uppercase mb-1"
+                    class="text-xs font-weight-bold text-danger text-uppercase mb-1"
                   >
-                    Earnings (Monthly)
+                    Total Visitors
                   </div>
                   <div class="h5 mb-0 font-weight-bold text-gray-800">
-                    $40,000
+                    {{datawidget.totalVisitor | number}}
                   </div>
                 </div>
                 <div class="col-auto">
-                  <i class="fas fa-calendar fa-2x text-gray-300"></i>
+                  <i class="fas fa-users fa-2x text-gray-300"></i>
                 </div>
               </div>
             </div>
@@ -50,7 +50,7 @@
                     Most Devices Access
                   </div>
                   <div class="h5 mb-0 font-weight-bold text-gray-800">
-                    Android 75%
+                    {{datawidget.mostDevices}}
                   </div>
                 </div>
                 <div class="col-auto">
@@ -70,9 +70,9 @@
                   <div
                     class="text-xs font-weight-bold text-info text-uppercase mb-1"
                   >
-                    Page Hit This Month (map)
+                    Page Hit This Month (googlemaps)
                   </div>
-                  <div class="h5 mb-0 font-weight-bold text-gray-800">216</div>
+                  <div class="h5 mb-0 font-weight-bold text-gray-800">{{datawidget.mapHitMonth}}</div>
                   visitors
                 </div>
                 <div class="col-auto">
@@ -92,9 +92,9 @@
                   <div
                     class="text-xs font-weight-bold text-warning text-uppercase mb-1"
                   >
-                    Page Hit Today (map)
+                    Page Hit Today (googlemaps)
                   </div>
-                  <div class="h5 mb-0 font-weight-bold text-gray-800">18</div>
+                  <div class="h5 mb-0 font-weight-bold text-gray-800">{{datawidget.mapHitToday}}</div>
                   visitors
                 </div>
                 <div class="col-auto">
@@ -117,7 +117,7 @@
               class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
             >
               <h6 class="m-0 font-weight-bold text-primary">
-                Chart Visitors
+                Chart Visitors <span class="font-weight-light text-muted">({{chartVisitor}})</span>
               </h6>
               <div class="dropdown no-arrow">
                 <a
@@ -135,10 +135,10 @@
                   class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
                   aria-labelledby="dropdownMenuLink"
                 >
-                  <div class="dropdown-header">Sort By:</div>
+                  <div class="dropdown-header">Chart By:</div>
                   <button class="dropdown-item" @click="fillData('This Week')"  :class="chartVisitor == 'This Week' && 'active'">This Week</button>
                   <button class="dropdown-item" @click="fillData('This Month')"  :class="chartVisitor == 'This Month' && 'active'">This Month</button>
-                  <button class="dropdown-item" @click="fillData('This Year')"  :class="chartVisitor == 'This Year' && 'active'">This Year</button>
+                  <button class="dropdown-item" @click="fillData('Last One Year')"  :class="chartVisitor == 'Last One Year' && 'active'">Last One Year</button>
                 </div>
               </div>
             </div>
@@ -158,7 +158,7 @@
             <div
               class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
             >
-              <h6 class="m-0 font-weight-bold text-primary">Devices</h6>
+              <h6 class="m-0 font-weight-bold text-primary">Chart Devices <span class="font-weight-light text-muted">({{chartVisitorsDevice}})</span></h6>
               <div class="dropdown no-arrow">
                 <a
                   class="dropdown-toggle"
@@ -175,18 +175,17 @@
                   class="dropdown-menu dropdown-menu-right shadow animated--fade-in"
                   aria-labelledby="dropdownMenuLink"
                 >
-                  <div class="dropdown-header">Dropdown Header:</div>
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <div class="dropdown-header">Chart By:</div>
+                  <button class="dropdown-item" @click="fillDataDevice('This Month')"  :class="chartVisitorsDevice == 'This Month' && 'active'">This Month</button>
+                  <button class="dropdown-item" @click="fillDataDevice('Last One Year')"  :class="chartVisitorsDevice == 'Last One Year' && 'active'">Last One Year</button>
+                  <button class="dropdown-item" @click="fillDataDevice('All')"  :class="chartVisitorsDevice == 'All' && 'active'">All</button>
                 </div>
               </div>
             </div>
             <!-- Card Body -->
             <div class="card-body">
               <div class="pt-4 pb-2">
-                <chart-visitor-devices/>
+                <chart-visitor-devices :chartData="datacollectiondevice" :options="chartDevicesOption"/>
               </div>
             </div>
           </div>
@@ -209,10 +208,12 @@ export default {
     ChartVisitors,
     ChartVisitorDevices
   },
-  props: ["meta","chartweek","chartmonth"],
+  props: ["meta","chartweek","chartmonth","chartyear", "chartdevice", "chartdevicemonth", "chartdevicelastoneyear", "widget"],
   data() {
     return {
       chartVisitor:"This Week",
+      chartVisitorsDevice:"This Month",
+      backgroundColor: ['#36b9cc','#e74a3b','#6610f2','#5a5c69','#2e4053','#7fb3d5','#45b39d','#641e16','#2c3e50','#145a32'],
       chartOptions: {
                 responsive: true,
                 maintainAspectRatio: false,
@@ -231,13 +232,21 @@ export default {
                   }],
                 },
       },
+      chartDevicesOption: {responsive: true, maintainAspectRatio: false},
       datacollection: {},
+      datacollectiondevice: {},
       datachartweek:{...this.chartweek},
-      datachartmonth:{...this.chartmonth}
+      datachartmonth:{...this.chartmonth},
+      datachartyear:{...this.chartyear},
+      datachartdevice:{...this.chartdevice},
+      datachartdevicemonth:{...this.chartdevicemonth},
+      datachartdevicelastoneyear:{...this.chartdevicelastoneyear},
+      datawidget:{...this.widget}
     };
   },
   mounted () {
 		this.fillData(this.chartVisitor)
+    this.fillDataDevice(this.chartVisitorsDevice)
 	},
   methods: {
 		fillData (chartVisitor) {
@@ -269,12 +278,67 @@ export default {
               }
             ]
           }
-        
+        if(chartVisitor == 'Last One Year')
+          this.datacollection = {
+            labels: this.datachartyear.labels,
+            datasets: [
+              {
+                label: this.datachartyear.label,
+                backgroundColor: '#2874a6',
+                borderColor:'#36b9cc',
+                data: this.datachartyear.data,
+                cubicInterpolationMode:'monotone',
+                fill:false
+              }
+            ]
+          }
+          // cache index chart
+        this.$ls.set("chartVisitor", chartVisitor)
         this.chartVisitor = chartVisitor
       },
-    getRandomInt () {
-        return Math.floor(Math.random() * (50 - 5 + 1)) + 5
-      }
-	}
+    fillDataDevice(chartVisitorsDevice){
+      if(chartVisitorsDevice == 'This Month')
+          this.datacollectiondevice = {
+            labels: this.datachartdevicemonth.labels,
+            datasets: [
+              {
+                backgroundColor: this.backgroundColor,
+                data: this.datachartdevicemonth.data,
+              }
+            ]
+          }
+        if(chartVisitorsDevice == 'Last One Year')
+          this.datacollectiondevice = {
+            labels: this.datachartdevicelastoneyear.labels,
+            datasets: [
+              {
+                backgroundColor: this.backgroundColor,
+                data: this.datachartdevicelastoneyear.data,
+              }
+            ]
+          }
+        if(chartVisitorsDevice == 'All')
+          this.datacollectiondevice = {
+            labels: this.datachartdevice.labels,
+            datasets: [
+              {
+                backgroundColor: this.backgroundColor,
+                data: this.datachartdevice.data,
+              }
+            ]
+          }
+        // cache index chart
+        this.$ls.set("chartVisitorsDevice", chartVisitorsDevice)
+        this.chartVisitorsDevice = chartVisitorsDevice
+    }
+	},
+  beforeMount() {
+        if (this.$ls.get("chartVisitorsDevice")) {
+            this.chartVisitorsDevice = this.$ls.get("chartVisitorsDevice");
+        }
+        if (this.$ls.get("chartVisitor")) {
+            this.chartVisitor = this.$ls.get("chartVisitor");
+        }
+    }
 }
 </script>

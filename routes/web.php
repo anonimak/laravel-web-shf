@@ -54,7 +54,7 @@ Route::get('profile/pemegang-saham', 'Profile\PemegangSahamController@index')->n
 
 
 Route::get('career', 'CareerController@index')->name('career');
-Route::get('contact', 'ContactController@index')->name('contact')->middleware('guest');
+Route::get('contact', 'ContactController@index')->name('contact')->middleware('guest','visitor');
 Route::get('network', 'NetworkController@index')->name('network');
 
 /*
