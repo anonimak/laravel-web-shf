@@ -6,6 +6,7 @@ deployment:
     - /bin/cp -af . $DEPLOYPATH #copy all from root
     - /bin/chmod 757 $DEPLOYPATH/bash/deploy.sh
     - /bin/chmod 757 $DEPLOYPATH/bash/update.sh
+    - /bin/chmod 757 $DEPLOYPATH/bash/updateprod.sh
     - /bin/chmod 755 $DEPLOYPATH
     - cd $DEPLOYPATH
     - $DEPLOYPATH/bash/deploy.sh 2>&1
