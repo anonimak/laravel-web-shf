@@ -24,6 +24,14 @@ class CreateUsersSeeder extends Seeder
                 'remember_token' => Str::random(10),
             ],
             [
+                'name'=>'Admin',
+                'email'=>'admin@shf.co.id',
+                'email_verified_at' => now(),
+                'is_admin'=>'1',
+                'password'=> Hash::make('admin123!'),
+                'remember_token' => Str::random(10),
+            ],
+            [
                 'name'=>'User',
                 'email'=>'user@user.com',
                 'email_verified_at' => now(),
