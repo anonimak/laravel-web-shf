@@ -221,7 +221,7 @@ class DashboardController extends Controller
         $countall = VisitorUser::count();
         $count = VisitorUser::select(DB::raw('COUNT(id) as devices'),DB::raw('IF(POSITION("mobile" IN LOWER(useragent)) > 0,"Mobile","Desktop") AS type'))
                     ->groupBy('type')
-                    ->orderBy('device', 'desc')
+                    ->orderBy('type', 'asc')
                     ->first();
         $mostDevices = round($count->devices/$countall*100,1);
         $strmostDevices = "$count->type $mostDevices%";
