@@ -57,11 +57,6 @@ class LoginController extends Controller
     {
         $input = $request->all();
 
-        // $request->validate([
-        //     'email' => ['required', 'email'],
-        //     'password' => ['required'],
-        // ]);
-
         $this->validate($request, [
             'email' => 'required|email',
             'password' => 'required',
@@ -74,9 +69,6 @@ class LoginController extends Controller
                 return redirectWithoutInertia('user.dashboard');
             }
         } else {
-            // var_dump(Session::get('errors')
-            //     ? Session::get('errors')->getBag('default')->getMessages()
-            //     : '');
             return Redirect()->route('login')
                 ->with('error', 'Email-Address And Password Are Wrong.');
         }

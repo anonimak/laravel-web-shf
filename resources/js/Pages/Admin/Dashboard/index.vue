@@ -1,5 +1,5 @@
 <template>
-  <Layout>
+  <Layout :userinfo="userinfo">
     <!-- Begin Page Content -->
     <div class="container-fluid">
       <!-- Page Heading -->
@@ -209,7 +209,7 @@ export default {
     ChartVisitors,
     ChartVisitorDevices
   },
-  props: ["meta","chartweek","chartmonth","chartyear", "chartdevice", "chartdevicemonth", "chartdevicelastoneyear", "widget"],
+  props: ["meta","chartweek","chartmonth","chartyear", "chartdevice", "chartdevicemonth", "chartdevicelastoneyear", "widget","userinfo"],
   data() {
     return {
       chartVisitor:"This Week",

@@ -1,5 +1,5 @@
 <template>
-    <layout>
+    <layout :userinfo="userinfo">
         <flash-msg />
         <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">
@@ -120,15 +120,13 @@ import vueDropzone from "vue2-dropzone";
 import "vue2-dropzone/dist/vue2Dropzone.min.css";
 
 export default {
+    props: ["_token", "errors", "breadcrumbItems", "flash", "userinfo"],
     components: {
         Layout,
         FlashMsg,
         Breadcrumb,
         vueDropzone
     },
-
-    props: ["_token", "errors", "breadcrumbItems", "flash"],
-
     data() {
         return {
             submitState: false,

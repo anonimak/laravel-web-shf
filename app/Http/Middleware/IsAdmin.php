@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use Inertia\Inertia;
 
 class IsAdmin
 {
@@ -15,6 +16,9 @@ class IsAdmin
      */
     public function handle($request, Closure $next)
     {
+        // Broadcast userinfo
+        Inertia::share('userinfo',auth()->user());
+        
         if (auth()->user()->is_admin == 1) {
             return $next($request);
         }

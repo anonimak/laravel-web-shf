@@ -1,5 +1,5 @@
 <template>
-    <Layout>
+    <Layout :userinfo="userinfo">
         <flash-msg />
         <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">
@@ -112,6 +112,7 @@ import Breadcrumb from "@/components/Breadcrumb";
 
 export default {
     metaInfo: { title: "Page Home" },
+    props: ["meta", "dataSlider", "flash", "breadcrumbItems", "_delete_url","userinfo"],
     data() {
         return {
             tabIndexCfgHome: 0,
@@ -131,7 +132,6 @@ export default {
         GridLayout: VueGridLayout.GridLayout,
         GridItem: VueGridLayout.GridItem
     },
-    props: ["meta", "dataSlider", "flash", "breadcrumbItems", "_delete_url"],
     methods: {
         submitDelete(id) {
             this.$inertia.delete(route("admin.page.home.slider.delete", id));

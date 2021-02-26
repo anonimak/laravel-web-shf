@@ -66,6 +66,9 @@ Vue.use(fullscreen);
 // untuk localstorage
 Vue.use(Storage);
 
+// untuk portalvue
+import PortalVue from 'portal-vue'
+Vue.use(PortalVue)
 
 // import base.js
 Vue.mixin(require("./base"));

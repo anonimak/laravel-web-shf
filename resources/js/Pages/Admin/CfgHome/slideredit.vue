@@ -1,5 +1,5 @@
 <template>
-    <layout>
+    <layout :userinfo="userinfo">
         <flash-msg @onSuccess="onSubmmitSuccess" />
         <div class="d-sm-flex align-items-center justify-content-between mb-4">
             <h1 class="h3 mb-0 text-gray-800">
@@ -228,6 +228,7 @@ export default {
         vueDropzone,
         FlashMsg
     },
+    props:["userinfo"],
     data() {
         return {
             dropzoneOptions: {
@@ -272,7 +273,6 @@ export default {
             showTop: true
         };
     },
-
     methods: {
         submit() {
             this.$inertia.put(

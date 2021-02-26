@@ -12,7 +12,7 @@
         </button>
 
         <!-- Topbar Search -->
-        <form
+        <!-- <form
             class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search"
         >
             <div class="input-group">
@@ -29,7 +29,7 @@
                     </button>
                 </div>
             </div>
-        </form>
+        </form> -->
 
         <!-- Topbar Navbar -->
         <ul class="navbar-nav ml-auto">
@@ -83,10 +83,10 @@
                 >
                     <i class="fas fa-bell fa-fw"></i>
                     <!-- Counter - Alerts -->
-                    <span class="badge badge-danger badge-counter">3+</span>
+                    <span v-if="alertstatus" class="badge badge-danger badge-counter">3+</span>
                 </a>
                 <!-- Dropdown - Alerts -->
-                <div
+                <div  v-if="alertstatus"
                     class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
                     aria-labelledby="alertsDropdown"
                 >
@@ -159,10 +159,10 @@
                 >
                     <i class="fas fa-envelope fa-fw"></i>
                     <!-- Counter - Messages -->
-                    <span class="badge badge-danger badge-counter">7</span>
+                    <span v-if="messagestatus" class="badge badge-danger badge-counter">7</span>
                 </a>
                 <!-- Dropdown - Messages -->
-                <div
+                <div v-if="messagestatus"
                     class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
                     aria-labelledby="messagesDropdown"
                 >
@@ -266,12 +266,12 @@
                     aria-expanded="false"
                 >
                     <span class="mr-2 d-none d-lg-inline text-gray-600 small"
-                        >Valerie Luna</span
+                        >{{userdata.name}}</span
                     >
-                    <img
+                    <!-- <img
                         class="img-profile rounded-circle"
                         src="https://source.unsplash.com/QAB-WJcbgJk/60x60"
-                    />
+                    /> -->
                 </a>
                 <!-- Dropdown - User Information -->
                 <div
@@ -280,21 +280,9 @@
                 >
                     <a class="dropdown-item" href="#">
                         <i
-                            class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"
-                        ></i>
-                        Profile
-                    </a>
-                    <a class="dropdown-item" href="#">
-                        <i
                             class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"
                         ></i>
                         Settings
-                    </a>
-                    <a class="dropdown-item" href="#">
-                        <i
-                            class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"
-                        ></i>
-                        Activity Log
                     </a>
                     <div class="dropdown-divider"></div>
                     <button class="dropdown-item" @click="show = true">
@@ -332,9 +320,12 @@
 </template>
 <script>
 export default {
+    props:["userdata"],
     data() {
         return {
-            show: false
+            show: false,
+            alertstatus:null,
+            messagestatus:null
         };
     }
 };

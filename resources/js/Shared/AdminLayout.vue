@@ -1,11 +1,11 @@
 <template>
     <div id="wrapper">
         <!-- Content Wrapper -->
-        <Sidebar />
+        <Sidebar/>
         <div id="content-wrapper" class="d-flex flex-column">
             <!-- Main Content -->
             <div id="content">
-                <Navbar />
+                <Navbar :userdata="userdata"/>
                 <main>
                     <div class="container-fluid">
                         <slot />
@@ -29,9 +29,10 @@ export default {
         Footer
         // ParticlesBg
     },
-    methods: {
-        handleLogout() {
-            alert("Ini Sudah Logout");
+    props:["userinfo"],
+    data(){
+        return {
+            userdata:{...this.userinfo}
         }
     }
 };

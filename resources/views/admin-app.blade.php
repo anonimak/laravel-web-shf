@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Dashboard</title>
+    <title>Dashboard</title>
 
     <script src="{{ asset('/js/app.js') }}" defer></script>
     <script src="{{ asset('/js/vendor.js') }}"></script>
