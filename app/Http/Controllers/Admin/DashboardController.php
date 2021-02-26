@@ -37,33 +37,12 @@ class DashboardController extends Controller
 
         return Inertia::render('Admin/Dashboard', [
             'widget' => $this->getWidgets(),
-            'chartweek' => [
-                'label' => 'Graph Visitor This Week',
-                'labels' => $this->getThisWeek()["label"],
-                'data' => $this->getThisWeek()["data"],
-            ],
-            'chartmonth' => [
-                'label' => 'Graph Visitor This Month',
-                'labels' => $this->getThisMonth()["label"],
-                'data' => $this->getThisMonth()["data"],
-            ],
-            'chartyear' => [
-                'label' => 'Graph Visitor Last One Year',
-                'labels' => $this->getLastOneYear()["label"],
-                'data' => $this->getLastOneYear()["data"],
-            ],
-            'chartdevice' => [
-                'labels' => $this->getGroupByDevice()["label"],
-                'data' => $this->getGroupByDevice()["data"]
-            ],
-            'chartdevicemonth' => [
-                'labels' => $this->getGroupByDeviceMonth()["label"],
-                'data' => $this->getGroupByDeviceMonth()["data"]
-            ],
-            'chartdevicelastoneyear' => [
-                'labels' => $this->getGroupByDeviceLastOneYear()["label"],
-                'data' => $this->getGroupByDeviceLastOneYear()["data"]
-            ]
+            'chartweek' => $this->getThisWeek(),
+            'chartmonth' => $this->getThisMonth(),
+            'chartyear' => $this->getLastOneYear(),
+            'chartdevice' => $this->getGroupByDevice(),
+            'chartdevicemonth' => $this->getGroupByDeviceMonth(),
+            'chartdevicelastoneyear' => $this->getGroupByDeviceLastOneYear()
         ]);
     }
 
@@ -96,7 +75,11 @@ class DashboardController extends Controller
             }
         }
 
-        return array( 'label' => $arraylabel, 'data' => $arraydata);
+        return array( 
+                    'labels' => $arraylabel, 
+                    'data' => $arraydata,
+                    'label' => 'Graph Visitor This Week'
+                );
     }
 
     private function getThisMonth(): array {
@@ -131,7 +114,11 @@ class DashboardController extends Controller
             }
         }
 
-        return array( 'label' => $arraylabel, 'data' => $arraydata);
+        return array( 
+                    'labels' => $arraylabel, 
+                    'data' => $arraydata, 
+                    'label' => 'Graph Visitor This Month'
+                );
     }
 
     private function getLastOneYear(): array {
@@ -166,7 +153,11 @@ class DashboardController extends Controller
             $dt->addMonths(1);
         }
 
-        return array( 'label' => $arraylabel, 'data' => $arraydata);
+        return array( 
+                    'labels' => $arraylabel, 
+                    'data' => $arraydata,
+                    'label' => 'Graph Visitor Last One Year'
+                );
     }
 
     private function getGroupByDevice(): array {
@@ -183,7 +174,7 @@ class DashboardController extends Controller
             return $item->platform;
         }, $datavisit);
 
-        return array( 'label' => $arraylabel, 'data' => $arraydata);
+        return array( 'labels' => $arraylabel, 'data' => $arraydata);
     }
 
     private function getGroupByDeviceMonth(): array {
@@ -202,7 +193,7 @@ class DashboardController extends Controller
             return $item->platform;
         }, $datavisit);
 
-        return array( 'label' => $arraylabel, 'data' => $arraydata);
+        return array( 'labels' => $arraylabel, 'data' => $arraydata);
     }
     
     private function getGroupByDeviceLastOneYear(): array {
@@ -221,24 +212,25 @@ class DashboardController extends Controller
             return $item->platform;
         }, $datavisit);
 
-        return array( 'label' => $arraylabel, 'data' => $arraydata);
+        return array( 'labels' => $arraylabel, 'data' => $arraydata);
     }
 
     // get widget
     private function getWidgets(): object {
 
         $countall = VisitorUser::count();
-        $count = VisitorUser::select(DB::raw('COUNT(id) as devices'),'platform')
-                    ->groupBy('platform')
-                    ->orderBy('devices', 'desc')
+        $count = VisitorUser::select(DB::raw('COUNT(id) as devices'),DB::raw('IF(POSITION("mobile" IN LOWER(useragent)) > 0,"Mobile","Desktop") AS type'))
+                    ->groupBy('type')
+                    ->orderBy('device', 'desc')
                     ->first();
         $mostDevices = round($count->devices/$countall*100,1);
-        $strmostDevices = "$count->platform $mostDevices%";
+        $strmostDevices = "$count->type $mostDevices%";
 
         $widget = (object) [
                 'mapHitToday' => VisitorUser::where(DB::raw('RIGHT(url,8)'),'=','/contact')->whereDate('created_at','=',$this->currentDate)->count(),
                 'mapHitMonth' => VisitorUser::where(DB::raw('RIGHT(url,8)'),'=','/contact')->whereMonth('created_at','=',$this->currentDate->month)->count(),
                 'mostDevices' => $strmostDevices,
+                'typeDevices' => $count->type,
                 'totalVisitor' => $countall
         ];
 

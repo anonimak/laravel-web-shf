@@ -216,6 +216,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
  //import layouts
 
 
@@ -17628,9 +17629,13 @@ var render = function() {
                     ]),
                     _vm._v(" "),
                     _c("div", { staticClass: "col-auto" }, [
-                      _c("i", {
-                        staticClass: "fas fa-mobile fa-2x text-gray-300"
-                      })
+                      _vm.datawidget.typeDevices.toLowerCase() == "mobile"
+                        ? _c("i", {
+                            staticClass: "fas fa-mobile fa-2x text-gray-300"
+                          })
+                        : _c("i", {
+                            staticClass: "fas fa-desktop fa-2x text-gray-300"
+                          })
                     ])
                   ]
                 )

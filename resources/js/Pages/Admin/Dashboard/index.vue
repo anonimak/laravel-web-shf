@@ -54,7 +54,8 @@
                   </div>
                 </div>
                 <div class="col-auto">
-                  <i class="fas fa-mobile fa-2x text-gray-300"></i>
+                  <i v-if="datawidget.typeDevices.toLowerCase() == 'mobile'" class="fas fa-mobile fa-2x text-gray-300"></i>
+                  <i v-else class="fas fa-desktop fa-2x text-gray-300"></i>
                 </div>
               </div>
             </div>
