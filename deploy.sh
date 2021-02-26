@@ -55,7 +55,7 @@ php artisan storage:link
 # $NPMPATH/npm run dev
 
 # copy all file public to root
-# cp -rf $DEPLOYPATH/public/* $DEPLOYPATH
+cp -rf $DEPLOYPATH/public/* $DEPLOYPATH
 
 # replace index.php
 mv -f $DEPLOYPATH/index.php.server $DEPLOYPATH/index.php
