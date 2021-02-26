@@ -58,7 +58,7 @@ php artisan storage:link
 # cp -rf $DEPLOYPATH/public/* $DEPLOYPATH
 
 # replace index.php
-mv -f $DEPLOYPATH/index.php.server $DEPLOYPATH/index.php
+# mv -f $DEPLOYPATH/index.php.server $DEPLOYPATH/index.php
 
 # Build assets using Laravel Mix
 #gulp --scope=all --production
