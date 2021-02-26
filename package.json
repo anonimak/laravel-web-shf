@@ -10,8 +10,10 @@
         "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
         "updatebuild": "./bash/update.sh",
         "update": "npm run dev && npm run updatebuild",
+        "updateprodbuild": "./bash/updateprod.sh",
+        "updateprod": "npm run dev && npm run updatebuild",
         "installbuild":"./bash/install.sh",
-        "install": "npm install && npm run dev && npm run installbuild"
+        "install": "npm run dev && npm run installbuild"
     },
     "devDependencies": {
         "axios": "^0.19",
