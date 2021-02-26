@@ -11,7 +11,7 @@
         "updatebuild": "./bash/update.sh",
         "update": "npm run dev && npm run updatebuild",
         "installbuild":"./bash/install.sh",
-        "install": "npm run install && npm run dev && npm run installbuild"
+        "install": "npm install && npm run dev && npm run installbuild"
     },
     "devDependencies": {
         "axios": "^0.19",
