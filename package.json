@@ -13,7 +13,7 @@
         "updateprodbuild": "./bash/updateprod.sh",
         "updateprod": "npm run dev && npm run updatebuild",
         "installbuild":"./bash/install.sh",
-        "install": "npm run dev && npm run installbuild"
+        "installapp": "npm run dev && npm run installbuild"
     },
     "devDependencies": {
         "axios": "^0.19",
