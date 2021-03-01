@@ -52,7 +52,7 @@
               >{{ __("Product") }}</a
             >
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <!-- <inertia-link
+              <inertia-link
                 :href="route('simulasikredit')"
                 :class="
                   isRoute('simulasikredit')
@@ -60,7 +60,7 @@
                     : 'dropdown-item'
                 "
                 >{{ __("Product.Cs") }}</inertia-link
-              > -->
+              >
               <inertia-link
                 :href="route('promo')"
                 :class="

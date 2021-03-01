@@ -197,6 +197,26 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
  //import layouts
 
 
@@ -211,9 +231,12 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       form: {
-        harga: null,
-        dp: null,
-        asuransi: 0,
+        harga: 0,
+        dp: 0,
+        tahun: '',
+        tenor: null,
+        wilayah: null,
+        asuransi: null,
         jenisSimulasi: null,
         jenisBudget: 1,
         tjh: 1,
@@ -252,6 +275,22 @@ __webpack_require__.r(__webpack_exports__);
       }, {
         value: 2,
         text: "Gabungan"
+      }],
+      opttenor: [{
+        value: null,
+        text: 'Pilih Tenor'
+      }, {
+        value: 12,
+        text: "12 Bulan"
+      }, {
+        value: 24,
+        text: "24 Bulan"
+      }, {
+        value: 36,
+        text: "36 Bulan"
+      }, {
+        value: 48,
+        text: "48 Bulan"
       }],
       dataasuransi: [{
         category: 1,
@@ -384,15 +423,18 @@ __webpack_require__.r(__webpack_exports__);
           value: 0.24
         }]
       }],
-      datawilayah: [{
-        id: 1,
-        name: "Sumatera dan Kepulauan di sekitarnya"
+      optwilayah: [{
+        value: null,
+        text: 'Pilih Wilayah'
       }, {
-        id: 2,
-        name: "DKI Jakarta, Jawa Barat dan Banten"
+        value: 1,
+        text: "Sumatera dan Kepulauan di sekitarnya"
       }, {
-        id: 3,
-        name: "Selain Wilayah 1 dan 2"
+        value: 2,
+        text: "DKI Jakarta, Jawa Barat dan Banten"
+      }, {
+        value: 3,
+        text: "Selain Wilayah 1 dan 2"
       }],
       databunga: [{
         id: 1,
@@ -521,13 +563,13 @@ __webpack_require__.r(__webpack_exports__);
       if (this.form.jenisSimulasi == jenis) this.form.jenisSimulasi = null;else this.form.jenisSimulasi = jenis;
     },
     hitungSimulasi: function hitungSimulasi() {
-      var tenor = 48;
+      var tenor = this.form.tenor;
       var tahun = tenor / 12;
       var otr = this.form.harga;
       var penyusutan = 100;
       var tipeasuransi = this.form.asuransi;
-      var wilayah = 3;
-      var tahunkendaraan = 2013;
+      var wilayah = this.form.wilayah;
+      var tahunkendaraan = this.form.tahun;
       var dp = 24.27;
       var dprupiah = otr * dp / 100;
       var pokokhutang = otr - dprupiah;
@@ -616,10 +658,26 @@ __webpack_require__.r(__webpack_exports__);
         return value.tahun === tahunke;
       });
       return Math.round(phkapitalis * creditShield.biaya / 100);
+    },
+    validateSimulasi: function validateSimulasi() {
+      //  cek jenis simulasi mana yang dipilih
+      // loan
+      if (this.form.jenisSimulasi == 1) {} // used car
+
+
+      if (this.form.jenisSimulasi == 2) {
+        if (this.form.tenor || this.form.asuransi || this.wilayah) {
+          return true;
+        }
+
+        return false;
+      } //  return true jika validasi sukses
+
+    },
+    handleValidation: function handleValidation(isValid, tabIndex) {
+      // run hitung simulasi kalau valid
+      isValid ? this.hitungSimulasi() : console.log('Tab: ' + tabIndex + ' valid: ' + isValid);
     }
-  },
-  mounted: function mounted() {
-    this.hitungSimulasi();
   },
   props: ["meta"]
 });
@@ -1464,10 +1522,8 @@ var render = function() {
           _c(
             "form-wizard",
             {
-              attrs: {
-                title: "Form Perhitungan Kredit",
-                subtitle: "And a new subtitle"
-              }
+              attrs: { title: "Form Perhitungan Kredit", subtitle: "" },
+              on: { "on-validate": _vm.handleValidation }
             },
             [
               _c(
@@ -1587,7 +1643,13 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "tab-content",
-                { attrs: { title: "Data Simulasi", icon: "fas fa-file-alt" } },
+                {
+                  attrs: {
+                    title: "Data Simulasi",
+                    icon: "fas fa-file-alt",
+                    "before-change": _vm.validateSimulasi
+                  }
+                },
                 [
                   _c("b-form", { staticClass: "mt-4" }, [
                     _vm.form.jenisSimulasi == 1
@@ -1654,7 +1716,6 @@ var render = function() {
                               "b-form-group",
                               {
                                 attrs: {
-                                  id: "input-group-1",
                                   label: "Email address:",
                                   "label-for": "input-1",
                                   description:
@@ -1691,7 +1752,6 @@ var render = function() {
                               "b-form-group",
                               {
                                 attrs: {
-                                  id: "input-group-2",
                                   label: "Harga Kendaraan:",
                                   "label-for": "input-harga"
                                 }
@@ -1700,6 +1760,7 @@ var render = function() {
                                 _c("b-form-input", {
                                   attrs: {
                                     id: "input-harga",
+                                    type: "number",
                                     required: "",
                                     placeholder: "Masukan Harga Kendaraan"
                                   },
@@ -1719,7 +1780,6 @@ var render = function() {
                               "b-form-group",
                               {
                                 attrs: {
-                                  id: "input-group-2",
                                   label: "Uang Muka:",
                                   "label-for": "input-uang-muka"
                                 }
@@ -1728,6 +1788,7 @@ var render = function() {
                                 _c("b-form-input", {
                                   attrs: {
                                     id: "input-uang-muka",
+                                    type: "number",
                                     required: "",
                                     placeholder: "Masukan Uang Muka"
                                   },
@@ -1747,7 +1808,6 @@ var render = function() {
                               "b-form-group",
                               {
                                 attrs: {
-                                  id: "input-group-2",
                                   label: "Asuransi:",
                                   "label-for": "input-2"
                                 }
@@ -1761,6 +1821,79 @@ var render = function() {
                                       _vm.$set(_vm.form, "asuransi", $$v)
                                     },
                                     expression: "form.asuransi"
+                                  }
+                                })
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "b-form-group",
+                              {
+                                attrs: {
+                                  label: "Tahun kendaraan:",
+                                  "label-for": "input-harga"
+                                }
+                              },
+                              [
+                                _c("b-form-input", {
+                                  attrs: {
+                                    type: "number",
+                                    required: "",
+                                    placeholder: "Masukan Tahun Kendaraan"
+                                  },
+                                  model: {
+                                    value: _vm.form.tahun,
+                                    callback: function($$v) {
+                                      _vm.$set(_vm.form, "tahun", $$v)
+                                    },
+                                    expression: "form.tahun"
+                                  }
+                                })
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "b-form-group",
+                              {
+                                attrs: {
+                                  label: "Tenor:",
+                                  "label-for": "input-harga"
+                                }
+                              },
+                              [
+                                _c("b-form-select", {
+                                  attrs: { options: _vm.opttenor },
+                                  model: {
+                                    value: _vm.form.tenor,
+                                    callback: function($$v) {
+                                      _vm.$set(_vm.form, "tenor", $$v)
+                                    },
+                                    expression: "form.tenor"
+                                  }
+                                })
+                              ],
+                              1
+                            ),
+                            _vm._v(" "),
+                            _c(
+                              "b-form-group",
+                              {
+                                attrs: {
+                                  label: "Wilayah:",
+                                  "label-for": "input-harga"
+                                }
+                              },
+                              [
+                                _c("b-form-select", {
+                                  attrs: { options: _vm.optwilayah },
+                                  model: {
+                                    value: _vm.form.wilayah,
+                                    callback: function($$v) {
+                                      _vm.$set(_vm.form, "wilayah", $$v)
+                                    },
+                                    expression: "form.wilayah"
                                   }
                                 })
                               ],

@@ -29,7 +29,8 @@
       <div class="container mt-4">
         <form-wizard
           title="Form Perhitungan Kredit"
-          subtitle="And a new subtitle"
+          subtitle=""
+          @on-validate="handleValidation"
         >
           <tab-content title="Pilih Kredit yang diinginkan" icon="fa fa-car">
             <div class="container mt-4">
@@ -84,7 +85,7 @@
               </b-container>
             </div>
           </tab-content>
-          <tab-content title="Data Simulasi" icon="fas fa-file-alt">
+          <tab-content title="Data Simulasi" icon="fas fa-file-alt" :before-change="validateSimulasi">
             <b-form class="mt-4">
               <div v-if="form.jenisSimulasi == 1">
                 <b-form-group
@@ -114,7 +115,6 @@
                 </b-form-group>
 
                 <b-form-group
-                  id="input-group-1"
                   label="Email address:"
                   label-for="input-1"
                   description="We'll never share your email with anyone else."
@@ -130,35 +130,55 @@
               </div>
               <div v-else-if="form.jenisSimulasi == 2">
                 <b-form-group
-                  id="input-group-2"
                   label="Harga Kendaraan:"
                   label-for="input-harga"
                 >
                   <b-form-input
                     id="input-harga"
+                    type="number"
                     v-model="form.harga"
                     required
                     placeholder="Masukan Harga Kendaraan"
                   ></b-form-input>
                 </b-form-group>
                 <b-form-group
-                  id="input-group-2"
                   label="Uang Muka:"
                   label-for="input-uang-muka"
                 >
-                  <b-form-input
+                <b-form-input
                     id="input-uang-muka"
+                    type="number"
                     v-model="form.dp"
                     required
                     placeholder="Masukan Uang Muka"
-                  ></b-form-input>
+                ></b-form-input>
                 </b-form-group>
                 <b-form-group
-                  id="input-group-2"
                   label="Asuransi:"
                   label-for="input-2"
                 >
-                  <b-form-select v-model="form.asuransi" :options="optasuransi"></b-form-select>
+                <b-form-select v-model="form.asuransi" :options="optasuransi"></b-form-select>
+                </b-form-group>
+                <b-form-group
+                  label="Tahun kendaraan:"
+                  label-for="input-harga"
+                >
+                  <b-form-input
+                    v-model="form.tahun"
+                    type="number"
+                    required
+                    placeholder="Masukan Tahun Kendaraan"
+                  ></b-form-input>
+                </b-form-group>
+                <b-form-group
+                  label="Tenor:"
+                  label-for="input-harga">
+                  <b-form-select v-model="form.tenor" :options="opttenor"></b-form-select>
+                </b-form-group>
+                <b-form-group
+                  label="Wilayah:"
+                  label-for="input-harga">
+                  <b-form-select v-model="form.wilayah" :options="optwilayah"></b-form-select>
                 </b-form-group>
               </div>
             </b-form>
@@ -197,9 +217,12 @@ export default {
   data() {
     return {
       form: {
-        harga: null,
-        dp: null,
-        asuransi: 0,
+        harga: 0,
+        dp: 0,
+        tahun:'',
+        tenor:null,
+        wilayah:null,
+        asuransi: null,
         jenisSimulasi: null,
         jenisBudget: 1,
         tjh: 1,
@@ -221,6 +244,13 @@ export default {
         {value:0, text:"All Risk" },
         {value:1, text:"TLO" },
         {value:2, text:"Gabungan" },
+      ],
+      opttenor:[
+        { value: null, text: 'Pilih Tenor' },
+        {value:12, text:"12 Bulan" },
+        {value:24, text:"24 Bulan" },
+        {value:36, text:"36 Bulan" },
+        {value:48, text:"48 Bulan" },
       ],
       dataasuransi:[
         {
@@ -404,18 +434,19 @@ export default {
           ]
         }
       ],
-      datawilayah:[
+      optwilayah:[
+        { value: null, text: 'Pilih Wilayah' },
         {
-          id:1,
-          name:"Sumatera dan Kepulauan di sekitarnya"
+          value:1,
+          text:"Sumatera dan Kepulauan di sekitarnya"
         },
         {
-          id:2,
-          name:"DKI Jakarta, Jawa Barat dan Banten"
+          value:2,
+          text:"DKI Jakarta, Jawa Barat dan Banten"
         },
         {
-          id:3,
-          name:"Selain Wilayah 1 dan 2"
+          value:3,
+          text:"Selain Wilayah 1 dan 2"
         }
       ],
       databunga:[
@@ -523,13 +554,13 @@ export default {
     },
 
     hitungSimulasi:function(){
-      let tenor = 48
+      let tenor = this.form.tenor
       let tahun = tenor/12
       let otr = this.form.harga
       let penyusutan = 100
       let tipeasuransi = this.form.asuransi
-      let wilayah = 3
-      let tahunkendaraan = 2013
+      let wilayah = this.form.wilayah
+      let tahunkendaraan = this.form.tahun
       let dp = 24.27
       let dprupiah = (otr*dp)/100
       let pokokhutang = otr - dprupiah
@@ -631,14 +662,32 @@ export default {
       const provisi = this.dataprovisi.find(value => value.tahun === tahunke)
       return Math.round(phkapitalis*provisi.biaya/100)
     },
-    hitungCreditShield(phkapitalis, tahunke){
+    hitungCreditShield:function(phkapitalis, tahunke){
       const creditShield = this.datacreditshield.find(value => value.tahun === tahunke)
       return Math.round(phkapitalis*creditShield.biaya/100)
+    },
+    validateSimulasi:function() {
+    //  cek jenis simulasi mana yang dipilih
+    // loan
+    if(this.form.jenisSimulasi == 1){
+      
     }
-  },
+    // used car
+    if(this.form.jenisSimulasi == 2){
+      if(this.form.tenor || this.form.asuransi || this.wilayah) {
+        return true
+      }
+      return false
+    }
+    //  return true jika validasi sukses
 
-  mounted: function () {
-    this.hitungSimulasi()
+    },
+    handleValidation: function(isValid, tabIndex){
+
+      // run hitung simulasi kalau valid
+      isValid? this.hitungSimulasi() : 
+      console.log('Tab: '+tabIndex+ ' valid: '+isValid)
+    },
   },
   props: ["meta"],
 };
