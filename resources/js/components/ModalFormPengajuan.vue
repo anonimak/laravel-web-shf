@@ -1,71 +1,81 @@
 <template>
   <div>
     <b-modal id="modal-pengajuan" title="From Pengajuan" size="lg"  hide-footer>
-        <b-form @submit="onSubmit" @reset="onReset" v-if="show">
+        <b-form @submit.prevent="onSubmit" @reset.prevent="onReset" v-if="show">
             <b-form-group
                 id="input-group-1"
-                label="Email address:"
+                label="Alamat Email:"
                 label-for="input-1"
-                description="We'll never share your email with anyone else."
             >
                 <b-form-input
                 id="input-1"
                 v-model="form.email"
                 type="email"
                 required
-                placeholder="Enter email"
+                placeholder="Email"
                 ></b-form-input>
             </b-form-group>
 
-            <b-form-group id="input-group-2" label="Firstname:" label-for="input-2">
+            <b-form-group id="input-group-2" label="Nama Depan:" label-for="input-2">
                 <b-form-input
                 id="input-2"
+                type="text"
                 v-model="form.firstname"
                 required
-                placeholder="Enter firstname"
+                placeholder="Nama depan"
                 ></b-form-input>
             </b-form-group>
 
-            <b-form-group id="input-group-2" label="Lastname:" label-for="input-2">
+            <b-form-group id="input-group-2" label="Nama Belakang:" label-for="input-2">
                 <b-form-input
                 id="input-2"
+                type="text"
                 v-model="form.lastname"
                 required
-                placeholder="Enter lastname"
+                placeholder="Nama Belakang"
                 ></b-form-input>
             </b-form-group>
 
-            <b-form-group id="input-group-2" label="Telp:" label-for="input-2">
+            <b-form-group id="input-group-2" label="Nomor Telepon:" label-for="input-2">
                 <b-form-input
                 id="input-2"
+                type="tel"
                 v-model="form.no_telp"
                 required
-                placeholder="Enter Telepon"
+                placeholder="Nomor Telepon"
                 ></b-form-input>
             </b-form-group>
 
-            <b-form-group id="input-group-3" label="Branch:" label-for="input-3">
+            <b-form-group id="input-group-3" label="Cabang:" label-for="input-3">
                 <b-form-select
                 id="input-3"
                 v-model="form.branch"
                 :options="branchs"
                 required
-                ></b-form-select>
+                >
+                <template #first>
+                  <b-form-select-option :value="null" disabled>-- Pilih Cabang --</b-form-select-option>
+                </template>
+                </b-form-select>
             </b-form-group>
 
-            <b-form-group id="input-group-3" label="Category:" label-for="input-3">
+            <b-form-group id="input-group-3" label="Kategori:" label-for="input-3">
                 <b-form-select
                 id="input-3"
                 v-model="form.category"
                 :options="categories"
                 required
-                ></b-form-select>
+                >
+                <template #first>
+                  <b-form-select-option :value="null" disabled>-- Pilih Kategori --</b-form-select-option>
+                </template>
+                </b-form-select>
             </b-form-group>
             <b-form-group id="input-group-3" label="Pesan Tambahan:" label-for="input-3">
                 <b-form-textarea
                     id="textarea"
                     v-model="form.text"
-                    placeholder="Enter something..."
+                    placeholder="Pesan Tambahan..."
                     rows="3"
                     max-rows="6"
                     >
@@ -84,6 +94,7 @@
 
 <script>
 export default {
+    props:["databranch"],
     data() {
       return {
         form: {
@@ -95,18 +106,16 @@ export default {
           text:'',
           checked: []
         },
-        branchs: [{ text: 'Select One', value: null }, 'Bandung', 'Bekasi', 'Bogor', 'Cikarang', 'Depok', 'Jakarta', 'Kediri', 'Malang', 'Semarang', 'Surabaya', 'Surakarta' ,'Tangerang', 'Yogyakarta'],
-        categories: [{ text: 'Select One', value: null }, 'Kredit Kendaraan', 'Pinjaman Dana', 'Pendaftaran Agen'],
+        branchs: this.databranch,
+        categories: ['Kredit Kendaraan', 'Pinjaman Dana', 'Pendaftaran Agen'],
         show: true
       }
     },
     methods: {
-      onSubmit(evt) {
-        evt.preventDefault()
-        alert(JSON.stringify(this.form))
+      onSubmit() {
+        this.$inertia.post(route("pengajuan"), this.form);
       },
-      onReset(evt) {
-        evt.preventDefault()
+      onReset() {
         // Reset our form values
         this.form.email = ''
         this.form.firstname = ''

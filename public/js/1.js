@@ -996,7 +996,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
+  props: ["databranch"],
   data: function data() {
     return {
       form: {
@@ -1008,27 +1019,19 @@ __webpack_require__.r(__webpack_exports__);
         text: '',
         checked: []
       },
-      branchs: [{
-        text: 'Select One',
-        value: null
-      }, 'Bandung', 'Bekasi', 'Bogor', 'Cikarang', 'Depok', 'Jakarta', 'Kediri', 'Malang', 'Semarang', 'Surabaya', 'Surakarta', 'Tangerang', 'Yogyakarta'],
-      categories: [{
-        text: 'Select One',
-        value: null
-      }, 'Kredit Kendaraan', 'Pinjaman Dana', 'Pendaftaran Agen'],
+      branchs: this.databranch,
+      categories: ['Kredit Kendaraan', 'Pinjaman Dana', 'Pendaftaran Agen'],
       show: true
     };
   },
   methods: {
-    onSubmit: function onSubmit(evt) {
-      evt.preventDefault();
-      alert(JSON.stringify(this.form));
+    onSubmit: function onSubmit() {
+      this.$inertia.post(route("pengajuan"), this.form);
     },
-    onReset: function onReset(evt) {
+    onReset: function onReset() {
       var _this = this;
 
-      evt.preventDefault(); // Reset our form values
-
+      // Reset our form values
       this.form.email = '';
       this.form.firstname = '';
       this.form.lastname = '';
@@ -7575,17 +7578,26 @@ var render = function() {
           _vm.show
             ? _c(
                 "b-form",
-                { on: { submit: _vm.onSubmit, reset: _vm.onReset } },
+                {
+                  on: {
+                    submit: function($event) {
+                      $event.preventDefault()
+                      return _vm.onSubmit($event)
+                    },
+                    reset: function($event) {
+                      $event.preventDefault()
+                      return _vm.onReset($event)
+                    }
+                  }
+                },
                 [
                   _c(
                     "b-form-group",
                     {
                       attrs: {
                         id: "input-group-1",
-                        label: "Email address:",
-                        "label-for": "input-1",
-                        description:
-                          "We'll never share your email with anyone else."
+                        label: "Alamat Email:",
+                        "label-for": "input-1"
                       }
                     },
                     [
@@ -7594,7 +7606,7 @@ var render = function() {
                           id: "input-1",
                           type: "email",
                           required: "",
-                          placeholder: "Enter email"
+                          placeholder: "Email"
                         },
                         model: {
                           value: _vm.form.email,
@@ -7613,7 +7625,7 @@ var render = function() {
                     {
                       attrs: {
                         id: "input-group-2",
-                        label: "Firstname:",
+                        label: "Nama Depan:",
                         "label-for": "input-2"
                       }
                     },
@@ -7621,8 +7633,9 @@ var render = function() {
                       _c("b-form-input", {
                         attrs: {
                           id: "input-2",
+                          type: "text",
                           required: "",
-                          placeholder: "Enter firstname"
+                          placeholder: "Nama depan"
                         },
                         model: {
                           value: _vm.form.firstname,
@@ -7641,7 +7654,7 @@ var render = function() {
                     {
                       attrs: {
                         id: "input-group-2",
-                        label: "Lastname:",
+                        label: "Nama Belakang:",
                         "label-for": "input-2"
                       }
                     },
@@ -7649,8 +7662,9 @@ var render = function() {
                       _c("b-form-input", {
                         attrs: {
                           id: "input-2",
+                          type: "text",
                           required: "",
-                          placeholder: "Enter lastname"
+                          placeholder: "Nama Belakang"
                         },
                         model: {
                           value: _vm.form.lastname,
@@ -7669,7 +7683,7 @@ var render = function() {
                     {
                       attrs: {
                         id: "input-group-2",
-                        label: "Telp:",
+                        label: "Nomor Telepon:",
                         "label-for": "input-2"
                       }
                     },
@@ -7677,8 +7691,9 @@ var render = function() {
                       _c("b-form-input", {
                         attrs: {
                           id: "input-2",
+                          type: "tel",
                           required: "",
-                          placeholder: "Enter Telepon"
+                          placeholder: "Nomor Telepon"
                         },
                         model: {
                           value: _vm.form.no_telp,
@@ -7697,7 +7712,7 @@ var render = function() {
                     {
                       attrs: {
                         id: "input-group-3",
-                        label: "Branch:",
+                        label: "Cabang:",
                         "label-for": "input-3"
                       }
                     },
@@ -7708,6 +7723,26 @@ var render = function() {
                           options: _vm.branchs,
                           required: ""
                         },
+                        scopedSlots: _vm._u(
+                          [
+                            {
+                              key: "first",
+                              fn: function() {
+                                return [
+                                  _c(
+                                    "b-form-select-option",
+                                    { attrs: { value: null, disabled: "" } },
+                                    [_vm._v("-- Pilih Cabang --")]
+                                  )
+                                ]
+                              },
+                              proxy: true
+                            }
+                          ],
+                          null,
+                          false,
+                          881741252
+                        ),
                         model: {
                           value: _vm.form.branch,
                           callback: function($$v) {
@@ -7725,7 +7760,7 @@ var render = function() {
                     {
                       attrs: {
                         id: "input-group-3",
-                        label: "Category:",
+                        label: "Kategori:",
                         "label-for": "input-3"
                       }
                     },
@@ -7736,6 +7771,26 @@ var render = function() {
                           options: _vm.categories,
                           required: ""
                         },
+                        scopedSlots: _vm._u(
+                          [
+                            {
+                              key: "first",
+                              fn: function() {
+                                return [
+                                  _c(
+                                    "b-form-select-option",
+                                    { attrs: { value: null, disabled: "" } },
+                                    [_vm._v("-- Pilih Kategori --")]
+                                  )
+                                ]
+                              },
+                              proxy: true
+                            }
+                          ],
+                          null,
+                          false,
+                          1436664612
+                        ),
                         model: {
                           value: _vm.form.category,
                           callback: function($$v) {
@@ -7761,7 +7816,7 @@ var render = function() {
                       _c("b-form-textarea", {
                         attrs: {
                           id: "textarea",
-                          placeholder: "Enter something...",
+                          placeholder: "Pesan Tambahan...",
                           rows: "3",
                           "max-rows": "6"
                         },

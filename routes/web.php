@@ -57,6 +57,8 @@ Route::get('career', 'CareerController@index')->name('career');
 Route::get('contact', 'ContactController@index')->name('contact')->middleware('guest','visitor');
 Route::get('network', 'NetworkController@index')->name('network');
 
+// pengajuan
+Route::post('pengajuan', 'PengajuanController@index')->name('pengajuan');
 /*
 |
 | user routes

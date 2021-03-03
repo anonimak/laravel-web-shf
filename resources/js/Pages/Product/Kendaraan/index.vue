@@ -107,7 +107,7 @@
         </div>
       </section>
 
-      <modal-form-pengajuan />
+      <modal-form-pengajuan :databranch="databranch"/>
     </div>
   </Layout>
 </template>
@@ -127,6 +127,7 @@ export default {
     ModalFormPengajuan,
   },
   metaInfo: { title: "Produk Kendaraan" },
+  props:["data_offices"],
   data() {
     return {
       items: [
@@ -135,7 +136,7 @@ export default {
         { age: 89, first_name: "Geneva", last_name: "Wilson" },
         { age: 38, first_name: "Jami", last_name: "Carney" },
       ],
-
+      databranch: this.data_offices,
       reqItems: [
         {
           title: "Karyawan",

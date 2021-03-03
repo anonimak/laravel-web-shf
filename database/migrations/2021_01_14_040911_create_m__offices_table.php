@@ -16,8 +16,10 @@ class CreateMOfficesTable extends Migration
         Schema::create('m_offices', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('short_name')->nullable();
             $table->longText('address')->nullable();
             $table->string('telp')->nullable();
+            $table->string('email')->nullable();
             $table->string('latitude');
             $table->string('longitude');
             $table->boolean('center')->nullable();
