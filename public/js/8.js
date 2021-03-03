@@ -217,6 +217,18 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
  //import layouts
 
 
@@ -1522,7 +1534,11 @@ var render = function() {
           _c(
             "form-wizard",
             {
-              attrs: { title: "Form Perhitungan Kredit", subtitle: "" },
+              attrs: {
+                title: "Form Perhitungan Kredit",
+                subtitle: "",
+                validateOnBack: false
+              },
               on: { "on-validate": _vm.handleValidation }
             },
             [
@@ -1757,21 +1773,28 @@ var render = function() {
                                 }
                               },
                               [
-                                _c("b-form-input", {
-                                  attrs: {
-                                    id: "input-harga",
-                                    type: "number",
-                                    required: "",
-                                    placeholder: "Masukan Harga Kendaraan"
-                                  },
-                                  model: {
-                                    value: _vm.form.harga,
-                                    callback: function($$v) {
-                                      _vm.$set(_vm.form, "harga", $$v)
-                                    },
-                                    expression: "form.harga"
-                                  }
-                                })
+                                _c(
+                                  "b-input-group",
+                                  { attrs: { size: "lg", prepend: "IDR" } },
+                                  [
+                                    _c("b-form-input", {
+                                      attrs: {
+                                        id: "input-harga",
+                                        type: "number",
+                                        required: "",
+                                        placeholder: "Masukan Harga Kendaraan"
+                                      },
+                                      model: {
+                                        value: _vm.form.harga,
+                                        callback: function($$v) {
+                                          _vm.$set(_vm.form, "harga", $$v)
+                                        },
+                                        expression: "form.harga"
+                                      }
+                                    })
+                                  ],
+                                  1
+                                )
                               ],
                               1
                             ),
@@ -1785,21 +1808,45 @@ var render = function() {
                                 }
                               },
                               [
-                                _c("b-form-input", {
-                                  attrs: {
-                                    id: "input-uang-muka",
-                                    type: "number",
-                                    required: "",
-                                    placeholder: "Masukan Uang Muka"
-                                  },
-                                  model: {
-                                    value: _vm.form.dp,
-                                    callback: function($$v) {
-                                      _vm.$set(_vm.form, "dp", $$v)
-                                    },
-                                    expression: "form.dp"
-                                  }
-                                })
+                                _c(
+                                  "b-input-group",
+                                  { attrs: { size: "lg", prepend: "IDR" } },
+                                  [
+                                    _c("b-form-input"),
+                                    _vm._v(" "),
+                                    _c(
+                                      "b-input-group-append",
+                                      [
+                                        _c("b-input-group-text", [
+                                          _c("strong", [_vm._v("DP Persen")])
+                                        ]),
+                                        _vm._v(" "),
+                                        _c("b-form-input", {
+                                          attrs: {
+                                            size: "lg",
+                                            id: "input-uang-muka",
+                                            type: "number",
+                                            required: "",
+                                            placeholder: "Masukan Uang Muka"
+                                          },
+                                          model: {
+                                            value: _vm.form.dp,
+                                            callback: function($$v) {
+                                              _vm.$set(_vm.form, "dp", $$v)
+                                            },
+                                            expression: "form.dp"
+                                          }
+                                        }),
+                                        _vm._v(" "),
+                                        _c("b-input-group-text", [
+                                          _c("strong", [_vm._v("%")])
+                                        ])
+                                      ],
+                                      1
+                                    )
+                                  ],
+                                  1
+                                )
                               ],
                               1
                             ),
@@ -1814,7 +1861,10 @@ var render = function() {
                               },
                               [
                                 _c("b-form-select", {
-                                  attrs: { options: _vm.optasuransi },
+                                  attrs: {
+                                    size: "lg",
+                                    options: _vm.optasuransi
+                                  },
                                   model: {
                                     value: _vm.form.asuransi,
                                     callback: function($$v) {
@@ -1838,6 +1888,7 @@ var render = function() {
                               [
                                 _c("b-form-input", {
                                   attrs: {
+                                    size: "lg",
                                     type: "number",
                                     required: "",
                                     placeholder: "Masukan Tahun Kendaraan"
@@ -1864,7 +1915,7 @@ var render = function() {
                               },
                               [
                                 _c("b-form-select", {
-                                  attrs: { options: _vm.opttenor },
+                                  attrs: { size: "lg", options: _vm.opttenor },
                                   model: {
                                     value: _vm.form.tenor,
                                     callback: function($$v) {
@@ -1887,7 +1938,10 @@ var render = function() {
                               },
                               [
                                 _c("b-form-select", {
-                                  attrs: { options: _vm.optwilayah },
+                                  attrs: {
+                                    size: "lg",
+                                    options: _vm.optwilayah
+                                  },
                                   model: {
                                     value: _vm.form.wilayah,
                                     callback: function($$v) {

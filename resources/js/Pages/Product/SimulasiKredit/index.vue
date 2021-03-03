@@ -31,6 +31,7 @@
           title="Form Perhitungan Kredit"
           subtitle=""
           @on-validate="handleValidation"
+          :validateOnBack="false"
         >
           <tab-content title="Pilih Kredit yang diinginkan" icon="fa fa-car">
             <div class="container mt-4">
@@ -133,37 +134,48 @@
                   label="Harga Kendaraan:"
                   label-for="input-harga"
                 >
-                  <b-form-input
-                    id="input-harga"
-                    type="number"
-                    v-model="form.harga"
-                    required
-                    placeholder="Masukan Harga Kendaraan"
-                  ></b-form-input>
+                  <b-input-group size="lg" prepend="IDR">
+                    <b-form-input
+                      id="input-harga"
+                      type="number"
+                      v-model="form.harga"
+                      required
+                      placeholder="Masukan Harga Kendaraan"
+                    ></b-form-input>
+                  </b-input-group>
                 </b-form-group>
                 <b-form-group
                   label="Uang Muka:"
                   label-for="input-uang-muka"
                 >
-                <b-form-input
-                    id="input-uang-muka"
-                    type="number"
-                    v-model="form.dp"
-                    required
-                    placeholder="Masukan Uang Muka"
-                ></b-form-input>
+                <b-input-group size="lg" prepend="IDR">
+                  <b-form-input></b-form-input>
+                  <b-input-group-append>
+                    <b-input-group-text><strong>DP Persen</strong></b-input-group-text>
+                    <b-form-input
+                      size="lg"
+                      id="input-uang-muka"
+                      type="number"
+                      v-model="form.dp"
+                      required
+                      placeholder="Masukan Uang Muka"
+                    ></b-form-input>
+                    <b-input-group-text><strong>%</strong></b-input-group-text>
+                  </b-input-group-append>
+                </b-input-group>
                 </b-form-group>
                 <b-form-group
                   label="Asuransi:"
                   label-for="input-2"
                 >
-                <b-form-select v-model="form.asuransi" :options="optasuransi"></b-form-select>
+                <b-form-select size="lg" v-model="form.asuransi" :options="optasuransi"></b-form-select>
                 </b-form-group>
                 <b-form-group
                   label="Tahun kendaraan:"
                   label-for="input-harga"
                 >
                   <b-form-input
+                    size="lg"
                     v-model="form.tahun"
                     type="number"
                     required
@@ -173,12 +185,12 @@
                 <b-form-group
                   label="Tenor:"
                   label-for="input-harga">
-                  <b-form-select v-model="form.tenor" :options="opttenor"></b-form-select>
+                  <b-form-select size="lg" v-model="form.tenor" :options="opttenor"></b-form-select>
                 </b-form-group>
                 <b-form-group
                   label="Wilayah:"
                   label-for="input-harga">
-                  <b-form-select v-model="form.wilayah" :options="optwilayah"></b-form-select>
+                  <b-form-select size="lg" v-model="form.wilayah" :options="optwilayah"></b-form-select>
                 </b-form-group>
               </div>
             </b-form>
