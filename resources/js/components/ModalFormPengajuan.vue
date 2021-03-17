@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-modal id="modal-pengajuan" title="From Pengajuan" size="lg"  hide-footer>
-        <b-form @submit.prevent="onSubmit" @reset.prevent="onReset" v-if="show">
+        <b-form @submit.prevent="onSubmit" @reset.prevent="resetForm" v-if="show">
             <b-form-group
                 id="input-group-1"
                 label="Alamat Email:"
@@ -101,6 +101,7 @@ export default {
           email: '',
           firstname: '',
           lastname: '',
+          no_telp: '',
           branch: null,
           category:null,
           text:'',
@@ -111,15 +112,22 @@ export default {
         show: true
       }
     },
+    mounted() {
+      this.$root.$on('bv::modal::show', (bvEvent, modalId) => {
+        this.resetForm()
+      })
+    },
     methods: {
       onSubmit() {
         this.$inertia.post(route("pengajuan"), this.form);
+        this.$bvModal.hide('modal-pengajuan')
       },
-      onReset() {
+      resetForm() {
         // Reset our form values
         this.form.email = ''
         this.form.firstname = ''
         this.form.lastname = ''
+        this.form.no_telp = ''
         this.form.branch = null
         this.form.category = null
         this.form.text = ''

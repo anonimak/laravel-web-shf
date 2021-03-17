@@ -107,7 +107,10 @@
         </div>
       </section>
 
+      <!-- modal -->
       <modal-form-pengajuan :databranch="databranch"/>
+      <!-- alert -->
+      <flash-msg />
     </div>
   </Layout>
 </template>
@@ -118,6 +121,7 @@ import CardRequirement from "@/components/CardRequirement";
 import VehicleSvg from "@/Shared/img/vehicleSVG";
 
 import ModalFormPengajuan from "@/components/ModalFormPengajuan";
+import FlashMsg from "@/components/Alert"; //alert
 
 export default {
   components: {
@@ -125,6 +129,7 @@ export default {
     CardRequirement,
     VehicleSvg,
     ModalFormPengajuan,
+    FlashMsg
   },
   metaInfo: { title: "Produk Kendaraan" },
   props:["data_offices"],

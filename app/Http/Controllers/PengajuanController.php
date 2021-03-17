@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
+use Inertia\Inertia;
 
 class PengajuanController extends Controller
 {
@@ -18,7 +20,7 @@ class PengajuanController extends Controller
         ];
        
         \Mail::to('jonatan.teofilus@gmail.com')->send(new \App\Mail\PengajuanMail($details));
-       
+        return Redirect::back()->with('success', 'Email sent.');
     }
 
 }

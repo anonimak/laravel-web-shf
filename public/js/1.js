@@ -1014,6 +1014,7 @@ __webpack_require__.r(__webpack_exports__);
         email: '',
         firstname: '',
         lastname: '',
+        no_telp: '',
         branch: null,
         category: null,
         text: '',
@@ -1024,17 +1025,26 @@ __webpack_require__.r(__webpack_exports__);
       show: true
     };
   },
+  mounted: function mounted() {
+    var _this = this;
+
+    this.$root.$on('bv::modal::show', function (bvEvent, modalId) {
+      _this.resetForm();
+    });
+  },
   methods: {
     onSubmit: function onSubmit() {
       this.$inertia.post(route("pengajuan"), this.form);
+      this.$bvModal.hide('modal-pengajuan');
     },
-    onReset: function onReset() {
-      var _this = this;
+    resetForm: function resetForm() {
+      var _this2 = this;
 
       // Reset our form values
       this.form.email = '';
       this.form.firstname = '';
       this.form.lastname = '';
+      this.form.no_telp = '';
       this.form.branch = null;
       this.form.category = null;
       this.form.text = '';
@@ -1042,7 +1052,7 @@ __webpack_require__.r(__webpack_exports__);
 
       this.show = false;
       this.$nextTick(function () {
-        _this.show = true;
+        _this2.show = true;
       });
     }
   }
@@ -7586,7 +7596,7 @@ var render = function() {
                     },
                     reset: function($event) {
                       $event.preventDefault()
-                      return _vm.onReset($event)
+                      return _vm.resetForm($event)
                     }
                   }
                 },

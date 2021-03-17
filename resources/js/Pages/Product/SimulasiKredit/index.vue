@@ -48,7 +48,7 @@
                     href="#"
                     class="card text-white"
                     :class="
-                      form.jenisSimulasi == 1
+                      jenisSimulasi == 1
                         ? 'bg-primary overlay shadow-lg'
                         : 'bg-dark'
                     "
@@ -67,7 +67,7 @@
                     href="#"
                     class="card text-white"
                     :class="
-                      form.jenisSimulasi == 2
+                      jenisSimulasi == 2
                         ? 'bg-primary overlay shadow-lg'
                         : 'bg-dark'
                     "
@@ -88,7 +88,7 @@
           </tab-content>
           <tab-content title="Data Simulasi" icon="fas fa-file-alt" :before-change="validateSimulasi">
             <b-form class="mt-4">
-              <div v-if="form.jenisSimulasi == 1">
+              <div v-if="jenisSimulasi == 1">
                 <b-form-group
                   id="input-group-2"
                   label="TJH:"
@@ -96,7 +96,7 @@
                 >
                   <b-form-select
                     id="input-2"
-                    v-model="form.tjh"
+                    v-model="formbudget.tjh"
                     :options="itemtjh"
                     required
                   ></b-form-select>
@@ -109,37 +109,40 @@
                 >
                   <b-form-select
                     id="input-3"
-                    v-model="form.jenisBudget"
+                    v-model="formbudget.jenisBudget"
                     :options="itembudget"
                     required
                   ></b-form-select>
                 </b-form-group>
 
-                <b-form-group
+                <!-- <b-form-group
                   label="Email address:"
                   label-for="input-1"
                   description="We'll never share your email with anyone else."
                 >
                   <b-form-input
                     id="input-1"
-                    v-model="form.email"
+                    v-model="formbudget.email"
                     type="email"
                     required
                     placeholder="Enter email"
                   ></b-form-input>
-                </b-form-group>
+                </b-form-group> -->
               </div>
-              <div v-else-if="form.jenisSimulasi == 2">
+              <div v-else-if="jenisSimulasi == 2">
                 <b-form-group
                   label="Harga Kendaraan:"
                   label-for="input-harga"
+                  :invalid-feedback="errormsg.harga"
+                  :state="errormsg.harga && false"
                 >
                   <b-input-group size="lg" prepend="IDR">
                     <b-form-input
                       id="input-harga"
-                      type="number"
-                      v-model="form.harga"
+                      v-model="formusedcar.harga"
+                      v-currency="optioncurrency"
                       required
+                      :state="errormsg.harga && false"
                       placeholder="Masukan Harga Kendaraan"
                     ></b-form-input>
                   </b-input-group>
@@ -148,49 +151,62 @@
                   label="Uang Muka:"
                   label-for="input-uang-muka"
                 >
-                <b-input-group size="lg" prepend="IDR">
-                  <b-form-input></b-form-input>
+                <b-input-group size="lg" prepend="DP Persen" :append="formusedcar.dprupiah | numberIdr">
                   <b-input-group-append>
-                    <b-input-group-text><strong>DP Persen</strong></b-input-group-text>
                     <b-form-input
                       size="lg"
-                      id="input-uang-muka"
                       type="number"
-                      v-model="form.dp"
+                      min="30"
+                      max="100" 
+                      id="input-dp-percen"
+                      v-model.lazy="formusedcar.dp"
+                      @blur="checkdp($event)"
                       required
                       placeholder="Masukan Uang Muka"
                     ></b-form-input>
+                  </b-input-group-append>
+                  <b-input-group-append>
                     <b-input-group-text><strong>%</strong></b-input-group-text>
                   </b-input-group-append>
                 </b-input-group>
                 </b-form-group>
                 <b-form-group
                   label="Asuransi:"
-                  label-for="input-2"
+                  label-for="input-asuransi"
+                  :invalid-feedback="errormsg.asuransi"
+                  :state="errormsg.asuransi && false"
                 >
-                <b-form-select size="lg" v-model="form.asuransi" :options="optasuransi"></b-form-select>
+                <b-form-select size="lg" :state="errormsg.asuransi && false" required v-model="formusedcar.asuransi" :options="optasuransi"></b-form-select>
                 </b-form-group>
                 <b-form-group
                   label="Tahun kendaraan:"
-                  label-for="input-harga"
+                  label-for="input-tahun"
                 >
-                  <b-form-input
-                    size="lg"
-                    v-model="form.tahun"
-                    type="number"
-                    required
-                    placeholder="Masukan Tahun Kendaraan"
-                  ></b-form-input>
+                  <datepicker 
+                    :value="cfgdatepicker.default"
+                    :format="cfgdatepicker.format"
+                    v-model="formusedcar.tahun"
+                    minimum-view="year" 
+                    :disabled-dates="cfgdatepicker.disabledDates"             
+                    name="datepicker"
+                    aria-label="Large" aria-describedby="inputGroup-sizing-lg"
+                    input-class="form-control"></datepicker>
                 </b-form-group>
                 <b-form-group
                   label="Tenor:"
-                  label-for="input-harga">
-                  <b-form-select size="lg" v-model="form.tenor" :options="opttenor"></b-form-select>
+                  label-for="input-harga"
+                  :invalid-feedback="errormsg.tenor"
+                  :state="errormsg.tenor && false"
+                >
+                  <b-form-select size="lg" :state="errormsg.tenor && false" required v-model="formusedcar.tenor" :options="opttenor"></b-form-select>
                 </b-form-group>
                 <b-form-group
                   label="Wilayah:"
-                  label-for="input-harga">
-                  <b-form-select size="lg" v-model="form.wilayah" :options="optwilayah"></b-form-select>
+                  label-for="input-harga"
+                  :invalid-feedback="errormsg.wilayah"
+                  :state="errormsg.wilayah && false"
+                >
+                  <b-form-select size="lg" :state="errormsg.wilayah && false" required v-model="formusedcar.wilayah" :options="optwilayah"></b-form-select>
                 </b-form-group>
               </div>
             </b-form>
@@ -198,48 +214,112 @@
           <!-- <tab-content title="Data Diri Pengaju Kredit" icon="fas fa-id-card"
             >My second tab content</tab-content
           > -->
-          <tab-content title="Rangkuman Simulasi Kredit" icon="fas fa-money-check"
-            >{{ 10000000 | numberIdr}}</tab-content
-          >
-          <b-button variant="danger" slot="prev">Prev</b-button>
+          <tab-content title="Rangkuman Simulasi Kredit" icon="fas fa-money-check">
+            <div class="container">
+                <div class="row row-grid align-items-center">
+                    <div class="col-md-12 order-md-1">
+                        <div class="pr-md-5">
+                            <h3>Rangkuman Simulasi Kredit</h3>
+                            <p class="text-muted mt-3">
+                                  <!-- Perhitungan simulasi kredit per 17 Maret 2021.<br/> -->
+                                  Minimal DP Kondisi Kendaraan Used adalah 30%
+                            </p>
+                            <table class="table table-borderless">
+                              <tbody>
+                                <tr>
+                                  <td><h5 class="mb-0">Tenor</h5></td>
+                                  <td><h5 class="mb-0">{{formusedcar.tenor}} Bulan</h5></td>
+                                </tr>
+                                <tr>
+                                  <td><h5 class="mb-0">Dp</h5></td>
+                                  <td><h5 class="mb-0">{{formusedcar.dp}} %</h5></td>
+                                </tr>
+                                <tr>
+                                  <td><h5 class="mb-0"><strong>Angsuran</strong></h5></td>
+                                  <td><h5 class="mb-0"><strong>{{formusedcar.angsuran | numberIdr}}</strong></h5></td>
+                                </tr>
+                                <tr>
+                                  <td><h5 class="mb-0"><strong>Total Bayar Pertama</strong></h5></td>
+                                  <td><h5 class="mb-0"><strong>{{formusedcar.totalbayar1 | numberIdr}}</strong></h5></td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <p class="text-muted">Rincian simulasi diatas bersifat estimasi dan tidak mengikat dan dapat berubah sewaktu-waktu mengikuti kebijakan yang berlaku. Perhitungan diatas sudah termasuk biaya administrasi, fiducia, asuransi kendaraan serta credit shield. Untuk perhitungan detail, hubungi cabang Sinarmas Hana Finance terdekat.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </tab-content>
+          <b-button variant="secondary" slot="prev">Prev</b-button>
           <b-button
-            variant="success"
+            variant="primary"
             slot="next"
-            :disabled="!form.jenisSimulasi"
+            :disabled="!jenisSimulasi"
             >Next</b-button
           >
-          <b-button variant="outline-primary" slot="finish">Finish</b-button>
+          <b-button variant="danger" class="btn-lg" slot="finish" v-b-modal.modal-pengajuan >Ajukan Sekarang</b-button>
         </form-wizard>
       </div>
       <!-- End Content -->
+      <!-- modal -->
+      <modal-form-pengajuan :databranch="databranch"/>
+      <!-- alert -->
+      <flash-msg />
     </div>
   </Layout>
 </template>
 
 <script>
 import Layout from "@/Shared/Layout"; //import layouts
+import ModalFormPengajuan from "@/components/ModalFormPengajuan";
 import CreditSVG from "@/Shared/img/creditSVG";
+import { CurrencyDirective } from 'vue-currency-input' //import currency input
+import Datepicker from 'vuejs-datepicker' //datepicker
+import FlashMsg from "@/components/Alert"; //alert
+
 
 export default {
   components: {
     Layout,
     CreditSVG,
+    Datepicker,
+    ModalFormPengajuan,
+    FlashMsg
   },
+  directives: {
+    currency: CurrencyDirective
+  },
+  props:["data_offices","meta"],
   metaInfo: { title: "Simulasi Kredit" },
   data() {
     return {
-      form: {
+      optioncurrency: {currency: 'IDR', locale: 'id'},
+      databranch: this.data_offices,
+      cfgdatepicker: {
+        default:new Date(),
+        format:"yyyy",
+        disabledDates: {
+          from: new Date(Date.now() + 8640000)
+        }
+      },
+      jenisSimulasi: null,
+      formbudget:{
+        jenisBudget: 1,
+        tjh: 1,
+      },
+      formusedcar: {
         harga: 0,
-        dp: 0,
-        tahun:'',
+        dp: 30,
+        dprupiah:0,
+        tahun: new Date().getFullYear().toString(),
         tenor:null,
         wilayah:null,
         asuransi: null,
-        jenisSimulasi: null,
-        jenisBudget: 1,
-        tjh: 1,
-        checked: [],
+        totalbayar1:0,
+        angsuran:0
       },
+      isValid:false,
+      errormsg:{},
       itemjenis: [
         { text: "Pilih Simulasi", value: null },
         { text: "Budget", value: 1 },
@@ -559,22 +639,44 @@ export default {
       show: true,
     };
   },
+  watch:{
+    "formusedcar.dp":function(val){
+      if(val < 30){
+        this.formusedcar.dp = 30
+      }
+      if(val > 100){
+        this.formusedcar.dp = 100
+      }
+      this.formusedcar.dprupiah = Math.round(this.formusedcar.dp*this.formusedcar.harga/100)
+    },
+    "formusedcar.harga":function(val){
+      this.formusedcar.dprupiah = Math.round(this.formusedcar.dp*val/100)
+    }
+  },
   methods: {
+    checkdp({target}){
+      if(target.value < 30){
+        target.value = 30
+        alert("dp minimal 30%")
+      }
+      if(target.value > 100){
+        target.value = 100
+      }
+    },
     pilihJenisSimulasi(jenis) {
-      if (this.form.jenisSimulasi == jenis) this.form.jenisSimulasi = null;
-      else this.form.jenisSimulasi = jenis;
+      if (this.jenisSimulasi == jenis) this.jenisSimulasi = null;
+      else this.jenisSimulasi = jenis;
     },
 
     hitungSimulasi:function(){
-      let tenor = this.form.tenor
+      let tenor = this.formusedcar.tenor
       let tahun = tenor/12
-      let otr = this.form.harga
+      let otr = this.formusedcar.harga
       let penyusutan = 100
-      let tipeasuransi = this.form.asuransi
-      let wilayah = this.form.wilayah
-      let tahunkendaraan = this.form.tahun
-      let dp = 24.27
-      let dprupiah = (otr*dp)/100
+      let tipeasuransi = this.formusedcar.asuransi
+      let wilayah = this.formusedcar.wilayah
+      let tahunkendaraan = this.formusedcar.tahun
+      let dprupiah = this.formusedcar.dprupiah
       let pokokhutang = otr - dprupiah
       let phkapitalis
       let asuransi = 0
@@ -613,8 +715,10 @@ export default {
       let totalhutangbunga = phkapitalis+bunga
       console.log("totalhutangbunga",totalhutangbunga)
       let angsuran = Math.ceil((totalhutangbunga/tenor)/200)*200
+      this.formusedcar.angsuran = angsuran
       console.log("angsuran",angsuran)
       let totalbayar1 = angsuran+dprupiah+tjh+biayaFidusia+biayaProvisi+creditShield+administrasi+lainlain
+      this.formusedcar.totalbayar1 = totalbayar1
       console.log("totalbayar1",totalbayar1)
 
     },
@@ -642,6 +746,7 @@ export default {
         item.rateasuransi = test.value
         return item.category == category && item.type == tipeasuransi
       })
+      console.log(asuransi)
 
       // hitung premi asuransi
       if(tahunke)
@@ -679,17 +784,34 @@ export default {
       return Math.round(phkapitalis*creditShield.biaya/100)
     },
     validateSimulasi:function() {
+    // bersihkan error message 
+    this.errormsg = {}
     //  cek jenis simulasi mana yang dipilih
     // loan
-    if(this.form.jenisSimulasi == 1){
-      
+    if(this.jenisSimulasi == 1){
+
     }
     // used car
-    if(this.form.jenisSimulasi == 2){
-      if(this.form.tenor || this.form.asuransi || this.wilayah) {
-        return true
+    if(this.jenisSimulasi == 2){
+
+      for (const [key, value] of Object.entries(this.formusedcar)) {
+        if(value == null){
+          this.errormsg[key] = `Kolom ${key} tidak boleh kosong.`
+        }
       }
-      return false
+      // cek harga tidak boleh nol
+      if(this.formusedcar.harga == 0){
+        this.errormsg['harga'] = "Harga kendaraan tidak boleh kosong"
+      }
+      // input dp harus diatas 30%
+      if(this.formusedcar.dp < 30){
+        this.formusedcar.dp = 30
+        this.errormsg['dp'] = "DP minimum 30"
+      }
+
+      this.isValid = (Object.keys(this.errormsg).length === 0 && this.errormsg.constructor === Object)? true:false;
+
+      return this.isValid
     }
     //  return true jika validasi sukses
 
@@ -697,10 +819,11 @@ export default {
     handleValidation: function(isValid, tabIndex){
 
       // run hitung simulasi kalau valid
-      isValid? this.hitungSimulasi() : 
-      console.log('Tab: '+tabIndex+ ' valid: '+isValid)
-    },
+      if(isValid){
+        this.isValid = true
+        this.hitungSimulasi()
+      }
+    }
   },
-  props: ["meta"],
 };
 </script>

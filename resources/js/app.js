@@ -27,9 +27,6 @@ import VueParticles from "vue-particles";
 
 import fullscreen from "vue-fullscreen";
 
-// dropzone js
-// import vueDropzone from 'vue2-dropzone'
-// import 'vue2-dropzone/dist/vue2Dropzone.min.css'
 
 // untuk local storage
 import Storage from "vue-ls";
