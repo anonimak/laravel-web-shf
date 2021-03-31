@@ -167,6 +167,12 @@
             </div>
           </li>
           <li
+            :class="isRoute('news') ? 'nav-item active' : 'nav-item'"
+            class="cool-link"
+          >
+            <inertia-link class="nav-link py-3" :href="route('news')">Berita</inertia-link>
+          </li>
+          <li
             :class="isRoute('contact') ? 'nav-item active' : 'nav-item'"
             class="cool-link"
           >

@@ -1,193 +1,18 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[7],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=script&lang=js&":
-/*!**********************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=script&lang=js& ***!
-  \**********************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Product/PinjamanDana/index.vue?vue&type=script&lang=js&":
+/*!********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Product/PinjamanDana/index.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Shared_Layout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Shared/Layout */ "./resources/js/Shared/Layout.vue");
-/* harmony import */ var _components_ModalFormPengajuan__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/components/ModalFormPengajuan */ "./resources/js/components/ModalFormPengajuan.vue");
-/* harmony import */ var _Shared_img_creditSVG__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/Shared/img/creditSVG */ "./resources/js/Shared/img/creditSVG.vue");
-/* harmony import */ var vue_currency_input__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-currency-input */ "./node_modules/vue-currency-input/dist/vue-currency-input.esm.js");
-/* harmony import */ var vuejs_datepicker__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vuejs-datepicker */ "./node_modules/vuejs-datepicker/dist/vuejs-datepicker.esm.js");
-/* harmony import */ var _components_Alert__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/components/Alert */ "./resources/js/components/Alert.vue");
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* harmony import */ var _components_CardRequirement__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/components/CardRequirement */ "./resources/js/components/CardRequirement.vue");
+/* harmony import */ var _Shared_img_vehicleSVG__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/Shared/img/vehicleSVG */ "./resources/js/Shared/img/vehicleSVG.vue");
+/* harmony import */ var _components_ModalFormPengajuan__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/components/ModalFormPengajuan */ "./resources/js/components/ModalFormPengajuan.vue");
 //
 //
 //
@@ -302,548 +127,68 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
- //import currency input
-
- //datepicker
-
- //alert
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     Layout: _Shared_Layout__WEBPACK_IMPORTED_MODULE_0__["default"],
-    CreditSVG: _Shared_img_creditSVG__WEBPACK_IMPORTED_MODULE_2__["default"],
-    Datepicker: vuejs_datepicker__WEBPACK_IMPORTED_MODULE_4__["default"],
-    ModalFormPengajuan: _components_ModalFormPengajuan__WEBPACK_IMPORTED_MODULE_1__["default"],
-    FlashMsg: _components_Alert__WEBPACK_IMPORTED_MODULE_5__["default"]
+    CardRequirement: _components_CardRequirement__WEBPACK_IMPORTED_MODULE_1__["default"],
+    VehicleSvg: _Shared_img_vehicleSVG__WEBPACK_IMPORTED_MODULE_2__["default"],
+    ModalFormPengajuan: _components_ModalFormPengajuan__WEBPACK_IMPORTED_MODULE_3__["default"]
   },
-  directives: {
-    currency: vue_currency_input__WEBPACK_IMPORTED_MODULE_3__["CurrencyDirective"]
-  },
-  props: ["data_offices", "meta"],
   metaInfo: {
-    title: "Simulasi Kredit"
+    title: "Produk Pinjaman Dana"
   },
   data: function data() {
     return {
-      optioncurrency: {
-        currency: 'IDR',
-        locale: 'id'
-      },
-      databranch: this.data_offices,
-      cfgdatepicker: {
-        "default": new Date(),
-        format: "yyyy",
-        disabledDates: {
-          from: new Date(Date.now() + 8640000)
+      reqItems: [{
+        title: "Karyawan",
+        titleColor: "text-white",
+        background: "bg-dark",
+        btnBackground: "btn-dark",
+        reqLists: {
+          ktp: true,
+          kk: true,
+          sk: true,
+          slip: true,
+          npwp: true,
+          rek: true,
+          laporanKeu: false,
+          izinPraktek: false,
+          bkr: true
         }
-      },
-      jenisSimulasi: null,
-      formbudget: {
-        jenisBudget: 1,
-        tjh: 1
-      },
-      formusedcar: {
-        harga: 0,
-        dp: 30,
-        dprupiah: 0,
-        tahun: new Date().getFullYear().toString(),
-        tenor: null,
-        wilayah: null,
-        asuransi: null,
-        totalbayar1: 0,
-        angsuran: 0
-      },
-      isValid: false,
-      errormsg: {},
-      itemjenis: [{
-        text: "Pilih Simulasi",
-        value: null
       }, {
-        text: "Budget",
-        value: 1
+        title: "Wiraswasta",
+        background: "bg-warning",
+        btnBackground: "btn-warning",
+        reqLists: {
+          ktp: true,
+          kk: true,
+          sk: true,
+          slip: true,
+          npwp: true,
+          rek: true,
+          laporanKeu: true,
+          izinPraktek: false,
+          bkr: true
+        }
       }, {
-        text: "Kredit",
-        value: 2
-      }],
-      itemtjh: [{
-        text: "Ya",
-        value: 1
-      }],
-      itembudget: [{
-        text: "Berdasarkan Besar DP",
-        value: 1
-      }, {
-        text: "Berdasarkan Besar Cicilan",
-        value: 2
-      }],
-      optasuransi: [{
-        value: null,
-        text: 'Pilih Asuransi'
-      }, {
-        value: 0,
-        text: "All Risk"
-      }, {
-        value: 1,
-        text: "TLO"
-      }, {
-        value: 2,
-        text: "Gabungan"
-      }],
-      opttenor: [{
-        value: null,
-        text: 'Pilih Tenor'
-      }, {
-        value: 12,
-        text: "12 Bulan"
-      }, {
-        value: 24,
-        text: "24 Bulan"
-      }, {
-        value: 36,
-        text: "36 Bulan"
-      }, {
-        value: 48,
-        text: "48 Bulan"
-      }],
-      dataasuransi: [{
-        category: 1,
-        type: 0,
-        asuransiregion: [{
-          id: 1,
-          value: 4.20
-        }, {
-          id: 2,
-          value: 3.59
-        }, {
-          id: 3,
-          value: 2.78
-        }]
-      }, {
-        category: 2,
-        type: 0,
-        asuransiregion: [{
-          id: 1,
-          value: 2.94
-        }, {
-          id: 2,
-          value: 2.72
-        }, {
-          id: 3,
-          value: 2.96
-        }]
-      }, {
-        category: 3,
-        type: 0,
-        asuransiregion: [{
-          id: 1,
-          value: 2.40
-        }, {
-          id: 2,
-          value: 2.29
-        }, {
-          id: 3,
-          value: 1.97
-        }]
-      }, {
-        category: 4,
-        type: 0,
-        asuransiregion: [{
-          id: 1,
-          value: 1.32
-        }, {
-          id: 2,
-          value: 1.32
-        }, {
-          id: 3,
-          value: 1.25
-        }]
-      }, {
-        category: 5,
-        type: 0,
-        asuransiregion: [{
-          id: 1,
-          value: 1.16
-        }, {
-          id: 2,
-          value: 1.16
-        }, {
-          id: 3,
-          value: 1.16
-        }]
-      }, {
-        category: 1,
-        type: 1,
-        asuransiregion: [{
-          id: 1,
-          value: 0.56
-        }, {
-          id: 2,
-          value: 0.78
-        }, {
-          id: 3,
-          value: 0.56
-        }]
-      }, {
-        category: 2,
-        type: 1,
-        asuransiregion: [{
-          id: 1,
-          value: 0.69
-        }, {
-          id: 2,
-          value: 0.53
-        }, {
-          id: 3,
-          value: 0.48
-        }]
-      }, {
-        category: 3,
-        type: 1,
-        asuransiregion: [{
-          id: 1,
-          value: 0.46
-        }, {
-          id: 2,
-          value: 0.42
-        }, {
-          id: 3,
-          value: 0.35
-        }]
-      }, {
-        category: 4,
-        type: 1,
-        asuransiregion: [{
-          id: 1,
-          value: 0.30
-        }, {
-          id: 2,
-          value: 0.30
-        }, {
-          id: 3,
-          value: 0.27
-        }]
-      }, {
-        category: 5,
-        type: 1,
-        asuransiregion: [{
-          id: 1,
-          value: 0.24
-        }, {
-          id: 2,
-          value: 0.24
-        }, {
-          id: 3,
-          value: 0.24
-        }]
-      }],
-      optwilayah: [{
-        value: null,
-        text: 'Pilih Wilayah'
-      }, {
-        value: 1,
-        text: "Sumatera dan Kepulauan di sekitarnya"
-      }, {
-        value: 2,
-        text: "DKI Jakarta, Jawa Barat dan Banten"
-      }, {
-        value: 3,
-        text: "Selain Wilayah 1 dan 2"
-      }],
-      databunga: [{
-        id: 1,
-        id_tahun_kendaraan: 1,
-        tahunbunga: [{
-          id: 1,
-          tahunke: 1,
-          value: 7.50
-        }, {
-          id: 2,
-          tahunke: 2,
-          value: 8.50
-        }, {
-          id: 3,
-          tahunke: 3,
-          value: 9.50
-        }, {
-          id: 4,
-          tahunke: 4,
-          value: 10.00
-        }]
-      }, {
-        id: 2,
-        id_tahun_kendaraan: 2,
-        tahunbunga: [{
-          id: 1,
-          tahunke: 1,
-          value: 8.00
-        }, {
-          id: 2,
-          tahunke: 2,
-          value: 9.00
-        }, {
-          id: 3,
-          tahunke: 3,
-          value: 10.00
-        }, {
-          id: 4,
-          tahunke: 4,
-          value: 10.00
-        }]
-      }, {
-        id: 3,
-        id_tahun_kendaraan: 3,
-        tahunbunga: [{
-          id: 1,
-          tahunke: 1,
-          value: 8.50
-        }, {
-          id: 2,
-          tahunke: 2,
-          value: 9.50
-        }, {
-          id: 3,
-          tahunke: 3,
-          value: 10.50
-        }, {
-          id: 4,
-          tahunke: 4,
-          value: 11.00
-        }]
-      }, {
-        id: 4,
-        id_tahun_kendaraan: 4,
-        tahunbunga: [{
-          id: 1,
-          tahunke: 1,
-          value: 11.50
-        }, {
-          id: 2,
-          tahunke: 2,
-          value: 12.50
-        }, {
-          id: 3,
-          tahunke: 3,
-          value: 13.50
-        }]
-      }],
-      dataprovisi: [{
-        id: 1,
-        tahun: 1,
-        biaya: 1.00
-      }, {
-        id: 2,
-        tahun: 2,
-        biaya: 1.00
-      }, {
-        id: 3,
-        tahun: 3,
-        biaya: 2.00
-      }, {
-        id: 4,
-        tahun: 4,
-        biaya: 2.00
-      }, {
-        id: 5,
-        tahun: 5,
-        biaya: 2.00
-      }],
-      datacreditshield: [{
-        id: 1,
-        tahun: 1,
-        biaya: 0.35
-      }, {
-        id: 2,
-        tahun: 2,
-        biaya: 0.75
-      }, {
-        id: 3,
-        tahun: 3,
-        biaya: 1.05
-      }, {
-        id: 4,
-        tahun: 4,
-        biaya: 1.40
-      }, {
-        id: 5,
-        tahun: 5,
-        biaya: 1.75
-      }],
-      show: true
+        title: "Profesional",
+        background: "bg-secondary",
+        titleColor: "text-white",
+        btnBackground: "btn-secondary",
+        reqLists: {
+          ktp: true,
+          kk: true,
+          sk: true,
+          slip: true,
+          npwp: true,
+          rek: true,
+          laporanKeu: false,
+          izinPraktek: true,
+          bkr: true
+        }
+      }]
     };
-  },
-  watch: {
-    "formusedcar.dp": function formusedcarDp(val) {
-      if (val < 30) {
-        this.formusedcar.dp = 30;
-      }
-
-      if (val > 100) {
-        this.formusedcar.dp = 100;
-      }
-
-      this.formusedcar.dprupiah = Math.round(this.formusedcar.dp * this.formusedcar.harga / 100);
-    },
-    "formusedcar.harga": function formusedcarHarga(val) {
-      this.formusedcar.dprupiah = Math.round(this.formusedcar.dp * val / 100);
-    }
-  },
-  methods: {
-    checkdp: function checkdp(_ref) {
-      var target = _ref.target;
-
-      if (target.value < 30) {
-        target.value = 30;
-        alert("dp minimal 30%");
-      }
-
-      if (target.value > 100) {
-        target.value = 100;
-      }
-    },
-    pilihJenisSimulasi: function pilihJenisSimulasi(jenis) {
-      if (this.jenisSimulasi == jenis) this.jenisSimulasi = null;else this.jenisSimulasi = jenis;
-    },
-    hitungSimulasi: function hitungSimulasi() {
-      var tenor = this.formusedcar.tenor;
-      var tahun = tenor / 12;
-      var otr = this.formusedcar.harga;
-      var penyusutan = 100;
-      var tipeasuransi = this.formusedcar.asuransi;
-      var wilayah = this.formusedcar.wilayah;
-      var tahunkendaraan = this.formusedcar.tahun;
-      var dprupiah = this.formusedcar.dprupiah;
-      var pokokhutang = otr - dprupiah;
-      var phkapitalis;
-      var asuransi = 0;
-      var biayaFidusia = 500000;
-      var administrasi = 4000000;
-      var lainlain = 350000;
-      var tjh = tipeasuransi == 0 && tipeasuransi == 2 ? 100000 : 0; // hitung asuransi
-
-      for (var index = 0; index < tahun; index++) {
-        // set tahun ke
-        var tahunke = index >= 5 ? null : index + 1; // set penyusutan
-
-        var newpenyusutan = index >= 3 ? 70 : penyusutan; // kalau asuransi yg dipilih gabungan
-
-        var newtipesuransi = tipeasuransi == 2 ? index == 0 ? 0 : 1 : tipeasuransi;
-        var premi = this.hitungAsuransi(otr, newpenyusutan, newtipesuransi, wilayah, tahunke); // console.log(premi)
-        // sum premi asuransi
-
-        asuransi = premi + asuransi;
-        penyusutan = newpenyusutan - 10;
-      }
-
-      console.log("asuransi", asuransi);
-      phkapitalis = pokokhutang + asuransi;
-      console.log("phkapitalis:", phkapitalis); // hitung bunga
-
-      var bunga = this.hitungBunga(phkapitalis, tahunkendaraan, tahun); // hitung biaya provisi
-
-      var biayaProvisi = this.hitungBiayaProvisi(phkapitalis, tahun); // hihtung credit shield
-
-      var creditShield = this.hitungCreditShield(phkapitalis, tahun);
-      console.log("bunga", bunga);
-      var totalhutangbunga = phkapitalis + bunga;
-      console.log("totalhutangbunga", totalhutangbunga);
-      var angsuran = Math.ceil(totalhutangbunga / tenor / 200) * 200;
-      this.formusedcar.angsuran = angsuran;
-      console.log("angsuran", angsuran);
-      var totalbayar1 = angsuran + dprupiah + tjh + biayaFidusia + biayaProvisi + creditShield + administrasi + lainlain;
-      this.formusedcar.totalbayar1 = totalbayar1;
-      console.log("totalbayar1", totalbayar1);
-    },
-    hitungAsuransi: function hitungAsuransi(otr, penyusutan, tipeasuransi, wilayah, tahunke) {
-      var _console = console,
-          log = _console.log;
-      var premi = 100; // hitung penyusutan otr
-
-      var penyusutanotr = otr * penyusutan / 100; // penetuan kategori
-
-      var category;
-      if (otr <= 125000000) category = 1;else if (otr <= 200000000) category = 2;else if (otr <= 400000000) category = 3;else if (otr <= 800000000) category = 4;else category = 5; // get rateasuransi dari data
-
-      var asuransi = this.dataasuransi.find(function (item) {
-        var test = item.asuransiregion.find(function (region) {
-          return region.id == wilayah;
-        });
-        item.rateasuransi = test.value;
-        return item.category == category && item.type == tipeasuransi;
-      });
-      console.log(asuransi); // hitung premi asuransi
-
-      if (tahunke) premi = parseInt(penyusutanotr * asuransi.rateasuransi / 100);
-      return premi;
-    },
-    hitungBunga: function hitungBunga(phkapitalis, tahunkendaraan, rate) {
-      // console.log(rate)
-      var idtahun;
-      if (tahunkendaraan <= 2005) idtahun = 4;else if (tahunkendaraan <= 2008) idtahun = 3;else if (tahunkendaraan <= 2013) idtahun = 2;else idtahun = 1;
-      var bunga = this.databunga.find(function (bunga) {
-        // console.log(bunga.id_tahun_kendaraan)
-        var itembunga = bunga.tahunbunga.find(function (item) {
-          return item.tahunke === rate;
-        });
-        bunga.value = itembunga.value;
-        return bunga.id_tahun_kendaraan == idtahun;
-      }); // balik persentase bunga
-
-      return phkapitalis * bunga.value / 100 * rate;
-    },
-    hitungBiayaProvisi: function hitungBiayaProvisi(phkapitalis, tahunke) {
-      var provisi = this.dataprovisi.find(function (value) {
-        return value.tahun === tahunke;
-      });
-      return Math.round(phkapitalis * provisi.biaya / 100);
-    },
-    hitungCreditShield: function hitungCreditShield(phkapitalis, tahunke) {
-      var creditShield = this.datacreditshield.find(function (value) {
-        return value.tahun === tahunke;
-      });
-      return Math.round(phkapitalis * creditShield.biaya / 100);
-    },
-    validateSimulasi: function validateSimulasi() {
-      // bersihkan error message 
-      this.errormsg = {}; //  cek jenis simulasi mana yang dipilih
-      // loan
-
-      if (this.jenisSimulasi == 1) {} // used car
-
-
-      if (this.jenisSimulasi == 2) {
-        for (var _i = 0, _Object$entries = Object.entries(this.formusedcar); _i < _Object$entries.length; _i++) {
-          var _Object$entries$_i = _slicedToArray(_Object$entries[_i], 2),
-              key = _Object$entries$_i[0],
-              value = _Object$entries$_i[1];
-
-          if (value == null) {
-            this.errormsg[key] = "Kolom ".concat(key, " tidak boleh kosong.");
-          }
-        } // cek harga tidak boleh nol
-
-
-        if (this.formusedcar.harga == 0) {
-          this.errormsg['harga'] = "Harga kendaraan tidak boleh kosong";
-        } // input dp harus diatas 30%
-
-
-        if (this.formusedcar.dp < 30) {
-          this.formusedcar.dp = 30;
-          this.errormsg['dp'] = "DP minimum 30";
-        }
-
-        this.isValid = Object.keys(this.errormsg).length === 0 && this.errormsg.constructor === Object ? true : false;
-        return this.isValid;
-      } //  return true jika validasi sukses
-
-    },
-    handleValidation: function handleValidation(isValid, tabIndex) {
-      // run hitung simulasi kalau valid
-      if (isValid) {
-        this.isValid = true;
-        this.hitungSimulasi();
-      }
-    }
   }
 });
 
@@ -1124,27 +469,78 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Alert.vue?vue&type=script&lang=js&":
-/*!****************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Alert.vue?vue&type=script&lang=js& ***!
-  \****************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CardRequirement.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CardRequirement.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -1158,52 +554,31 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 //
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
-  // props:["flash"],
-  mounted: function mounted() {
-    for (var _i = 0, _Object$entries = Object.entries(this.pageFlashes); _i < _Object$entries.length; _i++) {
-      var _Object$entries$_i = _slicedToArray(_Object$entries[_i], 2),
-          key = _Object$entries$_i[0],
-          value = _Object$entries$_i[1];
-
-      if (value) {
-        if (key == "success") {
-          this.$emit("onSuccess", true);
-        }
-
-        this.dismissCountDown = 3;
-        this.variant = key;
-        this.msg = value;
+  props: {
+    title: String,
+    titleColor: String,
+    background: {
+      type: String,
+      "default": "bg-dark"
+    },
+    btnBackground: {
+      type: String,
+      "default": "btn-dark"
+    },
+    reqLists: {
+      type: Object,
+      "default": {
+        ktp: false,
+        kk: false,
+        sk: false,
+        slip: false,
+        npwp: false,
+        rek: false,
+        laporanKeu: false,
+        izinPraktek: false,
+        bkr: false
       }
     }
-  },
-  watch: {
-    pageFlashes: {
-      handler: function handler(flashes) {
-        var _this = this;
-
-        _.each(flashes, function (flash, index) {
-          // set flash message here
-          if (flash) {
-            // disable edit when success
-            if (index == "success") {
-              _this.$emit("onSuccess", true);
-            }
-
-            _this.dismissCountDown = 3;
-            _this.variant = index;
-            _this.msg = flash;
-          }
-        });
-      },
-      deep: true
-    }
-  },
-  data: function data() {
-    return {
-      variant: null,
-      dismissCountDown: null,
-      msg: ""
-    };
   }
 });
 
@@ -1375,6 +750,12 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -1864,602 +1245,10 @@ if(false) {}
 
 /***/ }),
 
-/***/ "./node_modules/vue-currency-input/dist/vue-currency-input.esm.js":
-/*!************************************************************************!*\
-  !*** ./node_modules/vue-currency-input/dist/vue-currency-input.esm.js ***!
-  \************************************************************************/
-/*! exports provided: default, CurrencyDirective, CurrencyInput, getValue, parse, setValue */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CurrencyDirective", function() { return directive; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CurrencyInput", function() { return component; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getValue", function() { return getValue; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "parse", function() { return parse; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setValue", function() { return setValue; });
-/**
- * Vue Currency Input 1.22.6
- * (c) 2018-2021 Matthias Stiller
- * @license MIT
- */
-var escapeRegExp = function (str) { return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); };
-var removeLeadingZeros = function (str) { return str.replace(/^0+(0$|[^0])/, '$1'); };
-var count = function (str, search) { return (str.match(new RegExp(escapeRegExp(search), 'g')) || []).length; };
-var startsWith = function (str, search) { return str.substring(0, search.length) === search; };
-var substringBefore = function (str, search) { return str.substring(0, str.indexOf(search)); };
-
-var DECIMAL_SYMBOLS = [',', '.', '٫'];
-var INTEGER_PATTERN = '(0|[1-9]\\d*)';
-var NumberFormat = function NumberFormat (options) {
-  var currency = options.currency;
-  var locale = options.locale;
-  var precision = options.precision;
-  var autoDecimalMode = options.autoDecimalMode;
-  var valueAsInteger = options.valueAsInteger;
-  var numberFormat = new Intl.NumberFormat(locale, typeof currency === 'string' ? { currency: currency, style: 'currency' } : { minimumFractionDigits: 1 });
-  var ps = numberFormat.format(123456);
-  this.locale = locale;
-  this.currency = currency;
-  this.digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map(function (i) { return i.toLocaleString(locale); });
-  this.decimalSymbol = count(ps, this.digits[0]) ? ps.substr(ps.indexOf(this.digits[6]) + 1, 1) : undefined;
-  this.groupingSymbol = ps.substr(ps.indexOf(this.digits[3]) + 1, 1);
-  this.minusSymbol = substringBefore(Number(-1).toLocaleString(locale), this.digits[1]);
-  if (this.decimalSymbol === undefined) {
-    this.minimumFractionDigits = this.maximumFractionDigits = 0;
-  } else if (typeof precision === 'number') {
-    this.minimumFractionDigits = this.maximumFractionDigits = precision;
-  } else if (typeof precision === 'object' && !autoDecimalMode && !valueAsInteger) {
-    this.minimumFractionDigits = precision.min || 0;
-    this.maximumFractionDigits = precision.max !== undefined ? precision.max : 20;
-  } else if (typeof currency === 'string') {
-    this.minimumFractionDigits = numberFormat.resolvedOptions().minimumFractionDigits;
-    this.maximumFractionDigits = numberFormat.resolvedOptions().maximumFractionDigits;
-  } else {
-    this.minimumFractionDigits = this.maximumFractionDigits = 2;
-  }
-  if (typeof currency === 'string') {
-    this.prefix = substringBefore(ps, this.digits[1]);
-    this.negativePrefix = substringBefore(numberFormat.format(-1), this.digits[1]);
-    this.suffix = ps.substring(ps.lastIndexOf(this.decimalSymbol ? this.digits[0] : this.digits[6]) + 1);
-  } else {
-    this.prefix = (currency || {}).prefix || '';
-    this.negativePrefix = "" + (this.minusSymbol) + (this.prefix);
-    this.suffix = (currency || {}).suffix || '';
-  }
-};
-NumberFormat.prototype.parse = function parse (str, valueAsInteger) {
-    if ( valueAsInteger === void 0 ) valueAsInteger = false;
-  if (str) {
-    var negative = this.isNegative(str);
-    str = this.normalizeDigits(str);
-    str = this.stripCurrencySymbol(str);
-    str = this.stripMinusSymbol(str);
-    var fraction = this.decimalSymbol ? ("(?:" + (escapeRegExp(this.decimalSymbol)) + "(\\d*))?") : '';
-    var match = this.stripGroupingSymbol(str).match(new RegExp(("^" + INTEGER_PATTERN + fraction + "$")));
-    if (match && this.isValidIntegerFormat(str.split(this.decimalSymbol)[0], Number(match[1]))) {
-      var number = Number(("" + (negative ? '-' : '') + (match[1]) + "." + ((match[2] || ''))));
-      return valueAsInteger ? Number(number.toFixed(this.maximumFractionDigits).split('.').join('')) : number
-    }
-  }
-  return null
-};
-NumberFormat.prototype.isValidIntegerFormat = function isValidIntegerFormat (str, integerNumber) {
-  var options = typeof this.currency === 'string'
-    ? { style: 'currency', currency: this.currency, minimumFractionDigits: 0 }
-    : {};
-  return [
-    this.stripCurrencySymbol(this.normalizeDigits(integerNumber.toLocaleString(this.locale, Object.assign({}, options, {useGrouping: true})))),
-    this.stripCurrencySymbol(this.normalizeDigits(integerNumber.toLocaleString(this.locale, Object.assign({}, options, {useGrouping: false}))))
-  ].includes(str)
-};
-NumberFormat.prototype.format = function format (number, options) {
-    if ( options === void 0 ) options = {
-  minimumFractionDigits: this.minimumFractionDigits,
-  maximumFractionDigits: this.maximumFractionDigits
-};
-  if (typeof this.currency === 'string') {
-    return number.toLocaleString(this.locale, Object.assign({}, {style: 'currency',
-      currency: this.currency},
-      options))
-  } else {
-    return this.insertCurrencySymbol(Math.abs(number).toLocaleString(this.locale, options), number < 0 || (number === 0 && (1 / number < 0)))
-  }
-};
-NumberFormat.prototype.toFraction = function toFraction (str) {
-  return ("" + (this.digits[0]) + (this.decimalSymbol) + ((this.onlyLocaleDigits(str.substr(1)).substr(0, this.maximumFractionDigits))))
-};
-NumberFormat.prototype.isFractionIncomplete = function isFractionIncomplete (str) {
-  return !!this.normalizeDigits(this.stripGroupingSymbol(str)).match(new RegExp(("^" + INTEGER_PATTERN + (escapeRegExp(this.decimalSymbol)) + "$")))
-};
-NumberFormat.prototype.isNegative = function isNegative (str) {
-  return startsWith(str, this.negativePrefix) || startsWith(str.replace('-', this.minusSymbol), this.minusSymbol)
-};
-NumberFormat.prototype.insertCurrencySymbol = function insertCurrencySymbol (str, negative) {
-  return ("" + (negative ? this.negativePrefix : this.prefix) + str + (this.suffix))
-};
-NumberFormat.prototype.stripGroupingSymbol = function stripGroupingSymbol (str) {
-  return str.replace(new RegExp(escapeRegExp(this.groupingSymbol), 'g'), '')
-};
-NumberFormat.prototype.stripMinusSymbol = function stripMinusSymbol (str) {
-  return str.replace('-', this.minusSymbol).replace(this.minusSymbol, '')
-};
-NumberFormat.prototype.stripCurrencySymbol = function stripCurrencySymbol (str) {
-  return str.replace(this.negativePrefix, '').replace(this.prefix, '').replace(this.suffix, '')
-};
-NumberFormat.prototype.normalizeDecimalSymbol = function normalizeDecimalSymbol (str, from) {
-    var this$1 = this;
-  DECIMAL_SYMBOLS.forEach(function (s) {
-    str = str.substr(0, from) + str.substr(from).replace(s, this$1.decimalSymbol);
-  });
-  return str
-};
-NumberFormat.prototype.normalizeDigits = function normalizeDigits (str) {
-  if (this.digits[0] !== '0') {
-    this.digits.forEach(function (digit, index) {
-      str = str.replace(new RegExp(digit, 'g'), index);
-    });
-  }
-  return str
-};
-NumberFormat.prototype.onlyDigits = function onlyDigits (str) {
-  return this.normalizeDigits(str).replace(/\D+/g, '')
-};
-NumberFormat.prototype.onlyLocaleDigits = function onlyLocaleDigits (str) {
-  return str.replace(new RegExp(("[^" + (this.digits.join('')) + "]*"), 'g'), '')
-};
-
-var DEFAULT_OPTIONS = {
-  locale: undefined,
-  currency: 'EUR',
-  valueAsInteger: false,
-  distractionFree: true,
-  precision: undefined,
-  autoDecimalMode: false,
-  valueRange: undefined,
-  allowNegative: true
-};
-var parse = function (formattedValue, options) {
-  var mergedOptions = Object.assign({}, DEFAULT_OPTIONS, options);
-  return new NumberFormat(mergedOptions).parse(formattedValue, mergedOptions.valueAsInteger)
-};
-var getValue = function (ref) { return (ref.$el || ref).$ci.getValue(); };
-var setValue = function (ref, value) {
-  (ref.$el || ref).$ci.setValue(value);
-};
-
-var equal = function (a, b) {
-  if (a === b) {
-    return true
-  }
-  if (!a || !b || typeof a !== 'object' || typeof b !== 'object') {
-    return false
-  }
-  var keys = Object.keys(a);
-  if (keys.length !== Object.keys(b).length) {
-    return false
-  }
-  if (!keys.every(Object.prototype.hasOwnProperty.bind(b))) {
-    return false
-  }
-  return keys.every(function (key) { return equal(a[key], b[key]); })
-};
-
-var DefaultNumberMask = function DefaultNumberMask (numberFormat) {
-  this.numberFormat = numberFormat;
-};
-DefaultNumberMask.prototype.conformToMask = function conformToMask (str, previousConformedValue) {
-    var this$1 = this;
-    if ( previousConformedValue === void 0 ) previousConformedValue = '';
-  var negative = this.numberFormat.isNegative(str);
-  var checkIncompleteValue = function (str) {
-    if (str === '' && negative && previousConformedValue !== this$1.numberFormat.negativePrefix) {
-      return ''
-    } else if (this$1.numberFormat.maximumFractionDigits > 0) {
-      if (this$1.numberFormat.isFractionIncomplete(str)) {
-        return str
-      } else if (startsWith(str, this$1.numberFormat.decimalSymbol)) {
-        return this$1.numberFormat.toFraction(str)
-      }
-    }
-    return null
-  };
-  var value = str;
-  value = this.numberFormat.stripCurrencySymbol(value);
-  value = this.numberFormat.stripMinusSymbol(value);
-  var incompleteValue = checkIncompleteValue(value);
-  if (incompleteValue != null) {
-    return this.numberFormat.insertCurrencySymbol(incompleteValue, negative)
-  }
-  var ref = value.split(this.numberFormat.decimalSymbol);
-    var integer = ref[0];
-    var fraction = ref.slice(1);
-  var integerDigits = removeLeadingZeros(this.numberFormat.onlyDigits(integer));
-  var fractionDigits = this.numberFormat.onlyDigits(fraction.join('')).substr(0, this.numberFormat.maximumFractionDigits);
-  var invalidFraction = fraction.length > 0 && fractionDigits.length === 0;
-  var invalidNegativeValue = integerDigits === '' && negative && (previousConformedValue === str.slice(0, -1) || previousConformedValue !== this.numberFormat.negativePrefix);
-  if (invalidFraction || invalidNegativeValue) {
-    return previousConformedValue
-  } else if (integerDigits.match(/\d+/)) {
-    return {
-      numberValue: Number(("" + (negative ? '-' : '') + integerDigits + "." + fractionDigits)),
-      fractionDigits: fractionDigits
-    }
-  } else {
-    return ''
-  }
-};
-var AutoDecimalModeNumberMask = function AutoDecimalModeNumberMask (numberFormat) {
-  this.numberFormat = numberFormat;
-};
-AutoDecimalModeNumberMask.prototype.conformToMask = function conformToMask (str) {
-  if (str === '') {
-    return ''
-  }
-  var negative = this.numberFormat.isNegative(str);
-  var numberValue = this.numberFormat.stripMinusSymbol(str) === ''
-    ? -0
-    : Number(("" + (negative ? '-' : '') + (removeLeadingZeros(this.numberFormat.onlyDigits(str))))) / Math.pow(10, this.numberFormat.minimumFractionDigits);
-  return {
-    numberValue: numberValue,
-    fractionDigits: numberValue.toFixed(this.numberFormat.minimumFractionDigits).slice(-this.numberFormat.minimumFractionDigits)
-  }
-};
-
-var getCaretPositionAfterFormat = function (newValue, inputtedValue, caretPosition, numberFormat, options) {
-  var prefix = numberFormat.prefix;
-  var suffix = numberFormat.suffix;
-  var decimalSymbol = numberFormat.decimalSymbol;
-  var maximumFractionDigits = numberFormat.maximumFractionDigits;
-  var groupingSymbol = numberFormat.groupingSymbol;
-  var decimalSymbolPosition = inputtedValue.indexOf(decimalSymbol) + 1;
-  var caretPositionFromLeft = inputtedValue.length - caretPosition;
-  if (Math.abs(newValue.length - inputtedValue.length) > 1 && caretPosition <= decimalSymbolPosition) {
-    return newValue.indexOf(decimalSymbol) + 1
-  } else if (newValue.substr(caretPosition, 1) === groupingSymbol && count(newValue, groupingSymbol) === count(inputtedValue, groupingSymbol) + 1) {
-    return newValue.length - caretPositionFromLeft - 1
-  } else {
-    if (!options.autoDecimalMode && decimalSymbolPosition !== 0 && caretPosition > decimalSymbolPosition) {
-      if (numberFormat.onlyDigits(inputtedValue.substr(decimalSymbolPosition)).length - 1 === maximumFractionDigits) {
-        caretPositionFromLeft -= 1;
-      }
-    }
-    return options.distractionFree.hideCurrencySymbol
-      ? newValue.length - caretPositionFromLeft
-      : Math.max(newValue.length - Math.max(caretPositionFromLeft, suffix.length), prefix.length === 0 ? 0 : prefix.length + 1)
-  }
-};
-var getDistractionFreeCaretPosition = function (numberFormat, options, value, caretPosition) {
-  var result = caretPosition;
-  if (options.distractionFree.hideCurrencySymbol) {
-    result -= numberFormat.prefix.length;
-  }
-  if (options.distractionFree.hideGroupingSymbol) {
-    result -= count(value.substring(0, caretPosition), numberFormat.groupingSymbol);
-  }
-  return Math.max(0, result)
-};
-
-var MAX_SAFE_INTEGER = Math.pow(2, 53) - 1;
-var NumberInput = function NumberInput (el, options, callbackFns) {
-  this.el = el;
-  this.callbackFns = callbackFns;
-  this.numberValue = null;
-  this.addEventListener();
-  this.init(options);
-  this.setValue(this.currencyFormat.parse(this.el.value));
-};
-NumberInput.prototype.init = function init (newOptions) {
-  var options = Object.assign({}, newOptions);
-  var distractionFree = options.distractionFree;
-    var autoDecimalMode = options.autoDecimalMode;
-    var valueRange = options.valueRange;
-  if (typeof distractionFree === 'boolean') {
-    options.distractionFree = {
-      hideCurrencySymbol: distractionFree,
-      hideNegligibleDecimalDigits: distractionFree,
-      hideGroupingSymbol: distractionFree
-    };
-  }
-  if (valueRange) {
-    options.valueRange = {
-      min: valueRange.min !== undefined ? Math.max(valueRange.min, -MAX_SAFE_INTEGER) : -MAX_SAFE_INTEGER,
-      max: valueRange.max !== undefined ? Math.min(valueRange.max, MAX_SAFE_INTEGER) : MAX_SAFE_INTEGER
-    };
-  } else {
-    options.valueRange = {
-      min: -MAX_SAFE_INTEGER,
-      max: MAX_SAFE_INTEGER
-    };
-  }
-  if (autoDecimalMode) {
-    options.distractionFree.hideNegligibleDecimalDigits = false;
-    this.el.setAttribute('inputmode', 'numeric');
-  } else {
-    this.el.setAttribute('inputmode', 'decimal');
-  }
-  this.options = options;
-  this.currencyFormat = new NumberFormat(this.options);
-  this.numberMask = options.autoDecimalMode ? new AutoDecimalModeNumberMask(this.currencyFormat) : new DefaultNumberMask(this.currencyFormat);
-};
-NumberInput.prototype.setOptions = function setOptions (options) {
-  this.init(options);
-  this.applyFixedFractionFormat(this.numberValue, true);
-};
-NumberInput.prototype.applyFixedFractionFormat = function applyFixedFractionFormat (number, forcedChange) {
-  this.format(number != null ? this.currencyFormat.format(this.validateValueRange(number)) : null);
-  if (number !== this.numberValue || forcedChange) {
-    this.callbackFns.onChange(this.getValue());
-  }
-};
-NumberInput.prototype.getValue = function getValue () {
-  return this.currencyFormat.parse(this.formattedValue, this.options.valueAsInteger)
-};
-NumberInput.prototype.setValue = function setValue (value) {
-  var newValue = this.options.valueAsInteger && value != null ? value / Math.pow(10, this.currencyFormat.maximumFractionDigits) : value;
-  if (newValue !== this.numberValue) {
-    this.applyFixedFractionFormat(newValue);
-  }
-};
-NumberInput.prototype.validateValueRange = function validateValueRange (value) {
-  var ref = this.options.valueRange;
-    var min = ref.min;
-    var max = ref.max;
-  return Math.min(Math.max(value, min), max)
-};
-NumberInput.prototype.updateInputValue = function updateInputValue (value, hideNegligibleDecimalDigits) {
-    if ( hideNegligibleDecimalDigits === void 0 ) hideNegligibleDecimalDigits = false;
-  if (value != null) {
-    if (this.decimalSymbolInsertedAt !== undefined) {
-      value = this.currencyFormat.normalizeDecimalSymbol(value, this.decimalSymbolInsertedAt);
-      this.decimalSymbolInsertedAt = undefined;
-    }
-    var conformedValue = this.numberMask.conformToMask(value, this.formattedValue);
-    var formattedValue;
-    if (typeof conformedValue === 'object') {
-      var numberValue = conformedValue.numberValue;
-        var fractionDigits = conformedValue.fractionDigits;
-      var ref = this.currencyFormat;
-        var maximumFractionDigits = ref.maximumFractionDigits;
-        var minimumFractionDigits = ref.minimumFractionDigits;
-      if (this.focus) {
-        minimumFractionDigits = maximumFractionDigits;
-      }
-      minimumFractionDigits = hideNegligibleDecimalDigits
-        ? fractionDigits.replace(/0+$/, '').length
-        : Math.min(minimumFractionDigits, fractionDigits.length);
-      formattedValue = numberValue > MAX_SAFE_INTEGER
-        ? this.formattedValue
-        : this.currencyFormat.format(numberValue, {
-          useGrouping: !(this.focus && this.options.distractionFree.hideGroupingSymbol),
-          minimumFractionDigits: minimumFractionDigits,
-          maximumFractionDigits: maximumFractionDigits
-        });
-    } else {
-      formattedValue = conformedValue;
-    }
-    if (!this.options.allowNegative) {
-      formattedValue = formattedValue.replace(this.currencyFormat.negativePrefix, this.currencyFormat.prefix);
-    }
-    if (this.focus && this.options.distractionFree.hideCurrencySymbol) {
-      formattedValue = formattedValue
-        .replace(this.currencyFormat.negativePrefix, this.currencyFormat.minusSymbol)
-        .replace(this.currencyFormat.prefix, '')
-        .replace(this.currencyFormat.suffix, '');
-    }
-    this.el.value = formattedValue;
-    this.numberValue = this.currencyFormat.parse(formattedValue);
-  } else {
-    this.el.value = this.numberValue = null;
-  }
-  this.formattedValue = this.el.value;
-};
-NumberInput.prototype.format = function format (value) {
-  this.updateInputValue(value);
-  this.callbackFns.onInput(this.getValue());
-};
-NumberInput.prototype.addEventListener = function addEventListener () {
-    var this$1 = this;
-  this.el.addEventListener('input', function () {
-    var ref = this$1.el;
-      var value = ref.value;
-      var selectionStart = ref.selectionStart;
-    this$1.format(value);
-    if (this$1.focus) {
-      this$1.setCaretPosition(getCaretPositionAfterFormat(this$1.formattedValue, value, selectionStart, this$1.currencyFormat, this$1.options));
-    }
-  }, { capture: true });
-  this.el.addEventListener('focus', function () {
-    this$1.focus = true;
-    var ref = this$1.options.distractionFree;
-      var hideCurrencySymbol = ref.hideCurrencySymbol;
-      var hideGroupingSymbol = ref.hideGroupingSymbol;
-      var hideNegligibleDecimalDigits = ref.hideNegligibleDecimalDigits;
-    if (hideCurrencySymbol || hideGroupingSymbol || hideNegligibleDecimalDigits) {
-      setTimeout(function () {
-        var ref = this$1.el;
-          var value = ref.value;
-          var selectionStart = ref.selectionStart;
-          var selectionEnd = ref.selectionEnd;
-        if (value) {
-          this$1.updateInputValue(this$1.el.value, hideNegligibleDecimalDigits);
-        }
-        if (Math.abs(selectionStart - selectionEnd) > 0) {
-          this$1.setCaretPosition(0, this$1.el.value.length);
-        } else {
-          this$1.setCaretPosition(getDistractionFreeCaretPosition(this$1.currencyFormat, this$1.options, value, selectionStart));
-        }
-      });
-    }
-  });
-  this.el.addEventListener('keypress', function (e) {
-    if (DECIMAL_SYMBOLS.includes(e.key)) {
-      this$1.decimalSymbolInsertedAt = this$1.el.selectionStart;
-    }
-  });
-  this.el.addEventListener('blur', function () {
-    this$1.focus = false;
-    if (this$1.numberValue != null) {
-      this$1.applyFixedFractionFormat(this$1.numberValue);
-    }
-  });
-  this.el.addEventListener('change', function () {
-    this$1.callbackFns.onChange(this$1.getValue());
-  });
-};
-NumberInput.prototype.setCaretPosition = function setCaretPosition (start, end) {
-  if ( end === void 0 ) end = start;
- this.el.setSelectionRange(start, end); };
-
-var directive = {
-  bind: function bind (el, ref, vnode) {
-    var optionsFromBinding = ref.value;
-    var inputElement = el.tagName.toLowerCase() === 'input' ? el : el.querySelector('input');
-    if (!inputElement) {
-      throw new Error('No input element found')
-    }
-    var options = Object.assign({}, DEFAULT_OPTIONS,
-      (vnode.context.$ci || {}).globalOptions,
-      optionsFromBinding);
-    var listeners = (vnode.data && vnode.data.on) || (vnode.componentOptions && vnode.componentOptions.listeners) || {};
-    var emit = function (event, data) {
-      if (listeners[event]) {
-        listeners[event](vnode.componentOptions ? data : { target: { value: data } });
-      }
-    };
-    el.$ci = new NumberInput(inputElement, options, {
-      onChange: function () { emit('change', inputElement.value); },
-      onInput: function () { emit('input', inputElement.value); }
-    });
-  },
-  componentUpdated: function componentUpdated (el, ref) {
-    var value = ref.value;
-    var oldValue = ref.oldValue;
-    if (!equal(value, oldValue)) {
-      el.$ci.setOptions(value);
-    }
-  }
-};
-
-var component = {
-  render: function render (h) {
-    var this$1 = this;
-    return h('input', {
-      directives: [{
-        name: 'currency',
-        value: this.options
-      }],
-      on: Object.assign({}, this.$listeners,
-        {change: function () {
-          this$1.$emit('change', getValue(this$1.$el));
-        },
-        input: function () {
-          var numberValue = getValue(this$1.$el);
-          if (this$1.value !== numberValue) {
-            this$1.$emit('input', numberValue);
-          }
-        }})
-    })
-  },
-  directives: {
-    currency: directive
-  },
-  name: 'CurrencyInput',
-  props: {
-    value: {
-      type: Number,
-      default: null
-    },
-    locale: {
-      type: String,
-      default: undefined
-    },
-    currency: {
-      type: [String, Object],
-      default: undefined
-    },
-    distractionFree: {
-      type: [Boolean, Object],
-      default: undefined
-    },
-    precision: {
-      type: [Number, Object],
-      default: undefined
-    },
-    autoDecimalMode: {
-      type: Boolean,
-      default: undefined
-    },
-    valueAsInteger: {
-      type: Boolean,
-      default: undefined
-    },
-    valueRange: {
-      type: Object,
-      default: undefined
-    },
-    allowNegative: {
-      type: Boolean,
-      default: undefined
-    }
-  },
-  mounted: function mounted () {
-    this.setValue(this.value);
-  },
-  computed: {
-    options: function options () {
-      var this$1 = this;
-      var options = Object.assign({}, DEFAULT_OPTIONS,
-        (this.$ci || {}).globalOptions);
-      Object.keys(DEFAULT_OPTIONS).forEach(function (key) {
-        if (this$1[key] !== undefined) {
-          options[key] = this$1[key];
-        }
-      });
-      return options
-    }
-  },
-  watch: {
-    value: 'setValue'
-  },
-  methods: {
-    setValue: function setValue$1 (value) {
-      setValue(this.$el, value);
-    }
-  }
-};
-
-var plugin = {
-  install: function install (Vue, ref) {
-    if ( ref === void 0 ) ref = {};
-    var componentName = ref.componentName; if ( componentName === void 0 ) componentName = component.name;
-    var directiveName = ref.directiveName; if ( directiveName === void 0 ) directiveName = 'currency';
-    var globalOptions = ref.globalOptions; if ( globalOptions === void 0 ) globalOptions = {};
-    Vue.component(componentName, component);
-    Vue.directive(directiveName, directive);
-    Vue.prototype.$ci = {
-      parse: function (formattedValue, options) { return parse(formattedValue, Object.assign({}, globalOptions, options)); },
-      getValue: getValue,
-      setValue: setValue,
-      globalOptions: globalOptions
-    };
-  }
-};
-
-if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.use(plugin);
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (plugin);
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=template&id=4b74e8c6&":
-/*!**************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=template&id=4b74e8c6& ***!
-  \**************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Product/PinjamanDana/index.vue?vue&type=template&id=e51bedec&":
+/*!************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Product/PinjamanDana/index.vue?vue&type=template&id=e51bedec& ***!
+  \************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2479,25 +1268,71 @@ var render = function() {
           "div",
           {
             staticClass:
-              "jumbotron jumbotron-sm jumbotron-fluid mb-0 pb-1 bg-secondary position-relative"
+              "jumbotron jumbotron-lg jumbotron-fluid overlay overlay-black mb-0",
+            staticStyle: {
+              "background-size": "cover",
+              "background-image": "url(/img/demo/3.jpg)"
+            },
+            attrs: { "data-aos": "fade-up" }
           },
           [
-            _c("div", { staticClass: "container-fluid text-white h-100" }, [
+            _c(
+              "div",
+              { staticClass: "container text-center text-white h-100" },
+              [
+                _c("h3", { attrs: { "data-aos": "zoom-out-down" } }, [
+                  _vm._v("Pembiayaan")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "h1",
+                  {
+                    staticClass: "display-3",
+                    attrs: { "data-aos": "zoom-out-down" }
+                  },
+                  [_c("strong", [_vm._v("Pinjaman Dana")])]
+                ),
+                _vm._v(" "),
+                _c(
+                  "p",
+                  {
+                    staticClass: "text-white",
+                    attrs: { "data-aos": "zoom-out" }
+                  },
+                  [
+                    _vm._v(
+                      "\n          Pembiayaan untuk memenuhi berbagai kebutuhan, baik bersifat\n          konsumtif (biaya pendidikan, kesehatan dan kecantikan, pernikahan,\n          renovasi rumah, wisata, dan lain-lain) maupun produktif (modal usaha\n          dan investasi), dengan jangka waktu pembiayaan mulai 1 hingga 4\n          tahun dan suku bunga tetap.\n        "
+                    )
+                  ]
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c("p", { staticClass: "bottom-align-text-absolute" }, [
+              _c("span", { staticClass: "d-block text-center text-white" })
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "jumbotron p-5 jumbotron-fluid bg-warning",
+            attrs: { "data-aos": "fade-up" }
+          },
+          [
+            _c("div", { staticClass: "container h-100" }, [
               _c(
                 "div",
                 {
                   staticClass:
-                    "d-lg-flex align-items-center justify-content-between text-center pl-lg-5"
+                    "row justify-content-between align-items-center text-md-center text-lg-left"
                 },
                 [
-                  _c("div", { staticClass: "col pt-2 pb-4" }, [
-                    _c("h1", { staticClass: "display-3" }, [
-                      _vm._v("Kredit Simulasi")
-                    ]),
-                    _vm._v(" "),
-                    _c("h5", { staticClass: "font-weight-light mb-4" }, [
+                  _c("div", { staticClass: "col-lg-9" }, [
+                    _c("h5", { staticClass: "font-weight-light text-dark" }, [
                       _vm._v(
-                        "\n              Gunakan kalkulator pintar untuk membantu perhitungan kredit\n              Anda.\n            "
+                        "\n              Simulasi Budget Total DP & Angsuran\n            "
                       )
                     ])
                   ]),
@@ -2506,10 +1341,18 @@ var render = function() {
                     "div",
                     {
                       staticClass:
-                        "col align-self-bottom justify-content-center"
+                        "col-lg-3 text-md-center text-lg-right mt-4 mb-4"
                     },
-                    [_c("CreditSVG")],
-                    1
+                    [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "btn btn-lg btn-outline-dark",
+                          attrs: { href: "#" }
+                        },
+                        [_vm._v("Klik di sini")]
+                      )
+                    ]
                   )
                 ]
               )
@@ -2519,652 +1362,98 @@ var render = function() {
         _vm._v(" "),
         _c(
           "div",
-          { staticClass: "container mt-4" },
+          { staticClass: "container mt-4", attrs: { "data-aos": "fade-down" } },
           [
-            _c(
-              "form-wizard",
-              {
-                attrs: {
-                  title: "Form Perhitungan Kredit",
-                  subtitle: "",
-                  validateOnBack: false
-                },
-                on: { "on-validate": _vm.handleValidation }
-              },
-              [
-                _c(
-                  "tab-content",
-                  {
-                    attrs: {
-                      title: "Pilih Kredit yang diinginkan",
-                      icon: "fa fa-car"
-                    }
-                  },
-                  [
-                    _c(
-                      "div",
-                      { staticClass: "container mt-4" },
-                      [
-                        _c("h4", { staticClass: "text-secondary" }, [
-                          _c(
-                            "div",
-                            {
-                              staticClass:
-                                "iconbox iconsmall rounded-circle mr-2"
-                            },
-                            [_c("i", { staticClass: "fas fa-coins" })]
-                          ),
-                          _vm._v(
-                            "\n              Perhitungan Kredit yang di inginkan\n            "
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c(
-                          "b-container",
-                          { staticClass: "bv-example-row mb-4 mt-4" },
-                          [
-                            _c(
-                              "b-card-group",
-                              { attrs: { deck: "" } },
-                              [
-                                _c(
-                                  "b-link",
-                                  {
-                                    staticClass: "card text-white",
-                                    class:
-                                      _vm.jenisSimulasi == 1
-                                        ? "bg-primary overlay shadow-lg"
-                                        : "bg-dark",
-                                    attrs: { href: "#" },
-                                    on: {
-                                      click: function($event) {
-                                        $event.preventDefault()
-                                        return _vm.pilihJenisSimulasi(1)
-                                      }
-                                    }
-                                  },
-                                  [
-                                    _c("b-card-body", [
-                                      _c("h4", [
-                                        _vm._v(
-                                          "\n                      Refinance\n                      "
-                                        ),
-                                        _c(
-                                          "span",
-                                          { staticClass: "float-right" },
-                                          [
-                                            _c("i", {
-                                              staticClass: "fas fa-coins"
-                                            })
-                                          ]
-                                        )
-                                      ])
-                                    ])
-                                  ],
-                                  1
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "b-link",
-                                  {
-                                    staticClass: "card text-white",
-                                    class:
-                                      _vm.jenisSimulasi == 2
-                                        ? "bg-primary overlay shadow-lg"
-                                        : "bg-dark",
-                                    attrs: { href: "#" },
-                                    on: {
-                                      click: function($event) {
-                                        $event.preventDefault()
-                                        return _vm.pilihJenisSimulasi(2)
-                                      }
-                                    }
-                                  },
-                                  [
-                                    _c("b-card-body", [
-                                      _c("h4", [
-                                        _vm._v(
-                                          "\n                      Used Car\n                      "
-                                        ),
-                                        _c(
-                                          "span",
-                                          { staticClass: "float-right" },
-                                          [
-                                            _c("i", {
-                                              staticClass: "fas fa-car"
-                                            })
-                                          ]
-                                        )
-                                      ])
-                                    ])
-                                  ],
-                                  1
-                                )
-                              ],
-                              1
-                            )
-                          ],
-                          1
-                        )
-                      ],
-                      1
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "tab-content",
-                  {
-                    attrs: {
-                      title: "Data Simulasi",
-                      icon: "fas fa-file-alt",
-                      "before-change": _vm.validateSimulasi
-                    }
-                  },
-                  [
-                    _c("b-form", { staticClass: "mt-4" }, [
-                      _vm.jenisSimulasi == 1
-                        ? _c(
-                            "div",
-                            [
-                              _c(
-                                "b-form-group",
-                                {
-                                  attrs: {
-                                    id: "input-group-2",
-                                    label: "TJH:",
-                                    "label-for": "input-2"
-                                  }
-                                },
-                                [
-                                  _c("b-form-select", {
-                                    attrs: {
-                                      id: "input-2",
-                                      options: _vm.itemtjh,
-                                      required: ""
-                                    },
-                                    model: {
-                                      value: _vm.formbudget.tjh,
-                                      callback: function($$v) {
-                                        _vm.$set(_vm.formbudget, "tjh", $$v)
-                                      },
-                                      expression: "formbudget.tjh"
-                                    }
-                                  })
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "b-form-group",
-                                {
-                                  attrs: {
-                                    id: "input-group-3",
-                                    label: "Jenis Simulasi Budget:",
-                                    "label-for": "input-3"
-                                  }
-                                },
-                                [
-                                  _c("b-form-select", {
-                                    attrs: {
-                                      id: "input-3",
-                                      options: _vm.itembudget,
-                                      required: ""
-                                    },
-                                    model: {
-                                      value: _vm.formbudget.jenisBudget,
-                                      callback: function($$v) {
-                                        _vm.$set(
-                                          _vm.formbudget,
-                                          "jenisBudget",
-                                          $$v
-                                        )
-                                      },
-                                      expression: "formbudget.jenisBudget"
-                                    }
-                                  })
-                                ],
-                                1
-                              )
-                            ],
-                            1
-                          )
-                        : _vm.jenisSimulasi == 2
-                        ? _c(
-                            "div",
-                            [
-                              _c(
-                                "b-form-group",
-                                {
-                                  attrs: {
-                                    label: "Harga Kendaraan:",
-                                    "label-for": "input-harga",
-                                    "invalid-feedback": _vm.errormsg.harga,
-                                    state: _vm.errormsg.harga && false
-                                  }
-                                },
-                                [
-                                  _c(
-                                    "b-input-group",
-                                    { attrs: { size: "lg", prepend: "IDR" } },
-                                    [
-                                      _c("b-form-input", {
-                                        directives: [
-                                          {
-                                            name: "currency",
-                                            rawName: "v-currency",
-                                            value: _vm.optioncurrency,
-                                            expression: "optioncurrency"
-                                          }
-                                        ],
-                                        attrs: {
-                                          id: "input-harga",
-                                          required: "",
-                                          state: _vm.errormsg.harga && false,
-                                          placeholder: "Masukan Harga Kendaraan"
-                                        },
-                                        model: {
-                                          value: _vm.formusedcar.harga,
-                                          callback: function($$v) {
-                                            _vm.$set(
-                                              _vm.formusedcar,
-                                              "harga",
-                                              $$v
-                                            )
-                                          },
-                                          expression: "formusedcar.harga"
-                                        }
-                                      })
-                                    ],
-                                    1
-                                  )
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "b-form-group",
-                                {
-                                  attrs: {
-                                    label: "Uang Muka:",
-                                    "label-for": "input-uang-muka"
-                                  }
-                                },
-                                [
-                                  _c(
-                                    "b-input-group",
-                                    {
-                                      attrs: {
-                                        size: "lg",
-                                        prepend: "DP Persen",
-                                        append: _vm._f("numberIdr")(
-                                          _vm.formusedcar.dprupiah
-                                        )
-                                      }
-                                    },
-                                    [
-                                      _c(
-                                        "b-input-group-append",
-                                        [
-                                          _c("b-form-input", {
-                                            attrs: {
-                                              size: "lg",
-                                              type: "number",
-                                              min: "30",
-                                              max: "100",
-                                              id: "input-dp-percen",
-                                              required: "",
-                                              placeholder: "Masukan Uang Muka"
-                                            },
-                                            on: {
-                                              blur: function($event) {
-                                                return _vm.checkdp($event)
-                                              }
-                                            },
-                                            model: {
-                                              value: _vm.formusedcar.dp,
-                                              callback: function($$v) {
-                                                _vm.$set(
-                                                  _vm.formusedcar,
-                                                  "dp",
-                                                  $$v
-                                                )
-                                              },
-                                              expression: "formusedcar.dp"
-                                            }
-                                          })
-                                        ],
-                                        1
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "b-input-group-append",
-                                        [
-                                          _c("b-input-group-text", [
-                                            _c("strong", [_vm._v("%")])
-                                          ])
-                                        ],
-                                        1
-                                      )
-                                    ],
-                                    1
-                                  )
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "b-form-group",
-                                {
-                                  attrs: {
-                                    label: "Asuransi:",
-                                    "label-for": "input-asuransi",
-                                    "invalid-feedback": _vm.errormsg.asuransi,
-                                    state: _vm.errormsg.asuransi && false
-                                  }
-                                },
-                                [
-                                  _c("b-form-select", {
-                                    attrs: {
-                                      size: "lg",
-                                      state: _vm.errormsg.asuransi && false,
-                                      required: "",
-                                      options: _vm.optasuransi
-                                    },
-                                    model: {
-                                      value: _vm.formusedcar.asuransi,
-                                      callback: function($$v) {
-                                        _vm.$set(
-                                          _vm.formusedcar,
-                                          "asuransi",
-                                          $$v
-                                        )
-                                      },
-                                      expression: "formusedcar.asuransi"
-                                    }
-                                  })
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "b-form-group",
-                                {
-                                  attrs: {
-                                    label: "Tahun kendaraan:",
-                                    "label-for": "input-tahun"
-                                  }
-                                },
-                                [
-                                  _c("datepicker", {
-                                    attrs: {
-                                      value: _vm.cfgdatepicker.default,
-                                      format: _vm.cfgdatepicker.format,
-                                      "minimum-view": "year",
-                                      "disabled-dates":
-                                        _vm.cfgdatepicker.disabledDates,
-                                      name: "datepicker",
-                                      "aria-label": "Large",
-                                      "aria-describedby":
-                                        "inputGroup-sizing-lg",
-                                      "input-class": "form-control"
-                                    },
-                                    model: {
-                                      value: _vm.formusedcar.tahun,
-                                      callback: function($$v) {
-                                        _vm.$set(_vm.formusedcar, "tahun", $$v)
-                                      },
-                                      expression: "formusedcar.tahun"
-                                    }
-                                  })
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "b-form-group",
-                                {
-                                  attrs: {
-                                    label: "Tenor:",
-                                    "label-for": "input-harga",
-                                    "invalid-feedback": _vm.errormsg.tenor,
-                                    state: _vm.errormsg.tenor && false
-                                  }
-                                },
-                                [
-                                  _c("b-form-select", {
-                                    attrs: {
-                                      size: "lg",
-                                      state: _vm.errormsg.tenor && false,
-                                      required: "",
-                                      options: _vm.opttenor
-                                    },
-                                    model: {
-                                      value: _vm.formusedcar.tenor,
-                                      callback: function($$v) {
-                                        _vm.$set(_vm.formusedcar, "tenor", $$v)
-                                      },
-                                      expression: "formusedcar.tenor"
-                                    }
-                                  })
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "b-form-group",
-                                {
-                                  attrs: {
-                                    label: "Wilayah:",
-                                    "label-for": "input-harga",
-                                    "invalid-feedback": _vm.errormsg.wilayah,
-                                    state: _vm.errormsg.wilayah && false
-                                  }
-                                },
-                                [
-                                  _c("b-form-select", {
-                                    attrs: {
-                                      size: "lg",
-                                      state: _vm.errormsg.wilayah && false,
-                                      required: "",
-                                      options: _vm.optwilayah
-                                    },
-                                    model: {
-                                      value: _vm.formusedcar.wilayah,
-                                      callback: function($$v) {
-                                        _vm.$set(
-                                          _vm.formusedcar,
-                                          "wilayah",
-                                          $$v
-                                        )
-                                      },
-                                      expression: "formusedcar.wilayah"
-                                    }
-                                  })
-                                ],
-                                1
-                              )
-                            ],
-                            1
-                          )
-                        : _vm._e()
-                    ])
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "tab-content",
-                  {
-                    attrs: {
-                      title: "Rangkuman Simulasi Kredit",
-                      icon: "fas fa-money-check"
-                    }
-                  },
-                  [
-                    _c("div", { staticClass: "container" }, [
-                      _c(
-                        "div",
-                        { staticClass: "row row-grid align-items-center" },
-                        [
-                          _c("div", { staticClass: "col-md-12 order-md-1" }, [
-                            _c("div", { staticClass: "pr-md-5" }, [
-                              _c("h3", [_vm._v("Rangkuman Simulasi Kredit")]),
-                              _vm._v(" "),
-                              _c("p", { staticClass: "text-muted mt-3" }, [
-                                _vm._v(
-                                  "\n                                Minimal DP Kondisi Kendaraan Used adalah 30%\n                          "
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c(
-                                "table",
-                                { staticClass: "table table-borderless" },
-                                [
-                                  _c("tbody", [
-                                    _c("tr", [
-                                      _c("td", [
-                                        _c("h5", { staticClass: "mb-0" }, [
-                                          _vm._v("Tenor")
-                                        ])
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("td", [
-                                        _c("h5", { staticClass: "mb-0" }, [
-                                          _vm._v(
-                                            _vm._s(_vm.formusedcar.tenor) +
-                                              " Bulan"
-                                          )
-                                        ])
-                                      ])
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("tr", [
-                                      _c("td", [
-                                        _c("h5", { staticClass: "mb-0" }, [
-                                          _vm._v("Dp")
-                                        ])
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("td", [
-                                        _c("h5", { staticClass: "mb-0" }, [
-                                          _vm._v(
-                                            _vm._s(_vm.formusedcar.dp) + " %"
-                                          )
-                                        ])
-                                      ])
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("tr", [
-                                      _c("td", [
-                                        _c("h5", { staticClass: "mb-0" }, [
-                                          _c("strong", [_vm._v("Angsuran")])
-                                        ])
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("td", [
-                                        _c("h5", { staticClass: "mb-0" }, [
-                                          _c("strong", [
-                                            _vm._v(
-                                              _vm._s(
-                                                _vm._f("numberIdr")(
-                                                  _vm.formusedcar.angsuran
-                                                )
-                                              )
-                                            )
-                                          ])
-                                        ])
-                                      ])
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("tr", [
-                                      _c("td", [
-                                        _c("h5", { staticClass: "mb-0" }, [
-                                          _c("strong", [
-                                            _vm._v("Total Bayar Pertama")
-                                          ])
-                                        ])
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("td", [
-                                        _c("h5", { staticClass: "mb-0" }, [
-                                          _c("strong", [
-                                            _vm._v(
-                                              _vm._s(
-                                                _vm._f("numberIdr")(
-                                                  _vm.formusedcar.totalbayar1
-                                                )
-                                              )
-                                            )
-                                          ])
-                                        ])
-                                      ])
-                                    ])
-                                  ])
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c("p", { staticClass: "text-muted" }, [
-                                _vm._v(
-                                  "Rincian simulasi diatas bersifat estimasi dan tidak mengikat dan dapat berubah sewaktu-waktu mengikuti kebijakan yang berlaku. Perhitungan diatas sudah termasuk biaya administrasi, fiducia, asuransi kendaraan serta credit shield. Untuk perhitungan detail, hubungi cabang Sinarmas Hana Finance terdekat."
-                                )
-                              ])
-                            ])
-                          ])
-                        ]
-                      )
-                    ])
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "b-button",
-                  {
-                    attrs: { slot: "prev", variant: "secondary" },
-                    slot: "prev"
-                  },
-                  [_vm._v("Prev")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "b-button",
-                  {
-                    attrs: {
-                      slot: "next",
-                      variant: "primary",
-                      disabled: !_vm.jenisSimulasi
-                    },
-                    slot: "next"
-                  },
-                  [_vm._v("Next")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "b-button",
-                  {
-                    directives: [
-                      {
-                        name: "b-modal",
-                        rawName: "v-b-modal.modal-pengajuan",
-                        modifiers: { "modal-pengajuan": true }
-                      }
-                    ],
-                    staticClass: "btn-lg",
-                    attrs: { slot: "finish", variant: "danger" },
-                    slot: "finish"
-                  },
-                  [_vm._v("Ajukan Sekarang")]
+            _c("div", { staticClass: "pb-4 pt-4 text-center" }, [
+              _c("h2", { staticClass: "text-secondary" }, [
+                _vm._v("Pinjaman Dana Sinarmas Hana Finance")
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "text-muted" }, [
+                _vm._v(
+                  "\n          Sinarmas Hana Finance sebagai salah satu perusahaan pembiayaan di\n          Indonesia menawarkan kemudahan bagi para pelanggannya. Kami membantu\n          mewujudkan mimpi Anda dengan membantu memenuhi kebutuhan biaya\n          pendidikan, kesehatan dan kecantikan, pernikahan, renovasi rumah,\n          wisata, modal usaha, investasi, dan lain-lain . Sinarmas Hana\n          Finance akan selalu hadir dengan menyediakan produk dan layanan yang\n          beragam sesuai siklus kehidupan konsumen dan memberikan pengalaman\n          yang menguntungkan untuk pelanggannya.\n        "
                 )
-              ],
-              1
-            )
-          ],
-          1
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", [
+              _c(
+                "div",
+                {
+                  staticClass: "pb-4 pt-4 text-center",
+                  attrs: { "data-aos": "fade" }
+                },
+                [
+                  _c("h2", { staticClass: "m-auto text-secondary" }, [
+                    _vm._v("Persyaratan")
+                  ])
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "card-deck card-pricing text-center mb-4",
+                  attrs: { "data-aos": "fade-up" }
+                },
+                _vm._l(_vm.reqItems, function(item) {
+                  return _c(
+                    "div",
+                    { key: item.title, staticClass: "card border-0 shadow" },
+                    [
+                      _c("CardRequirement", {
+                        attrs: {
+                          title: item.title,
+                          titleColor: item.titleColor,
+                          background: item.background,
+                          btnBackground: item.btnBackground,
+                          reqLists: item.reqLists
+                        }
+                      })
+                    ],
+                    1
+                  )
+                }),
+                0
+              )
+            ])
+          ]
         ),
         _vm._v(" "),
-        _c("modal-form-pengajuan", { attrs: { databranch: _vm.databranch } }),
+        _c("section", { staticClass: "pt-5 pb-5 bg-white" }, [
+          _c("div", { staticClass: "container" }, [
+            _c("div", { staticClass: "row row-grid align-items-center" }, [
+              _c(
+                "div",
+                {
+                  staticClass: "col text-center",
+                  attrs: { "data-aos": "fade-down" }
+                },
+                [
+                  _c("h3", [_c("strong", [_vm._v("Ajukan sekarang")])]),
+                  _vm._v(" "),
+                  _c(
+                    "b-button",
+                    {
+                      directives: [
+                        {
+                          name: "b-modal",
+                          rawName: "v-b-modal.modal-pengajuan",
+                          modifiers: { "modal-pengajuan": true }
+                        }
+                      ],
+                      staticClass: "btn text-white bg-primary"
+                    },
+                    [_vm._v("Pengajuan Online")]
+                  )
+                ],
+                1
+              )
+            ])
+          ])
+        ]),
         _vm._v(" "),
-        _c("flash-msg")
+        _c("modal-form-pengajuan")
       ],
       1
     )
@@ -3507,10 +1796,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Shared/img/creditSVG.vue?vue&type=template&id=1501075a&":
-/*!************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Shared/img/creditSVG.vue?vue&type=template&id=1501075a& ***!
-  \************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Shared/img/vehicleSVG.vue?vue&type=template&id=622c84c0&":
+/*!*************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Shared/img/vehicleSVG.vue?vue&type=template&id=622c84c0& ***!
+  \*************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -3526,132 +1815,1570 @@ var render = function() {
     "svg",
     {
       attrs: {
-        id: "a139742c-031f-4297-9910-0b661ecf4262",
+        id: "ec20663a-47a1-42a3-991c-bc307f281f8f",
         "data-name": "Layer 1",
         xmlns: "http://www.w3.org/2000/svg",
         width: "500",
-        height: "600",
-        viewBox: "0 0 700 600"
+        height: "400",
+        viewBox: "0 0 1114 593.54145"
       }
     },
     [
-      _c("title", [_vm._v("online_payments")]),
+      _c("title", [_vm._v("Vehicle")]),
       _vm._v(" "),
-      _c("path", {
+      _c("ellipse", {
         attrs: {
-          d:
-            "M214.1947,574.21548l-5.333-21.03429A273.135,273.135,0,0,0,179.8838,542.7848l-.67337,9.77549L176.48,541.79069c-12.212-3.48717-20.51983-5.02321-20.51983-5.02321s11.22195,42.67366,34.7592,75.29821l27.426,4.81755-21.30654,3.072a110.50245,110.50245,0,0,0,9.53073,10.10012c34.24,31.78207,72.377,46.36387,85.18129,32.5693s-4.57282-50.7417-38.81286-82.52378c-10.61474-9.85276-23.94912-17.75951-37.29675-23.98229Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#e6e6e6"
+          cx: "557",
+          cy: "419.76597",
+          rx: "557",
+          ry: "173.77547",
+          fill: "#00bfa6",
+          opacity: "0.1"
+        }
+      }),
+      _vm._v(" "),
+      _c("g", { attrs: { opacity: "0.8" } }, [
+        _c("path", {
+          attrs: {
+            d:
+              "M447.792,188.61069c9.4427,13.24168,16.687,51.80564,18.70621,63.42625l16.87916-.34435c-.87347-9.98352-20.50928-50.59144-25.96792-61.73352C454.372,189.48286,451.12986,189.01776,447.792,188.61069Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#65617d"
+          }
+        }),
+        _vm._v(" "),
+        _c("rect", {
+          attrs: {
+            x: "235.50336",
+            y: "181.59265",
+            width: "10.53355",
+            height: "7.47767",
+            transform: "translate(7.92518 269.32977) rotate(-88.91801)",
+            fill: "#dce0ed"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M237.13142,179.99505l-.06476,3.42915a5.71053,5.71053,0,0,0,1.62072.25l5.85242.06065.068-3.5986Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M248.2712,153.36412l-7.059-.13332a8.47282,8.47282,0,0,0-7.9484,5.13905c-2.16363,5.0498-4.06611,13.10879.38065,21.26595a5.83528,5.83528,0,0,0,5.06083,3.04224l9.01053.093Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#dce0ed"
+          }
+        }),
+        _vm._v(" "),
+        _c("ellipse", {
+          attrs: {
+            cx: "247.9935",
+            cy: "168.06759",
+            rx: "14.70609",
+            ry: "7.56076",
+            transform: "translate(32.27297 259.61394) rotate(-88.91801)",
+            fill: "#f0f0f4"
+          }
+        }),
+        _vm._v(" "),
+        _c("rect", {
+          attrs: {
+            x: "302.58376",
+            y: "182.31618",
+            width: "9.22246",
+            height: "7.47767",
+            transform: "translate(72.37232 336.45264) rotate(-88.91801)",
+            fill: "#dce0ed"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M303.5439,181.374l-.05536,2.93072a5.71024,5.71024,0,0,0,1.62072.25l5.85242.06065.05856-3.10017Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M314.68367,154.74307l-7.059-.13332a8.47283,8.47283,0,0,0-7.9484,5.13906c-2.16363,5.04979-4.06611,13.10879.38065,21.26594a5.83528,5.83528,0,0,0,5.06083,3.04224l9.01053.093Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#dce0ed"
+          }
+        }),
+        _vm._v(" "),
+        _c("ellipse", {
+          attrs: {
+            cx: "314.40597",
+            cy: "169.44654",
+            rx: "14.70609",
+            ry: "7.56076",
+            transform:
+              "matrix(0.01888, -0.99982, 0.99982, 0.01888, 96.05265, 327.36749)",
+            fill: "#f0f0f4"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M312.69581,160.082s2.78.49882,1.26052,4.15221a25.43232,25.43232,0,0,0-1.77841,5.54533s-2.81585,1.39734-2.61373-3.39672S312.69581,160.082,312.69581,160.082Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#dce0ed"
+          }
+        }),
+        _vm._v(" "),
+        _c("ellipse", {
+          attrs: {
+            cx: "592.05659",
+            cy: "375.54331",
+            rx: "48.35562",
+            ry: "44.11827",
+            transform: "translate(162.40031 807.17359) rotate(-88.91801)",
+            fill: "#636780"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M576.38435,329.9c23.05422,1.98855,40.9417,23.34113,40.45648,49.03256-.39112,20.70876-12.60527,38.14911-29.43239,44.721C564.3542,421.665,546.46678,400.31241,546.952,374.621,547.34312,353.91225,559.55724,336.47189,576.38435,329.9Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("ellipse", {
+          attrs: {
+            cx: "248.81146",
+            cy: "263.35728",
+            rx: "46.69392",
+            ry: "35.80975",
+            transform: "translate(-62.19722 353.92207) rotate(-88.91801)",
+            fill: "#636780"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M259.66308,218.81621c14.74153,5.97106,25.24563,24.07518,24.84516,45.27929-.428,22.65958-13.1659,41.31223-29.668,45.24689-14.74153-5.97106-25.24563-24.07515-24.84516-45.27926C230.42308,241.40352,243.161,222.75087,259.66308,218.81621Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M383.49079,255.9289,383.14628,238.97s3.46089-7.24745,6.79625-7.84925,10.9857-.87282,10.9857-.87282,5.52138,24.4526,1.39593,31.68749S383.49079,255.9289,383.49079,255.9289Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#65617d"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M383.49079,255.9289,383.14628,238.97s3.46089-7.24745,6.79625-7.84925,10.9857-.87282,10.9857-.87282,5.52138,24.4526,1.39593,31.68749S383.49079,255.9289,383.49079,255.9289Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M444.8313,255.25921s2.50368-23.45907-10.404-24.12579c-1.66083-.08579-3.32174-.15712-4.97373-.34862-8.93451-1.0357-33.30816-3.38007-30.48934,2.25142,0,0,5.429,20.54515,1.34432,25.62021Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#65617d"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M261.0042,295.37334l-17.3296.1713s-2.38808-31.95553-3.33785-34.46647-1.22228-14.4825,2.05041-16.16579,14.1534-3.59685,14.1534-3.59685l7.63117,18.343.31238,16.45971Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#65617d"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M261.0042,295.37334l-17.3296.1713s-2.38808-31.95553-3.33785-34.46647-1.22228-14.4825,2.05041-16.16579,14.1534-3.59685,14.1534-3.59685l7.63117,18.343.31238,16.45971Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M303.87189,243.20666l.14432-3.551a2.04961,2.04961,0,0,0-2.096-2.13228c-8.59156.20016-39.85607,1.1064-45.3796,3.79213,0,0,5.14092,44.59719-1.66322,55.06394l1.56984,35.67959,76.61614-4.28689Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#65617d"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M310.914,187.14239c-2.11933-.24943-4.642-.52644-7.46392-.79912l-.08029,4.25156,7.47634.1412Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M236.94268,189.98842l-.01016.53831,7.47634.1412.06109-3.23476A31.93775,31.93775,0,0,0,236.94268,189.98842Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("polygon", {
+          attrs: {
+            points:
+              "154.434 142.065 165.73 142.443 189.878 100.458 193.909 93.449 191.257 75.45 188.878 79.753 154.434 142.065",
+            fill: "#dce0ed"
+          }
+        }),
+        _vm._v(" "),
+        _c("polygon", {
+          attrs: {
+            points:
+              "257.596 91.825 262.115 98.891 276.376 80.353 282.903 71.86 279.178 66.64 276.185 70.133 257.596 91.825",
+            fill: "#dce0ed"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M319.18476,223.36238c-.02673.35847-.05362.72692-.0856,1.10027l.27648,9.11965,6.52754-8.49255-3.72566-5.22088Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("polygon", {
+          attrs: {
+            points:
+              "188.878 79.753 189.878 100.458 193.909 93.449 191.257 75.45 188.878 79.753",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M332.163,236.84368s6.36492-41.5649-13.82513-48.17882a4.59123,4.59123,0,0,0-.79492-.17933c-4.66286-.65248-48.13714-6.49859-70.87266-.956,0,0-15.495,2.03415-15.48578,10.34433l4.89456,101.64074,11.13144.21024-2.38742-67.19s-4.76425-29.34121,4.07888-31.16859,48.94583-4.394,62.9925-.13989c0,0,10.34466-2.13143,8.20317,23.25675l.40726,13.63611Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#dce0ed"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M298.03648,248.58106a6.42651,6.42651,0,0,1,2.725-5.68244c3.15986-2.30868,12.851-7.2363,12.851-7.2363l3.11043.30805,8.9077,23.35315L324.078,308.531l-17.21478,20.49144Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#65617d"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M298.03648,248.58106a6.42651,6.42651,0,0,1,2.725-5.68244c3.15986-2.30868,12.851-7.2363,12.851-7.2363l3.11043.30805,8.9077,23.35315L324.078,308.531l-17.21478,20.49144Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M364.18311,301.43549l.62162-50.51311s1.86553-19.57639-9.84113-20.12988c0,0-27.62919-.3206-39.70039,3.34911a2.6812,2.6812,0,0,0-1.58495,3.84343c2.31084,4.20466,6.13231,15.28988,7.54367,43.56759l-.57187,30.27918Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#65617d"
+          }
+        }),
+        _vm._v(" "),
+        _c("polygon", {
+          attrs: {
+            points:
+              "262.3 179.378 312.583 179.156 312.633 179.157 337.345 179.051 335.103 145.976 321.387 146.216 277.591 155.111 263.863 175.793 262.3 179.378",
+            fill: "#65617d"
+          }
+        }),
+        _vm._v(" "),
+        _c("polygon", {
+          attrs: {
+            points:
+              "262.3 179.378 312.583 179.156 312.633 179.157 337.345 179.051 335.103 145.976 321.387 146.216 277.591 155.111 263.863 175.793 262.3 179.378",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("polygon", {
+          attrs: {
+            points:
+              "262.3 179.378 312.583 179.156 313.828 157.042 277.591 155.111 263.863 175.793 262.3 179.378",
+            fill: "#65617d"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M355.63257,332.38665l24.71265-.10663-2.24228-33.07464s-7.95854,12.19006-21.27487,11.066Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#fff",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M177.844,355.75384c.818,9.48886,7.57493,8.12067,7.57493,8.12067l1.2582-.09093,12.472-.89625-.22072-14.71289a54.10713,54.10713,0,0,0-12.64439.519C181.59561,349.57222,177.47989,351.53877,177.844,355.75384Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#dce0ed"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M177.844,355.75384c.818,9.48886,7.57493,8.12067,7.57493,8.12067l1.2582-.09093a12.72462,12.72462,0,0,0,2.11805-7.075,11.96694,11.96694,0,0,0-2.5112-8.01508C181.59561,349.57222,177.47989,351.53877,177.844,355.75384Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M351.61824,262.72283c-.29027,15.3693,8.698,28.0028,20.07588,28.21769s20.8368-12.0702,21.12708-27.4395-8.698-28.0028-20.07591-28.21769S351.90852,247.35353,351.61824,262.72283Zm7.77412,1.975c.21056-11.14849,7.41051-20.05336,16.08156-19.88959s15.52963,9.33415,15.31907,20.48264-7.41052,20.05336-16.08156,19.8896S359.1818,275.84634,359.39236,264.69787Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#636780"
+          }
+        }),
+        _vm._v(" "),
+        _c("polygon", {
+          attrs: {
+            points:
+              "328.061 118.42 318.246 127.708 314.917 119.169 329.027 111.292 328.061 118.42",
+            fill: "#636780"
+          }
+        }),
+        _vm._v(" "),
+        _c("polygon", {
+          attrs: {
+            points:
+              "315.626 24.424 307.217 25.287 304.035 28.926 308.353 50.248 317.733 84.646 323.868 108.256 328.227 122.605 330.819 141.535 333.523 154.566 342.203 163.58 360.593 142.687 363.676 135.665 371.027 121.349 352.904 112.451 332.884 110.303 323.904 85.943 316.766 57.782 315.626 24.424",
+            fill: "#00bfa6"
+          }
+        }),
+        _vm._v(" "),
+        _c("polyline", {
+          attrs: {
+            points:
+              "483.428 128.833 492.655 221.083 354.702 212.66 371.505 167.771 398.414 150.994 337.587 150.843 337.732 125.583 362.421 120.731 412.006 117.679 449.253 116.72 484.588 129.022",
+            fill: "#65617d"
+          }
+        }),
+        _vm._v(" "),
+        _c("polyline", {
+          attrs: {
+            points:
+              "483.428 128.833 492.655 221.083 354.702 212.66 371.505 167.771 398.414 150.994 337.587 150.843 337.732 125.583 362.421 120.731 412.006 117.679 449.253 116.72 484.588 129.022",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M336.07335,370.2302c-.432,22.87216,6.77363,43.83688,27.90348,41.95549,26.60673-.06761,29.03584-17.99978,29.46781-40.872s-12.08954-40.1365-27.93218-40.43572S336.50533,347.358,336.07335,370.2302Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#636780"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M335.90667,370.26591c.33444-17.70793,8.30172-31.76108,19.23415-37.06671,13.85524,2.90687,24.24395,19.10356,23.84984,39.97084-.354,18.74393-2.053,34.16736-17.29707,39.16256C342.19821,412.66494,335.48946,392.35629,335.90667,370.26591Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("polygon", {
+          attrs: {
+            points:
+              "266.655 180.592 274.589 190.034 260.039 187.252 249.317 177.019 239.953 157.372 226.398 148.708 192.693 152.644 161.558 153.236 150.265 142.818 163.111 141.317 176.092 141.268 208.693 141.146 247.492 140.846 255.054 162.23 260.824 176.941 266.655 180.592",
+            fill: "#00bfa6"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M197.36226,369.58468c.64412,1.00937,22.34744,4.74493,22.34744,4.74493l59.9326,12.10113L382.957,389.8778l12.32121-10.07336,6.34849,1.25171.25831.04976L486.68045,397.82l1.3894-.17321,23.254-2.86651,121.45278-14.9777-1.02362-17.61-.60646-10.39232-1.25281-21.57815-1.05955-5.67416L618.067,323.3574l-5.03029-.5587-78.48-8.697L524.297,312.96561l-5.75179-.63714-56.013-8.70145-81.94346.44677.143-25.26138L350.217,178.516c-7.16434,1.02641-7.09088,5.84928-7.09088,5.84928L368.931,278.75406l-.75492,57.65888c-57.46788,4.70836-59.081-7.822-68.23685-3.78177L289.636,297.37l-96.36952-1.32149C189.35581,300.6266,197.36226,369.58468,197.36226,369.58468Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#65617d"
+          }
+        }),
+        _vm._v(" "),
+        _c("polygon", {
+          attrs: {
+            points:
+              "394.426 168.536 362.616 233.585 352.251 236.711 349.962 226.033 362.113 189.864 374.307 168.987 394.426 168.536",
+            fill: "#65617d"
+          }
+        }),
+        _vm._v(" "),
+        _c("polygon", {
+          attrs: {
+            points:
+              "394.426 168.536 362.616 233.585 352.251 236.711 349.962 226.033 362.113 189.864 374.307 168.987 394.426 168.536",
+            opacity: "0.15"
+          }
+        }),
+        _vm._v(" "),
+        _c("ellipse", {
+          attrs: {
+            cx: "455.95795",
+            cy: "394.41269",
+            rx: "62.81246",
+            ry: "55.37461",
+            transform:
+              "matrix(0.01888, -0.99982, 0.99982, 0.01888, 10.00564, 689.61229)",
+            fill: "#636780"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M437.32147,335.156c28.935,2.56395,51.36889,30.28516,50.7386,63.65753-.508,26.9-15.85314,49.56436-36.97923,58.11485-28.935-2.564-51.36884-30.2852-50.73855-63.65754C400.85034,366.37078,416.19539,343.70646,437.32147,335.156Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M606.43566,287.39805l2.49733,12.97088,7.64093,39.73819,36.12178-2.808s2.28366-6.60322-3.31641-9.202c0,0-1.42929-22.52883-7.95943-29.73729a6.78036,6.78036,0,0,0-2.58227-1.87364Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#65617d"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M608.933,300.36893l7.64093,39.73819,36.12178-2.808s2.28366-6.60322-3.31641-9.202c0,0-1.42929-22.52883-7.95943-29.73729Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#fff",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M525.12687,289.3526c-4.79771,7.71746,5.13782,79.87312,5.13782,79.87312l88.83094-12.95124-1.96581-63.02531c-1.6158-11.33381-8.23475-12.78508-8.23475-12.78508-30.938-16.375-102.64809-21.055-102.64809-21.055-65.50493,1.25584-125.51519,19.40335-125.51519,19.40335C455.37777,268.75441,525.12687,289.3526,525.12687,289.3526Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#65617d"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M530.26469,369.22572l88.83094-12.95124-1.96581-63.02531c-1.6158-11.33381-8.23475-12.78508-8.23475-12.78508s-64.51429-7.3712-83.7682,8.88851C520.32916,297.07006,530.26469,369.22572,530.26469,369.22572Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M539.70459,365.24735l74.27861-11.07848L612.35982,300.397c-1.34737-9.66936-6.88121-10.90544-6.88121-10.90544s-53.94013-6.26823-70.04418,7.61058C531.42042,303.68814,539.70459,365.24735,539.70459,365.24735Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#65617d"
+          }
+        }),
+        _vm._v(" "),
+        _c("ellipse", {
+          attrs: {
+            cx: "546.63059",
+            cy: "321.16891",
+            rx: "18.44493",
+            ry: "10.1364",
+            transform: "translate(172.1968 708.40806) rotate(-88.91801)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("ellipse", {
+          attrs: {
+            cx: "546.64",
+            cy: "320.67049",
+            rx: "18.44493",
+            ry: "10.1364",
+            transform: "translate(172.70437 707.92846) rotate(-88.91801)",
+            fill: "#dce0ed"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M545.56818,307.02183s4.141.743,1.87759,6.18487a37.88258,37.88258,0,0,0-2.649,8.26s-4.19431,2.08138-3.89325-5.05954S545.56818,307.02183,545.56818,307.02183Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#f0f0f4"
+          }
+        }),
+        _vm._v(" "),
+        _c("ellipse", {
+          attrs: {
+            cx: "601.09673",
+            cy: "314.88478",
+            rx: "17.23543",
+            ry: "9.47172",
+            transform: "translate(231.91745 756.69902) rotate(-88.91801)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("ellipse", {
+          attrs: {
+            cx: "601.10614",
+            cy: "314.38636",
+            rx: "17.23543",
+            ry: "9.47172",
+            transform: "translate(232.42502 756.21942) rotate(-88.91801)",
+            fill: "#dce0ed"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M600.03431,300.73771s4.141.743,1.87759,6.18486a37.88206,37.88206,0,0,0-2.649,8.26s-4.19431,2.08139-3.89325-5.05954S600.03431,300.73771,600.03431,300.73771Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#f0f0f4"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M558.55709,305.76966c.53423,6.826,2.90483,57.39392,2.90483,57.39392l5.65495-.83553,3.14489-.45916,4.19-.61889.505-.07525,16.50472-2.43058-2.23784-53.63683a6.71636,6.71636,0,0,0-6.66448-6.43315c-.16455.00188-.33412.00364-.50385.01541-1.1383.07823-2.36669.17469-3.64529.29013-.5394.04964-1.08383.09922-1.63838.15853-1.58357.15956-3.21776.35806-4.82269.592-.82006.12414-1.62524.25351-2.42064.39306-1.34584.24384-2.64731.51342-3.84981.82479-.81667.20892-1.59383.43856-2.3066.68937C560.38093,302.65794,558.41588,304.007,558.55709,305.76966Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M582.5591,298.67419l2.08258,60.27526,1.83231-.12994-2.06027-59.871A6.74685,6.74685,0,0,0,582.5591,298.67419Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#65617d"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M576.77158,299.13826l1.86709,60.85953,2.82605.05337L578.41,298.97973C577.87056,299.02937,577.32613,299.079,576.77158,299.13826Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#65617d"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M569.52825,300.12331l3.60264,61.10174,1.8292.03455-.00339-.08485-3.00781-61.4445C571.12883,299.85439,570.32365,299.98376,569.52825,300.12331Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#65617d"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M563.37184,301.63747l3.745,60.69058.00781.11482,3.16133-.27435-.02425-.29963-4.58332-60.92079C564.86177,301.157,564.08461,301.38666,563.37184,301.63747Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#65617d"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M630.06181,349.83527s6.70108-31.40992-7.22416-33.29337-59.84367.61486-58.71776,13.59973,2.24935,32.70082,2.24935,32.70082l9.51-1.93944s-6.54242-29.79029,4.56867-30.7023,38.334-3.5141,38.334-3.5141,7.37527-1.10721,2.64682,24.85536Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M630.00533,352.82581s6.73873-33.40362-7.18651-35.28707-59.84367.61486-58.71776,13.59974,2.24935,32.70081,2.24935,32.70081l9.51-1.93944s-6.54242-29.79029,4.56866-30.70229,38.334-3.51411,38.334-3.51411,7.33761.88649,2.60917,26.84906Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#dce0ed"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M382.957,389.8778l12.29432.06266c9.71838-39.3704,24.97094-63.67831,24.97094-63.67831,5.0345-2.56745,59.52075-1.20431,59.52075-1.20431,5.63327,1.10359,6.78965,19.075,6.78965,19.075s-4.89815,4.06081-.29813,6.81023c2.056,1.2255,8.89012,1.57895,16.77784,1.32406,9.79361-.32361,21.21563-1.59371,27.13673-3.32172,10.69912-3.12362,2.342-9.42918,2.342-9.42918s-1.45762-2.02193-2.24736-13.00605a44.33217,44.33217,0,0,0-5.724-18.21229c-.44413-.77126-.72541-1.19042-.72541-1.19042a5.74958,5.74958,0,0,0-1.9209-1.25284c-13.97432-6.14744-83.11666-1.849-83.11666-1.849l-25.73786,7.661c-.71312.27074-1.83874,2.05441-3.2389,4.90989C401.3681,333.764,382.957,389.8778,382.957,389.8778Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#65617d"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M382.957,389.8778l12.29432.06266c9.71838-39.3704,24.97094-63.67831,24.97094-63.67831,5.0345-2.56745,59.52075-1.20431,59.52075-1.20431,5.63327,1.10359,6.78965,19.075,6.78965,19.075s-4.89815,4.06081-.29813,6.81023c2.056,1.2255,8.89012,1.57895,16.77784,1.32406,9.79361-.32361,21.21563-1.59371,27.13673-3.32172,10.69912-3.12362,2.342-9.42918,2.342-9.42918s-1.45762-2.02193-2.24736-13.00605a44.33217,44.33217,0,0,0-5.724-18.21229c-.44413-.77126-.72541-1.19042-.72541-1.19042a5.74958,5.74958,0,0,0-1.9209-1.25284c-13.97432-6.14744-83.11666-1.849-83.11666-1.849l-25.73786,7.661c-.71312.27074-1.83874,2.05441-3.2389,4.90989C401.3681,333.764,382.957,389.8778,382.957,389.8778Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M409.78,316.57658c23.79356-8.72987,88.7906-2.631,88.7906-2.631,7.02476-5.78072,20.036-5.92391,25.94913-5.64768-.44413-.77126-.72541-1.19042-.72541-1.19042a5.74958,5.74958,0,0,0-1.9209-1.25284c-13.97432-6.14744-83.11666-1.849-83.11666-1.849l-25.73786,7.661C412.3058,311.93743,411.18018,313.7211,409.78,316.57658Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#65617d"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M494.70066,316.36553c1.398,5.17693,7.15443,25.8978,7.15443,25.8978a87.51618,87.51618,0,0,1,1.15729,10.00385c9.79361-.32361,21.21563-1.59371,27.13673-3.32172,10.69912-3.12362,2.342-9.42918,2.342-9.42918s-1.45762-2.02193-2.24736-13.00605a44.14756,44.14756,0,0,0-6.44941-19.40271,5.74958,5.74958,0,0,0-1.9209-1.25284C512.59655,307.85835,493.64284,312.44649,494.70066,316.36553Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#65617d"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M494.70066,316.36553c1.398,5.17693,7.15443,25.8978,7.15443,25.8978a87.51618,87.51618,0,0,1,1.15729,10.00385c9.79361-.32361,21.21563-1.59371,27.13673-3.32172,10.69912-3.12362,2.342-9.42918,2.342-9.42918s-1.45762-2.02193-2.24736-13.00605a44.14756,44.14756,0,0,0-6.44941-19.40271,5.74958,5.74958,0,0,0-1.9209-1.25284C512.59655,307.85835,493.64284,312.44649,494.70066,316.36553Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#fff",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M350.217,178.516l30.51477,100.29641L507.97338,260.399l-16.81124-60.27421s-2.60706-13.76075-9.19233-14.88233C481.96981,185.24246,380.25194,165.621,350.217,178.516Zm14.16244,15.72409c-4.107-13.53978,56.34542-6.78878,56.34542-6.78878,8.13906-.62909,17.94858.05478,27.06708,1.15938,3.3379.40707,6.58.87217,9.61745,1.34838,6.7758,1.06531,12.52815,2.20107,15.96989,2.91926,2.19022.45519,3.44625.74318,3.44625.74318,12.01615,3.96645,17.92811,53.93815,17.92811,53.93815.898,5.25227-5.3111,4.01315-5.3111,4.01315l-.404.00731-5.66123.11247-16.87916.34435-82.30046,1.66161c-4.85021-.5902-5.48958-6.33619-5.48958-6.33619C376.16907,243.201,364.37946,194.24009,364.37946,194.24009Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#65617d"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M489.03856,251.58012l.404-.00731s6.20911,1.23912,5.3111-4.01315c0,0-5.912-49.9717-17.92811-53.93815,0,0-1.256-.288-3.44625-.74318C477.60868,201.52417,491.13532,231.11228,489.03856,251.58012Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#65617d"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M489.03856,251.58012l.404-.00731s6.20911,1.23912,5.3111-4.01315c0,0-5.912-49.9717-17.92811-53.93815,0,0-1.256-.288-3.44625-.74318C477.60868,201.52417,491.13532,231.11228,489.03856,251.58012Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M475.55213,374.30024a8.02234,8.02234,0,0,0,7.43169,4.35354l2.53906-.06175,23.97368-.57933,8.63974-.21078,7.98729-.51226L631.753,362.1926l-.60646-10.39232-12.14443,1.50578-5.02269.62313-74.55062,9.23211-9.8105,1.21578-4.75776.58823-20.10366-.52427-21.76309-.57059a8.22136,8.22136,0,0,0-3.22152.55742,7.82152,7.82152,0,0,0-4.29235,3.9277A6.56646,6.56646,0,0,0,475.55213,374.30024Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M475.53331,375.29709a8.02232,8.02232,0,0,0,7.43169,4.35354l35.15248-.85186,7.98728-.51226,112.64377-16.10138,8.85407-1.26376,4.82457-.69169c9.50768-1.81483,6.86049-11.33824,6.86049-11.33824-.5813-4.33386-16.78945-8.62878-22.10585-8.55965-3.57576.04217-4.1782,5.54032-4.18645,9.145-.00342,1.765.13142,3.07384.13142,3.07384l-5.26758.65341L524.84172,365.96216,482.975,364.8673a8.04529,8.04529,0,0,0-7.51387,4.48511A6.56648,6.56648,0,0,0,475.53331,375.29709Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#dce0ed"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M644.70971,346.45551s-4.58936,5.39793-11.583,6.09685C633.12675,352.55236,636.06724,346.45849,644.70971,346.45551Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M645.58087,361.92858s14.79282-.053,14.6422,7.92175-9.47961,9.12817-9.47961,9.12817l-132.5621,22.925L480.621,401.8589s-12.92745-10.71477.784-15.10941l37.8613,1.71227,126.371-20.71511S642.39909,363.19809,645.58087,361.92858Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M480.60214,402.85574l37.55871.04621L636.03109,382.5166l8.62406-1.49248,6.0678-1.04715s9.33068-1.155,9.4813-9.12979c.10806-5.72192-7.48551-7.31126-11.78012-7.75138-1.687-.17145-2.86377-.16875-2.86377-.16875-3.18006,1.2662.05969,5.81479.05969,5.81479l-4.60141.75574L519.24737,389.46026l-37.8613-1.71227C467.67635,392.141,480.60214,402.85574,480.60214,402.85574Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#dce0ed"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M634.57181,355.23885l-7.74273-3.63643-3.98424-.24145-.30156,33.56673,12.34149-2.25991,5.21312-3.22555,2.7557-13.90876s-.887-5.83376-1.376-6.3416S634.57181,355.23885,634.57181,355.23885Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#dce0ed"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M634.57181,355.23885l-7.74273-3.63643-3.98424-.24145-.30156,33.56673,12.34149-2.25991,5.21312-3.22555,2.7557-13.90876s-.887-5.83376-1.376-6.3416S634.57181,355.23885,634.57181,355.23885Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M636.03109,382.5166c-.09686.11283-.14785.1717-.14785.1717l8.66911-1.50161c.03593-.05416.07186-.10832.1028-.16257,4.69425-7.25575,5.19559-13.20952,3.769-17.92832-1.687-.17145-2.86377-.16875-2.86377-.16875-3.18006,1.2662.05969,5.81479.05969,5.81479l-4.60141.75574C641.20362,376.07265,636.893,381.49578,636.03109,382.5166Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M623.84006,351.37808q2.17461.8862,4.01914,1.826c5.53646,2.797,8.93348,5.88269,10.88933,8.98105l8.85407-1.26376c-3.67765-8.02713-12.75017-11.82831-12.75017-11.82831l-1.85707.38377Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M633.8572,349.076s24.07458,10.0943,9.69828,32.0936l-8.67071,1.49824s17.48278-19.28143-12.03993-31.30682Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#dce0ed"
+          }
+        }),
+        _vm._v(" "),
+        _c("polygon", {
+          attrs: {
+            points:
+              "532.836 205.554 523.871 205.052 524.685 241.133 539.19 238.748 545.393 235.873 548.353 228.783 550.481 221.676 545.786 215.106 540.372 211.347 532.836 205.554",
+            fill: "#dce0ed"
+          }
+        }),
+        _vm._v(" "),
+        _c("polygon", {
+          attrs: {
+            points:
+              "532.836 205.554 523.871 205.052 524.685 241.133 539.19 238.748 545.393 235.873 548.353 228.783 550.481 221.676 545.786 215.106 540.372 211.347 532.836 205.554",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("ellipse", {
+          attrs: {
+            cx: "576.48162",
+            cy: "377.40975",
+            rx: "7.3115",
+            ry: "4.32043",
+            transform: "translate(145.25334 793.4326) rotate(-88.91801)",
+            fill: "#dce0ed"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M617.49235,388.11168a2.34444,2.34444,0,0,1,1.11382,3.29714c-1.01331,1.81335-2.233,4.1605-2.1343,4.78893.1669,1.06267-2.18413.14572-2.49094-.10937s-4.61041-.08708-4.80432-3.02a5.06964,5.06964,0,0,1,2.38993-4.44227l-.87565-6.436,5.92819-.38664-.17291,5.85529Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#636780"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M617.49235,388.11168a2.34444,2.34444,0,0,1,1.11382,3.29714c-1.01331,1.81335-2.233,4.1605-2.1343,4.78893.1669,1.06267-2.18413.14572-2.49094-.10937s-4.61041-.08708-4.80432-3.02a5.06964,5.06964,0,0,1,2.38993-4.44227l-.87565-6.436,5.92819-.38664-.17291,5.85529Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M615.87956,387.95965s-2.12313,6.81566-1.2556,7.08134S615.87956,387.95965,615.87956,387.95965Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M613.66725,386.29742s-2.12313,6.81566-1.25559,7.08134S613.66725,386.29742,613.66725,386.29742Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M590.17275,365.20163l2.93532,20.6676s4.12262-.48556,6.39966-.93117a4.5624,4.5624,0,0,0,1.43885-.41659c.11682-.11246.36086-.0979.68359-.027l.005.0001c1.10228.24519,3.05869,1.19958,3.45708.43425a.67638.67638,0,0,1,.11274-.16239l.00509-.00489c.39678-.41631,1.14856-.093,1.87915.0305a1.59156,1.59156,0,0,0,1.16426-.13258c.62076-.39713,1.84941.28423,2.86207.52274.64031.15172,1.19412.13223,1.45924-.44112a1.34887,1.34887,0,0,1,1.00522-.689l.005.00009c.96149-.22119,2.29914-.03138,3.07479-.18127.30519-.05407.51669-.16474.59043-.37276.158-.44576,1.01931-.64389,1.93972-.801,1.11552-.19332,2.31466-.32527,2.41294-.77713.02774-.149.13863-.21177.30318-.21366a10.02985,10.02985,0,0,1,1.81079.483l.005.00009c.49607.134.90967.14682,1.03607-.2098.137-.39129.70935-.33563,1.35927-.1638.52588.13958,1.10519.35493,1.55178.46808.402.09734.69084.11777.74424-.0707.177-.6598,2.307.87623,2.83051-.44514s7.50323-9.99484-1.08738-21.6249c0,0-2.38559.11949-4.211.41408a6.57053,6.57053,0,0,0-1.76378.46029c-.01-.00019-.01506.00471-.0251.00951a10.22676,10.22676,0,0,1-3.20686.30839,4.18323,4.18323,0,0,0-1.79234.39,1.17157,1.17157,0,0,0-.50849.52387c-.29107.62774-.93152.74528-1.62854.69222-.941-.07261-1.98092-.45123-2.36826-.2691a.24448.24448,0,0,1-.03517.01431c-.70346.28586-3.30474-.05244-3.75653.37281a.25057.25057,0,0,0-.03565.03919c-.19467.27557-1.21088-.03781-2.24993-.19706l-.005-.00009a2.53791,2.53791,0,0,0-2.06959.285,2.25928,2.25928,0,0,1-1.62891.4479,9.34486,9.34486,0,0,0-2.11491.04481.84333.84333,0,0,0-.42368.25624c-.43353.51537-1.444.42647-2.347.45427a2.38594,2.38594,0,0,0-1.32711.309,1.18385,1.18385,0,0,1-.48226.19032,14.27034,14.27034,0,0,1-4.00354-.275Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#636780"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M626.11718,381.81578c.52588.13958,1.10519.35493,1.55178.46808,6.94631-10.33942,1.41446-18.39658-1.72365-21.72666a6.57053,6.57053,0,0,0-1.76378.46029C630.80738,368.96568,627.47783,378.67538,626.11718,381.81578Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M621.90606,381.70633a10.02985,10.02985,0,0,1,1.81079.483l.005.00009c5.96958-10.10357.17261-17.85162-2.77227-20.854a4.18323,4.18323,0,0,0-1.79234.39C625.48828,368.91509,623.40331,377.671,621.90606,381.70633Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M616.65979,383.87089c.30519-.05407.51669-.16474.59043-.37276.158-.44576,1.01931-.64389,1.93972-.801,5.23867-9.15508.84217-16.34317-2.16974-19.75566-.941-.07261-1.98092-.45123-2.36826-.2691a.24448.24448,0,0,1-.03517.01431C621.61276,370.8363,617.97212,380.914,616.65979,383.87089Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M611.11555,385.18221c.64031.15172,1.19412.13223,1.45924-.44112a1.34887,1.34887,0,0,1,1.00522-.689l.005.00009c6.10587-10.19077.22539-18.00519-2.72476-20.99268a.25057.25057,0,0,0-.03565.03919c-.19467.27557-1.21088-.03781-2.24993-.19706C616.80805,371.53332,612.27917,382.7062,611.11555,385.18221Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M605.21007,384.76155c.39678-.41631,1.14856-.093,1.87915.0305,6.34868-10.11139.8375-17.94378-2.218-21.15761a9.34486,9.34486,0,0,0-2.11491.04481C609.79741,371.55052,606.64568,381.34831,605.21007,384.76155Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M599.50773,384.93806a4.5624,4.5624,0,0,0,1.43885-.41659c.11682-.11246.36086-.0979.68359-.027l.005.0001c5.63414-9.23736,1.41424-16.53679-1.6496-20.10482a2.38594,2.38594,0,0,0-1.32711.309,1.18385,1.18385,0,0,1-.48226.19032C603.99689,372.70241,600.82128,381.91642,599.50773,384.93806Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("ellipse", {
+          attrs: {
+            cx: "438.1642",
+            cy: "397.06823",
+            rx: "39.88093",
+            ry: "27.0858",
+            transform: "translate(-10.10717 674.42711) rotate(-88.91801)",
+            fill: "#636780"
+          }
+        }),
+        _vm._v(" "),
+        _c("ellipse", {
+          attrs: {
+            cx: "439.067",
+            cy: "397.66698",
+            rx: "32.32017",
+            ry: "19.69121",
+            transform: "translate(-9.82007 675.91719) rotate(-88.91801)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("ellipse", {
+          attrs: {
+            cx: "439.08582",
+            cy: "396.67014",
+            rx: "32.32017",
+            ry: "19.69121",
+            transform: "translate(-8.80493 674.95799) rotate(-88.91801)",
+            fill: "#f0f0f4"
+          }
+        }),
+        _vm._v(" "),
+        _c("ellipse", {
+          attrs: {
+            cx: "435.92328",
+            cy: "374.92129",
+            rx: "3.98809",
+            ry: "2.32639",
+            transform: "translate(9.83722 650.45785) rotate(-88.91801)",
+            fill: "#636780"
+          }
+        }),
+        _vm._v(" "),
+        _c("ellipse", {
+          attrs: {
+            cx: "425.96045",
+            cy: "409.63516",
+            rx: "3.98809",
+            ry: "2.32639",
+            transform: "translate(-34.64517 674.55515) rotate(-88.91801)",
+            fill: "#636780"
+          }
+        }),
+        _vm._v(" "),
+        _c("ellipse", {
+          attrs: {
+            cx: "451.36151",
+            cy: "393.49488",
+            rx: "3.98809",
+            ry: "2.32639",
+            transform: "translate(6.41364 684.11618) rotate(-88.91801)",
+            fill: "#636780"
+          }
+        }),
+        _vm._v(" "),
+        _c("ellipse", {
+          attrs: {
+            cx: "444.11043",
+            cy: "416.62595",
+            rx: "3.98809",
+            ry: "2.32639",
+            transform: "translate(-23.82746 699.56069) rotate(-88.91801)",
+            fill: "#636780"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M241.35131,319.55824s-20.41749,51.46883-19.48183,54.72741c0,0-8.31811,4.8289-10.28827,3.54519s.20735-24.17821.20735-24.17821l4.11941-20.11552,4.46252-11.88213Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#65617d"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M241.35131,319.55824s-20.41749,51.46883-19.48183,54.72741c0,0-8.31811,4.8289-10.28827,3.54519s.20735-24.17821.20735-24.17821l4.11941-20.11552,4.46252-11.88213Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.15"
+          }
+        }),
+        _vm._v(" "),
+        _c("ellipse", {
+          attrs: {
+            cx: "423.04555",
+            cy: "387.97408",
+            rx: "3.98809",
+            ry: "2.32639",
+            transform: "translate(-15.84781 650.38873) rotate(-88.91801)",
+            fill: "#636780"
+          }
+        }),
+        _vm._v(" "),
+        _c("ellipse", {
+          attrs: {
+            cx: "435.49026",
+            cy: "397.84873",
+            rx: "9.47172",
+            ry: "6.81299",
+            transform: "translate(-13.51098 672.5194) rotate(-88.91801)",
+            fill: "#636780"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M218.36145,388.4295c-.56669,30.00457,8.8859,57.50688,36.60484,55.0388,34.90371-.08869,38.0903-23.61279,38.657-53.61736s-15.85951-52.65258-36.64249-53.0451S218.92813,358.42494,218.36145,388.4295Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#636780"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M218.14279,388.47635c.43873-23.22992,10.89051-41.66538,25.23208-48.6255,18.17583,3.81334,31.80413,25.06076,31.28712,52.43526-.4644,24.589-2.69316,44.822-22.69094,51.37492C226.39627,444.097,217.59548,417.45535,218.14279,388.47635Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M203.898,375.442s4.90421,4.33073,7.702,1.392c0,0,7.74536-53.70257,16.22326-53.79175l29.16243.30148s3.46072,1.56116,4.83361,8.0689l17.84179,54.02128,103.3147,3.44706,8.20229-16.38366-85.4842-1.3652-.00922-.04007c-.43228-1.66352-13.74888-52.93184-23.22868-59.45805-.00489-.00508-.00988-.00518-.01478-.01026a4.16644,4.16644,0,0,0-1.042-.53322s-35.5478-5.40808-47.32192-2.38955c0,0-12.26313,2.51069-15.32427,6.19238a.3012.3012,0,0,0-.02548.02943c-.40664.41113-5.13038,5.5323-6.84467,20.53274Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M203.87919,376.43887s4.90422,4.33073,7.702,1.392c0,0,7.74537-53.70257,16.22326-53.79175l29.16243.30148s3.46072,1.56116,4.83362,8.06889l17.84178,54.02128L382.957,389.8778l8.20228-16.38365-85.4842-1.36521-.00922-.04007c-.43228-1.66352-13.74888-52.93183-23.22867-59.458-.0049-.00509-.00989-.00518-.01478-.01027a4.16683,4.16683,0,0,0-1.042-.53322s-35.5478-5.40808-47.32192-2.38955c0,0-12.26313,2.5107-15.32426,6.19239a.298.298,0,0,0-.02548.02943c-.40664.41113-5.13039,5.53229-6.84468,20.53273Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#65617d"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M203.87919,376.43887s4.90422,4.33073,7.702,1.392c0,0,7.74537-53.70257,16.22326-53.79175l29.16243.30148s3.46072,1.56116,4.83362,8.06889l17.84178,54.02128L382.957,389.8778l8.20228-16.38365-85.4842-1.36521-.00922-.04007c-.43228-1.66352-13.74888-52.93183-23.22867-59.458-.0049-.00509-.00989-.00518-.01478-.01027a4.16683,4.16683,0,0,0-1.042-.53322s-35.5478-5.40808-47.32192-2.38955c0,0-12.26313,2.5107-15.32426,6.19239a.298.298,0,0,0-.02548.02943c-.40664.41113-5.13039,5.53229-6.84468,20.53273Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M268.28967,318.82051c2.40269,4.78208,22.73348,63.50232,22.73348,63.50232l14.65194-10.19389-.00922-.04007c-.43228-1.66352-13.76281-52.98693-23.24345-59.46831C276.162,313.56934,266.65574,315.57367,268.28967,318.82051Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#65617d"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M296.705,292.68205l10.9881,38.59977,61.08972-.59133-.60667,5.72245s-47.98037,6.07422-68.23685-3.78177l-10.30321-35.26282-96.37114-1.32152,18.44016-3.97294Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#65617d"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M296.705,292.68205l10.9881,38.59977,61.08972-.59133-.60667,5.72245s-47.98037,6.07422-68.23685-3.78177l-10.30321-35.26282-96.37114-1.32152,18.44016-3.97294Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#fff",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M581.82356,358.56382s32.41911,17.0661,7.87072,32.05908l-6.50773,1.3729s24.08134-16.6638-15.31883-33.69555Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M580.82671,358.545s32.41912,17.0661,7.87073,32.05908L582.1897,391.977s24.08135-16.6638-15.31882-33.69555Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#dce0ed"
+          }
+        }),
+        _vm._v(" "),
+        _c("ellipse", {
+          attrs: {
+            cx: "241.45809",
+            cy: "393.10383",
+            rx: "31.15697",
+            ry: "18.19567",
+            transform: "translate(-199.13515 473.86652) rotate(-88.91801)",
+            fill: "#636780"
+          }
+        }),
+        _vm._v(" "),
+        _c("ellipse", {
+          attrs: {
+            cx: "242.05924",
+            cy: "393.78777",
+            rx: "25.25013",
+            ry: "13.22814",
+            transform: "translate(-199.22917 475.1386) rotate(-88.91801)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("ellipse", {
+          attrs: {
+            cx: "242.07807",
+            cy: "392.79092",
+            rx: "25.25013",
+            ry: "13.22814",
+            transform: "translate(-198.21403 474.1794) rotate(-88.91801)",
+            fill: "#f0f0f4"
+          }
+        }),
+        _vm._v(" "),
+        _c("ellipse", {
+          attrs: {
+            cx: "239.99837",
+            cy: "375.80702",
+            rx: "3.1157",
+            ry: "1.56282",
+            transform: "translate(-183.27358 455.43688) rotate(-88.91801)",
+            fill: "#636780"
+          }
+        }),
+        _vm._v(" "),
+        _c("ellipse", {
+          attrs: {
+            cx: "233.23341",
+            cy: "402.94647",
+            rx: "3.1157",
+            ry: "1.56282",
+            transform: "translate(-217.04541 475.30009) rotate(-88.91801)",
+            fill: "#636780"
+          }
+        }),
+        _vm._v(" "),
+        _c("ellipse", {
+          attrs: {
+            cx: "250.33166",
+            cy: "390.28501",
+            rx: "3.1157",
+            ry: "1.56282",
+            transform: "translate(-187.61082 479.97292) rotate(-88.91801)",
+            fill: "#636780"
+          }
+        }),
+        _vm._v(" "),
+        _c("ellipse", {
+          attrs: {
+            cx: "245.41245",
+            cy: "408.37024",
+            rx: "3.1157",
+            ry: "1.56282",
+            transform: "translate(-210.51915 492.79832) rotate(-88.91801)",
+            fill: "#636780"
+          }
+        }),
+        _vm._v(" "),
+        _c("ellipse", {
+          attrs: {
+            cx: "231.31989",
+            cy: "386.03062",
+            rx: "3.1157",
+            ry: "1.56282",
+            transform: "translate(-202.00996 456.7905) rotate(-88.91801)",
+            fill: "#636780"
+          }
+        }),
+        _vm._v(" "),
+        _c("ellipse", {
+          attrs: {
+            cx: "239.66007",
+            cy: "393.71909",
+            rx: "7.39978",
+            ry: "4.57683",
+            transform: "translate(-201.51436 472.67247) rotate(-88.91801)",
+            fill: "#636780"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d: "M508.23907,259.53147s-55.36257.94879-127.50728,19.28094Z",
+            transform: "translate(-43 -153.22928)",
+            opacity: "0.1"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M246.10181,157.69294s2.99512.53741,1.358,4.47344a27.4,27.4,0,0,0-1.916,5.97434s-3.0337,1.50544-2.81594-3.6595S246.10181,157.69294,246.10181,157.69294Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#dce0ed"
+          }
+        }),
+        _vm._v(" "),
+        _c("polyline", {
+          attrs: {
+            points: "319.533 99.18 323.943 116.733 339.136 103.42",
+            fill: "none",
+            stroke: "#000",
+            "stroke-miterlimit": "10"
+          }
+        }),
+        _vm._v(" "),
+        _c("rect", {
+          attrs: {
+            x: "339.74533",
+            y: "268.91027",
+            width: "45.57472",
+            height: "44.78894",
+            transform: "translate(11.50209 -210.35753) rotate(9.73905)",
+            fill: "#fff"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M356.88561,310.93213l.84487-4.92249a14.40243,14.40243,0,0,1-7.089-3.4244l1.73023-3.06487a15.26935,15.26935,0,0,0,7.21488,3.396c3.46033.59391,6.14279-1.003,6.61964-3.78124.46006-2.6805-1.1562-4.66384-4.51219-6.74509-4.63662-2.80279-6.76628-5.47634-6.03847-9.71676.69429-4.04519,3.81883-6.66977,8.42844-6.63136l.84487-4.92249,2.46546.42315-.81141,4.72754a13.1921,13.1921,0,0,1,6.04352,2.79353l-1.77067,3.00733a10.74276,10.74276,0,0,0-5.57869-2.66315c-3.75289-.64412-4.995,1.45044-5.3296,3.4-.435,2.53442.59472,4.016,4.53385,6.49835,4.66867,2.90836,7.32418,5.97322,6.57965,10.31112-.66083,3.85023-3.96041,6.99711-9.12257,6.96394l-.87,5.06884Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#636780"
+          }
+        }),
+        _vm._v(" "),
+        _c("path", {
+          attrs: {
+            d:
+              "M356.12166,470.89619a1.5009,1.5009,0,0,0,0-3,1.5009,1.5009,0,0,0,0,3Z",
+            transform: "translate(-43 -153.22928)",
+            fill: "#65617d"
+          }
+        })
+      ]),
+      _vm._v(" "),
+      _c("ellipse", {
+        attrs: {
+          cx: "663.90742",
+          cy: "451.63248",
+          rx: "18.67648",
+          ry: "3.15725",
+          fill: "#00bfa6",
+          opacity: "0.1"
         }
       }),
       _vm._v(" "),
       _c("path", {
         attrs: {
           d:
-            "M264.9155,551.37272l6.30738-20.76292a273.13329,273.13329,0,0,0-19.4325-23.8785l-5.6294,8.02019,3.22943-10.63063C240.73891,494.82328,234.421,489.214,234.421,489.214s-12.45157,42.33122-9.16631,82.42573l20.98773,18.30061-19.82728-8.3836a110.50442,110.50442,0,0,0,2.938,13.57259c12.88281,44.90561,37.99241,77.10132,56.0839,71.91112s22.31392-45.80088,9.43111-90.70649c-3.9938-13.92118-11.32161-27.58227-19.53123-39.80866Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#e6e6e6"
-        }
-      }),
-      _vm._v(" "),
-      _c("rect", {
-        attrs: {
-          x: "0.07971",
-          y: "487.64984",
-          width: "888",
-          height: "2.24072",
-          fill: "#3f3d56"
+            "M694.36474,590.19087s10.65346-.32812,13.86414-2.6144,16.3877-5.01624,17.18419-1.34953,16.01017,18.23649,3.98247,18.33351-27.947-1.8735-31.15153-3.82549S694.36474,590.19087,694.36474,590.19087Z",
+          transform: "translate(-43 -153.22928)",
+          fill: "#a8a8a8"
         }
       }),
       _vm._v(" "),
       _c("path", {
         attrs: {
           d:
-            "M296.338,438.128s-6.91528,83.14848-8.40005,100.9657a126.7102,126.7102,0,0,1-7.42384,32.66491s-2.96954,5.93908-2.96954,11.87815v75.7232s-5.93907,0-4.4543,5.93908,2.96953,16.33245,2.96953,16.33245h22.27153s-1.48476-4.4543,2.96954-5.93907,0-13.36292,0-13.36292l23.7563-89.08612,35.63445-74.23843s20.78676,66.81459,25.24107,74.23843c0,0,16.33245,83.14705,19.302,90.57089s4.4543,7.42384,2.96953,10.39338-1.48476,5.93907,0,7.42384,29.69538,0,29.69538,0l-7.42385-105.41857L417.11284,450.00754l-68.29936-20.78676Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#2f2e41"
+            "M729.61019,603.28405c-12.0277.097-27.947-1.87348-31.15153-3.82548-2.4404-1.48654-3.41288-6.82063-3.73826-9.28157-.22534.00969-.35565.01386-.35565.01386s.67476,8.59209,3.87927,10.54409,19.12382,3.92252,31.15152,3.82548c3.47192-.028,4.67119-1.26326,4.60534-3.09278C733.51855,602.573,732.19438,603.26322,729.61019,603.28405Z",
+          transform: "translate(-43 -153.22928)",
+          opacity: "0.2"
+        }
+      }),
+      _vm._v(" "),
+      _c("ellipse", {
+        attrs: {
+          cx: "772.23501",
+          cy: "414.84369",
+          rx: "14.37168",
+          ry: "2.42952",
+          fill: "#00bfa6",
+          opacity: "0.1"
         }
       }),
       _vm._v(" "),
       _c("path", {
         attrs: {
           d:
-            "M292.39227,669.7533s-7.42384-26.72583-19.302-5.93907-11.87815,28.2106-11.87815,28.2106-19.302,28.21061,7.42384,25.24107,20.78676-16.33245,20.78676-16.33245,10.39338-5.93908,10.39338-10.39338S292.39227,669.7533,292.39227,669.7533Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#2f2e41"
+            "M805.58333,556.78361s8.19791-.25249,10.66856-2.0118,12.61045-3.86,13.22336-1.03848,12.31994,14.03312,3.06454,14.10777-21.50544-1.44167-23.97133-2.94374S805.58333,556.78361,805.58333,556.78361Z",
+          transform: "translate(-43 -153.22928)",
+          fill: "#a8a8a8"
         }
       }),
       _vm._v(" "),
       _c("path", {
         attrs: {
           d:
-            "M412.65853,666.78377s7.42384-26.72584,19.302-5.93908,11.87815,28.21061,11.87815,28.21061,19.302,28.2106-7.42384,25.24106-20.78676-16.33245-20.78676-16.33245-10.39338-5.93908-10.39338-10.39338S412.65853,666.78377,412.65853,666.78377Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#2f2e41"
+            "M832.705,566.85891c-9.25541.07467-21.50543-1.44166-23.97133-2.94374-1.87791-1.14391-2.62623-5.24852-2.87662-7.14224-.1734.00746-.27367.01067-.27367.01067s.51923,6.61168,2.98512,8.11375,14.71593,3.01841,23.97133,2.94374c2.67167-.02155,3.59451-.97209,3.54384-2.37992C835.71247,566.31175,834.69352,566.84287,832.705,566.85891Z",
+          transform: "translate(-43 -153.22928)",
+          opacity: "0.2"
+        }
+      }),
+      _vm._v(" "),
+      _c("ellipse", {
+        attrs: {
+          cx: "707.02732",
+          cy: "568.43844",
+          rx: "34.30916",
+          ry: "5.79994",
+          fill: "#00bfa6",
+          opacity: "0.1"
         }
       }),
       _vm._v(" "),
       _c("path", {
         attrs: {
           d:
-            "M342.8744,237.68563s2.96954,19.302-5.93907,23.75629,19.302,20.78677,26.72584,20.78677S384.44793,267.381,384.44793,267.381s-7.42385-22.27153-5.93908-26.72584Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#a0616a"
+            "M726.98611,694.71692s19.57067-.60276,25.46877-4.80272,30.10463-9.215,31.5678-2.47913,29.41109,33.5009,7.3159,33.67913-51.3394-3.44167-57.22615-7.02752S726.98611,694.71692,726.98611,694.71692Z",
+          transform: "translate(-43 -153.22928)",
+          fill: "#a8a8a8"
+        }
+      }),
+      _vm._v(" "),
+      _c("path", {
+        attrs: {
+          d:
+            "M791.73289,718.76943c-22.09519.17827-51.33938-3.44164-57.22615-7.02751-4.48308-2.73082-6.26954-12.52967-6.86728-17.05048-.41395.0178-.65334.02546-.65334.02546s1.23956,15.78389,7.12632,19.36976,35.13095,7.20578,57.22615,7.02751c6.378-.05144,8.58108-2.32064,8.46011-5.68152C798.91265,717.4632,796.48013,718.73116,791.73289,718.76943Z",
+          transform: "translate(-43 -153.22928)",
+          opacity: "0.2"
+        }
+      }),
+      _vm._v(" "),
+      _c("path", {
+        attrs: {
+          d:
+            "M1112.28952,517.50307a89.33035,89.33035,0,0,1-178.33139,7.66639c-.12993-1.45095-.22735-2.902-.27071-4.37461v-.0758q-.06493-1.608-.065-3.216a89.33354,89.33354,0,0,1,178.66707,0Z",
+          transform: "translate(-43 -153.22928)",
+          fill: "#65617d"
+        }
+      }),
+      _vm._v(" "),
+      _c("path", {
+        attrs: {
+          d:
+            "M1112.28952,517.50307a89.33035,89.33035,0,0,1-178.33139,7.66639c-.12993-1.45095-.22735-2.902-.27071-4.37461v-.0758q-.06493-1.608-.065-3.216a89.33354,89.33354,0,0,1,178.66707,0Z",
+          transform: "translate(-43 -153.22928)",
+          opacity: "0.2"
         }
       }),
       _vm._v(" "),
       _c("circle", {
         attrs: {
-          cx: "203.24671",
-          cy: "38.83808",
-          r: "31.18014",
-          fill: "#a0616a"
+          cx: "979.95349",
+          cy: "364.27379",
+          r: "48.72738",
+          fill: "#dce0ed"
+        }
+      }),
+      _vm._v(" "),
+      _c("circle", {
+        attrs: {
+          cx: "979.95349",
+          cy: "364.27379",
+          r: "29.23643",
+          fill: "#65617d"
         }
       }),
       _vm._v(" "),
       _c("path", {
         attrs: {
           d:
-            "M420.08237,285.19822l-37.118-22.4886s-21.1191,23.97337-43.96746-2.75246l-39.18081,10.39338,5.93908,100.96426s-8.90861,40.08876-5.93908,47.5126-7.42384,10.39338-4.4543,11.87815,0,11.87815,0,11.87815,57.906,29.69537,121.751,7.42384l-5.93908-19.302a15.58017,15.58017,0,0,0-2.96954-14.84769s5.93908-8.90861-1.48476-16.33245c0,0,2.96953-13.36292-4.45431-19.302l-1.48477-20.78676,4.45431-10.39338Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#cfcce0"
+            "M635.37776,517.50307a89.33035,89.33035,0,0,1-178.3314,7.66639c-.12993-1.45095-.22735-2.902-.2707-4.37461v-.0758q-.06493-1.608-.065-3.216a89.33354,89.33354,0,0,1,178.66707,0Z",
+          transform: "translate(-43 -153.22928)",
+          fill: "#65617d"
         }
       }),
       _vm._v(" "),
       _c("path", {
         attrs: {
           d:
-            "M343.24976,206.87536s-3.7173,8.04469,11.15192,4.82681c0,0,5.576,3.21788,5.576-1.60893,0,0,7.43461,8.04469,9.29326,3.21787s5.576,1.60894,5.576,1.60894l3.7173-8.04469,3.71731,4.82681H395.292s3.7173-32.17875-40.89036-28.96087-22.663,54.20194-22.663,54.20194.35921-9.15169,4.07651-4.32487S343.24976,206.87536,343.24976,206.87536Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#2f2e41"
+            "M635.37776,517.50307a89.33035,89.33035,0,0,1-178.3314,7.66639c-.12993-1.45095-.22735-2.902-.2707-4.37461v-.0758q-.06493-1.608-.065-3.216a89.33354,89.33354,0,0,1,178.66707,0Z",
+          transform: "translate(-43 -153.22928)",
+          opacity: "0.2"
+        }
+      }),
+      _vm._v(" "),
+      _c("circle", {
+        attrs: {
+          cx: "503.04172",
+          cy: "364.27379",
+          r: "48.72738",
+          fill: "#dce0ed"
+        }
+      }),
+      _vm._v(" "),
+      _c("circle", {
+        attrs: {
+          cx: "503.04172",
+          cy: "364.27379",
+          r: "29.23643",
+          fill: "#65617d"
         }
       }),
       _vm._v(" "),
       _c("path", {
         attrs: {
           d:
-            "M433.44529,344.589l1.48477,31.18014s5.93908,57.906-5.93907,83.147v13.36291s-2.96954,34.14968-17.81723,32.66491,4.45431-48.99736,4.45431-48.99736l-2.96954-65.32982L409.689,353.49758Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#a0616a"
+            "M1140.15257,500.76362l-29.807-1.296-27.21508-50.54228-95.90073-7.77574-46.65441,60.90993,2.59191,16.84742-6.4798,15.55148-304.54961,2.59191v-7.77574H629.546l-2.59192-11.6636h23.32721l-16.84743-18.14338-59.614-50.54228s-102.38051,2.59191-103.67647,0,5.8318-29.159,5.8318-29.159l44.0625-12.95956,150.33089-11.6636c33.04687-52.48622,62.85386-77.10938,62.85386-77.10938h386.19485l18.14338,93.30883v.22021Z",
+          transform: "translate(-43 -153.22928)",
+          fill: "#444053"
         }
       }),
       _vm._v(" "),
       _c("path", {
         attrs: {
           d:
-            "M403.74992,286.683l14.81131-2.40638a72.31337,72.31337,0,0,1,20.82314,38.04083c4.4543,23.7563,5.93907,28.2106,5.93907,28.2106L409.689,359.43666l-19.302-37.11922Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#cfcce0"
+            "M925.0239,507.2434s38.87867-72.57353,68.68566-72.57353h72.57353s18.14338,0,25.91912,14.25552l29.807,58.318H1098.682s-19.43934-54.43015-41.47059-55.7261-59.614,0-59.614,0-12.95956,0-20.7353,15.55147-34.06581,49.427-34.06581,49.427S914.65625,525.38678,925.0239,507.2434Z",
+          transform: "translate(-43 -153.22928)",
+          fill: "#33323d"
+        }
+      }),
+      _vm._v(" "),
+      _c("polygon", {
+        attrs: {
+          points:
+            "1114 342.351 1065.252 342.351 1064.754 381.229 1114 369.566 1114 342.351",
+          fill: "#33323d"
+        }
+      }),
+      _vm._v(" "),
+      _c("path", {
+        attrs: {
+          d:
+            "M452,472.25259s2.59191-19.43934,20.73529-27.21507l119.228-6.47978s19.43933,1.296,29.807,25.91912l33.69485,50.54228v7.77573H617.88235s-18.14338-68.68566-69.98161-66.09375H485.69485s-14.25551,0-19.43934,23.32721Z",
+          transform: "translate(-43 -153.22928)",
+          fill: "#33323d"
+        }
+      }),
+      _vm._v(" "),
+      _c("path", {
+        attrs: {
+          d:
+            "M731.92647,325.80956v0h397.85846v0a14.25551,14.25551,0,0,0-14.2555-14.2555H746.182A14.25551,14.25551,0,0,0,731.92647,325.80956Z",
+          transform: "translate(-43 -153.22928)",
+          fill: "#33323d"
+        }
+      }),
+      _vm._v(" "),
+      _c("path", {
+        attrs: {
+          d:
+            "M817.18914,402.271H707.0934a7.44346,7.44346,0,0,1-6.80191-10.46653l17.42127-39.19784a34.21209,34.21209,0,0,1,31.26341-20.31725h66.89151a9.36761,9.36761,0,0,1,9.36761,9.36762v52.56784A8.04615,8.04615,0,0,1,817.18914,402.271Z",
+          transform: "translate(-43 -153.22928)",
+          fill: "#00bfa6",
+          opacity: "0.3"
         }
       }),
       _vm._v(" "),
       _c("rect", {
         attrs: {
-          x: "184.01662",
-          y: "87.22321",
-          width: "234.31056",
-          height: "116.39453",
+          x: "810.74632",
+          y: "179.06008",
+          width: "107.56434",
+          height: "69.98162",
+          rx: "5.53937",
+          fill: "#00bfa6",
+          opacity: "0.3"
+        }
+      }),
+      _vm._v(" "),
+      _c("polygon", {
+        attrs: {
+          points:
+            "1094.561 258.113 1094.561 258.334 927.382 260.705 923.028 164.805 1076.417 164.805 1094.561 258.113",
+          fill: "#33323d"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "941.63787",
+          y: "179.06008",
+          width: "123.11581",
+          height: "69.98162",
+          rx: "5.53937",
+          fill: "#00bfa6",
+          opacity: "0.3"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "748.54044",
+          y: "273.66486",
+          width: "41.47059",
+          height: "7.77574",
+          rx: "1.75984",
+          fill: "#33323d"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "867.76838",
+          y: "273.66486",
+          width: "41.47059",
+          height: "7.77574",
+          rx: "1.75984",
+          fill: "#33323d"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "951.74716",
+          y: "171.32088",
+          width: "47.99028",
+          height: "47.16286",
           fill: "#fff"
         }
       }),
@@ -3659,192 +3386,323 @@ var render = function() {
       _c("path", {
         attrs: {
           d:
-            "M365.56206,276.73782c-6.01967-3.62-13.278-3.3435-16.0373-3.067,1.05081,2.56549,4.20371,9.10919,10.22338,12.731,6.03437,3.62916,13.28306,3.34441,16.03823,3.06977C374.736,286.907,371.58266,280.36056,365.56206,276.73782Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#00bfa6"
+            "M1016.37779,369.50731v-5.25919a15.16587,15.16587,0,0,1-7.96711-2.29119l1.24974-3.489a16.0787,16.0787,0,0,0,8.09272,2.23927c3.697,0,6.19649-2.13513,6.19649-5.10341,0-2.86384-2.03068-4.63431-5.88434-6.19649-5.31126-2.0829-7.99772-4.47824-7.99772-9.0087,0-4.32188,2.77523-7.60231,7.566-8.38354v-5.25919h2.63409v5.0509a13.89138,13.89138,0,0,1,6.76973,1.82268l-1.302,3.4365a11.31211,11.31211,0,0,0-6.26409-1.77018c-4.00959,0-4.92557,2.39505-4.92557,4.478,0,2.70777,1.33256,4.06195,5.86288,5.93656,5.36333,2.18676,8.66522,4.89453,8.66522,9.52914,0,4.11359-2.86384,7.96725-8.22718,8.85234v5.41555Z",
+          transform: "translate(-43 -153.22928)",
+          fill: "#636780"
         }
       }),
       _vm._v(" "),
       _c("path", {
         attrs: {
           d:
-            "M393.84906,348.57067H356.22553a8.4653,8.4653,0,1,0,0,16.93059h37.62353a8.4653,8.4653,0,1,0,0-16.93059Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#00bfa6"
+            "M413.615,571.34036c-6.19649,6.73726-10.75751,9.38918-10.54248,2.28051.65157-21.502-37.12675-118.717-37.12675-118.717l11.1745-.847C401.50221,496.10947,410.5656,539.32194,413.615,571.34036Z",
+          transform: "translate(-43 -153.22928)",
+          fill: "none"
         }
       }),
       _vm._v(" "),
       _c("path", {
         attrs: {
           d:
-            "M564.22146,259.21477H353.27787A18.68583,18.68583,0,0,0,334.592,277.90064V380.67657a18.68587,18.68587,0,0,0,18.68587,18.68587H564.22146a18.68587,18.68587,0,0,0,18.68587-18.68587V277.90064A18.68583,18.68583,0,0,0,564.22146,259.21477ZM348.05876,271.9614c.41656-.07532,10.29412-1.75626,18.47328,3.1653,8.17871,4.92063,11.32105,14.43582,11.45057,14.83815l.33067,1.026-1.06138.1883a28.17463,28.17463,0,0,1-4.57756.33619,27.25632,27.25632,0,0,1-13.89618-3.50241c-8.17871-4.91972-11.32059-14.43491-11.4501-14.83723l-.33068-1.026Zm45.7903,95.421H356.22553a10.34647,10.34647,0,0,1,0-20.69294h37.62353a10.34647,10.34647,0,1,1,0,20.69294Zm171.18709-1.88117a11.32027,11.32027,0,0,1-11.28706,11.28706H525.53144a11.32027,11.32027,0,0,1-11.28706-11.28706V348.57067a11.32023,11.32023,0,0,1,11.28706-11.28706h28.21765a11.32023,11.32023,0,0,1,11.28706,11.28706Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M534.467,362.2092H522.23938a3.29206,3.29206,0,0,0,0,6.58412H534.467a3.29206,3.29206,0,0,0,0-6.58412Zm0,4.70294H522.23938a1.41089,1.41089,0,1,1,0-2.82177H534.467a1.41089,1.41089,0,0,1,0,2.82177Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M557.04115,362.2092H544.8135a3.29206,3.29206,0,0,0,0,6.58412h12.22765a3.29206,3.29206,0,0,0,0-6.58412Zm0,4.70294H544.8135a1.41089,1.41089,0,1,1,0-2.82177h12.22765a1.41089,1.41089,0,0,1,0,2.82177Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M534.467,353.7439H522.23938a3.29206,3.29206,0,0,0,0,6.58412H534.467a3.29206,3.29206,0,0,0,0-6.58412Zm0,4.70294H522.23938a1.41088,1.41088,0,1,1,0-2.82176H534.467a1.41088,1.41088,0,1,1,0,2.82176Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M557.04115,353.7439H544.8135a3.29206,3.29206,0,0,0,0,6.58412h12.22765a3.29206,3.29206,0,0,0,0-6.58412Zm0,4.70294H544.8135a1.41088,1.41088,0,1,1,0-2.82176h12.22765a1.41088,1.41088,0,1,1,0,2.82176Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M534.467,345.27861H522.23938a3.29206,3.29206,0,0,0,0,6.58412H534.467a3.29206,3.29206,0,0,0,0-6.58412Zm0,4.70294H522.23938a1.41089,1.41089,0,1,1,0-2.82177H534.467a1.41089,1.41089,0,0,1,0,2.82177Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M557.04115,345.27861H544.8135a3.29206,3.29206,0,0,0,0,6.58412h12.22765a3.29206,3.29206,0,0,0,0-6.58412Zm0,4.70294H544.8135a1.41089,1.41089,0,1,1,0-2.82177h12.22765a1.41089,1.41089,0,0,1,0,2.82177Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M277.54458,326.77175s-13.36291,56.4212,2.96954,56.4212,54.93644-63.84505,54.93644-63.84505,40.08875-20.78676,23.7563-28.2106-37.11922,11.87815-37.11922,11.87815l-23.985,33.29991-1.2561-16.96746Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#a0616a"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M308.72473,279.25915l-8.90862-8.90861s-17.81722,10.39338-19.302,20.78676-8.90861,43.05829-8.90861,43.05829l27.46822,2.22715,8.90861-13.36292Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#cfcce0"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M730.74286,258.1379c-1.11855-3.30279-15.14535-14.52981-6.55009-16.41686l7.04866,9.39858,32.40661-32.406,3.25929,3.25929Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M730.74286,368.33187c-1.11855-3.30278-15.14535-14.5298-6.55009-16.41685l7.04866,9.39858,32.40661-32.406,3.25929,3.25929Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M730.74286,480.10005c-1.11855-3.30278-15.14535-14.5298-6.55009-16.41685l7.04866,9.39858,32.40661-32.406,3.25929,3.25928Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#00bfa6"
+            "M466.92034,618.25377a53.753,53.753,0,0,1-107.30793,4.61313c-.07818-.87309-.1368-1.74622-.16289-2.63235v-.04562q-.03908-.96758-.03909-1.93516a53.755,53.755,0,0,1,107.50991,0Z",
+          transform: "translate(-43 -153.22928)",
+          fill: "#65617d"
         }
       }),
       _vm._v(" "),
       _c("circle", {
-        attrs: { cx: "672.94144", cy: "62.22326", r: "10", fill: "#3f3d56" }
-      }),
-      _vm._v(" "),
-      _c("rect", {
         attrs: {
-          x: "710.44122",
-          y: "61.22319",
-          width: "161",
-          height: "2",
-          fill: "#3f3d56"
+          cx: "370.16388",
+          cy: "465.02449",
+          r: "29.32088",
+          fill: "#dce0ed"
         }
       }),
       _vm._v(" "),
       _c("circle", {
-        attrs: { cx: "672.94144", cy: "172.41724", r: "10", fill: "#3f3d56" }
+        attrs: {
+          cx: "370.16388",
+          cy: "465.02449",
+          r: "17.59253",
+          fill: "#65617d"
+        }
+      }),
+      _vm._v(" "),
+      _c("path", {
+        attrs: {
+          d:
+            "M271.99511,516.17145l-129.442,2.6063V499.66708c1.15982-15.35763,16.90838-20.74617,31.28213-22.43373a89.77451,89.77451,0,0,1,33.44537,2.50855c27.46387,7.27156,44.97821,8.679,53.579,8.81583a8.219,8.219,0,0,1,7.94923,6.68513c.4105,2.1828.81447,4.561,1.19239,6.90672.2867,1.83745.56035,3.64881.808,5.3364C271.51943,512.37932,271.99511,516.17145,271.99511,516.17145Z",
+          transform: "translate(-43 -153.22928)",
+          fill: "#65617d"
+        }
+      }),
+      _vm._v(" "),
+      _c("path", {
+        attrs: {
+          d:
+            "M375.26326,621.72664H106.36468a10.58547,10.58547,0,0,1-9.8062-6.33982c-2.02642-4.84119.80795-7.92965,3.83127-9.741a30.46331,30.46331,0,0,0,13.24-16.19815c2.86691-8.43791,5.66868-21.7235,6.76984-42.43058,1.13373-21.41727,8.88749-32.00537,17.26674-37.13326h.00652c10.82266-6.62,22.68786-4.13753,22.68786-4.13753l109.02809.87313a20.95669,20.95669,0,0,1,5.32336,3.47291c9.715,9.04386-4.45027,20.8504-4.45027,20.8504-30.409,32.14218-7.38884,64.72094-7.38884,64.72094h55.78787a51.33863,51.33863,0,0,0,29.22313-8.94612c7.53873-5.20607,10.45777-10.24926,11.585-13.29863.86009-2.33265,1.73318-4.65878,2.77572-6.91324,14.63436-31.7382-3.01679-83.369-10.63371-102.6752-1.88958-4.8021-3.16016-7.60391-3.16016-7.60391l17.49481-1.32267,11.06374-.84052.11076-.00652c24.382,42.05265,33.44536,85.26512,36.49473,117.28354.28669,3.01679.52125,5.94236.71023,8.75065A39.10084,39.10084,0,0,1,375.26326,621.72664Z",
+          transform: "translate(-43 -153.22928)",
+          fill: "#00bfa6"
+        }
+      }),
+      _vm._v(" "),
+      _c("path", {
+        attrs: {
+          d:
+            "M270.80924,507.486H142.55316v-5.3364H270.00129C270.288,503.987,270.56164,505.79839,270.80924,507.486Z",
+          transform: "translate(-43 -153.22928)",
+          opacity: "0.1"
+        }
+      }),
+      _vm._v(" "),
+      _c("path", {
+        attrs: {
+          d:
+            "M274.71217,510.09229H138.70236a2.57218,2.57218,0,0,1-1.0295-.20851c10.82266-6.62,22.68786-4.13753,22.68786-4.13753l109.02809.87313A20.95669,20.95669,0,0,1,274.71217,510.09229Z",
+          transform: "translate(-43 -153.22928)",
+          opacity: "0.1"
+        }
       }),
       _vm._v(" "),
       _c("rect", {
         attrs: {
-          x: "710.44122",
-          y: "171.41703",
-          width: "161",
-          height: "2",
-          fill: "#3f3d56"
+          x: "45.44843",
+          y: "350.22611",
+          width: "190.06459",
+          height: "5.33374",
+          rx: "2.66687",
+          fill: "#dce0ed"
+        }
+      }),
+      _vm._v(" "),
+      _c("path", {
+        attrs: {
+          d:
+            "M413.615,571.34036c-6.19649,6.73726-10.75751,9.38918-10.54248,2.28051.65157-21.502-37.12675-118.717-37.12675-118.717l11.1745-.847C401.50221,496.10947,410.5656,539.32194,413.615,571.34036Z",
+          transform: "translate(-43 -153.22928)",
+          opacity: "0.1"
+        }
+      }),
+      _vm._v(" "),
+      _c("path", {
+        attrs: {
+          d:
+            "M466.59455,612.36351c-6.418,1.53774-14.35418,3.1015-24.14085,4.535q-5.45372.80145-11.70231,1.53771c-9.98862,1.18587-21.54108,2.2219-34.88532,3.0168q-5.66869.3421-11.774.619-11.43516.518-24.47969.79491l-.16289-2.63235v-.04562c12.15189-4.90634,31.26909-17.9965,34.35106-52.09345a53.783,53.783,0,0,1,72.794,44.268Z",
+          transform: "translate(-43 -153.22928)",
+          opacity: "0.1"
+        }
+      }),
+      _vm._v(" "),
+      _c("path", {
+        attrs: {
+          d:
+            "M349.31753,621.72664s61.70418-6.68387,40.46283-100.71164c0,0,30.49066,27.948,49.45455,43.48382S492,601.45,492,601.45,471.81367,620.31548,349.31753,621.72664Z",
+          transform: "translate(-43 -153.22928)",
+          fill: "#00bfa6"
+        }
+      }),
+      _vm._v(" "),
+      _c("path", {
+        attrs: {
+          d:
+            "M349.31753,621.72664s61.70418-6.68387,40.46283-100.71164c0,0,30.49066,27.948,49.45455,43.48382S492,601.45,492,601.45,471.81367,620.31548,349.31753,621.72664Z",
+          transform: "translate(-43 -153.22928)",
+          fill: "#fff",
+          opacity: "0.1"
         }
       }),
       _vm._v(" "),
       _c("circle", {
-        attrs: { cx: "672.94144", cy: "284.18542", r: "10", fill: "#3f3d56" }
+        attrs: {
+          cx: "141.469",
+          cy: "465.02449",
+          r: "53.75496",
+          fill: "#65617d"
+        }
+      }),
+      _vm._v(" "),
+      _c("circle", {
+        attrs: {
+          cx: "141.469",
+          cy: "465.02449",
+          r: "29.32088",
+          fill: "#dce0ed"
+        }
+      }),
+      _vm._v(" "),
+      _c("circle", {
+        attrs: {
+          cx: "141.469",
+          cy: "465.02449",
+          r: "17.59253",
+          fill: "#65617d"
+        }
+      }),
+      _vm._v(" "),
+      _c("path", {
+        attrs: {
+          d:
+            "M244.73971,602.11058c0-34.7145-27.56754-62.85615-61.57386-62.85615S121.592,567.39608,121.592,602.11058c0,1.46475.0532,2.91664.14975,4.35636H244.59C244.68652,605.02722,244.73971,603.57533,244.73971,602.11058Z",
+          transform: "translate(-43 -153.22928)",
+          opacity: "0.1"
+        }
+      }),
+      _vm._v(" "),
+      _c("path", {
+        attrs: {
+          d:
+            "M242.4592,601.02725c0-33.42878-26.54652-60.52815-59.29335-60.52815s-59.29334,27.09937-59.29334,60.52815c0,1.41051.05122,2.80861.1442,4.195H242.315C242.408,603.83586,242.4592,602.43776,242.4592,601.02725Z",
+          transform: "translate(-43 -153.22928)",
+          fill: "#00bfa6"
+        }
+      }),
+      _vm._v(" "),
+      _c("path", {
+        attrs: {
+          d:
+            "M242.4592,601.02612c0,.97084-.026,1.93516-.07167,2.893-.01956.43654-.04561.86656-.07166,1.30315h-118.3c-.026-.43659-.05209-.86661-.07166-1.30315-.04561-.95784-.07166-1.92216-.07166-2.893,0-33.4258,26.54516-60.52483,59.29334-60.52483S242.4592,567.60032,242.4592,601.02612Z",
+          transform: "translate(-43 -153.22928)",
+          fill: "#fff",
+          opacity: "0.1"
+        }
+      }),
+      _vm._v(" "),
+      _c("path", {
+        attrs: {
+          d:
+            "M242.38753,603.91912c-.01956.43654-.04561.86656-.07166,1.30315h-118.3c-.026-.43659-.05209-.86661-.07166-1.30315Z",
+          transform: "translate(-43 -153.22928)",
+          opacity: "0.1"
+        }
+      }),
+      _vm._v(" "),
+      _c("ellipse", {
+        attrs: {
+          cx: "394.91977",
+          cy: "496.63947",
+          rx: "7.80344",
+          ry: "19.65277",
+          transform: "translate(-212.55202 53.61029) rotate(-24.33287)",
+          opacity: "0.1"
+        }
+      }),
+      _vm._v(" "),
+      _c("ellipse", {
+        attrs: {
+          cx: "395.57134",
+          cy: "495.9879",
+          rx: "7.80344",
+          ry: "19.65277",
+          transform: "translate(-212.22567 53.82088) rotate(-24.33287)",
+          fill: "#dce0ed"
+        }
+      }),
+      _vm._v(" "),
+      _c("path", {
+        attrs: {
+          d:
+            "M377.00948,454.06334v10.21017h-19.873a34.24153,34.24153,0,0,1-5.52534-.44307c-1.88958-4.8021-3.16016-7.60391-3.16016-7.60391l17.49481-1.32267Z",
+          transform: "translate(-43 -153.22928)",
+          opacity: "0.1"
+        }
+      }),
+      _vm._v(" "),
+      _c("path", {
+        attrs: {
+          d:
+            "M377.00948,462.96949h-19.873c-17.453,0-31.60139-13.05818-31.60139-29.16627v-2.70615c0-16.10809,14.14842-29.16627,31.60139-29.16627l19.873,1.8041Z",
+          transform: "translate(-43 -153.22928)",
+          fill: "#00bfa6"
+        }
+      }),
+      _vm._v(" "),
+      _c("path", {
+        attrs: {
+          d:
+            "M344.26782,419.19754s11.89125,6.35286,5.04971,17.10385c0,0-8.389,13.76453-21.58343,12.46138l-4.80536-29.56523S338.72943,417.7315,344.26782,419.19754Z",
+          transform: "translate(-43 -153.22928)",
+          fill: "#00bfa6"
+        }
+      }),
+      _vm._v(" "),
+      _c("path", {
+        attrs: {
+          d:
+            "M339.70327,418.62315a12.64112,12.64112,0,0,1,9.655,5.0947c2.11761,2.93208,3.38,7.20805-.04073,12.58354,0,0-8.389,13.76453-21.58343,12.46138l-4.80536-29.56523A147.02057,147.02057,0,0,1,339.70327,418.62315Z",
+          transform: "translate(-43 -153.22928)",
+          opacity: "0.1"
+        }
+      }),
+      _vm._v(" "),
+      _c("path", {
+        attrs: {
+          d:
+            "M333.3579,250.50562h0A15.96358,15.96358,0,0,1,349.3215,266.4692v27.30744a15.96358,15.96358,0,0,1-15.96358,15.96358h0a0,0,0,0,1,0,0V250.50562A0,0,0,0,1,333.3579,250.50562Z",
+          opacity: "0.1"
+        }
+      }),
+      _vm._v(" "),
+      _c("path", {
+        attrs: {
+          d:
+            "M334.00948,250.50562h0a15.96358,15.96358,0,0,1,15.96358,15.96358v27.30744a15.96358,15.96358,0,0,1-15.96358,15.96358h0a0,0,0,0,1,0,0V250.50562A0,0,0,0,1,334.00948,250.50562Z",
+          fill: "#dce0ed"
+        }
+      }),
+      _vm._v(" "),
+      _c("ellipse", {
+        attrs: {
+          cx: "278.55269",
+          cy: "281.34462",
+          rx: "13.20295",
+          ry: "16.06215",
+          fill: "#00bfa6"
+        }
+      }),
+      _vm._v(" "),
+      _c("polyline", {
+        attrs: {
+          points: "137.953 355.597 143.722 368.443 153.363 355.597",
+          fill: "none",
+          stroke: "#000",
+          "stroke-miterlimit": "10"
+        }
       }),
       _vm._v(" "),
       _c("rect", {
         attrs: {
-          x: "710.44122",
-          y: "283.1851",
-          width: "161",
-          height: "2",
-          fill: "#3f3d56"
+          x: "119.70361",
+          y: "368.9797",
+          width: "47.04234",
+          height: "46.23127",
+          fill: "#fff"
         }
       }),
       _vm._v(" "),
-      _c("polygon", {
+      _c("path", {
         attrs: {
-          points:
-            "600.04 312.485 550.04 312.485 550.04 261.485 584.04 261.485 584.04 263.485 552.04 263.485 552.04 310.485 598.04 310.485 598.04 287.485 600.04 287.485 600.04 312.485",
-          fill: "#3f3d56"
+          d:
+            "M183.907,566.27811v-5.1553a14.86629,14.86629,0,0,1-7.80974-2.24594l1.22506-3.42009a15.76111,15.76111,0,0,0,7.93286,2.195c3.624,0,6.0741-2.09294,6.0741-5.00259,0-2.80728-1.99057-4.54278-5.76812-6.0741-5.20634-2.04176-7.83973-4.38979-7.83973-8.83076,0-4.23651,2.7204-7.45214,7.4166-8.21794v-5.1553h2.582v4.95112a13.61692,13.61692,0,0,1,6.636,1.78669l-1.27624,3.36862a11.08864,11.08864,0,0,0-6.14035-1.73522c-3.93039,0-4.82829,2.34774-4.82829,4.3895,0,2.65429,1.30625,3.98172,5.74708,5.81931,5.25739,2.14356,8.49406,4.79785,8.49406,9.34091,0,4.03233-2.80728,7.80988-8.06467,8.67748v5.30858Z",
+          transform: "translate(-43 -153.22928)",
+          fill: "#636780"
         }
       }),
       _vm._v(" "),
-      _c("polygon", {
+      _c("rect", {
         attrs: {
-          points:
-            "600.04 200.485 550.04 200.485 550.04 149.485 584.04 149.485 584.04 151.485 552.04 151.485 552.04 198.485 598.04 198.485 598.04 175.485 600.04 175.485 600.04 200.485",
-          fill: "#3f3d56"
+          x: "51",
+          y: "246.77072",
+          width: "7",
+          height: "108",
+          fill: "#dce0ed"
         }
       }),
       _vm._v(" "),
-      _c("polygon", {
+      _c("path", {
         attrs: {
-          points:
-            "600.04 86.485 550.04 86.485 550.04 35.485 584.04 35.485 584.04 37.485 552.04 37.485 552.04 84.485 598.04 84.485 598.04 61.485 600.04 61.485 600.04 86.485",
-          fill: "#3f3d56"
+          d: "M94,400s-26,1-31,3-20,1-20,1v28s17-4,26-1,28-4,28-4Z",
+          transform: "translate(-43 -153.22928)",
+          fill: "#dce0ed"
         }
       })
     ]
@@ -3857,10 +3715,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Alert.vue?vue&type=template&id=7b2bf401&":
-/*!********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Alert.vue?vue&type=template&id=7b2bf401& ***!
-  \********************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CardRequirement.vue?vue&type=template&id=baf86c10&":
+/*!******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CardRequirement.vue?vue&type=template&id=baf86c10& ***!
+  \******************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -3872,22 +3730,103 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "b-alert",
-    {
-      staticClass: "position-fixed fixed-bottom m-0 rounded-0",
-      staticStyle: { "z-index": "2000" },
-      attrs: { dismissible: "", fade: "", variant: "dark" },
-      model: {
-        value: _vm.dismissCountDown,
-        callback: function($$v) {
-          _vm.dismissCountDown = $$v
+  return _c("div", [
+    _c(
+      "div",
+      {
+        staticClass: "card-header border-0 pt-4 pb-4",
+        class: _vm.background,
+        attrs: { "data-aos": "flip-left" }
+      },
+      [
+        _c(
+          "h3",
+          {
+            staticClass: "my-0 font-weight-normal mb-3",
+            class: _vm.titleColor,
+            attrs: { "data-aos": "fade-in" }
+          },
+          [_vm._v("\n      " + _vm._s(_vm.title) + "\n    ")]
+        )
+      ]
+    ),
+    _vm._v(" "),
+    _c("div", { staticClass: "card-body" }, [
+      _c(
+        "ul",
+        {
+          staticClass: "list-unstyled mt-3 mb-4",
+          attrs: { "data-aos": "fade-up" }
         },
-        expression: "dismissCountDown"
-      }
-    },
-    [_vm._v("\n    " + _vm._s(_vm.msg) + "\n")]
-  )
+        [
+          _c("li", [
+            _vm._v("\n        KTP Pemohon dan Suami / Istri\n        "),
+            _vm.reqLists.ktp
+              ? _c("span", { staticClass: "fa fa-check text-success" })
+              : _c("span", { staticClass: "fa fa-times text-danger" })
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v("\n        Kartu Keluarga & Surat Nikah\n        "),
+            _vm.reqLists.kk
+              ? _c("span", { staticClass: "fa fa-check text-success" })
+              : _c("span", { staticClass: "fa fa-times text-danger" })
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v("\n        Surat Keterangan Kerja\n        "),
+            _vm.reqLists.sk
+              ? _c("span", { staticClass: "fa fa-check text-success" })
+              : _c("span", { staticClass: "fa fa-times text-danger" })
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v("\n        Slip Gaji\n        "),
+            _vm.reqLists.slip
+              ? _c("span", { staticClass: "fa fa-check text-success" })
+              : _c("span", { staticClass: "fa fa-times text-danger" })
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v("\n        NPWP a/n Pemohon/SPT PPh 21 *)\n        "),
+            _vm.reqLists.npwp
+              ? _c("span", { staticClass: "fa fa-check text-success" })
+              : _c("span", { staticClass: "fa fa-times text-danger" })
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v(
+              "\n        Rekening Tabungan/Giro 3 bulan terakhir\n        "
+            ),
+            _vm.reqLists.rek
+              ? _c("span", { staticClass: "fa fa-check text-success" })
+              : _c("span", { staticClass: "fa fa-times text-danger" })
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v("\n        Laporan Keuangan 2 tahun terakhir\n        "),
+            _vm.reqLists.laporanKeu
+              ? _c("span", { staticClass: "fa fa-check text-success" })
+              : _c("span", { staticClass: "fa fa-times text-danger" })
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v("\n        Copy Ijin Praktek\n        "),
+            _vm.reqLists.izinPraktek
+              ? _c("span", { staticClass: "fa fa-check text-success" })
+              : _c("span", { staticClass: "fa fa-times text-danger" })
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v("\n        Bukti Kepemilikan Rumah\n        "),
+            _vm.reqLists.bkr
+              ? _c("span", { staticClass: "fa fa-check text-success" })
+              : _c("span", { staticClass: "fa fa-times text-danger" })
+          ])
+        ]
+      )
+    ])
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -4599,6 +4538,25 @@ var render = function() {
                   "li",
                   {
                     staticClass: "cool-link",
+                    class: _vm.isRoute("news") ? "nav-item active" : "nav-item"
+                  },
+                  [
+                    _c(
+                      "inertia-link",
+                      {
+                        staticClass: "nav-link py-3",
+                        attrs: { href: _vm.route("news") }
+                      },
+                      [_vm._v("Berita")]
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "li",
+                  {
+                    staticClass: "cool-link",
                     class: _vm.isRoute("contact")
                       ? "nav-item active"
                       : "nav-item"
@@ -4697,2467 +4655,129 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vuejs-datepicker/dist/vuejs-datepicker.esm.js":
+/***/ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js":
 /*!********************************************************************!*\
-  !*** ./node_modules/vuejs-datepicker/dist/vuejs-datepicker.esm.js ***!
+  !*** ./node_modules/vue-loader/lib/runtime/componentNormalizer.js ***!
   \********************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-function _typeof(obj) {
-  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    _typeof = function (obj) {
-      return typeof obj;
-    };
-  } else {
-    _typeof = function (obj) {
-      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-    };
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return normalizeComponent; });
+/* globals __VUE_SSR_CONTEXT__ */
+
+// IMPORTANT: Do NOT use ES2015 features in this file (except for modules).
+// This module is a runtime utility for cleaner component module output and will
+// be included in the final webpack user bundle.
+
+function normalizeComponent (
+  scriptExports,
+  render,
+  staticRenderFns,
+  functionalTemplate,
+  injectStyles,
+  scopeId,
+  moduleIdentifier, /* server only */
+  shadowMode /* vue-cli only */
+) {
+  // Vue.extend constructor export interop
+  var options = typeof scriptExports === 'function'
+    ? scriptExports.options
+    : scriptExports
+
+  // render functions
+  if (render) {
+    options.render = render
+    options.staticRenderFns = staticRenderFns
+    options._compiled = true
   }
 
-  return _typeof(obj);
-}
-
-function _classCallCheck(instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
-}
-
-function _defineProperties(target, props) {
-  for (var i = 0; i < props.length; i++) {
-    var descriptor = props[i];
-    descriptor.enumerable = descriptor.enumerable || false;
-    descriptor.configurable = true;
-    if ("value" in descriptor) descriptor.writable = true;
-    Object.defineProperty(target, descriptor.key, descriptor);
-  }
-}
-
-function _createClass(Constructor, protoProps, staticProps) {
-  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
-  if (staticProps) _defineProperties(Constructor, staticProps);
-  return Constructor;
-}
-
-function _defineProperty(obj, key, value) {
-  if (key in obj) {
-    Object.defineProperty(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
+  // functional template
+  if (functionalTemplate) {
+    options.functional = true
   }
 
-  return obj;
-}
-
-function _objectSpread(target) {
-  for (var i = 1; i < arguments.length; i++) {
-    var source = arguments[i] != null ? arguments[i] : {};
-    var ownKeys = Object.keys(source);
-
-    if (typeof Object.getOwnPropertySymbols === 'function') {
-      ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {
-        return Object.getOwnPropertyDescriptor(source, sym).enumerable;
-      }));
-    }
-
-    ownKeys.forEach(function (key) {
-      _defineProperty(target, key, source[key]);
-    });
-  }
-
-  return target;
-}
-
-var Language =
-/*#__PURE__*/
-function () {
-  function Language(language, months, monthsAbbr, days) {
-    _classCallCheck(this, Language);
-
-    this.language = language;
-    this.months = months;
-    this.monthsAbbr = monthsAbbr;
-    this.days = days;
-    this.rtl = false;
-    this.ymd = false;
-    this.yearSuffix = '';
-  }
-
-  _createClass(Language, [{
-    key: "language",
-    get: function get() {
-      return this._language;
-    },
-    set: function set(language) {
-      if (typeof language !== 'string') {
-        throw new TypeError('Language must be a string');
-      }
-
-      this._language = language;
-    }
-  }, {
-    key: "months",
-    get: function get() {
-      return this._months;
-    },
-    set: function set(months) {
-      if (months.length !== 12) {
-        throw new RangeError("There must be 12 months for ".concat(this.language, " language"));
-      }
-
-      this._months = months;
-    }
-  }, {
-    key: "monthsAbbr",
-    get: function get() {
-      return this._monthsAbbr;
-    },
-    set: function set(monthsAbbr) {
-      if (monthsAbbr.length !== 12) {
-        throw new RangeError("There must be 12 abbreviated months for ".concat(this.language, " language"));
-      }
-
-      this._monthsAbbr = monthsAbbr;
-    }
-  }, {
-    key: "days",
-    get: function get() {
-      return this._days;
-    },
-    set: function set(days) {
-      if (days.length !== 7) {
-        throw new RangeError("There must be 7 days for ".concat(this.language, " language"));
-      }
-
-      this._days = days;
-    }
-  }]);
-
-  return Language;
-}(); // eslint-disable-next-line
-
-var en = new Language('English', ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'], ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'], ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']) // eslint-disable-next-line
-;
-
-var utils = {
-  /**
-   * @type {Boolean}
-   */
-  useUtc: false,
-
-  /**
-   * Returns the full year, using UTC or not
-   * @param {Date} date
-   */
-  getFullYear: function getFullYear(date) {
-    return this.useUtc ? date.getUTCFullYear() : date.getFullYear();
-  },
-
-  /**
-   * Returns the month, using UTC or not
-   * @param {Date} date
-   */
-  getMonth: function getMonth(date) {
-    return this.useUtc ? date.getUTCMonth() : date.getMonth();
-  },
-
-  /**
-   * Returns the date, using UTC or not
-   * @param {Date} date
-   */
-  getDate: function getDate(date) {
-    return this.useUtc ? date.getUTCDate() : date.getDate();
-  },
-
-  /**
-   * Returns the day, using UTC or not
-   * @param {Date} date
-   */
-  getDay: function getDay(date) {
-    return this.useUtc ? date.getUTCDay() : date.getDay();
-  },
-
-  /**
-   * Returns the hours, using UTC or not
-   * @param {Date} date
-   */
-  getHours: function getHours(date) {
-    return this.useUtc ? date.getUTCHours() : date.getHours();
-  },
-
-  /**
-   * Returns the minutes, using UTC or not
-   * @param {Date} date
-   */
-  getMinutes: function getMinutes(date) {
-    return this.useUtc ? date.getUTCMinutes() : date.getMinutes();
-  },
-
-  /**
-   * Sets the full year, using UTC or not
-   * @param {Date} date
-   */
-  setFullYear: function setFullYear(date, value, useUtc) {
-    return this.useUtc ? date.setUTCFullYear(value) : date.setFullYear(value);
-  },
-
-  /**
-   * Sets the month, using UTC or not
-   * @param {Date} date
-   */
-  setMonth: function setMonth(date, value, useUtc) {
-    return this.useUtc ? date.setUTCMonth(value) : date.setMonth(value);
-  },
-
-  /**
-   * Sets the date, using UTC or not
-   * @param {Date} date
-   * @param {Number} value
-   */
-  setDate: function setDate(date, value, useUtc) {
-    return this.useUtc ? date.setUTCDate(value) : date.setDate(value);
-  },
-
-  /**
-   * Check if date1 is equivalent to date2, without comparing the time
-   * @see https://stackoverflow.com/a/6202196/4455925
-   * @param {Date} date1
-   * @param {Date} date2
-   */
-  compareDates: function compareDates(date1, date2) {
-    var d1 = new Date(date1.getTime());
-    var d2 = new Date(date2.getTime());
-
-    if (this.useUtc) {
-      d1.setUTCHours(0, 0, 0, 0);
-      d2.setUTCHours(0, 0, 0, 0);
-    } else {
-      d1.setHours(0, 0, 0, 0);
-      d2.setHours(0, 0, 0, 0);
-    }
-
-    return d1.getTime() === d2.getTime();
-  },
-
-  /**
-   * Validates a date object
-   * @param {Date} date - an object instantiated with the new Date constructor
-   * @return {Boolean}
-   */
-  isValidDate: function isValidDate(date) {
-    if (Object.prototype.toString.call(date) !== '[object Date]') {
-      return false;
-    }
-
-    return !isNaN(date.getTime());
-  },
-
-  /**
-   * Return abbreviated week day name
-   * @param {Date}
-   * @param {Array}
-   * @return {String}
-   */
-  getDayNameAbbr: function getDayNameAbbr(date, days) {
-    if (_typeof(date) !== 'object') {
-      throw TypeError('Invalid Type');
-    }
-
-    return days[this.getDay(date)];
-  },
-
-  /**
-   * Return name of the month
-   * @param {Number|Date}
-   * @param {Array}
-   * @return {String}
-   */
-  getMonthName: function getMonthName(month, months) {
-    if (!months) {
-      throw Error('missing 2nd parameter Months array');
-    }
-
-    if (_typeof(month) === 'object') {
-      return months[this.getMonth(month)];
-    }
-
-    if (typeof month === 'number') {
-      return months[month];
-    }
-
-    throw TypeError('Invalid type');
-  },
-
-  /**
-   * Return an abbreviated version of the month
-   * @param {Number|Date}
-   * @return {String}
-   */
-  getMonthNameAbbr: function getMonthNameAbbr(month, monthsAbbr) {
-    if (!monthsAbbr) {
-      throw Error('missing 2nd paramter Months array');
-    }
-
-    if (_typeof(month) === 'object') {
-      return monthsAbbr[this.getMonth(month)];
-    }
-
-    if (typeof month === 'number') {
-      return monthsAbbr[month];
-    }
-
-    throw TypeError('Invalid type');
-  },
-
-  /**
-   * Alternative get total number of days in month
-   * @param {Number} year
-   * @param {Number} m
-   * @return {Number}
-   */
-  daysInMonth: function daysInMonth(year, month) {
-    return /8|3|5|10/.test(month) ? 30 : month === 1 ? !(year % 4) && year % 100 || !(year % 400) ? 29 : 28 : 31;
-  },
-
-  /**
-   * Get nth suffix for date
-   * @param {Number} day
-   * @return {String}
-   */
-  getNthSuffix: function getNthSuffix(day) {
-    switch (day) {
-      case 1:
-      case 21:
-      case 31:
-        return 'st';
-
-      case 2:
-      case 22:
-        return 'nd';
-
-      case 3:
-      case 23:
-        return 'rd';
-
-      default:
-        return 'th';
-    }
-  },
-
-  /**
-   * Formats date object
-   * @param {Date}
-   * @param {String}
-   * @param {Object}
-   * @return {String}
-   */
-  formatDate: function formatDate(date, format, translation) {
-    translation = !translation ? en : translation;
-    var year = this.getFullYear(date);
-    var month = this.getMonth(date) + 1;
-    var day = this.getDate(date);
-    var str = format.replace(/dd/, ('0' + day).slice(-2)).replace(/d/, day).replace(/yyyy/, year).replace(/yy/, String(year).slice(2)).replace(/MMMM/, this.getMonthName(this.getMonth(date), translation.months)).replace(/MMM/, this.getMonthNameAbbr(this.getMonth(date), translation.monthsAbbr)).replace(/MM/, ('0' + month).slice(-2)).replace(/M(?!a|ä|e)/, month).replace(/su/, this.getNthSuffix(this.getDate(date))).replace(/D(?!e|é|i)/, this.getDayNameAbbr(date, translation.days));
-    return str;
-  },
-
-  /**
-   * Creates an array of dates for each day in between two dates.
-   * @param {Date} start
-   * @param {Date} end
-   * @return {Array}
-   */
-  createDateArray: function createDateArray(start, end) {
-    var dates = [];
-
-    while (start <= end) {
-      dates.push(new Date(start));
-      start = this.setDate(new Date(start), this.getDate(new Date(start)) + 1);
-    }
-
-    return dates;
-  },
-
-  /**
-   * method used as a prop validator for input values
-   * @param {*} val
-   * @return {Boolean}
-   */
-  validateDateInput: function validateDateInput(val) {
-    return val === null || val instanceof Date || typeof val === 'string' || typeof val === 'number';
-  }
-};
-var makeDateUtils = function makeDateUtils(useUtc) {
-  return _objectSpread({}, utils, {
-    useUtc: useUtc
-  });
-};
-var utils$1 = _objectSpread({}, utils) // eslint-disable-next-line
-;
-
-var script = {
-  props: {
-    selectedDate: Date,
-    resetTypedDate: [Date],
-    format: [String, Function],
-    translation: Object,
-    inline: Boolean,
-    id: String,
-    name: String,
-    refName: String,
-    openDate: Date,
-    placeholder: String,
-    inputClass: [String, Object, Array],
-    clearButton: Boolean,
-    clearButtonIcon: String,
-    calendarButton: Boolean,
-    calendarButtonIcon: String,
-    calendarButtonIconContent: String,
-    disabled: Boolean,
-    required: Boolean,
-    typeable: Boolean,
-    bootstrapStyling: Boolean,
-    useUtc: Boolean
-  },
-  data: function data() {
-    var constructedDateUtils = makeDateUtils(this.useUtc);
-    return {
-      input: null,
-      typedDate: false,
-      utils: constructedDateUtils
-    };
-  },
-  computed: {
-    formattedValue: function formattedValue() {
-      if (!this.selectedDate) {
-        return null;
-      }
-
-      if (this.typedDate) {
-        return this.typedDate;
-      }
-
-      return typeof this.format === 'function' ? this.format(this.selectedDate) : this.utils.formatDate(new Date(this.selectedDate), this.format, this.translation);
-    },
-    computedInputClass: function computedInputClass() {
-      if (this.bootstrapStyling) {
-        if (typeof this.inputClass === 'string') {
-          return [this.inputClass, 'form-control'].join(' ');
-        }
-
-        return _objectSpread({
-          'form-control': true
-        }, this.inputClass);
-      }
-
-      return this.inputClass;
-    }
-  },
-  watch: {
-    resetTypedDate: function resetTypedDate() {
-      this.typedDate = false;
-    }
-  },
-  methods: {
-    showCalendar: function showCalendar() {
-      this.$emit('showCalendar');
-    },
-
-    /**
-     * Attempt to parse a typed date
-     * @param {Event} event
-     */
-    parseTypedDate: function parseTypedDate(event) {
-      // close calendar if escape or enter are pressed
-      if ([27, // escape
-      13 // enter
-      ].includes(event.keyCode)) {
-        this.input.blur();
-      }
-
-      if (this.typeable) {
-        var typedDate = Date.parse(this.input.value);
-
-        if (!isNaN(typedDate)) {
-          this.typedDate = this.input.value;
-          this.$emit('typedDate', new Date(this.typedDate));
-        }
-      }
-    },
-
-    /**
-     * nullify the typed date to defer to regular formatting
-     * called once the input is blurred
-     */
-    inputBlurred: function inputBlurred() {
-      if (this.typeable && isNaN(Date.parse(this.input.value))) {
-        this.clearDate();
-        this.input.value = null;
-        this.typedDate = null;
-      }
-
-      this.$emit('closeCalendar');
-    },
-
-    /**
-     * emit a clearDate event
-     */
-    clearDate: function clearDate() {
-      this.$emit('clearDate');
-    }
-  },
-  mounted: function mounted() {
-    this.input = this.$el.querySelector('input');
-  }
-} // eslint-disable-next-line
-;
-
-function normalizeComponent(template, style, script, scopeId, isFunctionalTemplate, moduleIdentifier
-/* server only */
-, shadowMode, createInjector, createInjectorSSR, createInjectorShadow) {
-  if (typeof shadowMode !== 'boolean') {
-    createInjectorSSR = createInjector;
-    createInjector = shadowMode;
-    shadowMode = false;
-  } // Vue.extend constructor export interop.
-
-
-  var options = typeof script === 'function' ? script.options : script; // render functions
-
-  if (template && template.render) {
-    options.render = template.render;
-    options.staticRenderFns = template.staticRenderFns;
-    options._compiled = true; // functional template
-
-    if (isFunctionalTemplate) {
-      options.functional = true;
-    }
-  } // scopedId
-
-
+  // scopedId
   if (scopeId) {
-    options._scopeId = scopeId;
+    options._scopeId = 'data-v-' + scopeId
   }
 
-  var hook;
-
-  if (moduleIdentifier) {
-    // server build
-    hook = function hook(context) {
+  var hook
+  if (moduleIdentifier) { // server build
+    hook = function (context) {
       // 2.3 injection
-      context = context || // cached call
-      this.$vnode && this.$vnode.ssrContext || // stateful
-      this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext; // functional
+      context =
+        context || // cached call
+        (this.$vnode && this.$vnode.ssrContext) || // stateful
+        (this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext) // functional
       // 2.2 with runInNewContext: true
-
       if (!context && typeof __VUE_SSR_CONTEXT__ !== 'undefined') {
-        context = __VUE_SSR_CONTEXT__;
-      } // inject component styles
-
-
-      if (style) {
-        style.call(this, createInjectorSSR(context));
-      } // register component module identifier for async chunk inference
-
-
-      if (context && context._registeredComponents) {
-        context._registeredComponents.add(moduleIdentifier);
+        context = __VUE_SSR_CONTEXT__
       }
-    }; // used by ssr in case component is cached and beforeCreate
+      // inject component styles
+      if (injectStyles) {
+        injectStyles.call(this, context)
+      }
+      // register component module identifier for async chunk inferrence
+      if (context && context._registeredComponents) {
+        context._registeredComponents.add(moduleIdentifier)
+      }
+    }
+    // used by ssr in case component is cached and beforeCreate
     // never gets called
-
-
-    options._ssrRegister = hook;
-  } else if (style) {
-    hook = shadowMode ? function () {
-      style.call(this, createInjectorShadow(this.$root.$options.shadowRoot));
-    } : function (context) {
-      style.call(this, createInjector(context));
-    };
+    options._ssrRegister = hook
+  } else if (injectStyles) {
+    hook = shadowMode
+      ? function () {
+        injectStyles.call(
+          this,
+          (options.functional ? this.parent : this).$root.$options.shadowRoot
+        )
+      }
+      : injectStyles
   }
 
   if (hook) {
     if (options.functional) {
+      // for template-only hot-reload because in that case the render fn doesn't
+      // go through the normalizer
+      options._injectStyles = hook
       // register for functional component in vue file
-      var originalRender = options.render;
-
-      options.render = function renderWithStyleInjection(h, context) {
-        hook.call(context);
-        return originalRender(h, context);
-      };
+      var originalRender = options.render
+      options.render = function renderWithStyleInjection (h, context) {
+        hook.call(context)
+        return originalRender(h, context)
+      }
     } else {
       // inject component registration as beforeCreate hook
-      var existing = options.beforeCreate;
-      options.beforeCreate = existing ? [].concat(existing, hook) : [hook];
+      var existing = options.beforeCreate
+      options.beforeCreate = existing
+        ? [].concat(existing, hook)
+        : [hook]
     }
   }
 
-  return script;
-}
-
-var normalizeComponent_1 = normalizeComponent;
-
-/* script */
-const __vue_script__ = script;
-
-/* template */
-var __vue_render__ = function() {
-  var _vm = this;
-  var _h = _vm.$createElement;
-  var _c = _vm._self._c || _h;
-  return _c(
-    "div",
-    { class: { "input-group": _vm.bootstrapStyling } },
-    [
-      _vm.calendarButton
-        ? _c(
-            "span",
-            {
-              staticClass: "vdp-datepicker__calendar-button",
-              class: { "input-group-prepend": _vm.bootstrapStyling },
-              style: { "cursor:not-allowed;": _vm.disabled },
-              on: { click: _vm.showCalendar }
-            },
-            [
-              _c(
-                "span",
-                { class: { "input-group-text": _vm.bootstrapStyling } },
-                [
-                  _c("i", { class: _vm.calendarButtonIcon }, [
-                    _vm._v(
-                      "\n        " +
-                        _vm._s(_vm.calendarButtonIconContent) +
-                        "\n        "
-                    ),
-                    !_vm.calendarButtonIcon
-                      ? _c("span", [_vm._v("…")])
-                      : _vm._e()
-                  ])
-                ]
-              )
-            ]
-          )
-        : _vm._e(),
-      _vm._v(" "),
-      _c("input", {
-        ref: _vm.refName,
-        class: _vm.computedInputClass,
-        attrs: {
-          type: _vm.inline ? "hidden" : "text",
-          name: _vm.name,
-          id: _vm.id,
-          "open-date": _vm.openDate,
-          placeholder: _vm.placeholder,
-          "clear-button": _vm.clearButton,
-          disabled: _vm.disabled,
-          required: _vm.required,
-          readonly: !_vm.typeable,
-          autocomplete: "off"
-        },
-        domProps: { value: _vm.formattedValue },
-        on: {
-          click: _vm.showCalendar,
-          keyup: _vm.parseTypedDate,
-          blur: _vm.inputBlurred
-        }
-      }),
-      _vm._v(" "),
-      _vm.clearButton && _vm.selectedDate
-        ? _c(
-            "span",
-            {
-              staticClass: "vdp-datepicker__clear-button",
-              class: { "input-group-append": _vm.bootstrapStyling },
-              on: {
-                click: function($event) {
-                  return _vm.clearDate()
-                }
-              }
-            },
-            [
-              _c(
-                "span",
-                { class: { "input-group-text": _vm.bootstrapStyling } },
-                [
-                  _c("i", { class: _vm.clearButtonIcon }, [
-                    !_vm.clearButtonIcon ? _c("span", [_vm._v("×")]) : _vm._e()
-                  ])
-                ]
-              )
-            ]
-          )
-        : _vm._e(),
-      _vm._v(" "),
-      _vm._t("afterDateInput")
-    ],
-    2
-  )
-};
-var __vue_staticRenderFns__ = [];
-__vue_render__._withStripped = true;
-
-  /* style */
-  const __vue_inject_styles__ = undefined;
-  /* scoped */
-  const __vue_scope_id__ = undefined;
-  /* module identifier */
-  const __vue_module_identifier__ = undefined;
-  /* functional template */
-  const __vue_is_functional_template__ = false;
-  /* style inject */
-  
-  /* style inject SSR */
-  
-
-  
-  var DateInput = normalizeComponent_1(
-    { render: __vue_render__, staticRenderFns: __vue_staticRenderFns__ },
-    __vue_inject_styles__,
-    __vue_script__,
-    __vue_scope_id__,
-    __vue_is_functional_template__,
-    __vue_module_identifier__,
-    undefined,
-    undefined
-  );
-
-//
-var script$1 = {
-  props: {
-    showDayView: Boolean,
-    selectedDate: Date,
-    pageDate: Date,
-    pageTimestamp: Number,
-    fullMonthName: Boolean,
-    allowedToShowView: Function,
-    dayCellContent: {
-      type: Function,
-      "default": function _default(day) {
-        return day.date;
-      }
-    },
-    disabledDates: Object,
-    highlighted: Object,
-    calendarClass: [String, Object, Array],
-    calendarStyle: Object,
-    translation: Object,
-    isRtl: Boolean,
-    mondayFirst: Boolean,
-    useUtc: Boolean
-  },
-  data: function data() {
-    var constructedDateUtils = makeDateUtils(this.useUtc);
-    return {
-      utils: constructedDateUtils
-    };
-  },
-  computed: {
-    /**
-     * Returns an array of day names
-     * @return {String[]}
-     */
-    daysOfWeek: function daysOfWeek() {
-      if (this.mondayFirst) {
-        var tempDays = this.translation.days.slice();
-        tempDays.push(tempDays.shift());
-        return tempDays;
-      }
-
-      return this.translation.days;
-    },
-
-    /**
-     * Returns the day number of the week less one for the first of the current month
-     * Used to show amount of empty cells before the first in the day calendar layout
-     * @return {Number}
-     */
-    blankDays: function blankDays() {
-      var d = this.pageDate;
-      var dObj = this.useUtc ? new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), 1)) : new Date(d.getFullYear(), d.getMonth(), 1, d.getHours(), d.getMinutes());
-
-      if (this.mondayFirst) {
-        return this.utils.getDay(dObj) > 0 ? this.utils.getDay(dObj) - 1 : 6;
-      }
-
-      return this.utils.getDay(dObj);
-    },
-
-    /**
-     * @return {Object[]}
-     */
-    days: function days() {
-      var d = this.pageDate;
-      var days = []; // set up a new date object to the beginning of the current 'page'
-
-      var dObj = this.useUtc ? new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), 1)) : new Date(d.getFullYear(), d.getMonth(), 1, d.getHours(), d.getMinutes());
-      var daysInMonth = this.utils.daysInMonth(this.utils.getFullYear(dObj), this.utils.getMonth(dObj));
-
-      for (var i = 0; i < daysInMonth; i++) {
-        days.push({
-          date: this.utils.getDate(dObj),
-          timestamp: dObj.getTime(),
-          isSelected: this.isSelectedDate(dObj),
-          isDisabled: this.isDisabledDate(dObj),
-          isHighlighted: this.isHighlightedDate(dObj),
-          isHighlightStart: this.isHighlightStart(dObj),
-          isHighlightEnd: this.isHighlightEnd(dObj),
-          isToday: this.utils.compareDates(dObj, new Date()),
-          isWeekend: this.utils.getDay(dObj) === 0 || this.utils.getDay(dObj) === 6,
-          isSaturday: this.utils.getDay(dObj) === 6,
-          isSunday: this.utils.getDay(dObj) === 0
-        });
-        this.utils.setDate(dObj, this.utils.getDate(dObj) + 1);
-      }
-
-      return days;
-    },
-
-    /**
-     * Gets the name of the month the current page is on
-     * @return {String}
-     */
-    currMonthName: function currMonthName() {
-      var monthName = this.fullMonthName ? this.translation.months : this.translation.monthsAbbr;
-      return this.utils.getMonthNameAbbr(this.utils.getMonth(this.pageDate), monthName);
-    },
-
-    /**
-     * Gets the name of the year that current page is on
-     * @return {Number}
-     */
-    currYearName: function currYearName() {
-      var yearSuffix = this.translation.yearSuffix;
-      return "".concat(this.utils.getFullYear(this.pageDate)).concat(yearSuffix);
-    },
-
-    /**
-     * Is this translation using year/month/day format?
-     * @return {Boolean}
-     */
-    isYmd: function isYmd() {
-      return this.translation.ymd && this.translation.ymd === true;
-    },
-
-    /**
-     * Is the left hand navigation button disabled?
-     * @return {Boolean}
-     */
-    isLeftNavDisabled: function isLeftNavDisabled() {
-      return this.isRtl ? this.isNextMonthDisabled(this.pageTimestamp) : this.isPreviousMonthDisabled(this.pageTimestamp);
-    },
-
-    /**
-     * Is the right hand navigation button disabled?
-     * @return {Boolean}
-     */
-    isRightNavDisabled: function isRightNavDisabled() {
-      return this.isRtl ? this.isPreviousMonthDisabled(this.pageTimestamp) : this.isNextMonthDisabled(this.pageTimestamp);
-    }
-  },
-  methods: {
-    selectDate: function selectDate(date) {
-      if (date.isDisabled) {
-        this.$emit('selectedDisabled', date);
-        return false;
-      }
-
-      this.$emit('selectDate', date);
-    },
-
-    /**
-     * @return {Number}
-     */
-    getPageMonth: function getPageMonth() {
-      return this.utils.getMonth(this.pageDate);
-    },
-
-    /**
-     * Emit an event to show the month picker
-     */
-    showMonthCalendar: function showMonthCalendar() {
-      this.$emit('showMonthCalendar');
-    },
-
-    /**
-     * Change the page month
-     * @param {Number} incrementBy
-     */
-    changeMonth: function changeMonth(incrementBy) {
-      var date = this.pageDate;
-      this.utils.setMonth(date, this.utils.getMonth(date) + incrementBy);
-      this.$emit('changedMonth', date);
-    },
-
-    /**
-     * Decrement the page month
-     */
-    previousMonth: function previousMonth() {
-      if (!this.isPreviousMonthDisabled()) {
-        this.changeMonth(-1);
-      }
-    },
-
-    /**
-     * Is the previous month disabled?
-     * @return {Boolean}
-     */
-    isPreviousMonthDisabled: function isPreviousMonthDisabled() {
-      if (!this.disabledDates || !this.disabledDates.to) {
-        return false;
-      }
-
-      var d = this.pageDate;
-      return this.utils.getMonth(this.disabledDates.to) >= this.utils.getMonth(d) && this.utils.getFullYear(this.disabledDates.to) >= this.utils.getFullYear(d);
-    },
-
-    /**
-     * Increment the current page month
-     */
-    nextMonth: function nextMonth() {
-      if (!this.isNextMonthDisabled()) {
-        this.changeMonth(+1);
-      }
-    },
-
-    /**
-     * Is the next month disabled?
-     * @return {Boolean}
-     */
-    isNextMonthDisabled: function isNextMonthDisabled() {
-      if (!this.disabledDates || !this.disabledDates.from) {
-        return false;
-      }
-
-      var d = this.pageDate;
-      return this.utils.getMonth(this.disabledDates.from) <= this.utils.getMonth(d) && this.utils.getFullYear(this.disabledDates.from) <= this.utils.getFullYear(d);
-    },
-
-    /**
-     * Whether a day is selected
-     * @param {Date}
-     * @return {Boolean}
-     */
-    isSelectedDate: function isSelectedDate(dObj) {
-      return this.selectedDate && this.utils.compareDates(this.selectedDate, dObj);
-    },
-
-    /**
-     * Whether a day is disabled
-     * @param {Date}
-     * @return {Boolean}
-     */
-    isDisabledDate: function isDisabledDate(date) {
-      var _this = this;
-
-      var disabledDates = false;
-
-      if (typeof this.disabledDates === 'undefined') {
-        return false;
-      }
-
-      if (typeof this.disabledDates.dates !== 'undefined') {
-        this.disabledDates.dates.forEach(function (d) {
-          if (_this.utils.compareDates(date, d)) {
-            disabledDates = true;
-            return true;
-          }
-        });
-      }
-
-      if (typeof this.disabledDates.to !== 'undefined' && this.disabledDates.to && date < this.disabledDates.to) {
-        disabledDates = true;
-      }
-
-      if (typeof this.disabledDates.from !== 'undefined' && this.disabledDates.from && date > this.disabledDates.from) {
-        disabledDates = true;
-      }
-
-      if (typeof this.disabledDates.ranges !== 'undefined') {
-        this.disabledDates.ranges.forEach(function (range) {
-          if (typeof range.from !== 'undefined' && range.from && typeof range.to !== 'undefined' && range.to) {
-            if (date < range.to && date > range.from) {
-              disabledDates = true;
-              return true;
-            }
-          }
-        });
-      }
-
-      if (typeof this.disabledDates.days !== 'undefined' && this.disabledDates.days.indexOf(this.utils.getDay(date)) !== -1) {
-        disabledDates = true;
-      }
-
-      if (typeof this.disabledDates.daysOfMonth !== 'undefined' && this.disabledDates.daysOfMonth.indexOf(this.utils.getDate(date)) !== -1) {
-        disabledDates = true;
-      }
-
-      if (typeof this.disabledDates.customPredictor === 'function' && this.disabledDates.customPredictor(date)) {
-        disabledDates = true;
-      }
-
-      return disabledDates;
-    },
-
-    /**
-     * Whether a day is highlighted (only if it is not disabled already except when highlighted.includeDisabled is true)
-     * @param {Date}
-     * @return {Boolean}
-     */
-    isHighlightedDate: function isHighlightedDate(date) {
-      var _this2 = this;
-
-      if (!(this.highlighted && this.highlighted.includeDisabled) && this.isDisabledDate(date)) {
-        return false;
-      }
-
-      var highlighted = false;
-
-      if (typeof this.highlighted === 'undefined') {
-        return false;
-      }
-
-      if (typeof this.highlighted.dates !== 'undefined') {
-        this.highlighted.dates.forEach(function (d) {
-          if (_this2.utils.compareDates(date, d)) {
-            highlighted = true;
-            return true;
-          }
-        });
-      }
-
-      if (this.isDefined(this.highlighted.from) && this.isDefined(this.highlighted.to)) {
-        highlighted = date >= this.highlighted.from && date <= this.highlighted.to;
-      }
-
-      if (typeof this.highlighted.days !== 'undefined' && this.highlighted.days.indexOf(this.utils.getDay(date)) !== -1) {
-        highlighted = true;
-      }
-
-      if (typeof this.highlighted.daysOfMonth !== 'undefined' && this.highlighted.daysOfMonth.indexOf(this.utils.getDate(date)) !== -1) {
-        highlighted = true;
-      }
-
-      if (typeof this.highlighted.customPredictor === 'function' && this.highlighted.customPredictor(date)) {
-        highlighted = true;
-      }
-
-      return highlighted;
-    },
-    dayClasses: function dayClasses(day) {
-      return {
-        'selected': day.isSelected,
-        'disabled': day.isDisabled,
-        'highlighted': day.isHighlighted,
-        'today': day.isToday,
-        'weekend': day.isWeekend,
-        'sat': day.isSaturday,
-        'sun': day.isSunday,
-        'highlight-start': day.isHighlightStart,
-        'highlight-end': day.isHighlightEnd
-      };
-    },
-
-    /**
-     * Whether a day is highlighted and it is the first date
-     * in the highlighted range of dates
-     * @param {Date}
-     * @return {Boolean}
-     */
-    isHighlightStart: function isHighlightStart(date) {
-      return this.isHighlightedDate(date) && this.highlighted.from instanceof Date && this.utils.getFullYear(this.highlighted.from) === this.utils.getFullYear(date) && this.utils.getMonth(this.highlighted.from) === this.utils.getMonth(date) && this.utils.getDate(this.highlighted.from) === this.utils.getDate(date);
-    },
-
-    /**
-     * Whether a day is highlighted and it is the first date
-     * in the highlighted range of dates
-     * @param {Date}
-     * @return {Boolean}
-     */
-    isHighlightEnd: function isHighlightEnd(date) {
-      return this.isHighlightedDate(date) && this.highlighted.to instanceof Date && this.utils.getFullYear(this.highlighted.to) === this.utils.getFullYear(date) && this.utils.getMonth(this.highlighted.to) === this.utils.getMonth(date) && this.utils.getDate(this.highlighted.to) === this.utils.getDate(date);
-    },
-
-    /**
-     * Helper
-     * @param  {mixed}  prop
-     * @return {Boolean}
-     */
-    isDefined: function isDefined(prop) {
-      return typeof prop !== 'undefined' && prop;
-    }
-  } // eslint-disable-next-line
-
-};
-
-/* script */
-const __vue_script__$1 = script$1;
-
-/* template */
-var __vue_render__$1 = function() {
-  var _vm = this;
-  var _h = _vm.$createElement;
-  var _c = _vm._self._c || _h;
-  return _c(
-    "div",
-    {
-      directives: [
-        {
-          name: "show",
-          rawName: "v-show",
-          value: _vm.showDayView,
-          expression: "showDayView"
-        }
-      ],
-      class: [_vm.calendarClass, "vdp-datepicker__calendar"],
-      style: _vm.calendarStyle,
-      on: {
-        mousedown: function($event) {
-          $event.preventDefault();
-        }
-      }
-    },
-    [
-      _vm._t("beforeCalendarHeader"),
-      _vm._v(" "),
-      _c("header", [
-        _c(
-          "span",
-          {
-            staticClass: "prev",
-            class: { disabled: _vm.isLeftNavDisabled },
-            on: {
-              click: function($event) {
-                _vm.isRtl ? _vm.nextMonth() : _vm.previousMonth();
-              }
-            }
-          },
-          [_vm._v("<")]
-        ),
-        _vm._v(" "),
-        _c(
-          "span",
-          {
-            staticClass: "day__month_btn",
-            class: _vm.allowedToShowView("month") ? "up" : "",
-            on: { click: _vm.showMonthCalendar }
-          },
-          [
-            _vm._v(
-              _vm._s(_vm.isYmd ? _vm.currYearName : _vm.currMonthName) +
-                " " +
-                _vm._s(_vm.isYmd ? _vm.currMonthName : _vm.currYearName)
-            )
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "span",
-          {
-            staticClass: "next",
-            class: { disabled: _vm.isRightNavDisabled },
-            on: {
-              click: function($event) {
-                _vm.isRtl ? _vm.previousMonth() : _vm.nextMonth();
-              }
-            }
-          },
-          [_vm._v(">")]
-        )
-      ]),
-      _vm._v(" "),
-      _c(
-        "div",
-        { class: _vm.isRtl ? "flex-rtl" : "" },
-        [
-          _vm._l(_vm.daysOfWeek, function(d) {
-            return _c(
-              "span",
-              { key: d.timestamp, staticClass: "cell day-header" },
-              [_vm._v(_vm._s(d))]
-            )
-          }),
-          _vm._v(" "),
-          _vm.blankDays > 0
-            ? _vm._l(_vm.blankDays, function(d) {
-                return _c("span", {
-                  key: d.timestamp,
-                  staticClass: "cell day blank"
-                })
-              })
-            : _vm._e(),
-          _vm._l(_vm.days, function(day) {
-            return _c("span", {
-              key: day.timestamp,
-              staticClass: "cell day",
-              class: _vm.dayClasses(day),
-              domProps: { innerHTML: _vm._s(_vm.dayCellContent(day)) },
-              on: {
-                click: function($event) {
-                  return _vm.selectDate(day)
-                }
-              }
-            })
-          })
-        ],
-        2
-      )
-    ],
-    2
-  )
-};
-var __vue_staticRenderFns__$1 = [];
-__vue_render__$1._withStripped = true;
-
-  /* style */
-  const __vue_inject_styles__$1 = undefined;
-  /* scoped */
-  const __vue_scope_id__$1 = undefined;
-  /* module identifier */
-  const __vue_module_identifier__$1 = undefined;
-  /* functional template */
-  const __vue_is_functional_template__$1 = false;
-  /* style inject */
-  
-  /* style inject SSR */
-  
-
-  
-  var PickerDay = normalizeComponent_1(
-    { render: __vue_render__$1, staticRenderFns: __vue_staticRenderFns__$1 },
-    __vue_inject_styles__$1,
-    __vue_script__$1,
-    __vue_scope_id__$1,
-    __vue_is_functional_template__$1,
-    __vue_module_identifier__$1,
-    undefined,
-    undefined
-  );
-
-//
-var script$2 = {
-  props: {
-    showMonthView: Boolean,
-    selectedDate: Date,
-    pageDate: Date,
-    pageTimestamp: Number,
-    disabledDates: Object,
-    calendarClass: [String, Object, Array],
-    calendarStyle: Object,
-    translation: Object,
-    isRtl: Boolean,
-    allowedToShowView: Function,
-    useUtc: Boolean
-  },
-  data: function data() {
-    var constructedDateUtils = makeDateUtils(this.useUtc);
-    return {
-      utils: constructedDateUtils
-    };
-  },
-  computed: {
-    months: function months() {
-      var d = this.pageDate;
-      var months = []; // set up a new date object to the beginning of the current 'page'
-
-      var dObj = this.useUtc ? new Date(Date.UTC(d.getUTCFullYear(), 0, d.getUTCDate())) : new Date(d.getFullYear(), 0, d.getDate(), d.getHours(), d.getMinutes());
-
-      for (var i = 0; i < 12; i++) {
-        months.push({
-          month: this.utils.getMonthName(i, this.translation.months),
-          timestamp: dObj.getTime(),
-          isSelected: this.isSelectedMonth(dObj),
-          isDisabled: this.isDisabledMonth(dObj)
-        });
-        this.utils.setMonth(dObj, this.utils.getMonth(dObj) + 1);
-      }
-
-      return months;
-    },
-
-    /**
-     * Get year name on current page.
-     * @return {String}
-     */
-    pageYearName: function pageYearName() {
-      var yearSuffix = this.translation.yearSuffix;
-      return "".concat(this.utils.getFullYear(this.pageDate)).concat(yearSuffix);
-    },
-
-    /**
-     * Is the left hand navigation disabled
-     * @return {Boolean}
-     */
-    isLeftNavDisabled: function isLeftNavDisabled() {
-      return this.isRtl ? this.isNextYearDisabled(this.pageTimestamp) : this.isPreviousYearDisabled(this.pageTimestamp);
-    },
-
-    /**
-     * Is the right hand navigation disabled
-     * @return {Boolean}
-     */
-    isRightNavDisabled: function isRightNavDisabled() {
-      return this.isRtl ? this.isPreviousYearDisabled(this.pageTimestamp) : this.isNextYearDisabled(this.pageTimestamp);
-    }
-  },
-  methods: {
-    /**
-     * Emits a selectMonth event
-     * @param {Object} month
-     */
-    selectMonth: function selectMonth(month) {
-      if (month.isDisabled) {
-        return false;
-      }
-
-      this.$emit('selectMonth', month);
-    },
-
-    /**
-     * Changes the year up or down
-     * @param {Number} incrementBy
-     */
-    changeYear: function changeYear(incrementBy) {
-      var date = this.pageDate;
-      this.utils.setFullYear(date, this.utils.getFullYear(date) + incrementBy);
-      this.$emit('changedYear', date);
-    },
-
-    /**
-     * Decrements the year
-     */
-    previousYear: function previousYear() {
-      if (!this.isPreviousYearDisabled()) {
-        this.changeYear(-1);
-      }
-    },
-
-    /**
-     * Checks if the previous year is disabled or not
-     * @return {Boolean}
-     */
-    isPreviousYearDisabled: function isPreviousYearDisabled() {
-      if (!this.disabledDates || !this.disabledDates.to) {
-        return false;
-      }
-
-      return this.utils.getFullYear(this.disabledDates.to) >= this.utils.getFullYear(this.pageDate);
-    },
-
-    /**
-     * Increments the year
-     */
-    nextYear: function nextYear() {
-      if (!this.isNextYearDisabled()) {
-        this.changeYear(1);
-      }
-    },
-
-    /**
-     * Checks if the next year is disabled or not
-     * @return {Boolean}
-     */
-    isNextYearDisabled: function isNextYearDisabled() {
-      if (!this.disabledDates || !this.disabledDates.from) {
-        return false;
-      }
-
-      return this.utils.getFullYear(this.disabledDates.from) <= this.utils.getFullYear(this.pageDate);
-    },
-
-    /**
-     * Emits an event that shows the year calendar
-     */
-    showYearCalendar: function showYearCalendar() {
-      this.$emit('showYearCalendar');
-    },
-
-    /**
-     * Whether the selected date is in this month
-     * @param {Date}
-     * @return {Boolean}
-     */
-    isSelectedMonth: function isSelectedMonth(date) {
-      return this.selectedDate && this.utils.getFullYear(this.selectedDate) === this.utils.getFullYear(date) && this.utils.getMonth(this.selectedDate) === this.utils.getMonth(date);
-    },
-
-    /**
-     * Whether a month is disabled
-     * @param {Date}
-     * @return {Boolean}
-     */
-    isDisabledMonth: function isDisabledMonth(date) {
-      var disabledDates = false;
-
-      if (typeof this.disabledDates === 'undefined') {
-        return false;
-      }
-
-      if (typeof this.disabledDates.to !== 'undefined' && this.disabledDates.to) {
-        if (this.utils.getMonth(date) < this.utils.getMonth(this.disabledDates.to) && this.utils.getFullYear(date) <= this.utils.getFullYear(this.disabledDates.to) || this.utils.getFullYear(date) < this.utils.getFullYear(this.disabledDates.to)) {
-          disabledDates = true;
-        }
-      }
-
-      if (typeof this.disabledDates.from !== 'undefined' && this.disabledDates.from) {
-        if (this.utils.getMonth(date) > this.utils.getMonth(this.disabledDates.from) && this.utils.getFullYear(date) >= this.utils.getFullYear(this.disabledDates.from) || this.utils.getFullYear(date) > this.utils.getFullYear(this.disabledDates.from)) {
-          disabledDates = true;
-        }
-      }
-
-      if (typeof this.disabledDates.customPredictor === 'function' && this.disabledDates.customPredictor(date)) {
-        disabledDates = true;
-      }
-
-      return disabledDates;
-    }
-  } // eslint-disable-next-line
-
-};
-
-/* script */
-const __vue_script__$2 = script$2;
-
-/* template */
-var __vue_render__$2 = function() {
-  var _vm = this;
-  var _h = _vm.$createElement;
-  var _c = _vm._self._c || _h;
-  return _c(
-    "div",
-    {
-      directives: [
-        {
-          name: "show",
-          rawName: "v-show",
-          value: _vm.showMonthView,
-          expression: "showMonthView"
-        }
-      ],
-      class: [_vm.calendarClass, "vdp-datepicker__calendar"],
-      style: _vm.calendarStyle,
-      on: {
-        mousedown: function($event) {
-          $event.preventDefault();
-        }
-      }
-    },
-    [
-      _vm._t("beforeCalendarHeader"),
-      _vm._v(" "),
-      _c("header", [
-        _c(
-          "span",
-          {
-            staticClass: "prev",
-            class: { disabled: _vm.isLeftNavDisabled },
-            on: {
-              click: function($event) {
-                _vm.isRtl ? _vm.nextYear() : _vm.previousYear();
-              }
-            }
-          },
-          [_vm._v("<")]
-        ),
-        _vm._v(" "),
-        _c(
-          "span",
-          {
-            staticClass: "month__year_btn",
-            class: _vm.allowedToShowView("year") ? "up" : "",
-            on: { click: _vm.showYearCalendar }
-          },
-          [_vm._v(_vm._s(_vm.pageYearName))]
-        ),
-        _vm._v(" "),
-        _c(
-          "span",
-          {
-            staticClass: "next",
-            class: { disabled: _vm.isRightNavDisabled },
-            on: {
-              click: function($event) {
-                _vm.isRtl ? _vm.previousYear() : _vm.nextYear();
-              }
-            }
-          },
-          [_vm._v(">")]
-        )
-      ]),
-      _vm._v(" "),
-      _vm._l(_vm.months, function(month) {
-        return _c(
-          "span",
-          {
-            key: month.timestamp,
-            staticClass: "cell month",
-            class: { selected: month.isSelected, disabled: month.isDisabled },
-            on: {
-              click: function($event) {
-                $event.stopPropagation();
-                return _vm.selectMonth(month)
-              }
-            }
-          },
-          [_vm._v(_vm._s(month.month))]
-        )
-      })
-    ],
-    2
-  )
-};
-var __vue_staticRenderFns__$2 = [];
-__vue_render__$2._withStripped = true;
-
-  /* style */
-  const __vue_inject_styles__$2 = undefined;
-  /* scoped */
-  const __vue_scope_id__$2 = undefined;
-  /* module identifier */
-  const __vue_module_identifier__$2 = undefined;
-  /* functional template */
-  const __vue_is_functional_template__$2 = false;
-  /* style inject */
-  
-  /* style inject SSR */
-  
-
-  
-  var PickerMonth = normalizeComponent_1(
-    { render: __vue_render__$2, staticRenderFns: __vue_staticRenderFns__$2 },
-    __vue_inject_styles__$2,
-    __vue_script__$2,
-    __vue_scope_id__$2,
-    __vue_is_functional_template__$2,
-    __vue_module_identifier__$2,
-    undefined,
-    undefined
-  );
-
-//
-var script$3 = {
-  props: {
-    showYearView: Boolean,
-    selectedDate: Date,
-    pageDate: Date,
-    pageTimestamp: Number,
-    disabledDates: Object,
-    highlighted: Object,
-    calendarClass: [String, Object, Array],
-    calendarStyle: Object,
-    translation: Object,
-    isRtl: Boolean,
-    allowedToShowView: Function,
-    useUtc: Boolean
-  },
-  computed: {
-    years: function years() {
-      var d = this.pageDate;
-      var years = []; // set up a new date object to the beginning of the current 'page'7
-
-      var dObj = this.useUtc ? new Date(Date.UTC(Math.floor(d.getUTCFullYear() / 10) * 10, d.getUTCMonth(), d.getUTCDate())) : new Date(Math.floor(d.getFullYear() / 10) * 10, d.getMonth(), d.getDate(), d.getHours(), d.getMinutes());
-
-      for (var i = 0; i < 10; i++) {
-        years.push({
-          year: this.utils.getFullYear(dObj),
-          timestamp: dObj.getTime(),
-          isSelected: this.isSelectedYear(dObj),
-          isDisabled: this.isDisabledYear(dObj)
-        });
-        this.utils.setFullYear(dObj, this.utils.getFullYear(dObj) + 1);
-      }
-
-      return years;
-    },
-
-    /**
-     * @return {String}
-     */
-    getPageDecade: function getPageDecade() {
-      var decadeStart = Math.floor(this.utils.getFullYear(this.pageDate) / 10) * 10;
-      var decadeEnd = decadeStart + 9;
-      var yearSuffix = this.translation.yearSuffix;
-      return "".concat(decadeStart, " - ").concat(decadeEnd).concat(yearSuffix);
-    },
-
-    /**
-     * Is the left hand navigation button disabled?
-     * @return {Boolean}
-     */
-    isLeftNavDisabled: function isLeftNavDisabled() {
-      return this.isRtl ? this.isNextDecadeDisabled(this.pageTimestamp) : this.isPreviousDecadeDisabled(this.pageTimestamp);
-    },
-
-    /**
-     * Is the right hand navigation button disabled?
-     * @return {Boolean}
-     */
-    isRightNavDisabled: function isRightNavDisabled() {
-      return this.isRtl ? this.isPreviousDecadeDisabled(this.pageTimestamp) : this.isNextDecadeDisabled(this.pageTimestamp);
-    }
-  },
-  data: function data() {
-    var constructedDateUtils = makeDateUtils(this.useUtc);
-    return {
-      utils: constructedDateUtils
-    };
-  },
-  methods: {
-    selectYear: function selectYear(year) {
-      if (year.isDisabled) {
-        return false;
-      }
-
-      this.$emit('selectYear', year);
-    },
-    changeYear: function changeYear(incrementBy) {
-      var date = this.pageDate;
-      this.utils.setFullYear(date, this.utils.getFullYear(date) + incrementBy);
-      this.$emit('changedDecade', date);
-    },
-    previousDecade: function previousDecade() {
-      if (this.isPreviousDecadeDisabled()) {
-        return false;
-      }
-
-      this.changeYear(-10);
-    },
-    isPreviousDecadeDisabled: function isPreviousDecadeDisabled() {
-      if (!this.disabledDates || !this.disabledDates.to) {
-        return false;
-      }
-
-      var disabledYear = this.utils.getFullYear(this.disabledDates.to);
-      var lastYearInPreviousPage = Math.floor(this.utils.getFullYear(this.pageDate) / 10) * 10 - 1;
-      return disabledYear > lastYearInPreviousPage;
-    },
-    nextDecade: function nextDecade() {
-      if (this.isNextDecadeDisabled()) {
-        return false;
-      }
-
-      this.changeYear(10);
-    },
-    isNextDecadeDisabled: function isNextDecadeDisabled() {
-      if (!this.disabledDates || !this.disabledDates.from) {
-        return false;
-      }
-
-      var disabledYear = this.utils.getFullYear(this.disabledDates.from);
-      var firstYearInNextPage = Math.ceil(this.utils.getFullYear(this.pageDate) / 10) * 10;
-      return disabledYear < firstYearInNextPage;
-    },
-
-    /**
-     * Whether the selected date is in this year
-     * @param {Date}
-     * @return {Boolean}
-     */
-    isSelectedYear: function isSelectedYear(date) {
-      return this.selectedDate && this.utils.getFullYear(this.selectedDate) === this.utils.getFullYear(date);
-    },
-
-    /**
-     * Whether a year is disabled
-     * @param {Date}
-     * @return {Boolean}
-     */
-    isDisabledYear: function isDisabledYear(date) {
-      var disabledDates = false;
-
-      if (typeof this.disabledDates === 'undefined' || !this.disabledDates) {
-        return false;
-      }
-
-      if (typeof this.disabledDates.to !== 'undefined' && this.disabledDates.to) {
-        if (this.utils.getFullYear(date) < this.utils.getFullYear(this.disabledDates.to)) {
-          disabledDates = true;
-        }
-      }
-
-      if (typeof this.disabledDates.from !== 'undefined' && this.disabledDates.from) {
-        if (this.utils.getFullYear(date) > this.utils.getFullYear(this.disabledDates.from)) {
-          disabledDates = true;
-        }
-      }
-
-      if (typeof this.disabledDates.customPredictor === 'function' && this.disabledDates.customPredictor(date)) {
-        disabledDates = true;
-      }
-
-      return disabledDates;
-    }
-  } // eslint-disable-next-line
-
-};
-
-/* script */
-const __vue_script__$3 = script$3;
-
-/* template */
-var __vue_render__$3 = function() {
-  var _vm = this;
-  var _h = _vm.$createElement;
-  var _c = _vm._self._c || _h;
-  return _c(
-    "div",
-    {
-      directives: [
-        {
-          name: "show",
-          rawName: "v-show",
-          value: _vm.showYearView,
-          expression: "showYearView"
-        }
-      ],
-      class: [_vm.calendarClass, "vdp-datepicker__calendar"],
-      style: _vm.calendarStyle,
-      on: {
-        mousedown: function($event) {
-          $event.preventDefault();
-        }
-      }
-    },
-    [
-      _vm._t("beforeCalendarHeader"),
-      _vm._v(" "),
-      _c("header", [
-        _c(
-          "span",
-          {
-            staticClass: "prev",
-            class: { disabled: _vm.isLeftNavDisabled },
-            on: {
-              click: function($event) {
-                _vm.isRtl ? _vm.nextDecade() : _vm.previousDecade();
-              }
-            }
-          },
-          [_vm._v("<")]
-        ),
-        _vm._v(" "),
-        _c("span", [_vm._v(_vm._s(_vm.getPageDecade))]),
-        _vm._v(" "),
-        _c(
-          "span",
-          {
-            staticClass: "next",
-            class: { disabled: _vm.isRightNavDisabled },
-            on: {
-              click: function($event) {
-                _vm.isRtl ? _vm.previousDecade() : _vm.nextDecade();
-              }
-            }
-          },
-          [_vm._v(">")]
-        )
-      ]),
-      _vm._v(" "),
-      _vm._l(_vm.years, function(year) {
-        return _c(
-          "span",
-          {
-            key: year.timestamp,
-            staticClass: "cell year",
-            class: { selected: year.isSelected, disabled: year.isDisabled },
-            on: {
-              click: function($event) {
-                $event.stopPropagation();
-                return _vm.selectYear(year)
-              }
-            }
-          },
-          [_vm._v(_vm._s(year.year))]
-        )
-      })
-    ],
-    2
-  )
-};
-var __vue_staticRenderFns__$3 = [];
-__vue_render__$3._withStripped = true;
-
-  /* style */
-  const __vue_inject_styles__$3 = undefined;
-  /* scoped */
-  const __vue_scope_id__$3 = undefined;
-  /* module identifier */
-  const __vue_module_identifier__$3 = undefined;
-  /* functional template */
-  const __vue_is_functional_template__$3 = false;
-  /* style inject */
-  
-  /* style inject SSR */
-  
-
-  
-  var PickerYear = normalizeComponent_1(
-    { render: __vue_render__$3, staticRenderFns: __vue_staticRenderFns__$3 },
-    __vue_inject_styles__$3,
-    __vue_script__$3,
-    __vue_scope_id__$3,
-    __vue_is_functional_template__$3,
-    __vue_module_identifier__$3,
-    undefined,
-    undefined
-  );
-
-//
-var script$4 = {
-  components: {
-    DateInput: DateInput,
-    PickerDay: PickerDay,
-    PickerMonth: PickerMonth,
-    PickerYear: PickerYear
-  },
-  props: {
-    value: {
-      validator: function validator(val) {
-        return utils$1.validateDateInput(val);
-      }
-    },
-    name: String,
-    refName: String,
-    id: String,
-    format: {
-      type: [String, Function],
-      "default": 'dd MMM yyyy'
-    },
-    language: {
-      type: Object,
-      "default": function _default() {
-        return en;
-      }
-    },
-    openDate: {
-      validator: function validator(val) {
-        return utils$1.validateDateInput(val);
-      }
-    },
-    dayCellContent: Function,
-    fullMonthName: Boolean,
-    disabledDates: Object,
-    highlighted: Object,
-    placeholder: String,
-    inline: Boolean,
-    calendarClass: [String, Object, Array],
-    inputClass: [String, Object, Array],
-    wrapperClass: [String, Object, Array],
-    mondayFirst: Boolean,
-    clearButton: Boolean,
-    clearButtonIcon: String,
-    calendarButton: Boolean,
-    calendarButtonIcon: String,
-    calendarButtonIconContent: String,
-    bootstrapStyling: Boolean,
-    initialView: String,
-    disabled: Boolean,
-    required: Boolean,
-    typeable: Boolean,
-    useUtc: Boolean,
-    minimumView: {
-      type: String,
-      "default": 'day'
-    },
-    maximumView: {
-      type: String,
-      "default": 'year'
-    }
-  },
-  data: function data() {
-    var startDate = this.openDate ? new Date(this.openDate) : new Date();
-    var constructedDateUtils = makeDateUtils(this.useUtc);
-    var pageTimestamp = constructedDateUtils.setDate(startDate, 1);
-    return {
-      /*
-       * Vue cannot observe changes to a Date Object so date must be stored as a timestamp
-       * This represents the first day of the current viewing month
-       * {Number}
-       */
-      pageTimestamp: pageTimestamp,
-
-      /*
-       * Selected Date
-       * {Date}
-       */
-      selectedDate: null,
-
-      /*
-       * Flags to show calendar views
-       * {Boolean}
-       */
-      showDayView: false,
-      showMonthView: false,
-      showYearView: false,
-
-      /*
-       * Positioning
-       */
-      calendarHeight: 0,
-      resetTypedDate: new Date(),
-      utils: constructedDateUtils
-    };
-  },
-  watch: {
-    value: function value(_value) {
-      this.setValue(_value);
-    },
-    openDate: function openDate() {
-      this.setPageDate();
-    },
-    initialView: function initialView() {
-      this.setInitialView();
-    }
-  },
-  computed: {
-    computedInitialView: function computedInitialView() {
-      if (!this.initialView) {
-        return this.minimumView;
-      }
-
-      return this.initialView;
-    },
-    pageDate: function pageDate() {
-      return new Date(this.pageTimestamp);
-    },
-    translation: function translation() {
-      return this.language;
-    },
-    calendarStyle: function calendarStyle() {
-      return {
-        position: this.isInline ? 'static' : undefined
-      };
-    },
-    isOpen: function isOpen() {
-      return this.showDayView || this.showMonthView || this.showYearView;
-    },
-    isInline: function isInline() {
-      return !!this.inline;
-    },
-    isRtl: function isRtl() {
-      return this.translation.rtl === true;
-    }
-  },
-  methods: {
-    /**
-     * Called in the event that the user navigates to date pages and
-     * closes the picker without selecting a date.
-     */
-    resetDefaultPageDate: function resetDefaultPageDate() {
-      if (this.selectedDate === null) {
-        this.setPageDate();
-        return;
-      }
-
-      this.setPageDate(this.selectedDate);
-    },
-
-    /**
-     * Effectively a toggle to show/hide the calendar
-     * @return {mixed}
-     */
-    showCalendar: function showCalendar() {
-      if (this.disabled || this.isInline) {
-        return false;
-      }
-
-      if (this.isOpen) {
-        return this.close(true);
-      }
-
-      this.setInitialView();
-    },
-
-    /**
-     * Sets the initial picker page view: day, month or year
-     */
-    setInitialView: function setInitialView() {
-      var initialView = this.computedInitialView;
-
-      if (!this.allowedToShowView(initialView)) {
-        throw new Error("initialView '".concat(this.initialView, "' cannot be rendered based on minimum '").concat(this.minimumView, "' and maximum '").concat(this.maximumView, "'"));
-      }
-
-      switch (initialView) {
-        case 'year':
-          this.showYearCalendar();
-          break;
-
-        case 'month':
-          this.showMonthCalendar();
-          break;
-
-        default:
-          this.showDayCalendar();
-          break;
-      }
-    },
-
-    /**
-     * Are we allowed to show a specific picker view?
-     * @param {String} view
-     * @return {Boolean}
-     */
-    allowedToShowView: function allowedToShowView(view) {
-      var views = ['day', 'month', 'year'];
-      var minimumViewIndex = views.indexOf(this.minimumView);
-      var maximumViewIndex = views.indexOf(this.maximumView);
-      var viewIndex = views.indexOf(view);
-      return viewIndex >= minimumViewIndex && viewIndex <= maximumViewIndex;
-    },
-
-    /**
-     * Show the day picker
-     * @return {Boolean}
-     */
-    showDayCalendar: function showDayCalendar() {
-      if (!this.allowedToShowView('day')) {
-        return false;
-      }
-
-      this.close();
-      this.showDayView = true;
-      return true;
-    },
-
-    /**
-     * Show the month picker
-     * @return {Boolean}
-     */
-    showMonthCalendar: function showMonthCalendar() {
-      if (!this.allowedToShowView('month')) {
-        return false;
-      }
-
-      this.close();
-      this.showMonthView = true;
-      return true;
-    },
-
-    /**
-     * Show the year picker
-     * @return {Boolean}
-     */
-    showYearCalendar: function showYearCalendar() {
-      if (!this.allowedToShowView('year')) {
-        return false;
-      }
-
-      this.close();
-      this.showYearView = true;
-      return true;
-    },
-
-    /**
-     * Set the selected date
-     * @param {Number} timestamp
-     */
-    setDate: function setDate(timestamp) {
-      var date = new Date(timestamp);
-      this.selectedDate = date;
-      this.setPageDate(date);
-      this.$emit('selected', date);
-      this.$emit('input', date);
-    },
-
-    /**
-     * Clear the selected date
-     */
-    clearDate: function clearDate() {
-      this.selectedDate = null;
-      this.setPageDate();
-      this.$emit('selected', null);
-      this.$emit('input', null);
-      this.$emit('cleared');
-    },
-
-    /**
-     * @param {Object} date
-     */
-    selectDate: function selectDate(date) {
-      this.setDate(date.timestamp);
-
-      if (!this.isInline) {
-        this.close(true);
-      }
-
-      this.resetTypedDate = new Date();
-    },
-
-    /**
-     * @param {Object} date
-     */
-    selectDisabledDate: function selectDisabledDate(date) {
-      this.$emit('selectedDisabled', date);
-    },
-
-    /**
-     * @param {Object} month
-     */
-    selectMonth: function selectMonth(month) {
-      var date = new Date(month.timestamp);
-
-      if (this.allowedToShowView('day')) {
-        this.setPageDate(date);
-        this.$emit('changedMonth', month);
-        this.showDayCalendar();
-      } else {
-        this.selectDate(month);
-      }
-    },
-
-    /**
-     * @param {Object} year
-     */
-    selectYear: function selectYear(year) {
-      var date = new Date(year.timestamp);
-
-      if (this.allowedToShowView('month')) {
-        this.setPageDate(date);
-        this.$emit('changedYear', year);
-        this.showMonthCalendar();
-      } else {
-        this.selectDate(year);
-      }
-    },
-
-    /**
-     * Set the datepicker value
-     * @param {Date|String|Number|null} date
-     */
-    setValue: function setValue(date) {
-      if (typeof date === 'string' || typeof date === 'number') {
-        var parsed = new Date(date);
-        date = isNaN(parsed.valueOf()) ? null : parsed;
-      }
-
-      if (!date) {
-        this.setPageDate();
-        this.selectedDate = null;
-        return;
-      }
-
-      this.selectedDate = date;
-      this.setPageDate(date);
-    },
-
-    /**
-     * Sets the date that the calendar should open on
-     */
-    setPageDate: function setPageDate(date) {
-      if (!date) {
-        if (this.openDate) {
-          date = new Date(this.openDate);
-        } else {
-          date = new Date();
-        }
-      }
-
-      this.pageTimestamp = this.utils.setDate(new Date(date), 1);
-    },
-
-    /**
-     * Handles a month change from the day picker
-     */
-    handleChangedMonthFromDayPicker: function handleChangedMonthFromDayPicker(date) {
-      this.setPageDate(date);
-      this.$emit('changedMonth', date);
-    },
-
-    /**
-     * Set the date from a typedDate event
-     */
-    setTypedDate: function setTypedDate(date) {
-      this.setDate(date.getTime());
-    },
-
-    /**
-     * Close all calendar layers
-     * @param {Boolean} emitEvent - emit close event
-     */
-    close: function close(emitEvent) {
-      this.showDayView = this.showMonthView = this.showYearView = false;
-
-      if (!this.isInline) {
-        if (emitEvent) {
-          this.$emit('closed');
-        }
-
-        document.removeEventListener('click', this.clickOutside, false);
-      }
-    },
-
-    /**
-     * Initiate the component
-     */
-    init: function init() {
-      if (this.value) {
-        this.setValue(this.value);
-      }
-
-      if (this.isInline) {
-        this.setInitialView();
-      }
-    }
-  },
-  mounted: function mounted() {
-    this.init();
-  }
-} // eslint-disable-next-line
-;
-
-var isOldIE = typeof navigator !== 'undefined' && /msie [6-9]\\b/.test(navigator.userAgent.toLowerCase());
-function createInjector(context) {
-  return function (id, style) {
-    return addStyle(id, style);
-  };
-}
-var HEAD = document.head || document.getElementsByTagName('head')[0];
-var styles = {};
-
-function addStyle(id, css) {
-  var group = isOldIE ? css.media || 'default' : id;
-  var style = styles[group] || (styles[group] = {
-    ids: new Set(),
-    styles: []
-  });
-
-  if (!style.ids.has(id)) {
-    style.ids.add(id);
-    var code = css.source;
-
-    if (css.map) {
-      // https://developer.chrome.com/devtools/docs/javascript-debugging
-      // this makes source maps inside style tags work properly in Chrome
-      code += '\n/*# sourceURL=' + css.map.sources[0] + ' */'; // http://stackoverflow.com/a/26603875
-
-      code += '\n/*# sourceMappingURL=data:application/json;base64,' + btoa(unescape(encodeURIComponent(JSON.stringify(css.map)))) + ' */';
-    }
-
-    if (!style.element) {
-      style.element = document.createElement('style');
-      style.element.type = 'text/css';
-      if (css.media) style.element.setAttribute('media', css.media);
-      HEAD.appendChild(style.element);
-    }
-
-    if ('styleSheet' in style.element) {
-      style.styles.push(code);
-      style.element.styleSheet.cssText = style.styles.filter(Boolean).join('\n');
-    } else {
-      var index = style.ids.size - 1;
-      var textNode = document.createTextNode(code);
-      var nodes = style.element.childNodes;
-      if (nodes[index]) style.element.removeChild(nodes[index]);
-      if (nodes.length) style.element.insertBefore(textNode, nodes[index]);else style.element.appendChild(textNode);
-    }
+  return {
+    exports: scriptExports,
+    options: options
   }
 }
-
-var browser = createInjector;
-
-/* script */
-const __vue_script__$4 = script$4;
-
-/* template */
-var __vue_render__$4 = function() {
-  var _vm = this;
-  var _h = _vm.$createElement;
-  var _c = _vm._self._c || _h;
-  return _c(
-    "div",
-    {
-      staticClass: "vdp-datepicker",
-      class: [_vm.wrapperClass, _vm.isRtl ? "rtl" : ""]
-    },
-    [
-      _c(
-        "date-input",
-        {
-          attrs: {
-            selectedDate: _vm.selectedDate,
-            resetTypedDate: _vm.resetTypedDate,
-            format: _vm.format,
-            translation: _vm.translation,
-            inline: _vm.inline,
-            id: _vm.id,
-            name: _vm.name,
-            refName: _vm.refName,
-            openDate: _vm.openDate,
-            placeholder: _vm.placeholder,
-            inputClass: _vm.inputClass,
-            typeable: _vm.typeable,
-            clearButton: _vm.clearButton,
-            clearButtonIcon: _vm.clearButtonIcon,
-            calendarButton: _vm.calendarButton,
-            calendarButtonIcon: _vm.calendarButtonIcon,
-            calendarButtonIconContent: _vm.calendarButtonIconContent,
-            disabled: _vm.disabled,
-            required: _vm.required,
-            bootstrapStyling: _vm.bootstrapStyling,
-            "use-utc": _vm.useUtc
-          },
-          on: {
-            showCalendar: _vm.showCalendar,
-            closeCalendar: _vm.close,
-            typedDate: _vm.setTypedDate,
-            clearDate: _vm.clearDate
-          }
-        },
-        [_vm._t("afterDateInput", null, { slot: "afterDateInput" })],
-        2
-      ),
-      _vm._v(" "),
-      _vm.allowedToShowView("day")
-        ? _c(
-            "picker-day",
-            {
-              attrs: {
-                pageDate: _vm.pageDate,
-                selectedDate: _vm.selectedDate,
-                showDayView: _vm.showDayView,
-                fullMonthName: _vm.fullMonthName,
-                allowedToShowView: _vm.allowedToShowView,
-                disabledDates: _vm.disabledDates,
-                highlighted: _vm.highlighted,
-                calendarClass: _vm.calendarClass,
-                calendarStyle: _vm.calendarStyle,
-                translation: _vm.translation,
-                pageTimestamp: _vm.pageTimestamp,
-                isRtl: _vm.isRtl,
-                mondayFirst: _vm.mondayFirst,
-                dayCellContent: _vm.dayCellContent,
-                "use-utc": _vm.useUtc
-              },
-              on: {
-                changedMonth: _vm.handleChangedMonthFromDayPicker,
-                selectDate: _vm.selectDate,
-                showMonthCalendar: _vm.showMonthCalendar,
-                selectedDisabled: _vm.selectDisabledDate
-              }
-            },
-            [
-              _vm._t("beforeCalendarHeader", null, {
-                slot: "beforeCalendarHeader"
-              })
-            ],
-            2
-          )
-        : _vm._e(),
-      _vm._v(" "),
-      _vm.allowedToShowView("month")
-        ? _c(
-            "picker-month",
-            {
-              attrs: {
-                pageDate: _vm.pageDate,
-                selectedDate: _vm.selectedDate,
-                showMonthView: _vm.showMonthView,
-                allowedToShowView: _vm.allowedToShowView,
-                disabledDates: _vm.disabledDates,
-                calendarClass: _vm.calendarClass,
-                calendarStyle: _vm.calendarStyle,
-                translation: _vm.translation,
-                isRtl: _vm.isRtl,
-                "use-utc": _vm.useUtc
-              },
-              on: {
-                selectMonth: _vm.selectMonth,
-                showYearCalendar: _vm.showYearCalendar,
-                changedYear: _vm.setPageDate
-              }
-            },
-            [
-              _vm._t("beforeCalendarHeader", null, {
-                slot: "beforeCalendarHeader"
-              })
-            ],
-            2
-          )
-        : _vm._e(),
-      _vm._v(" "),
-      _vm.allowedToShowView("year")
-        ? _c(
-            "picker-year",
-            {
-              attrs: {
-                pageDate: _vm.pageDate,
-                selectedDate: _vm.selectedDate,
-                showYearView: _vm.showYearView,
-                allowedToShowView: _vm.allowedToShowView,
-                disabledDates: _vm.disabledDates,
-                calendarClass: _vm.calendarClass,
-                calendarStyle: _vm.calendarStyle,
-                translation: _vm.translation,
-                isRtl: _vm.isRtl,
-                "use-utc": _vm.useUtc
-              },
-              on: { selectYear: _vm.selectYear, changedDecade: _vm.setPageDate }
-            },
-            [
-              _vm._t("beforeCalendarHeader", null, {
-                slot: "beforeCalendarHeader"
-              })
-            ],
-            2
-          )
-        : _vm._e()
-    ],
-    1
-  )
-};
-var __vue_staticRenderFns__$4 = [];
-__vue_render__$4._withStripped = true;
-
-  /* style */
-  const __vue_inject_styles__$4 = function (inject) {
-    if (!inject) return
-    inject("data-v-64ca2bb5_0", { source: ".rtl {\n  direction: rtl;\n}\n.vdp-datepicker {\n  position: relative;\n  text-align: left;\n}\n.vdp-datepicker * {\n  box-sizing: border-box;\n}\n.vdp-datepicker__calendar {\n  position: absolute;\n  z-index: 100;\n  background: #fff;\n  width: 300px;\n  border: 1px solid #ccc;\n}\n.vdp-datepicker__calendar header {\n  display: block;\n  line-height: 40px;\n}\n.vdp-datepicker__calendar header span {\n  display: inline-block;\n  text-align: center;\n  width: 71.42857142857143%;\n  float: left;\n}\n.vdp-datepicker__calendar header .prev,\n.vdp-datepicker__calendar header .next {\n  width: 14.285714285714286%;\n  float: left;\n  text-indent: -10000px;\n  position: relative;\n}\n.vdp-datepicker__calendar header .prev:after,\n.vdp-datepicker__calendar header .next:after {\n  content: '';\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  transform: translateX(-50%) translateY(-50%);\n  border: 6px solid transparent;\n}\n.vdp-datepicker__calendar header .prev:after {\n  border-right: 10px solid #000;\n  margin-left: -5px;\n}\n.vdp-datepicker__calendar header .prev.disabled:after {\n  border-right: 10px solid #ddd;\n}\n.vdp-datepicker__calendar header .next:after {\n  border-left: 10px solid #000;\n  margin-left: 5px;\n}\n.vdp-datepicker__calendar header .next.disabled:after {\n  border-left: 10px solid #ddd;\n}\n.vdp-datepicker__calendar header .prev:not(.disabled),\n.vdp-datepicker__calendar header .next:not(.disabled),\n.vdp-datepicker__calendar header .up:not(.disabled) {\n  cursor: pointer;\n}\n.vdp-datepicker__calendar header .prev:not(.disabled):hover,\n.vdp-datepicker__calendar header .next:not(.disabled):hover,\n.vdp-datepicker__calendar header .up:not(.disabled):hover {\n  background: #eee;\n}\n.vdp-datepicker__calendar .disabled {\n  color: #ddd;\n  cursor: default;\n}\n.vdp-datepicker__calendar .flex-rtl {\n  display: flex;\n  width: inherit;\n  flex-wrap: wrap;\n}\n.vdp-datepicker__calendar .cell {\n  display: inline-block;\n  padding: 0 5px;\n  width: 14.285714285714286%;\n  height: 40px;\n  line-height: 40px;\n  text-align: center;\n  vertical-align: middle;\n  border: 1px solid transparent;\n}\n.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).day,\n.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).month,\n.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).year {\n  cursor: pointer;\n}\n.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).day:hover,\n.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).month:hover,\n.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).year:hover {\n  border: 1px solid #4bd;\n}\n.vdp-datepicker__calendar .cell.selected {\n  background: #4bd;\n}\n.vdp-datepicker__calendar .cell.selected:hover {\n  background: #4bd;\n}\n.vdp-datepicker__calendar .cell.selected.highlighted {\n  background: #4bd;\n}\n.vdp-datepicker__calendar .cell.highlighted {\n  background: #cae5ed;\n}\n.vdp-datepicker__calendar .cell.highlighted.disabled {\n  color: #a3a3a3;\n}\n.vdp-datepicker__calendar .cell.grey {\n  color: #888;\n}\n.vdp-datepicker__calendar .cell.grey:hover {\n  background: inherit;\n}\n.vdp-datepicker__calendar .cell.day-header {\n  font-size: 75%;\n  white-space: nowrap;\n  cursor: inherit;\n}\n.vdp-datepicker__calendar .cell.day-header:hover {\n  background: inherit;\n}\n.vdp-datepicker__calendar .month,\n.vdp-datepicker__calendar .year {\n  width: 33.333%;\n}\n.vdp-datepicker__clear-button,\n.vdp-datepicker__calendar-button {\n  cursor: pointer;\n  font-style: normal;\n}\n.vdp-datepicker__clear-button.disabled,\n.vdp-datepicker__calendar-button.disabled {\n  color: #999;\n  cursor: default;\n}\n", map: {"version":3,"sources":["Datepicker.vue"],"names":[],"mappings":"AAAA;EACE,cAAc;AAChB;AACA;EACE,kBAAkB;EAClB,gBAAgB;AAClB;AACA;EACE,sBAAsB;AACxB;AACA;EACE,kBAAkB;EAClB,YAAY;EACZ,gBAAgB;EAChB,YAAY;EACZ,sBAAsB;AACxB;AACA;EACE,cAAc;EACd,iBAAiB;AACnB;AACA;EACE,qBAAqB;EACrB,kBAAkB;EAClB,yBAAyB;EACzB,WAAW;AACb;AACA;;EAEE,0BAA0B;EAC1B,WAAW;EACX,qBAAqB;EACrB,kBAAkB;AACpB;AACA;;EAEE,WAAW;EACX,kBAAkB;EAClB,SAAS;EACT,QAAQ;EACR,4CAA4C;EAC5C,6BAA6B;AAC/B;AACA;EACE,6BAA6B;EAC7B,iBAAiB;AACnB;AACA;EACE,6BAA6B;AAC/B;AACA;EACE,4BAA4B;EAC5B,gBAAgB;AAClB;AACA;EACE,4BAA4B;AAC9B;AACA;;;EAGE,eAAe;AACjB;AACA;;;EAGE,gBAAgB;AAClB;AACA;EACE,WAAW;EACX,eAAe;AACjB;AACA;EACE,aAAa;EACb,cAAc;EACd,eAAe;AACjB;AACA;EACE,qBAAqB;EACrB,cAAc;EACd,0BAA0B;EAC1B,YAAY;EACZ,iBAAiB;EACjB,kBAAkB;EAClB,sBAAsB;EACtB,6BAA6B;AAC/B;AACA;;;EAGE,eAAe;AACjB;AACA;;;EAGE,sBAAsB;AACxB;AACA;EACE,gBAAgB;AAClB;AACA;EACE,gBAAgB;AAClB;AACA;EACE,gBAAgB;AAClB;AACA;EACE,mBAAmB;AACrB;AACA;EACE,cAAc;AAChB;AACA;EACE,WAAW;AACb;AACA;EACE,mBAAmB;AACrB;AACA;EACE,cAAc;EACd,mBAAmB;EACnB,eAAe;AACjB;AACA;EACE,mBAAmB;AACrB;AACA;;EAEE,cAAc;AAChB;AACA;;EAEE,eAAe;EACf,kBAAkB;AACpB;AACA;;EAEE,WAAW;EACX,eAAe;AACjB","file":"Datepicker.vue","sourcesContent":[".rtl {\n  direction: rtl;\n}\n.vdp-datepicker {\n  position: relative;\n  text-align: left;\n}\n.vdp-datepicker * {\n  box-sizing: border-box;\n}\n.vdp-datepicker__calendar {\n  position: absolute;\n  z-index: 100;\n  background: #fff;\n  width: 300px;\n  border: 1px solid #ccc;\n}\n.vdp-datepicker__calendar header {\n  display: block;\n  line-height: 40px;\n}\n.vdp-datepicker__calendar header span {\n  display: inline-block;\n  text-align: center;\n  width: 71.42857142857143%;\n  float: left;\n}\n.vdp-datepicker__calendar header .prev,\n.vdp-datepicker__calendar header .next {\n  width: 14.285714285714286%;\n  float: left;\n  text-indent: -10000px;\n  position: relative;\n}\n.vdp-datepicker__calendar header .prev:after,\n.vdp-datepicker__calendar header .next:after {\n  content: '';\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  transform: translateX(-50%) translateY(-50%);\n  border: 6px solid transparent;\n}\n.vdp-datepicker__calendar header .prev:after {\n  border-right: 10px solid #000;\n  margin-left: -5px;\n}\n.vdp-datepicker__calendar header .prev.disabled:after {\n  border-right: 10px solid #ddd;\n}\n.vdp-datepicker__calendar header .next:after {\n  border-left: 10px solid #000;\n  margin-left: 5px;\n}\n.vdp-datepicker__calendar header .next.disabled:after {\n  border-left: 10px solid #ddd;\n}\n.vdp-datepicker__calendar header .prev:not(.disabled),\n.vdp-datepicker__calendar header .next:not(.disabled),\n.vdp-datepicker__calendar header .up:not(.disabled) {\n  cursor: pointer;\n}\n.vdp-datepicker__calendar header .prev:not(.disabled):hover,\n.vdp-datepicker__calendar header .next:not(.disabled):hover,\n.vdp-datepicker__calendar header .up:not(.disabled):hover {\n  background: #eee;\n}\n.vdp-datepicker__calendar .disabled {\n  color: #ddd;\n  cursor: default;\n}\n.vdp-datepicker__calendar .flex-rtl {\n  display: flex;\n  width: inherit;\n  flex-wrap: wrap;\n}\n.vdp-datepicker__calendar .cell {\n  display: inline-block;\n  padding: 0 5px;\n  width: 14.285714285714286%;\n  height: 40px;\n  line-height: 40px;\n  text-align: center;\n  vertical-align: middle;\n  border: 1px solid transparent;\n}\n.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).day,\n.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).month,\n.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).year {\n  cursor: pointer;\n}\n.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).day:hover,\n.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).month:hover,\n.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).year:hover {\n  border: 1px solid #4bd;\n}\n.vdp-datepicker__calendar .cell.selected {\n  background: #4bd;\n}\n.vdp-datepicker__calendar .cell.selected:hover {\n  background: #4bd;\n}\n.vdp-datepicker__calendar .cell.selected.highlighted {\n  background: #4bd;\n}\n.vdp-datepicker__calendar .cell.highlighted {\n  background: #cae5ed;\n}\n.vdp-datepicker__calendar .cell.highlighted.disabled {\n  color: #a3a3a3;\n}\n.vdp-datepicker__calendar .cell.grey {\n  color: #888;\n}\n.vdp-datepicker__calendar .cell.grey:hover {\n  background: inherit;\n}\n.vdp-datepicker__calendar .cell.day-header {\n  font-size: 75%;\n  white-space: nowrap;\n  cursor: inherit;\n}\n.vdp-datepicker__calendar .cell.day-header:hover {\n  background: inherit;\n}\n.vdp-datepicker__calendar .month,\n.vdp-datepicker__calendar .year {\n  width: 33.333%;\n}\n.vdp-datepicker__clear-button,\n.vdp-datepicker__calendar-button {\n  cursor: pointer;\n  font-style: normal;\n}\n.vdp-datepicker__clear-button.disabled,\n.vdp-datepicker__calendar-button.disabled {\n  color: #999;\n  cursor: default;\n}\n"]}, media: undefined });
-
-  };
-  /* scoped */
-  const __vue_scope_id__$4 = undefined;
-  /* module identifier */
-  const __vue_module_identifier__$4 = undefined;
-  /* functional template */
-  const __vue_is_functional_template__$4 = false;
-  /* style inject SSR */
-  
-
-  
-  var Datepicker = normalizeComponent_1(
-    { render: __vue_render__$4, staticRenderFns: __vue_staticRenderFns__$4 },
-    __vue_inject_styles__$4,
-    __vue_script__$4,
-    __vue_scope_id__$4,
-    __vue_is_functional_template__$4,
-    __vue_module_identifier__$4,
-    browser,
-    undefined
-  );
-
-/* harmony default export */ __webpack_exports__["default"] = (Datepicker);
 
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Product/SimulasiKredit/index.vue":
-/*!*************************************************************!*\
-  !*** ./resources/js/Pages/Product/SimulasiKredit/index.vue ***!
-  \*************************************************************/
+/***/ "./resources/js/Pages/Product/PinjamanDana/index.vue":
+/*!***********************************************************!*\
+  !*** ./resources/js/Pages/Product/PinjamanDana/index.vue ***!
+  \***********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _index_vue_vue_type_template_id_4b74e8c6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.vue?vue&type=template&id=4b74e8c6& */ "./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=template&id=4b74e8c6&");
-/* harmony import */ var _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=script&lang=js&");
+/* harmony import */ var _index_vue_vue_type_template_id_e51bedec___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.vue?vue&type=template&id=e51bedec& */ "./resources/js/Pages/Product/PinjamanDana/index.vue?vue&type=template&id=e51bedec&");
+/* harmony import */ var _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Product/PinjamanDana/index.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -7168,8 +4788,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _index_vue_vue_type_template_id_4b74e8c6___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _index_vue_vue_type_template_id_4b74e8c6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _index_vue_vue_type_template_id_e51bedec___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _index_vue_vue_type_template_id_e51bedec___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -7179,38 +4799,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/Pages/Product/SimulasiKredit/index.vue"
+component.options.__file = "resources/js/Pages/Product/PinjamanDana/index.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=script&lang=js&":
-/*!**************************************************************************************!*\
-  !*** ./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=script&lang=js& ***!
-  \**************************************************************************************/
+/***/ "./resources/js/Pages/Product/PinjamanDana/index.vue?vue&type=script&lang=js&":
+/*!************************************************************************************!*\
+  !*** ./resources/js/Pages/Product/PinjamanDana/index.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Product/PinjamanDana/index.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=template&id=4b74e8c6&":
-/*!********************************************************************************************!*\
-  !*** ./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=template&id=4b74e8c6& ***!
-  \********************************************************************************************/
+/***/ "./resources/js/Pages/Product/PinjamanDana/index.vue?vue&type=template&id=e51bedec&":
+/*!******************************************************************************************!*\
+  !*** ./resources/js/Pages/Product/PinjamanDana/index.vue?vue&type=template&id=e51bedec& ***!
+  \******************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_4b74e8c6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=template&id=4b74e8c6& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=template&id=4b74e8c6&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_4b74e8c6___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_e51bedec___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=template&id=e51bedec& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Product/PinjamanDana/index.vue?vue&type=template&id=e51bedec&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_e51bedec___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_4b74e8c6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_e51bedec___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -7459,16 +5079,16 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/Shared/img/creditSVG.vue":
-/*!***********************************************!*\
-  !*** ./resources/js/Shared/img/creditSVG.vue ***!
-  \***********************************************/
+/***/ "./resources/js/Shared/img/vehicleSVG.vue":
+/*!************************************************!*\
+  !*** ./resources/js/Shared/img/vehicleSVG.vue ***!
+  \************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _creditSVG_vue_vue_type_template_id_1501075a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./creditSVG.vue?vue&type=template&id=1501075a& */ "./resources/js/Shared/img/creditSVG.vue?vue&type=template&id=1501075a&");
+/* harmony import */ var _vehicleSVG_vue_vue_type_template_id_622c84c0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./vehicleSVG.vue?vue&type=template&id=622c84c0& */ "./resources/js/Shared/img/vehicleSVG.vue?vue&type=template&id=622c84c0&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 var script = {}
@@ -7478,8 +5098,8 @@ var script = {}
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
   script,
-  _creditSVG_vue_vue_type_template_id_1501075a___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _creditSVG_vue_vue_type_template_id_1501075a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _vehicleSVG_vue_vue_type_template_id_622c84c0___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _vehicleSVG_vue_vue_type_template_id_622c84c0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -7489,40 +5109,40 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/Shared/img/creditSVG.vue"
+component.options.__file = "resources/js/Shared/img/vehicleSVG.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/Shared/img/creditSVG.vue?vue&type=template&id=1501075a&":
-/*!******************************************************************************!*\
-  !*** ./resources/js/Shared/img/creditSVG.vue?vue&type=template&id=1501075a& ***!
-  \******************************************************************************/
+/***/ "./resources/js/Shared/img/vehicleSVG.vue?vue&type=template&id=622c84c0&":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/Shared/img/vehicleSVG.vue?vue&type=template&id=622c84c0& ***!
+  \*******************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_creditSVG_vue_vue_type_template_id_1501075a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./creditSVG.vue?vue&type=template&id=1501075a& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Shared/img/creditSVG.vue?vue&type=template&id=1501075a&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_creditSVG_vue_vue_type_template_id_1501075a___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_vehicleSVG_vue_vue_type_template_id_622c84c0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./vehicleSVG.vue?vue&type=template&id=622c84c0& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Shared/img/vehicleSVG.vue?vue&type=template&id=622c84c0&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_vehicleSVG_vue_vue_type_template_id_622c84c0___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_creditSVG_vue_vue_type_template_id_1501075a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_vehicleSVG_vue_vue_type_template_id_622c84c0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
 /***/ }),
 
-/***/ "./resources/js/components/Alert.vue":
-/*!*******************************************!*\
-  !*** ./resources/js/components/Alert.vue ***!
-  \*******************************************/
+/***/ "./resources/js/components/CardRequirement.vue":
+/*!*****************************************************!*\
+  !*** ./resources/js/components/CardRequirement.vue ***!
+  \*****************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Alert_vue_vue_type_template_id_7b2bf401___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Alert.vue?vue&type=template&id=7b2bf401& */ "./resources/js/components/Alert.vue?vue&type=template&id=7b2bf401&");
-/* harmony import */ var _Alert_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Alert.vue?vue&type=script&lang=js& */ "./resources/js/components/Alert.vue?vue&type=script&lang=js&");
+/* harmony import */ var _CardRequirement_vue_vue_type_template_id_baf86c10___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CardRequirement.vue?vue&type=template&id=baf86c10& */ "./resources/js/components/CardRequirement.vue?vue&type=template&id=baf86c10&");
+/* harmony import */ var _CardRequirement_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CardRequirement.vue?vue&type=script&lang=js& */ "./resources/js/components/CardRequirement.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -7532,9 +5152,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Alert_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Alert_vue_vue_type_template_id_7b2bf401___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Alert_vue_vue_type_template_id_7b2bf401___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _CardRequirement_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _CardRequirement_vue_vue_type_template_id_baf86c10___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _CardRequirement_vue_vue_type_template_id_baf86c10___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -7544,38 +5164,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/components/Alert.vue"
+component.options.__file = "resources/js/components/CardRequirement.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/components/Alert.vue?vue&type=script&lang=js&":
-/*!********************************************************************!*\
-  !*** ./resources/js/components/Alert.vue?vue&type=script&lang=js& ***!
-  \********************************************************************/
+/***/ "./resources/js/components/CardRequirement.vue?vue&type=script&lang=js&":
+/*!******************************************************************************!*\
+  !*** ./resources/js/components/CardRequirement.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Alert_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Alert.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Alert.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Alert_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CardRequirement_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./CardRequirement.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CardRequirement.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CardRequirement_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/components/Alert.vue?vue&type=template&id=7b2bf401&":
-/*!**************************************************************************!*\
-  !*** ./resources/js/components/Alert.vue?vue&type=template&id=7b2bf401& ***!
-  \**************************************************************************/
+/***/ "./resources/js/components/CardRequirement.vue?vue&type=template&id=baf86c10&":
+/*!************************************************************************************!*\
+  !*** ./resources/js/components/CardRequirement.vue?vue&type=template&id=baf86c10& ***!
+  \************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Alert_vue_vue_type_template_id_7b2bf401___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Alert.vue?vue&type=template&id=7b2bf401& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Alert.vue?vue&type=template&id=7b2bf401&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Alert_vue_vue_type_template_id_7b2bf401___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CardRequirement_vue_vue_type_template_id_baf86c10___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./CardRequirement.vue?vue&type=template&id=baf86c10& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CardRequirement.vue?vue&type=template&id=baf86c10&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CardRequirement_vue_vue_type_template_id_baf86c10___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Alert_vue_vue_type_template_id_7b2bf401___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CardRequirement_vue_vue_type_template_id_baf86c10___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

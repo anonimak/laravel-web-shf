@@ -22,9 +22,6 @@ import VueCarousel from "vue-carousel";
 import VueFormWizard from "vue-form-wizard";
 import "vue-form-wizard/dist/vue-form-wizard.min.css";
 
-// particle js
-import VueParticles from "vue-particles";
-
 import fullscreen from "vue-fullscreen";
 
 
@@ -40,9 +37,6 @@ Vue.use(VueMeta);
 Vue.use(require("vue-moment"), {
     moment
 });
-
-// untuk dorm wizard
-Vue.use(VueParticles);
 
 // untuk dorm wizard
 Vue.use(VueFormWizard);

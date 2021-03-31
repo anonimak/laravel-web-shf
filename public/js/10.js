@@ -1,15 +1,58 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[10],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Profile/PemegangSaham/index.vue?vue&type=script&lang=js&":
-/*!*********************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Profile/PemegangSaham/index.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Profile/Teammanagement/index.vue?vue&type=script&lang=js&":
+/*!**********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Profile/Teammanagement/index.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Shared_Layout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Shared/Layout */ "./resources/js/Shared/Layout.vue");
+/* harmony import */ var _components_CardTeamManagement__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/components/CardTeamManagement */ "./resources/js/components/CardTeamManagement.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -52,24 +95,52 @@ __webpack_require__.r(__webpack_exports__);
 //
  //import layouts
 
+ //import card team
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
-    Layout: _Shared_Layout__WEBPACK_IMPORTED_MODULE_0__["default"]
+    Layout: _Shared_Layout__WEBPACK_IMPORTED_MODULE_0__["default"],
+    CardTeamManagement: _components_CardTeamManagement__WEBPACK_IMPORTED_MODULE_1__["default"]
   },
   data: function data() {
     return {
-      listsaham: [{
-        no: 1,
-        pemilik_saham: "Hana Capital Co. Ltd",
-        persentase: "55 %"
+      listteamkomisaris: [{
+        id: 1,
+        name: "Wonsuk Chang",
+        title: "Komisaris Utama",
+        desc: "Warga Negara Korea Selatan, menjabat sebagai\n                            Komisaris Utama PT Sinarmas Hana Finance. Mengawali\n                            karir sebagai General Manager of Financing Risk\n                            Management di Samsung Life Insurance. Jabatan\n                            terkini beliau adalah sebagai General Manager of\n                            Risk Management Team in Hana Capital Co.Ltd, Korea\n                            Selatan.",
+        img: "won-suk-chang.png"
       }, {
-        no: 2,
-        pemilik_saham: "PT. Bank KEB Hana Indonesia",
-        persentase: "30 %"
+        id: 2,
+        name: "Herry Hermana Sukriawidjaja",
+        title: "Komisaris Independen",
+        desc: "Warga Negara Indonesia, menjabat sebagai Komisaris Independen PT Sinarmas Hana Finance.\n                Beliau memulai karirnya di PT Bank Internasional Indonesia pada tahun 1981. Sebelumnya juga pernah bekerja di PT Internas Artha Leasing dan PT Sinar Mas Multiartha. Sebelum pensiun, beliau menjabat sebagai Unit Head of Human Resources di PT Sinar Mas Multifinance pada periode Juni 1996 \u2013 Maret 2011. ",
+        img: "herry-hermana.png"
       }, {
-        no: 3,
-        pemilik_saham: "PT. Sinarmas Multiartha Tbk",
-        persentase: "15 %"
+        id: 3,
+        name: "Nasser Atorf",
+        title: "Komisaris",
+        desc: "Warga Negara Indonesia, menjabat sebagai Komisaris PT Sinarmas Hana Finance.\n                  Mengawai karir sebagai Analis Kredit di bagian kredit Koperasi Bank Indonesia pada tahun 1983. Beliau kemudian melanjutkan studi Master dan lulus pada tahun 1989 di University of Illinois, Amerika Serikat.\n                  Berpengalaman dalam memimpin dan mengkoordinir pengumpulan dan penyajian data ekonomi moneter, serta tugas pengawasan bank sampai tahun 2012. Kemudian dipercaya untuk memimpin Bank Indonesia di Medan dan ditunjuk sebagai Koordinator 4 KBI hingga tahun 2012. Jabatan terkini beliau adalah sebagai Komisaris di PT Bank KEB Hana Indonesia. ",
+        img: "nasser-atorf.png"
+      }],
+      listdireksi: [{
+        id: 1,
+        name: "Seo Jisu",
+        title: "Direktur Utama",
+        desc: "Warga Negara Korea Selatan, menjabat sebagai Direktur Utama PT Sinarmas Hana Finance sejak tahun 2015.\n                  Beliau meraih gelar Sarjana Ekonomi di Yonsei University. Sebelum bergabung di PT Sinarmas Hana Finance, beliau sudah berkarir selama 26 tahun di Hana Financial Group, diawali pada tahun 1992 di HFG  Apgujeong Branch dengan jabatan Associate.\n                  Berbagai posisi dan jabatan strategis di Hana Financial Group sudah dijalani beliau, diantaranya 3 tahun sebagai Branch Manager Bank KEB Hana Singapore dan menjabat di Hana Financial Group sebagai Relationship & General Manager, Large Corporate Business Division 3 pada tahun 2014.",
+        img: "Seo.png"
+      }, {
+        id: 2,
+        name: "Andrew Ludy",
+        title: "Direktur",
+        desc: "Warga Negara Indonesia, menjabat sebagai Direktur PT Sinarmas Hana Finance sejak tahun 2016.\n                Beliau menyelesaikan pendidikannya dan memperoleh gelar sarjana Ekonomi dari Perguruan Tinggi Universitas Katholik Widya Mandala, Surabaya pada tahun 2002.\n                Beliau memulai karir sebagai Marketing di PT Sinar Mas Multifinance di tahun 2003. Karir beliau berlanjut dan menjabat berbagai posisi strategis, salah satunya Regional Coordinator dan Branch Manager PT Sinar Mas Multifinance (2003 \u2013 2016).",
+        img: "andrew-ludy.png"
+      }, {
+        id: 3,
+        name: "Agustinus Budi Antoro",
+        title: "Direktur",
+        desc: "Warga Negara Indonesia, menjabat sebagai Direktur Kepatuhan dan Manajemen Risiko PT Sinarmas Hana Finance sejak tahun 2019.\n                  Beliau menyelesaikan pendidikannya di Universitas Atma Jaya Yogyakarta dengan gelar Sarjana Manajemen Ekonomi di tahun 2000 dengan konsentrasi Manajemen Keuangan.\n                  Memulai karir sebagai Credit Marketing Officer di PT Tunas Finance. Terhitung dari tahun 2003, beliau sudah berkarir di industri pembiayaan selama 16 tahun.\n                  Bergabung dengan PT Sinarmas Hana Finance di tahun 2015 sebagai Branch Manager. Selanjutnya  menjabat sebagai Area Manager dan General Manager Kepatuhan dan Manajemen Risiko.",
+        img: "agustinus.png"
       }]
     };
   },
@@ -353,6 +424,55 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CardTeamManagement.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CardTeamManagement.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      url: "/img/team-management/",
+      newurl: "#"
+    };
+  },
+  props: ["name", "title", "desc", "img"],
+  mounted: function mounted() {
+    this.newurl = this.url + this.img;
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Navbar.vue?vue&type=script&lang=js&":
 /*!*****************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Navbar.vue?vue&type=script&lang=js& ***!
@@ -362,6 +482,12 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -851,10 +977,10 @@ if(false) {}
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Profile/PemegangSaham/index.vue?vue&type=template&id=87f8922c&":
-/*!*************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Profile/PemegangSaham/index.vue?vue&type=template&id=87f8922c& ***!
-  \*************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Profile/Teammanagement/index.vue?vue&type=template&id=27c7b8d2&":
+/*!**************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Profile/Teammanagement/index.vue?vue&type=template&id=27c7b8d2& ***!
+  \**************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -874,7 +1000,7 @@ var render = function() {
           { attrs: { "data-aos": "fade-down" } },
           [
             _c("h2", { staticClass: "text-center text-secondary" }, [
-              _c("strong", [_vm._v("PEMEGANG SAHAM")])
+              _c("strong", [_vm._v("TEAM MANAGEMENT")])
             ]),
             _vm._v(" "),
             _c("hr", { staticClass: "border-secondary" }),
@@ -896,37 +1022,52 @@ var render = function() {
                   [
                     _c(
                       "b-tab",
-                      { attrs: { title: "Hubungan Investor", active: "" } },
+                      { attrs: { title: "Dewan Komisaris", active: "" } },
                       [
-                        _c("p", [
-                          _vm._v(
-                            "\n                PT Sinarmas Hana Finance adalah perusahaan pembiayaan yang\n                telah terdaftar di Otoritas Jasa Keuangan (OJK). PT Sinarmas\n                Hana Finance merupakan perusahaan pembiayaan dengan setoran\n                modal awal sebesar 150 Miliar. Dalam bagian ini, anda dapat\n                mendapatkan informasi terkini tentang informasi finansial dan\n                lainnya yang terkait dengan PT Sinarmas Hana Finance.\n              "
+                        _c("b-card-text", [
+                          _c(
+                            "div",
+                            { staticClass: "row gap-y" },
+                            _vm._l(_vm.listteamkomisaris, function(item) {
+                              return _c("card-team-management", {
+                                key: item.id,
+                                attrs: {
+                                  name: item.name,
+                                  title: item.title,
+                                  desc: item.desc,
+                                  img: item.img
+                                }
+                              })
+                            }),
+                            1
                           )
                         ])
-                      ]
+                      ],
+                      1
                     ),
                     _vm._v(" "),
                     _c(
                       "b-tab",
-                      { attrs: { title: "Pemegang Saham Pengendali" } },
+                      { attrs: { title: "Dewan direksi" } },
                       [
-                        _c("img", {
-                          staticClass: "my-4",
-                          attrs: {
-                            src: "/img/pemegang-saham/pemegang-saham.png",
-                            alt: "",
-                            width: "100%",
-                            srcset: ""
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c("b-table", {
-                          attrs: {
-                            striped: "",
-                            hover: "",
-                            items: _vm.listsaham
-                          }
-                        })
+                        _c("b-card-text", [
+                          _c(
+                            "div",
+                            { staticClass: "row gap-y" },
+                            _vm._l(_vm.listdireksi, function(item) {
+                              return _c("card-team-management", {
+                                key: item.id,
+                                attrs: {
+                                  name: item.name,
+                                  title: item.title,
+                                  desc: item.desc,
+                                  img: item.img
+                                }
+                              })
+                            }),
+                            1
+                          )
+                        ])
                       ],
                       1
                     )
@@ -939,6 +1080,26 @@ var render = function() {
           ],
           1
         )
+      ])
+    ]),
+    _vm._v(" "),
+    _c("section", { staticClass: "pt-5 pb-5" }, [
+      _c("div", { staticClass: "pb-5 container" }, [
+        _c("div", { attrs: { "data-aos": "fade-down" } }, [
+          _c("h2", { staticClass: "text-center text-secondary" }, [
+            _c("strong", [_vm._v("STRUKTUR PERUSAHAAN")])
+          ]),
+          _vm._v(" "),
+          _c("hr", { staticClass: "border-secondary" }),
+          _vm._v(" "),
+          _c("img", {
+            attrs: {
+              src: "/img/struktur-organisasi.png",
+              alt: "",
+              width: "100%"
+            }
+          })
+        ])
       ])
     ])
   ])
@@ -1272,6 +1433,60 @@ var render = function() {
     ],
     1
   )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CardTeamManagement.vue?vue&type=template&id=dc55794a&":
+/*!*********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CardTeamManagement.vue?vue&type=template&id=dc55794a& ***!
+  \*********************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", { staticClass: "col-md-12 col-xl-12" }, [
+    _c("div", { staticClass: "media" }, [
+      _c(
+        "div",
+        { staticClass: "mr-4" },
+        [
+          _c("b-img", {
+            attrs: {
+              thumbnail: "",
+              rounded: "circle",
+              alt: "image",
+              width: "80px",
+              height: "80px",
+              src: _vm.newurl
+            }
+          })
+        ],
+        1
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "media-body" }, [
+        _c("h4", { staticClass: "mb-0" }, [_vm._v(_vm._s(_vm.name))]),
+        _vm._v(" "),
+        _c("p", { staticClass: "text-muted" }, [_vm._v(_vm._s(_vm.title))]),
+        _vm._v(" "),
+        _c("p", [_vm._v("\n        " + _vm._s(_vm.desc) + "\n      ")])
+      ])
+    ]),
+    _vm._v(" "),
+    _c("hr")
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -1657,6 +1872,25 @@ var render = function() {
                   "li",
                   {
                     staticClass: "cool-link",
+                    class: _vm.isRoute("news") ? "nav-item active" : "nav-item"
+                  },
+                  [
+                    _c(
+                      "inertia-link",
+                      {
+                        staticClass: "nav-link py-3",
+                        attrs: { href: _vm.route("news") }
+                      },
+                      [_vm._v("Berita")]
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "li",
+                  {
+                    staticClass: "cool-link",
                     class: _vm.isRoute("contact")
                       ? "nav-item active"
                       : "nav-item"
@@ -1755,17 +1989,129 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Profile/PemegangSaham/index.vue":
-/*!************************************************************!*\
-  !*** ./resources/js/Pages/Profile/PemegangSaham/index.vue ***!
-  \************************************************************/
+/***/ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/runtime/componentNormalizer.js ***!
+  \********************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _index_vue_vue_type_template_id_87f8922c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.vue?vue&type=template&id=87f8922c& */ "./resources/js/Pages/Profile/PemegangSaham/index.vue?vue&type=template&id=87f8922c&");
-/* harmony import */ var _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Profile/PemegangSaham/index.vue?vue&type=script&lang=js&");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return normalizeComponent; });
+/* globals __VUE_SSR_CONTEXT__ */
+
+// IMPORTANT: Do NOT use ES2015 features in this file (except for modules).
+// This module is a runtime utility for cleaner component module output and will
+// be included in the final webpack user bundle.
+
+function normalizeComponent (
+  scriptExports,
+  render,
+  staticRenderFns,
+  functionalTemplate,
+  injectStyles,
+  scopeId,
+  moduleIdentifier, /* server only */
+  shadowMode /* vue-cli only */
+) {
+  // Vue.extend constructor export interop
+  var options = typeof scriptExports === 'function'
+    ? scriptExports.options
+    : scriptExports
+
+  // render functions
+  if (render) {
+    options.render = render
+    options.staticRenderFns = staticRenderFns
+    options._compiled = true
+  }
+
+  // functional template
+  if (functionalTemplate) {
+    options.functional = true
+  }
+
+  // scopedId
+  if (scopeId) {
+    options._scopeId = 'data-v-' + scopeId
+  }
+
+  var hook
+  if (moduleIdentifier) { // server build
+    hook = function (context) {
+      // 2.3 injection
+      context =
+        context || // cached call
+        (this.$vnode && this.$vnode.ssrContext) || // stateful
+        (this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext) // functional
+      // 2.2 with runInNewContext: true
+      if (!context && typeof __VUE_SSR_CONTEXT__ !== 'undefined') {
+        context = __VUE_SSR_CONTEXT__
+      }
+      // inject component styles
+      if (injectStyles) {
+        injectStyles.call(this, context)
+      }
+      // register component module identifier for async chunk inferrence
+      if (context && context._registeredComponents) {
+        context._registeredComponents.add(moduleIdentifier)
+      }
+    }
+    // used by ssr in case component is cached and beforeCreate
+    // never gets called
+    options._ssrRegister = hook
+  } else if (injectStyles) {
+    hook = shadowMode
+      ? function () {
+        injectStyles.call(
+          this,
+          (options.functional ? this.parent : this).$root.$options.shadowRoot
+        )
+      }
+      : injectStyles
+  }
+
+  if (hook) {
+    if (options.functional) {
+      // for template-only hot-reload because in that case the render fn doesn't
+      // go through the normalizer
+      options._injectStyles = hook
+      // register for functional component in vue file
+      var originalRender = options.render
+      options.render = function renderWithStyleInjection (h, context) {
+        hook.call(context)
+        return originalRender(h, context)
+      }
+    } else {
+      // inject component registration as beforeCreate hook
+      var existing = options.beforeCreate
+      options.beforeCreate = existing
+        ? [].concat(existing, hook)
+        : [hook]
+    }
+  }
+
+  return {
+    exports: scriptExports,
+    options: options
+  }
+}
+
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Profile/Teammanagement/index.vue":
+/*!*************************************************************!*\
+  !*** ./resources/js/Pages/Profile/Teammanagement/index.vue ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _index_vue_vue_type_template_id_27c7b8d2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.vue?vue&type=template&id=27c7b8d2& */ "./resources/js/Pages/Profile/Teammanagement/index.vue?vue&type=template&id=27c7b8d2&");
+/* harmony import */ var _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Profile/Teammanagement/index.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -1776,8 +2122,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _index_vue_vue_type_template_id_87f8922c___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _index_vue_vue_type_template_id_87f8922c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _index_vue_vue_type_template_id_27c7b8d2___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _index_vue_vue_type_template_id_27c7b8d2___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -1787,38 +2133,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/Pages/Profile/PemegangSaham/index.vue"
+component.options.__file = "resources/js/Pages/Profile/Teammanagement/index.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Profile/PemegangSaham/index.vue?vue&type=script&lang=js&":
-/*!*************************************************************************************!*\
-  !*** ./resources/js/Pages/Profile/PemegangSaham/index.vue?vue&type=script&lang=js& ***!
-  \*************************************************************************************/
+/***/ "./resources/js/Pages/Profile/Teammanagement/index.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************!*\
+  !*** ./resources/js/Pages/Profile/Teammanagement/index.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Profile/PemegangSaham/index.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Profile/Teammanagement/index.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Profile/PemegangSaham/index.vue?vue&type=template&id=87f8922c&":
-/*!*******************************************************************************************!*\
-  !*** ./resources/js/Pages/Profile/PemegangSaham/index.vue?vue&type=template&id=87f8922c& ***!
-  \*******************************************************************************************/
+/***/ "./resources/js/Pages/Profile/Teammanagement/index.vue?vue&type=template&id=27c7b8d2&":
+/*!********************************************************************************************!*\
+  !*** ./resources/js/Pages/Profile/Teammanagement/index.vue?vue&type=template&id=27c7b8d2& ***!
+  \********************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_87f8922c___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=template&id=87f8922c& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Profile/PemegangSaham/index.vue?vue&type=template&id=87f8922c&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_87f8922c___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_27c7b8d2___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=template&id=27c7b8d2& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Profile/Teammanagement/index.vue?vue&type=template&id=27c7b8d2&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_27c7b8d2___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_87f8922c___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_27c7b8d2___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -2062,6 +2408,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Layout_vue_vue_type_template_id_6bf30086___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Layout_vue_vue_type_template_id_6bf30086___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/CardTeamManagement.vue":
+/*!********************************************************!*\
+  !*** ./resources/js/components/CardTeamManagement.vue ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _CardTeamManagement_vue_vue_type_template_id_dc55794a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CardTeamManagement.vue?vue&type=template&id=dc55794a& */ "./resources/js/components/CardTeamManagement.vue?vue&type=template&id=dc55794a&");
+/* harmony import */ var _CardTeamManagement_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CardTeamManagement.vue?vue&type=script&lang=js& */ "./resources/js/components/CardTeamManagement.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _CardTeamManagement_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _CardTeamManagement_vue_vue_type_template_id_dc55794a___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _CardTeamManagement_vue_vue_type_template_id_dc55794a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/CardTeamManagement.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/CardTeamManagement.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/components/CardTeamManagement.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CardTeamManagement_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./CardTeamManagement.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CardTeamManagement.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CardTeamManagement_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/CardTeamManagement.vue?vue&type=template&id=dc55794a&":
+/*!***************************************************************************************!*\
+  !*** ./resources/js/components/CardTeamManagement.vue?vue&type=template&id=dc55794a& ***!
+  \***************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CardTeamManagement_vue_vue_type_template_id_dc55794a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./CardTeamManagement.vue?vue&type=template&id=dc55794a& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CardTeamManagement.vue?vue&type=template&id=dc55794a&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CardTeamManagement_vue_vue_type_template_id_dc55794a___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CardTeamManagement_vue_vue_type_template_id_dc55794a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

@@ -6,7 +6,7 @@
         autocomplete="off"
         type="text"
         name="search"
-        placeholder="Search Promo…"
+        placeholder="Search.."
         :value="value"
         @input="$emit('input', $event.target.value)"
       />

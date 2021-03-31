@@ -6,10 +6,12 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\DB;
+use Excel;
 use Inertia\Inertia;
 use Carbon\Carbon;
 use Carbon\CarbonImmutable;
 use App\VisitorUser;
+use App\Exports\VisitorExport;
 
 class DashboardController extends Controller
 {
@@ -44,6 +46,10 @@ class DashboardController extends Controller
             'chartdevicemonth' => $this->getGroupByDeviceMonth(),
             'chartdevicelastoneyear' => $this->getGroupByDeviceLastOneYear()
         ]);
+    }
+
+    public function reportexcel(){
+        return Excel::download(new VisitorExport, 'visitor.xlsx');
     }
 
     private function getThisWeek(): array {

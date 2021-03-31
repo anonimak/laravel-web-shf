@@ -58,7 +58,7 @@ export default {
         {
           id: 2,
           title: "Post",
-          link: "admin.post",
+          link: "admin.post.index",
           icon: "fas fa-fw fa-newspaper",
         },
         {

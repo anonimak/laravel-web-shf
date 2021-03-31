@@ -1,21 +1,60 @@
 <template>
-  <div class="card flex-md-row mb-4 box-shadow h-xl-300">
+  <div class="card mb-4 box-shadow h-xl-200">
+    <b-img fluid v-if="!simple" class="d-none d-md-block" :src="image" />
     <div class="card-body d-flex flex-column align-items-start">
-      <strong class="d-inline-block mb-2 text-purple">Business</strong>
-      <h3 class="mb-0">
-        <a class="text-dark" href="#">{{title}}</a>
-      </h3>
-      <div class="mb-1 text-muted">{{date}}</div>
-      <p class="card-text mb-auto">{{cutStr(content, 100)}}</p>
-      <a class="text-gray" href="#">Continue reading</a>
-      <inertia-link :href="route('promodetail', { id: itemid })"></inertia-link>
+      <strong v-if="!simple" class="d-inline-block mb-2 text-purple">{{category.title}}</strong>
+      <h5 v-if="!simple" class="mb-0">
+        <inertia-link class="text-dark" :href="route('newsdetail', { id: itemid })">{{title}}</inertia-link>
+      </h5>
+      <h6 v-else class="mb-0">
+        <inertia-link class="text-dark" :href="route('newsdetail', { id: itemid })">{{title}}</inertia-link>
+      </h6>
+      <div class="mb-1 text-muted"><small><em>{{ date | moment("Do MMMM YYYY, h:mm") }}</em></small></div>
+      <!-- <p v-if="!simple" class="card-text mb-2" v-html="cutStr(description, 100)"></p> -->
     </div>
-    <img class="card-img-right flex-auto d-none d-md-block" :src="image" />
+    <div v-if="!simple" class="card-footer">
+      <small><inertia-link v-if="!simple" :href="route('newsdetail', { id: itemid })">Baca Selengkapnya</inertia-link></small>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ["itemid", "title", "content", "date", "category", "image"],
+  props:{
+    itemid:{
+      type: String,
+      require:true
+    },
+    title:{
+      type:String,
+      require:true
+    },
+    description:{
+      type:String,
+      require:true
+    },
+    date:{
+      type:String,
+      require:true
+    },
+    category:{
+      type:Object,
+      require:true
+    },
+    image:{
+      type:String
+    },
+    simple:{
+      type:Boolean,
+      default:false,
+    }
+  },
+  props: ["itemid", "title", "description", "date", "category", "image","simple"],
 };
 </script>
+
+<style scoped>
+  /* .card {
+      max-width:25%;
+  } */
+</style>

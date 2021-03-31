@@ -51,7 +51,9 @@ Route::get('profile/visi-misi', 'Profile\VisiController@index')->name('profile.v
 Route::get('profile/team-management', 'Profile\TeamManagementController@index')->name('profile.teammanagement')->middleware('guest');
 Route::get('profile/pemegang-saham', 'Profile\PemegangSahamController@index')->name('profile.pemegangsaham')->middleware('guest');
 
-
+// news
+Route::get('news', 'NewsController@index')->name('news')->middleware('remember', 'guest');
+Route::get('news/{id}', 'NewsController@detail')->name('newsdetail')->middleware('guest');
 
 Route::get('career', 'CareerController@index')->name('career');
 Route::get('contact', 'ContactController@index')->name('contact')->middleware('guest','visitor');
@@ -79,7 +81,8 @@ Route::middleware(['auth', 'is_admin'])->prefix('admin')->name('admin.')->group(
     // admin.dashboard
     Route::get('/dashboard', 'Admin\DashboardController@index')
     ->name('dashboard');
-
+    Route::get('/dashboard-excel', 'Admin\DashboardController@reportexcel')
+    ->name('reportexcel');
     // page
     // admin.page
     Route::prefix('/page')->name('page.')->group(function () {
@@ -124,8 +127,24 @@ Route::middleware(['auth', 'is_admin'])->prefix('admin')->name('admin.')->group(
     });
 
     // Admin -> Post
-    Route::get('/post', 'Admin\CfgHomeController@index')
-    ->name('post');
+    Route::prefix('/post')->name('post.')->group(function () {
+        Route::get('/index', 'Admin\CfgPostNewsController@index')
+        ->name('index');
+        Route::get('/add', 'Admin\CfgPostNewsController@createPost')
+        ->name('add');
+        Route::post('/store', 'Admin\CfgPostNewsController@storePost')
+        ->name('store');
+        Route::get('/{news}/detail', 'Admin\CfgPostNewsController@detailPost')
+        ->name('detail');
+        Route::put('/{news}/update', 'Admin\CfgPostNewsController@updatePost')
+        ->name('update');
+        Route::post('/{id}/updateImage', 'Admin\CfgPostNewsController@updatePostImage')
+        ->name('updateImage');
+        Route::delete('/{news}/delete', 'Admin\CfgPostNewsController@destroyPost')
+        ->name('delete');
+        Route::delete('/deleteAll/{idx}', 'Admin\CfgPostNewsController@deletePostAll')
+        ->name('delete-all');
+    });
 
     // Admin -> Setting
     // admin.setting

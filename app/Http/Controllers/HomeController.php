@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\ConfigApp;
 use App\Promo;
+use App\News;
 use App\Slider;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
@@ -40,6 +41,7 @@ class HomeController extends Controller
             ],
             'dataSlider' => Slider::getWhereShow(),
             'listPromo' => Promo::getAllBanner(),
+            'listNews'  => News::with('category')->orderBy('created_at', 'DESC')->skip(0)->take(8)->get(),
             '__config' => $request['__config']
         ]);
 

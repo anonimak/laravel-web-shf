@@ -68,12 +68,12 @@
                 <ul class="list-unstyled">
                   <li class="py-2">
                     <div class="d-flex align-items-center">
-                      <badge
+                      <b-badge
                         type="success"
                         circle
                         class="mr-3"
                         icon="ni ni-settings-gear-65"
-                      ></badge>
+                      ></b-badge>
                       <h6 class="mb-0">
                         Tepat perhitungannya, Cermat perencanaannya.
                       </h6>
@@ -81,12 +81,12 @@
                   </li>
                   <li class="py-2">
                     <div class="d-flex align-items-center">
-                      <badge
+                      <b-badge
                         type="success"
                         circle
                         class="mr-3"
                         icon="ni ni-html5"
-                      ></badge>
+                      ></b-badge>
                       <h6 class="mb-0">
                         Simulasi Kredit untuk menghitung Total Down Payment (DP)
                         dan Angsuran.
@@ -95,12 +95,12 @@
                   </li>
                   <li class="py-2">
                     <div class="d-flex align-items-center">
-                      <badge
+                      <b-badge
                         type="success"
                         circle
                         class="mr-3"
                         icon="ni ni-satisfied"
-                      ></badge>
+                      ></b-badge>
                       <h6 class="mb-0">
                         Simulasi Budget Total DP untuk mengetahui angsuran
                         berdasarkan Budget Total DP Anda
@@ -109,12 +109,12 @@
                   </li>
                   <li class="py-2">
                     <div class="d-flex align-items-center">
-                      <badge
+                      <b-badge
                         type="success"
                         circle
                         class="mr-3"
                         icon="ni ni-satisfied"
-                      ></badge>
+                      ></b-badge>
                       <h6 class="mb-0">
                         Simulasi Budget Angsuran untuk mengetahui Total DP yang
                         harus disiapkan
@@ -197,66 +197,20 @@
           </div>
           <!-- Featured -->
           <div class="row">
-            <div class="col-lg-6" v-for="item in listNew" :key="item.id">
-              <card-news
-                :itemid="item.id"
-                :title="item.title"
-                :date="item.created_at"
-                :content="item.content"
-                :category="item.category"
-                :image="item.image"
-              />
-            </div>
-            <!-- <div class="col-lg-6">
-              <div class="card flex-md-row mb-4 box-shadow h-xl-300">
-                <div class="card-body d-flex flex-column align-items-start">
-                  <strong class="d-inline-block mb-2 text-purple"
-                    >Business</strong
-                  >
-                  <h3 class="mb-0">
-                    <a class="text-dark" href="#"
-                      >Living the Dream on a Sunny Island</a
-                    >
-                  </h3>
-                  <div class="mb-1 text-muted">Nov 12</div>
-                  <p class="card-text mb-auto">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content.
-                  </p>
-                  <a class="text-gray" href="#">Continue reading</a>
-                </div>
-                <img
-                  class="card-img-right flex-auto d-none d-md-block"
-                  src="/img/demo/blog1.jpg"
+            <div class="col">
+              <div class="card-deck">
+                <card-news  v-for="item in listNews" :key="item.id"
+                  :itemid="item.id"
+                  :title="item.title"
+                  :date="item.created_at"
+                  :description="item.description"
+                  :category="item.category"
+                  :image="item.image"
                 />
               </div>
             </div>
-            <div class="col-lg-6">
-              <div class="card flex-md-row mb-4 box-shadow h-xl-300">
-                <div class="card-body d-flex flex-column align-items-start">
-                  <strong class="d-inline-block mb-2 text-success"
-                    >Marketing</strong
-                  >
-                  <h3 class="mb-0">
-                    <a class="text-dark" href="#"
-                      >Why your marketing can be improved</a
-                    >
-                  </h3>
-                  <div class="mb-1 text-muted">Nov 12</div>
-                  <p class="card-text mb-auto">
-                    This is a wider card with supporting text below as a natural
-                    lead-in to additional content.
-                  </p>
-                  <a class="text-gray" href="#">Continue reading</a>
-                </div>
-                <img
-                  class="card-img-right flex-auto d-none d-md-block"
-                  src="/img/demo/blog2.jpg"
-                />
-              </div>
-            </div> -->
           </div>
-          <p class="text-muted" v-if="listNew == null">
+          <p class="text-muted" v-if="listNews == null">
             Saat ini berita belum tersedia
           </p>
         </div>
@@ -273,7 +227,7 @@
             <hr class="border-secondary" />
           </div>
           <!-- Blog Cards -->
-          <div class="row gap-y mb-4" data-aos="fade-down">
+          <div  v-if="listPromo.length > 0" class="row gap-y mb-4" data-aos="fade-down">
             <div
               class="col-md-6 col-lg-4"
               v-for="list in listPromo"
@@ -282,7 +236,7 @@
               <card-promo :itemImage="list" />
             </div>
           </div>
-          <p class="text-muted" v-if="list == null">
+          <p v-else class="text-muted">
             Saat ini promo belum tersedia
           </p>
           <!-- End Blog Cards -->
@@ -442,29 +396,6 @@ export default {
   metaInfo: { title: "Beranda" },
   data() {
     return {
-      listNews: [
-        {
-          id: 1,
-          title: "Living the Dream on a Sunny Island",
-          created_at: "978987987897",
-          content:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-          categor: "Businnes",
-          image: "/img/demo/blog1.jpg",
-          id_category: 3,
-        },
-        {
-          id: 2,
-          title: "Living the Dream on a Sunny Island",
-          created_at: "978987987897",
-          content:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-          categor: "Businnes",
-          image: "/img/demo/blog2.jpg",
-          id_category: 3,
-        },
-      ],
-      listNew: null,
       filteredPeople: [
         { id: 1, link: "a", hovertext: "coba coba" },
         { id: 2, link: "b", hovertext: "jkhk kjhkkj" },
@@ -517,7 +448,7 @@ export default {
       ],
     };
   },
-  props: ["meta", "__config", "dataSlider", "listPromo"],
+  props: ["meta", "__config", "dataSlider", "listPromo","listNews"],
   methods: {
     test: function () {
       alert("oke");
@@ -531,10 +462,33 @@ export default {
 </script>
 
 <style scoped>
+  .card-deck {
+    justify-content: space-between;
+  }
 
-.card-deck .card {
-    flex: none !important;
-    margin: auto;
-}
+  .card-deck .card {
+    margin: 0 0 0.5rem;
+  }
 
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .card-deck .card {
+      -ms-flex: 0 0 48.7%;
+      flex: 0 0 48.7%;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .card-deck .card {
+      -ms-flex: 0 0 32%;
+      flex: 0 0 32%;
+    }
+  }
+
+  @media (min-width: 992px)
+  {
+    .card-deck .card {
+      -ms-flex: 0 0 24%;
+      flex: 0 0 24%;
+    }
+  }
 </style>
