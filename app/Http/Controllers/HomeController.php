@@ -10,6 +10,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
 use Inertia\Inertia;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 
 class HomeController extends Controller
@@ -42,6 +43,7 @@ class HomeController extends Controller
             'dataSlider' => Slider::getWhereShow(),
             'listPromo' => Promo::getAllBanner(),
             'listNews'  => News::with('category')->orderBy('created_at', 'DESC')->skip(0)->take(8)->get(),
+            'data_offices' => DB::table('m_offices')->select('short_name as text', 'email as value')->get(),
             '__config' => $request['__config']
         ]);
 

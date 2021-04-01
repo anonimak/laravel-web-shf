@@ -23,33 +23,18 @@
       />
     </svg>
     <Footer />
-    <!-- <vue-particles
-            color="#009688"
-            :particlesNumber="100"
-            :particleOpacity="0.3"
-            :hoverEffect="false"
-            :moveSpeed="0"
-            linesColor="#009688"
-            :linesWidth="1"
-            :linesDistance="200"
-            :lineOpacity="0.2"
-        >
-    </vue-particles>-->
-    <!-- <particles-bg type="cobweb" bg="true" num="100" color="#009688" /> -->
   </div>
 </template>
 <script>
 import Topbar from "@/components/Topbar";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-// import { ParticlesBg } from "particles-bg-vue";
 
 export default {
   components: {
     Topbar,
     Navbar,
     Footer,
-    // ParticlesBg
   },
   methods: {
     handleLogout() {
@@ -58,25 +43,3 @@ export default {
   },
 };
 </script>
-<style>
-/* #particles-js {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-} */
-
-#particles-js {
-  background-size: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-</style>

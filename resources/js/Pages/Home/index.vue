@@ -13,7 +13,6 @@
         background="#ababab"
         style="text-shadow: 1px 1px 2px #333"
       >
-        <!-- Text slides with image -->
         <b-carousel-slide
           v-for="slide in dataSlider"
           :key="slide.id"
@@ -26,17 +25,7 @@
       <!-- Section Product -->
       <section>
         <div class="pt-4 pb-4 bg-info" data-aos="fade-down">
-          <!-- <div class="pb-5 pt-3 text-center">
-            <h2>
-              Predictive and
-              <strong>imperative approach</strong> towards application.
-            </h2>
-            <p class="text-muted">
-              It’s a social collaboration trello software platform that
-              employees really love to use, with rich personalized interface
-            </p>
-          </div> -->
-          <div class="container card-deck card-pricing text-center">
+          <div class="container card-pricing text-center">
             <card-product
               v-for="item in bannerProducts"
               :key="item.id"
@@ -166,7 +155,7 @@
             <div class="col-md-6 order-md-1" data-aos="fade-down">
               <vehicle-svg class="m-auto d-block" width="100%" />
             </div>
-            <div class="col-md-6 order-md-2" data-aos="fade-left">
+            <div class="col-md-6 order-md-2" data-aos="fade-right">
               <div class="pr-md-5">
                 <h3>
                   <strong
@@ -199,7 +188,10 @@
           <div class="row">
             <div class="col">
               <div class="card-deck">
-                <card-news  v-for="item in listNews" :key="item.id"
+                <card-news
+                  class="d-none d-md-block"
+                  v-for="item in listNews"
+                  :key="item.id"
                   :itemid="item.id"
                   :title="item.title"
                   :date="item.created_at"
@@ -208,16 +200,30 @@
                   :image="item.image"
                 />
               </div>
+              <media-news
+                class="d-md-none d-sm-flex"
+                v-for="item in listNews"
+                :key="item.id"
+                :itemid="item.id"
+                :title="item.title"
+                :date="item.created_at"
+                :image="item.image"
+              />
             </div>
           </div>
           <p class="text-muted" v-if="listNews == null">
             Saat ini berita belum tersedia
           </p>
+          <div class="d-inline bg-gray p-2">
+            <inertia-link :href="route('news')"
+              >Lihat semua berita</inertia-link
+            >
+          </div>
         </div>
       </section>
 
       <!-- Section Promo -->
-      <section class="pt-5 pb-5" data-aos="fade-down">
+      <section class="pt-2 pb-5" data-aos="fade-down">
         <div class="container">
           <!-- title section -->
           <div>
@@ -227,7 +233,11 @@
             <hr class="border-secondary" />
           </div>
           <!-- Blog Cards -->
-          <div  v-if="listPromo.length > 0" class="row gap-y mb-4" data-aos="fade-down">
+          <div
+            v-if="listPromo.length > 0"
+            class="row gap-y mb-4"
+            data-aos="fade-down"
+          >
             <div
               class="col-md-6 col-lg-4"
               v-for="list in listPromo"
@@ -236,9 +246,7 @@
               <card-promo :itemImage="list" />
             </div>
           </div>
-          <p v-else class="text-muted">
-            Saat ini promo belum tersedia
-          </p>
+          <p v-else class="text-muted">Saat ini promo belum tersedia</p>
           <!-- End Blog Cards -->
         </div>
       </section>
@@ -361,7 +369,7 @@ FEATURES
       </div> -->
 
       <!-- modal pengajuan -->
-      <modal-form-pengajuan />
+      <modal-form-pengajuan :databranch="data_offices" />
       <!-- end modal pengajuan -->
     </div>
   </Layout>
@@ -371,6 +379,7 @@ FEATURES
 import Layout from "@/Shared/Layout"; //import layouts
 import CardProduct from "@/components/CardProduct";
 import CardNews from "@/components/CardNews";
+import MediaNews from "@/components/MediaNews";
 import CardPromo from "@/components/CardPromo";
 import carousel from "vue-owl-carousel2";
 
@@ -389,6 +398,7 @@ export default {
     VehicleSvg,
     CalculatorSvg,
     CardNews,
+    MediaNews,
     carousel,
     CardPromo,
     ModalFormPengajuan,
@@ -448,7 +458,14 @@ export default {
       ],
     };
   },
-  props: ["meta", "__config", "dataSlider", "listPromo","listNews"],
+  props: [
+    "meta",
+    "__config",
+    "dataSlider",
+    "listPromo",
+    "listNews",
+    "data_offices",
+  ],
   methods: {
     test: function () {
       alert("oke");
@@ -462,33 +479,32 @@ export default {
 </script>
 
 <style scoped>
-  .card-deck {
-    justify-content: space-between;
-  }
+.card-deck {
+  justify-content: space-between;
+}
 
+.card-deck .card {
+  margin: 0 0 0.5rem;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
   .card-deck .card {
-    margin: 0 0 0.5rem;
+    -ms-flex: 0 0 48.7%;
+    flex: 0 0 48.7%;
   }
+}
 
-  @media (min-width: 576px) and (max-width: 767.98px) {
-    .card-deck .card {
-      -ms-flex: 0 0 48.7%;
-      flex: 0 0 48.7%;
-    }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .card-deck .card {
+    -ms-flex: 0 0 32%;
+    flex: 0 0 32%;
   }
+}
 
-  @media (min-width: 768px) and (max-width: 991.98px) {
-    .card-deck .card {
-      -ms-flex: 0 0 32%;
-      flex: 0 0 32%;
-    }
+@media (min-width: 992px) {
+  .card-deck .card {
+    -ms-flex: 0 0 24%;
+    flex: 0 0 24%;
   }
-
-  @media (min-width: 992px)
-  {
-    .card-deck .card {
-      -ms-flex: 0 0 24%;
-      flex: 0 0 24%;
-    }
-  }
+}
 </style>

@@ -106,6 +106,21 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
  //import layouts
 
 
@@ -148,25 +163,23 @@ __webpack_require__.r(__webpack_exports__);
     submitDeleteAll: function submitDeleteAll(idx) {
       this.$inertia["delete"](route("admin.post.delete-all", idx.join()));
     },
-    showMsgBoxDelete: function showMsgBoxDelete(state, id) {
+    showMsgBoxDelete: function showMsgBoxDelete(id) {
       var _this = this;
 
-      if (state) {
-        this.$bvModal.msgBoxConfirm("Please confirm that you want to delete this post.", {
-          title: "Please Confirm",
-          size: "sm",
-          buttonSize: "sm",
-          okVariant: "danger",
-          okTitle: "YES",
-          cancelTitle: "NO",
-          footerClass: "p-2",
-          hideHeaderClose: false,
-          centered: true
-        }).then(function (value) {
-          value && _this.submitDelete(id);
-        })["catch"](function (err) {// An error occurred
-        });
-      }
+      this.$bvModal.msgBoxConfirm("Please confirm that you want to delete this post.", {
+        title: "Please Confirm",
+        size: "sm",
+        buttonSize: "sm",
+        okVariant: "danger",
+        okTitle: "YES",
+        cancelTitle: "NO",
+        footerClass: "p-2",
+        hideHeaderClose: false,
+        centered: true
+      }).then(function (value) {
+        value && _this.submitDelete(id);
+      })["catch"](function (err) {// An error occurred
+      });
     },
     showMsgBoxDeleteAll: function showMsgBoxDeleteAll() {
       this.$bvModal.msgBoxConfirm("Please confirm that you want to delete this checked post.", {
@@ -20360,7 +20373,7 @@ var render = function() {
         },
         [
           _c("h1", { staticClass: "h3 mb-0 text-gray-800" }, [
-            _vm._v("\n            Home Page\n        ")
+            _vm._v("Home Page")
           ])
         ]
       ),
@@ -20395,9 +20408,7 @@ var render = function() {
                                   },
                                   [
                                     _c("i", { staticClass: "fas fa-plus" }),
-                                    _vm._v(
-                                      "\n                                            Tambah"
-                                    )
+                                    _vm._v("\n                      Tambah")
                                   ]
                                 )
                               ],
@@ -20476,15 +20487,19 @@ var render = function() {
                                     _vm._v(" "),
                                     _c("td", [_vm._v(_vm._s(item.title))]),
                                     _vm._v(" "),
-                                    _c("td", [
-                                      _c("img", {
-                                        staticClass: "img-thumbnail",
-                                        attrs: {
-                                          src: item.image,
-                                          width: "100px"
-                                        }
-                                      })
-                                    ]),
+                                    _c(
+                                      "td",
+                                      [
+                                        _c("b-avatar", {
+                                          attrs: {
+                                            rounded: "",
+                                            src: item.image,
+                                            size: "45px"
+                                          }
+                                        })
+                                      ],
+                                      1
+                                    ),
                                     _vm._v(" "),
                                     _c(
                                       "td",
@@ -20521,23 +20536,27 @@ var render = function() {
                                     _vm._v(" "),
                                     _c("td", [
                                       _vm._v(
-                                        _vm._s(
-                                          _vm._f("moment")(
-                                            item.created_at,
-                                            "Do/MM/YYYY - H:mm:ss"
-                                          )
-                                        )
+                                        "\n                        " +
+                                          _vm._s(
+                                            _vm._f("moment")(
+                                              item.created_at,
+                                              "Do/MM/YYYY - H:mm:ss"
+                                            )
+                                          ) +
+                                          "\n                      "
                                       )
                                     ]),
                                     _vm._v(" "),
                                     _c("td", [
                                       _vm._v(
-                                        _vm._s(
-                                          _vm._f("moment")(
-                                            item.updated_at,
-                                            "Do/MM/YYYY - H:mm:ss"
-                                          )
-                                        )
+                                        "\n                        " +
+                                          _vm._s(
+                                            _vm._f("moment")(
+                                              item.updated_at,
+                                              "Do/MM/YYYY - H:mm:ss"
+                                            )
+                                          ) +
+                                          "\n                      "
                                       )
                                     ]),
                                     _vm._v(" "),
@@ -20545,37 +20564,42 @@ var render = function() {
                                       "td",
                                       [
                                         _c(
-                                          "inertia-link",
-                                          {
-                                            staticClass: "btn btn-primary",
-                                            attrs: {
-                                              href: _vm.route(
-                                                "admin.post.detail",
-                                                item.id
-                                              )
-                                            }
-                                          },
-                                          [_vm._v("Detail")]
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "b-button",
-                                          {
-                                            attrs: {
-                                              href: "#",
-                                              variant: "danger"
-                                            },
-                                            on: {
-                                              click: function($event) {
-                                                return _vm.$emit(
-                                                  "deleteClicked",
-                                                  true,
-                                                  item.id
-                                                )
-                                              }
-                                            }
-                                          },
-                                          [_vm._v("Delete")]
+                                          "b-button-group",
+                                          { attrs: { size: "sm" } },
+                                          [
+                                            _c(
+                                              "inertia-link",
+                                              {
+                                                staticClass: "btn btn-primary",
+                                                attrs: {
+                                                  href: _vm.route(
+                                                    "admin.post.detail",
+                                                    item.id
+                                                  )
+                                                }
+                                              },
+                                              [_vm._v("Detail")]
+                                            ),
+                                            _vm._v(" "),
+                                            _c(
+                                              "b-button",
+                                              {
+                                                attrs: {
+                                                  href: "#",
+                                                  variant: "danger"
+                                                },
+                                                on: {
+                                                  click: function($event) {
+                                                    return _vm.showMsgBoxDelete(
+                                                      item.id
+                                                    )
+                                                  }
+                                                }
+                                              },
+                                              [_vm._v("Delete")]
+                                            )
+                                          ],
+                                          1
                                         )
                                       ],
                                       1
