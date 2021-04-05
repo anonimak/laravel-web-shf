@@ -8,20 +8,32 @@ use Illuminate\Support\Facades\Storage;
 
 class News extends Model
 {
-    protected $fillable = ['title','image','description','status', 'id_category'];
+    protected $fillable = ['title','image','description','status', 'id_type'];
     protected $dates = ['deleted_at'];
     //
     use SoftDeletes;
 
-    public function category()
+    public function type()
     {
-        return $this->belongsTo('App\CategoryNews','id_category');
+        return $this->belongsTo('App\TypeNews','id_type');
     }
 
     public static function getNews($search = null)
     {
         $news = Self::select('*')
-            ->with('category')
+            ->where('id_type',1)
+            ->orderBy('created_at', 'asc');
+
+        if ($search) {
+            $news->where('title', 'LIKE', '%' . $search . '%');
+        }
+        return $news->paginate(18);
+    }
+
+    public static function getCsrNews($search = null)
+    {
+        $news = Self::select('*')
+            ->where('id_type',2)
             ->orderBy('created_at', 'asc');
 
         if ($search) {
@@ -34,7 +46,21 @@ class News extends Model
     {
         $news = Self::select('*')
             ->where('status', '=', 1)
-            ->with('category')
+            ->where('id_type',1)
+            ->with('type')
+            ->orderBy('created_at', 'desc');
+
+        if ($search) {
+            $news->where('title', 'LIKE', '%' . $search . '%');
+        }
+        return $news->paginate(18);
+    }
+
+    public static function getCsrNewsWhereStatus($search = null)
+    {
+        $news = Self::select('*')
+            ->where('status', '=', 1)
+            ->where('id_type',2)
             ->orderBy('created_at', 'desc');
 
         if ($search) {

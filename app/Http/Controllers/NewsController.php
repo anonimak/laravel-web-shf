@@ -19,7 +19,7 @@ class NewsController extends Controller
         Inertia::share('app.name', Config::get('app.name'));
         return Inertia::render('News', [
             'lists' => ModelNews::getNewsWhereStatus($request->input('search')),
-            'listBanner' => ModelNews::with('category')->orderBy('created_at', 'DESC')->skip(0)->take(4)->get(),
+            'listBanner' => ModelNews::where('status',true)->where('id_type',1)->orderBy('created_at', 'DESC')->skip(0)->take(4)->get(),
             'filters' => $request->all(),
         ]);
     } 
@@ -30,14 +30,15 @@ class NewsController extends Controller
         Inertia::share('app.name', Config::get('app.name'));
         // data news
         $datanews = ModelNews::find($id);
-        $listnews = ModelNews::with('category')
-                        ->where('id_category', '=' , $datanews->id_category)
+        $listnews = ModelNews::where('id_type',1)
                         ->where('id', '<>' , $datanews->id)
+                        ->where('status',true)
                         ->inRandomOrder()
                         ->limit(4)->get();
         if(count($listnews) <= 0){
-            $listnews = ModelNews::with('category')
+            $listnews = ModelNews::where('id_type', 1)
                         ->where('id', '<>' , $datanews->id)
+                        ->where('status',true)
                         ->inRandomOrder()
                         ->limit(4)->get();
         }

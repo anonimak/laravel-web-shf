@@ -9,7 +9,6 @@ use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\URL;
 use Inertia\Inertia;
 use App\News as ModelNews;
-use App\CategoryNews;
 
 class CfgPostNewsController extends Controller
 {
@@ -41,7 +40,6 @@ class CfgPostNewsController extends Controller
     {
         return Inertia::render('Admin/CfgPostNews/add', [
             '_token' => csrf_token(),
-            'categories' => CategoryNews::orderBy('created_at', 'asc')->get(),
             'breadcrumbItems' => array(
                 [
                     'icon'    => "fa-home",
@@ -50,7 +48,7 @@ class CfgPostNewsController extends Controller
                 ],
                 [
                     'title'   => "Post News",
-                    'href'    => "admin.post.index"
+                    'href'    => "admin.post.news.index"
                 ],
                 [
                     'title'   => "Add Post News",
@@ -66,7 +64,6 @@ class CfgPostNewsController extends Controller
         $request->validate([
             'title'             => 'required',
             'description'       => 'nullable',
-            'id_category'       => 'required',
             'image'             => 'required|image|mimes:jpg,jpeg,png|max:5000',
         ]);
 
@@ -77,10 +74,10 @@ class CfgPostNewsController extends Controller
             'description'       => $request->input('description'),
             'image'             => $path,
             'status'            => $request->input('status'),
-            'id_category'       => (null !== $request->input('id_category'))? $request->input('id_category') : 1
+            'id_type'       => 1
         ]);
 
-        return Redirect::route('admin.post.detail', $post->id )->with('success', 'Post created.');
+        return Redirect::route('admin.post.news.detail', $post->id )->with('success', 'Post created.');
         // return Redirect::back()->with('success', 'Successful updating image Post.');
     }
 
@@ -90,16 +87,14 @@ class CfgPostNewsController extends Controller
         return Inertia::render('Admin/CfgPostNews/edit', [
             'dataPost' => [
                 'id'            => $news->id,
-                'id_category'   => $news->id_category,
                 'description'   => $news->description,
                 'title'         => $news->title,
                 'status'        => $news->status,
                 'image'         => $news->image,
             ],
-            'categories' => CategoryNews::orderBy('created_at', 'asc')->get(),
-            '_update_url' => URL::route('admin.post.update', $news->id),
-            '_updateImage_url' => URL::route('admin.post.updateImage', $news->id),
-            '_delete_url' => URL::route('admin.post.delete', $news->id),
+            '_update_url' => URL::route('admin.post.news.update', $news->id),
+            '_updateImage_url' => URL::route('admin.post.news.updateImage', $news->id),
+            '_delete_url' => URL::route('admin.post.news.delete', $news->id),
             '_token' => csrf_token(),
             'breadcrumbItems' => array(
                 [
@@ -109,7 +104,7 @@ class CfgPostNewsController extends Controller
                 ],
                 [
                     'title'   => "Post News",
-                    'href'    => "admin.post.index"
+                    'href'    => "admin.post.news.index"
                 ],
                 [
                     'title'   => $news->id,
@@ -144,13 +139,11 @@ class CfgPostNewsController extends Controller
         $request->validate([
             'title'             => 'required',
             'status'             => 'required',
-            'id_category'       => 'required',
             'description'       => 'nullable',
         ]);
 
         ModelNews::where('id',$request->id)->update([
             'title'  => $request->title,
-            'id_category'  => $request->id_category,
             'description'  => $request->description,
             'status' => $request->status,
         ]);
@@ -165,7 +158,7 @@ class CfgPostNewsController extends Controller
         //     File::delete(public_path($post->image));
         // }
         $news->delete();
-        return Redirect::route('admin.post.index')->with('success', 'Post deleted.');
+        return Redirect::route('admin.post.news.index')->with('success', 'Post deleted.');
     }
 
     public function deletePostAll($id)
@@ -181,7 +174,7 @@ class CfgPostNewsController extends Controller
         // }
         // delete record
         $post->destroy($id);
-        return Redirect::route('admin.post.index')->with('success', 'Post deleted.');
+        return Redirect::route('admin.post.news.index')->with('success', 'Post deleted.');
     }
 
     public function restorePost(ModelNews $news)

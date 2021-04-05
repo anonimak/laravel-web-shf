@@ -1,23 +1,16 @@
 <template>
-  <div class="card mb-4 box-shadow h-xl-200">
+  <div class="card mb-4 box-shadow h-100">
     <b-img fluid v-if="!simple" class="d-none d-md-block" :src="image" />
     <div class="card-body d-flex flex-column align-items-start">
-      <strong v-if="!simple" class="d-inline-block mb-2 text-purple">{{
-        category.title
-      }}</strong>
       <h5 v-if="!simple" class="mb-0">
-        <inertia-link
-          class="text-dark"
-          :href="route('newsdetail', { id: itemid })"
-          >{{ title }}</inertia-link
-        >
+        <inertia-link :href="route('profile.newsdetail', { id: itemid })">{{
+          title
+        }}</inertia-link>
       </h5>
       <h6 v-else class="mb-0">
-        <inertia-link
-          class="text-dark"
-          :href="route('newsdetail', { id: itemid })"
-          >{{ title }}</inertia-link
-        >
+        <inertia-link :href="route('profile.newsdetail', { id: itemid })">{{
+          title
+        }}</inertia-link>
       </h6>
       <div class="mb-1 text-muted">
         <small
@@ -30,7 +23,7 @@
       <small
         ><inertia-link
           v-if="!simple"
-          :href="route('newsdetail', { id: itemid })"
+          :href="route('profile.newsdetail', { id: itemid })"
           >Baca Selengkapnya</inertia-link
         ></small
       >
@@ -55,10 +48,6 @@ export default {
     },
     date: {
       type: String,
-      require: true,
-    },
-    category: {
-      type: Object,
       require: true,
     },
     image: {

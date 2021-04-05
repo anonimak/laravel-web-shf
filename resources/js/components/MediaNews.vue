@@ -8,7 +8,7 @@
     <h6 class="mt-0 mb-1">
       <inertia-link
         class="text-dark"
-        :href="route('newsdetail', { id: itemid })"
+        :href="route('profile.newsdetail', { id: itemid })"
         >{{ title }}</inertia-link
       >
     </h6>

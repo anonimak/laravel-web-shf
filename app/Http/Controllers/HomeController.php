@@ -42,7 +42,8 @@ class HomeController extends Controller
             ],
             'dataSlider' => Slider::getWhereShow(),
             'listPromo' => Promo::getAllBanner(),
-            'listNews'  => News::with('category')->orderBy('created_at', 'DESC')->skip(0)->take(8)->get(),
+            'listNews'  => News::where('status', true)->where('id_type',1)->orderBy('created_at', 'DESC')->skip(0)->take(9)->get(),
+            'listCsrNews'  => News::where('status', true)->where('id_type',2)->orderBy('created_at', 'DESC')->skip(0)->take(8)->get(),
             'data_offices' => DB::table('m_offices')->select('short_name as text', 'email as value')->get(),
             '__config' => $request['__config']
         ]);

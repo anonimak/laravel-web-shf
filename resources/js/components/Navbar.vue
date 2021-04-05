@@ -30,12 +30,7 @@
           </li>
           <li
             :class="
-              isRoute(
-                'promo',
-                'promodetail',
-                'simulasikredit',
-                'kendaraan'
-              )
+              isRoute('promo', 'promodetail', 'simulasikredit', 'kendaraan')
                 ? 'nav-item dropdown active'
                 : 'nav-item dropdown'
             "
@@ -103,7 +98,11 @@
                 'profile.about',
                 'profile.visimisi',
                 'profile.teammanagement',
-                'profile.pemegangsaham'
+                'profile.pemegangsaham',
+                'profile.news',
+                'profile.newsdetail',
+                'profile.csrnews',
+                'profile.csrnewsdetail'
               )
                 ? 'nav-item dropdown active'
                 : 'nav-item dropdown'
@@ -121,6 +120,24 @@
               >{{ __("Profile") }}</a
             >
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <inertia-link
+                :href="route('profile.news')"
+                :class="
+                  isRoute('profile.news', 'profile.newsdetail')
+                    ? 'dropdown-item active'
+                    : 'dropdown-item'
+                "
+                >Berita</inertia-link
+              >
+              <inertia-link
+                :href="route('profile.csrnews')"
+                :class="
+                  isRoute('profile.csrnews', 'profile.csrnewsdetail')
+                    ? 'dropdown-item active'
+                    : 'dropdown-item'
+                "
+                >Tanggung Jawab Sosial</inertia-link
+              >
               <inertia-link
                 :href="route('profile.about')"
                 :class="
@@ -165,12 +182,6 @@
               >
               <a class="dropdown-item" href="./page.html">Penghargaan</a> -->
             </div>
-          </li>
-          <li
-            :class="isRoute('news') ? 'nav-item active' : 'nav-item'"
-            class="cool-link"
-          >
-            <inertia-link class="nav-link py-3" :href="route('news')">Berita</inertia-link>
           </li>
           <li
             :class="isRoute('contact') ? 'nav-item active' : 'nav-item'"

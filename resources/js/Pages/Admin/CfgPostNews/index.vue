@@ -2,7 +2,7 @@
   <Layout :userinfo="userinfo">
     <flash-msg />
     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-      <h1 class="h3 mb-0 text-gray-800">Home Page</h1>
+      <h1 class="h3 mb-0 text-gray-800">Page Post News</h1>
     </div>
     <breadcrumb :items="breadcrumbItems" />
     <div class="row">
@@ -15,7 +15,7 @@
                   <div class="row">
                     <div class="col-12">
                       <inertia-link
-                        :href="route('admin.post.add')"
+                        :href="route('admin.post.news.add')"
                         class="btn btn-primary my-2 float-right"
                       >
                         <i class="fas fa-plus"></i>
@@ -33,7 +33,6 @@
                         <th scope="col">#</th>
                         <th scope="col">Title News</th>
                         <th scope="col">Image</th>
-                        <th scope="col">Category</th>
                         <th scope="col">Publish</th>
                         <th scope="col">Date Created</th>
                         <th scope="col">Date Updated</th>
@@ -55,9 +54,6 @@
                           ></b-avatar>
                         </td>
                         <td>
-                          <b-badge>{{ item.category.title }}</b-badge>
-                        </td>
-                        <td>
                           <b-badge :class="item.status == 1 && 'bg-success'">{{
                             item.status == 1 ? "Published" : "Not Publish"
                           }}</b-badge>
@@ -71,7 +67,7 @@
                         <td>
                           <b-button-group size="sm">
                             <inertia-link
-                              :href="route('admin.post.detail', item.id)"
+                              :href="route('admin.post.news.detail', item.id)"
                               class="btn btn-primary"
                               >Detail</inertia-link
                             >
@@ -140,10 +136,10 @@ export default {
   },
   methods: {
     submitDelete(id) {
-      this.$inertia.delete(route("admin.post.delete", id));
+      this.$inertia.delete(route("admin.post.news.delete", id));
     },
     submitDeleteAll(idx) {
-      this.$inertia.delete(route("admin.post.delete-all", idx.join()));
+      this.$inertia.delete(route("admin.post.news.delete-all", idx.join()));
     },
     showMsgBoxDelete: function (id) {
       this.$bvModal
@@ -206,7 +202,7 @@ export default {
         let query = pickBy(this.form);
         this.$inertia.replace(
           this.route(
-            "admin.post.index",
+            "admin.post.news.index",
             Object.keys(query).length ? query : { remember: "forget" }
           )
         );

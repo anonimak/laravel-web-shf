@@ -54,27 +54,6 @@
                 <editor v-model="form.description" />
               </b-form-group>
 
-              <b-form-group
-                id="input-group-idcategory"
-                label="Category:"
-                label-for="input-idcategory"
-                :invalid-feedback="
-                  errors.id_category ? errors.id_category[0] : ''
-                "
-                :state="errors.id_category ? false : null"
-              >
-                <b-form-select
-                  v-model="form.id_category"
-                  :options="optionCategories"
-                  :state="errors.id_category ? false : null"
-                  trim
-                >
-                  <b-form-select-option :value="null"
-                    >--Please select a category--</b-form-select-option
-                  >
-                </b-form-select>
-              </b-form-group>
-
               <b-form-group label="Apakah akan di publish ?">
                 <b-form-radio-group v-model="form.status" name="status">
                   <b-form-radio value="1">Yes</b-form-radio>
@@ -102,7 +81,7 @@ import "vue2-dropzone/dist/vue2Dropzone.min.css";
 import Editor from "@/components/AdminComponents/Editor";
 
 export default {
-  props: ["_token", "errors", "breadcrumbItems", "flash", "categories"],
+  props: ["_token", "errors", "breadcrumbItems", "flash"],
   components: {
     Layout,
     FlashMsg,
@@ -113,12 +92,6 @@ export default {
   data() {
     return {
       submitState: false,
-      optionCategories: this.categories.map((item) => {
-        return {
-          value: item.id,
-          text: item.title,
-        };
-      }),
       dropzoneOptions: {
         autoProcessQueue: false,
         paramName: "image",
@@ -148,7 +121,6 @@ export default {
       },
       form: {
         title: "",
-        id_category: 1,
         description: "",
         status: 1,
         image: null,
@@ -162,12 +134,11 @@ export default {
       if (!this.submitState) {
         var formData = new FormData();
         formData.append("title", this.form.title);
-        formData.append("id_category", this.form.id_category);
         formData.append("description", this.form.description);
         formData.append("status", this.form.status);
         formData.append("image", this.form.image);
         this.submitState = true;
-        this.$inertia.post(route("admin.post.store"), formData);
+        this.$inertia.post(route("admin.post.news.store"), formData);
       }
     },
     dropzoneRemovedFile: function (file, error, xhr) {

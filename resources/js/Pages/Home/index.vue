@@ -196,7 +196,6 @@
                   :title="item.title"
                   :date="item.created_at"
                   :description="item.description"
-                  :category="item.category"
                   :image="item.image"
                 />
               </div>
@@ -215,13 +214,46 @@
             Saat ini berita belum tersedia
           </p>
           <div class="d-inline bg-gray p-2">
-            <inertia-link :href="route('news')"
+            <inertia-link :href="route('profile.news')"
               >Lihat semua berita</inertia-link
             >
           </div>
         </div>
       </section>
 
+      <!-- Section Berita CSR -->
+      <section class="pt-2 pb-5" data-aos="fade-down">
+        <div class="container">
+          <!-- title section -->
+          <div class="pt-3">
+            <h3 class="mb-0">
+              <strong>Tanggung Jawab Sosial</strong>
+            </h3>
+            <hr class="border-secondary" />
+          </div>
+          <!-- Featured -->
+          <div class="row">
+            <media-csr-news
+              class="col-lx-6 col-md-6"
+              v-for="item in listCsrNews"
+              :key="item.id"
+              :itemid="item.id"
+              :title="item.title"
+              :date="item.created_at"
+              :image="item.image"
+              size="md"
+            />
+          </div>
+          <p class="text-muted" v-if="listCsrNews == null">
+            Saat ini berita Tanggung Jawab Sosial belum tersedia
+          </p>
+          <div class="d-inline bg-gray p-2">
+            <inertia-link :href="route('profile.csrnews')"
+              >Lihat semua tanggung jawab sosial</inertia-link
+            >
+          </div>
+        </div>
+      </section>
       <!-- Section Promo -->
       <section class="pt-2 pb-5" data-aos="fade-down">
         <div class="container">
@@ -380,6 +412,7 @@ import Layout from "@/Shared/Layout"; //import layouts
 import CardProduct from "@/components/CardProduct";
 import CardNews from "@/components/CardNews";
 import MediaNews from "@/components/MediaNews";
+import MediaCsrNews from "@/components/MediaCsrNews";
 import CardPromo from "@/components/CardPromo";
 import carousel from "vue-owl-carousel2";
 
@@ -399,6 +432,7 @@ export default {
     CalculatorSvg,
     CardNews,
     MediaNews,
+    MediaCsrNews,
     carousel,
     CardPromo,
     ModalFormPengajuan,
@@ -464,6 +498,7 @@ export default {
     "dataSlider",
     "listPromo",
     "listNews",
+    "listCsrNews",
     "data_offices",
   ],
   methods: {
@@ -479,7 +514,7 @@ export default {
 </script>
 
 <style scoped>
-.card-deck {
+/* .card-deck {
   justify-content: space-between;
 }
 
@@ -506,5 +541,5 @@ export default {
     -ms-flex: 0 0 24%;
     flex: 0 0 24%;
   }
-}
+} */
 </style>

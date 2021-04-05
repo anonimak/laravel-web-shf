@@ -7,17 +7,24 @@
           <div data-aos="fade" class="pb-4 pt-4 text-center">
             <h2 class="m-auto text-secondary">Berita</h2>
           </div>
-          <Search v-model="form.search" class="w-full max-w-md mx-3" @reset="reset" />
+          <Search
+            v-model="form.search"
+            class="w-full max-w-md mx-3"
+            @reset="reset"
+          />
 
           <!-- Blog Cards -->
           <div class="row gap-y mb-4" data-aos="fade-down">
-            <div class="col-md-6 col-lg-6" v-for="item in lists.data" :key="item.id">
+            <div
+              class="col-md-6 col-lg-6"
+              v-for="item in lists.data"
+              :key="item.id"
+            >
               <card-news
                 :itemid="item.id"
                 :title="item.title"
                 :date="item.created_at"
                 :description="item.description"
-                :category="item.category"
                 :image="item.image"
               />
             </div>
@@ -61,7 +68,7 @@ export default {
         let query = pickBy(this.form);
         this.$inertia.replace(
           this.route(
-            "news",
+            "profile.news",
             Object.keys(query).length ? query : { remember: "forget" }
           )
         );

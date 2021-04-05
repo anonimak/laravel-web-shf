@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[13],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Test/index.vue?vue&type=script&lang=js&":
-/*!****************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Test/index.vue?vue&type=script&lang=js& ***!
-  \****************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Profile/About/index.vue?vue&type=script&lang=js&":
+/*!*************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Profile/About/index.vue?vue&type=script&lang=js& ***!
+  \*************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -17,17 +17,66 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
  //import layouts
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     Layout: _Shared_Layout__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
-  data: function data() {
-    return {
-      nama: "Jono"
-    };
-  }
+  props: ["meta"]
 });
 
 /***/ }),
@@ -489,6 +538,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -747,10 +807,10 @@ if(false) {}
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Test/index.vue?vue&type=template&id=3bdc70fe&":
-/*!********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Test/index.vue?vue&type=template&id=3bdc70fe& ***!
-  \********************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Profile/About/index.vue?vue&type=template&id=38fdb131&":
+/*!*****************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Profile/About/index.vue?vue&type=template&id=38fdb131& ***!
+  \*****************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -763,13 +823,68 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("Layout", [
-    _vm._v(
-      "\n    " +
-        _vm._s(_vm.__("test_param", { param: _vm.nama })) +
-        "\n    " +
-        _vm._s(_vm.__n("test_plural", 2)) +
-        "\n"
-    )
+    _c("section", { staticClass: "pt-5 pb-5" }, [
+      _c("div", { staticClass: "pb-5 container" }, [
+        _c("div", { attrs: { "data-aos": "fade-down" } }, [
+          _c("h2", { staticClass: "text-center text-secondary" }, [
+            _c("strong", [_vm._v("TENTANG PERUSAHAAN")])
+          ]),
+          _vm._v(" "),
+          _c("hr", { staticClass: "border-secondary" }),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "\n          PT Sinarmas Hana Finance adalah perusahaan patungan antara PT Sinar\n          Mas Multiartha Tbk dengan Hana Financial Group yang berbasis di\n          Korea Selatan. Perusahaan resmi berdiri pada tanggal 9 Juni 2015,\n          dengan akta pendirian nomor 14 oleh notaris Edwar. Perusahaan\n          mendapatkan surat izin usaha dari Otoritas jasa Keuangan (OJK) pada\n          tanggal 18 November 2015 dan telah menjalankan bisnisnya di bidang\n          pembiayaan.\n        "
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "\n          PT Sinarmas Hana Finance dimiliki oleh\n          "
+            ),
+            _c("strong", [_vm._v("Hana Capital Co. Ltd")]),
+            _vm._v(" sebesar 55% (lima puluh lima\n          persen), "),
+            _c("strong", [_vm._v("PT Bank KEB Hana Indonesia")]),
+            _vm._v(
+              " sebesar 30%\n          (tiga puluh persen) dan\n          "
+            ),
+            _c("strong", [_vm._v("PT Sinar Mas Multiartha Tbk")]),
+            _vm._v(" sebesar 15% (lima belas\n          persen).\n        ")
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _c("strong", [_vm._v("Hana Capital Co. Ltd")]),
+            _vm._v(
+              " berdiri sejak 1987 dan telah\n          bergabung dengan Hana Financial Group sejak 2005.\n          "
+            ),
+            _c("strong", [_vm._v("Hana Capital Co. Ltd")]),
+            _vm._v(
+              " memberikan pelayanan dalam\n          pembiayaan mobil, pembiayaan non-mobil seperti mesin, IT dan\n          peralatan medical dan pinjaman komersil seperti KPR dan Pinjaman\n          Kredit.\n        "
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _c("strong", [_vm._v("PT Bank KEB Hana Indonesia")]),
+            _vm._v(
+              " berdiri sejak tahun\n          2014, hasil merger dari PT Bank KEB Hana Indonesia dan PT KEB\n          Indonesia. PT Bank KEB Hana Indonesia memiliki 4 pemegang saham,\n          KEB, Hana Bank, (kedua pemegang saham tersebut dikendalikan oleh HFG\n          sebagai ultimate shareholder), IFC, Bambang Setijo dan sisanya\n          dimiliki oleh PT Bank KEB Hana Indonesia.\n        "
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _c("strong", [_vm._v("PT Sinar Mas Multiartha Tbk")]),
+            _vm._v(
+              ", merupakan perusahaan\n          dari Sinar Mas Group, salah satu institusi keuangan terdepan di\n          Indonesia. Pelayanannya merliputi Perbankan, Asuransi, Pembiayaan,\n          Aset Manajemen, Sekuritas dan IT\n        "
+            )
+          ]),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "\n          Sampai saat ini, perusahaan telah memiliki beberapa kantor cabang,\n          diantaranya : Jakarta, Bekasi, Tangerang, Depok, Bandung, Surabaya,\n          Bogor, Semarang, Surakarta, Kediri, Malang dan juga Marketing point\n          Cikarang.\n        "
+            )
+          ])
+        ])
+      ])
+    ])
   ])
 }
 var staticRenderFns = []
@@ -1404,7 +1519,11 @@ var render = function() {
                       "profile.about",
                       "profile.visimisi",
                       "profile.teammanagement",
-                      "profile.pemegangsaham"
+                      "profile.pemegangsaham",
+                      "profile.news",
+                      "profile.newsdetail",
+                      "profile.csrnews",
+                      "profile.csrnewsdetail"
                     )
                       ? "nav-item dropdown active"
                       : "nav-item dropdown"
@@ -1433,6 +1552,34 @@ var render = function() {
                         attrs: { "aria-labelledby": "navbarDropdown" }
                       },
                       [
+                        _c(
+                          "inertia-link",
+                          {
+                            class: _vm.isRoute(
+                              "profile.news",
+                              "profile.newsdetail"
+                            )
+                              ? "dropdown-item active"
+                              : "dropdown-item",
+                            attrs: { href: _vm.route("profile.news") }
+                          },
+                          [_vm._v("Berita")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "inertia-link",
+                          {
+                            class: _vm.isRoute(
+                              "profile.csrnews",
+                              "profile.csrnewsdetail"
+                            )
+                              ? "dropdown-item active"
+                              : "dropdown-item",
+                            attrs: { href: _vm.route("profile.csrnews") }
+                          },
+                          [_vm._v("Tanggung Jawab Sosial")]
+                        ),
+                        _vm._v(" "),
                         _c(
                           "inertia-link",
                           {
@@ -1480,25 +1627,6 @@ var render = function() {
                       1
                     )
                   ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "li",
-                  {
-                    staticClass: "cool-link",
-                    class: _vm.isRoute("news") ? "nav-item active" : "nav-item"
-                  },
-                  [
-                    _c(
-                      "inertia-link",
-                      {
-                        staticClass: "nav-link py-3",
-                        attrs: { href: _vm.route("news") }
-                      },
-                      [_vm._v("Berita")]
-                    )
-                  ],
-                  1
                 ),
                 _vm._v(" "),
                 _c(
@@ -1715,18 +1843,18 @@ function normalizeComponent (
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Test/index.vue":
-/*!*******************************************!*\
-  !*** ./resources/js/Pages/Test/index.vue ***!
-  \*******************************************/
+/***/ "./resources/js/Pages/Profile/About/index.vue":
+/*!****************************************************!*\
+  !*** ./resources/js/Pages/Profile/About/index.vue ***!
+  \****************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _index_vue_vue_type_template_id_3bdc70fe___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.vue?vue&type=template&id=3bdc70fe& */ "./resources/js/Pages/Test/index.vue?vue&type=template&id=3bdc70fe&");
-/* harmony import */ var _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Test/index.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _index_vue_vue_type_template_id_38fdb131___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.vue?vue&type=template&id=38fdb131& */ "./resources/js/Pages/Profile/About/index.vue?vue&type=template&id=38fdb131&");
+/* harmony import */ var _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Profile/About/index.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -1736,8 +1864,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _index_vue_vue_type_template_id_3bdc70fe___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _index_vue_vue_type_template_id_3bdc70fe___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _index_vue_vue_type_template_id_38fdb131___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _index_vue_vue_type_template_id_38fdb131___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -1747,38 +1875,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/Pages/Test/index.vue"
+component.options.__file = "resources/js/Pages/Profile/About/index.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Test/index.vue?vue&type=script&lang=js&":
-/*!********************************************************************!*\
-  !*** ./resources/js/Pages/Test/index.vue?vue&type=script&lang=js& ***!
-  \********************************************************************/
+/***/ "./resources/js/Pages/Profile/About/index.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************!*\
+  !*** ./resources/js/Pages/Profile/About/index.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Test/index.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Profile/About/index.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Test/index.vue?vue&type=template&id=3bdc70fe&":
-/*!**************************************************************************!*\
-  !*** ./resources/js/Pages/Test/index.vue?vue&type=template&id=3bdc70fe& ***!
-  \**************************************************************************/
+/***/ "./resources/js/Pages/Profile/About/index.vue?vue&type=template&id=38fdb131&":
+/*!***********************************************************************************!*\
+  !*** ./resources/js/Pages/Profile/About/index.vue?vue&type=template&id=38fdb131& ***!
+  \***********************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_3bdc70fe___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=template&id=3bdc70fe& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Test/index.vue?vue&type=template&id=3bdc70fe&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_3bdc70fe___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_38fdb131___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=template&id=38fdb131& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Profile/About/index.vue?vue&type=template&id=38fdb131&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_38fdb131___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_3bdc70fe___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_38fdb131___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

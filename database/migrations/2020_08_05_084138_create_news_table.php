@@ -16,7 +16,7 @@ class CreateNewsTable extends Migration
         //
         Schema::create('news', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('id_category')->references('id')->on('category_news');
+            $table->foreignId('id_type')->references('id')->on('type_news');
             $table->string('title');
             $table->string('image');
             $table->longText('description')->nullable();
@@ -25,11 +25,9 @@ class CreateNewsTable extends Migration
             $table->timestamps();
         });
 
-        Schema::create('category_news', function (Blueprint $table) {
+        Schema::create('type_news', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->string('image');
-            $table->longText('description')->nullable();
+            $table->string('type');
             $table->boolean('status')->default(true);
             $table->softDeletes();
             $table->timestamps();

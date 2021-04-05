@@ -23,7 +23,7 @@
             </div>
           </div>
           <div class="col-lg-4 col-sm-12">
-            <div class="pt-4">
+            <div class="pt-4 pb-4">
               <h3 class="text-secondary">Berita lain</h3>
             </div>
             <div class="pb-4">
@@ -65,7 +65,7 @@ export default {
         },
         {
           title: "Berita",
-          href: "news",
+          href: "profile.news",
         },
         {
           title: this.data.title,

@@ -1,9 +1,9 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[7],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Product/PinjamanDana/index.vue?vue&type=script&lang=js&":
-/*!********************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Product/PinjamanDana/index.vue?vue&type=script&lang=js& ***!
-  \********************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Product/Kendaraan/index.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Product/Kendaraan/index.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -13,6 +13,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_CardRequirement__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/components/CardRequirement */ "./resources/js/components/CardRequirement.vue");
 /* harmony import */ var _Shared_img_vehicleSVG__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/Shared/img/vehicleSVG */ "./resources/js/Shared/img/vehicleSVG.vue");
 /* harmony import */ var _components_ModalFormPengajuan__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/components/ModalFormPengajuan */ "./resources/js/components/ModalFormPengajuan.vue");
+/* harmony import */ var _components_Alert__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/components/Alert */ "./resources/js/components/Alert.vue");
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -128,18 +135,40 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+ //alert
+
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     Layout: _Shared_Layout__WEBPACK_IMPORTED_MODULE_0__["default"],
     CardRequirement: _components_CardRequirement__WEBPACK_IMPORTED_MODULE_1__["default"],
     VehicleSvg: _Shared_img_vehicleSVG__WEBPACK_IMPORTED_MODULE_2__["default"],
-    ModalFormPengajuan: _components_ModalFormPengajuan__WEBPACK_IMPORTED_MODULE_3__["default"]
+    ModalFormPengajuan: _components_ModalFormPengajuan__WEBPACK_IMPORTED_MODULE_3__["default"],
+    FlashMsg: _components_Alert__WEBPACK_IMPORTED_MODULE_4__["default"]
   },
   metaInfo: {
-    title: "Produk Pinjaman Dana"
+    title: "Produk Kendaraan"
   },
+  props: ["data_offices"],
   data: function data() {
     return {
+      items: [{
+        age: 40,
+        first_name: "Dickerson",
+        last_name: "Macdonald"
+      }, {
+        age: 21,
+        first_name: "Larsen",
+        last_name: "Shaw"
+      }, {
+        age: 89,
+        first_name: "Geneva",
+        last_name: "Wilson"
+      }, {
+        age: 38,
+        first_name: "Jami",
+        last_name: "Carney"
+      }],
+      databranch: this.data_offices,
       reqItems: [{
         title: "Karyawan",
         titleColor: "text-white",
@@ -449,6 +478,91 @@ __webpack_require__.r(__webpack_exports__);
     handleLogout: function handleLogout() {
       alert("Ini Sudah Logout");
     }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Alert.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Alert.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
+
+function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  // props:["flash"],
+  mounted: function mounted() {
+    for (var _i = 0, _Object$entries = Object.entries(this.pageFlashes); _i < _Object$entries.length; _i++) {
+      var _Object$entries$_i = _slicedToArray(_Object$entries[_i], 2),
+          key = _Object$entries$_i[0],
+          value = _Object$entries$_i[1];
+
+      if (value) {
+        if (key == "success") {
+          this.$emit("onSuccess", true);
+        }
+
+        this.dismissCountDown = 3;
+        this.variant = key;
+        this.msg = value;
+      }
+    }
+  },
+  watch: {
+    pageFlashes: {
+      handler: function handler(flashes) {
+        var _this = this;
+
+        _.each(flashes, function (flash, index) {
+          // set flash message here
+          if (flash) {
+            // disable edit when success
+            if (index == "success") {
+              _this.$emit("onSuccess", true);
+            }
+
+            _this.dismissCountDown = 3;
+            _this.variant = index;
+            _this.msg = flash;
+          }
+        });
+      },
+      deep: true
+    }
+  },
+  data: function data() {
+    return {
+      variant: null,
+      dismissCountDown: null,
+      msg: ""
+    };
   }
 });
 
@@ -923,6 +1037,17 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   data: function data() {
     return {
@@ -1181,10 +1306,10 @@ if(false) {}
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Product/PinjamanDana/index.vue?vue&type=template&id=e51bedec&":
-/*!************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Product/PinjamanDana/index.vue?vue&type=template&id=e51bedec& ***!
-  \************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Product/Kendaraan/index.vue?vue&type=template&id=1c0a4d57&":
+/*!*********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Product/Kendaraan/index.vue?vue&type=template&id=1c0a4d57& ***!
+  \*********************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1207,7 +1332,7 @@ var render = function() {
               "jumbotron jumbotron-lg jumbotron-fluid overlay overlay-black mb-0",
             staticStyle: {
               "background-size": "cover",
-              "background-image": "url(/img/demo/3.jpg)"
+              "background-image": "url(/img/demo/1.jpg)"
             },
             attrs: { "data-aos": "fade-up" }
           },
@@ -1226,7 +1351,7 @@ var render = function() {
                     staticClass: "display-3",
                     attrs: { "data-aos": "zoom-out-down" }
                   },
-                  [_c("strong", [_vm._v("Pinjaman Dana")])]
+                  [_c("strong", [_vm._v("Kendaraan Bermotor")])]
                 ),
                 _vm._v(" "),
                 _c(
@@ -1237,7 +1362,7 @@ var render = function() {
                   },
                   [
                     _vm._v(
-                      "\n          Pembiayaan untuk memenuhi berbagai kebutuhan, baik bersifat\n          konsumtif (biaya pendidikan, kesehatan dan kecantikan, pernikahan,\n          renovasi rumah, wisata, dan lain-lain) maupun produktif (modal usaha\n          dan investasi), dengan jangka waktu pembiayaan mulai 1 hingga 4\n          tahun dan suku bunga tetap.\n        "
+                      "\n          Pembiayaan untuk pembelian kendaraan bermotor roda empat baru dan\n          bekas yang berasal dari dealer/showroom/penjual perorangan, baik\n          untuk keperluan pribadi maupun penunjang usaha, dengan jangka waktu\n          pembiayaan mulai 1 hingga 4 tahun dan suku bunga tetap.\n        "
                     )
                   ]
                 )
@@ -1302,12 +1427,14 @@ var render = function() {
           [
             _c("div", { staticClass: "pb-4 pt-4 text-center" }, [
               _c("h2", { staticClass: "text-secondary" }, [
-                _vm._v("Pinjaman Dana Sinarmas Hana Finance")
+                _vm._v(
+                  "\n          Kredit Kendaraan Bermotor Sinarmas Hana Finance\n        "
+                )
               ]),
               _vm._v(" "),
               _c("p", { staticClass: "text-muted" }, [
                 _vm._v(
-                  "\n          Sinarmas Hana Finance sebagai salah satu perusahaan pembiayaan di\n          Indonesia menawarkan kemudahan bagi para pelanggannya. Kami membantu\n          mewujudkan mimpi Anda dengan membantu memenuhi kebutuhan biaya\n          pendidikan, kesehatan dan kecantikan, pernikahan, renovasi rumah,\n          wisata, modal usaha, investasi, dan lain-lain . Sinarmas Hana\n          Finance akan selalu hadir dengan menyediakan produk dan layanan yang\n          beragam sesuai siklus kehidupan konsumen dan memberikan pengalaman\n          yang menguntungkan untuk pelanggannya.\n        "
+                  "\n          Sinarmas Hana Finance sebagai salah satu perusahaan pembiayaan di\n          Indonesia menawarkan kemudahan bagi para pelanggannya untuk memiliki\n          kendaraan (mobil baru dan bekas) berbagai merek dengan persyaratan\n          kredit yang mudah, tenor yang panjang, bunga pembiayaan yang\n          bersaing serta sistem penyimpanan BPKB yang aman. Berikut\n          perhitungan simulasi kredit mobil bekas yang bisa Anda coba.\n          Sinarmas Hana Finance akan selalu hadir dengan menyediakan produk\n          dan layanan yang beragam sesuai siklus kehidupan konsumen dan\n          memberikan pengalaman yang menguntungkan untuk pelanggannya.\n        "
                 )
               ])
             ]),
@@ -1389,7 +1516,9 @@ var render = function() {
           ])
         ]),
         _vm._v(" "),
-        _c("modal-form-pengajuan")
+        _c("modal-form-pengajuan", { attrs: { databranch: _vm.databranch } }),
+        _vm._v(" "),
+        _c("flash-msg")
       ],
       1
     )
@@ -2746,6 +2875,45 @@ render._withStripped = true
 
 /***/ }),
 
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Alert.vue?vue&type=template&id=7b2bf401&":
+/*!********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Alert.vue?vue&type=template&id=7b2bf401& ***!
+  \********************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "b-alert",
+    {
+      staticClass: "position-fixed fixed-bottom m-0 rounded-0",
+      staticStyle: { "z-index": "2000" },
+      attrs: { dismissible: "", fade: "", variant: "dark" },
+      model: {
+        value: _vm.dismissCountDown,
+        callback: function($$v) {
+          _vm.dismissCountDown = $$v
+        },
+        expression: "dismissCountDown"
+      }
+    },
+    [_vm._v("\n    " + _vm._s(_vm.msg) + "\n")]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CardRequirement.vue?vue&type=template&id=baf86c10&":
 /*!******************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CardRequirement.vue?vue&type=template&id=baf86c10& ***!
@@ -3487,7 +3655,11 @@ var render = function() {
                       "profile.about",
                       "profile.visimisi",
                       "profile.teammanagement",
-                      "profile.pemegangsaham"
+                      "profile.pemegangsaham",
+                      "profile.news",
+                      "profile.newsdetail",
+                      "profile.csrnews",
+                      "profile.csrnewsdetail"
                     )
                       ? "nav-item dropdown active"
                       : "nav-item dropdown"
@@ -3516,6 +3688,34 @@ var render = function() {
                         attrs: { "aria-labelledby": "navbarDropdown" }
                       },
                       [
+                        _c(
+                          "inertia-link",
+                          {
+                            class: _vm.isRoute(
+                              "profile.news",
+                              "profile.newsdetail"
+                            )
+                              ? "dropdown-item active"
+                              : "dropdown-item",
+                            attrs: { href: _vm.route("profile.news") }
+                          },
+                          [_vm._v("Berita")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "inertia-link",
+                          {
+                            class: _vm.isRoute(
+                              "profile.csrnews",
+                              "profile.csrnewsdetail"
+                            )
+                              ? "dropdown-item active"
+                              : "dropdown-item",
+                            attrs: { href: _vm.route("profile.csrnews") }
+                          },
+                          [_vm._v("Tanggung Jawab Sosial")]
+                        ),
+                        _vm._v(" "),
                         _c(
                           "inertia-link",
                           {
@@ -3563,25 +3763,6 @@ var render = function() {
                       1
                     )
                   ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "li",
-                  {
-                    staticClass: "cool-link",
-                    class: _vm.isRoute("news") ? "nav-item active" : "nav-item"
-                  },
-                  [
-                    _c(
-                      "inertia-link",
-                      {
-                        staticClass: "nav-link py-3",
-                        attrs: { href: _vm.route("news") }
-                      },
-                      [_vm._v("Berita")]
-                    )
-                  ],
-                  1
                 ),
                 _vm._v(" "),
                 _c(
@@ -3798,17 +3979,17 @@ function normalizeComponent (
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Product/PinjamanDana/index.vue":
-/*!***********************************************************!*\
-  !*** ./resources/js/Pages/Product/PinjamanDana/index.vue ***!
-  \***********************************************************/
+/***/ "./resources/js/Pages/Product/Kendaraan/index.vue":
+/*!********************************************************!*\
+  !*** ./resources/js/Pages/Product/Kendaraan/index.vue ***!
+  \********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _index_vue_vue_type_template_id_e51bedec___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.vue?vue&type=template&id=e51bedec& */ "./resources/js/Pages/Product/PinjamanDana/index.vue?vue&type=template&id=e51bedec&");
-/* harmony import */ var _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Product/PinjamanDana/index.vue?vue&type=script&lang=js&");
+/* harmony import */ var _index_vue_vue_type_template_id_1c0a4d57___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.vue?vue&type=template&id=1c0a4d57& */ "./resources/js/Pages/Product/Kendaraan/index.vue?vue&type=template&id=1c0a4d57&");
+/* harmony import */ var _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Product/Kendaraan/index.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -3819,8 +4000,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _index_vue_vue_type_template_id_e51bedec___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _index_vue_vue_type_template_id_e51bedec___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _index_vue_vue_type_template_id_1c0a4d57___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _index_vue_vue_type_template_id_1c0a4d57___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -3830,38 +4011,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/Pages/Product/PinjamanDana/index.vue"
+component.options.__file = "resources/js/Pages/Product/Kendaraan/index.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Product/PinjamanDana/index.vue?vue&type=script&lang=js&":
-/*!************************************************************************************!*\
-  !*** ./resources/js/Pages/Product/PinjamanDana/index.vue?vue&type=script&lang=js& ***!
-  \************************************************************************************/
+/***/ "./resources/js/Pages/Product/Kendaraan/index.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/Pages/Product/Kendaraan/index.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Product/PinjamanDana/index.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Product/Kendaraan/index.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Product/PinjamanDana/index.vue?vue&type=template&id=e51bedec&":
-/*!******************************************************************************************!*\
-  !*** ./resources/js/Pages/Product/PinjamanDana/index.vue?vue&type=template&id=e51bedec& ***!
-  \******************************************************************************************/
+/***/ "./resources/js/Pages/Product/Kendaraan/index.vue?vue&type=template&id=1c0a4d57&":
+/*!***************************************************************************************!*\
+  !*** ./resources/js/Pages/Product/Kendaraan/index.vue?vue&type=template&id=1c0a4d57& ***!
+  \***************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_e51bedec___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=template&id=e51bedec& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Product/PinjamanDana/index.vue?vue&type=template&id=e51bedec&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_e51bedec___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_1c0a4d57___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=template&id=1c0a4d57& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Product/Kendaraan/index.vue?vue&type=template&id=1c0a4d57&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_1c0a4d57___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_e51bedec___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_1c0a4d57___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -4140,6 +4321,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_vehicleSVG_vue_vue_type_template_id_622c84c0___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_vehicleSVG_vue_vue_type_template_id_622c84c0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/Alert.vue":
+/*!*******************************************!*\
+  !*** ./resources/js/components/Alert.vue ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Alert_vue_vue_type_template_id_7b2bf401___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Alert.vue?vue&type=template&id=7b2bf401& */ "./resources/js/components/Alert.vue?vue&type=template&id=7b2bf401&");
+/* harmony import */ var _Alert_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Alert.vue?vue&type=script&lang=js& */ "./resources/js/components/Alert.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Alert_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _Alert_vue_vue_type_template_id_7b2bf401___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _Alert_vue_vue_type_template_id_7b2bf401___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/Alert.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Alert.vue?vue&type=script&lang=js&":
+/*!********************************************************************!*\
+  !*** ./resources/js/components/Alert.vue?vue&type=script&lang=js& ***!
+  \********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Alert_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Alert.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Alert.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Alert_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/Alert.vue?vue&type=template&id=7b2bf401&":
+/*!**************************************************************************!*\
+  !*** ./resources/js/components/Alert.vue?vue&type=template&id=7b2bf401& ***!
+  \**************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Alert_vue_vue_type_template_id_7b2bf401___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Alert.vue?vue&type=template&id=7b2bf401& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Alert.vue?vue&type=template&id=7b2bf401&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Alert_vue_vue_type_template_id_7b2bf401___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Alert_vue_vue_type_template_id_7b2bf401___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

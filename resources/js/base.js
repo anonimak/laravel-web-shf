@@ -5,7 +5,9 @@ module.exports = {
 
         route: window.route,
         isRoute(...routes) {
-            return routes.some(route => this.route().current(route));
+            return routes.some((route) => {
+                return (this.route().params)?this.route().current(route, this.route().params): this.route().current(route)
+            });
         },
         /**
          * Translate the given key.

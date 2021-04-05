@@ -1,201 +1,28 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[6],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=script&lang=js&":
-/*!**********************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=script&lang=js& ***!
-  \**********************************************************************************************************************************************************************************/
+/***/ "./node_modules/@babel/runtime/regenerator/index.js":
+/*!**********************************************************!*\
+  !*** ./node_modules/@babel/runtime/regenerator/index.js ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! regenerator-runtime */ "./node_modules/regenerator-runtime/runtime.js");
+
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Contact/index.vue?vue&type=script&lang=js&":
+/*!*******************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Contact/index.vue?vue&type=script&lang=js& ***!
+  \*******************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Shared_Layout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Shared/Layout */ "./resources/js/Shared/Layout.vue");
-/* harmony import */ var _components_ModalFormPengajuan__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/components/ModalFormPengajuan */ "./resources/js/components/ModalFormPengajuan.vue");
-/* harmony import */ var _Shared_img_creditSVG__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/Shared/img/creditSVG */ "./resources/js/Shared/img/creditSVG.vue");
-/* harmony import */ var vue_currency_input__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! vue-currency-input */ "./node_modules/vue-currency-input/dist/vue-currency-input.esm.js");
-/* harmony import */ var vuejs_datepicker__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! vuejs-datepicker */ "./node_modules/vuejs-datepicker/dist/vuejs-datepicker.esm.js");
-/* harmony import */ var _components_Alert__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/components/Alert */ "./resources/js/components/Alert.vue");
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
+/* harmony import */ var _components_HanaMap__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/components/HanaMap */ "./resources/js/components/HanaMap.vue");
 //
 //
 //
@@ -301,550 +128,17 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
  //import layouts
 
 
-
- //import currency input
-
- //datepicker
-
- //alert
-
 /* harmony default export */ __webpack_exports__["default"] = ({
   components: {
     Layout: _Shared_Layout__WEBPACK_IMPORTED_MODULE_0__["default"],
-    CreditSVG: _Shared_img_creditSVG__WEBPACK_IMPORTED_MODULE_2__["default"],
-    Datepicker: vuejs_datepicker__WEBPACK_IMPORTED_MODULE_4__["default"],
-    ModalFormPengajuan: _components_ModalFormPengajuan__WEBPACK_IMPORTED_MODULE_1__["default"],
-    FlashMsg: _components_Alert__WEBPACK_IMPORTED_MODULE_5__["default"]
-  },
-  directives: {
-    currency: vue_currency_input__WEBPACK_IMPORTED_MODULE_3__["CurrencyDirective"]
-  },
-  props: ["data_offices", "meta"],
-  metaInfo: {
-    title: "Simulasi Kredit"
+    HanaMap: _components_HanaMap__WEBPACK_IMPORTED_MODULE_1__["default"]
   },
   data: function data() {
     return {
-      optioncurrency: {
-        currency: 'IDR',
-        locale: 'id'
-      },
-      databranch: this.data_offices,
-      cfgdatepicker: {
-        "default": new Date(),
-        format: "yyyy",
-        disabledDates: {
-          from: new Date(Date.now() + 8640000)
-        }
-      },
-      jenisSimulasi: null,
-      formbudget: {
-        jenisBudget: 1,
-        tjh: 1
-      },
-      formusedcar: {
-        harga: 0,
-        dp: 30,
-        dprupiah: 0,
-        tahun: new Date().getFullYear().toString(),
-        tenor: null,
-        wilayah: null,
-        asuransi: null,
-        totalbayar1: 0,
-        angsuran: 0
-      },
-      isValid: false,
-      errormsg: {},
-      itemjenis: [{
-        text: "Pilih Simulasi",
-        value: null
-      }, {
-        text: "Budget",
-        value: 1
-      }, {
-        text: "Kredit",
-        value: 2
-      }],
-      itemtjh: [{
-        text: "Ya",
-        value: 1
-      }],
-      itembudget: [{
-        text: "Berdasarkan Besar DP",
-        value: 1
-      }, {
-        text: "Berdasarkan Besar Cicilan",
-        value: 2
-      }],
-      optasuransi: [{
-        value: null,
-        text: 'Pilih Asuransi'
-      }, {
-        value: 0,
-        text: "All Risk"
-      }, {
-        value: 1,
-        text: "TLO"
-      }, {
-        value: 2,
-        text: "Gabungan"
-      }],
-      opttenor: [{
-        value: null,
-        text: 'Pilih Tenor'
-      }, {
-        value: 12,
-        text: "12 Bulan"
-      }, {
-        value: 24,
-        text: "24 Bulan"
-      }, {
-        value: 36,
-        text: "36 Bulan"
-      }, {
-        value: 48,
-        text: "48 Bulan"
-      }],
-      dataasuransi: [{
-        category: 1,
-        type: 0,
-        asuransiregion: [{
-          id: 1,
-          value: 4.20
-        }, {
-          id: 2,
-          value: 3.59
-        }, {
-          id: 3,
-          value: 2.78
-        }]
-      }, {
-        category: 2,
-        type: 0,
-        asuransiregion: [{
-          id: 1,
-          value: 2.94
-        }, {
-          id: 2,
-          value: 2.72
-        }, {
-          id: 3,
-          value: 2.96
-        }]
-      }, {
-        category: 3,
-        type: 0,
-        asuransiregion: [{
-          id: 1,
-          value: 2.40
-        }, {
-          id: 2,
-          value: 2.29
-        }, {
-          id: 3,
-          value: 1.97
-        }]
-      }, {
-        category: 4,
-        type: 0,
-        asuransiregion: [{
-          id: 1,
-          value: 1.32
-        }, {
-          id: 2,
-          value: 1.32
-        }, {
-          id: 3,
-          value: 1.25
-        }]
-      }, {
-        category: 5,
-        type: 0,
-        asuransiregion: [{
-          id: 1,
-          value: 1.16
-        }, {
-          id: 2,
-          value: 1.16
-        }, {
-          id: 3,
-          value: 1.16
-        }]
-      }, {
-        category: 1,
-        type: 1,
-        asuransiregion: [{
-          id: 1,
-          value: 0.56
-        }, {
-          id: 2,
-          value: 0.78
-        }, {
-          id: 3,
-          value: 0.56
-        }]
-      }, {
-        category: 2,
-        type: 1,
-        asuransiregion: [{
-          id: 1,
-          value: 0.69
-        }, {
-          id: 2,
-          value: 0.53
-        }, {
-          id: 3,
-          value: 0.48
-        }]
-      }, {
-        category: 3,
-        type: 1,
-        asuransiregion: [{
-          id: 1,
-          value: 0.46
-        }, {
-          id: 2,
-          value: 0.42
-        }, {
-          id: 3,
-          value: 0.35
-        }]
-      }, {
-        category: 4,
-        type: 1,
-        asuransiregion: [{
-          id: 1,
-          value: 0.30
-        }, {
-          id: 2,
-          value: 0.30
-        }, {
-          id: 3,
-          value: 0.27
-        }]
-      }, {
-        category: 5,
-        type: 1,
-        asuransiregion: [{
-          id: 1,
-          value: 0.24
-        }, {
-          id: 2,
-          value: 0.24
-        }, {
-          id: 3,
-          value: 0.24
-        }]
-      }],
-      optwilayah: [{
-        value: null,
-        text: 'Pilih Wilayah'
-      }, {
-        value: 1,
-        text: "Sumatera dan Kepulauan di sekitarnya"
-      }, {
-        value: 2,
-        text: "DKI Jakarta, Jawa Barat dan Banten"
-      }, {
-        value: 3,
-        text: "Selain Wilayah 1 dan 2"
-      }],
-      databunga: [{
-        id: 1,
-        id_tahun_kendaraan: 1,
-        tahunbunga: [{
-          id: 1,
-          tahunke: 1,
-          value: 7.50
-        }, {
-          id: 2,
-          tahunke: 2,
-          value: 8.50
-        }, {
-          id: 3,
-          tahunke: 3,
-          value: 9.50
-        }, {
-          id: 4,
-          tahunke: 4,
-          value: 10.00
-        }]
-      }, {
-        id: 2,
-        id_tahun_kendaraan: 2,
-        tahunbunga: [{
-          id: 1,
-          tahunke: 1,
-          value: 8.00
-        }, {
-          id: 2,
-          tahunke: 2,
-          value: 9.00
-        }, {
-          id: 3,
-          tahunke: 3,
-          value: 10.00
-        }, {
-          id: 4,
-          tahunke: 4,
-          value: 10.00
-        }]
-      }, {
-        id: 3,
-        id_tahun_kendaraan: 3,
-        tahunbunga: [{
-          id: 1,
-          tahunke: 1,
-          value: 8.50
-        }, {
-          id: 2,
-          tahunke: 2,
-          value: 9.50
-        }, {
-          id: 3,
-          tahunke: 3,
-          value: 10.50
-        }, {
-          id: 4,
-          tahunke: 4,
-          value: 11.00
-        }]
-      }, {
-        id: 4,
-        id_tahun_kendaraan: 4,
-        tahunbunga: [{
-          id: 1,
-          tahunke: 1,
-          value: 11.50
-        }, {
-          id: 2,
-          tahunke: 2,
-          value: 12.50
-        }, {
-          id: 3,
-          tahunke: 3,
-          value: 13.50
-        }]
-      }],
-      dataprovisi: [{
-        id: 1,
-        tahun: 1,
-        biaya: 1.00
-      }, {
-        id: 2,
-        tahun: 2,
-        biaya: 1.00
-      }, {
-        id: 3,
-        tahun: 3,
-        biaya: 2.00
-      }, {
-        id: 4,
-        tahun: 4,
-        biaya: 2.00
-      }, {
-        id: 5,
-        tahun: 5,
-        biaya: 2.00
-      }],
-      datacreditshield: [{
-        id: 1,
-        tahun: 1,
-        biaya: 0.35
-      }, {
-        id: 2,
-        tahun: 2,
-        biaya: 0.75
-      }, {
-        id: 3,
-        tahun: 3,
-        biaya: 1.05
-      }, {
-        id: 4,
-        tahun: 4,
-        biaya: 1.40
-      }, {
-        id: 5,
-        tahun: 5,
-        biaya: 1.75
-      }],
-      show: true
+      "offices": this.data_offices
     };
   },
-  watch: {
-    "formusedcar.dp": function formusedcarDp(val) {
-      if (val < 30) {
-        this.formusedcar.dp = 30;
-      }
-
-      if (val > 100) {
-        this.formusedcar.dp = 100;
-      }
-
-      this.formusedcar.dprupiah = Math.round(this.formusedcar.dp * this.formusedcar.harga / 100);
-    },
-    "formusedcar.harga": function formusedcarHarga(val) {
-      this.formusedcar.dprupiah = Math.round(this.formusedcar.dp * val / 100);
-    }
-  },
-  methods: {
-    checkdp: function checkdp(_ref) {
-      var target = _ref.target;
-
-      if (target.value < 30) {
-        target.value = 30;
-        alert("dp minimal 30%");
-      }
-
-      if (target.value > 100) {
-        target.value = 100;
-      }
-    },
-    pilihJenisSimulasi: function pilihJenisSimulasi(jenis) {
-      if (this.jenisSimulasi == jenis) this.jenisSimulasi = null;else this.jenisSimulasi = jenis;
-    },
-    hitungSimulasi: function hitungSimulasi() {
-      var tenor = this.formusedcar.tenor;
-      var tahun = tenor / 12;
-      var otr = this.formusedcar.harga;
-      var penyusutan = 100;
-      var tipeasuransi = this.formusedcar.asuransi;
-      var wilayah = this.formusedcar.wilayah;
-      var tahunkendaraan = this.formusedcar.tahun;
-      var dprupiah = this.formusedcar.dprupiah;
-      var pokokhutang = otr - dprupiah;
-      var phkapitalis;
-      var asuransi = 0;
-      var biayaFidusia = 500000;
-      var administrasi = 4000000;
-      var lainlain = 350000;
-      var tjh = tipeasuransi == 0 && tipeasuransi == 2 ? 100000 : 0; // hitung asuransi
-
-      for (var index = 0; index < tahun; index++) {
-        // set tahun ke
-        var tahunke = index >= 5 ? null : index + 1; // set penyusutan
-
-        var newpenyusutan = index >= 3 ? 70 : penyusutan; // kalau asuransi yg dipilih gabungan
-
-        var newtipesuransi = tipeasuransi == 2 ? index == 0 ? 0 : 1 : tipeasuransi;
-        var premi = this.hitungAsuransi(otr, newpenyusutan, newtipesuransi, wilayah, tahunke); // console.log(premi)
-        // sum premi asuransi
-
-        asuransi = premi + asuransi;
-        penyusutan = newpenyusutan - 10;
-      }
-
-      console.log("asuransi", asuransi);
-      phkapitalis = pokokhutang + asuransi;
-      console.log("phkapitalis:", phkapitalis); // hitung bunga
-
-      var bunga = this.hitungBunga(phkapitalis, tahunkendaraan, tahun); // hitung biaya provisi
-
-      var biayaProvisi = this.hitungBiayaProvisi(phkapitalis, tahun); // hihtung credit shield
-
-      var creditShield = this.hitungCreditShield(phkapitalis, tahun);
-      console.log("bunga", bunga);
-      var totalhutangbunga = phkapitalis + bunga;
-      console.log("totalhutangbunga", totalhutangbunga);
-      var angsuran = Math.ceil(totalhutangbunga / tenor / 200) * 200;
-      this.formusedcar.angsuran = angsuran;
-      console.log("angsuran", angsuran);
-      var totalbayar1 = angsuran + dprupiah + tjh + biayaFidusia + biayaProvisi + creditShield + administrasi + lainlain;
-      this.formusedcar.totalbayar1 = totalbayar1;
-      console.log("totalbayar1", totalbayar1);
-    },
-    hitungAsuransi: function hitungAsuransi(otr, penyusutan, tipeasuransi, wilayah, tahunke) {
-      var _console = console,
-          log = _console.log;
-      var premi = 100; // hitung penyusutan otr
-
-      var penyusutanotr = otr * penyusutan / 100; // penetuan kategori
-
-      var category;
-      if (otr <= 125000000) category = 1;else if (otr <= 200000000) category = 2;else if (otr <= 400000000) category = 3;else if (otr <= 800000000) category = 4;else category = 5; // get rateasuransi dari data
-
-      var asuransi = this.dataasuransi.find(function (item) {
-        var test = item.asuransiregion.find(function (region) {
-          return region.id == wilayah;
-        });
-        item.rateasuransi = test.value;
-        return item.category == category && item.type == tipeasuransi;
-      });
-      console.log(asuransi); // hitung premi asuransi
-
-      if (tahunke) premi = parseInt(penyusutanotr * asuransi.rateasuransi / 100);
-      return premi;
-    },
-    hitungBunga: function hitungBunga(phkapitalis, tahunkendaraan, rate) {
-      // console.log(rate)
-      var idtahun;
-      if (tahunkendaraan <= 2005) idtahun = 4;else if (tahunkendaraan <= 2008) idtahun = 3;else if (tahunkendaraan <= 2013) idtahun = 2;else idtahun = 1;
-      var bunga = this.databunga.find(function (bunga) {
-        // console.log(bunga.id_tahun_kendaraan)
-        var itembunga = bunga.tahunbunga.find(function (item) {
-          return item.tahunke === rate;
-        });
-        bunga.value = itembunga.value;
-        return bunga.id_tahun_kendaraan == idtahun;
-      }); // balik persentase bunga
-
-      return phkapitalis * bunga.value / 100 * rate;
-    },
-    hitungBiayaProvisi: function hitungBiayaProvisi(phkapitalis, tahunke) {
-      var provisi = this.dataprovisi.find(function (value) {
-        return value.tahun === tahunke;
-      });
-      return Math.round(phkapitalis * provisi.biaya / 100);
-    },
-    hitungCreditShield: function hitungCreditShield(phkapitalis, tahunke) {
-      var creditShield = this.datacreditshield.find(function (value) {
-        return value.tahun === tahunke;
-      });
-      return Math.round(phkapitalis * creditShield.biaya / 100);
-    },
-    validateSimulasi: function validateSimulasi() {
-      // bersihkan error message 
-      this.errormsg = {}; //  cek jenis simulasi mana yang dipilih
-      // loan
-
-      if (this.jenisSimulasi == 1) {} // used car
-
-
-      if (this.jenisSimulasi == 2) {
-        for (var _i = 0, _Object$entries = Object.entries(this.formusedcar); _i < _Object$entries.length; _i++) {
-          var _Object$entries$_i = _slicedToArray(_Object$entries[_i], 2),
-              key = _Object$entries$_i[0],
-              value = _Object$entries$_i[1];
-
-          if (value == null) {
-            this.errormsg[key] = "Kolom ".concat(key, " tidak boleh kosong.");
-          }
-        } // cek harga tidak boleh nol
-
-
-        if (this.formusedcar.harga == 0) {
-          this.errormsg['harga'] = "Harga kendaraan tidak boleh kosong";
-        } // input dp harus diatas 30%
-
-
-        if (this.formusedcar.dp < 30) {
-          this.formusedcar.dp = 30;
-          this.errormsg['dp'] = "DP minimum 30";
-        }
-
-        this.isValid = Object.keys(this.errormsg).length === 0 && this.errormsg.constructor === Object ? true : false;
-        return this.isValid;
-      } //  return true jika validasi sukses
-
-    },
-    handleValidation: function handleValidation(isValid, tabIndex) {
-      // run hitung simulasi kalau valid
-      if (isValid) {
-        this.isValid = true;
-        this.hitungSimulasi();
-      }
-    }
-  }
+  props: ["meta", "data_offices"]
 });
 
 /***/ }),
@@ -1109,26 +403,24 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Alert.vue?vue&type=script&lang=js&":
-/*!****************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Alert.vue?vue&type=script&lang=js& ***!
-  \****************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/GoogleMapLoader.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/GoogleMapLoader.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/regenerator */ "./node_modules/@babel/runtime/regenerator/index.js");
+/* harmony import */ var _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var google_maps_api_loader__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! google-maps-api-loader */ "./node_modules/google-maps-api-loader/index.js");
+/* harmony import */ var google_maps_api_loader__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(google_maps_api_loader__WEBPACK_IMPORTED_MODULE_1__);
 
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
-
-function _iterableToArrayLimit(arr, i) { if (typeof Symbol === "undefined" || !(Symbol.iterator in Object(arr))) return; var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
-
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
 //
 //
@@ -1142,209 +434,198 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 //
 //
 //
+//
+//
+//
+
 /* harmony default export */ __webpack_exports__["default"] = ({
-  // props:["flash"],
-  mounted: function mounted() {
-    for (var _i = 0, _Object$entries = Object.entries(this.pageFlashes); _i < _Object$entries.length; _i++) {
-      var _Object$entries$_i = _slicedToArray(_Object$entries[_i], 2),
-          key = _Object$entries$_i[0],
-          value = _Object$entries$_i[1];
-
-      if (value) {
-        if (key == "success") {
-          this.$emit("onSuccess", true);
-        }
-
-        this.dismissCountDown = 3;
-        this.variant = key;
-        this.msg = value;
-      }
-    }
-  },
-  watch: {
-    pageFlashes: {
-      handler: function handler(flashes) {
-        var _this = this;
-
-        _.each(flashes, function (flash, index) {
-          // set flash message here
-          if (flash) {
-            // disable edit when success
-            if (index == "success") {
-              _this.$emit("onSuccess", true);
-            }
-
-            _this.dismissCountDown = 3;
-            _this.variant = index;
-            _this.msg = flash;
-          }
-        });
-      },
-      deep: true
-    }
+  props: {
+    mapConfig: Object,
+    apiKey: String
   },
   data: function data() {
     return {
-      variant: null,
-      dismissCountDown: null,
-      msg: ""
-    };
-  }
-});
-
-/***/ }),
-
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ModalFormPengajuan.vue?vue&type=script&lang=js&":
-/*!*****************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ModalFormPengajuan.vue?vue&type=script&lang=js& ***!
-  \*****************************************************************************************************************************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-/* harmony default export */ __webpack_exports__["default"] = ({
-  props: ["databranch"],
-  data: function data() {
-    return {
-      form: {
-        email: '',
-        firstname: '',
-        lastname: '',
-        no_telp: '',
-        branch: null,
-        category: null,
-        text: '',
-        checked: []
-      },
-      branchs: this.databranch,
-      categories: ['Kredit Kendaraan', 'Pinjaman Dana', 'Pendaftaran Agen'],
-      show: true
+      google: null,
+      map: null
     };
   },
   mounted: function mounted() {
     var _this = this;
 
-    this.$root.$on('bv::modal::show', function (bvEvent, modalId) {
-      _this.resetForm();
-    });
+    return _asyncToGenerator( /*#__PURE__*/_babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+      var googleMapApi;
+      return _babel_runtime_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              _context.next = 2;
+              return google_maps_api_loader__WEBPACK_IMPORTED_MODULE_1___default()({
+                apiKey: _this.apiKey
+              });
+
+            case 2:
+              googleMapApi = _context.sent;
+              _this.google = googleMapApi;
+
+              _this.initializeMap();
+
+            case 5:
+            case "end":
+              return _context.stop();
+          }
+        }
+      }, _callee);
+    }))();
   },
   methods: {
-    onSubmit: function onSubmit() {
-      this.$inertia.post(route("pengajuan"), this.form);
-      this.$bvModal.hide('modal-pengajuan');
+    initializeMap: function initializeMap() {
+      var mapContainer = this.$refs.googleMap;
+      this.map = new this.google.maps.Map(mapContainer, this.mapConfig);
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/GoogleMapMarker.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/GoogleMapMarker.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _constants_mapSettings__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/constants/mapSettings */ "./resources/js/constants/mapSettings.js");
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: {
+    google: {
+      type: Object,
+      required: true
     },
-    resetForm: function resetForm() {
-      var _this2 = this;
+    map: {
+      type: Object,
+      required: true
+    },
+    marker: {
+      type: Object,
+      required: true
+    }
+  },
+  mounted: function mounted() {
+    var _this = this;
 
-      // Reset our form values
-      this.form.email = '';
-      this.form.firstname = '';
-      this.form.lastname = '';
-      this.form.no_telp = '';
-      this.form.branch = null;
-      this.form.category = null;
-      this.form.text = '';
-      this.form.checked = []; // Trick to reset/clear native browser form validation state
+    var _this$google$maps = this.google.maps,
+        Marker = _this$google$maps.Marker,
+        InfoWindow = _this$google$maps.InfoWindow;
+    var contentString = "<div id=\"content\">\n          <div id=\"siteNotice\">\n          </div>\n          <h5 id=\"firstHeading\" class=\"firstHeading\">".concat(this.marker.name, "</h5>\n          <div id=\"bodyContent\">\n            <table style=\"width:100%\">\n              <tr>\n                <th style=\"width:20%; vertical-align: top;text-align: left;\">Address</th>\n                <th style=\"vertical-align: top;text-align: left;\">:</th>\n                <td>").concat(this.marker.address, "</td>\n              </tr>\n              <tr>\n                <th style=\"width:20%; vertical-align: top;text-align: left;\">Telp</th>\n                <th style=\"vertical-align: top;text-align: left;\">:</th>\n                <td>").concat(this.marker.telp, "</td>\n              </tr>\n            </table>\n          </div>\n          </div>");
+    var infowindow = new InfoWindow({
+      content: contentString
+    });
+    var marker = new Marker({
+      position: this.marker.position,
+      marker: this.marker,
+      map: this.map,
+      icon: _constants_mapSettings__WEBPACK_IMPORTED_MODULE_0__["POINT_MARKER_ICON_CONFIG"]
+    });
+    marker.addListener("click", function () {
+      infowindow.open(_this.map, marker);
+    }); // marker
+    // .addListener("mouseout", () => {
+    //   setInterval(() => {
+    //     infowindow.close()
+    //   }, 3000)
+    // });
+  },
+  render: function render() {}
+});
 
-      this.show = false;
-      this.$nextTick(function () {
-        _this2.show = true;
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/HanaMap.vue?vue&type=script&lang=js&":
+/*!******************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/HanaMap.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _components_GoogleMapLoader__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/components/GoogleMapLoader */ "./resources/js/components/GoogleMapLoader.vue");
+/* harmony import */ var _components_GoogleMapMarker__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/components/GoogleMapMarker */ "./resources/js/components/GoogleMapMarker.vue");
+/* harmony import */ var _constants_mapSettings__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/constants/mapSettings */ "./resources/js/constants/mapSettings.js");
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); if (enumerableOnly) symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; }); keys.push.apply(keys, symbols); } return keys; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; if (i % 2) { ownKeys(Object(source), true).forEach(function (key) { _defineProperty(target, key, source[key]); }); } else if (Object.getOwnPropertyDescriptors) { Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)); } else { ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ({
+  components: {
+    GoogleMapLoader: _components_GoogleMapLoader__WEBPACK_IMPORTED_MODULE_0__["default"],
+    GoogleMapMarker: _components_GoogleMapMarker__WEBPACK_IMPORTED_MODULE_1__["default"]
+  },
+  props: ["datamarkers"],
+  data: function data() {
+    return {
+      // markers: [
+      //   {
+      //     id: "a",
+      //     position: { lat: -6.363812478195629, lng: 106.83347493976629 }
+      //   },
+      //   {
+      //     id: "b",
+      //     position: { lat: 5, lng: 99 }
+      //   },
+      //   {
+      //     id: "c",
+      //     position: { lat: 6, lng: 97 }
+      //   }
+      // ]
+      markers: this.datamarkers.map(function (marker) {
+        return {
+          id: marker.id,
+          name: marker.name,
+          address: marker.address,
+          telp: marker.telp,
+          position: {
+            lat: parseFloat(marker.latitude),
+            lng: parseFloat(marker.longitude)
+          }
+        };
+      })
+    };
+  },
+  computed: {
+    mapConfig: function mapConfig() {
+      return _objectSpread(_objectSpread({}, _constants_mapSettings__WEBPACK_IMPORTED_MODULE_2__["mapSettings"]), {}, {
+        center: this.mapCenter
       });
+    },
+    mapCenter: function mapCenter() {
+      return this.markers[0].position;
     }
   }
 });
@@ -1360,6 +641,17 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -1610,6 +902,25 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Contact/index.vue?vue&type=style&index=0&id=6c9f31ca&lang=scss&scoped=true&":
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-2!./node_modules/sass-loader/dist/cjs.js??ref--8-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Contact/index.vue?vue&type=style&index=0&id=6c9f31ca&lang=scss&scoped=true& ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".hana-map[data-v-6c9f31ca] {\n  height: 400px;\n}", ""]);
+
+// exports
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Shared/LanguageSelector.vue?vue&type=style&index=0&id=ed67559a&scoped=true&lang=css&":
 /*!******************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--7-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Shared/LanguageSelector.vue?vue&type=style&index=0&id=ed67559a&scoped=true&lang=css& ***!
@@ -1642,6 +953,25 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 // module
 exports.push([module.i, "\nfooter[data-v-61a7c374] {\r\n    margin-top: -1px;\n}\r\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/GoogleMapLoader.vue?vue&type=style&index=0&id=8216208a&scoped=true&lang=css&":
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--7-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/GoogleMapLoader.vue?vue&type=style&index=0&id=8216208a&scoped=true&lang=css& ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.google-map[data-v-8216208a] {\r\n  width: 100%;\r\n  min-height: 100%;\n}\r\n", ""]);
 
 // exports
 
@@ -1686,6 +1016,2106 @@ exports.push([module.i, "\nnav[data-v-57e4246e] {\r\n    z-index: 1021;\n}\n@med
 
 /***/ }),
 
+/***/ "./node_modules/es6-promise/dist/es6-promise.js":
+/*!******************************************************!*\
+  !*** ./node_modules/es6-promise/dist/es6-promise.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/* WEBPACK VAR INJECTION */(function(process, global) {/*!
+ * @overview es6-promise - a tiny implementation of Promises/A+.
+ * @copyright Copyright (c) 2014 Yehuda Katz, Tom Dale, Stefan Penner and contributors (Conversion to ES6 API by Jake Archibald)
+ * @license   Licensed under MIT license
+ *            See https://raw.githubusercontent.com/stefanpenner/es6-promise/master/LICENSE
+ * @version   v4.2.8+1e68dce6
+ */
+
+(function (global, factory) {
+	 true ? module.exports = factory() :
+	undefined;
+}(this, (function () { 'use strict';
+
+function objectOrFunction(x) {
+  var type = typeof x;
+  return x !== null && (type === 'object' || type === 'function');
+}
+
+function isFunction(x) {
+  return typeof x === 'function';
+}
+
+
+
+var _isArray = void 0;
+if (Array.isArray) {
+  _isArray = Array.isArray;
+} else {
+  _isArray = function (x) {
+    return Object.prototype.toString.call(x) === '[object Array]';
+  };
+}
+
+var isArray = _isArray;
+
+var len = 0;
+var vertxNext = void 0;
+var customSchedulerFn = void 0;
+
+var asap = function asap(callback, arg) {
+  queue[len] = callback;
+  queue[len + 1] = arg;
+  len += 2;
+  if (len === 2) {
+    // If len is 2, that means that we need to schedule an async flush.
+    // If additional callbacks are queued before the queue is flushed, they
+    // will be processed by this flush that we are scheduling.
+    if (customSchedulerFn) {
+      customSchedulerFn(flush);
+    } else {
+      scheduleFlush();
+    }
+  }
+};
+
+function setScheduler(scheduleFn) {
+  customSchedulerFn = scheduleFn;
+}
+
+function setAsap(asapFn) {
+  asap = asapFn;
+}
+
+var browserWindow = typeof window !== 'undefined' ? window : undefined;
+var browserGlobal = browserWindow || {};
+var BrowserMutationObserver = browserGlobal.MutationObserver || browserGlobal.WebKitMutationObserver;
+var isNode = typeof self === 'undefined' && typeof process !== 'undefined' && {}.toString.call(process) === '[object process]';
+
+// test for web worker but not in IE10
+var isWorker = typeof Uint8ClampedArray !== 'undefined' && typeof importScripts !== 'undefined' && typeof MessageChannel !== 'undefined';
+
+// node
+function useNextTick() {
+  // node version 0.10.x displays a deprecation warning when nextTick is used recursively
+  // see https://github.com/cujojs/when/issues/410 for details
+  return function () {
+    return process.nextTick(flush);
+  };
+}
+
+// vertx
+function useVertxTimer() {
+  if (typeof vertxNext !== 'undefined') {
+    return function () {
+      vertxNext(flush);
+    };
+  }
+
+  return useSetTimeout();
+}
+
+function useMutationObserver() {
+  var iterations = 0;
+  var observer = new BrowserMutationObserver(flush);
+  var node = document.createTextNode('');
+  observer.observe(node, { characterData: true });
+
+  return function () {
+    node.data = iterations = ++iterations % 2;
+  };
+}
+
+// web worker
+function useMessageChannel() {
+  var channel = new MessageChannel();
+  channel.port1.onmessage = flush;
+  return function () {
+    return channel.port2.postMessage(0);
+  };
+}
+
+function useSetTimeout() {
+  // Store setTimeout reference so es6-promise will be unaffected by
+  // other code modifying setTimeout (like sinon.useFakeTimers())
+  var globalSetTimeout = setTimeout;
+  return function () {
+    return globalSetTimeout(flush, 1);
+  };
+}
+
+var queue = new Array(1000);
+function flush() {
+  for (var i = 0; i < len; i += 2) {
+    var callback = queue[i];
+    var arg = queue[i + 1];
+
+    callback(arg);
+
+    queue[i] = undefined;
+    queue[i + 1] = undefined;
+  }
+
+  len = 0;
+}
+
+function attemptVertx() {
+  try {
+    var vertx = Function('return this')().require('vertx');
+    vertxNext = vertx.runOnLoop || vertx.runOnContext;
+    return useVertxTimer();
+  } catch (e) {
+    return useSetTimeout();
+  }
+}
+
+var scheduleFlush = void 0;
+// Decide what async method to use to triggering processing of queued callbacks:
+if (isNode) {
+  scheduleFlush = useNextTick();
+} else if (BrowserMutationObserver) {
+  scheduleFlush = useMutationObserver();
+} else if (isWorker) {
+  scheduleFlush = useMessageChannel();
+} else if (browserWindow === undefined && "function" === 'function') {
+  scheduleFlush = attemptVertx();
+} else {
+  scheduleFlush = useSetTimeout();
+}
+
+function then(onFulfillment, onRejection) {
+  var parent = this;
+
+  var child = new this.constructor(noop);
+
+  if (child[PROMISE_ID] === undefined) {
+    makePromise(child);
+  }
+
+  var _state = parent._state;
+
+
+  if (_state) {
+    var callback = arguments[_state - 1];
+    asap(function () {
+      return invokeCallback(_state, child, callback, parent._result);
+    });
+  } else {
+    subscribe(parent, child, onFulfillment, onRejection);
+  }
+
+  return child;
+}
+
+/**
+  `Promise.resolve` returns a promise that will become resolved with the
+  passed `value`. It is shorthand for the following:
+
+  ```javascript
+  let promise = new Promise(function(resolve, reject){
+    resolve(1);
+  });
+
+  promise.then(function(value){
+    // value === 1
+  });
+  ```
+
+  Instead of writing the above, your code now simply becomes the following:
+
+  ```javascript
+  let promise = Promise.resolve(1);
+
+  promise.then(function(value){
+    // value === 1
+  });
+  ```
+
+  @method resolve
+  @static
+  @param {Any} value value that the returned promise will be resolved with
+  Useful for tooling.
+  @return {Promise} a promise that will become fulfilled with the given
+  `value`
+*/
+function resolve$1(object) {
+  /*jshint validthis:true */
+  var Constructor = this;
+
+  if (object && typeof object === 'object' && object.constructor === Constructor) {
+    return object;
+  }
+
+  var promise = new Constructor(noop);
+  resolve(promise, object);
+  return promise;
+}
+
+var PROMISE_ID = Math.random().toString(36).substring(2);
+
+function noop() {}
+
+var PENDING = void 0;
+var FULFILLED = 1;
+var REJECTED = 2;
+
+function selfFulfillment() {
+  return new TypeError("You cannot resolve a promise with itself");
+}
+
+function cannotReturnOwn() {
+  return new TypeError('A promises callback cannot return that same promise.');
+}
+
+function tryThen(then$$1, value, fulfillmentHandler, rejectionHandler) {
+  try {
+    then$$1.call(value, fulfillmentHandler, rejectionHandler);
+  } catch (e) {
+    return e;
+  }
+}
+
+function handleForeignThenable(promise, thenable, then$$1) {
+  asap(function (promise) {
+    var sealed = false;
+    var error = tryThen(then$$1, thenable, function (value) {
+      if (sealed) {
+        return;
+      }
+      sealed = true;
+      if (thenable !== value) {
+        resolve(promise, value);
+      } else {
+        fulfill(promise, value);
+      }
+    }, function (reason) {
+      if (sealed) {
+        return;
+      }
+      sealed = true;
+
+      reject(promise, reason);
+    }, 'Settle: ' + (promise._label || ' unknown promise'));
+
+    if (!sealed && error) {
+      sealed = true;
+      reject(promise, error);
+    }
+  }, promise);
+}
+
+function handleOwnThenable(promise, thenable) {
+  if (thenable._state === FULFILLED) {
+    fulfill(promise, thenable._result);
+  } else if (thenable._state === REJECTED) {
+    reject(promise, thenable._result);
+  } else {
+    subscribe(thenable, undefined, function (value) {
+      return resolve(promise, value);
+    }, function (reason) {
+      return reject(promise, reason);
+    });
+  }
+}
+
+function handleMaybeThenable(promise, maybeThenable, then$$1) {
+  if (maybeThenable.constructor === promise.constructor && then$$1 === then && maybeThenable.constructor.resolve === resolve$1) {
+    handleOwnThenable(promise, maybeThenable);
+  } else {
+    if (then$$1 === undefined) {
+      fulfill(promise, maybeThenable);
+    } else if (isFunction(then$$1)) {
+      handleForeignThenable(promise, maybeThenable, then$$1);
+    } else {
+      fulfill(promise, maybeThenable);
+    }
+  }
+}
+
+function resolve(promise, value) {
+  if (promise === value) {
+    reject(promise, selfFulfillment());
+  } else if (objectOrFunction(value)) {
+    var then$$1 = void 0;
+    try {
+      then$$1 = value.then;
+    } catch (error) {
+      reject(promise, error);
+      return;
+    }
+    handleMaybeThenable(promise, value, then$$1);
+  } else {
+    fulfill(promise, value);
+  }
+}
+
+function publishRejection(promise) {
+  if (promise._onerror) {
+    promise._onerror(promise._result);
+  }
+
+  publish(promise);
+}
+
+function fulfill(promise, value) {
+  if (promise._state !== PENDING) {
+    return;
+  }
+
+  promise._result = value;
+  promise._state = FULFILLED;
+
+  if (promise._subscribers.length !== 0) {
+    asap(publish, promise);
+  }
+}
+
+function reject(promise, reason) {
+  if (promise._state !== PENDING) {
+    return;
+  }
+  promise._state = REJECTED;
+  promise._result = reason;
+
+  asap(publishRejection, promise);
+}
+
+function subscribe(parent, child, onFulfillment, onRejection) {
+  var _subscribers = parent._subscribers;
+  var length = _subscribers.length;
+
+
+  parent._onerror = null;
+
+  _subscribers[length] = child;
+  _subscribers[length + FULFILLED] = onFulfillment;
+  _subscribers[length + REJECTED] = onRejection;
+
+  if (length === 0 && parent._state) {
+    asap(publish, parent);
+  }
+}
+
+function publish(promise) {
+  var subscribers = promise._subscribers;
+  var settled = promise._state;
+
+  if (subscribers.length === 0) {
+    return;
+  }
+
+  var child = void 0,
+      callback = void 0,
+      detail = promise._result;
+
+  for (var i = 0; i < subscribers.length; i += 3) {
+    child = subscribers[i];
+    callback = subscribers[i + settled];
+
+    if (child) {
+      invokeCallback(settled, child, callback, detail);
+    } else {
+      callback(detail);
+    }
+  }
+
+  promise._subscribers.length = 0;
+}
+
+function invokeCallback(settled, promise, callback, detail) {
+  var hasCallback = isFunction(callback),
+      value = void 0,
+      error = void 0,
+      succeeded = true;
+
+  if (hasCallback) {
+    try {
+      value = callback(detail);
+    } catch (e) {
+      succeeded = false;
+      error = e;
+    }
+
+    if (promise === value) {
+      reject(promise, cannotReturnOwn());
+      return;
+    }
+  } else {
+    value = detail;
+  }
+
+  if (promise._state !== PENDING) {
+    // noop
+  } else if (hasCallback && succeeded) {
+    resolve(promise, value);
+  } else if (succeeded === false) {
+    reject(promise, error);
+  } else if (settled === FULFILLED) {
+    fulfill(promise, value);
+  } else if (settled === REJECTED) {
+    reject(promise, value);
+  }
+}
+
+function initializePromise(promise, resolver) {
+  try {
+    resolver(function resolvePromise(value) {
+      resolve(promise, value);
+    }, function rejectPromise(reason) {
+      reject(promise, reason);
+    });
+  } catch (e) {
+    reject(promise, e);
+  }
+}
+
+var id = 0;
+function nextId() {
+  return id++;
+}
+
+function makePromise(promise) {
+  promise[PROMISE_ID] = id++;
+  promise._state = undefined;
+  promise._result = undefined;
+  promise._subscribers = [];
+}
+
+function validationError() {
+  return new Error('Array Methods must be provided an Array');
+}
+
+var Enumerator = function () {
+  function Enumerator(Constructor, input) {
+    this._instanceConstructor = Constructor;
+    this.promise = new Constructor(noop);
+
+    if (!this.promise[PROMISE_ID]) {
+      makePromise(this.promise);
+    }
+
+    if (isArray(input)) {
+      this.length = input.length;
+      this._remaining = input.length;
+
+      this._result = new Array(this.length);
+
+      if (this.length === 0) {
+        fulfill(this.promise, this._result);
+      } else {
+        this.length = this.length || 0;
+        this._enumerate(input);
+        if (this._remaining === 0) {
+          fulfill(this.promise, this._result);
+        }
+      }
+    } else {
+      reject(this.promise, validationError());
+    }
+  }
+
+  Enumerator.prototype._enumerate = function _enumerate(input) {
+    for (var i = 0; this._state === PENDING && i < input.length; i++) {
+      this._eachEntry(input[i], i);
+    }
+  };
+
+  Enumerator.prototype._eachEntry = function _eachEntry(entry, i) {
+    var c = this._instanceConstructor;
+    var resolve$$1 = c.resolve;
+
+
+    if (resolve$$1 === resolve$1) {
+      var _then = void 0;
+      var error = void 0;
+      var didError = false;
+      try {
+        _then = entry.then;
+      } catch (e) {
+        didError = true;
+        error = e;
+      }
+
+      if (_then === then && entry._state !== PENDING) {
+        this._settledAt(entry._state, i, entry._result);
+      } else if (typeof _then !== 'function') {
+        this._remaining--;
+        this._result[i] = entry;
+      } else if (c === Promise$1) {
+        var promise = new c(noop);
+        if (didError) {
+          reject(promise, error);
+        } else {
+          handleMaybeThenable(promise, entry, _then);
+        }
+        this._willSettleAt(promise, i);
+      } else {
+        this._willSettleAt(new c(function (resolve$$1) {
+          return resolve$$1(entry);
+        }), i);
+      }
+    } else {
+      this._willSettleAt(resolve$$1(entry), i);
+    }
+  };
+
+  Enumerator.prototype._settledAt = function _settledAt(state, i, value) {
+    var promise = this.promise;
+
+
+    if (promise._state === PENDING) {
+      this._remaining--;
+
+      if (state === REJECTED) {
+        reject(promise, value);
+      } else {
+        this._result[i] = value;
+      }
+    }
+
+    if (this._remaining === 0) {
+      fulfill(promise, this._result);
+    }
+  };
+
+  Enumerator.prototype._willSettleAt = function _willSettleAt(promise, i) {
+    var enumerator = this;
+
+    subscribe(promise, undefined, function (value) {
+      return enumerator._settledAt(FULFILLED, i, value);
+    }, function (reason) {
+      return enumerator._settledAt(REJECTED, i, reason);
+    });
+  };
+
+  return Enumerator;
+}();
+
+/**
+  `Promise.all` accepts an array of promises, and returns a new promise which
+  is fulfilled with an array of fulfillment values for the passed promises, or
+  rejected with the reason of the first passed promise to be rejected. It casts all
+  elements of the passed iterable to promises as it runs this algorithm.
+
+  Example:
+
+  ```javascript
+  let promise1 = resolve(1);
+  let promise2 = resolve(2);
+  let promise3 = resolve(3);
+  let promises = [ promise1, promise2, promise3 ];
+
+  Promise.all(promises).then(function(array){
+    // The array here would be [ 1, 2, 3 ];
+  });
+  ```
+
+  If any of the `promises` given to `all` are rejected, the first promise
+  that is rejected will be given as an argument to the returned promises's
+  rejection handler. For example:
+
+  Example:
+
+  ```javascript
+  let promise1 = resolve(1);
+  let promise2 = reject(new Error("2"));
+  let promise3 = reject(new Error("3"));
+  let promises = [ promise1, promise2, promise3 ];
+
+  Promise.all(promises).then(function(array){
+    // Code here never runs because there are rejected promises!
+  }, function(error) {
+    // error.message === "2"
+  });
+  ```
+
+  @method all
+  @static
+  @param {Array} entries array of promises
+  @param {String} label optional string for labeling the promise.
+  Useful for tooling.
+  @return {Promise} promise that is fulfilled when all `promises` have been
+  fulfilled, or rejected if any of them become rejected.
+  @static
+*/
+function all(entries) {
+  return new Enumerator(this, entries).promise;
+}
+
+/**
+  `Promise.race` returns a new promise which is settled in the same way as the
+  first passed promise to settle.
+
+  Example:
+
+  ```javascript
+  let promise1 = new Promise(function(resolve, reject){
+    setTimeout(function(){
+      resolve('promise 1');
+    }, 200);
+  });
+
+  let promise2 = new Promise(function(resolve, reject){
+    setTimeout(function(){
+      resolve('promise 2');
+    }, 100);
+  });
+
+  Promise.race([promise1, promise2]).then(function(result){
+    // result === 'promise 2' because it was resolved before promise1
+    // was resolved.
+  });
+  ```
+
+  `Promise.race` is deterministic in that only the state of the first
+  settled promise matters. For example, even if other promises given to the
+  `promises` array argument are resolved, but the first settled promise has
+  become rejected before the other promises became fulfilled, the returned
+  promise will become rejected:
+
+  ```javascript
+  let promise1 = new Promise(function(resolve, reject){
+    setTimeout(function(){
+      resolve('promise 1');
+    }, 200);
+  });
+
+  let promise2 = new Promise(function(resolve, reject){
+    setTimeout(function(){
+      reject(new Error('promise 2'));
+    }, 100);
+  });
+
+  Promise.race([promise1, promise2]).then(function(result){
+    // Code here never runs
+  }, function(reason){
+    // reason.message === 'promise 2' because promise 2 became rejected before
+    // promise 1 became fulfilled
+  });
+  ```
+
+  An example real-world use case is implementing timeouts:
+
+  ```javascript
+  Promise.race([ajax('foo.json'), timeout(5000)])
+  ```
+
+  @method race
+  @static
+  @param {Array} promises array of promises to observe
+  Useful for tooling.
+  @return {Promise} a promise which settles in the same way as the first passed
+  promise to settle.
+*/
+function race(entries) {
+  /*jshint validthis:true */
+  var Constructor = this;
+
+  if (!isArray(entries)) {
+    return new Constructor(function (_, reject) {
+      return reject(new TypeError('You must pass an array to race.'));
+    });
+  } else {
+    return new Constructor(function (resolve, reject) {
+      var length = entries.length;
+      for (var i = 0; i < length; i++) {
+        Constructor.resolve(entries[i]).then(resolve, reject);
+      }
+    });
+  }
+}
+
+/**
+  `Promise.reject` returns a promise rejected with the passed `reason`.
+  It is shorthand for the following:
+
+  ```javascript
+  let promise = new Promise(function(resolve, reject){
+    reject(new Error('WHOOPS'));
+  });
+
+  promise.then(function(value){
+    // Code here doesn't run because the promise is rejected!
+  }, function(reason){
+    // reason.message === 'WHOOPS'
+  });
+  ```
+
+  Instead of writing the above, your code now simply becomes the following:
+
+  ```javascript
+  let promise = Promise.reject(new Error('WHOOPS'));
+
+  promise.then(function(value){
+    // Code here doesn't run because the promise is rejected!
+  }, function(reason){
+    // reason.message === 'WHOOPS'
+  });
+  ```
+
+  @method reject
+  @static
+  @param {Any} reason value that the returned promise will be rejected with.
+  Useful for tooling.
+  @return {Promise} a promise rejected with the given `reason`.
+*/
+function reject$1(reason) {
+  /*jshint validthis:true */
+  var Constructor = this;
+  var promise = new Constructor(noop);
+  reject(promise, reason);
+  return promise;
+}
+
+function needsResolver() {
+  throw new TypeError('You must pass a resolver function as the first argument to the promise constructor');
+}
+
+function needsNew() {
+  throw new TypeError("Failed to construct 'Promise': Please use the 'new' operator, this object constructor cannot be called as a function.");
+}
+
+/**
+  Promise objects represent the eventual result of an asynchronous operation. The
+  primary way of interacting with a promise is through its `then` method, which
+  registers callbacks to receive either a promise's eventual value or the reason
+  why the promise cannot be fulfilled.
+
+  Terminology
+  -----------
+
+  - `promise` is an object or function with a `then` method whose behavior conforms to this specification.
+  - `thenable` is an object or function that defines a `then` method.
+  - `value` is any legal JavaScript value (including undefined, a thenable, or a promise).
+  - `exception` is a value that is thrown using the throw statement.
+  - `reason` is a value that indicates why a promise was rejected.
+  - `settled` the final resting state of a promise, fulfilled or rejected.
+
+  A promise can be in one of three states: pending, fulfilled, or rejected.
+
+  Promises that are fulfilled have a fulfillment value and are in the fulfilled
+  state.  Promises that are rejected have a rejection reason and are in the
+  rejected state.  A fulfillment value is never a thenable.
+
+  Promises can also be said to *resolve* a value.  If this value is also a
+  promise, then the original promise's settled state will match the value's
+  settled state.  So a promise that *resolves* a promise that rejects will
+  itself reject, and a promise that *resolves* a promise that fulfills will
+  itself fulfill.
+
+
+  Basic Usage:
+  ------------
+
+  ```js
+  let promise = new Promise(function(resolve, reject) {
+    // on success
+    resolve(value);
+
+    // on failure
+    reject(reason);
+  });
+
+  promise.then(function(value) {
+    // on fulfillment
+  }, function(reason) {
+    // on rejection
+  });
+  ```
+
+  Advanced Usage:
+  ---------------
+
+  Promises shine when abstracting away asynchronous interactions such as
+  `XMLHttpRequest`s.
+
+  ```js
+  function getJSON(url) {
+    return new Promise(function(resolve, reject){
+      let xhr = new XMLHttpRequest();
+
+      xhr.open('GET', url);
+      xhr.onreadystatechange = handler;
+      xhr.responseType = 'json';
+      xhr.setRequestHeader('Accept', 'application/json');
+      xhr.send();
+
+      function handler() {
+        if (this.readyState === this.DONE) {
+          if (this.status === 200) {
+            resolve(this.response);
+          } else {
+            reject(new Error('getJSON: `' + url + '` failed with status: [' + this.status + ']'));
+          }
+        }
+      };
+    });
+  }
+
+  getJSON('/posts.json').then(function(json) {
+    // on fulfillment
+  }, function(reason) {
+    // on rejection
+  });
+  ```
+
+  Unlike callbacks, promises are great composable primitives.
+
+  ```js
+  Promise.all([
+    getJSON('/posts'),
+    getJSON('/comments')
+  ]).then(function(values){
+    values[0] // => postsJSON
+    values[1] // => commentsJSON
+
+    return values;
+  });
+  ```
+
+  @class Promise
+  @param {Function} resolver
+  Useful for tooling.
+  @constructor
+*/
+
+var Promise$1 = function () {
+  function Promise(resolver) {
+    this[PROMISE_ID] = nextId();
+    this._result = this._state = undefined;
+    this._subscribers = [];
+
+    if (noop !== resolver) {
+      typeof resolver !== 'function' && needsResolver();
+      this instanceof Promise ? initializePromise(this, resolver) : needsNew();
+    }
+  }
+
+  /**
+  The primary way of interacting with a promise is through its `then` method,
+  which registers callbacks to receive either a promise's eventual value or the
+  reason why the promise cannot be fulfilled.
+   ```js
+  findUser().then(function(user){
+    // user is available
+  }, function(reason){
+    // user is unavailable, and you are given the reason why
+  });
+  ```
+   Chaining
+  --------
+   The return value of `then` is itself a promise.  This second, 'downstream'
+  promise is resolved with the return value of the first promise's fulfillment
+  or rejection handler, or rejected if the handler throws an exception.
+   ```js
+  findUser().then(function (user) {
+    return user.name;
+  }, function (reason) {
+    return 'default name';
+  }).then(function (userName) {
+    // If `findUser` fulfilled, `userName` will be the user's name, otherwise it
+    // will be `'default name'`
+  });
+   findUser().then(function (user) {
+    throw new Error('Found user, but still unhappy');
+  }, function (reason) {
+    throw new Error('`findUser` rejected and we're unhappy');
+  }).then(function (value) {
+    // never reached
+  }, function (reason) {
+    // if `findUser` fulfilled, `reason` will be 'Found user, but still unhappy'.
+    // If `findUser` rejected, `reason` will be '`findUser` rejected and we're unhappy'.
+  });
+  ```
+  If the downstream promise does not specify a rejection handler, rejection reasons will be propagated further downstream.
+   ```js
+  findUser().then(function (user) {
+    throw new PedagogicalException('Upstream error');
+  }).then(function (value) {
+    // never reached
+  }).then(function (value) {
+    // never reached
+  }, function (reason) {
+    // The `PedgagocialException` is propagated all the way down to here
+  });
+  ```
+   Assimilation
+  ------------
+   Sometimes the value you want to propagate to a downstream promise can only be
+  retrieved asynchronously. This can be achieved by returning a promise in the
+  fulfillment or rejection handler. The downstream promise will then be pending
+  until the returned promise is settled. This is called *assimilation*.
+   ```js
+  findUser().then(function (user) {
+    return findCommentsByAuthor(user);
+  }).then(function (comments) {
+    // The user's comments are now available
+  });
+  ```
+   If the assimliated promise rejects, then the downstream promise will also reject.
+   ```js
+  findUser().then(function (user) {
+    return findCommentsByAuthor(user);
+  }).then(function (comments) {
+    // If `findCommentsByAuthor` fulfills, we'll have the value here
+  }, function (reason) {
+    // If `findCommentsByAuthor` rejects, we'll have the reason here
+  });
+  ```
+   Simple Example
+  --------------
+   Synchronous Example
+   ```javascript
+  let result;
+   try {
+    result = findResult();
+    // success
+  } catch(reason) {
+    // failure
+  }
+  ```
+   Errback Example
+   ```js
+  findResult(function(result, err){
+    if (err) {
+      // failure
+    } else {
+      // success
+    }
+  });
+  ```
+   Promise Example;
+   ```javascript
+  findResult().then(function(result){
+    // success
+  }, function(reason){
+    // failure
+  });
+  ```
+   Advanced Example
+  --------------
+   Synchronous Example
+   ```javascript
+  let author, books;
+   try {
+    author = findAuthor();
+    books  = findBooksByAuthor(author);
+    // success
+  } catch(reason) {
+    // failure
+  }
+  ```
+   Errback Example
+   ```js
+   function foundBooks(books) {
+   }
+   function failure(reason) {
+   }
+   findAuthor(function(author, err){
+    if (err) {
+      failure(err);
+      // failure
+    } else {
+      try {
+        findBoooksByAuthor(author, function(books, err) {
+          if (err) {
+            failure(err);
+          } else {
+            try {
+              foundBooks(books);
+            } catch(reason) {
+              failure(reason);
+            }
+          }
+        });
+      } catch(error) {
+        failure(err);
+      }
+      // success
+    }
+  });
+  ```
+   Promise Example;
+   ```javascript
+  findAuthor().
+    then(findBooksByAuthor).
+    then(function(books){
+      // found books
+  }).catch(function(reason){
+    // something went wrong
+  });
+  ```
+   @method then
+  @param {Function} onFulfilled
+  @param {Function} onRejected
+  Useful for tooling.
+  @return {Promise}
+  */
+
+  /**
+  `catch` is simply sugar for `then(undefined, onRejection)` which makes it the same
+  as the catch block of a try/catch statement.
+  ```js
+  function findAuthor(){
+  throw new Error('couldn't find that author');
+  }
+  // synchronous
+  try {
+  findAuthor();
+  } catch(reason) {
+  // something went wrong
+  }
+  // async with promises
+  findAuthor().catch(function(reason){
+  // something went wrong
+  });
+  ```
+  @method catch
+  @param {Function} onRejection
+  Useful for tooling.
+  @return {Promise}
+  */
+
+
+  Promise.prototype.catch = function _catch(onRejection) {
+    return this.then(null, onRejection);
+  };
+
+  /**
+    `finally` will be invoked regardless of the promise's fate just as native
+    try/catch/finally behaves
+  
+    Synchronous example:
+  
+    ```js
+    findAuthor() {
+      if (Math.random() > 0.5) {
+        throw new Error();
+      }
+      return new Author();
+    }
+  
+    try {
+      return findAuthor(); // succeed or fail
+    } catch(error) {
+      return findOtherAuther();
+    } finally {
+      // always runs
+      // doesn't affect the return value
+    }
+    ```
+  
+    Asynchronous example:
+  
+    ```js
+    findAuthor().catch(function(reason){
+      return findOtherAuther();
+    }).finally(function(){
+      // author was either found, or not
+    });
+    ```
+  
+    @method finally
+    @param {Function} callback
+    @return {Promise}
+  */
+
+
+  Promise.prototype.finally = function _finally(callback) {
+    var promise = this;
+    var constructor = promise.constructor;
+
+    if (isFunction(callback)) {
+      return promise.then(function (value) {
+        return constructor.resolve(callback()).then(function () {
+          return value;
+        });
+      }, function (reason) {
+        return constructor.resolve(callback()).then(function () {
+          throw reason;
+        });
+      });
+    }
+
+    return promise.then(callback, callback);
+  };
+
+  return Promise;
+}();
+
+Promise$1.prototype.then = then;
+Promise$1.all = all;
+Promise$1.race = race;
+Promise$1.resolve = resolve$1;
+Promise$1.reject = reject$1;
+Promise$1._setScheduler = setScheduler;
+Promise$1._setAsap = setAsap;
+Promise$1._asap = asap;
+
+/*global self*/
+function polyfill() {
+  var local = void 0;
+
+  if (typeof global !== 'undefined') {
+    local = global;
+  } else if (typeof self !== 'undefined') {
+    local = self;
+  } else {
+    try {
+      local = Function('return this')();
+    } catch (e) {
+      throw new Error('polyfill failed because global object is unavailable in this environment');
+    }
+  }
+
+  var P = local.Promise;
+
+  if (P) {
+    var promiseToString = null;
+    try {
+      promiseToString = Object.prototype.toString.call(P.resolve());
+    } catch (e) {
+      // silently ignored
+    }
+
+    if (promiseToString === '[object Promise]' && !P.cast) {
+      return;
+    }
+  }
+
+  local.Promise = Promise$1;
+}
+
+// Strange compat..
+Promise$1.polyfill = polyfill;
+Promise$1.Promise = Promise$1;
+
+return Promise$1;
+
+})));
+
+
+
+//# sourceMappingURL=es6-promise.map
+
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../process/browser.js */ "./node_modules/process/browser.js"), __webpack_require__(/*! ./../../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
+
+/***/ }),
+
+/***/ "./node_modules/google-maps-api-loader/index.js":
+/*!******************************************************!*\
+  !*** ./node_modules/google-maps-api-loader/index.js ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! ./src/google-maps-api-loader.js */ "./node_modules/google-maps-api-loader/src/google-maps-api-loader.js");
+
+
+/***/ }),
+
+/***/ "./node_modules/google-maps-api-loader/lib/url-builder.js":
+/*!****************************************************************!*\
+  !*** ./node_modules/google-maps-api-loader/lib/url-builder.js ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+/**
+ * urlBuilder
+ *
+ * @param  {object} params
+ * @param  {string} params.base       the base url
+ * @param  {array}  params.libraries  an array of the libraries to be requested
+ * @param  {string} params.callback   the callback function
+ *
+ * @return {string}
+ */
+function urlBuilder(params) {
+  var builtUrl = params.base;
+
+  builtUrl += '?';
+
+  if (params.apiKey) {
+    builtUrl += 'key=' + params.apiKey + '&';
+  }
+
+  if (params.client) {
+    builtUrl += 'client=' + params.client + '&';
+  }
+
+  if (params.libraries.length > 0) {
+    builtUrl += 'libraries=';
+
+    params.libraries.forEach(function(library, index) {
+      builtUrl += library;
+
+      if (index !== params.libraries.length - 1) {
+        builtUrl += ',';
+      }
+    });
+
+    builtUrl += '&';
+  }
+
+  if (params.language) {
+    builtUrl += 'language=' + params.language + '&';
+  }
+
+  if (params.version) {
+    builtUrl += 'v=' + params.version + '&';
+  }
+
+  builtUrl += 'callback=' + params.callback;
+
+  return builtUrl;
+}
+
+module.exports = urlBuilder;
+
+
+/***/ }),
+
+/***/ "./node_modules/google-maps-api-loader/src/google-maps-api-loader.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/google-maps-api-loader/src/google-maps-api-loader.js ***!
+  \***************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var Promise = __webpack_require__(/*! es6-promise */ "./node_modules/es6-promise/dist/es6-promise.js").Promise;
+var urlBuilder = __webpack_require__(/*! ../lib/url-builder.js */ "./node_modules/google-maps-api-loader/lib/url-builder.js");
+
+var googleApi;
+
+function loadAutoCompleteAPI(params) {
+  var script = document.createElement('script');
+
+  script.type = 'text/javascript';
+
+  script.src = urlBuilder({
+    base: 'https://maps.googleapis.com/maps/api/js',
+    libraries: params.libraries || [],
+    callback: 'googleMapsAutoCompleteAPILoad',
+    apiKey: params.apiKey,
+    client: params.client,
+    language: params.language,
+    version: params.version
+  });
+
+  document.querySelector('head').appendChild(script);
+}
+
+/**
+ * googleMapsApiLoader
+ *
+ * @param  {object} params
+ * @param  {object} params.libraries
+ *
+ * @return {promise}
+ */
+function googleMapsApiLoader(params) {
+  if (googleApi) {
+    return Promise.resolve(googleApi);
+  }
+
+  return new Promise(function(resolve, reject) {
+    loadAutoCompleteAPI(params);
+
+    window.googleMapsAutoCompleteAPILoad = function() {
+      googleApi = window.google;
+      resolve(googleApi);
+    };
+
+    setTimeout(function() {
+      if (!window.google) {
+        reject(new Error('Loading took too long'));
+      }
+    }, 5000);
+  });
+}
+
+module.exports = googleMapsApiLoader;
+
+
+
+/***/ }),
+
+/***/ "./node_modules/regenerator-runtime/runtime.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/regenerator-runtime/runtime.js ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * Copyright (c) 2014-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+var runtime = (function (exports) {
+  "use strict";
+
+  var Op = Object.prototype;
+  var hasOwn = Op.hasOwnProperty;
+  var undefined; // More compressible than void 0.
+  var $Symbol = typeof Symbol === "function" ? Symbol : {};
+  var iteratorSymbol = $Symbol.iterator || "@@iterator";
+  var asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator";
+  var toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag";
+
+  function wrap(innerFn, outerFn, self, tryLocsList) {
+    // If outerFn provided and outerFn.prototype is a Generator, then outerFn.prototype instanceof Generator.
+    var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator;
+    var generator = Object.create(protoGenerator.prototype);
+    var context = new Context(tryLocsList || []);
+
+    // The ._invoke method unifies the implementations of the .next,
+    // .throw, and .return methods.
+    generator._invoke = makeInvokeMethod(innerFn, self, context);
+
+    return generator;
+  }
+  exports.wrap = wrap;
+
+  // Try/catch helper to minimize deoptimizations. Returns a completion
+  // record like context.tryEntries[i].completion. This interface could
+  // have been (and was previously) designed to take a closure to be
+  // invoked without arguments, but in all the cases we care about we
+  // already have an existing method we want to call, so there's no need
+  // to create a new function object. We can even get away with assuming
+  // the method takes exactly one argument, since that happens to be true
+  // in every case, so we don't have to touch the arguments object. The
+  // only additional allocation required is the completion record, which
+  // has a stable shape and so hopefully should be cheap to allocate.
+  function tryCatch(fn, obj, arg) {
+    try {
+      return { type: "normal", arg: fn.call(obj, arg) };
+    } catch (err) {
+      return { type: "throw", arg: err };
+    }
+  }
+
+  var GenStateSuspendedStart = "suspendedStart";
+  var GenStateSuspendedYield = "suspendedYield";
+  var GenStateExecuting = "executing";
+  var GenStateCompleted = "completed";
+
+  // Returning this object from the innerFn has the same effect as
+  // breaking out of the dispatch switch statement.
+  var ContinueSentinel = {};
+
+  // Dummy constructor functions that we use as the .constructor and
+  // .constructor.prototype properties for functions that return Generator
+  // objects. For full spec compliance, you may wish to configure your
+  // minifier not to mangle the names of these two functions.
+  function Generator() {}
+  function GeneratorFunction() {}
+  function GeneratorFunctionPrototype() {}
+
+  // This is a polyfill for %IteratorPrototype% for environments that
+  // don't natively support it.
+  var IteratorPrototype = {};
+  IteratorPrototype[iteratorSymbol] = function () {
+    return this;
+  };
+
+  var getProto = Object.getPrototypeOf;
+  var NativeIteratorPrototype = getProto && getProto(getProto(values([])));
+  if (NativeIteratorPrototype &&
+      NativeIteratorPrototype !== Op &&
+      hasOwn.call(NativeIteratorPrototype, iteratorSymbol)) {
+    // This environment has a native %IteratorPrototype%; use it instead
+    // of the polyfill.
+    IteratorPrototype = NativeIteratorPrototype;
+  }
+
+  var Gp = GeneratorFunctionPrototype.prototype =
+    Generator.prototype = Object.create(IteratorPrototype);
+  GeneratorFunction.prototype = Gp.constructor = GeneratorFunctionPrototype;
+  GeneratorFunctionPrototype.constructor = GeneratorFunction;
+  GeneratorFunctionPrototype[toStringTagSymbol] =
+    GeneratorFunction.displayName = "GeneratorFunction";
+
+  // Helper for defining the .next, .throw, and .return methods of the
+  // Iterator interface in terms of a single ._invoke method.
+  function defineIteratorMethods(prototype) {
+    ["next", "throw", "return"].forEach(function(method) {
+      prototype[method] = function(arg) {
+        return this._invoke(method, arg);
+      };
+    });
+  }
+
+  exports.isGeneratorFunction = function(genFun) {
+    var ctor = typeof genFun === "function" && genFun.constructor;
+    return ctor
+      ? ctor === GeneratorFunction ||
+        // For the native GeneratorFunction constructor, the best we can
+        // do is to check its .name property.
+        (ctor.displayName || ctor.name) === "GeneratorFunction"
+      : false;
+  };
+
+  exports.mark = function(genFun) {
+    if (Object.setPrototypeOf) {
+      Object.setPrototypeOf(genFun, GeneratorFunctionPrototype);
+    } else {
+      genFun.__proto__ = GeneratorFunctionPrototype;
+      if (!(toStringTagSymbol in genFun)) {
+        genFun[toStringTagSymbol] = "GeneratorFunction";
+      }
+    }
+    genFun.prototype = Object.create(Gp);
+    return genFun;
+  };
+
+  // Within the body of any async function, `await x` is transformed to
+  // `yield regeneratorRuntime.awrap(x)`, so that the runtime can test
+  // `hasOwn.call(value, "__await")` to determine if the yielded value is
+  // meant to be awaited.
+  exports.awrap = function(arg) {
+    return { __await: arg };
+  };
+
+  function AsyncIterator(generator, PromiseImpl) {
+    function invoke(method, arg, resolve, reject) {
+      var record = tryCatch(generator[method], generator, arg);
+      if (record.type === "throw") {
+        reject(record.arg);
+      } else {
+        var result = record.arg;
+        var value = result.value;
+        if (value &&
+            typeof value === "object" &&
+            hasOwn.call(value, "__await")) {
+          return PromiseImpl.resolve(value.__await).then(function(value) {
+            invoke("next", value, resolve, reject);
+          }, function(err) {
+            invoke("throw", err, resolve, reject);
+          });
+        }
+
+        return PromiseImpl.resolve(value).then(function(unwrapped) {
+          // When a yielded Promise is resolved, its final value becomes
+          // the .value of the Promise<{value,done}> result for the
+          // current iteration.
+          result.value = unwrapped;
+          resolve(result);
+        }, function(error) {
+          // If a rejected Promise was yielded, throw the rejection back
+          // into the async generator function so it can be handled there.
+          return invoke("throw", error, resolve, reject);
+        });
+      }
+    }
+
+    var previousPromise;
+
+    function enqueue(method, arg) {
+      function callInvokeWithMethodAndArg() {
+        return new PromiseImpl(function(resolve, reject) {
+          invoke(method, arg, resolve, reject);
+        });
+      }
+
+      return previousPromise =
+        // If enqueue has been called before, then we want to wait until
+        // all previous Promises have been resolved before calling invoke,
+        // so that results are always delivered in the correct order. If
+        // enqueue has not been called before, then it is important to
+        // call invoke immediately, without waiting on a callback to fire,
+        // so that the async generator function has the opportunity to do
+        // any necessary setup in a predictable way. This predictability
+        // is why the Promise constructor synchronously invokes its
+        // executor callback, and why async functions synchronously
+        // execute code before the first await. Since we implement simple
+        // async functions in terms of async generators, it is especially
+        // important to get this right, even though it requires care.
+        previousPromise ? previousPromise.then(
+          callInvokeWithMethodAndArg,
+          // Avoid propagating failures to Promises returned by later
+          // invocations of the iterator.
+          callInvokeWithMethodAndArg
+        ) : callInvokeWithMethodAndArg();
+    }
+
+    // Define the unified helper method that is used to implement .next,
+    // .throw, and .return (see defineIteratorMethods).
+    this._invoke = enqueue;
+  }
+
+  defineIteratorMethods(AsyncIterator.prototype);
+  AsyncIterator.prototype[asyncIteratorSymbol] = function () {
+    return this;
+  };
+  exports.AsyncIterator = AsyncIterator;
+
+  // Note that simple async functions are implemented on top of
+  // AsyncIterator objects; they just return a Promise for the value of
+  // the final result produced by the iterator.
+  exports.async = function(innerFn, outerFn, self, tryLocsList, PromiseImpl) {
+    if (PromiseImpl === void 0) PromiseImpl = Promise;
+
+    var iter = new AsyncIterator(
+      wrap(innerFn, outerFn, self, tryLocsList),
+      PromiseImpl
+    );
+
+    return exports.isGeneratorFunction(outerFn)
+      ? iter // If outerFn is a generator, return the full iterator.
+      : iter.next().then(function(result) {
+          return result.done ? result.value : iter.next();
+        });
+  };
+
+  function makeInvokeMethod(innerFn, self, context) {
+    var state = GenStateSuspendedStart;
+
+    return function invoke(method, arg) {
+      if (state === GenStateExecuting) {
+        throw new Error("Generator is already running");
+      }
+
+      if (state === GenStateCompleted) {
+        if (method === "throw") {
+          throw arg;
+        }
+
+        // Be forgiving, per 25.3.3.3.3 of the spec:
+        // https://people.mozilla.org/~jorendorff/es6-draft.html#sec-generatorresume
+        return doneResult();
+      }
+
+      context.method = method;
+      context.arg = arg;
+
+      while (true) {
+        var delegate = context.delegate;
+        if (delegate) {
+          var delegateResult = maybeInvokeDelegate(delegate, context);
+          if (delegateResult) {
+            if (delegateResult === ContinueSentinel) continue;
+            return delegateResult;
+          }
+        }
+
+        if (context.method === "next") {
+          // Setting context._sent for legacy support of Babel's
+          // function.sent implementation.
+          context.sent = context._sent = context.arg;
+
+        } else if (context.method === "throw") {
+          if (state === GenStateSuspendedStart) {
+            state = GenStateCompleted;
+            throw context.arg;
+          }
+
+          context.dispatchException(context.arg);
+
+        } else if (context.method === "return") {
+          context.abrupt("return", context.arg);
+        }
+
+        state = GenStateExecuting;
+
+        var record = tryCatch(innerFn, self, context);
+        if (record.type === "normal") {
+          // If an exception is thrown from innerFn, we leave state ===
+          // GenStateExecuting and loop back for another invocation.
+          state = context.done
+            ? GenStateCompleted
+            : GenStateSuspendedYield;
+
+          if (record.arg === ContinueSentinel) {
+            continue;
+          }
+
+          return {
+            value: record.arg,
+            done: context.done
+          };
+
+        } else if (record.type === "throw") {
+          state = GenStateCompleted;
+          // Dispatch the exception by looping back around to the
+          // context.dispatchException(context.arg) call above.
+          context.method = "throw";
+          context.arg = record.arg;
+        }
+      }
+    };
+  }
+
+  // Call delegate.iterator[context.method](context.arg) and handle the
+  // result, either by returning a { value, done } result from the
+  // delegate iterator, or by modifying context.method and context.arg,
+  // setting context.delegate to null, and returning the ContinueSentinel.
+  function maybeInvokeDelegate(delegate, context) {
+    var method = delegate.iterator[context.method];
+    if (method === undefined) {
+      // A .throw or .return when the delegate iterator has no .throw
+      // method always terminates the yield* loop.
+      context.delegate = null;
+
+      if (context.method === "throw") {
+        // Note: ["return"] must be used for ES3 parsing compatibility.
+        if (delegate.iterator["return"]) {
+          // If the delegate iterator has a return method, give it a
+          // chance to clean up.
+          context.method = "return";
+          context.arg = undefined;
+          maybeInvokeDelegate(delegate, context);
+
+          if (context.method === "throw") {
+            // If maybeInvokeDelegate(context) changed context.method from
+            // "return" to "throw", let that override the TypeError below.
+            return ContinueSentinel;
+          }
+        }
+
+        context.method = "throw";
+        context.arg = new TypeError(
+          "The iterator does not provide a 'throw' method");
+      }
+
+      return ContinueSentinel;
+    }
+
+    var record = tryCatch(method, delegate.iterator, context.arg);
+
+    if (record.type === "throw") {
+      context.method = "throw";
+      context.arg = record.arg;
+      context.delegate = null;
+      return ContinueSentinel;
+    }
+
+    var info = record.arg;
+
+    if (! info) {
+      context.method = "throw";
+      context.arg = new TypeError("iterator result is not an object");
+      context.delegate = null;
+      return ContinueSentinel;
+    }
+
+    if (info.done) {
+      // Assign the result of the finished delegate to the temporary
+      // variable specified by delegate.resultName (see delegateYield).
+      context[delegate.resultName] = info.value;
+
+      // Resume execution at the desired location (see delegateYield).
+      context.next = delegate.nextLoc;
+
+      // If context.method was "throw" but the delegate handled the
+      // exception, let the outer generator proceed normally. If
+      // context.method was "next", forget context.arg since it has been
+      // "consumed" by the delegate iterator. If context.method was
+      // "return", allow the original .return call to continue in the
+      // outer generator.
+      if (context.method !== "return") {
+        context.method = "next";
+        context.arg = undefined;
+      }
+
+    } else {
+      // Re-yield the result returned by the delegate method.
+      return info;
+    }
+
+    // The delegate iterator is finished, so forget it and continue with
+    // the outer generator.
+    context.delegate = null;
+    return ContinueSentinel;
+  }
+
+  // Define Generator.prototype.{next,throw,return} in terms of the
+  // unified ._invoke helper method.
+  defineIteratorMethods(Gp);
+
+  Gp[toStringTagSymbol] = "Generator";
+
+  // A Generator should always return itself as the iterator object when the
+  // @@iterator function is called on it. Some browsers' implementations of the
+  // iterator prototype chain incorrectly implement this, causing the Generator
+  // object to not be returned from this call. This ensures that doesn't happen.
+  // See https://github.com/facebook/regenerator/issues/274 for more details.
+  Gp[iteratorSymbol] = function() {
+    return this;
+  };
+
+  Gp.toString = function() {
+    return "[object Generator]";
+  };
+
+  function pushTryEntry(locs) {
+    var entry = { tryLoc: locs[0] };
+
+    if (1 in locs) {
+      entry.catchLoc = locs[1];
+    }
+
+    if (2 in locs) {
+      entry.finallyLoc = locs[2];
+      entry.afterLoc = locs[3];
+    }
+
+    this.tryEntries.push(entry);
+  }
+
+  function resetTryEntry(entry) {
+    var record = entry.completion || {};
+    record.type = "normal";
+    delete record.arg;
+    entry.completion = record;
+  }
+
+  function Context(tryLocsList) {
+    // The root entry object (effectively a try statement without a catch
+    // or a finally block) gives us a place to store values thrown from
+    // locations where there is no enclosing try statement.
+    this.tryEntries = [{ tryLoc: "root" }];
+    tryLocsList.forEach(pushTryEntry, this);
+    this.reset(true);
+  }
+
+  exports.keys = function(object) {
+    var keys = [];
+    for (var key in object) {
+      keys.push(key);
+    }
+    keys.reverse();
+
+    // Rather than returning an object with a next method, we keep
+    // things simple and return the next function itself.
+    return function next() {
+      while (keys.length) {
+        var key = keys.pop();
+        if (key in object) {
+          next.value = key;
+          next.done = false;
+          return next;
+        }
+      }
+
+      // To avoid creating an additional object, we just hang the .value
+      // and .done properties off the next function object itself. This
+      // also ensures that the minifier will not anonymize the function.
+      next.done = true;
+      return next;
+    };
+  };
+
+  function values(iterable) {
+    if (iterable) {
+      var iteratorMethod = iterable[iteratorSymbol];
+      if (iteratorMethod) {
+        return iteratorMethod.call(iterable);
+      }
+
+      if (typeof iterable.next === "function") {
+        return iterable;
+      }
+
+      if (!isNaN(iterable.length)) {
+        var i = -1, next = function next() {
+          while (++i < iterable.length) {
+            if (hasOwn.call(iterable, i)) {
+              next.value = iterable[i];
+              next.done = false;
+              return next;
+            }
+          }
+
+          next.value = undefined;
+          next.done = true;
+
+          return next;
+        };
+
+        return next.next = next;
+      }
+    }
+
+    // Return an iterator with no values.
+    return { next: doneResult };
+  }
+  exports.values = values;
+
+  function doneResult() {
+    return { value: undefined, done: true };
+  }
+
+  Context.prototype = {
+    constructor: Context,
+
+    reset: function(skipTempReset) {
+      this.prev = 0;
+      this.next = 0;
+      // Resetting context._sent for legacy support of Babel's
+      // function.sent implementation.
+      this.sent = this._sent = undefined;
+      this.done = false;
+      this.delegate = null;
+
+      this.method = "next";
+      this.arg = undefined;
+
+      this.tryEntries.forEach(resetTryEntry);
+
+      if (!skipTempReset) {
+        for (var name in this) {
+          // Not sure about the optimal order of these conditions:
+          if (name.charAt(0) === "t" &&
+              hasOwn.call(this, name) &&
+              !isNaN(+name.slice(1))) {
+            this[name] = undefined;
+          }
+        }
+      }
+    },
+
+    stop: function() {
+      this.done = true;
+
+      var rootEntry = this.tryEntries[0];
+      var rootRecord = rootEntry.completion;
+      if (rootRecord.type === "throw") {
+        throw rootRecord.arg;
+      }
+
+      return this.rval;
+    },
+
+    dispatchException: function(exception) {
+      if (this.done) {
+        throw exception;
+      }
+
+      var context = this;
+      function handle(loc, caught) {
+        record.type = "throw";
+        record.arg = exception;
+        context.next = loc;
+
+        if (caught) {
+          // If the dispatched exception was caught by a catch block,
+          // then let that catch block handle the exception normally.
+          context.method = "next";
+          context.arg = undefined;
+        }
+
+        return !! caught;
+      }
+
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        var record = entry.completion;
+
+        if (entry.tryLoc === "root") {
+          // Exception thrown outside of any try block that could handle
+          // it, so set the completion value of the entire function to
+          // throw the exception.
+          return handle("end");
+        }
+
+        if (entry.tryLoc <= this.prev) {
+          var hasCatch = hasOwn.call(entry, "catchLoc");
+          var hasFinally = hasOwn.call(entry, "finallyLoc");
+
+          if (hasCatch && hasFinally) {
+            if (this.prev < entry.catchLoc) {
+              return handle(entry.catchLoc, true);
+            } else if (this.prev < entry.finallyLoc) {
+              return handle(entry.finallyLoc);
+            }
+
+          } else if (hasCatch) {
+            if (this.prev < entry.catchLoc) {
+              return handle(entry.catchLoc, true);
+            }
+
+          } else if (hasFinally) {
+            if (this.prev < entry.finallyLoc) {
+              return handle(entry.finallyLoc);
+            }
+
+          } else {
+            throw new Error("try statement without catch or finally");
+          }
+        }
+      }
+    },
+
+    abrupt: function(type, arg) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.tryLoc <= this.prev &&
+            hasOwn.call(entry, "finallyLoc") &&
+            this.prev < entry.finallyLoc) {
+          var finallyEntry = entry;
+          break;
+        }
+      }
+
+      if (finallyEntry &&
+          (type === "break" ||
+           type === "continue") &&
+          finallyEntry.tryLoc <= arg &&
+          arg <= finallyEntry.finallyLoc) {
+        // Ignore the finally entry if control is not jumping to a
+        // location outside the try/catch block.
+        finallyEntry = null;
+      }
+
+      var record = finallyEntry ? finallyEntry.completion : {};
+      record.type = type;
+      record.arg = arg;
+
+      if (finallyEntry) {
+        this.method = "next";
+        this.next = finallyEntry.finallyLoc;
+        return ContinueSentinel;
+      }
+
+      return this.complete(record);
+    },
+
+    complete: function(record, afterLoc) {
+      if (record.type === "throw") {
+        throw record.arg;
+      }
+
+      if (record.type === "break" ||
+          record.type === "continue") {
+        this.next = record.arg;
+      } else if (record.type === "return") {
+        this.rval = this.arg = record.arg;
+        this.method = "return";
+        this.next = "end";
+      } else if (record.type === "normal" && afterLoc) {
+        this.next = afterLoc;
+      }
+
+      return ContinueSentinel;
+    },
+
+    finish: function(finallyLoc) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.finallyLoc === finallyLoc) {
+          this.complete(entry.completion, entry.afterLoc);
+          resetTryEntry(entry);
+          return ContinueSentinel;
+        }
+      }
+    },
+
+    "catch": function(tryLoc) {
+      for (var i = this.tryEntries.length - 1; i >= 0; --i) {
+        var entry = this.tryEntries[i];
+        if (entry.tryLoc === tryLoc) {
+          var record = entry.completion;
+          if (record.type === "throw") {
+            var thrown = record.arg;
+            resetTryEntry(entry);
+          }
+          return thrown;
+        }
+      }
+
+      // The context.catch method must only be called with a location
+      // argument that corresponds to a known catch block.
+      throw new Error("illegal catch attempt");
+    },
+
+    delegateYield: function(iterable, resultName, nextLoc) {
+      this.delegate = {
+        iterator: values(iterable),
+        resultName: resultName,
+        nextLoc: nextLoc
+      };
+
+      if (this.method === "next") {
+        // Deliberately forget the last sent value so that we don't
+        // accidentally pass it on to the delegate.
+        this.arg = undefined;
+      }
+
+      return ContinueSentinel;
+    }
+  };
+
+  // Regardless of whether this script is executing as a CommonJS module
+  // or not, return the runtime object so that we can declare the variable
+  // regeneratorRuntime in the outer scope, which allows this module to be
+  // injected easily by `bin/regenerator --include-runtime script.js`.
+  return exports;
+
+}(
+  // If this script is executing as a CommonJS module, use module.exports
+  // as the regeneratorRuntime namespace. Otherwise create a new empty
+  // object. Either way, the resulting object will be used to initialize
+  // the regeneratorRuntime variable at the top of this file.
+   true ? module.exports : undefined
+));
+
+try {
+  regeneratorRuntime = runtime;
+} catch (accidentalStrictMode) {
+  // This module should not be running in strict mode, so the above
+  // assignment should always work unless something is misconfigured. Just
+  // in case runtime.js accidentally runs in strict mode, we can escape
+  // strict mode using a global Function call. This could conceivably fail
+  // if a Content Security Policy forbids using Function, but in that case
+  // the proper solution is to fix the accidental strict mode problem. If
+  // you've misconfigured your bundler to force strict mode and applied a
+  // CSP to forbid Function, and you're not willing to fix either of those
+  // problems, please detail your unique predicament in a GitHub issue.
+  Function("r", "regeneratorRuntime = r")(runtime);
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Contact/index.vue?vue&type=style&index=0&id=6c9f31ca&lang=scss&scoped=true&":
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--8-2!./node_modules/sass-loader/dist/cjs.js??ref--8-3!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Contact/index.vue?vue&type=style&index=0&id=6c9f31ca&lang=scss&scoped=true& ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--8-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--8-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=style&index=0&id=6c9f31ca&lang=scss&scoped=true& */ "./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Contact/index.vue?vue&type=style&index=0&id=6c9f31ca&lang=scss&scoped=true&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
 /***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Shared/LanguageSelector.vue?vue&type=style&index=0&id=ed67559a&scoped=true&lang=css&":
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/style-loader!./node_modules/css-loader??ref--7-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Shared/LanguageSelector.vue?vue&type=style&index=0&id=ed67559a&scoped=true&lang=css& ***!
@@ -1725,6 +3155,36 @@ if(false) {}
 
 
 var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--7-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--7-2!../../../node_modules/vue-loader/lib??vue-loader-options!./Footer.vue?vue&type=style&index=0&id=61a7c374&scoped=true&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Footer.vue?vue&type=style&index=0&id=61a7c374&scoped=true&lang=css&");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {}
+
+/***/ }),
+
+/***/ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/GoogleMapLoader.vue?vue&type=style&index=0&id=8216208a&scoped=true&lang=css&":
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader??ref--7-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--7-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/GoogleMapLoader.vue?vue&type=style&index=0&id=8216208a&scoped=true&lang=css& ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__(/*! !../../../node_modules/css-loader??ref--7-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--7-2!../../../node_modules/vue-loader/lib??vue-loader-options!./GoogleMapLoader.vue?vue&type=style&index=0&id=8216208a&scoped=true&lang=css& */ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/GoogleMapLoader.vue?vue&type=style&index=0&id=8216208a&scoped=true&lang=css&");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -1806,602 +3266,10 @@ if(false) {}
 
 /***/ }),
 
-/***/ "./node_modules/vue-currency-input/dist/vue-currency-input.esm.js":
-/*!************************************************************************!*\
-  !*** ./node_modules/vue-currency-input/dist/vue-currency-input.esm.js ***!
-  \************************************************************************/
-/*! exports provided: default, CurrencyDirective, CurrencyInput, getValue, parse, setValue */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CurrencyDirective", function() { return directive; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CurrencyInput", function() { return component; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getValue", function() { return getValue; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "parse", function() { return parse; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "setValue", function() { return setValue; });
-/**
- * Vue Currency Input 1.22.6
- * (c) 2018-2021 Matthias Stiller
- * @license MIT
- */
-var escapeRegExp = function (str) { return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'); };
-var removeLeadingZeros = function (str) { return str.replace(/^0+(0$|[^0])/, '$1'); };
-var count = function (str, search) { return (str.match(new RegExp(escapeRegExp(search), 'g')) || []).length; };
-var startsWith = function (str, search) { return str.substring(0, search.length) === search; };
-var substringBefore = function (str, search) { return str.substring(0, str.indexOf(search)); };
-
-var DECIMAL_SYMBOLS = [',', '.', '٫'];
-var INTEGER_PATTERN = '(0|[1-9]\\d*)';
-var NumberFormat = function NumberFormat (options) {
-  var currency = options.currency;
-  var locale = options.locale;
-  var precision = options.precision;
-  var autoDecimalMode = options.autoDecimalMode;
-  var valueAsInteger = options.valueAsInteger;
-  var numberFormat = new Intl.NumberFormat(locale, typeof currency === 'string' ? { currency: currency, style: 'currency' } : { minimumFractionDigits: 1 });
-  var ps = numberFormat.format(123456);
-  this.locale = locale;
-  this.currency = currency;
-  this.digits = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9].map(function (i) { return i.toLocaleString(locale); });
-  this.decimalSymbol = count(ps, this.digits[0]) ? ps.substr(ps.indexOf(this.digits[6]) + 1, 1) : undefined;
-  this.groupingSymbol = ps.substr(ps.indexOf(this.digits[3]) + 1, 1);
-  this.minusSymbol = substringBefore(Number(-1).toLocaleString(locale), this.digits[1]);
-  if (this.decimalSymbol === undefined) {
-    this.minimumFractionDigits = this.maximumFractionDigits = 0;
-  } else if (typeof precision === 'number') {
-    this.minimumFractionDigits = this.maximumFractionDigits = precision;
-  } else if (typeof precision === 'object' && !autoDecimalMode && !valueAsInteger) {
-    this.minimumFractionDigits = precision.min || 0;
-    this.maximumFractionDigits = precision.max !== undefined ? precision.max : 20;
-  } else if (typeof currency === 'string') {
-    this.minimumFractionDigits = numberFormat.resolvedOptions().minimumFractionDigits;
-    this.maximumFractionDigits = numberFormat.resolvedOptions().maximumFractionDigits;
-  } else {
-    this.minimumFractionDigits = this.maximumFractionDigits = 2;
-  }
-  if (typeof currency === 'string') {
-    this.prefix = substringBefore(ps, this.digits[1]);
-    this.negativePrefix = substringBefore(numberFormat.format(-1), this.digits[1]);
-    this.suffix = ps.substring(ps.lastIndexOf(this.decimalSymbol ? this.digits[0] : this.digits[6]) + 1);
-  } else {
-    this.prefix = (currency || {}).prefix || '';
-    this.negativePrefix = "" + (this.minusSymbol) + (this.prefix);
-    this.suffix = (currency || {}).suffix || '';
-  }
-};
-NumberFormat.prototype.parse = function parse (str, valueAsInteger) {
-    if ( valueAsInteger === void 0 ) valueAsInteger = false;
-  if (str) {
-    var negative = this.isNegative(str);
-    str = this.normalizeDigits(str);
-    str = this.stripCurrencySymbol(str);
-    str = this.stripMinusSymbol(str);
-    var fraction = this.decimalSymbol ? ("(?:" + (escapeRegExp(this.decimalSymbol)) + "(\\d*))?") : '';
-    var match = this.stripGroupingSymbol(str).match(new RegExp(("^" + INTEGER_PATTERN + fraction + "$")));
-    if (match && this.isValidIntegerFormat(str.split(this.decimalSymbol)[0], Number(match[1]))) {
-      var number = Number(("" + (negative ? '-' : '') + (match[1]) + "." + ((match[2] || ''))));
-      return valueAsInteger ? Number(number.toFixed(this.maximumFractionDigits).split('.').join('')) : number
-    }
-  }
-  return null
-};
-NumberFormat.prototype.isValidIntegerFormat = function isValidIntegerFormat (str, integerNumber) {
-  var options = typeof this.currency === 'string'
-    ? { style: 'currency', currency: this.currency, minimumFractionDigits: 0 }
-    : {};
-  return [
-    this.stripCurrencySymbol(this.normalizeDigits(integerNumber.toLocaleString(this.locale, Object.assign({}, options, {useGrouping: true})))),
-    this.stripCurrencySymbol(this.normalizeDigits(integerNumber.toLocaleString(this.locale, Object.assign({}, options, {useGrouping: false}))))
-  ].includes(str)
-};
-NumberFormat.prototype.format = function format (number, options) {
-    if ( options === void 0 ) options = {
-  minimumFractionDigits: this.minimumFractionDigits,
-  maximumFractionDigits: this.maximumFractionDigits
-};
-  if (typeof this.currency === 'string') {
-    return number.toLocaleString(this.locale, Object.assign({}, {style: 'currency',
-      currency: this.currency},
-      options))
-  } else {
-    return this.insertCurrencySymbol(Math.abs(number).toLocaleString(this.locale, options), number < 0 || (number === 0 && (1 / number < 0)))
-  }
-};
-NumberFormat.prototype.toFraction = function toFraction (str) {
-  return ("" + (this.digits[0]) + (this.decimalSymbol) + ((this.onlyLocaleDigits(str.substr(1)).substr(0, this.maximumFractionDigits))))
-};
-NumberFormat.prototype.isFractionIncomplete = function isFractionIncomplete (str) {
-  return !!this.normalizeDigits(this.stripGroupingSymbol(str)).match(new RegExp(("^" + INTEGER_PATTERN + (escapeRegExp(this.decimalSymbol)) + "$")))
-};
-NumberFormat.prototype.isNegative = function isNegative (str) {
-  return startsWith(str, this.negativePrefix) || startsWith(str.replace('-', this.minusSymbol), this.minusSymbol)
-};
-NumberFormat.prototype.insertCurrencySymbol = function insertCurrencySymbol (str, negative) {
-  return ("" + (negative ? this.negativePrefix : this.prefix) + str + (this.suffix))
-};
-NumberFormat.prototype.stripGroupingSymbol = function stripGroupingSymbol (str) {
-  return str.replace(new RegExp(escapeRegExp(this.groupingSymbol), 'g'), '')
-};
-NumberFormat.prototype.stripMinusSymbol = function stripMinusSymbol (str) {
-  return str.replace('-', this.minusSymbol).replace(this.minusSymbol, '')
-};
-NumberFormat.prototype.stripCurrencySymbol = function stripCurrencySymbol (str) {
-  return str.replace(this.negativePrefix, '').replace(this.prefix, '').replace(this.suffix, '')
-};
-NumberFormat.prototype.normalizeDecimalSymbol = function normalizeDecimalSymbol (str, from) {
-    var this$1 = this;
-  DECIMAL_SYMBOLS.forEach(function (s) {
-    str = str.substr(0, from) + str.substr(from).replace(s, this$1.decimalSymbol);
-  });
-  return str
-};
-NumberFormat.prototype.normalizeDigits = function normalizeDigits (str) {
-  if (this.digits[0] !== '0') {
-    this.digits.forEach(function (digit, index) {
-      str = str.replace(new RegExp(digit, 'g'), index);
-    });
-  }
-  return str
-};
-NumberFormat.prototype.onlyDigits = function onlyDigits (str) {
-  return this.normalizeDigits(str).replace(/\D+/g, '')
-};
-NumberFormat.prototype.onlyLocaleDigits = function onlyLocaleDigits (str) {
-  return str.replace(new RegExp(("[^" + (this.digits.join('')) + "]*"), 'g'), '')
-};
-
-var DEFAULT_OPTIONS = {
-  locale: undefined,
-  currency: 'EUR',
-  valueAsInteger: false,
-  distractionFree: true,
-  precision: undefined,
-  autoDecimalMode: false,
-  valueRange: undefined,
-  allowNegative: true
-};
-var parse = function (formattedValue, options) {
-  var mergedOptions = Object.assign({}, DEFAULT_OPTIONS, options);
-  return new NumberFormat(mergedOptions).parse(formattedValue, mergedOptions.valueAsInteger)
-};
-var getValue = function (ref) { return (ref.$el || ref).$ci.getValue(); };
-var setValue = function (ref, value) {
-  (ref.$el || ref).$ci.setValue(value);
-};
-
-var equal = function (a, b) {
-  if (a === b) {
-    return true
-  }
-  if (!a || !b || typeof a !== 'object' || typeof b !== 'object') {
-    return false
-  }
-  var keys = Object.keys(a);
-  if (keys.length !== Object.keys(b).length) {
-    return false
-  }
-  if (!keys.every(Object.prototype.hasOwnProperty.bind(b))) {
-    return false
-  }
-  return keys.every(function (key) { return equal(a[key], b[key]); })
-};
-
-var DefaultNumberMask = function DefaultNumberMask (numberFormat) {
-  this.numberFormat = numberFormat;
-};
-DefaultNumberMask.prototype.conformToMask = function conformToMask (str, previousConformedValue) {
-    var this$1 = this;
-    if ( previousConformedValue === void 0 ) previousConformedValue = '';
-  var negative = this.numberFormat.isNegative(str);
-  var checkIncompleteValue = function (str) {
-    if (str === '' && negative && previousConformedValue !== this$1.numberFormat.negativePrefix) {
-      return ''
-    } else if (this$1.numberFormat.maximumFractionDigits > 0) {
-      if (this$1.numberFormat.isFractionIncomplete(str)) {
-        return str
-      } else if (startsWith(str, this$1.numberFormat.decimalSymbol)) {
-        return this$1.numberFormat.toFraction(str)
-      }
-    }
-    return null
-  };
-  var value = str;
-  value = this.numberFormat.stripCurrencySymbol(value);
-  value = this.numberFormat.stripMinusSymbol(value);
-  var incompleteValue = checkIncompleteValue(value);
-  if (incompleteValue != null) {
-    return this.numberFormat.insertCurrencySymbol(incompleteValue, negative)
-  }
-  var ref = value.split(this.numberFormat.decimalSymbol);
-    var integer = ref[0];
-    var fraction = ref.slice(1);
-  var integerDigits = removeLeadingZeros(this.numberFormat.onlyDigits(integer));
-  var fractionDigits = this.numberFormat.onlyDigits(fraction.join('')).substr(0, this.numberFormat.maximumFractionDigits);
-  var invalidFraction = fraction.length > 0 && fractionDigits.length === 0;
-  var invalidNegativeValue = integerDigits === '' && negative && (previousConformedValue === str.slice(0, -1) || previousConformedValue !== this.numberFormat.negativePrefix);
-  if (invalidFraction || invalidNegativeValue) {
-    return previousConformedValue
-  } else if (integerDigits.match(/\d+/)) {
-    return {
-      numberValue: Number(("" + (negative ? '-' : '') + integerDigits + "." + fractionDigits)),
-      fractionDigits: fractionDigits
-    }
-  } else {
-    return ''
-  }
-};
-var AutoDecimalModeNumberMask = function AutoDecimalModeNumberMask (numberFormat) {
-  this.numberFormat = numberFormat;
-};
-AutoDecimalModeNumberMask.prototype.conformToMask = function conformToMask (str) {
-  if (str === '') {
-    return ''
-  }
-  var negative = this.numberFormat.isNegative(str);
-  var numberValue = this.numberFormat.stripMinusSymbol(str) === ''
-    ? -0
-    : Number(("" + (negative ? '-' : '') + (removeLeadingZeros(this.numberFormat.onlyDigits(str))))) / Math.pow(10, this.numberFormat.minimumFractionDigits);
-  return {
-    numberValue: numberValue,
-    fractionDigits: numberValue.toFixed(this.numberFormat.minimumFractionDigits).slice(-this.numberFormat.minimumFractionDigits)
-  }
-};
-
-var getCaretPositionAfterFormat = function (newValue, inputtedValue, caretPosition, numberFormat, options) {
-  var prefix = numberFormat.prefix;
-  var suffix = numberFormat.suffix;
-  var decimalSymbol = numberFormat.decimalSymbol;
-  var maximumFractionDigits = numberFormat.maximumFractionDigits;
-  var groupingSymbol = numberFormat.groupingSymbol;
-  var decimalSymbolPosition = inputtedValue.indexOf(decimalSymbol) + 1;
-  var caretPositionFromLeft = inputtedValue.length - caretPosition;
-  if (Math.abs(newValue.length - inputtedValue.length) > 1 && caretPosition <= decimalSymbolPosition) {
-    return newValue.indexOf(decimalSymbol) + 1
-  } else if (newValue.substr(caretPosition, 1) === groupingSymbol && count(newValue, groupingSymbol) === count(inputtedValue, groupingSymbol) + 1) {
-    return newValue.length - caretPositionFromLeft - 1
-  } else {
-    if (!options.autoDecimalMode && decimalSymbolPosition !== 0 && caretPosition > decimalSymbolPosition) {
-      if (numberFormat.onlyDigits(inputtedValue.substr(decimalSymbolPosition)).length - 1 === maximumFractionDigits) {
-        caretPositionFromLeft -= 1;
-      }
-    }
-    return options.distractionFree.hideCurrencySymbol
-      ? newValue.length - caretPositionFromLeft
-      : Math.max(newValue.length - Math.max(caretPositionFromLeft, suffix.length), prefix.length === 0 ? 0 : prefix.length + 1)
-  }
-};
-var getDistractionFreeCaretPosition = function (numberFormat, options, value, caretPosition) {
-  var result = caretPosition;
-  if (options.distractionFree.hideCurrencySymbol) {
-    result -= numberFormat.prefix.length;
-  }
-  if (options.distractionFree.hideGroupingSymbol) {
-    result -= count(value.substring(0, caretPosition), numberFormat.groupingSymbol);
-  }
-  return Math.max(0, result)
-};
-
-var MAX_SAFE_INTEGER = Math.pow(2, 53) - 1;
-var NumberInput = function NumberInput (el, options, callbackFns) {
-  this.el = el;
-  this.callbackFns = callbackFns;
-  this.numberValue = null;
-  this.addEventListener();
-  this.init(options);
-  this.setValue(this.currencyFormat.parse(this.el.value));
-};
-NumberInput.prototype.init = function init (newOptions) {
-  var options = Object.assign({}, newOptions);
-  var distractionFree = options.distractionFree;
-    var autoDecimalMode = options.autoDecimalMode;
-    var valueRange = options.valueRange;
-  if (typeof distractionFree === 'boolean') {
-    options.distractionFree = {
-      hideCurrencySymbol: distractionFree,
-      hideNegligibleDecimalDigits: distractionFree,
-      hideGroupingSymbol: distractionFree
-    };
-  }
-  if (valueRange) {
-    options.valueRange = {
-      min: valueRange.min !== undefined ? Math.max(valueRange.min, -MAX_SAFE_INTEGER) : -MAX_SAFE_INTEGER,
-      max: valueRange.max !== undefined ? Math.min(valueRange.max, MAX_SAFE_INTEGER) : MAX_SAFE_INTEGER
-    };
-  } else {
-    options.valueRange = {
-      min: -MAX_SAFE_INTEGER,
-      max: MAX_SAFE_INTEGER
-    };
-  }
-  if (autoDecimalMode) {
-    options.distractionFree.hideNegligibleDecimalDigits = false;
-    this.el.setAttribute('inputmode', 'numeric');
-  } else {
-    this.el.setAttribute('inputmode', 'decimal');
-  }
-  this.options = options;
-  this.currencyFormat = new NumberFormat(this.options);
-  this.numberMask = options.autoDecimalMode ? new AutoDecimalModeNumberMask(this.currencyFormat) : new DefaultNumberMask(this.currencyFormat);
-};
-NumberInput.prototype.setOptions = function setOptions (options) {
-  this.init(options);
-  this.applyFixedFractionFormat(this.numberValue, true);
-};
-NumberInput.prototype.applyFixedFractionFormat = function applyFixedFractionFormat (number, forcedChange) {
-  this.format(number != null ? this.currencyFormat.format(this.validateValueRange(number)) : null);
-  if (number !== this.numberValue || forcedChange) {
-    this.callbackFns.onChange(this.getValue());
-  }
-};
-NumberInput.prototype.getValue = function getValue () {
-  return this.currencyFormat.parse(this.formattedValue, this.options.valueAsInteger)
-};
-NumberInput.prototype.setValue = function setValue (value) {
-  var newValue = this.options.valueAsInteger && value != null ? value / Math.pow(10, this.currencyFormat.maximumFractionDigits) : value;
-  if (newValue !== this.numberValue) {
-    this.applyFixedFractionFormat(newValue);
-  }
-};
-NumberInput.prototype.validateValueRange = function validateValueRange (value) {
-  var ref = this.options.valueRange;
-    var min = ref.min;
-    var max = ref.max;
-  return Math.min(Math.max(value, min), max)
-};
-NumberInput.prototype.updateInputValue = function updateInputValue (value, hideNegligibleDecimalDigits) {
-    if ( hideNegligibleDecimalDigits === void 0 ) hideNegligibleDecimalDigits = false;
-  if (value != null) {
-    if (this.decimalSymbolInsertedAt !== undefined) {
-      value = this.currencyFormat.normalizeDecimalSymbol(value, this.decimalSymbolInsertedAt);
-      this.decimalSymbolInsertedAt = undefined;
-    }
-    var conformedValue = this.numberMask.conformToMask(value, this.formattedValue);
-    var formattedValue;
-    if (typeof conformedValue === 'object') {
-      var numberValue = conformedValue.numberValue;
-        var fractionDigits = conformedValue.fractionDigits;
-      var ref = this.currencyFormat;
-        var maximumFractionDigits = ref.maximumFractionDigits;
-        var minimumFractionDigits = ref.minimumFractionDigits;
-      if (this.focus) {
-        minimumFractionDigits = maximumFractionDigits;
-      }
-      minimumFractionDigits = hideNegligibleDecimalDigits
-        ? fractionDigits.replace(/0+$/, '').length
-        : Math.min(minimumFractionDigits, fractionDigits.length);
-      formattedValue = numberValue > MAX_SAFE_INTEGER
-        ? this.formattedValue
-        : this.currencyFormat.format(numberValue, {
-          useGrouping: !(this.focus && this.options.distractionFree.hideGroupingSymbol),
-          minimumFractionDigits: minimumFractionDigits,
-          maximumFractionDigits: maximumFractionDigits
-        });
-    } else {
-      formattedValue = conformedValue;
-    }
-    if (!this.options.allowNegative) {
-      formattedValue = formattedValue.replace(this.currencyFormat.negativePrefix, this.currencyFormat.prefix);
-    }
-    if (this.focus && this.options.distractionFree.hideCurrencySymbol) {
-      formattedValue = formattedValue
-        .replace(this.currencyFormat.negativePrefix, this.currencyFormat.minusSymbol)
-        .replace(this.currencyFormat.prefix, '')
-        .replace(this.currencyFormat.suffix, '');
-    }
-    this.el.value = formattedValue;
-    this.numberValue = this.currencyFormat.parse(formattedValue);
-  } else {
-    this.el.value = this.numberValue = null;
-  }
-  this.formattedValue = this.el.value;
-};
-NumberInput.prototype.format = function format (value) {
-  this.updateInputValue(value);
-  this.callbackFns.onInput(this.getValue());
-};
-NumberInput.prototype.addEventListener = function addEventListener () {
-    var this$1 = this;
-  this.el.addEventListener('input', function () {
-    var ref = this$1.el;
-      var value = ref.value;
-      var selectionStart = ref.selectionStart;
-    this$1.format(value);
-    if (this$1.focus) {
-      this$1.setCaretPosition(getCaretPositionAfterFormat(this$1.formattedValue, value, selectionStart, this$1.currencyFormat, this$1.options));
-    }
-  }, { capture: true });
-  this.el.addEventListener('focus', function () {
-    this$1.focus = true;
-    var ref = this$1.options.distractionFree;
-      var hideCurrencySymbol = ref.hideCurrencySymbol;
-      var hideGroupingSymbol = ref.hideGroupingSymbol;
-      var hideNegligibleDecimalDigits = ref.hideNegligibleDecimalDigits;
-    if (hideCurrencySymbol || hideGroupingSymbol || hideNegligibleDecimalDigits) {
-      setTimeout(function () {
-        var ref = this$1.el;
-          var value = ref.value;
-          var selectionStart = ref.selectionStart;
-          var selectionEnd = ref.selectionEnd;
-        if (value) {
-          this$1.updateInputValue(this$1.el.value, hideNegligibleDecimalDigits);
-        }
-        if (Math.abs(selectionStart - selectionEnd) > 0) {
-          this$1.setCaretPosition(0, this$1.el.value.length);
-        } else {
-          this$1.setCaretPosition(getDistractionFreeCaretPosition(this$1.currencyFormat, this$1.options, value, selectionStart));
-        }
-      });
-    }
-  });
-  this.el.addEventListener('keypress', function (e) {
-    if (DECIMAL_SYMBOLS.includes(e.key)) {
-      this$1.decimalSymbolInsertedAt = this$1.el.selectionStart;
-    }
-  });
-  this.el.addEventListener('blur', function () {
-    this$1.focus = false;
-    if (this$1.numberValue != null) {
-      this$1.applyFixedFractionFormat(this$1.numberValue);
-    }
-  });
-  this.el.addEventListener('change', function () {
-    this$1.callbackFns.onChange(this$1.getValue());
-  });
-};
-NumberInput.prototype.setCaretPosition = function setCaretPosition (start, end) {
-  if ( end === void 0 ) end = start;
- this.el.setSelectionRange(start, end); };
-
-var directive = {
-  bind: function bind (el, ref, vnode) {
-    var optionsFromBinding = ref.value;
-    var inputElement = el.tagName.toLowerCase() === 'input' ? el : el.querySelector('input');
-    if (!inputElement) {
-      throw new Error('No input element found')
-    }
-    var options = Object.assign({}, DEFAULT_OPTIONS,
-      (vnode.context.$ci || {}).globalOptions,
-      optionsFromBinding);
-    var listeners = (vnode.data && vnode.data.on) || (vnode.componentOptions && vnode.componentOptions.listeners) || {};
-    var emit = function (event, data) {
-      if (listeners[event]) {
-        listeners[event](vnode.componentOptions ? data : { target: { value: data } });
-      }
-    };
-    el.$ci = new NumberInput(inputElement, options, {
-      onChange: function () { emit('change', inputElement.value); },
-      onInput: function () { emit('input', inputElement.value); }
-    });
-  },
-  componentUpdated: function componentUpdated (el, ref) {
-    var value = ref.value;
-    var oldValue = ref.oldValue;
-    if (!equal(value, oldValue)) {
-      el.$ci.setOptions(value);
-    }
-  }
-};
-
-var component = {
-  render: function render (h) {
-    var this$1 = this;
-    return h('input', {
-      directives: [{
-        name: 'currency',
-        value: this.options
-      }],
-      on: Object.assign({}, this.$listeners,
-        {change: function () {
-          this$1.$emit('change', getValue(this$1.$el));
-        },
-        input: function () {
-          var numberValue = getValue(this$1.$el);
-          if (this$1.value !== numberValue) {
-            this$1.$emit('input', numberValue);
-          }
-        }})
-    })
-  },
-  directives: {
-    currency: directive
-  },
-  name: 'CurrencyInput',
-  props: {
-    value: {
-      type: Number,
-      default: null
-    },
-    locale: {
-      type: String,
-      default: undefined
-    },
-    currency: {
-      type: [String, Object],
-      default: undefined
-    },
-    distractionFree: {
-      type: [Boolean, Object],
-      default: undefined
-    },
-    precision: {
-      type: [Number, Object],
-      default: undefined
-    },
-    autoDecimalMode: {
-      type: Boolean,
-      default: undefined
-    },
-    valueAsInteger: {
-      type: Boolean,
-      default: undefined
-    },
-    valueRange: {
-      type: Object,
-      default: undefined
-    },
-    allowNegative: {
-      type: Boolean,
-      default: undefined
-    }
-  },
-  mounted: function mounted () {
-    this.setValue(this.value);
-  },
-  computed: {
-    options: function options () {
-      var this$1 = this;
-      var options = Object.assign({}, DEFAULT_OPTIONS,
-        (this.$ci || {}).globalOptions);
-      Object.keys(DEFAULT_OPTIONS).forEach(function (key) {
-        if (this$1[key] !== undefined) {
-          options[key] = this$1[key];
-        }
-      });
-      return options
-    }
-  },
-  watch: {
-    value: 'setValue'
-  },
-  methods: {
-    setValue: function setValue$1 (value) {
-      setValue(this.$el, value);
-    }
-  }
-};
-
-var plugin = {
-  install: function install (Vue, ref) {
-    if ( ref === void 0 ) ref = {};
-    var componentName = ref.componentName; if ( componentName === void 0 ) componentName = component.name;
-    var directiveName = ref.directiveName; if ( directiveName === void 0 ) directiveName = 'currency';
-    var globalOptions = ref.globalOptions; if ( globalOptions === void 0 ) globalOptions = {};
-    Vue.component(componentName, component);
-    Vue.directive(directiveName, directive);
-    Vue.prototype.$ci = {
-      parse: function (formattedValue, options) { return parse(formattedValue, Object.assign({}, globalOptions, options)); },
-      getValue: getValue,
-      setValue: setValue,
-      globalOptions: globalOptions
-    };
-  }
-};
-
-if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.use(plugin);
-}
-
-/* harmony default export */ __webpack_exports__["default"] = (plugin);
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=template&id=4b74e8c6&":
-/*!**************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=template&id=4b74e8c6& ***!
-  \**************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Contact/index.vue?vue&type=template&id=6c9f31ca&scoped=true&":
+/*!***********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Contact/index.vue?vue&type=template&id=6c9f31ca&scoped=true& ***!
+  \***********************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2414,702 +3282,172 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("Layout", [
-    _c(
-      "div",
-      [
-        _c(
-          "div",
-          {
-            staticClass:
-              "jumbotron jumbotron-sm jumbotron-fluid mb-0 pb-1 bg-secondary position-relative"
-          },
-          [
-            _c("div", { staticClass: "container-fluid text-white h-100" }, [
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "d-lg-flex align-items-center justify-content-between text-center pl-lg-5"
-                },
-                [
-                  _c("div", { staticClass: "col pt-2 pb-4" }, [
-                    _c("h1", { staticClass: "display-3" }, [
-                      _vm._v("Kredit Simulasi")
-                    ]),
-                    _vm._v(" "),
-                    _c("h5", { staticClass: "font-weight-light mb-4" }, [
-                      _vm._v(
-                        "\n              Gunakan kalkulator pintar untuk membantu perhitungan kredit\n              Anda.\n            "
-                      )
-                    ])
-                  ]),
-                  _vm._v(" "),
-                  _c(
-                    "div",
-                    {
-                      staticClass:
-                        "col align-self-bottom justify-content-center"
-                    },
-                    [_c("CreditSVG")],
-                    1
-                  )
-                ]
-              )
-            ])
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "container mt-4" },
-          [
+    _c("section", { staticClass: "pt-5 pb-5" }, [
+      _c("div", { staticClass: "pb-5 container" }, [
+        _c("div", { attrs: { "data-aos": "fade-down" } }, [
+          _c("h2", { staticClass: "text-center text-secondary" }, [
+            _c("strong", [_vm._v("Sinarmas Hana Finance")])
+          ]),
+          _vm._v(" "),
+          _c("hr", { staticClass: "border-secondary" }),
+          _vm._v(" "),
+          _c("p", [
+            _vm._v(
+              "\n          PT Sinarmas Hana Finance adalah perusahaan Gabungan antara PT\n          SinarMas Multiartha Tbk dengan Hana Financial Group yang berbasis di\n          Korea Selatan.\n        "
+            )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row mt-4" }, [
             _c(
-              "form-wizard",
-              {
-                attrs: {
-                  title: "Form Perhitungan Kredit",
-                  subtitle: "",
-                  validateOnBack: false
-                },
-                on: { "on-validate": _vm.handleValidation }
-              },
+              "div",
+              { staticClass: "col" },
               [
-                _c(
-                  "tab-content",
-                  {
-                    attrs: {
-                      title: "Pilih Kredit yang diinginkan",
-                      icon: "fa fa-car"
-                    }
-                  },
-                  [
-                    _c(
-                      "div",
-                      { staticClass: "container mt-4" },
-                      [
-                        _c("h4", { staticClass: "text-secondary" }, [
-                          _c(
-                            "div",
-                            {
-                              staticClass:
-                                "iconbox iconsmall rounded-circle mr-2"
-                            },
-                            [_c("i", { staticClass: "fas fa-coins" })]
-                          ),
-                          _vm._v(
-                            "\n              Perhitungan Kredit yang di inginkan\n            "
-                          )
-                        ]),
-                        _vm._v(" "),
-                        _c(
-                          "b-container",
-                          { staticClass: "bv-example-row mb-4 mt-4" },
-                          [
-                            _c(
-                              "b-card-group",
-                              { attrs: { deck: "" } },
-                              [
-                                _c(
-                                  "b-link",
-                                  {
-                                    staticClass: "card text-white",
-                                    class:
-                                      _vm.jenisSimulasi == 1
-                                        ? "bg-primary overlay shadow-lg"
-                                        : "bg-dark",
-                                    attrs: { href: "#" },
-                                    on: {
-                                      click: function($event) {
-                                        $event.preventDefault()
-                                        return _vm.pilihJenisSimulasi(1)
-                                      }
-                                    }
-                                  },
-                                  [
-                                    _c("b-card-body", [
-                                      _c("h4", [
-                                        _vm._v(
-                                          "\n                      Refinance\n                      "
-                                        ),
-                                        _c(
-                                          "span",
-                                          { staticClass: "float-right" },
-                                          [
-                                            _c("i", {
-                                              staticClass: "fas fa-coins"
-                                            })
-                                          ]
-                                        )
-                                      ])
-                                    ])
-                                  ],
-                                  1
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "b-link",
-                                  {
-                                    staticClass: "card text-white",
-                                    class:
-                                      _vm.jenisSimulasi == 2
-                                        ? "bg-primary overlay shadow-lg"
-                                        : "bg-dark",
-                                    attrs: { href: "#" },
-                                    on: {
-                                      click: function($event) {
-                                        $event.preventDefault()
-                                        return _vm.pilihJenisSimulasi(2)
-                                      }
-                                    }
-                                  },
-                                  [
-                                    _c("b-card-body", [
-                                      _c("h4", [
-                                        _vm._v(
-                                          "\n                      Used Car\n                      "
-                                        ),
-                                        _c(
-                                          "span",
-                                          { staticClass: "float-right" },
-                                          [
-                                            _c("i", {
-                                              staticClass: "fas fa-car"
-                                            })
-                                          ]
-                                        )
-                                      ])
-                                    ])
-                                  ],
-                                  1
-                                )
-                              ],
-                              1
-                            )
-                          ],
-                          1
-                        )
-                      ],
-                      1
-                    )
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "tab-content",
-                  {
-                    attrs: {
-                      title: "Data Simulasi",
-                      icon: "fas fa-file-alt",
-                      "before-change": _vm.validateSimulasi
-                    }
-                  },
-                  [
-                    _c("b-form", { staticClass: "mt-4" }, [
-                      _vm.jenisSimulasi == 1
-                        ? _c(
-                            "div",
-                            [
-                              _c(
-                                "b-form-group",
-                                {
-                                  attrs: {
-                                    id: "input-group-2",
-                                    label: "TJH:",
-                                    "label-for": "input-2"
-                                  }
-                                },
-                                [
-                                  _c("b-form-select", {
-                                    attrs: {
-                                      id: "input-2",
-                                      options: _vm.itemtjh,
-                                      required: ""
-                                    },
-                                    model: {
-                                      value: _vm.formbudget.tjh,
-                                      callback: function($$v) {
-                                        _vm.$set(_vm.formbudget, "tjh", $$v)
-                                      },
-                                      expression: "formbudget.tjh"
-                                    }
-                                  })
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "b-form-group",
-                                {
-                                  attrs: {
-                                    id: "input-group-3",
-                                    label: "Jenis Simulasi Budget:",
-                                    "label-for": "input-3"
-                                  }
-                                },
-                                [
-                                  _c("b-form-select", {
-                                    attrs: {
-                                      id: "input-3",
-                                      options: _vm.itembudget,
-                                      required: ""
-                                    },
-                                    model: {
-                                      value: _vm.formbudget.jenisBudget,
-                                      callback: function($$v) {
-                                        _vm.$set(
-                                          _vm.formbudget,
-                                          "jenisBudget",
-                                          $$v
-                                        )
-                                      },
-                                      expression: "formbudget.jenisBudget"
-                                    }
-                                  })
-                                ],
-                                1
-                              )
-                            ],
-                            1
-                          )
-                        : _vm.jenisSimulasi == 2
-                        ? _c(
-                            "div",
-                            [
-                              _c(
-                                "b-form-group",
-                                {
-                                  attrs: {
-                                    label: "Harga Kendaraan:",
-                                    "label-for": "input-harga",
-                                    "invalid-feedback": _vm.errormsg.harga,
-                                    state: _vm.errormsg.harga && false
-                                  }
-                                },
-                                [
-                                  _c(
-                                    "b-input-group",
-                                    { attrs: { size: "lg", prepend: "IDR" } },
-                                    [
-                                      _c("b-form-input", {
-                                        directives: [
-                                          {
-                                            name: "currency",
-                                            rawName: "v-currency",
-                                            value: _vm.optioncurrency,
-                                            expression: "optioncurrency"
-                                          }
-                                        ],
-                                        attrs: {
-                                          id: "input-harga",
-                                          required: "",
-                                          state: _vm.errormsg.harga && false,
-                                          placeholder: "Masukan Harga Kendaraan"
-                                        },
-                                        model: {
-                                          value: _vm.formusedcar.harga,
-                                          callback: function($$v) {
-                                            _vm.$set(
-                                              _vm.formusedcar,
-                                              "harga",
-                                              $$v
-                                            )
-                                          },
-                                          expression: "formusedcar.harga"
-                                        }
-                                      })
-                                    ],
-                                    1
-                                  )
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "b-form-group",
-                                {
-                                  attrs: {
-                                    label: "Uang Muka:",
-                                    "label-for": "input-uang-muka"
-                                  }
-                                },
-                                [
-                                  _c(
-                                    "b-input-group",
-                                    {
-                                      attrs: {
-                                        size: "lg",
-                                        prepend: "DP Persen",
-                                        append: _vm._f("numberIdr")(
-                                          _vm.formusedcar.dprupiah
-                                        )
-                                      }
-                                    },
-                                    [
-                                      _c(
-                                        "b-input-group-append",
-                                        [
-                                          _c("b-form-input", {
-                                            attrs: {
-                                              size: "lg",
-                                              type: "number",
-                                              min: "30",
-                                              max: "100",
-                                              id: "input-dp-percen",
-                                              required: "",
-                                              placeholder: "Masukan Uang Muka"
-                                            },
-                                            on: {
-                                              blur: function($event) {
-                                                return _vm.checkdp($event)
-                                              }
-                                            },
-                                            model: {
-                                              value: _vm.formusedcar.dp,
-                                              callback: function($$v) {
-                                                _vm.$set(
-                                                  _vm.formusedcar,
-                                                  "dp",
-                                                  $$v
-                                                )
-                                              },
-                                              expression: "formusedcar.dp"
-                                            }
-                                          })
-                                        ],
-                                        1
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "b-input-group-append",
-                                        [
-                                          _c("b-input-group-text", [
-                                            _c("strong", [_vm._v("%")])
-                                          ])
-                                        ],
-                                        1
-                                      )
-                                    ],
-                                    1
-                                  )
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "b-form-group",
-                                {
-                                  attrs: {
-                                    label: "Asuransi:",
-                                    "label-for": "input-asuransi",
-                                    "invalid-feedback": _vm.errormsg.asuransi,
-                                    state: _vm.errormsg.asuransi && false
-                                  }
-                                },
-                                [
-                                  _c("b-form-select", {
-                                    attrs: {
-                                      size: "lg",
-                                      state: _vm.errormsg.asuransi && false,
-                                      required: "",
-                                      options: _vm.optasuransi
-                                    },
-                                    model: {
-                                      value: _vm.formusedcar.asuransi,
-                                      callback: function($$v) {
-                                        _vm.$set(
-                                          _vm.formusedcar,
-                                          "asuransi",
-                                          $$v
-                                        )
-                                      },
-                                      expression: "formusedcar.asuransi"
-                                    }
-                                  })
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "b-form-group",
-                                {
-                                  attrs: {
-                                    label: "Tahun kendaraan:",
-                                    "label-for": "input-tahun"
-                                  }
-                                },
-                                [
-                                  _c("datepicker", {
-                                    attrs: {
-                                      value: _vm.cfgdatepicker.default,
-                                      format: _vm.cfgdatepicker.format,
-                                      "minimum-view": "year",
-                                      "disabled-dates":
-                                        _vm.cfgdatepicker.disabledDates,
-                                      name: "datepicker",
-                                      "aria-label": "Large",
-                                      "aria-describedby":
-                                        "inputGroup-sizing-lg",
-                                      "input-class": "form-control"
-                                    },
-                                    model: {
-                                      value: _vm.formusedcar.tahun,
-                                      callback: function($$v) {
-                                        _vm.$set(_vm.formusedcar, "tahun", $$v)
-                                      },
-                                      expression: "formusedcar.tahun"
-                                    }
-                                  })
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "b-form-group",
-                                {
-                                  attrs: {
-                                    label: "Tenor:",
-                                    "label-for": "input-harga",
-                                    "invalid-feedback": _vm.errormsg.tenor,
-                                    state: _vm.errormsg.tenor && false
-                                  }
-                                },
-                                [
-                                  _c("b-form-select", {
-                                    attrs: {
-                                      size: "lg",
-                                      state: _vm.errormsg.tenor && false,
-                                      required: "",
-                                      options: _vm.opttenor
-                                    },
-                                    model: {
-                                      value: _vm.formusedcar.tenor,
-                                      callback: function($$v) {
-                                        _vm.$set(_vm.formusedcar, "tenor", $$v)
-                                      },
-                                      expression: "formusedcar.tenor"
-                                    }
-                                  })
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "b-form-group",
-                                {
-                                  attrs: {
-                                    label: "Wilayah:",
-                                    "label-for": "input-harga",
-                                    "invalid-feedback": _vm.errormsg.wilayah,
-                                    state: _vm.errormsg.wilayah && false
-                                  }
-                                },
-                                [
-                                  _c("b-form-select", {
-                                    attrs: {
-                                      size: "lg",
-                                      state: _vm.errormsg.wilayah && false,
-                                      required: "",
-                                      options: _vm.optwilayah
-                                    },
-                                    model: {
-                                      value: _vm.formusedcar.wilayah,
-                                      callback: function($$v) {
-                                        _vm.$set(
-                                          _vm.formusedcar,
-                                          "wilayah",
-                                          $$v
-                                        )
-                                      },
-                                      expression: "formusedcar.wilayah"
-                                    }
-                                  })
-                                ],
-                                1
-                              )
-                            ],
-                            1
-                          )
-                        : _vm._e()
-                    ])
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "tab-content",
-                  {
-                    attrs: {
-                      title: "Rangkuman Simulasi Kredit",
-                      icon: "fas fa-money-check"
-                    }
-                  },
-                  [
-                    _c("div", { staticClass: "container" }, [
-                      _c(
-                        "div",
-                        { staticClass: "row row-grid align-items-center" },
-                        [
-                          _c("div", { staticClass: "col-md-12 order-md-1" }, [
-                            _c("div", { staticClass: "pr-md-5" }, [
-                              _c("h3", [_vm._v("Rangkuman Simulasi Kredit")]),
-                              _vm._v(" "),
-                              _c("p", { staticClass: "text-muted mt-3" }, [
-                                _vm._v(
-                                  "\n                                Minimal DP Kondisi Kendaraan Used adalah 30%\n                          "
-                                )
-                              ]),
-                              _vm._v(" "),
-                              _c(
-                                "table",
-                                { staticClass: "table table-borderless" },
-                                [
-                                  _c("tbody", [
-                                    _c("tr", [
-                                      _c("td", [
-                                        _c("h5", { staticClass: "mb-0" }, [
-                                          _vm._v("Tenor")
-                                        ])
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("td", [
-                                        _c("h5", { staticClass: "mb-0" }, [
-                                          _vm._v(
-                                            _vm._s(_vm.formusedcar.tenor) +
-                                              " Bulan"
-                                          )
-                                        ])
-                                      ])
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("tr", [
-                                      _c("td", [
-                                        _c("h5", { staticClass: "mb-0" }, [
-                                          _vm._v("Dp")
-                                        ])
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("td", [
-                                        _c("h5", { staticClass: "mb-0" }, [
-                                          _vm._v(
-                                            _vm._s(_vm.formusedcar.dp) + " %"
-                                          )
-                                        ])
-                                      ])
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("tr", [
-                                      _c("td", [
-                                        _c("h5", { staticClass: "mb-0" }, [
-                                          _c("strong", [_vm._v("Angsuran")])
-                                        ])
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("td", [
-                                        _c("h5", { staticClass: "mb-0" }, [
-                                          _c("strong", [
-                                            _vm._v(
-                                              _vm._s(
-                                                _vm._f("numberIdr")(
-                                                  _vm.formusedcar.angsuran
-                                                )
-                                              )
-                                            )
-                                          ])
-                                        ])
-                                      ])
-                                    ]),
-                                    _vm._v(" "),
-                                    _c("tr", [
-                                      _c("td", [
-                                        _c("h5", { staticClass: "mb-0" }, [
-                                          _c("strong", [
-                                            _vm._v("Total Bayar Pertama")
-                                          ])
-                                        ])
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("td", [
-                                        _c("h5", { staticClass: "mb-0" }, [
-                                          _c("strong", [
-                                            _vm._v(
-                                              _vm._s(
-                                                _vm._f("numberIdr")(
-                                                  _vm.formusedcar.totalbayar1
-                                                )
-                                              )
-                                            )
-                                          ])
-                                        ])
-                                      ])
-                                    ])
-                                  ])
-                                ]
-                              ),
-                              _vm._v(" "),
-                              _c("p", { staticClass: "text-muted" }, [
-                                _vm._v(
-                                  "Rincian simulasi diatas bersifat estimasi dan tidak mengikat dan dapat berubah sewaktu-waktu mengikuti kebijakan yang berlaku. Perhitungan diatas sudah termasuk biaya administrasi, fiducia, asuransi kendaraan serta credit shield. Untuk perhitungan detail, hubungi cabang Sinarmas Hana Finance terdekat."
-                                )
-                              ])
-                            ])
-                          ])
-                        ]
-                      )
-                    ])
-                  ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "b-button",
-                  {
-                    attrs: { slot: "prev", variant: "secondary" },
-                    slot: "prev"
-                  },
-                  [_vm._v("Prev")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "b-button",
-                  {
-                    attrs: {
-                      slot: "next",
-                      variant: "primary",
-                      disabled: !_vm.jenisSimulasi
-                    },
-                    slot: "next"
-                  },
-                  [_vm._v("Next")]
-                ),
-                _vm._v(" "),
-                _c(
-                  "b-button",
-                  {
-                    directives: [
-                      {
-                        name: "b-modal",
-                        rawName: "v-b-modal.modal-pengajuan",
-                        modifiers: { "modal-pengajuan": true }
-                      }
-                    ],
-                    staticClass: "btn-lg",
-                    attrs: { slot: "finish", variant: "danger" },
-                    slot: "finish"
-                  },
-                  [_vm._v("Ajukan Sekarang")]
-                )
+                _c("hana-map", {
+                  staticClass: "hana-map",
+                  attrs: { datamarkers: _vm.data_offices }
+                })
               ],
               1
             )
-          ],
-          1
-        ),
-        _vm._v(" "),
-        _c("modal-form-pengajuan", { attrs: { databranch: _vm.databranch } }),
-        _vm._v(" "),
-        _c("flash-msg")
-      ],
-      1
-    )
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "row mt-4" }, [
+            _c("div", { staticClass: "mt-2 col-md-6 col-lg-6" }, [
+              _c("h4", { staticClass: "text-primary" }, [
+                _vm._v("\n              Jam Kerja\n              "),
+                _c("i", {
+                  staticClass: "fa fa-clock",
+                  attrs: { "aria-hidden": "true" }
+                })
+              ]),
+              _vm._v(" "),
+              _c("table", { staticClass: "table table-borderless" }, [
+                _c("tbody", [
+                  _c("tr", [
+                    _c("td", [_vm._v("Pusat")]),
+                    _vm._v(" "),
+                    _c("td", [_vm._v("Senin - Jum'at : 8.00-17.00 WIB")]),
+                    _vm._v(" "),
+                    _c("td")
+                  ]),
+                  _vm._v(" "),
+                  _c("tr", [
+                    _c("td", [_vm._v("Cabang")]),
+                    _vm._v(" "),
+                    _c("td", [
+                      _vm._v(
+                        "Senin - Jum'at : 8.30-16.30 WIB Sabtu : 8.30-14.30"
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("td")
+                  ])
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "mt-2 col-md-6 col-lg-6" },
+              [
+                _c("div", { staticClass: "mb-5" }, [
+                  _c("h4", { staticClass: "text-primary" }, [
+                    _vm._v(
+                      "\n                Alamat Kantor Pusat\n                "
+                    ),
+                    _c("i", {
+                      staticClass: "fa fa-map-marker-alt",
+                      attrs: { "aria-hidden": "true" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("table", { staticClass: "table table-borderless" }, [
+                    _c("tbody", [
+                      _c("tr", [
+                        _c(
+                          "td",
+                          { staticClass: "py-0", attrs: { colspan: "4" } },
+                          [
+                            _vm._v(
+                              "Gedung Roxy Square Lt. 3 B 001 No. 02 Jl. Kyai Tapa No.1,\n                                    Tomang, Grogol Petamburan, Jakarta Barat 11440"
+                            )
+                          ]
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "py-0" }, [
+                          _c("b", [_vm._v("Email")])
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "py-0" }, [
+                          _vm._v("customercare@shf.co.id")
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "col-4" })
+                      ]),
+                      _vm._v(" "),
+                      _c("tr", [
+                        _c("td", { staticClass: "py-0" }, [
+                          _c("b", [_vm._v("Phone")])
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "py-0" }, [
+                          _vm._v("021-5695-4670")
+                        ]),
+                        _vm._v(" "),
+                        _c("td", { staticClass: "col-4" })
+                      ])
+                    ])
+                  ])
+                ]),
+                _vm._v(" "),
+                _vm._l(_vm.offices, function(item) {
+                  return _c("div", { key: item.id, staticClass: "mb-5" }, [
+                    _c("h4", { staticClass: "text-primary" }, [
+                      _vm._v(
+                        "\n                " +
+                          _vm._s(item.name) +
+                          "\n                "
+                      ),
+                      _c("i", {
+                        staticClass: "fa fa-map-marker-alt",
+                        attrs: { "aria-hidden": "true" }
+                      })
+                    ]),
+                    _vm._v(" "),
+                    _c("table", { staticClass: "table table-borderless" }, [
+                      _c("tbody", [
+                        _c("tr", [
+                          _c(
+                            "td",
+                            { staticClass: "py-0", attrs: { colspan: "4" } },
+                            [_vm._v(_vm._s(item.address))]
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("tr", [
+                          _c("td", { staticClass: "py-0" }, [
+                            _c("b", [_vm._v("Phone")])
+                          ]),
+                          _vm._v(" "),
+                          _c("td", { staticClass: "py-0" }, [
+                            _vm._v(_vm._s(item.telp))
+                          ]),
+                          _vm._v(" "),
+                          _c("td", { staticClass: "col-4" })
+                        ])
+                      ])
+                    ])
+                  ])
+                })
+              ],
+              2
+            )
+          ])
+        ])
+      ])
+    ])
   ])
 }
 var staticRenderFns = []
@@ -3449,395 +3787,6 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Shared/img/creditSVG.vue?vue&type=template&id=1501075a&":
-/*!************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Shared/img/creditSVG.vue?vue&type=template&id=1501075a& ***!
-  \************************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "svg",
-    {
-      attrs: {
-        id: "a139742c-031f-4297-9910-0b661ecf4262",
-        "data-name": "Layer 1",
-        xmlns: "http://www.w3.org/2000/svg",
-        width: "500",
-        height: "600",
-        viewBox: "0 0 700 600"
-      }
-    },
-    [
-      _c("title", [_vm._v("online_payments")]),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M214.1947,574.21548l-5.333-21.03429A273.135,273.135,0,0,0,179.8838,542.7848l-.67337,9.77549L176.48,541.79069c-12.212-3.48717-20.51983-5.02321-20.51983-5.02321s11.22195,42.67366,34.7592,75.29821l27.426,4.81755-21.30654,3.072a110.50245,110.50245,0,0,0,9.53073,10.10012c34.24,31.78207,72.377,46.36387,85.18129,32.5693s-4.57282-50.7417-38.81286-82.52378c-10.61474-9.85276-23.94912-17.75951-37.29675-23.98229Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#e6e6e6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M264.9155,551.37272l6.30738-20.76292a273.13329,273.13329,0,0,0-19.4325-23.8785l-5.6294,8.02019,3.22943-10.63063C240.73891,494.82328,234.421,489.214,234.421,489.214s-12.45157,42.33122-9.16631,82.42573l20.98773,18.30061-19.82728-8.3836a110.50442,110.50442,0,0,0,2.938,13.57259c12.88281,44.90561,37.99241,77.10132,56.0839,71.91112s22.31392-45.80088,9.43111-90.70649c-3.9938-13.92118-11.32161-27.58227-19.53123-39.80866Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#e6e6e6"
-        }
-      }),
-      _vm._v(" "),
-      _c("rect", {
-        attrs: {
-          x: "0.07971",
-          y: "487.64984",
-          width: "888",
-          height: "2.24072",
-          fill: "#3f3d56"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M296.338,438.128s-6.91528,83.14848-8.40005,100.9657a126.7102,126.7102,0,0,1-7.42384,32.66491s-2.96954,5.93908-2.96954,11.87815v75.7232s-5.93907,0-4.4543,5.93908,2.96953,16.33245,2.96953,16.33245h22.27153s-1.48476-4.4543,2.96954-5.93907,0-13.36292,0-13.36292l23.7563-89.08612,35.63445-74.23843s20.78676,66.81459,25.24107,74.23843c0,0,16.33245,83.14705,19.302,90.57089s4.4543,7.42384,2.96953,10.39338-1.48476,5.93907,0,7.42384,29.69538,0,29.69538,0l-7.42385-105.41857L417.11284,450.00754l-68.29936-20.78676Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#2f2e41"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M292.39227,669.7533s-7.42384-26.72583-19.302-5.93907-11.87815,28.2106-11.87815,28.2106-19.302,28.21061,7.42384,25.24107,20.78676-16.33245,20.78676-16.33245,10.39338-5.93908,10.39338-10.39338S292.39227,669.7533,292.39227,669.7533Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#2f2e41"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M412.65853,666.78377s7.42384-26.72584,19.302-5.93908,11.87815,28.21061,11.87815,28.21061,19.302,28.2106-7.42384,25.24106-20.78676-16.33245-20.78676-16.33245-10.39338-5.93908-10.39338-10.39338S412.65853,666.78377,412.65853,666.78377Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#2f2e41"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M342.8744,237.68563s2.96954,19.302-5.93907,23.75629,19.302,20.78677,26.72584,20.78677S384.44793,267.381,384.44793,267.381s-7.42385-22.27153-5.93908-26.72584Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#a0616a"
-        }
-      }),
-      _vm._v(" "),
-      _c("circle", {
-        attrs: {
-          cx: "203.24671",
-          cy: "38.83808",
-          r: "31.18014",
-          fill: "#a0616a"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M420.08237,285.19822l-37.118-22.4886s-21.1191,23.97337-43.96746-2.75246l-39.18081,10.39338,5.93908,100.96426s-8.90861,40.08876-5.93908,47.5126-7.42384,10.39338-4.4543,11.87815,0,11.87815,0,11.87815,57.906,29.69537,121.751,7.42384l-5.93908-19.302a15.58017,15.58017,0,0,0-2.96954-14.84769s5.93908-8.90861-1.48476-16.33245c0,0,2.96953-13.36292-4.45431-19.302l-1.48477-20.78676,4.45431-10.39338Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#cfcce0"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M343.24976,206.87536s-3.7173,8.04469,11.15192,4.82681c0,0,5.576,3.21788,5.576-1.60893,0,0,7.43461,8.04469,9.29326,3.21787s5.576,1.60894,5.576,1.60894l3.7173-8.04469,3.71731,4.82681H395.292s3.7173-32.17875-40.89036-28.96087-22.663,54.20194-22.663,54.20194.35921-9.15169,4.07651-4.32487S343.24976,206.87536,343.24976,206.87536Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#2f2e41"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M433.44529,344.589l1.48477,31.18014s5.93908,57.906-5.93907,83.147v13.36291s-2.96954,34.14968-17.81723,32.66491,4.45431-48.99736,4.45431-48.99736l-2.96954-65.32982L409.689,353.49758Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#a0616a"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M403.74992,286.683l14.81131-2.40638a72.31337,72.31337,0,0,1,20.82314,38.04083c4.4543,23.7563,5.93907,28.2106,5.93907,28.2106L409.689,359.43666l-19.302-37.11922Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#cfcce0"
-        }
-      }),
-      _vm._v(" "),
-      _c("rect", {
-        attrs: {
-          x: "184.01662",
-          y: "87.22321",
-          width: "234.31056",
-          height: "116.39453",
-          fill: "#fff"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M365.56206,276.73782c-6.01967-3.62-13.278-3.3435-16.0373-3.067,1.05081,2.56549,4.20371,9.10919,10.22338,12.731,6.03437,3.62916,13.28306,3.34441,16.03823,3.06977C374.736,286.907,371.58266,280.36056,365.56206,276.73782Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M393.84906,348.57067H356.22553a8.4653,8.4653,0,1,0,0,16.93059h37.62353a8.4653,8.4653,0,1,0,0-16.93059Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M564.22146,259.21477H353.27787A18.68583,18.68583,0,0,0,334.592,277.90064V380.67657a18.68587,18.68587,0,0,0,18.68587,18.68587H564.22146a18.68587,18.68587,0,0,0,18.68587-18.68587V277.90064A18.68583,18.68583,0,0,0,564.22146,259.21477ZM348.05876,271.9614c.41656-.07532,10.29412-1.75626,18.47328,3.1653,8.17871,4.92063,11.32105,14.43582,11.45057,14.83815l.33067,1.026-1.06138.1883a28.17463,28.17463,0,0,1-4.57756.33619,27.25632,27.25632,0,0,1-13.89618-3.50241c-8.17871-4.91972-11.32059-14.43491-11.4501-14.83723l-.33068-1.026Zm45.7903,95.421H356.22553a10.34647,10.34647,0,0,1,0-20.69294h37.62353a10.34647,10.34647,0,1,1,0,20.69294Zm171.18709-1.88117a11.32027,11.32027,0,0,1-11.28706,11.28706H525.53144a11.32027,11.32027,0,0,1-11.28706-11.28706V348.57067a11.32023,11.32023,0,0,1,11.28706-11.28706h28.21765a11.32023,11.32023,0,0,1,11.28706,11.28706Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M534.467,362.2092H522.23938a3.29206,3.29206,0,0,0,0,6.58412H534.467a3.29206,3.29206,0,0,0,0-6.58412Zm0,4.70294H522.23938a1.41089,1.41089,0,1,1,0-2.82177H534.467a1.41089,1.41089,0,0,1,0,2.82177Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M557.04115,362.2092H544.8135a3.29206,3.29206,0,0,0,0,6.58412h12.22765a3.29206,3.29206,0,0,0,0-6.58412Zm0,4.70294H544.8135a1.41089,1.41089,0,1,1,0-2.82177h12.22765a1.41089,1.41089,0,0,1,0,2.82177Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M534.467,353.7439H522.23938a3.29206,3.29206,0,0,0,0,6.58412H534.467a3.29206,3.29206,0,0,0,0-6.58412Zm0,4.70294H522.23938a1.41088,1.41088,0,1,1,0-2.82176H534.467a1.41088,1.41088,0,1,1,0,2.82176Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M557.04115,353.7439H544.8135a3.29206,3.29206,0,0,0,0,6.58412h12.22765a3.29206,3.29206,0,0,0,0-6.58412Zm0,4.70294H544.8135a1.41088,1.41088,0,1,1,0-2.82176h12.22765a1.41088,1.41088,0,1,1,0,2.82176Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M534.467,345.27861H522.23938a3.29206,3.29206,0,0,0,0,6.58412H534.467a3.29206,3.29206,0,0,0,0-6.58412Zm0,4.70294H522.23938a1.41089,1.41089,0,1,1,0-2.82177H534.467a1.41089,1.41089,0,0,1,0,2.82177Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M557.04115,345.27861H544.8135a3.29206,3.29206,0,0,0,0,6.58412h12.22765a3.29206,3.29206,0,0,0,0-6.58412Zm0,4.70294H544.8135a1.41089,1.41089,0,1,1,0-2.82177h12.22765a1.41089,1.41089,0,0,1,0,2.82177Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M277.54458,326.77175s-13.36291,56.4212,2.96954,56.4212,54.93644-63.84505,54.93644-63.84505,40.08875-20.78676,23.7563-28.2106-37.11922,11.87815-37.11922,11.87815l-23.985,33.29991-1.2561-16.96746Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#a0616a"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M308.72473,279.25915l-8.90862-8.90861s-17.81722,10.39338-19.302,20.78676-8.90861,43.05829-8.90861,43.05829l27.46822,2.22715,8.90861-13.36292Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#cfcce0"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M730.74286,258.1379c-1.11855-3.30279-15.14535-14.52981-6.55009-16.41686l7.04866,9.39858,32.40661-32.406,3.25929,3.25929Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M730.74286,368.33187c-1.11855-3.30278-15.14535-14.5298-6.55009-16.41685l7.04866,9.39858,32.40661-32.406,3.25929,3.25929Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M730.74286,480.10005c-1.11855-3.30278-15.14535-14.5298-6.55009-16.41685l7.04866,9.39858,32.40661-32.406,3.25929,3.25928Z",
-          transform: "translate(-155.96015 -182.5151)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("circle", {
-        attrs: { cx: "672.94144", cy: "62.22326", r: "10", fill: "#3f3d56" }
-      }),
-      _vm._v(" "),
-      _c("rect", {
-        attrs: {
-          x: "710.44122",
-          y: "61.22319",
-          width: "161",
-          height: "2",
-          fill: "#3f3d56"
-        }
-      }),
-      _vm._v(" "),
-      _c("circle", {
-        attrs: { cx: "672.94144", cy: "172.41724", r: "10", fill: "#3f3d56" }
-      }),
-      _vm._v(" "),
-      _c("rect", {
-        attrs: {
-          x: "710.44122",
-          y: "171.41703",
-          width: "161",
-          height: "2",
-          fill: "#3f3d56"
-        }
-      }),
-      _vm._v(" "),
-      _c("circle", {
-        attrs: { cx: "672.94144", cy: "284.18542", r: "10", fill: "#3f3d56" }
-      }),
-      _vm._v(" "),
-      _c("rect", {
-        attrs: {
-          x: "710.44122",
-          y: "283.1851",
-          width: "161",
-          height: "2",
-          fill: "#3f3d56"
-        }
-      }),
-      _vm._v(" "),
-      _c("polygon", {
-        attrs: {
-          points:
-            "600.04 312.485 550.04 312.485 550.04 261.485 584.04 261.485 584.04 263.485 552.04 263.485 552.04 310.485 598.04 310.485 598.04 287.485 600.04 287.485 600.04 312.485",
-          fill: "#3f3d56"
-        }
-      }),
-      _vm._v(" "),
-      _c("polygon", {
-        attrs: {
-          points:
-            "600.04 200.485 550.04 200.485 550.04 149.485 584.04 149.485 584.04 151.485 552.04 151.485 552.04 198.485 598.04 198.485 598.04 175.485 600.04 175.485 600.04 200.485",
-          fill: "#3f3d56"
-        }
-      }),
-      _vm._v(" "),
-      _c("polygon", {
-        attrs: {
-          points:
-            "600.04 86.485 550.04 86.485 550.04 35.485 584.04 35.485 584.04 37.485 552.04 37.485 552.04 84.485 598.04 84.485 598.04 61.485 600.04 61.485 600.04 86.485",
-          fill: "#3f3d56"
-        }
-      })
-    ]
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Alert.vue?vue&type=template&id=7b2bf401&":
-/*!********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Alert.vue?vue&type=template&id=7b2bf401& ***!
-  \********************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "b-alert",
-    {
-      staticClass: "position-fixed fixed-bottom m-0 rounded-0",
-      staticStyle: { "z-index": "2000" },
-      attrs: { dismissible: "", fade: "", variant: "dark" },
-      model: {
-        value: _vm.dismissCountDown,
-        callback: function($$v) {
-          _vm.dismissCountDown = $$v
-        },
-        expression: "dismissCountDown"
-      }
-    },
-    [_vm._v("\n    " + _vm._s(_vm.msg) + "\n")]
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-
-
-
-/***/ }),
-
 /***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Footer.vue?vue&type=template&id=61a7c374&scoped=true&":
 /*!*********************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Footer.vue?vue&type=template&id=61a7c374&scoped=true& ***!
@@ -3979,10 +3928,10 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ModalFormPengajuan.vue?vue&type=template&id=e2fee0f6&":
-/*!*********************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ModalFormPengajuan.vue?vue&type=template&id=e2fee0f6& ***!
-  \*********************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/GoogleMapLoader.vue?vue&type=template&id=8216208a&scoped=true&":
+/*!******************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/GoogleMapLoader.vue?vue&type=template&id=8216208a&scoped=true& ***!
+  \******************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -3997,305 +3946,61 @@ var render = function() {
   return _c(
     "div",
     [
-      _c(
-        "b-modal",
-        {
-          attrs: {
-            id: "modal-pengajuan",
-            title: "From Pengajuan",
-            size: "lg",
-            "hide-footer": ""
-          }
-        },
-        [
-          _vm.show
-            ? _c(
-                "b-form",
-                {
-                  on: {
-                    submit: function($event) {
-                      $event.preventDefault()
-                      return _vm.onSubmit($event)
-                    },
-                    reset: function($event) {
-                      $event.preventDefault()
-                      return _vm.resetForm($event)
-                    }
-                  }
-                },
-                [
-                  _c(
-                    "b-form-group",
-                    {
-                      attrs: {
-                        id: "input-group-1",
-                        label: "Alamat Email:",
-                        "label-for": "input-1"
-                      }
-                    },
-                    [
-                      _c("b-form-input", {
-                        attrs: {
-                          id: "input-1",
-                          type: "email",
-                          required: "",
-                          placeholder: "Email"
-                        },
-                        model: {
-                          value: _vm.form.email,
-                          callback: function($$v) {
-                            _vm.$set(_vm.form, "email", $$v)
-                          },
-                          expression: "form.email"
-                        }
-                      })
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-form-group",
-                    {
-                      attrs: {
-                        id: "input-group-2",
-                        label: "Nama Depan:",
-                        "label-for": "input-2"
-                      }
-                    },
-                    [
-                      _c("b-form-input", {
-                        attrs: {
-                          id: "input-2",
-                          type: "text",
-                          required: "",
-                          placeholder: "Nama depan"
-                        },
-                        model: {
-                          value: _vm.form.firstname,
-                          callback: function($$v) {
-                            _vm.$set(_vm.form, "firstname", $$v)
-                          },
-                          expression: "form.firstname"
-                        }
-                      })
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-form-group",
-                    {
-                      attrs: {
-                        id: "input-group-2",
-                        label: "Nama Belakang:",
-                        "label-for": "input-2"
-                      }
-                    },
-                    [
-                      _c("b-form-input", {
-                        attrs: {
-                          id: "input-2",
-                          type: "text",
-                          required: "",
-                          placeholder: "Nama Belakang"
-                        },
-                        model: {
-                          value: _vm.form.lastname,
-                          callback: function($$v) {
-                            _vm.$set(_vm.form, "lastname", $$v)
-                          },
-                          expression: "form.lastname"
-                        }
-                      })
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-form-group",
-                    {
-                      attrs: {
-                        id: "input-group-2",
-                        label: "Nomor Telepon:",
-                        "label-for": "input-2"
-                      }
-                    },
-                    [
-                      _c("b-form-input", {
-                        attrs: {
-                          id: "input-2",
-                          type: "tel",
-                          required: "",
-                          placeholder: "Nomor Telepon"
-                        },
-                        model: {
-                          value: _vm.form.no_telp,
-                          callback: function($$v) {
-                            _vm.$set(_vm.form, "no_telp", $$v)
-                          },
-                          expression: "form.no_telp"
-                        }
-                      })
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-form-group",
-                    {
-                      attrs: {
-                        id: "input-group-3",
-                        label: "Cabang:",
-                        "label-for": "input-3"
-                      }
-                    },
-                    [
-                      _c("b-form-select", {
-                        attrs: {
-                          id: "input-3",
-                          options: _vm.branchs,
-                          required: ""
-                        },
-                        scopedSlots: _vm._u(
-                          [
-                            {
-                              key: "first",
-                              fn: function() {
-                                return [
-                                  _c(
-                                    "b-form-select-option",
-                                    { attrs: { value: null, disabled: "" } },
-                                    [_vm._v("-- Pilih Cabang --")]
-                                  )
-                                ]
-                              },
-                              proxy: true
-                            }
-                          ],
-                          null,
-                          false,
-                          881741252
-                        ),
-                        model: {
-                          value: _vm.form.branch,
-                          callback: function($$v) {
-                            _vm.$set(_vm.form, "branch", $$v)
-                          },
-                          expression: "form.branch"
-                        }
-                      })
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-form-group",
-                    {
-                      attrs: {
-                        id: "input-group-3",
-                        label: "Kategori:",
-                        "label-for": "input-3"
-                      }
-                    },
-                    [
-                      _c("b-form-select", {
-                        attrs: {
-                          id: "input-3",
-                          options: _vm.categories,
-                          required: ""
-                        },
-                        scopedSlots: _vm._u(
-                          [
-                            {
-                              key: "first",
-                              fn: function() {
-                                return [
-                                  _c(
-                                    "b-form-select-option",
-                                    { attrs: { value: null, disabled: "" } },
-                                    [_vm._v("-- Pilih Kategori --")]
-                                  )
-                                ]
-                              },
-                              proxy: true
-                            }
-                          ],
-                          null,
-                          false,
-                          1436664612
-                        ),
-                        model: {
-                          value: _vm.form.category,
-                          callback: function($$v) {
-                            _vm.$set(_vm.form, "category", $$v)
-                          },
-                          expression: "form.category"
-                        }
-                      })
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-form-group",
-                    {
-                      attrs: {
-                        id: "input-group-3",
-                        label: "Pesan Tambahan:",
-                        "label-for": "input-3"
-                      }
-                    },
-                    [
-                      _c("b-form-textarea", {
-                        attrs: {
-                          id: "textarea",
-                          placeholder: "Pesan Tambahan...",
-                          rows: "3",
-                          "max-rows": "6"
-                        },
-                        model: {
-                          value: _vm.form.text,
-                          callback: function($$v) {
-                            _vm.$set(_vm.form, "text", $$v)
-                          },
-                          expression: "form.text"
-                        }
-                      })
-                    ],
-                    1
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-button",
-                    {
-                      staticClass: "mt-3 btn-dark",
-                      attrs: { type: "reset" },
-                      on: {
-                        click: function($event) {
-                          return _vm.$bvModal.hide("modal-pengajuan")
-                        }
-                      }
-                    },
-                    [_vm._v("Cancel")]
-                  ),
-                  _vm._v(" "),
-                  _c(
-                    "b-button",
-                    {
-                      staticClass: "mt-3",
-                      attrs: { type: "submit", variant: "primary" }
-                    },
-                    [_vm._v("Submit")]
-                  )
-                ],
-                1
-              )
-            : _vm._e()
-        ],
-        1
-      )
+      _c("div", { ref: "googleMap", staticClass: "google-map" }),
+      _vm._v(" "),
+      Boolean(this.google) && Boolean(this.map)
+        ? [_vm._t("default", null, { google: _vm.google, map: _vm.map })]
+        : _vm._e()
     ],
-    1
+    2
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/HanaMap.vue?vue&type=template&id=e9e8f296&":
+/*!**********************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/HanaMap.vue?vue&type=template&id=e9e8f296& ***!
+  \**********************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "GoogleMapLoader",
+    {
+      attrs: {
+        mapConfig: _vm.mapConfig,
+        apiKey: "AIzaSyCRBUHbaB-2oIAEoLd3aNmab6kuq53cLms"
+      },
+      scopedSlots: _vm._u([
+        {
+          key: "default",
+          fn: function(ref) {
+            var google = ref.google
+            var map = ref.map
+            return _vm._l(_vm.markers, function(marker) {
+              return _c("GoogleMapMarker", {
+                key: marker.id,
+                attrs: { marker: marker, google: google, map: map }
+              })
+            })
+          }
+        }
+      ])
+    },
+    [_vm._v("\n// insert your google maps api key to render styled map\n  ")]
   )
 }
 var staticRenderFns = []
@@ -4459,7 +4164,11 @@ var render = function() {
                       "profile.about",
                       "profile.visimisi",
                       "profile.teammanagement",
-                      "profile.pemegangsaham"
+                      "profile.pemegangsaham",
+                      "profile.news",
+                      "profile.newsdetail",
+                      "profile.csrnews",
+                      "profile.csrnewsdetail"
                     )
                       ? "nav-item dropdown active"
                       : "nav-item dropdown"
@@ -4488,6 +4197,34 @@ var render = function() {
                         attrs: { "aria-labelledby": "navbarDropdown" }
                       },
                       [
+                        _c(
+                          "inertia-link",
+                          {
+                            class: _vm.isRoute(
+                              "profile.news",
+                              "profile.newsdetail"
+                            )
+                              ? "dropdown-item active"
+                              : "dropdown-item",
+                            attrs: { href: _vm.route("profile.news") }
+                          },
+                          [_vm._v("Berita")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "inertia-link",
+                          {
+                            class: _vm.isRoute(
+                              "profile.csrnews",
+                              "profile.csrnewsdetail"
+                            )
+                              ? "dropdown-item active"
+                              : "dropdown-item",
+                            attrs: { href: _vm.route("profile.csrnews") }
+                          },
+                          [_vm._v("Tanggung Jawab Sosial")]
+                        ),
+                        _vm._v(" "),
                         _c(
                           "inertia-link",
                           {
@@ -4535,25 +4272,6 @@ var render = function() {
                       1
                     )
                   ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "li",
-                  {
-                    staticClass: "cool-link",
-                    class: _vm.isRoute("news") ? "nav-item active" : "nav-item"
-                  },
-                  [
-                    _c(
-                      "inertia-link",
-                      {
-                        staticClass: "nav-link py-3",
-                        attrs: { href: _vm.route("news") }
-                      },
-                      [_vm._v("Berita")]
-                    )
-                  ],
-                  1
                 ),
                 _vm._v(" "),
                 _c(
@@ -4770,2468 +4488,20 @@ function normalizeComponent (
 
 /***/ }),
 
-/***/ "./node_modules/vuejs-datepicker/dist/vuejs-datepicker.esm.js":
-/*!********************************************************************!*\
-  !*** ./node_modules/vuejs-datepicker/dist/vuejs-datepicker.esm.js ***!
-  \********************************************************************/
+/***/ "./resources/js/Pages/Contact/index.vue":
+/*!**********************************************!*\
+  !*** ./resources/js/Pages/Contact/index.vue ***!
+  \**********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-function _typeof(obj) {
-  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
-    _typeof = function (obj) {
-      return typeof obj;
-    };
-  } else {
-    _typeof = function (obj) {
-      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
-    };
-  }
+/* harmony import */ var _index_vue_vue_type_template_id_6c9f31ca_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.vue?vue&type=template&id=6c9f31ca&scoped=true& */ "./resources/js/Pages/Contact/index.vue?vue&type=template&id=6c9f31ca&scoped=true&");
+/* harmony import */ var _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Contact/index.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _index_vue_vue_type_style_index_0_id_6c9f31ca_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index.vue?vue&type=style&index=0&id=6c9f31ca&lang=scss&scoped=true& */ "./resources/js/Pages/Contact/index.vue?vue&type=style&index=0&id=6c9f31ca&lang=scss&scoped=true&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
-  return _typeof(obj);
-}
-
-function _classCallCheck(instance, Constructor) {
-  if (!(instance instanceof Constructor)) {
-    throw new TypeError("Cannot call a class as a function");
-  }
-}
-
-function _defineProperties(target, props) {
-  for (var i = 0; i < props.length; i++) {
-    var descriptor = props[i];
-    descriptor.enumerable = descriptor.enumerable || false;
-    descriptor.configurable = true;
-    if ("value" in descriptor) descriptor.writable = true;
-    Object.defineProperty(target, descriptor.key, descriptor);
-  }
-}
-
-function _createClass(Constructor, protoProps, staticProps) {
-  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
-  if (staticProps) _defineProperties(Constructor, staticProps);
-  return Constructor;
-}
-
-function _defineProperty(obj, key, value) {
-  if (key in obj) {
-    Object.defineProperty(obj, key, {
-      value: value,
-      enumerable: true,
-      configurable: true,
-      writable: true
-    });
-  } else {
-    obj[key] = value;
-  }
-
-  return obj;
-}
-
-function _objectSpread(target) {
-  for (var i = 1; i < arguments.length; i++) {
-    var source = arguments[i] != null ? arguments[i] : {};
-    var ownKeys = Object.keys(source);
-
-    if (typeof Object.getOwnPropertySymbols === 'function') {
-      ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) {
-        return Object.getOwnPropertyDescriptor(source, sym).enumerable;
-      }));
-    }
-
-    ownKeys.forEach(function (key) {
-      _defineProperty(target, key, source[key]);
-    });
-  }
-
-  return target;
-}
-
-var Language =
-/*#__PURE__*/
-function () {
-  function Language(language, months, monthsAbbr, days) {
-    _classCallCheck(this, Language);
-
-    this.language = language;
-    this.months = months;
-    this.monthsAbbr = monthsAbbr;
-    this.days = days;
-    this.rtl = false;
-    this.ymd = false;
-    this.yearSuffix = '';
-  }
-
-  _createClass(Language, [{
-    key: "language",
-    get: function get() {
-      return this._language;
-    },
-    set: function set(language) {
-      if (typeof language !== 'string') {
-        throw new TypeError('Language must be a string');
-      }
-
-      this._language = language;
-    }
-  }, {
-    key: "months",
-    get: function get() {
-      return this._months;
-    },
-    set: function set(months) {
-      if (months.length !== 12) {
-        throw new RangeError("There must be 12 months for ".concat(this.language, " language"));
-      }
-
-      this._months = months;
-    }
-  }, {
-    key: "monthsAbbr",
-    get: function get() {
-      return this._monthsAbbr;
-    },
-    set: function set(monthsAbbr) {
-      if (monthsAbbr.length !== 12) {
-        throw new RangeError("There must be 12 abbreviated months for ".concat(this.language, " language"));
-      }
-
-      this._monthsAbbr = monthsAbbr;
-    }
-  }, {
-    key: "days",
-    get: function get() {
-      return this._days;
-    },
-    set: function set(days) {
-      if (days.length !== 7) {
-        throw new RangeError("There must be 7 days for ".concat(this.language, " language"));
-      }
-
-      this._days = days;
-    }
-  }]);
-
-  return Language;
-}(); // eslint-disable-next-line
-
-var en = new Language('English', ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'], ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'], ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']) // eslint-disable-next-line
-;
-
-var utils = {
-  /**
-   * @type {Boolean}
-   */
-  useUtc: false,
-
-  /**
-   * Returns the full year, using UTC or not
-   * @param {Date} date
-   */
-  getFullYear: function getFullYear(date) {
-    return this.useUtc ? date.getUTCFullYear() : date.getFullYear();
-  },
-
-  /**
-   * Returns the month, using UTC or not
-   * @param {Date} date
-   */
-  getMonth: function getMonth(date) {
-    return this.useUtc ? date.getUTCMonth() : date.getMonth();
-  },
-
-  /**
-   * Returns the date, using UTC or not
-   * @param {Date} date
-   */
-  getDate: function getDate(date) {
-    return this.useUtc ? date.getUTCDate() : date.getDate();
-  },
-
-  /**
-   * Returns the day, using UTC or not
-   * @param {Date} date
-   */
-  getDay: function getDay(date) {
-    return this.useUtc ? date.getUTCDay() : date.getDay();
-  },
-
-  /**
-   * Returns the hours, using UTC or not
-   * @param {Date} date
-   */
-  getHours: function getHours(date) {
-    return this.useUtc ? date.getUTCHours() : date.getHours();
-  },
-
-  /**
-   * Returns the minutes, using UTC or not
-   * @param {Date} date
-   */
-  getMinutes: function getMinutes(date) {
-    return this.useUtc ? date.getUTCMinutes() : date.getMinutes();
-  },
-
-  /**
-   * Sets the full year, using UTC or not
-   * @param {Date} date
-   */
-  setFullYear: function setFullYear(date, value, useUtc) {
-    return this.useUtc ? date.setUTCFullYear(value) : date.setFullYear(value);
-  },
-
-  /**
-   * Sets the month, using UTC or not
-   * @param {Date} date
-   */
-  setMonth: function setMonth(date, value, useUtc) {
-    return this.useUtc ? date.setUTCMonth(value) : date.setMonth(value);
-  },
-
-  /**
-   * Sets the date, using UTC or not
-   * @param {Date} date
-   * @param {Number} value
-   */
-  setDate: function setDate(date, value, useUtc) {
-    return this.useUtc ? date.setUTCDate(value) : date.setDate(value);
-  },
-
-  /**
-   * Check if date1 is equivalent to date2, without comparing the time
-   * @see https://stackoverflow.com/a/6202196/4455925
-   * @param {Date} date1
-   * @param {Date} date2
-   */
-  compareDates: function compareDates(date1, date2) {
-    var d1 = new Date(date1.getTime());
-    var d2 = new Date(date2.getTime());
-
-    if (this.useUtc) {
-      d1.setUTCHours(0, 0, 0, 0);
-      d2.setUTCHours(0, 0, 0, 0);
-    } else {
-      d1.setHours(0, 0, 0, 0);
-      d2.setHours(0, 0, 0, 0);
-    }
-
-    return d1.getTime() === d2.getTime();
-  },
-
-  /**
-   * Validates a date object
-   * @param {Date} date - an object instantiated with the new Date constructor
-   * @return {Boolean}
-   */
-  isValidDate: function isValidDate(date) {
-    if (Object.prototype.toString.call(date) !== '[object Date]') {
-      return false;
-    }
-
-    return !isNaN(date.getTime());
-  },
-
-  /**
-   * Return abbreviated week day name
-   * @param {Date}
-   * @param {Array}
-   * @return {String}
-   */
-  getDayNameAbbr: function getDayNameAbbr(date, days) {
-    if (_typeof(date) !== 'object') {
-      throw TypeError('Invalid Type');
-    }
-
-    return days[this.getDay(date)];
-  },
-
-  /**
-   * Return name of the month
-   * @param {Number|Date}
-   * @param {Array}
-   * @return {String}
-   */
-  getMonthName: function getMonthName(month, months) {
-    if (!months) {
-      throw Error('missing 2nd parameter Months array');
-    }
-
-    if (_typeof(month) === 'object') {
-      return months[this.getMonth(month)];
-    }
-
-    if (typeof month === 'number') {
-      return months[month];
-    }
-
-    throw TypeError('Invalid type');
-  },
-
-  /**
-   * Return an abbreviated version of the month
-   * @param {Number|Date}
-   * @return {String}
-   */
-  getMonthNameAbbr: function getMonthNameAbbr(month, monthsAbbr) {
-    if (!monthsAbbr) {
-      throw Error('missing 2nd paramter Months array');
-    }
-
-    if (_typeof(month) === 'object') {
-      return monthsAbbr[this.getMonth(month)];
-    }
-
-    if (typeof month === 'number') {
-      return monthsAbbr[month];
-    }
-
-    throw TypeError('Invalid type');
-  },
-
-  /**
-   * Alternative get total number of days in month
-   * @param {Number} year
-   * @param {Number} m
-   * @return {Number}
-   */
-  daysInMonth: function daysInMonth(year, month) {
-    return /8|3|5|10/.test(month) ? 30 : month === 1 ? !(year % 4) && year % 100 || !(year % 400) ? 29 : 28 : 31;
-  },
-
-  /**
-   * Get nth suffix for date
-   * @param {Number} day
-   * @return {String}
-   */
-  getNthSuffix: function getNthSuffix(day) {
-    switch (day) {
-      case 1:
-      case 21:
-      case 31:
-        return 'st';
-
-      case 2:
-      case 22:
-        return 'nd';
-
-      case 3:
-      case 23:
-        return 'rd';
-
-      default:
-        return 'th';
-    }
-  },
-
-  /**
-   * Formats date object
-   * @param {Date}
-   * @param {String}
-   * @param {Object}
-   * @return {String}
-   */
-  formatDate: function formatDate(date, format, translation) {
-    translation = !translation ? en : translation;
-    var year = this.getFullYear(date);
-    var month = this.getMonth(date) + 1;
-    var day = this.getDate(date);
-    var str = format.replace(/dd/, ('0' + day).slice(-2)).replace(/d/, day).replace(/yyyy/, year).replace(/yy/, String(year).slice(2)).replace(/MMMM/, this.getMonthName(this.getMonth(date), translation.months)).replace(/MMM/, this.getMonthNameAbbr(this.getMonth(date), translation.monthsAbbr)).replace(/MM/, ('0' + month).slice(-2)).replace(/M(?!a|ä|e)/, month).replace(/su/, this.getNthSuffix(this.getDate(date))).replace(/D(?!e|é|i)/, this.getDayNameAbbr(date, translation.days));
-    return str;
-  },
-
-  /**
-   * Creates an array of dates for each day in between two dates.
-   * @param {Date} start
-   * @param {Date} end
-   * @return {Array}
-   */
-  createDateArray: function createDateArray(start, end) {
-    var dates = [];
-
-    while (start <= end) {
-      dates.push(new Date(start));
-      start = this.setDate(new Date(start), this.getDate(new Date(start)) + 1);
-    }
-
-    return dates;
-  },
-
-  /**
-   * method used as a prop validator for input values
-   * @param {*} val
-   * @return {Boolean}
-   */
-  validateDateInput: function validateDateInput(val) {
-    return val === null || val instanceof Date || typeof val === 'string' || typeof val === 'number';
-  }
-};
-var makeDateUtils = function makeDateUtils(useUtc) {
-  return _objectSpread({}, utils, {
-    useUtc: useUtc
-  });
-};
-var utils$1 = _objectSpread({}, utils) // eslint-disable-next-line
-;
-
-var script = {
-  props: {
-    selectedDate: Date,
-    resetTypedDate: [Date],
-    format: [String, Function],
-    translation: Object,
-    inline: Boolean,
-    id: String,
-    name: String,
-    refName: String,
-    openDate: Date,
-    placeholder: String,
-    inputClass: [String, Object, Array],
-    clearButton: Boolean,
-    clearButtonIcon: String,
-    calendarButton: Boolean,
-    calendarButtonIcon: String,
-    calendarButtonIconContent: String,
-    disabled: Boolean,
-    required: Boolean,
-    typeable: Boolean,
-    bootstrapStyling: Boolean,
-    useUtc: Boolean
-  },
-  data: function data() {
-    var constructedDateUtils = makeDateUtils(this.useUtc);
-    return {
-      input: null,
-      typedDate: false,
-      utils: constructedDateUtils
-    };
-  },
-  computed: {
-    formattedValue: function formattedValue() {
-      if (!this.selectedDate) {
-        return null;
-      }
-
-      if (this.typedDate) {
-        return this.typedDate;
-      }
-
-      return typeof this.format === 'function' ? this.format(this.selectedDate) : this.utils.formatDate(new Date(this.selectedDate), this.format, this.translation);
-    },
-    computedInputClass: function computedInputClass() {
-      if (this.bootstrapStyling) {
-        if (typeof this.inputClass === 'string') {
-          return [this.inputClass, 'form-control'].join(' ');
-        }
-
-        return _objectSpread({
-          'form-control': true
-        }, this.inputClass);
-      }
-
-      return this.inputClass;
-    }
-  },
-  watch: {
-    resetTypedDate: function resetTypedDate() {
-      this.typedDate = false;
-    }
-  },
-  methods: {
-    showCalendar: function showCalendar() {
-      this.$emit('showCalendar');
-    },
-
-    /**
-     * Attempt to parse a typed date
-     * @param {Event} event
-     */
-    parseTypedDate: function parseTypedDate(event) {
-      // close calendar if escape or enter are pressed
-      if ([27, // escape
-      13 // enter
-      ].includes(event.keyCode)) {
-        this.input.blur();
-      }
-
-      if (this.typeable) {
-        var typedDate = Date.parse(this.input.value);
-
-        if (!isNaN(typedDate)) {
-          this.typedDate = this.input.value;
-          this.$emit('typedDate', new Date(this.typedDate));
-        }
-      }
-    },
-
-    /**
-     * nullify the typed date to defer to regular formatting
-     * called once the input is blurred
-     */
-    inputBlurred: function inputBlurred() {
-      if (this.typeable && isNaN(Date.parse(this.input.value))) {
-        this.clearDate();
-        this.input.value = null;
-        this.typedDate = null;
-      }
-
-      this.$emit('closeCalendar');
-    },
-
-    /**
-     * emit a clearDate event
-     */
-    clearDate: function clearDate() {
-      this.$emit('clearDate');
-    }
-  },
-  mounted: function mounted() {
-    this.input = this.$el.querySelector('input');
-  }
-} // eslint-disable-next-line
-;
-
-function normalizeComponent(template, style, script, scopeId, isFunctionalTemplate, moduleIdentifier
-/* server only */
-, shadowMode, createInjector, createInjectorSSR, createInjectorShadow) {
-  if (typeof shadowMode !== 'boolean') {
-    createInjectorSSR = createInjector;
-    createInjector = shadowMode;
-    shadowMode = false;
-  } // Vue.extend constructor export interop.
-
-
-  var options = typeof script === 'function' ? script.options : script; // render functions
-
-  if (template && template.render) {
-    options.render = template.render;
-    options.staticRenderFns = template.staticRenderFns;
-    options._compiled = true; // functional template
-
-    if (isFunctionalTemplate) {
-      options.functional = true;
-    }
-  } // scopedId
-
-
-  if (scopeId) {
-    options._scopeId = scopeId;
-  }
-
-  var hook;
-
-  if (moduleIdentifier) {
-    // server build
-    hook = function hook(context) {
-      // 2.3 injection
-      context = context || // cached call
-      this.$vnode && this.$vnode.ssrContext || // stateful
-      this.parent && this.parent.$vnode && this.parent.$vnode.ssrContext; // functional
-      // 2.2 with runInNewContext: true
-
-      if (!context && typeof __VUE_SSR_CONTEXT__ !== 'undefined') {
-        context = __VUE_SSR_CONTEXT__;
-      } // inject component styles
-
-
-      if (style) {
-        style.call(this, createInjectorSSR(context));
-      } // register component module identifier for async chunk inference
-
-
-      if (context && context._registeredComponents) {
-        context._registeredComponents.add(moduleIdentifier);
-      }
-    }; // used by ssr in case component is cached and beforeCreate
-    // never gets called
-
-
-    options._ssrRegister = hook;
-  } else if (style) {
-    hook = shadowMode ? function () {
-      style.call(this, createInjectorShadow(this.$root.$options.shadowRoot));
-    } : function (context) {
-      style.call(this, createInjector(context));
-    };
-  }
-
-  if (hook) {
-    if (options.functional) {
-      // register for functional component in vue file
-      var originalRender = options.render;
-
-      options.render = function renderWithStyleInjection(h, context) {
-        hook.call(context);
-        return originalRender(h, context);
-      };
-    } else {
-      // inject component registration as beforeCreate hook
-      var existing = options.beforeCreate;
-      options.beforeCreate = existing ? [].concat(existing, hook) : [hook];
-    }
-  }
-
-  return script;
-}
-
-var normalizeComponent_1 = normalizeComponent;
-
-/* script */
-const __vue_script__ = script;
-
-/* template */
-var __vue_render__ = function() {
-  var _vm = this;
-  var _h = _vm.$createElement;
-  var _c = _vm._self._c || _h;
-  return _c(
-    "div",
-    { class: { "input-group": _vm.bootstrapStyling } },
-    [
-      _vm.calendarButton
-        ? _c(
-            "span",
-            {
-              staticClass: "vdp-datepicker__calendar-button",
-              class: { "input-group-prepend": _vm.bootstrapStyling },
-              style: { "cursor:not-allowed;": _vm.disabled },
-              on: { click: _vm.showCalendar }
-            },
-            [
-              _c(
-                "span",
-                { class: { "input-group-text": _vm.bootstrapStyling } },
-                [
-                  _c("i", { class: _vm.calendarButtonIcon }, [
-                    _vm._v(
-                      "\n        " +
-                        _vm._s(_vm.calendarButtonIconContent) +
-                        "\n        "
-                    ),
-                    !_vm.calendarButtonIcon
-                      ? _c("span", [_vm._v("…")])
-                      : _vm._e()
-                  ])
-                ]
-              )
-            ]
-          )
-        : _vm._e(),
-      _vm._v(" "),
-      _c("input", {
-        ref: _vm.refName,
-        class: _vm.computedInputClass,
-        attrs: {
-          type: _vm.inline ? "hidden" : "text",
-          name: _vm.name,
-          id: _vm.id,
-          "open-date": _vm.openDate,
-          placeholder: _vm.placeholder,
-          "clear-button": _vm.clearButton,
-          disabled: _vm.disabled,
-          required: _vm.required,
-          readonly: !_vm.typeable,
-          autocomplete: "off"
-        },
-        domProps: { value: _vm.formattedValue },
-        on: {
-          click: _vm.showCalendar,
-          keyup: _vm.parseTypedDate,
-          blur: _vm.inputBlurred
-        }
-      }),
-      _vm._v(" "),
-      _vm.clearButton && _vm.selectedDate
-        ? _c(
-            "span",
-            {
-              staticClass: "vdp-datepicker__clear-button",
-              class: { "input-group-append": _vm.bootstrapStyling },
-              on: {
-                click: function($event) {
-                  return _vm.clearDate()
-                }
-              }
-            },
-            [
-              _c(
-                "span",
-                { class: { "input-group-text": _vm.bootstrapStyling } },
-                [
-                  _c("i", { class: _vm.clearButtonIcon }, [
-                    !_vm.clearButtonIcon ? _c("span", [_vm._v("×")]) : _vm._e()
-                  ])
-                ]
-              )
-            ]
-          )
-        : _vm._e(),
-      _vm._v(" "),
-      _vm._t("afterDateInput")
-    ],
-    2
-  )
-};
-var __vue_staticRenderFns__ = [];
-__vue_render__._withStripped = true;
-
-  /* style */
-  const __vue_inject_styles__ = undefined;
-  /* scoped */
-  const __vue_scope_id__ = undefined;
-  /* module identifier */
-  const __vue_module_identifier__ = undefined;
-  /* functional template */
-  const __vue_is_functional_template__ = false;
-  /* style inject */
-  
-  /* style inject SSR */
-  
-
-  
-  var DateInput = normalizeComponent_1(
-    { render: __vue_render__, staticRenderFns: __vue_staticRenderFns__ },
-    __vue_inject_styles__,
-    __vue_script__,
-    __vue_scope_id__,
-    __vue_is_functional_template__,
-    __vue_module_identifier__,
-    undefined,
-    undefined
-  );
-
-//
-var script$1 = {
-  props: {
-    showDayView: Boolean,
-    selectedDate: Date,
-    pageDate: Date,
-    pageTimestamp: Number,
-    fullMonthName: Boolean,
-    allowedToShowView: Function,
-    dayCellContent: {
-      type: Function,
-      "default": function _default(day) {
-        return day.date;
-      }
-    },
-    disabledDates: Object,
-    highlighted: Object,
-    calendarClass: [String, Object, Array],
-    calendarStyle: Object,
-    translation: Object,
-    isRtl: Boolean,
-    mondayFirst: Boolean,
-    useUtc: Boolean
-  },
-  data: function data() {
-    var constructedDateUtils = makeDateUtils(this.useUtc);
-    return {
-      utils: constructedDateUtils
-    };
-  },
-  computed: {
-    /**
-     * Returns an array of day names
-     * @return {String[]}
-     */
-    daysOfWeek: function daysOfWeek() {
-      if (this.mondayFirst) {
-        var tempDays = this.translation.days.slice();
-        tempDays.push(tempDays.shift());
-        return tempDays;
-      }
-
-      return this.translation.days;
-    },
-
-    /**
-     * Returns the day number of the week less one for the first of the current month
-     * Used to show amount of empty cells before the first in the day calendar layout
-     * @return {Number}
-     */
-    blankDays: function blankDays() {
-      var d = this.pageDate;
-      var dObj = this.useUtc ? new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), 1)) : new Date(d.getFullYear(), d.getMonth(), 1, d.getHours(), d.getMinutes());
-
-      if (this.mondayFirst) {
-        return this.utils.getDay(dObj) > 0 ? this.utils.getDay(dObj) - 1 : 6;
-      }
-
-      return this.utils.getDay(dObj);
-    },
-
-    /**
-     * @return {Object[]}
-     */
-    days: function days() {
-      var d = this.pageDate;
-      var days = []; // set up a new date object to the beginning of the current 'page'
-
-      var dObj = this.useUtc ? new Date(Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), 1)) : new Date(d.getFullYear(), d.getMonth(), 1, d.getHours(), d.getMinutes());
-      var daysInMonth = this.utils.daysInMonth(this.utils.getFullYear(dObj), this.utils.getMonth(dObj));
-
-      for (var i = 0; i < daysInMonth; i++) {
-        days.push({
-          date: this.utils.getDate(dObj),
-          timestamp: dObj.getTime(),
-          isSelected: this.isSelectedDate(dObj),
-          isDisabled: this.isDisabledDate(dObj),
-          isHighlighted: this.isHighlightedDate(dObj),
-          isHighlightStart: this.isHighlightStart(dObj),
-          isHighlightEnd: this.isHighlightEnd(dObj),
-          isToday: this.utils.compareDates(dObj, new Date()),
-          isWeekend: this.utils.getDay(dObj) === 0 || this.utils.getDay(dObj) === 6,
-          isSaturday: this.utils.getDay(dObj) === 6,
-          isSunday: this.utils.getDay(dObj) === 0
-        });
-        this.utils.setDate(dObj, this.utils.getDate(dObj) + 1);
-      }
-
-      return days;
-    },
-
-    /**
-     * Gets the name of the month the current page is on
-     * @return {String}
-     */
-    currMonthName: function currMonthName() {
-      var monthName = this.fullMonthName ? this.translation.months : this.translation.monthsAbbr;
-      return this.utils.getMonthNameAbbr(this.utils.getMonth(this.pageDate), monthName);
-    },
-
-    /**
-     * Gets the name of the year that current page is on
-     * @return {Number}
-     */
-    currYearName: function currYearName() {
-      var yearSuffix = this.translation.yearSuffix;
-      return "".concat(this.utils.getFullYear(this.pageDate)).concat(yearSuffix);
-    },
-
-    /**
-     * Is this translation using year/month/day format?
-     * @return {Boolean}
-     */
-    isYmd: function isYmd() {
-      return this.translation.ymd && this.translation.ymd === true;
-    },
-
-    /**
-     * Is the left hand navigation button disabled?
-     * @return {Boolean}
-     */
-    isLeftNavDisabled: function isLeftNavDisabled() {
-      return this.isRtl ? this.isNextMonthDisabled(this.pageTimestamp) : this.isPreviousMonthDisabled(this.pageTimestamp);
-    },
-
-    /**
-     * Is the right hand navigation button disabled?
-     * @return {Boolean}
-     */
-    isRightNavDisabled: function isRightNavDisabled() {
-      return this.isRtl ? this.isPreviousMonthDisabled(this.pageTimestamp) : this.isNextMonthDisabled(this.pageTimestamp);
-    }
-  },
-  methods: {
-    selectDate: function selectDate(date) {
-      if (date.isDisabled) {
-        this.$emit('selectedDisabled', date);
-        return false;
-      }
-
-      this.$emit('selectDate', date);
-    },
-
-    /**
-     * @return {Number}
-     */
-    getPageMonth: function getPageMonth() {
-      return this.utils.getMonth(this.pageDate);
-    },
-
-    /**
-     * Emit an event to show the month picker
-     */
-    showMonthCalendar: function showMonthCalendar() {
-      this.$emit('showMonthCalendar');
-    },
-
-    /**
-     * Change the page month
-     * @param {Number} incrementBy
-     */
-    changeMonth: function changeMonth(incrementBy) {
-      var date = this.pageDate;
-      this.utils.setMonth(date, this.utils.getMonth(date) + incrementBy);
-      this.$emit('changedMonth', date);
-    },
-
-    /**
-     * Decrement the page month
-     */
-    previousMonth: function previousMonth() {
-      if (!this.isPreviousMonthDisabled()) {
-        this.changeMonth(-1);
-      }
-    },
-
-    /**
-     * Is the previous month disabled?
-     * @return {Boolean}
-     */
-    isPreviousMonthDisabled: function isPreviousMonthDisabled() {
-      if (!this.disabledDates || !this.disabledDates.to) {
-        return false;
-      }
-
-      var d = this.pageDate;
-      return this.utils.getMonth(this.disabledDates.to) >= this.utils.getMonth(d) && this.utils.getFullYear(this.disabledDates.to) >= this.utils.getFullYear(d);
-    },
-
-    /**
-     * Increment the current page month
-     */
-    nextMonth: function nextMonth() {
-      if (!this.isNextMonthDisabled()) {
-        this.changeMonth(+1);
-      }
-    },
-
-    /**
-     * Is the next month disabled?
-     * @return {Boolean}
-     */
-    isNextMonthDisabled: function isNextMonthDisabled() {
-      if (!this.disabledDates || !this.disabledDates.from) {
-        return false;
-      }
-
-      var d = this.pageDate;
-      return this.utils.getMonth(this.disabledDates.from) <= this.utils.getMonth(d) && this.utils.getFullYear(this.disabledDates.from) <= this.utils.getFullYear(d);
-    },
-
-    /**
-     * Whether a day is selected
-     * @param {Date}
-     * @return {Boolean}
-     */
-    isSelectedDate: function isSelectedDate(dObj) {
-      return this.selectedDate && this.utils.compareDates(this.selectedDate, dObj);
-    },
-
-    /**
-     * Whether a day is disabled
-     * @param {Date}
-     * @return {Boolean}
-     */
-    isDisabledDate: function isDisabledDate(date) {
-      var _this = this;
-
-      var disabledDates = false;
-
-      if (typeof this.disabledDates === 'undefined') {
-        return false;
-      }
-
-      if (typeof this.disabledDates.dates !== 'undefined') {
-        this.disabledDates.dates.forEach(function (d) {
-          if (_this.utils.compareDates(date, d)) {
-            disabledDates = true;
-            return true;
-          }
-        });
-      }
-
-      if (typeof this.disabledDates.to !== 'undefined' && this.disabledDates.to && date < this.disabledDates.to) {
-        disabledDates = true;
-      }
-
-      if (typeof this.disabledDates.from !== 'undefined' && this.disabledDates.from && date > this.disabledDates.from) {
-        disabledDates = true;
-      }
-
-      if (typeof this.disabledDates.ranges !== 'undefined') {
-        this.disabledDates.ranges.forEach(function (range) {
-          if (typeof range.from !== 'undefined' && range.from && typeof range.to !== 'undefined' && range.to) {
-            if (date < range.to && date > range.from) {
-              disabledDates = true;
-              return true;
-            }
-          }
-        });
-      }
-
-      if (typeof this.disabledDates.days !== 'undefined' && this.disabledDates.days.indexOf(this.utils.getDay(date)) !== -1) {
-        disabledDates = true;
-      }
-
-      if (typeof this.disabledDates.daysOfMonth !== 'undefined' && this.disabledDates.daysOfMonth.indexOf(this.utils.getDate(date)) !== -1) {
-        disabledDates = true;
-      }
-
-      if (typeof this.disabledDates.customPredictor === 'function' && this.disabledDates.customPredictor(date)) {
-        disabledDates = true;
-      }
-
-      return disabledDates;
-    },
-
-    /**
-     * Whether a day is highlighted (only if it is not disabled already except when highlighted.includeDisabled is true)
-     * @param {Date}
-     * @return {Boolean}
-     */
-    isHighlightedDate: function isHighlightedDate(date) {
-      var _this2 = this;
-
-      if (!(this.highlighted && this.highlighted.includeDisabled) && this.isDisabledDate(date)) {
-        return false;
-      }
-
-      var highlighted = false;
-
-      if (typeof this.highlighted === 'undefined') {
-        return false;
-      }
-
-      if (typeof this.highlighted.dates !== 'undefined') {
-        this.highlighted.dates.forEach(function (d) {
-          if (_this2.utils.compareDates(date, d)) {
-            highlighted = true;
-            return true;
-          }
-        });
-      }
-
-      if (this.isDefined(this.highlighted.from) && this.isDefined(this.highlighted.to)) {
-        highlighted = date >= this.highlighted.from && date <= this.highlighted.to;
-      }
-
-      if (typeof this.highlighted.days !== 'undefined' && this.highlighted.days.indexOf(this.utils.getDay(date)) !== -1) {
-        highlighted = true;
-      }
-
-      if (typeof this.highlighted.daysOfMonth !== 'undefined' && this.highlighted.daysOfMonth.indexOf(this.utils.getDate(date)) !== -1) {
-        highlighted = true;
-      }
-
-      if (typeof this.highlighted.customPredictor === 'function' && this.highlighted.customPredictor(date)) {
-        highlighted = true;
-      }
-
-      return highlighted;
-    },
-    dayClasses: function dayClasses(day) {
-      return {
-        'selected': day.isSelected,
-        'disabled': day.isDisabled,
-        'highlighted': day.isHighlighted,
-        'today': day.isToday,
-        'weekend': day.isWeekend,
-        'sat': day.isSaturday,
-        'sun': day.isSunday,
-        'highlight-start': day.isHighlightStart,
-        'highlight-end': day.isHighlightEnd
-      };
-    },
-
-    /**
-     * Whether a day is highlighted and it is the first date
-     * in the highlighted range of dates
-     * @param {Date}
-     * @return {Boolean}
-     */
-    isHighlightStart: function isHighlightStart(date) {
-      return this.isHighlightedDate(date) && this.highlighted.from instanceof Date && this.utils.getFullYear(this.highlighted.from) === this.utils.getFullYear(date) && this.utils.getMonth(this.highlighted.from) === this.utils.getMonth(date) && this.utils.getDate(this.highlighted.from) === this.utils.getDate(date);
-    },
-
-    /**
-     * Whether a day is highlighted and it is the first date
-     * in the highlighted range of dates
-     * @param {Date}
-     * @return {Boolean}
-     */
-    isHighlightEnd: function isHighlightEnd(date) {
-      return this.isHighlightedDate(date) && this.highlighted.to instanceof Date && this.utils.getFullYear(this.highlighted.to) === this.utils.getFullYear(date) && this.utils.getMonth(this.highlighted.to) === this.utils.getMonth(date) && this.utils.getDate(this.highlighted.to) === this.utils.getDate(date);
-    },
-
-    /**
-     * Helper
-     * @param  {mixed}  prop
-     * @return {Boolean}
-     */
-    isDefined: function isDefined(prop) {
-      return typeof prop !== 'undefined' && prop;
-    }
-  } // eslint-disable-next-line
-
-};
-
-/* script */
-const __vue_script__$1 = script$1;
-
-/* template */
-var __vue_render__$1 = function() {
-  var _vm = this;
-  var _h = _vm.$createElement;
-  var _c = _vm._self._c || _h;
-  return _c(
-    "div",
-    {
-      directives: [
-        {
-          name: "show",
-          rawName: "v-show",
-          value: _vm.showDayView,
-          expression: "showDayView"
-        }
-      ],
-      class: [_vm.calendarClass, "vdp-datepicker__calendar"],
-      style: _vm.calendarStyle,
-      on: {
-        mousedown: function($event) {
-          $event.preventDefault();
-        }
-      }
-    },
-    [
-      _vm._t("beforeCalendarHeader"),
-      _vm._v(" "),
-      _c("header", [
-        _c(
-          "span",
-          {
-            staticClass: "prev",
-            class: { disabled: _vm.isLeftNavDisabled },
-            on: {
-              click: function($event) {
-                _vm.isRtl ? _vm.nextMonth() : _vm.previousMonth();
-              }
-            }
-          },
-          [_vm._v("<")]
-        ),
-        _vm._v(" "),
-        _c(
-          "span",
-          {
-            staticClass: "day__month_btn",
-            class: _vm.allowedToShowView("month") ? "up" : "",
-            on: { click: _vm.showMonthCalendar }
-          },
-          [
-            _vm._v(
-              _vm._s(_vm.isYmd ? _vm.currYearName : _vm.currMonthName) +
-                " " +
-                _vm._s(_vm.isYmd ? _vm.currMonthName : _vm.currYearName)
-            )
-          ]
-        ),
-        _vm._v(" "),
-        _c(
-          "span",
-          {
-            staticClass: "next",
-            class: { disabled: _vm.isRightNavDisabled },
-            on: {
-              click: function($event) {
-                _vm.isRtl ? _vm.previousMonth() : _vm.nextMonth();
-              }
-            }
-          },
-          [_vm._v(">")]
-        )
-      ]),
-      _vm._v(" "),
-      _c(
-        "div",
-        { class: _vm.isRtl ? "flex-rtl" : "" },
-        [
-          _vm._l(_vm.daysOfWeek, function(d) {
-            return _c(
-              "span",
-              { key: d.timestamp, staticClass: "cell day-header" },
-              [_vm._v(_vm._s(d))]
-            )
-          }),
-          _vm._v(" "),
-          _vm.blankDays > 0
-            ? _vm._l(_vm.blankDays, function(d) {
-                return _c("span", {
-                  key: d.timestamp,
-                  staticClass: "cell day blank"
-                })
-              })
-            : _vm._e(),
-          _vm._l(_vm.days, function(day) {
-            return _c("span", {
-              key: day.timestamp,
-              staticClass: "cell day",
-              class: _vm.dayClasses(day),
-              domProps: { innerHTML: _vm._s(_vm.dayCellContent(day)) },
-              on: {
-                click: function($event) {
-                  return _vm.selectDate(day)
-                }
-              }
-            })
-          })
-        ],
-        2
-      )
-    ],
-    2
-  )
-};
-var __vue_staticRenderFns__$1 = [];
-__vue_render__$1._withStripped = true;
-
-  /* style */
-  const __vue_inject_styles__$1 = undefined;
-  /* scoped */
-  const __vue_scope_id__$1 = undefined;
-  /* module identifier */
-  const __vue_module_identifier__$1 = undefined;
-  /* functional template */
-  const __vue_is_functional_template__$1 = false;
-  /* style inject */
-  
-  /* style inject SSR */
-  
-
-  
-  var PickerDay = normalizeComponent_1(
-    { render: __vue_render__$1, staticRenderFns: __vue_staticRenderFns__$1 },
-    __vue_inject_styles__$1,
-    __vue_script__$1,
-    __vue_scope_id__$1,
-    __vue_is_functional_template__$1,
-    __vue_module_identifier__$1,
-    undefined,
-    undefined
-  );
-
-//
-var script$2 = {
-  props: {
-    showMonthView: Boolean,
-    selectedDate: Date,
-    pageDate: Date,
-    pageTimestamp: Number,
-    disabledDates: Object,
-    calendarClass: [String, Object, Array],
-    calendarStyle: Object,
-    translation: Object,
-    isRtl: Boolean,
-    allowedToShowView: Function,
-    useUtc: Boolean
-  },
-  data: function data() {
-    var constructedDateUtils = makeDateUtils(this.useUtc);
-    return {
-      utils: constructedDateUtils
-    };
-  },
-  computed: {
-    months: function months() {
-      var d = this.pageDate;
-      var months = []; // set up a new date object to the beginning of the current 'page'
-
-      var dObj = this.useUtc ? new Date(Date.UTC(d.getUTCFullYear(), 0, d.getUTCDate())) : new Date(d.getFullYear(), 0, d.getDate(), d.getHours(), d.getMinutes());
-
-      for (var i = 0; i < 12; i++) {
-        months.push({
-          month: this.utils.getMonthName(i, this.translation.months),
-          timestamp: dObj.getTime(),
-          isSelected: this.isSelectedMonth(dObj),
-          isDisabled: this.isDisabledMonth(dObj)
-        });
-        this.utils.setMonth(dObj, this.utils.getMonth(dObj) + 1);
-      }
-
-      return months;
-    },
-
-    /**
-     * Get year name on current page.
-     * @return {String}
-     */
-    pageYearName: function pageYearName() {
-      var yearSuffix = this.translation.yearSuffix;
-      return "".concat(this.utils.getFullYear(this.pageDate)).concat(yearSuffix);
-    },
-
-    /**
-     * Is the left hand navigation disabled
-     * @return {Boolean}
-     */
-    isLeftNavDisabled: function isLeftNavDisabled() {
-      return this.isRtl ? this.isNextYearDisabled(this.pageTimestamp) : this.isPreviousYearDisabled(this.pageTimestamp);
-    },
-
-    /**
-     * Is the right hand navigation disabled
-     * @return {Boolean}
-     */
-    isRightNavDisabled: function isRightNavDisabled() {
-      return this.isRtl ? this.isPreviousYearDisabled(this.pageTimestamp) : this.isNextYearDisabled(this.pageTimestamp);
-    }
-  },
-  methods: {
-    /**
-     * Emits a selectMonth event
-     * @param {Object} month
-     */
-    selectMonth: function selectMonth(month) {
-      if (month.isDisabled) {
-        return false;
-      }
-
-      this.$emit('selectMonth', month);
-    },
-
-    /**
-     * Changes the year up or down
-     * @param {Number} incrementBy
-     */
-    changeYear: function changeYear(incrementBy) {
-      var date = this.pageDate;
-      this.utils.setFullYear(date, this.utils.getFullYear(date) + incrementBy);
-      this.$emit('changedYear', date);
-    },
-
-    /**
-     * Decrements the year
-     */
-    previousYear: function previousYear() {
-      if (!this.isPreviousYearDisabled()) {
-        this.changeYear(-1);
-      }
-    },
-
-    /**
-     * Checks if the previous year is disabled or not
-     * @return {Boolean}
-     */
-    isPreviousYearDisabled: function isPreviousYearDisabled() {
-      if (!this.disabledDates || !this.disabledDates.to) {
-        return false;
-      }
-
-      return this.utils.getFullYear(this.disabledDates.to) >= this.utils.getFullYear(this.pageDate);
-    },
-
-    /**
-     * Increments the year
-     */
-    nextYear: function nextYear() {
-      if (!this.isNextYearDisabled()) {
-        this.changeYear(1);
-      }
-    },
-
-    /**
-     * Checks if the next year is disabled or not
-     * @return {Boolean}
-     */
-    isNextYearDisabled: function isNextYearDisabled() {
-      if (!this.disabledDates || !this.disabledDates.from) {
-        return false;
-      }
-
-      return this.utils.getFullYear(this.disabledDates.from) <= this.utils.getFullYear(this.pageDate);
-    },
-
-    /**
-     * Emits an event that shows the year calendar
-     */
-    showYearCalendar: function showYearCalendar() {
-      this.$emit('showYearCalendar');
-    },
-
-    /**
-     * Whether the selected date is in this month
-     * @param {Date}
-     * @return {Boolean}
-     */
-    isSelectedMonth: function isSelectedMonth(date) {
-      return this.selectedDate && this.utils.getFullYear(this.selectedDate) === this.utils.getFullYear(date) && this.utils.getMonth(this.selectedDate) === this.utils.getMonth(date);
-    },
-
-    /**
-     * Whether a month is disabled
-     * @param {Date}
-     * @return {Boolean}
-     */
-    isDisabledMonth: function isDisabledMonth(date) {
-      var disabledDates = false;
-
-      if (typeof this.disabledDates === 'undefined') {
-        return false;
-      }
-
-      if (typeof this.disabledDates.to !== 'undefined' && this.disabledDates.to) {
-        if (this.utils.getMonth(date) < this.utils.getMonth(this.disabledDates.to) && this.utils.getFullYear(date) <= this.utils.getFullYear(this.disabledDates.to) || this.utils.getFullYear(date) < this.utils.getFullYear(this.disabledDates.to)) {
-          disabledDates = true;
-        }
-      }
-
-      if (typeof this.disabledDates.from !== 'undefined' && this.disabledDates.from) {
-        if (this.utils.getMonth(date) > this.utils.getMonth(this.disabledDates.from) && this.utils.getFullYear(date) >= this.utils.getFullYear(this.disabledDates.from) || this.utils.getFullYear(date) > this.utils.getFullYear(this.disabledDates.from)) {
-          disabledDates = true;
-        }
-      }
-
-      if (typeof this.disabledDates.customPredictor === 'function' && this.disabledDates.customPredictor(date)) {
-        disabledDates = true;
-      }
-
-      return disabledDates;
-    }
-  } // eslint-disable-next-line
-
-};
-
-/* script */
-const __vue_script__$2 = script$2;
-
-/* template */
-var __vue_render__$2 = function() {
-  var _vm = this;
-  var _h = _vm.$createElement;
-  var _c = _vm._self._c || _h;
-  return _c(
-    "div",
-    {
-      directives: [
-        {
-          name: "show",
-          rawName: "v-show",
-          value: _vm.showMonthView,
-          expression: "showMonthView"
-        }
-      ],
-      class: [_vm.calendarClass, "vdp-datepicker__calendar"],
-      style: _vm.calendarStyle,
-      on: {
-        mousedown: function($event) {
-          $event.preventDefault();
-        }
-      }
-    },
-    [
-      _vm._t("beforeCalendarHeader"),
-      _vm._v(" "),
-      _c("header", [
-        _c(
-          "span",
-          {
-            staticClass: "prev",
-            class: { disabled: _vm.isLeftNavDisabled },
-            on: {
-              click: function($event) {
-                _vm.isRtl ? _vm.nextYear() : _vm.previousYear();
-              }
-            }
-          },
-          [_vm._v("<")]
-        ),
-        _vm._v(" "),
-        _c(
-          "span",
-          {
-            staticClass: "month__year_btn",
-            class: _vm.allowedToShowView("year") ? "up" : "",
-            on: { click: _vm.showYearCalendar }
-          },
-          [_vm._v(_vm._s(_vm.pageYearName))]
-        ),
-        _vm._v(" "),
-        _c(
-          "span",
-          {
-            staticClass: "next",
-            class: { disabled: _vm.isRightNavDisabled },
-            on: {
-              click: function($event) {
-                _vm.isRtl ? _vm.previousYear() : _vm.nextYear();
-              }
-            }
-          },
-          [_vm._v(">")]
-        )
-      ]),
-      _vm._v(" "),
-      _vm._l(_vm.months, function(month) {
-        return _c(
-          "span",
-          {
-            key: month.timestamp,
-            staticClass: "cell month",
-            class: { selected: month.isSelected, disabled: month.isDisabled },
-            on: {
-              click: function($event) {
-                $event.stopPropagation();
-                return _vm.selectMonth(month)
-              }
-            }
-          },
-          [_vm._v(_vm._s(month.month))]
-        )
-      })
-    ],
-    2
-  )
-};
-var __vue_staticRenderFns__$2 = [];
-__vue_render__$2._withStripped = true;
-
-  /* style */
-  const __vue_inject_styles__$2 = undefined;
-  /* scoped */
-  const __vue_scope_id__$2 = undefined;
-  /* module identifier */
-  const __vue_module_identifier__$2 = undefined;
-  /* functional template */
-  const __vue_is_functional_template__$2 = false;
-  /* style inject */
-  
-  /* style inject SSR */
-  
-
-  
-  var PickerMonth = normalizeComponent_1(
-    { render: __vue_render__$2, staticRenderFns: __vue_staticRenderFns__$2 },
-    __vue_inject_styles__$2,
-    __vue_script__$2,
-    __vue_scope_id__$2,
-    __vue_is_functional_template__$2,
-    __vue_module_identifier__$2,
-    undefined,
-    undefined
-  );
-
-//
-var script$3 = {
-  props: {
-    showYearView: Boolean,
-    selectedDate: Date,
-    pageDate: Date,
-    pageTimestamp: Number,
-    disabledDates: Object,
-    highlighted: Object,
-    calendarClass: [String, Object, Array],
-    calendarStyle: Object,
-    translation: Object,
-    isRtl: Boolean,
-    allowedToShowView: Function,
-    useUtc: Boolean
-  },
-  computed: {
-    years: function years() {
-      var d = this.pageDate;
-      var years = []; // set up a new date object to the beginning of the current 'page'7
-
-      var dObj = this.useUtc ? new Date(Date.UTC(Math.floor(d.getUTCFullYear() / 10) * 10, d.getUTCMonth(), d.getUTCDate())) : new Date(Math.floor(d.getFullYear() / 10) * 10, d.getMonth(), d.getDate(), d.getHours(), d.getMinutes());
-
-      for (var i = 0; i < 10; i++) {
-        years.push({
-          year: this.utils.getFullYear(dObj),
-          timestamp: dObj.getTime(),
-          isSelected: this.isSelectedYear(dObj),
-          isDisabled: this.isDisabledYear(dObj)
-        });
-        this.utils.setFullYear(dObj, this.utils.getFullYear(dObj) + 1);
-      }
-
-      return years;
-    },
-
-    /**
-     * @return {String}
-     */
-    getPageDecade: function getPageDecade() {
-      var decadeStart = Math.floor(this.utils.getFullYear(this.pageDate) / 10) * 10;
-      var decadeEnd = decadeStart + 9;
-      var yearSuffix = this.translation.yearSuffix;
-      return "".concat(decadeStart, " - ").concat(decadeEnd).concat(yearSuffix);
-    },
-
-    /**
-     * Is the left hand navigation button disabled?
-     * @return {Boolean}
-     */
-    isLeftNavDisabled: function isLeftNavDisabled() {
-      return this.isRtl ? this.isNextDecadeDisabled(this.pageTimestamp) : this.isPreviousDecadeDisabled(this.pageTimestamp);
-    },
-
-    /**
-     * Is the right hand navigation button disabled?
-     * @return {Boolean}
-     */
-    isRightNavDisabled: function isRightNavDisabled() {
-      return this.isRtl ? this.isPreviousDecadeDisabled(this.pageTimestamp) : this.isNextDecadeDisabled(this.pageTimestamp);
-    }
-  },
-  data: function data() {
-    var constructedDateUtils = makeDateUtils(this.useUtc);
-    return {
-      utils: constructedDateUtils
-    };
-  },
-  methods: {
-    selectYear: function selectYear(year) {
-      if (year.isDisabled) {
-        return false;
-      }
-
-      this.$emit('selectYear', year);
-    },
-    changeYear: function changeYear(incrementBy) {
-      var date = this.pageDate;
-      this.utils.setFullYear(date, this.utils.getFullYear(date) + incrementBy);
-      this.$emit('changedDecade', date);
-    },
-    previousDecade: function previousDecade() {
-      if (this.isPreviousDecadeDisabled()) {
-        return false;
-      }
-
-      this.changeYear(-10);
-    },
-    isPreviousDecadeDisabled: function isPreviousDecadeDisabled() {
-      if (!this.disabledDates || !this.disabledDates.to) {
-        return false;
-      }
-
-      var disabledYear = this.utils.getFullYear(this.disabledDates.to);
-      var lastYearInPreviousPage = Math.floor(this.utils.getFullYear(this.pageDate) / 10) * 10 - 1;
-      return disabledYear > lastYearInPreviousPage;
-    },
-    nextDecade: function nextDecade() {
-      if (this.isNextDecadeDisabled()) {
-        return false;
-      }
-
-      this.changeYear(10);
-    },
-    isNextDecadeDisabled: function isNextDecadeDisabled() {
-      if (!this.disabledDates || !this.disabledDates.from) {
-        return false;
-      }
-
-      var disabledYear = this.utils.getFullYear(this.disabledDates.from);
-      var firstYearInNextPage = Math.ceil(this.utils.getFullYear(this.pageDate) / 10) * 10;
-      return disabledYear < firstYearInNextPage;
-    },
-
-    /**
-     * Whether the selected date is in this year
-     * @param {Date}
-     * @return {Boolean}
-     */
-    isSelectedYear: function isSelectedYear(date) {
-      return this.selectedDate && this.utils.getFullYear(this.selectedDate) === this.utils.getFullYear(date);
-    },
-
-    /**
-     * Whether a year is disabled
-     * @param {Date}
-     * @return {Boolean}
-     */
-    isDisabledYear: function isDisabledYear(date) {
-      var disabledDates = false;
-
-      if (typeof this.disabledDates === 'undefined' || !this.disabledDates) {
-        return false;
-      }
-
-      if (typeof this.disabledDates.to !== 'undefined' && this.disabledDates.to) {
-        if (this.utils.getFullYear(date) < this.utils.getFullYear(this.disabledDates.to)) {
-          disabledDates = true;
-        }
-      }
-
-      if (typeof this.disabledDates.from !== 'undefined' && this.disabledDates.from) {
-        if (this.utils.getFullYear(date) > this.utils.getFullYear(this.disabledDates.from)) {
-          disabledDates = true;
-        }
-      }
-
-      if (typeof this.disabledDates.customPredictor === 'function' && this.disabledDates.customPredictor(date)) {
-        disabledDates = true;
-      }
-
-      return disabledDates;
-    }
-  } // eslint-disable-next-line
-
-};
-
-/* script */
-const __vue_script__$3 = script$3;
-
-/* template */
-var __vue_render__$3 = function() {
-  var _vm = this;
-  var _h = _vm.$createElement;
-  var _c = _vm._self._c || _h;
-  return _c(
-    "div",
-    {
-      directives: [
-        {
-          name: "show",
-          rawName: "v-show",
-          value: _vm.showYearView,
-          expression: "showYearView"
-        }
-      ],
-      class: [_vm.calendarClass, "vdp-datepicker__calendar"],
-      style: _vm.calendarStyle,
-      on: {
-        mousedown: function($event) {
-          $event.preventDefault();
-        }
-      }
-    },
-    [
-      _vm._t("beforeCalendarHeader"),
-      _vm._v(" "),
-      _c("header", [
-        _c(
-          "span",
-          {
-            staticClass: "prev",
-            class: { disabled: _vm.isLeftNavDisabled },
-            on: {
-              click: function($event) {
-                _vm.isRtl ? _vm.nextDecade() : _vm.previousDecade();
-              }
-            }
-          },
-          [_vm._v("<")]
-        ),
-        _vm._v(" "),
-        _c("span", [_vm._v(_vm._s(_vm.getPageDecade))]),
-        _vm._v(" "),
-        _c(
-          "span",
-          {
-            staticClass: "next",
-            class: { disabled: _vm.isRightNavDisabled },
-            on: {
-              click: function($event) {
-                _vm.isRtl ? _vm.previousDecade() : _vm.nextDecade();
-              }
-            }
-          },
-          [_vm._v(">")]
-        )
-      ]),
-      _vm._v(" "),
-      _vm._l(_vm.years, function(year) {
-        return _c(
-          "span",
-          {
-            key: year.timestamp,
-            staticClass: "cell year",
-            class: { selected: year.isSelected, disabled: year.isDisabled },
-            on: {
-              click: function($event) {
-                $event.stopPropagation();
-                return _vm.selectYear(year)
-              }
-            }
-          },
-          [_vm._v(_vm._s(year.year))]
-        )
-      })
-    ],
-    2
-  )
-};
-var __vue_staticRenderFns__$3 = [];
-__vue_render__$3._withStripped = true;
-
-  /* style */
-  const __vue_inject_styles__$3 = undefined;
-  /* scoped */
-  const __vue_scope_id__$3 = undefined;
-  /* module identifier */
-  const __vue_module_identifier__$3 = undefined;
-  /* functional template */
-  const __vue_is_functional_template__$3 = false;
-  /* style inject */
-  
-  /* style inject SSR */
-  
-
-  
-  var PickerYear = normalizeComponent_1(
-    { render: __vue_render__$3, staticRenderFns: __vue_staticRenderFns__$3 },
-    __vue_inject_styles__$3,
-    __vue_script__$3,
-    __vue_scope_id__$3,
-    __vue_is_functional_template__$3,
-    __vue_module_identifier__$3,
-    undefined,
-    undefined
-  );
-
-//
-var script$4 = {
-  components: {
-    DateInput: DateInput,
-    PickerDay: PickerDay,
-    PickerMonth: PickerMonth,
-    PickerYear: PickerYear
-  },
-  props: {
-    value: {
-      validator: function validator(val) {
-        return utils$1.validateDateInput(val);
-      }
-    },
-    name: String,
-    refName: String,
-    id: String,
-    format: {
-      type: [String, Function],
-      "default": 'dd MMM yyyy'
-    },
-    language: {
-      type: Object,
-      "default": function _default() {
-        return en;
-      }
-    },
-    openDate: {
-      validator: function validator(val) {
-        return utils$1.validateDateInput(val);
-      }
-    },
-    dayCellContent: Function,
-    fullMonthName: Boolean,
-    disabledDates: Object,
-    highlighted: Object,
-    placeholder: String,
-    inline: Boolean,
-    calendarClass: [String, Object, Array],
-    inputClass: [String, Object, Array],
-    wrapperClass: [String, Object, Array],
-    mondayFirst: Boolean,
-    clearButton: Boolean,
-    clearButtonIcon: String,
-    calendarButton: Boolean,
-    calendarButtonIcon: String,
-    calendarButtonIconContent: String,
-    bootstrapStyling: Boolean,
-    initialView: String,
-    disabled: Boolean,
-    required: Boolean,
-    typeable: Boolean,
-    useUtc: Boolean,
-    minimumView: {
-      type: String,
-      "default": 'day'
-    },
-    maximumView: {
-      type: String,
-      "default": 'year'
-    }
-  },
-  data: function data() {
-    var startDate = this.openDate ? new Date(this.openDate) : new Date();
-    var constructedDateUtils = makeDateUtils(this.useUtc);
-    var pageTimestamp = constructedDateUtils.setDate(startDate, 1);
-    return {
-      /*
-       * Vue cannot observe changes to a Date Object so date must be stored as a timestamp
-       * This represents the first day of the current viewing month
-       * {Number}
-       */
-      pageTimestamp: pageTimestamp,
-
-      /*
-       * Selected Date
-       * {Date}
-       */
-      selectedDate: null,
-
-      /*
-       * Flags to show calendar views
-       * {Boolean}
-       */
-      showDayView: false,
-      showMonthView: false,
-      showYearView: false,
-
-      /*
-       * Positioning
-       */
-      calendarHeight: 0,
-      resetTypedDate: new Date(),
-      utils: constructedDateUtils
-    };
-  },
-  watch: {
-    value: function value(_value) {
-      this.setValue(_value);
-    },
-    openDate: function openDate() {
-      this.setPageDate();
-    },
-    initialView: function initialView() {
-      this.setInitialView();
-    }
-  },
-  computed: {
-    computedInitialView: function computedInitialView() {
-      if (!this.initialView) {
-        return this.minimumView;
-      }
-
-      return this.initialView;
-    },
-    pageDate: function pageDate() {
-      return new Date(this.pageTimestamp);
-    },
-    translation: function translation() {
-      return this.language;
-    },
-    calendarStyle: function calendarStyle() {
-      return {
-        position: this.isInline ? 'static' : undefined
-      };
-    },
-    isOpen: function isOpen() {
-      return this.showDayView || this.showMonthView || this.showYearView;
-    },
-    isInline: function isInline() {
-      return !!this.inline;
-    },
-    isRtl: function isRtl() {
-      return this.translation.rtl === true;
-    }
-  },
-  methods: {
-    /**
-     * Called in the event that the user navigates to date pages and
-     * closes the picker without selecting a date.
-     */
-    resetDefaultPageDate: function resetDefaultPageDate() {
-      if (this.selectedDate === null) {
-        this.setPageDate();
-        return;
-      }
-
-      this.setPageDate(this.selectedDate);
-    },
-
-    /**
-     * Effectively a toggle to show/hide the calendar
-     * @return {mixed}
-     */
-    showCalendar: function showCalendar() {
-      if (this.disabled || this.isInline) {
-        return false;
-      }
-
-      if (this.isOpen) {
-        return this.close(true);
-      }
-
-      this.setInitialView();
-    },
-
-    /**
-     * Sets the initial picker page view: day, month or year
-     */
-    setInitialView: function setInitialView() {
-      var initialView = this.computedInitialView;
-
-      if (!this.allowedToShowView(initialView)) {
-        throw new Error("initialView '".concat(this.initialView, "' cannot be rendered based on minimum '").concat(this.minimumView, "' and maximum '").concat(this.maximumView, "'"));
-      }
-
-      switch (initialView) {
-        case 'year':
-          this.showYearCalendar();
-          break;
-
-        case 'month':
-          this.showMonthCalendar();
-          break;
-
-        default:
-          this.showDayCalendar();
-          break;
-      }
-    },
-
-    /**
-     * Are we allowed to show a specific picker view?
-     * @param {String} view
-     * @return {Boolean}
-     */
-    allowedToShowView: function allowedToShowView(view) {
-      var views = ['day', 'month', 'year'];
-      var minimumViewIndex = views.indexOf(this.minimumView);
-      var maximumViewIndex = views.indexOf(this.maximumView);
-      var viewIndex = views.indexOf(view);
-      return viewIndex >= minimumViewIndex && viewIndex <= maximumViewIndex;
-    },
-
-    /**
-     * Show the day picker
-     * @return {Boolean}
-     */
-    showDayCalendar: function showDayCalendar() {
-      if (!this.allowedToShowView('day')) {
-        return false;
-      }
-
-      this.close();
-      this.showDayView = true;
-      return true;
-    },
-
-    /**
-     * Show the month picker
-     * @return {Boolean}
-     */
-    showMonthCalendar: function showMonthCalendar() {
-      if (!this.allowedToShowView('month')) {
-        return false;
-      }
-
-      this.close();
-      this.showMonthView = true;
-      return true;
-    },
-
-    /**
-     * Show the year picker
-     * @return {Boolean}
-     */
-    showYearCalendar: function showYearCalendar() {
-      if (!this.allowedToShowView('year')) {
-        return false;
-      }
-
-      this.close();
-      this.showYearView = true;
-      return true;
-    },
-
-    /**
-     * Set the selected date
-     * @param {Number} timestamp
-     */
-    setDate: function setDate(timestamp) {
-      var date = new Date(timestamp);
-      this.selectedDate = date;
-      this.setPageDate(date);
-      this.$emit('selected', date);
-      this.$emit('input', date);
-    },
-
-    /**
-     * Clear the selected date
-     */
-    clearDate: function clearDate() {
-      this.selectedDate = null;
-      this.setPageDate();
-      this.$emit('selected', null);
-      this.$emit('input', null);
-      this.$emit('cleared');
-    },
-
-    /**
-     * @param {Object} date
-     */
-    selectDate: function selectDate(date) {
-      this.setDate(date.timestamp);
-
-      if (!this.isInline) {
-        this.close(true);
-      }
-
-      this.resetTypedDate = new Date();
-    },
-
-    /**
-     * @param {Object} date
-     */
-    selectDisabledDate: function selectDisabledDate(date) {
-      this.$emit('selectedDisabled', date);
-    },
-
-    /**
-     * @param {Object} month
-     */
-    selectMonth: function selectMonth(month) {
-      var date = new Date(month.timestamp);
-
-      if (this.allowedToShowView('day')) {
-        this.setPageDate(date);
-        this.$emit('changedMonth', month);
-        this.showDayCalendar();
-      } else {
-        this.selectDate(month);
-      }
-    },
-
-    /**
-     * @param {Object} year
-     */
-    selectYear: function selectYear(year) {
-      var date = new Date(year.timestamp);
-
-      if (this.allowedToShowView('month')) {
-        this.setPageDate(date);
-        this.$emit('changedYear', year);
-        this.showMonthCalendar();
-      } else {
-        this.selectDate(year);
-      }
-    },
-
-    /**
-     * Set the datepicker value
-     * @param {Date|String|Number|null} date
-     */
-    setValue: function setValue(date) {
-      if (typeof date === 'string' || typeof date === 'number') {
-        var parsed = new Date(date);
-        date = isNaN(parsed.valueOf()) ? null : parsed;
-      }
-
-      if (!date) {
-        this.setPageDate();
-        this.selectedDate = null;
-        return;
-      }
-
-      this.selectedDate = date;
-      this.setPageDate(date);
-    },
-
-    /**
-     * Sets the date that the calendar should open on
-     */
-    setPageDate: function setPageDate(date) {
-      if (!date) {
-        if (this.openDate) {
-          date = new Date(this.openDate);
-        } else {
-          date = new Date();
-        }
-      }
-
-      this.pageTimestamp = this.utils.setDate(new Date(date), 1);
-    },
-
-    /**
-     * Handles a month change from the day picker
-     */
-    handleChangedMonthFromDayPicker: function handleChangedMonthFromDayPicker(date) {
-      this.setPageDate(date);
-      this.$emit('changedMonth', date);
-    },
-
-    /**
-     * Set the date from a typedDate event
-     */
-    setTypedDate: function setTypedDate(date) {
-      this.setDate(date.getTime());
-    },
-
-    /**
-     * Close all calendar layers
-     * @param {Boolean} emitEvent - emit close event
-     */
-    close: function close(emitEvent) {
-      this.showDayView = this.showMonthView = this.showYearView = false;
-
-      if (!this.isInline) {
-        if (emitEvent) {
-          this.$emit('closed');
-        }
-
-        document.removeEventListener('click', this.clickOutside, false);
-      }
-    },
-
-    /**
-     * Initiate the component
-     */
-    init: function init() {
-      if (this.value) {
-        this.setValue(this.value);
-      }
-
-      if (this.isInline) {
-        this.setInitialView();
-      }
-    }
-  },
-  mounted: function mounted() {
-    this.init();
-  }
-} // eslint-disable-next-line
-;
-
-var isOldIE = typeof navigator !== 'undefined' && /msie [6-9]\\b/.test(navigator.userAgent.toLowerCase());
-function createInjector(context) {
-  return function (id, style) {
-    return addStyle(id, style);
-  };
-}
-var HEAD = document.head || document.getElementsByTagName('head')[0];
-var styles = {};
-
-function addStyle(id, css) {
-  var group = isOldIE ? css.media || 'default' : id;
-  var style = styles[group] || (styles[group] = {
-    ids: new Set(),
-    styles: []
-  });
-
-  if (!style.ids.has(id)) {
-    style.ids.add(id);
-    var code = css.source;
-
-    if (css.map) {
-      // https://developer.chrome.com/devtools/docs/javascript-debugging
-      // this makes source maps inside style tags work properly in Chrome
-      code += '\n/*# sourceURL=' + css.map.sources[0] + ' */'; // http://stackoverflow.com/a/26603875
-
-      code += '\n/*# sourceMappingURL=data:application/json;base64,' + btoa(unescape(encodeURIComponent(JSON.stringify(css.map)))) + ' */';
-    }
-
-    if (!style.element) {
-      style.element = document.createElement('style');
-      style.element.type = 'text/css';
-      if (css.media) style.element.setAttribute('media', css.media);
-      HEAD.appendChild(style.element);
-    }
-
-    if ('styleSheet' in style.element) {
-      style.styles.push(code);
-      style.element.styleSheet.cssText = style.styles.filter(Boolean).join('\n');
-    } else {
-      var index = style.ids.size - 1;
-      var textNode = document.createTextNode(code);
-      var nodes = style.element.childNodes;
-      if (nodes[index]) style.element.removeChild(nodes[index]);
-      if (nodes.length) style.element.insertBefore(textNode, nodes[index]);else style.element.appendChild(textNode);
-    }
-  }
-}
-
-var browser = createInjector;
-
-/* script */
-const __vue_script__$4 = script$4;
-
-/* template */
-var __vue_render__$4 = function() {
-  var _vm = this;
-  var _h = _vm.$createElement;
-  var _c = _vm._self._c || _h;
-  return _c(
-    "div",
-    {
-      staticClass: "vdp-datepicker",
-      class: [_vm.wrapperClass, _vm.isRtl ? "rtl" : ""]
-    },
-    [
-      _c(
-        "date-input",
-        {
-          attrs: {
-            selectedDate: _vm.selectedDate,
-            resetTypedDate: _vm.resetTypedDate,
-            format: _vm.format,
-            translation: _vm.translation,
-            inline: _vm.inline,
-            id: _vm.id,
-            name: _vm.name,
-            refName: _vm.refName,
-            openDate: _vm.openDate,
-            placeholder: _vm.placeholder,
-            inputClass: _vm.inputClass,
-            typeable: _vm.typeable,
-            clearButton: _vm.clearButton,
-            clearButtonIcon: _vm.clearButtonIcon,
-            calendarButton: _vm.calendarButton,
-            calendarButtonIcon: _vm.calendarButtonIcon,
-            calendarButtonIconContent: _vm.calendarButtonIconContent,
-            disabled: _vm.disabled,
-            required: _vm.required,
-            bootstrapStyling: _vm.bootstrapStyling,
-            "use-utc": _vm.useUtc
-          },
-          on: {
-            showCalendar: _vm.showCalendar,
-            closeCalendar: _vm.close,
-            typedDate: _vm.setTypedDate,
-            clearDate: _vm.clearDate
-          }
-        },
-        [_vm._t("afterDateInput", null, { slot: "afterDateInput" })],
-        2
-      ),
-      _vm._v(" "),
-      _vm.allowedToShowView("day")
-        ? _c(
-            "picker-day",
-            {
-              attrs: {
-                pageDate: _vm.pageDate,
-                selectedDate: _vm.selectedDate,
-                showDayView: _vm.showDayView,
-                fullMonthName: _vm.fullMonthName,
-                allowedToShowView: _vm.allowedToShowView,
-                disabledDates: _vm.disabledDates,
-                highlighted: _vm.highlighted,
-                calendarClass: _vm.calendarClass,
-                calendarStyle: _vm.calendarStyle,
-                translation: _vm.translation,
-                pageTimestamp: _vm.pageTimestamp,
-                isRtl: _vm.isRtl,
-                mondayFirst: _vm.mondayFirst,
-                dayCellContent: _vm.dayCellContent,
-                "use-utc": _vm.useUtc
-              },
-              on: {
-                changedMonth: _vm.handleChangedMonthFromDayPicker,
-                selectDate: _vm.selectDate,
-                showMonthCalendar: _vm.showMonthCalendar,
-                selectedDisabled: _vm.selectDisabledDate
-              }
-            },
-            [
-              _vm._t("beforeCalendarHeader", null, {
-                slot: "beforeCalendarHeader"
-              })
-            ],
-            2
-          )
-        : _vm._e(),
-      _vm._v(" "),
-      _vm.allowedToShowView("month")
-        ? _c(
-            "picker-month",
-            {
-              attrs: {
-                pageDate: _vm.pageDate,
-                selectedDate: _vm.selectedDate,
-                showMonthView: _vm.showMonthView,
-                allowedToShowView: _vm.allowedToShowView,
-                disabledDates: _vm.disabledDates,
-                calendarClass: _vm.calendarClass,
-                calendarStyle: _vm.calendarStyle,
-                translation: _vm.translation,
-                isRtl: _vm.isRtl,
-                "use-utc": _vm.useUtc
-              },
-              on: {
-                selectMonth: _vm.selectMonth,
-                showYearCalendar: _vm.showYearCalendar,
-                changedYear: _vm.setPageDate
-              }
-            },
-            [
-              _vm._t("beforeCalendarHeader", null, {
-                slot: "beforeCalendarHeader"
-              })
-            ],
-            2
-          )
-        : _vm._e(),
-      _vm._v(" "),
-      _vm.allowedToShowView("year")
-        ? _c(
-            "picker-year",
-            {
-              attrs: {
-                pageDate: _vm.pageDate,
-                selectedDate: _vm.selectedDate,
-                showYearView: _vm.showYearView,
-                allowedToShowView: _vm.allowedToShowView,
-                disabledDates: _vm.disabledDates,
-                calendarClass: _vm.calendarClass,
-                calendarStyle: _vm.calendarStyle,
-                translation: _vm.translation,
-                isRtl: _vm.isRtl,
-                "use-utc": _vm.useUtc
-              },
-              on: { selectYear: _vm.selectYear, changedDecade: _vm.setPageDate }
-            },
-            [
-              _vm._t("beforeCalendarHeader", null, {
-                slot: "beforeCalendarHeader"
-              })
-            ],
-            2
-          )
-        : _vm._e()
-    ],
-    1
-  )
-};
-var __vue_staticRenderFns__$4 = [];
-__vue_render__$4._withStripped = true;
-
-  /* style */
-  const __vue_inject_styles__$4 = function (inject) {
-    if (!inject) return
-    inject("data-v-64ca2bb5_0", { source: ".rtl {\n  direction: rtl;\n}\n.vdp-datepicker {\n  position: relative;\n  text-align: left;\n}\n.vdp-datepicker * {\n  box-sizing: border-box;\n}\n.vdp-datepicker__calendar {\n  position: absolute;\n  z-index: 100;\n  background: #fff;\n  width: 300px;\n  border: 1px solid #ccc;\n}\n.vdp-datepicker__calendar header {\n  display: block;\n  line-height: 40px;\n}\n.vdp-datepicker__calendar header span {\n  display: inline-block;\n  text-align: center;\n  width: 71.42857142857143%;\n  float: left;\n}\n.vdp-datepicker__calendar header .prev,\n.vdp-datepicker__calendar header .next {\n  width: 14.285714285714286%;\n  float: left;\n  text-indent: -10000px;\n  position: relative;\n}\n.vdp-datepicker__calendar header .prev:after,\n.vdp-datepicker__calendar header .next:after {\n  content: '';\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  transform: translateX(-50%) translateY(-50%);\n  border: 6px solid transparent;\n}\n.vdp-datepicker__calendar header .prev:after {\n  border-right: 10px solid #000;\n  margin-left: -5px;\n}\n.vdp-datepicker__calendar header .prev.disabled:after {\n  border-right: 10px solid #ddd;\n}\n.vdp-datepicker__calendar header .next:after {\n  border-left: 10px solid #000;\n  margin-left: 5px;\n}\n.vdp-datepicker__calendar header .next.disabled:after {\n  border-left: 10px solid #ddd;\n}\n.vdp-datepicker__calendar header .prev:not(.disabled),\n.vdp-datepicker__calendar header .next:not(.disabled),\n.vdp-datepicker__calendar header .up:not(.disabled) {\n  cursor: pointer;\n}\n.vdp-datepicker__calendar header .prev:not(.disabled):hover,\n.vdp-datepicker__calendar header .next:not(.disabled):hover,\n.vdp-datepicker__calendar header .up:not(.disabled):hover {\n  background: #eee;\n}\n.vdp-datepicker__calendar .disabled {\n  color: #ddd;\n  cursor: default;\n}\n.vdp-datepicker__calendar .flex-rtl {\n  display: flex;\n  width: inherit;\n  flex-wrap: wrap;\n}\n.vdp-datepicker__calendar .cell {\n  display: inline-block;\n  padding: 0 5px;\n  width: 14.285714285714286%;\n  height: 40px;\n  line-height: 40px;\n  text-align: center;\n  vertical-align: middle;\n  border: 1px solid transparent;\n}\n.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).day,\n.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).month,\n.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).year {\n  cursor: pointer;\n}\n.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).day:hover,\n.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).month:hover,\n.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).year:hover {\n  border: 1px solid #4bd;\n}\n.vdp-datepicker__calendar .cell.selected {\n  background: #4bd;\n}\n.vdp-datepicker__calendar .cell.selected:hover {\n  background: #4bd;\n}\n.vdp-datepicker__calendar .cell.selected.highlighted {\n  background: #4bd;\n}\n.vdp-datepicker__calendar .cell.highlighted {\n  background: #cae5ed;\n}\n.vdp-datepicker__calendar .cell.highlighted.disabled {\n  color: #a3a3a3;\n}\n.vdp-datepicker__calendar .cell.grey {\n  color: #888;\n}\n.vdp-datepicker__calendar .cell.grey:hover {\n  background: inherit;\n}\n.vdp-datepicker__calendar .cell.day-header {\n  font-size: 75%;\n  white-space: nowrap;\n  cursor: inherit;\n}\n.vdp-datepicker__calendar .cell.day-header:hover {\n  background: inherit;\n}\n.vdp-datepicker__calendar .month,\n.vdp-datepicker__calendar .year {\n  width: 33.333%;\n}\n.vdp-datepicker__clear-button,\n.vdp-datepicker__calendar-button {\n  cursor: pointer;\n  font-style: normal;\n}\n.vdp-datepicker__clear-button.disabled,\n.vdp-datepicker__calendar-button.disabled {\n  color: #999;\n  cursor: default;\n}\n", map: {"version":3,"sources":["Datepicker.vue"],"names":[],"mappings":"AAAA;EACE,cAAc;AAChB;AACA;EACE,kBAAkB;EAClB,gBAAgB;AAClB;AACA;EACE,sBAAsB;AACxB;AACA;EACE,kBAAkB;EAClB,YAAY;EACZ,gBAAgB;EAChB,YAAY;EACZ,sBAAsB;AACxB;AACA;EACE,cAAc;EACd,iBAAiB;AACnB;AACA;EACE,qBAAqB;EACrB,kBAAkB;EAClB,yBAAyB;EACzB,WAAW;AACb;AACA;;EAEE,0BAA0B;EAC1B,WAAW;EACX,qBAAqB;EACrB,kBAAkB;AACpB;AACA;;EAEE,WAAW;EACX,kBAAkB;EAClB,SAAS;EACT,QAAQ;EACR,4CAA4C;EAC5C,6BAA6B;AAC/B;AACA;EACE,6BAA6B;EAC7B,iBAAiB;AACnB;AACA;EACE,6BAA6B;AAC/B;AACA;EACE,4BAA4B;EAC5B,gBAAgB;AAClB;AACA;EACE,4BAA4B;AAC9B;AACA;;;EAGE,eAAe;AACjB;AACA;;;EAGE,gBAAgB;AAClB;AACA;EACE,WAAW;EACX,eAAe;AACjB;AACA;EACE,aAAa;EACb,cAAc;EACd,eAAe;AACjB;AACA;EACE,qBAAqB;EACrB,cAAc;EACd,0BAA0B;EAC1B,YAAY;EACZ,iBAAiB;EACjB,kBAAkB;EAClB,sBAAsB;EACtB,6BAA6B;AAC/B;AACA;;;EAGE,eAAe;AACjB;AACA;;;EAGE,sBAAsB;AACxB;AACA;EACE,gBAAgB;AAClB;AACA;EACE,gBAAgB;AAClB;AACA;EACE,gBAAgB;AAClB;AACA;EACE,mBAAmB;AACrB;AACA;EACE,cAAc;AAChB;AACA;EACE,WAAW;AACb;AACA;EACE,mBAAmB;AACrB;AACA;EACE,cAAc;EACd,mBAAmB;EACnB,eAAe;AACjB;AACA;EACE,mBAAmB;AACrB;AACA;;EAEE,cAAc;AAChB;AACA;;EAEE,eAAe;EACf,kBAAkB;AACpB;AACA;;EAEE,WAAW;EACX,eAAe;AACjB","file":"Datepicker.vue","sourcesContent":[".rtl {\n  direction: rtl;\n}\n.vdp-datepicker {\n  position: relative;\n  text-align: left;\n}\n.vdp-datepicker * {\n  box-sizing: border-box;\n}\n.vdp-datepicker__calendar {\n  position: absolute;\n  z-index: 100;\n  background: #fff;\n  width: 300px;\n  border: 1px solid #ccc;\n}\n.vdp-datepicker__calendar header {\n  display: block;\n  line-height: 40px;\n}\n.vdp-datepicker__calendar header span {\n  display: inline-block;\n  text-align: center;\n  width: 71.42857142857143%;\n  float: left;\n}\n.vdp-datepicker__calendar header .prev,\n.vdp-datepicker__calendar header .next {\n  width: 14.285714285714286%;\n  float: left;\n  text-indent: -10000px;\n  position: relative;\n}\n.vdp-datepicker__calendar header .prev:after,\n.vdp-datepicker__calendar header .next:after {\n  content: '';\n  position: absolute;\n  left: 50%;\n  top: 50%;\n  transform: translateX(-50%) translateY(-50%);\n  border: 6px solid transparent;\n}\n.vdp-datepicker__calendar header .prev:after {\n  border-right: 10px solid #000;\n  margin-left: -5px;\n}\n.vdp-datepicker__calendar header .prev.disabled:after {\n  border-right: 10px solid #ddd;\n}\n.vdp-datepicker__calendar header .next:after {\n  border-left: 10px solid #000;\n  margin-left: 5px;\n}\n.vdp-datepicker__calendar header .next.disabled:after {\n  border-left: 10px solid #ddd;\n}\n.vdp-datepicker__calendar header .prev:not(.disabled),\n.vdp-datepicker__calendar header .next:not(.disabled),\n.vdp-datepicker__calendar header .up:not(.disabled) {\n  cursor: pointer;\n}\n.vdp-datepicker__calendar header .prev:not(.disabled):hover,\n.vdp-datepicker__calendar header .next:not(.disabled):hover,\n.vdp-datepicker__calendar header .up:not(.disabled):hover {\n  background: #eee;\n}\n.vdp-datepicker__calendar .disabled {\n  color: #ddd;\n  cursor: default;\n}\n.vdp-datepicker__calendar .flex-rtl {\n  display: flex;\n  width: inherit;\n  flex-wrap: wrap;\n}\n.vdp-datepicker__calendar .cell {\n  display: inline-block;\n  padding: 0 5px;\n  width: 14.285714285714286%;\n  height: 40px;\n  line-height: 40px;\n  text-align: center;\n  vertical-align: middle;\n  border: 1px solid transparent;\n}\n.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).day,\n.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).month,\n.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).year {\n  cursor: pointer;\n}\n.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).day:hover,\n.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).month:hover,\n.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).year:hover {\n  border: 1px solid #4bd;\n}\n.vdp-datepicker__calendar .cell.selected {\n  background: #4bd;\n}\n.vdp-datepicker__calendar .cell.selected:hover {\n  background: #4bd;\n}\n.vdp-datepicker__calendar .cell.selected.highlighted {\n  background: #4bd;\n}\n.vdp-datepicker__calendar .cell.highlighted {\n  background: #cae5ed;\n}\n.vdp-datepicker__calendar .cell.highlighted.disabled {\n  color: #a3a3a3;\n}\n.vdp-datepicker__calendar .cell.grey {\n  color: #888;\n}\n.vdp-datepicker__calendar .cell.grey:hover {\n  background: inherit;\n}\n.vdp-datepicker__calendar .cell.day-header {\n  font-size: 75%;\n  white-space: nowrap;\n  cursor: inherit;\n}\n.vdp-datepicker__calendar .cell.day-header:hover {\n  background: inherit;\n}\n.vdp-datepicker__calendar .month,\n.vdp-datepicker__calendar .year {\n  width: 33.333%;\n}\n.vdp-datepicker__clear-button,\n.vdp-datepicker__calendar-button {\n  cursor: pointer;\n  font-style: normal;\n}\n.vdp-datepicker__clear-button.disabled,\n.vdp-datepicker__calendar-button.disabled {\n  color: #999;\n  cursor: default;\n}\n"]}, media: undefined });
-
-  };
-  /* scoped */
-  const __vue_scope_id__$4 = undefined;
-  /* module identifier */
-  const __vue_module_identifier__$4 = undefined;
-  /* functional template */
-  const __vue_is_functional_template__$4 = false;
-  /* style inject SSR */
-  
-
-  
-  var Datepicker = normalizeComponent_1(
-    { render: __vue_render__$4, staticRenderFns: __vue_staticRenderFns__$4 },
-    __vue_inject_styles__$4,
-    __vue_script__$4,
-    __vue_scope_id__$4,
-    __vue_is_functional_template__$4,
-    __vue_module_identifier__$4,
-    browser,
-    undefined
-  );
-
-/* harmony default export */ __webpack_exports__["default"] = (Datepicker);
-
-
-/***/ }),
-
-/***/ "./resources/js/Pages/Product/SimulasiKredit/index.vue":
-/*!*************************************************************!*\
-  !*** ./resources/js/Pages/Product/SimulasiKredit/index.vue ***!
-  \*************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _index_vue_vue_type_template_id_4b74e8c6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.vue?vue&type=template&id=4b74e8c6& */ "./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=template&id=4b74e8c6&");
-/* harmony import */ var _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
 
@@ -7239,51 +4509,67 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
   _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _index_vue_vue_type_template_id_4b74e8c6___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _index_vue_vue_type_template_id_4b74e8c6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _index_vue_vue_type_template_id_6c9f31ca_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _index_vue_vue_type_template_id_6c9f31ca_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
-  null,
+  "6c9f31ca",
   null
   
 )
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/Pages/Product/SimulasiKredit/index.vue"
+component.options.__file = "resources/js/Pages/Contact/index.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=script&lang=js&":
-/*!**************************************************************************************!*\
-  !*** ./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=script&lang=js& ***!
-  \**************************************************************************************/
+/***/ "./resources/js/Pages/Contact/index.vue?vue&type=script&lang=js&":
+/*!***********************************************************************!*\
+  !*** ./resources/js/Pages/Contact/index.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib??ref--4-0!../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Contact/index.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=template&id=4b74e8c6&":
-/*!********************************************************************************************!*\
-  !*** ./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=template&id=4b74e8c6& ***!
-  \********************************************************************************************/
+/***/ "./resources/js/Pages/Contact/index.vue?vue&type=style&index=0&id=6c9f31ca&lang=scss&scoped=true&":
+/*!********************************************************************************************************!*\
+  !*** ./resources/js/Pages/Contact/index.vue?vue&type=style&index=0&id=6c9f31ca&lang=scss&scoped=true& ***!
+  \********************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_6c9f31ca_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/postcss-loader/src??ref--8-2!../../../../node_modules/sass-loader/dist/cjs.js??ref--8-3!../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=style&index=0&id=6c9f31ca&lang=scss&scoped=true& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/dist/cjs.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Contact/index.vue?vue&type=style&index=0&id=6c9f31ca&lang=scss&scoped=true&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_6c9f31ca_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_6c9f31ca_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_6c9f31ca_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_6c9f31ca_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_8_2_node_modules_sass_loader_dist_cjs_js_ref_8_3_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_style_index_0_id_6c9f31ca_lang_scss_scoped_true___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Contact/index.vue?vue&type=template&id=6c9f31ca&scoped=true&":
+/*!*****************************************************************************************!*\
+  !*** ./resources/js/Pages/Contact/index.vue?vue&type=template&id=6c9f31ca&scoped=true& ***!
+  \*****************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_4b74e8c6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=template&id=4b74e8c6& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Product/SimulasiKredit/index.vue?vue&type=template&id=4b74e8c6&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_4b74e8c6___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_6c9f31ca_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=template&id=6c9f31ca&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Contact/index.vue?vue&type=template&id=6c9f31ca&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_6c9f31ca_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_4b74e8c6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_6c9f31ca_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -7514,128 +4800,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/Shared/img/creditSVG.vue":
-/*!***********************************************!*\
-  !*** ./resources/js/Shared/img/creditSVG.vue ***!
-  \***********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _creditSVG_vue_vue_type_template_id_1501075a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./creditSVG.vue?vue&type=template&id=1501075a& */ "./resources/js/Shared/img/creditSVG.vue?vue&type=template&id=1501075a&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-var script = {}
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
-  script,
-  _creditSVG_vue_vue_type_template_id_1501075a___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _creditSVG_vue_vue_type_template_id_1501075a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/Shared/img/creditSVG.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/Shared/img/creditSVG.vue?vue&type=template&id=1501075a&":
-/*!******************************************************************************!*\
-  !*** ./resources/js/Shared/img/creditSVG.vue?vue&type=template&id=1501075a& ***!
-  \******************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_creditSVG_vue_vue_type_template_id_1501075a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./creditSVG.vue?vue&type=template&id=1501075a& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Shared/img/creditSVG.vue?vue&type=template&id=1501075a&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_creditSVG_vue_vue_type_template_id_1501075a___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_creditSVG_vue_vue_type_template_id_1501075a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./resources/js/components/Alert.vue":
-/*!*******************************************!*\
-  !*** ./resources/js/components/Alert.vue ***!
-  \*******************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Alert_vue_vue_type_template_id_7b2bf401___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Alert.vue?vue&type=template&id=7b2bf401& */ "./resources/js/components/Alert.vue?vue&type=template&id=7b2bf401&");
-/* harmony import */ var _Alert_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Alert.vue?vue&type=script&lang=js& */ "./resources/js/components/Alert.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-
-
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Alert_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Alert_vue_vue_type_template_id_7b2bf401___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Alert_vue_vue_type_template_id_7b2bf401___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/components/Alert.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/components/Alert.vue?vue&type=script&lang=js&":
-/*!********************************************************************!*\
-  !*** ./resources/js/components/Alert.vue?vue&type=script&lang=js& ***!
-  \********************************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Alert_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Alert.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Alert.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Alert_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
-
-/***/ }),
-
-/***/ "./resources/js/components/Alert.vue?vue&type=template&id=7b2bf401&":
-/*!**************************************************************************!*\
-  !*** ./resources/js/components/Alert.vue?vue&type=template&id=7b2bf401& ***!
-  \**************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Alert_vue_vue_type_template_id_7b2bf401___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Alert.vue?vue&type=template&id=7b2bf401& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Alert.vue?vue&type=template&id=7b2bf401&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Alert_vue_vue_type_template_id_7b2bf401___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Alert_vue_vue_type_template_id_7b2bf401___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
 /***/ "./resources/js/components/Footer.vue":
 /*!********************************************!*\
   !*** ./resources/js/components/Footer.vue ***!
@@ -7707,18 +4871,20 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/ModalFormPengajuan.vue":
-/*!********************************************************!*\
-  !*** ./resources/js/components/ModalFormPengajuan.vue ***!
-  \********************************************************/
+/***/ "./resources/js/components/GoogleMapLoader.vue":
+/*!*****************************************************!*\
+  !*** ./resources/js/components/GoogleMapLoader.vue ***!
+  \*****************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _ModalFormPengajuan_vue_vue_type_template_id_e2fee0f6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ModalFormPengajuan.vue?vue&type=template&id=e2fee0f6& */ "./resources/js/components/ModalFormPengajuan.vue?vue&type=template&id=e2fee0f6&");
-/* harmony import */ var _ModalFormPengajuan_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ModalFormPengajuan.vue?vue&type=script&lang=js& */ "./resources/js/components/ModalFormPengajuan.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _GoogleMapLoader_vue_vue_type_template_id_8216208a_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./GoogleMapLoader.vue?vue&type=template&id=8216208a&scoped=true& */ "./resources/js/components/GoogleMapLoader.vue?vue&type=template&id=8216208a&scoped=true&");
+/* harmony import */ var _GoogleMapLoader_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./GoogleMapLoader.vue?vue&type=script&lang=js& */ "./resources/js/components/GoogleMapLoader.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _GoogleMapLoader_vue_vue_type_style_index_0_id_8216208a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./GoogleMapLoader.vue?vue&type=style&index=0&id=8216208a&scoped=true&lang=css& */ "./resources/js/components/GoogleMapLoader.vue?vue&type=style&index=0&id=8216208a&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
 
 
 
@@ -7726,10 +4892,94 @@ __webpack_require__.r(__webpack_exports__);
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _ModalFormPengajuan_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _ModalFormPengajuan_vue_vue_type_template_id_e2fee0f6___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _ModalFormPengajuan_vue_vue_type_template_id_e2fee0f6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_3__["default"])(
+  _GoogleMapLoader_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _GoogleMapLoader_vue_vue_type_template_id_8216208a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _GoogleMapLoader_vue_vue_type_template_id_8216208a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  "8216208a",
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/GoogleMapLoader.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/GoogleMapLoader.vue?vue&type=script&lang=js&":
+/*!******************************************************************************!*\
+  !*** ./resources/js/components/GoogleMapLoader.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_GoogleMapLoader_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./GoogleMapLoader.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/GoogleMapLoader.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_GoogleMapLoader_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/GoogleMapLoader.vue?vue&type=style&index=0&id=8216208a&scoped=true&lang=css&":
+/*!**************************************************************************************************************!*\
+  !*** ./resources/js/components/GoogleMapLoader.vue?vue&type=style&index=0&id=8216208a&scoped=true&lang=css& ***!
+  \**************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_7_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_vue_loader_lib_index_js_vue_loader_options_GoogleMapLoader_vue_vue_type_style_index_0_id_8216208a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/style-loader!../../../node_modules/css-loader??ref--7-1!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/postcss-loader/src??ref--7-2!../../../node_modules/vue-loader/lib??vue-loader-options!./GoogleMapLoader.vue?vue&type=style&index=0&id=8216208a&scoped=true&lang=css& */ "./node_modules/style-loader/index.js!./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/GoogleMapLoader.vue?vue&type=style&index=0&id=8216208a&scoped=true&lang=css&");
+/* harmony import */ var _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_7_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_vue_loader_lib_index_js_vue_loader_options_GoogleMapLoader_vue_vue_type_style_index_0_id_8216208a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_7_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_vue_loader_lib_index_js_vue_loader_options_GoogleMapLoader_vue_vue_type_style_index_0_id_8216208a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__);
+/* harmony reexport (unknown) */ for(var __WEBPACK_IMPORT_KEY__ in _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_7_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_vue_loader_lib_index_js_vue_loader_options_GoogleMapLoader_vue_vue_type_style_index_0_id_8216208a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__) if(["default"].indexOf(__WEBPACK_IMPORT_KEY__) < 0) (function(key) { __webpack_require__.d(__webpack_exports__, key, function() { return _node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_7_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_vue_loader_lib_index_js_vue_loader_options_GoogleMapLoader_vue_vue_type_style_index_0_id_8216208a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0__[key]; }) }(__WEBPACK_IMPORT_KEY__));
+ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_style_loader_index_js_node_modules_css_loader_index_js_ref_7_1_node_modules_vue_loader_lib_loaders_stylePostLoader_js_node_modules_postcss_loader_src_index_js_ref_7_2_node_modules_vue_loader_lib_index_js_vue_loader_options_GoogleMapLoader_vue_vue_type_style_index_0_id_8216208a_scoped_true_lang_css___WEBPACK_IMPORTED_MODULE_0___default.a); 
+
+/***/ }),
+
+/***/ "./resources/js/components/GoogleMapLoader.vue?vue&type=template&id=8216208a&scoped=true&":
+/*!************************************************************************************************!*\
+  !*** ./resources/js/components/GoogleMapLoader.vue?vue&type=template&id=8216208a&scoped=true& ***!
+  \************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_GoogleMapLoader_vue_vue_type_template_id_8216208a_scoped_true___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./GoogleMapLoader.vue?vue&type=template&id=8216208a&scoped=true& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/GoogleMapLoader.vue?vue&type=template&id=8216208a&scoped=true&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_GoogleMapLoader_vue_vue_type_template_id_8216208a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_GoogleMapLoader_vue_vue_type_template_id_8216208a_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/GoogleMapMarker.vue":
+/*!*****************************************************!*\
+  !*** ./resources/js/components/GoogleMapMarker.vue ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _GoogleMapMarker_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./GoogleMapMarker.vue?vue&type=script&lang=js& */ "./resources/js/components/GoogleMapMarker.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+var render, staticRenderFns
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  _GoogleMapMarker_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"],
+  render,
+  staticRenderFns,
   false,
   null,
   null,
@@ -7739,38 +4989,89 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/components/ModalFormPengajuan.vue"
+component.options.__file = "resources/js/components/GoogleMapMarker.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/components/ModalFormPengajuan.vue?vue&type=script&lang=js&":
-/*!*********************************************************************************!*\
-  !*** ./resources/js/components/ModalFormPengajuan.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************************/
+/***/ "./resources/js/components/GoogleMapMarker.vue?vue&type=script&lang=js&":
+/*!******************************************************************************!*\
+  !*** ./resources/js/components/GoogleMapMarker.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ModalFormPengajuan_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./ModalFormPengajuan.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ModalFormPengajuan.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ModalFormPengajuan_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_GoogleMapMarker_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./GoogleMapMarker.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/GoogleMapMarker.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_GoogleMapMarker_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/components/ModalFormPengajuan.vue?vue&type=template&id=e2fee0f6&":
-/*!***************************************************************************************!*\
-  !*** ./resources/js/components/ModalFormPengajuan.vue?vue&type=template&id=e2fee0f6& ***!
-  \***************************************************************************************/
+/***/ "./resources/js/components/HanaMap.vue":
+/*!*********************************************!*\
+  !*** ./resources/js/components/HanaMap.vue ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _HanaMap_vue_vue_type_template_id_e9e8f296___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HanaMap.vue?vue&type=template&id=e9e8f296& */ "./resources/js/components/HanaMap.vue?vue&type=template&id=e9e8f296&");
+/* harmony import */ var _HanaMap_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HanaMap.vue?vue&type=script&lang=js& */ "./resources/js/components/HanaMap.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _HanaMap_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _HanaMap_vue_vue_type_template_id_e9e8f296___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _HanaMap_vue_vue_type_template_id_e9e8f296___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/HanaMap.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/HanaMap.vue?vue&type=script&lang=js&":
+/*!**********************************************************************!*\
+  !*** ./resources/js/components/HanaMap.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_HanaMap_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./HanaMap.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/HanaMap.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_HanaMap_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/HanaMap.vue?vue&type=template&id=e9e8f296&":
+/*!****************************************************************************!*\
+  !*** ./resources/js/components/HanaMap.vue?vue&type=template&id=e9e8f296& ***!
+  \****************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ModalFormPengajuan_vue_vue_type_template_id_e2fee0f6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./ModalFormPengajuan.vue?vue&type=template&id=e2fee0f6& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ModalFormPengajuan.vue?vue&type=template&id=e2fee0f6&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ModalFormPengajuan_vue_vue_type_template_id_e2fee0f6___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HanaMap_vue_vue_type_template_id_e9e8f296___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./HanaMap.vue?vue&type=template&id=e9e8f296& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/HanaMap.vue?vue&type=template&id=e9e8f296&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HanaMap_vue_vue_type_template_id_e9e8f296___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ModalFormPengajuan_vue_vue_type_template_id_e2fee0f6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HanaMap_vue_vue_type_template_id_e9e8f296___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -7946,6 +5247,204 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Topbar_vue_vue_type_template_id_57e4246e_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
+
+
+/***/ }),
+
+/***/ "./resources/js/constants/colorPallete.js":
+/*!************************************************!*\
+  !*** ./resources/js/constants/colorPallete.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = ({
+  COLOR_POINT: "rgb(243,114,114)",
+  COLOR_POINT_FILL: "rgb(255,255,255)",
+  COLOR_LANDSCAPE: "#007965",
+  COLOR_BORDERS: "rgb(195,230,255)",
+  COLOR_LINE: "rgb(255,255,255)",
+  COLOR_SELECTED_POINT: "rgb(0,184,83)",
+  COLOR_BROWN: "rgb(139,69,19)",
+  COLOR_BLACK: "rgb(0,0,0)",
+  COLOR_BLUE: "rgb(77,109,155)",
+  COLOR_LIGHT_BLUE: "rgb(124,156,201)",
+  COLOR_WHITE: "rgb(255,255,255)",
+  COLOR_WHITEY: "rgb(240,240,240)",
+  COLOR_GREEN: "rgb(0,155,77)",
+  COLOR_TOMATO: "rgb(243,114,114)"
+});
+
+/***/ }),
+
+/***/ "./resources/js/constants/mapSettings.js":
+/*!***********************************************!*\
+  !*** ./resources/js/constants/mapSettings.js ***!
+  \***********************************************/
+/*! exports provided: mapSettings, LINE_PATH_CONFIG, POINT_MARKER_ICON_CONFIG */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mapSettings", function() { return mapSettings; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LINE_PATH_CONFIG", function() { return LINE_PATH_CONFIG; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "POINT_MARKER_ICON_CONFIG", function() { return POINT_MARKER_ICON_CONFIG; });
+/* harmony import */ var _colorPallete__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./colorPallete */ "./resources/js/constants/colorPallete.js");
+
+var COLOR_LANDSCAPE = _colorPallete__WEBPACK_IMPORTED_MODULE_0__["default"].COLOR_LANDSCAPE,
+    COLOR_BORDERS = _colorPallete__WEBPACK_IMPORTED_MODULE_0__["default"].COLOR_BORDERS,
+    COLOR_WATER = _colorPallete__WEBPACK_IMPORTED_MODULE_0__["default"].COLOR_WATER,
+    COLOR_LINE = _colorPallete__WEBPACK_IMPORTED_MODULE_0__["default"].COLOR_LINE,
+    COLOR_POINT_FILL = _colorPallete__WEBPACK_IMPORTED_MODULE_0__["default"].COLOR_POINT_FILL,
+    COLOR_SELECTED_POINT = _colorPallete__WEBPACK_IMPORTED_MODULE_0__["default"].COLOR_SELECTED_POINT;
+var COLORS = {
+  BORDERS: COLOR_BORDERS,
+  LANDSCAPE: COLOR_LANDSCAPE,
+  LINE: COLOR_LINE,
+  POINT: COLOR_SELECTED_POINT,
+  POINT_FILL: COLOR_POINT_FILL,
+  WATER: COLOR_WATER
+};
+var POINT_MARKER_ICON_CONFIG = {
+  path: "M 0, 0 m -5, 0 a 5,5 0 1,0 10,0 a 5,5 0 1,0 -10,0",
+  strokeOpacity: 0.7,
+  strokeWeight: 4,
+  strokeColor: COLORS.POINT,
+  fillColor: COLORS.POINT_FILL,
+  fillOpacity: 0.7,
+  scale: 1
+};
+var LINE_SYMBOL_CONFIG = {
+  path: "M 0,-2 0,2",
+  strokeOpacity: 1,
+  strokeWeight: 2,
+  scale: 1
+};
+var LINE_PATH_CONFIG = {
+  clickable: false,
+  geodesic: false,
+  strokeOpacity: 0,
+  strokeColor: COLORS.LINE,
+  icons: [{
+    icon: LINE_SYMBOL_CONFIG,
+    repeat: "10px"
+  }]
+};
+var mapSettings = {
+  clickableIcons: true,
+  streetViewControl: true,
+  panControlOptions: true,
+  gestureHandling: "cooperative",
+  backgroundColor: COLORS.LANDSCAPE,
+  mapTypeControl: true,
+  zoomControlOptions: {
+    style: "SMALL"
+  },
+  zoom: 5,
+  minZoom: 7,
+  maxZoom: 12,
+  styles: [{
+    featureType: "landscape",
+    stylers: [{
+      hue: COLORS.LANDSCAPE
+    }, {
+      saturation: 50.2
+    }, {
+      lightness: -34.8
+    }, {
+      gamma: 1
+    }]
+  }, {
+    featureType: "poi",
+    stylers: [{
+      visibility: "off"
+    }]
+  }, {
+    featureType: "road.highway",
+    stylers: [{
+      hue: COLORS.LANDSCAPE
+    }, {
+      saturation: -19.8
+    }, {
+      lightness: -1.8
+    }, {
+      gamma: 1
+    }]
+  }, {
+    featureType: "road.arterial",
+    stylers: [{
+      hue: COLORS.LANDSCAPE
+    }, {
+      saturation: 72.4
+    }, {
+      lightness: -32.6
+    }, {
+      gamma: 1
+    }]
+  }, {
+    featureType: "road.local",
+    stylers: [{
+      visibility: "off"
+    }]
+  }, {
+    featureType: "transit",
+    stylers: [{
+      visibility: "off"
+    }]
+  }, {
+    featureType: "administrative.province",
+    stylers: [{
+      visibility: "off"
+    }]
+  }, {
+    featureType: "administrative.locality",
+    stylers: [{
+      visibility: "off"
+    }]
+  }, {
+    featureType: "administrative.province",
+    stylers: [{
+      visibility: "off"
+    }]
+  }, {
+    featureType: "administrative.land_parcel",
+    stylers: [{
+      visibility: "off"
+    }]
+  }, {
+    featureType: "administrative.neighborhood",
+    stylers: [{
+      visibility: "off"
+    }]
+  }, {
+    featureType: "administrative.country",
+    elementType: "geometry.stroke",
+    stylers: [{
+      visibility: "on"
+    }, {
+      color: COLORS.BORDERS
+    }]
+  }, {
+    featureType: "administrative",
+    elementType: "labels",
+    stylers: [{
+      visibility: "off"
+    }]
+  }, {
+    featureType: "water",
+    stylers: [{
+      hue: COLORS.WATER
+    }, {
+      saturation: -63.2
+    }, {
+      lightness: 38
+    }, {
+      gamma: 1
+    }]
+  }]
+};
 
 
 /***/ })

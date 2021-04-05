@@ -1,11 +1,15 @@
 <template>
   <!-- Sidebar -->
-  <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+  <ul
+    class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion"
+    id="accordionSidebar"
+  >
     <!-- Sidebar - Brand -->
-    <inertia-link class="sidebar-brand d-flex align-items-center" :href="route('admin.dashboard')">
-      <div class="sidebar-brand-text mx-3">
-        WebSHF
-      </div>
+    <inertia-link
+      class="sidebar-brand d-flex align-items-center"
+      :href="route('admin.dashboard')"
+    >
+      <div class="sidebar-brand-text mx-3">WebSHF</div>
     </inertia-link>
     <!-- Divider -->
     <hr class="sidebar-divider my-0" />
@@ -58,8 +62,18 @@ export default {
         {
           id: 2,
           title: "Post",
-          link: "admin.post.index",
+          link: "#",
           icon: "fas fa-fw fa-newspaper",
+          child: [
+            {
+              title: "News",
+              link: "admin.post.news.index",
+            },
+            {
+              title: "CSR News",
+              link: "admin.post.csrnews.index",
+            },
+          ],
         },
         {
           id: 3,
@@ -83,7 +97,6 @@ export default {
   methods: {
     sidebarMenuHandle() {
       if (window.innerWidth < 768) {
-        
       }
       if ($(window).width() < 480 && !$(".sidebar").hasClass("toggled")) {
       }

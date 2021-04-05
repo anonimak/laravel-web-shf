@@ -1,7 +1,7 @@
 <?php
 
 use App\News;
-use App\CategoryNews;
+use App\TypeNews;
 use Illuminate\Database\Seeder;
 
 class CreateNewsSeeder extends Seeder
@@ -15,19 +15,26 @@ class CreateNewsSeeder extends Seeder
     {
         $news = [
             'title' => 'Test Berita',
-            'id_category' => 1,
+            'id_type' => 1,
             'image' => '#',
             'description' => 'test',
             'status' => true,
         ];
 
-        $category = [
-            'title' => 'General',
-            'image' => '#',
-            'description' => 'General Category',
-            'status' => true,
+        $types = [
+            [
+                'type' => 'News',
+                'status' => true,
+            ],
+            [
+                'type' => 'Social',
+                'status' => true,
+            ]
         ];
         News::create($news);
-        CategoryNews::create($category);
+
+        foreach($types as $type){
+            TypeNews::create($type);
+        }
     }
 }

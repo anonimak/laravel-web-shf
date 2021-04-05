@@ -1,26 +1,18 @@
 (window["webpackJsonp"] = window["webpackJsonp"] || []).push([[9],{
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Profile/Visi/index.vue?vue&type=script&lang=js&":
-/*!************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Profile/Visi/index.vue?vue&type=script&lang=js& ***!
-  \************************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Product/PinjamanDana/index.vue?vue&type=script&lang=js&":
+/*!********************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Product/PinjamanDana/index.vue?vue&type=script&lang=js& ***!
+  \********************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Shared_Layout__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/Shared/Layout */ "./resources/js/Shared/Layout.vue");
-/* harmony import */ var _components_Breadcrumb__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/components/Breadcrumb */ "./resources/js/components/Breadcrumb.vue");
-/* harmony import */ var _Shared_img_visiSVG__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/Shared/img/visiSVG */ "./resources/js/Shared/img/visiSVG.vue");
-/* harmony import */ var _Shared_img_misiSVG__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/Shared/img/misiSVG */ "./resources/js/Shared/img/misiSVG.vue");
-//
-//
-//
-//
-//
-//
-//
-//
+/* harmony import */ var _components_CardRequirement__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/components/CardRequirement */ "./resources/js/components/CardRequirement.vue");
+/* harmony import */ var _Shared_img_vehicleSVG__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/Shared/img/vehicleSVG */ "./resources/js/Shared/img/vehicleSVG.vue");
+/* harmony import */ var _components_ModalFormPengajuan__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/components/ModalFormPengajuan */ "./resources/js/components/ModalFormPengajuan.vue");
 //
 //
 //
@@ -137,27 +129,67 @@ __webpack_require__.r(__webpack_exports__);
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
-  data: function data() {
-    return {
-      breadcrumbItem: [{
-        title: "Home",
-        href: "home"
-      }, {
-        title: "Profil",
-        href: "about"
-      }, {
-        title: "About",
-        active: true
-      }]
-    };
-  },
   components: {
     Layout: _Shared_Layout__WEBPACK_IMPORTED_MODULE_0__["default"],
-    Breadcrumb: _components_Breadcrumb__WEBPACK_IMPORTED_MODULE_1__["default"],
-    VisiSvg: _Shared_img_visiSVG__WEBPACK_IMPORTED_MODULE_2__["default"],
-    MisiSvg: _Shared_img_misiSVG__WEBPACK_IMPORTED_MODULE_3__["default"]
+    CardRequirement: _components_CardRequirement__WEBPACK_IMPORTED_MODULE_1__["default"],
+    VehicleSvg: _Shared_img_vehicleSVG__WEBPACK_IMPORTED_MODULE_2__["default"],
+    ModalFormPengajuan: _components_ModalFormPengajuan__WEBPACK_IMPORTED_MODULE_3__["default"]
   },
-  props: ["meta"]
+  metaInfo: {
+    title: "Produk Pinjaman Dana"
+  },
+  data: function data() {
+    return {
+      reqItems: [{
+        title: "Karyawan",
+        titleColor: "text-white",
+        background: "bg-dark",
+        btnBackground: "btn-dark",
+        reqLists: {
+          ktp: true,
+          kk: true,
+          sk: true,
+          slip: true,
+          npwp: true,
+          rek: true,
+          laporanKeu: false,
+          izinPraktek: false,
+          bkr: true
+        }
+      }, {
+        title: "Wiraswasta",
+        background: "bg-warning",
+        btnBackground: "btn-warning",
+        reqLists: {
+          ktp: true,
+          kk: true,
+          sk: true,
+          slip: true,
+          npwp: true,
+          rek: true,
+          laporanKeu: true,
+          izinPraktek: false,
+          bkr: true
+        }
+      }, {
+        title: "Profesional",
+        background: "bg-secondary",
+        titleColor: "text-white",
+        btnBackground: "btn-secondary",
+        reqLists: {
+          ktp: true,
+          kk: true,
+          sk: true,
+          slip: true,
+          npwp: true,
+          rek: true,
+          laporanKeu: false,
+          izinPraktek: true,
+          bkr: true
+        }
+      }]
+    };
+  }
 });
 
 /***/ }),
@@ -422,15 +454,68 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Breadcrumb.vue?vue&type=script&lang=js&":
-/*!*********************************************************************************************************************************************************************!*\
-  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Breadcrumb.vue?vue&type=script&lang=js& ***!
-  \*********************************************************************************************************************************************************************/
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CardRequirement.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CardRequirement.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -455,8 +540,186 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
-    items: {
-      type: Array
+    title: String,
+    titleColor: String,
+    background: {
+      type: String,
+      "default": "bg-dark"
+    },
+    btnBackground: {
+      type: String,
+      "default": "btn-dark"
+    },
+    reqLists: {
+      type: Object,
+      "default": {
+        ktp: false,
+        kk: false,
+        sk: false,
+        slip: false,
+        npwp: false,
+        rek: false,
+        laporanKeu: false,
+        izinPraktek: false,
+        bkr: false
+      }
+    }
+  }
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ModalFormPengajuan.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ModalFormPengajuan.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  props: ["databranch"],
+  data: function data() {
+    return {
+      form: {
+        email: '',
+        firstname: '',
+        lastname: '',
+        no_telp: '',
+        branch: null,
+        category: null,
+        text: '',
+        checked: []
+      },
+      branchs: this.databranch,
+      categories: ['Kredit Kendaraan', 'Pinjaman Dana', 'Pendaftaran Agen'],
+      show: true
+    };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    this.$root.$on('bv::modal::show', function (bvEvent, modalId) {
+      _this.resetForm();
+    });
+  },
+  methods: {
+    onSubmit: function onSubmit() {
+      this.$inertia.post(route("pengajuan"), this.form);
+      this.$bvModal.hide('modal-pengajuan');
+    },
+    resetForm: function resetForm() {
+      var _this2 = this;
+
+      // Reset our form values
+      this.form.email = '';
+      this.form.firstname = '';
+      this.form.lastname = '';
+      this.form.no_telp = '';
+      this.form.branch = null;
+      this.form.category = null;
+      this.form.text = '';
+      this.form.checked = []; // Trick to reset/clear native browser form validation state
+
+      this.show = false;
+      this.$nextTick(function () {
+        _this2.show = true;
+      });
     }
   }
 });
@@ -472,6 +735,17 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -918,10 +1192,10 @@ if(false) {}
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Profile/Visi/index.vue?vue&type=template&id=1cf52c3b&":
-/*!****************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Profile/Visi/index.vue?vue&type=template&id=1cf52c3b& ***!
-  \****************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Product/PinjamanDana/index.vue?vue&type=template&id=e51bedec&":
+/*!************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Pages/Product/PinjamanDana/index.vue?vue&type=template&id=e51bedec& ***!
+  \************************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -934,194 +1208,202 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("Layout", [
-    _c("div", [
-      _c("section", { staticClass: "pt-5 pb-5 bg-light" }, [
-        _c("div", { staticClass: "container" }, [
-          _c("div", { staticClass: "row row-grid align-items-center" }, [
+    _c(
+      "div",
+      [
+        _c(
+          "div",
+          {
+            staticClass:
+              "jumbotron jumbotron-lg jumbotron-fluid overlay overlay-black mb-0",
+            staticStyle: {
+              "background-size": "cover",
+              "background-image": "url(/img/demo/3.jpg)"
+            },
+            attrs: { "data-aos": "fade-up" }
+          },
+          [
             _c(
               "div",
-              {
-                staticClass: "col-md-6 order-md-1",
-                attrs: { "data-aos": "fade-down" }
-              },
-              [_c("visi-svg", { staticClass: "m-auto d-block" })],
-              1
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "col-md-6 order-md-2",
-                attrs: { "data-aos": "fade-left" }
-              },
+              { staticClass: "container text-center text-white h-100" },
               [
-                _c("div", { staticClass: "pr-md-5" }, [
-                  _c("h3", [
-                    _c("strong", [_vm._v("VISI SINARMAS HANA FINANCE")])
-                  ]),
-                  _vm._v(" "),
-                  _c("p", [
+                _c("h3", { attrs: { "data-aos": "zoom-out-down" } }, [
+                  _vm._v("Pembiayaan")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "h1",
+                  {
+                    staticClass: "display-3",
+                    attrs: { "data-aos": "zoom-out-down" }
+                  },
+                  [_c("strong", [_vm._v("Pinjaman Dana")])]
+                ),
+                _vm._v(" "),
+                _c(
+                  "p",
+                  {
+                    staticClass: "text-white",
+                    attrs: { "data-aos": "zoom-out" }
+                  },
+                  [
                     _vm._v(
-                      '\n                "Menjadikan Sinarmas Hana Finance sebagai Perusahaan Terdepan\n                dengan Pelayanan Kelas Dunia"\n              '
+                      "\n          Pembiayaan untuk memenuhi berbagai kebutuhan, baik bersifat\n          konsumtif (biaya pendidikan, kesehatan dan kecantikan, pernikahan,\n          renovasi rumah, wisata, dan lain-lain) maupun produktif (modal usaha\n          dan investasi), dengan jangka waktu pembiayaan mulai 1 hingga 4\n          tahun dan suku bunga tetap.\n        "
                     )
-                  ])
-                ])
+                  ]
+                )
               ]
-            )
-          ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("section", { staticClass: "pt-5 pb-5 bg-info" }, [
-        _c("div", { staticClass: "pb-3 pt-5 container" }, [
-          _c("div", { staticClass: "row row-grid align-items-center" }, [
-            _c(
-              "div",
-              {
-                staticClass: "col-md-6 order-md-2",
-                attrs: { "data-aos": "fade-down" }
-              },
-              [_c("misi-svg", { staticClass: "m-auto d-block" })],
-              1
             ),
             _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass: "col-md-6 order-md-1",
-                attrs: { "data-aos": "fade-right" }
-              },
-              [
-                _c("div", { staticClass: "pr-md-5" }, [
-                  _c("h3", [
-                    _c("strong", [_vm._v("MISI SINARMAS HANA FINANCE")])
-                  ]),
-                  _vm._v(" "),
-                  _c("ul", { staticClass: "list-unstyled" }, [
-                    _c("li", { staticClass: "py-2" }, [
-                      _c(
-                        "div",
-                        { staticClass: "d-flex align-items-center" },
-                        [
-                          _c("badge", {
-                            staticClass: "mr-3",
-                            attrs: {
-                              type: "success",
-                              circle: "",
-                              icon: "ni ni-settings-gear-65"
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("h6", { staticClass: "mb-0" }, [
-                            _vm._v(
-                              "\n                      Mengembangkan Perusahaan sebagai Lembaga Pembiayaan yang\n                      memiliki layanan prima bagi semua Nasabah.\n                    "
-                            )
-                          ])
-                        ],
-                        1
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", { staticClass: "py-2" }, [
-                      _c(
-                        "div",
-                        { staticClass: "d-flex align-items-center" },
-                        [
-                          _c("badge", {
-                            staticClass: "mr-3",
-                            attrs: {
-                              type: "success",
-                              circle: "",
-                              icon: "ni ni-html5"
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("h6", { staticClass: "mb-0" }, [
-                            _vm._v(
-                              "\n                      Mengawasi Perusahaan dengan selalu berpedoman pada Tata\n                      Kelola Perusahaan yang Baik dan peraturan yang berlaku.\n                    "
-                            )
-                          ])
-                        ],
-                        1
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", { staticClass: "py-2" }, [
-                      _c(
-                        "div",
-                        { staticClass: "d-flex align-items-center" },
-                        [
-                          _c("badge", {
-                            staticClass: "mr-3",
-                            attrs: {
-                              type: "success",
-                              circle: "",
-                              icon: "ni ni-satisfied"
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("h6", { staticClass: "mb-0" }, [
-                            _vm._v(
-                              "\n                      Meningkatkan kepedulian dan tanggung jawab Perusahaan\n                      pada lingkungan dan sosial.\n                    "
-                            )
-                          ])
-                        ],
-                        1
-                      )
-                    ]),
-                    _vm._v(" "),
-                    _c("li", { staticClass: "py-2" }, [
-                      _c(
-                        "div",
-                        { staticClass: "d-flex align-items-center" },
-                        [
-                          _c("badge", {
-                            staticClass: "mr-3",
-                            attrs: {
-                              type: "success",
-                              circle: "",
-                              icon: "ni ni-satisfied"
-                            }
-                          }),
-                          _vm._v(" "),
-                          _c("h6", { staticClass: "mb-0" }, [
-                            _vm._v(
-                              "\n                      Senantiasa menciptakan lingkungan Perusahaan pada\n                      kondisi terbaik dan dapat menjadi kebanggan untuk semua\n                      karyawan.\n                    "
-                            )
-                          ])
-                        ],
-                        1
+            _c("p", { staticClass: "bottom-align-text-absolute" }, [
+              _c("span", { staticClass: "d-block text-center text-white" })
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          {
+            staticClass: "jumbotron p-5 jumbotron-fluid bg-warning",
+            attrs: { "data-aos": "fade-up" }
+          },
+          [
+            _c("div", { staticClass: "container h-100" }, [
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "row justify-content-between align-items-center text-md-center text-lg-left"
+                },
+                [
+                  _c("div", { staticClass: "col-lg-9" }, [
+                    _c("h5", { staticClass: "font-weight-light text-dark" }, [
+                      _vm._v(
+                        "\n              Simulasi Budget Total DP & Angsuran\n            "
                       )
                     ])
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "col-lg-3 text-md-center text-lg-right mt-4 mb-4"
+                    },
+                    [
+                      _c(
+                        "a",
+                        {
+                          staticClass: "btn btn-lg btn-outline-dark",
+                          attrs: { href: "#" }
+                        },
+                        [_vm._v("Klik di sini")]
+                      )
+                    ]
+                  )
+                ]
+              )
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c(
+          "div",
+          { staticClass: "container mt-4", attrs: { "data-aos": "fade-down" } },
+          [
+            _c("div", { staticClass: "pb-4 pt-4 text-center" }, [
+              _c("h2", { staticClass: "text-secondary" }, [
+                _vm._v("Pinjaman Dana Sinarmas Hana Finance")
+              ]),
+              _vm._v(" "),
+              _c("p", { staticClass: "text-muted" }, [
+                _vm._v(
+                  "\n          Sinarmas Hana Finance sebagai salah satu perusahaan pembiayaan di\n          Indonesia menawarkan kemudahan bagi para pelanggannya. Kami membantu\n          mewujudkan mimpi Anda dengan membantu memenuhi kebutuhan biaya\n          pendidikan, kesehatan dan kecantikan, pernikahan, renovasi rumah,\n          wisata, modal usaha, investasi, dan lain-lain . Sinarmas Hana\n          Finance akan selalu hadir dengan menyediakan produk dan layanan yang\n          beragam sesuai siklus kehidupan konsumen dan memberikan pengalaman\n          yang menguntungkan untuk pelanggannya.\n        "
+                )
+              ])
+            ]),
+            _vm._v(" "),
+            _c("div", [
+              _c(
+                "div",
+                {
+                  staticClass: "pb-4 pt-4 text-center",
+                  attrs: { "data-aos": "fade" }
+                },
+                [
+                  _c("h2", { staticClass: "m-auto text-secondary" }, [
+                    _vm._v("Persyaratan")
                   ])
-                ])
-              ]
-            )
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass: "card-deck card-pricing text-center mb-4",
+                  attrs: { "data-aos": "fade-up" }
+                },
+                _vm._l(_vm.reqItems, function(item) {
+                  return _c(
+                    "div",
+                    { key: item.title, staticClass: "card border-0 shadow" },
+                    [
+                      _c("CardRequirement", {
+                        attrs: {
+                          title: item.title,
+                          titleColor: item.titleColor,
+                          background: item.background,
+                          btnBackground: item.btnBackground,
+                          reqLists: item.reqLists
+                        }
+                      })
+                    ],
+                    1
+                  )
+                }),
+                0
+              )
+            ])
+          ]
+        ),
+        _vm._v(" "),
+        _c("section", { staticClass: "pt-5 pb-5 bg-white" }, [
+          _c("div", { staticClass: "container" }, [
+            _c("div", { staticClass: "row row-grid align-items-center" }, [
+              _c(
+                "div",
+                {
+                  staticClass: "col text-center",
+                  attrs: { "data-aos": "fade-down" }
+                },
+                [
+                  _c("h3", [_c("strong", [_vm._v("Ajukan sekarang")])]),
+                  _vm._v(" "),
+                  _c(
+                    "b-button",
+                    {
+                      directives: [
+                        {
+                          name: "b-modal",
+                          rawName: "v-b-modal.modal-pengajuan",
+                          modifiers: { "modal-pengajuan": true }
+                        }
+                      ],
+                      staticClass: "btn text-white bg-primary"
+                    },
+                    [_vm._v("Pengajuan Online")]
+                  )
+                ],
+                1
+              )
+            ])
           ])
-        ])
-      ]),
-      _vm._v(" "),
-      _c("section", { staticClass: "pt-5 pb-5" }, [
-        _c("div", { staticClass: "pt-5 pb-5 container" }, [
-          _c(
-            "div",
-            {
-              staticClass: "text-center text-secondary",
-              attrs: { "data-aos": "fade-down" }
-            },
-            [
-              _c("h2", [_c("strong", [_vm._v("NILAI PERUSAHAAN")])]),
-              _vm._v(" "),
-              _c("hr", { staticClass: "border-secondary" }),
-              _vm._v(" "),
-              _c("img", {
-                attrs: { src: "/img/nilai-perusahaan.png", alt: "" }
-              })
-            ]
-          )
-        ])
-      ])
-    ])
+        ]),
+        _vm._v(" "),
+        _c("modal-form-pengajuan")
+      ],
+      1
+    )
   ])
 }
 var staticRenderFns = []
@@ -1461,833 +1743,9 @@ render._withStripped = true
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Shared/img/misiSVG.vue?vue&type=template&id=78beec3a&":
-/*!**********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Shared/img/misiSVG.vue?vue&type=template&id=78beec3a& ***!
-  \**********************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "svg",
-    {
-      attrs: {
-        id: "a1abe23f-2807-4f9c-a5d8-6f58febb0620",
-        "data-name": "Layer 1",
-        xmlns: "http://www.w3.org/2000/svg",
-        width: "500",
-        height: "400",
-        viewBox: "0 0 859.47557 522.35332"
-      }
-    },
-    [
-      _c("polygon", {
-        attrs: {
-          points:
-            "859.08 522.353 0 522.353 0 520.172 859.476 520.172 859.08 522.353",
-          fill: "#3f3d56"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M920.40867,364.2246l-21.73913,43.0372-65.00091,29.55031c-6.94151,11.7311-28.99936,12.629-30.60352,5.04275-1.79962-8.51058,26.78569-22.20865,26.78569-22.20865L884.219,382.87267l4.757-31.65725Z",
-          transform: "translate(-170.26222 -188.82334)",
-          fill: "#a0616a"
-        }
-      }),
-      _vm._v(" "),
-      _c("polygon", {
-        attrs: {
-          points:
-            "747.582 464.215 751.591 496.288 728.338 497.892 725.933 464.215 747.582 464.215",
-          fill: "#a0616a"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M914.63679,680.3009a62.964,62.964,0,0,0,5.73784-7.017c3.33247-4.61149,6.28944,19.04434,6.28944,19.04434s3.20727,9.6218,2.40545,14.43278-19.24374,4.811-22.451,4.00912-19.24371,0-19.24371,0H863.32016c-20.84735-9.62181,0-16.03641,0-16.03641,6.41457-.80178,28.06376-20.84738,28.06376-20.84738l4.81094-8.82c3.20727-.80185,6.41457,11.22551,6.41457,11.22551Z",
-          transform: "translate(-170.26222 -188.82334)",
-          fill: "#2f2e41"
-        }
-      }),
-      _vm._v(" "),
-      _c("polygon", {
-        attrs: {
-          points:
-            "807.718 464.616 811.728 496.689 788.475 498.293 786.069 464.616 807.718 464.616",
-          fill: "#a0616a"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M974.7734,680.70176a62.96609,62.96609,0,0,0,5.73785-7.017c3.33247-4.6115,6.28944,19.04434,6.28944,19.04434s3.2073,8.82,2.40545,13.631-19.24374,4.8109-22.451,4.00912-19.24371.80185-19.24371.80185H923.45677c-20.84734-9.6218,0-16.03641,0-16.03641,6.41457-.80185,28.06377-20.84737,28.06377-20.84737l4.81093-8.82c3.20731-.80185,6.41457,11.22551,6.41457,11.22551Z",
-          transform: "translate(-170.26222 -188.82334)",
-          fill: "#2f2e41"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M951.5205,446.57c3.2073,4.00905,1.60367,17.64,1.60367,17.64s5.61275,44.10039,3.2073,48.10951,1.60364,7.21638,4.00912,12.82914,4.81094,19.24374,4.81094,19.24374c13.631,11.22544,12.82914,62.542,12.82914,62.542l4.81094,45.70381c-1.60364,4.8109-24.05462,5.61275-27.26192,4.8109s-12.82914-72.96579-12.82914-72.96579l-21.64919-40.89291s1.60363,109.04773,1.60363,113.8587-21.64916,2.40548-26.4601,2.40548-4.81093-80.18218-4.81093-80.18218L886.573,558.82511,860.91474,463.4083V452.1828l4.00908-5.61276S948.3132,442.561,951.5205,446.57Z",
-          transform: "translate(-170.26222 -188.82334)",
-          fill: "#2f2e41"
-        }
-      }),
-      _vm._v(" "),
-      _c("circle", {
-        attrs: {
-          cx: "745.97819",
-          cy: "50.87672",
-          r: "24.85646",
-          fill: "#a0616a"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M903.81214,251.32646c5.03845,11.21948,2.05506,26.89026-8.01821,44.10021L936.68684,276.183l-6.41457-5.61275,1.60363-16.03645Z",
-          transform: "translate(-170.26222 -188.82334)",
-          fill: "#a0616a"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M903.81221,276.98488c-5.355,3.18357-8.55834,9.03293-10.39721,14.98518a142.00887,142.00887,0,0,0-6.10241,33.92893l-1.94228,34.4753-24.05464,91.40765c20.84734,17.64,32.87473,13.631,60.93843-.80185s31.271,4.8109,31.271,4.8109,2.40548-.80178,0-3.20727,0,0,2.40545-2.40548,0,0-.80182-2.40549,0-.80178.80182-1.60363-3.20727-8.01824-3.20727-8.01824l6.41457-60.13665,8.0182-84.993c-9.62187-12.02732-36.88378-22.451-36.88378-22.451L905.4158,288.21025c-8.0182,3.20726-1.60363-9.62188-1.60363-9.62188Z",
-          transform: "translate(-170.26222 -188.82334)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M980.38616,343.93678l3.20726,48.10929-40.8929,58.533c0,13.631-7.21639,16.83826-7.21639,16.83826a105.99109,105.99109,0,0,1-7.21639-13.631c-4.00912-8.82,2.40545-16.03641,2.40545-16.03641l28.06373-59.3348L946.7096,348.74779Z",
-          transform: "translate(-170.26222 -188.82334)",
-          fill: "#a0616a"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M966.75509,293.42207c13.631,4.81091,16.03645,56.92932,16.03645,56.92932-16.03645-8.82-35.28016,5.61275-35.28016,5.61275s-4.00905-13.63092-8.82-31.271a30.64413,30.64413,0,0,1,6.41457-28.86558S953.1241,288.61117,966.75509,293.42207Z",
-          transform: "translate(-170.26222 -188.82334)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M939.09229,247.31734c-3.16431-2.5315-7.48122,2.07-7.48122,2.07l-2.53146-22.78327s-15.82173,1.89865-25.94762-.63285-11.70807,9.17658-11.70807,9.17658a81.263,81.263,0,0,1-.31643-14.23954c.63285-5.69581,8.86012-11.39165,23.41612-15.18885S936.674,218.37678,936.674,218.37678C946.79992,223.43974,942.2566,249.84884,939.09229,247.31734Z",
-          transform: "translate(-170.26222 -188.82334)",
-          fill: "#2f2e41"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M210.66516,581.88577C213.398,592.73415,236.7007,617.131,260.74569,640.04c-37.07942-91.58625-15.95016-191.82017-15.95016-191.82017C237.91069,487.586,332.269,685.68963,332.269,685.68963l-21.49153,12.67285-7.2601,10.21639C230.73837,675.153,210.66516,581.88577,210.66516,581.88577Z",
-          transform: "translate(-170.26222 -188.82334)",
-          fill: "#e6e6e6"
-        }
-      }),
-      _vm._v(" "),
-      _c("rect", {
-        attrs: {
-          x: "363.48742",
-          y: "189.97214",
-          width: "303.97081",
-          height: "60.01475",
-          fill: "#e6e6e6"
-        }
-      }),
-      _vm._v(" "),
-      _c("rect", {
-        attrs: {
-          x: "363.48742",
-          y: "95.14215",
-          width: "303.97081",
-          height: "60.01474",
-          fill: "#e6e6e6"
-        }
-      }),
-      _vm._v(" "),
-      _c("rect", {
-        attrs: {
-          x: "363.48742",
-          width: "303.97081",
-          height: "60.01474",
-          fill: "#e6e6e6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d: "M540.22968,242.35774H831.24052v-47.0542H540.22968Z",
-          transform: "translate(-170.26222 -188.82334)",
-          fill: "#fff"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d: "M540.22968,337.70921H831.24052V290.655H540.22968Z",
-          transform: "translate(-170.26222 -188.82334)",
-          fill: "#fff"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d: "M540.22963,432.33H831.24046v-47.0542H540.22963Z",
-          transform: "translate(-170.26222 -188.82334)",
-          fill: "#fff"
-        }
-      }),
-      _vm._v(" "),
-      _c("circle", {
-        attrs: {
-          cx: "395.44331",
-          cy: "29.61767",
-          r: "17.92647",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("rect", {
-        attrs: {
-          x: "438.31099",
-          y: "22.60296",
-          width: "176.92656",
-          height: "3.89706",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("rect", {
-        attrs: {
-          x: "438.31099",
-          y: "32.73531",
-          width: "176.92656",
-          height: "3.89706",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("circle", {
-        attrs: { cx: "395.44331", cy: "125.53922", r: "17.92647", fill: "#ccc" }
-      }),
-      _vm._v(" "),
-      _c("rect", {
-        attrs: {
-          x: "438.31099",
-          y: "118.52452",
-          width: "176.92656",
-          height: "3.89706",
-          fill: "#ccc"
-        }
-      }),
-      _vm._v(" "),
-      _c("rect", {
-        attrs: {
-          x: "438.31099",
-          y: "128.65687",
-          width: "176.92656",
-          height: "3.89706",
-          fill: "#ccc"
-        }
-      }),
-      _vm._v(" "),
-      _c("circle", {
-        attrs: { cx: "395.44331", cy: "220.36924", r: "17.92648", fill: "#ccc" }
-      }),
-      _vm._v(" "),
-      _c("rect", {
-        attrs: {
-          x: "438.31099",
-          y: "213.35452",
-          width: "176.92656",
-          height: "3.89706",
-          fill: "#ccc"
-        }
-      }),
-      _vm._v(" "),
-      _c("rect", {
-        attrs: {
-          x: "438.31099",
-          y: "223.48689",
-          width: "176.92656",
-          height: "3.89706",
-          fill: "#ccc"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M309.641,361.94122s-4.19117,26.34459,13.1723,23.9496c0,0,68.85517-15.56725,72.44762-11.9748s25.92634,4.81534,24.7613-10.3301c-1.169-15.19657-23.56381-6.43465-23.56381-6.43465s-34.727,4.78991-41.91184,1.19746-27.54206-2.395-27.54206-2.395Z",
-          transform: "translate(-170.26222 -188.82334)",
-          fill: "#a0616a"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M362.18571,447.85313l-9.54746,90.58677s-2.99372,35.92448-11.97481,43.70811c0,0,0,11.37607-2.99371,14.96852L333.47855,644.417s5.9874,17.36351,5.38867,20.35723,2.395,12.57353,1.79622,13.77106-28.73954,0-28.73954,0l5.9874-96.39722,18.561-134.11789Z",
-          transform: "translate(-170.26222 -188.82334)",
-          fill: "#2f2e41"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M309.73046,673.64837s-12.55671,31.66476-6.00539,35.48631,75.34022,1.09187,75.34022,1.09187,11.46482-7.09729-1.63783-12.01079c0,0-10.91889-.546-18.01607-4.91349S344.125,680.74552,344.125,680.74552s-.54593-12.01078-4.91349-9.281a11.21978,11.21978,0,0,0-4.91349,7.64319Z",
-          transform: "translate(-170.26222 -188.82334)",
-          fill: "#2f2e41"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M290.36925,669.3548s-13.771,34.727-6.58614,38.91813,82.62623,1.19746,82.62623,1.19746,12.57357-7.78363-1.79622-13.17227c0,0-11.9748-.59873-19.75843-5.38863S328.09,677.13843,328.09,677.13843s-.59873-13.17234-5.38867-10.17862a12.30475,12.30475,0,0,0-5.38868,8.38243Z",
-          transform: "translate(-170.26222 -188.82334)",
-          fill: "#2f2e41"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M346.05219,446.62325s-6.58613,61.67027-9.57985,74.8426a170.28923,170.28923,0,0,0-3.59245,26.3446s-.59873,19.15969-5.9874,24.5484a16.18315,16.18315,0,0,0-4.78994,11.9748s-5.38868,60.47282-2.395,67.65771,7.05779,16.51925,4.06415,21.30915-36.99487,1.443-36.99487-2.14945,0-6.58617-1.79623-8.38243,0-13.17226,0-13.17226-7.18489-53.28791-.59872-68.85516,9.57984-58.07783,9.57984-58.07783-4.7899-48.498-10.77734-56.28163,1.1975-35.32568,1.1975-35.32568Z",
-          transform: "translate(-170.26222 -188.82334)",
-          fill: "#2f2e41"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M329.19529,255.11046c.696,1.5856,2.3621,2.46852,3.87887,3.30411,8.79065,4.84295,16.149,11.86444,23.39869,18.805a27.46861,27.46861,0,0,1,1.08991-18.57615c.86563-2.00443,2-4.159,1.38131-6.25281a7.78423,7.78423,0,0,0-3.03617-3.63266,94.1333,94.1333,0,0,0-9.25919-6.31713c-2.24186-1.34124-6.851-4.91179-9.42366-4.52325-.135,3.476-.20557,6.58371-1.72775,9.83242C335.13618,248.52063,329.46134,255.71666,329.19529,255.11046Z",
-          transform: "translate(-170.26222 -188.82334)",
-          fill: "#a0616a"
-        }
-      }),
-      _vm._v(" "),
-      _c("circle", {
-        attrs: {
-          cx: "189.56096",
-          cy: "49.43813",
-          r: "24.54837",
-          fill: "#a0616a"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M361.02067,296.33931s4.19118-20.95592-7.78359-28.14081-25.7459-15.56726-25.7459-15.56726-4.19117-.59872-5.9874,8.38243c0,0-34.12822,6.58613-37.72067,38.91816s2.395,79.63251,2.395,79.63251-5.38867,41.31312-11.9748,63.46653c0,0-5.38868,4.78991,18.561-2.395S358.62572,460.993,358.62572,460.993s4.19118-4.19118,4.19118-7.18489,8.98108-94.00227,10.7773-102.38466S366.40934,297.53681,361.02067,296.33931Z",
-          transform: "translate(-170.26222 -188.82334)",
-          fill: "#e6e6e6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M354.03772,240.79041a10.23692,10.23692,0,0,1,4.81451-1.28222,9.16212,9.16212,0,0,0,4.76257-1.4191c2.31887-1.78019,2.489-5.22065,4.18534-7.60152,2.456-3.447,7.35552-3.86191,11.5845-3.68944,2.58658.10549,5.37213.26,7.55024-1.139,2.23607-1.43621,3.2496-4.14222,4.0036-6.69059.89162-3.01359,1.46831-6.69894-.74109-8.934-1.53426-1.552-3.956-1.859-5.66037-3.222-.92241-.7377-13.11551-3.69989-24.56211-6.36336a23.92481,23.92481,0,0,0-27.90457,15.14442c-2.64308,7.26774-4.90826,14.09663-4.67444,15.57173,1.119,7.05935,7.36209,12.67067,7.79226,19.80522a12.15791,12.15791,0,0,1,7.42087-8.82419,2.32233,2.32233,0,0,1,1.512-.18342c.62024.19825.98278.81792,1.3742,1.33832,1.02562,1.3635,4.24756,3.43221,6.0739,2.46493C353.20316,244.90063,351.98323,242.18381,354.03772,240.79041Z",
-          transform: "translate(-170.26222 -188.82334)",
-          fill: "#3f3d56"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M365.26323,369.85386a2.73068,2.73068,0,0,0-.05576,3.84244l17.262,17.86609a2.72463,2.72463,0,0,0,3.88187.03749l52.67412-52.44595a2.72488,2.72488,0,0,0-.43553-4.21387l-20.71254-13.4907a2.70873,2.70873,0,0,0-3.39071.33375Z",
-          transform: "translate(-170.26222 -188.82334)",
-          fill: "#3f3d56"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M439.38665,335.73675a2.74293,2.74293,0,0,1-.36116.44482l-52.55027,53.43674a2.72465,2.72465,0,0,1-3.88187-.0375l-17.63357-18.60917a2.71325,2.71325,0,0,1-.32224-.40633,2.44512,2.44512,0,0,0,.56993,3.131l17.262,17.86609a2.72463,2.72463,0,0,0,3.88187.03749l52.67412-52.44595a2.72564,2.72564,0,0,0,.36116-3.41718Z",
-          transform: "translate(-170.26222 -188.82334)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M434.50957,336.38313l-2.14352-1.36668a2.04231,2.04231,0,0,1-2.93941,2.68153l-13.871-9.53632a2.04107,2.04107,0,0,1,.53965-3.62891l-1.10436-.70412a.74311.74311,0,0,0-.92807.10427l-46.66308,45.85718a.74308.74308,0,0,0,.01881,1.063l16.94689,16.51283a.7431.7431,0,0,0,1.03435-.01436l49.23484-49.8155A.74309.74309,0,0,0,434.50957,336.38313Z",
-          transform: "translate(-170.26222 -188.82334)",
-          fill: "#fff"
-        }
-      }),
-      _vm._v(" "),
-      _c("polygon", {
-        attrs: {
-          points:
-            "210.391 170.841 224.706 184.338 258.754 150.698 241.474 139.451 210.391 170.841",
-          fill: "#e6e6e6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M427.69324,347.82343a.50745.50745,0,0,0,.70064,0l2.97756-2.9775a.49617.49617,0,0,0,0-.70058.50745.50745,0,0,0-.70064,0l-2.97756,2.9775a.49618.49618,0,0,0,0,.70058Z",
-          transform: "translate(-170.26222 -188.82334)",
-          fill: "#3f3d56"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M422.67739,352.83935a.49624.49624,0,0,0,.70064,0l2.97756-2.97756a.49543.49543,0,0,0-.70064-.70064l-2.97756,2.97756A.49613.49613,0,0,0,422.67739,352.83935Z",
-          transform: "translate(-170.26222 -188.82334)",
-          fill: "#3f3d56"
-        }
-      }),
-      _vm._v(" "),
-      _c("circle", {
-        attrs: {
-          cx: "210.72159",
-          cy: "182.42611",
-          r: "3.3439",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M292.16547,352.621s-4.19118,26.34459,13.1723,23.9496c0,0,68.85516-15.56725,72.44761-11.9748s25.92634,4.81534,24.76131-10.3301c-1.169-15.19657-23.56381-6.43464-23.56381-6.43464s-34.727,4.7899-41.91185,1.19745-27.54205-2.395-27.54205-2.395Z",
-          transform: "translate(-170.26222 -188.82334)",
-          fill: "#a0616a"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M316.71384,269.396s-26.94329,2.99372-26.94329,41.91184V361.0033l32.93076-13.771s13.771-32.332,12.57357-41.31311S334.67608,270.59345,316.71384,269.396Z",
-          transform: "translate(-170.26222 -188.82334)",
-          fill: "#e6e6e6"
-        }
-      })
-    ]
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Shared/img/visiSVG.vue?vue&type=template&id=966d95fa&":
-/*!**********************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Shared/img/visiSVG.vue?vue&type=template&id=966d95fa& ***!
-  \**********************************************************************************************************************************************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
-var render = function() {
-  var _vm = this
-  var _h = _vm.$createElement
-  var _c = _vm._self._c || _h
-  return _c(
-    "svg",
-    {
-      attrs: {
-        id: "ef155387-c885-4ebf-8cb5-c452ea0af16e",
-        "data-name": "Layer 1",
-        xmlns: "http://www.w3.org/2000/svg",
-        width: "500",
-        height: "400",
-        viewBox: "0 0 1080.97217 784.33767"
-      }
-    },
-    [
-      _c("title", [_vm._v("visi")]),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M448.109,273.77162a104.983,104.983,0,0,1-154.35089-3.3695L59.51392,492.12685,388.90735,840.11916,702.87952,542.92751Z",
-          transform: "translate(-59.51392 -57.83116)",
-          fill: "#f2f2f2"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M372.2925,284.01507a91.635,91.635,0,0,0,66.19358-28.15321l-65.31827-69.00641-69.78689,66.057A91.67975,91.67975,0,0,0,372.2925,284.01507Z",
-          transform: "translate(-59.51392 -57.83116)",
-          fill: "#f2f2f2"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M886.48608,384.93526a164.83288,164.83288,0,0,1-165,165q-1.41,0-2.82-.03c-3.96-.06-7.87-.26-11.76-.6a165.00737,165.00737,0,1,1,179.58-164.37Z",
-          transform: "translate(-59.51392 -57.83116)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M817.10608,325.22524a164.07626,164.07626,0,0,0,19.8883-59.07819,164.99942,164.99942,0,0,0-278.01709,96.58936A164.37742,164.37742,0,0,0,658.906,408.30525c3.89013.34,7.8.54,11.76.6q1.41009.03,2.82006.03a164.75722,164.75722,0,0,0,143.62-83.71Z",
-          transform: "translate(-59.51392 -57.83116)",
-          opacity: "0.1"
-        }
-      }),
-      _vm._v(" "),
-      _c("rect", {
-        attrs: {
-          x: "469.97217",
-          y: "488.10409",
-          width: "265",
-          height: "296",
-          fill: "#2f2e41"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M879.35608,446.53523a165.19361,165.19361,0,0,1-115.61,96.4h36.74v296h-244.42l137.17-237.59,31.43-54.44,2.29-3.97,104.03-180.18Z",
-          transform: "translate(-59.51392 -57.83116)",
-          opacity: "0.1"
-        }
-      }),
-      _vm._v(" "),
-      _c("polygon", {
-        attrs: {
-          points:
-            "805.472 306.924 943.222 545.514 1080.972 784.104 805.472 784.104 529.972 784.104 667.722 545.514 805.472 306.924",
-          fill: "#3f3d56"
-        }
-      }),
-      _vm._v(" "),
-      _c("rect", {
-        attrs: {
-          x: "36.97217",
-          y: "782.10409",
-          width: "1044",
-          height: "2",
-          fill: "#2f2e41"
-        }
-      }),
-      _vm._v(" "),
-      _c("polygon", {
-        attrs: {
-          points:
-            "171.505 736.835 169.68 752.045 159.337 756.912 147.777 753.261 139.868 756.912 137.435 742.919 151.428 727.1 171.505 736.835",
-          fill: "#9f616a"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M223.718,806.22529s9.43255-10.99646,9.58345-5.49823,20.8364,24.35854,20.8364,24.35854,32.245,9.73435,7.30076,15.81832-79.7-11.55954-81.52519-15.20992,15.20992-31.63665,17.03511-29.20306S207.8997,807.44209,223.718,806.22529Z",
-          transform: "translate(-59.51392 -57.83116)",
-          fill: "#2f2e41"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M246.83711,625.53138s3.65038,28.59466,0,32.85344-1.82519,12.77634,0,13.99313-2.43359,6.084-5.47558,8.51756-7.30076,13.38474-7.30076,13.38474-16.42672,43.19618-16.42672,47.455-7.30076,13.38474-6.69237,16.42672-4.25878,12.77634-3.65038,14.60153-7.90916,18.25191-5.47557,20.6855,35.89542,10.95114,34.07023,5.47557-3.042-12.16794-1.82519-12.16794,6.69237-6.69237,5.47557-9.12595,36.50382-66.31528,36.50382-66.31528Z",
-          transform: "translate(-59.51392 -57.83116)",
-          fill: "#2f2e41"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M223.718,806.22529s9.43255-10.99646,9.58345-5.49823,20.8364,24.35854,20.8364,24.35854,32.245,9.73435,7.30076,15.81832-79.7-11.55954-81.52519-15.20992,15.20992-31.63665,17.03511-29.20306S207.8997,807.44209,223.718,806.22529Z",
-          transform: "translate(-59.51392 -57.83116)",
-          opacity: "0.1"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M246.83711,625.53138s3.65038,28.59466,0,32.85344-1.82519,12.77634,0,13.99313-2.43359,6.084-5.47558,8.51756-7.30076,13.38474-7.30076,13.38474-16.42672,43.19618-16.42672,47.455-7.30076,13.38474-6.69237,16.42672-4.25878,12.77634-3.65038,14.60153-7.90916,18.25191-5.47557,20.6855,35.89542,10.95114,34.07023,5.47557-3.042-12.16794-1.82519-12.16794,6.69237-6.69237,5.47557-9.12595,36.50382-66.31528,36.50382-66.31528Z",
-          transform: "translate(-59.51392 -57.83116)",
-          opacity: "0.1"
-        }
-      }),
-      _vm._v(" "),
-      _c("polygon", {
-        attrs: {
-          points:
-            "249.38 729.282 256.072 746.317 253.03 770.044 233.561 768.828 222.61 759.093 222.61 738.408 249.38 729.282",
-          fill: "#9f616a"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M305.24322,807.79836S311.93559,785.89607,315.586,791.98a96.26371,96.26371,0,0,1,6.084,12.16794s29.81145,19.46871,37.72061,19.46871,15.20993,9.73435,4.86718,13.38473-89.43436,8.51756-90.65115,0,1.21679-35.89542,4.86717-32.85344S300.98444,813.88233,305.24322,807.79836Z",
-          transform: "translate(-59.51392 -57.83116)",
-          fill: "#2f2e41"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M320.45314,538.27849s26.81615,18.22318,28.03294,20.65677,16.77634,9.916,4,16-46.63446-32.398-46.63446-32.398Z",
-          transform: "translate(-59.51392 -57.83116)",
-          fill: "#9f616a"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M307.06841,502.99146s19.4687,37.72062,15.81832,38.93741-18.25191,8.51756-18.25191,8.51756l-6.69236-38.329Z",
-          transform: "translate(-59.51392 -57.83116)",
-          fill: "#575a88"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M307.06841,502.99146s19.4687,37.72062,15.81832,38.93741-18.25191,8.51756-18.25191,8.51756l-6.69236-38.329Z",
-          transform: "translate(-59.51392 -57.83116)",
-          opacity: "0.1"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M305.85162,534.62811s4.25878,31.63664,2.43358,38.329,1.2168,107.07787-1.21679,112.55345-4.25878,40.76259-4.25878,45.02137,4.86718,38.93741,6.084,41.9794,4.86718,13.38473,3.042,18.25191-26.76947,17.03511-30.41985,12.77633-.6084-17.64351-3.65039-18.25191-6.69236-29.20305-6.69236-29.20305l-20.0771-111.945s-37.72062-93.69314-29.20306-102.8191S305.85162,534.62811,305.85162,534.62811Z",
-          transform: "translate(-59.51392 -57.83116)",
-          fill: "#2f2e41"
-        }
-      }),
-      _vm._v(" "),
-      _c("circle", {
-        attrs: {
-          cx: "223.82701",
-          cy: "231.00455",
-          r: "29.81145",
-          fill: "#9f616a"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M294.29207,313.1716s-9.73435,25.55267-8.51755,31.02824-28.59466-9.73435-28.59466-9.73435,1.82519-29.81145,0-37.72061S294.29207,313.1716,294.29207,313.1716Z",
-          transform: "translate(-59.51392 -57.83116)",
-          fill: "#9f616a"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M212.54793,479.63509c.13369,5.10446.21894,8.14645.21894,8.14645s-1.82519,27.98626,1.2168,37.11222,3.042,15.81832,4.86717,21.90229c.53532,1.77042,7.818,2.71951,18.045,3.13931,9.38158.38329,21.23923.32856,32.62232.06691,18.84812-.438,36.41871-1.44795,39.37543-1.98943,6.69237-1.21679-1.21679-11.55954,1.2168-17.03511s-4.25878-75.44123-4.25878-75.44123.60839-39.54581-2.43359-54.75573S288.8165,361.235,286.38291,358.193s-.60839-4.86718,4.86718-8.51756,0-17.64352,0-17.64352c-10.34275-8.51755-36.50382-9.73435-36.50382-9.73435s-40.1542,41.371-42.58779,49.88856c-1.47228,5.147-.943,46.26249-.29811,78.00864C212.10976,462.13759,212.37148,472.76021,212.54793,479.63509Z",
-          transform: "translate(-59.51392 -57.83116)",
-          fill: "#575a88"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M263.87222,555.31361s23.11909,47.455,4.86718,50.49695-27.37787-43.19619-27.37787-43.19619Z",
-          transform: "translate(-59.51392 -57.83116)",
-          fill: "#9f616a"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M311.21569,273.72511c1.05424-5.113-2.85338-9.89261-6.9689-13.10463A50.92791,50.92791,0,0,0,272.91473,249.936c-7.97852.04334-16.21279,2.1539-22.24315,7.37822-7.03378,6.0936-10.24229,15.8656-9.65173,25.15307s4.62973,18.09625,10.078,25.641c2.61489,3.62111,6.81449,7.36957,10.99294,5.79138a10.21705,10.21705,0,0,0,4.06611-3.43446A63.066,63.066,0,0,0,273.1271,299.753c1.49544-2.906,2.7908-5.9689,4.91025-8.45665s5.30479-4.35878,8.5423-3.91205c2.67429.369,5.29759,2.25159,7.84823,1.36712,2.83766-.984,3.52361-4.61263,3.74928-7.60757.24736-3.28274.07217-7.08534.9837-10.189C300.15785,271.48715,310.72573,276.175,311.21569,273.72511Z",
-          transform: "translate(-59.51392 -57.83116)",
-          fill: "#2f2e41"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M212.54793,479.63509c6.814,24.57317,22.4437,65.98676,23.338,67.76935.22518.4563.57795,1.35063,1.00989,2.53092,9.38158.38329,21.23923.32856,32.62232.06691-1.76445-4.61162-3.82076-9.06509-3.82076-10.507,0-3.042-14.60152-81.5252-14.60152-81.5252s11.55954-34.67862,21.90229-63.88168-30.724-23.42329-30.724-23.42329c-21.90229-5.47557-25.85687,3.95458-25.85687,3.95458s-1.92857,51.28787-4.55689,75.57506c-.67539,6.22393-1.39325,10.67131-2.13548,12.03411C208.75139,464.01146,210.06563,470.716,212.54793,479.63509Z",
-          transform: "translate(-59.51392 -57.83116)",
-          opacity: "0.1"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M251.09589,350.89221s27.98626,11.55954,17.64351,40.7626-21.90229,63.88169-21.90229,63.88169,14.60152,78.48321,14.60152,81.5252,9.126,19.4687,5.47558,22.51068-27.98626,9.126-28.59466,6.084-5.47557-18.25191-6.69237-20.68549-29.81145-78.48322-26.16107-85.17558c2.68627-4.92484,5.04308-50.04449,6.10062-73.53425a38.621,38.621,0,0,1,20.13441-32.51571C237.37349,350.739,243.97764,349.11265,251.09589,350.89221Z",
-          transform: "translate(-59.51392 -57.83116)",
-          fill: "#575a88"
-        }
-      }),
-      _vm._v(" "),
-      _c("rect", {
-        attrs: {
-          x: "267.97217",
-          y: "471.10409",
-          width: "36",
-          height: "36",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("circle", {
-        attrs: { cx: "285.97217", cy: "460.10409", r: "11", fill: "#3f3d56" }
-      }),
-      _vm._v(" "),
-      _c("circle", {
-        attrs: {
-          cx: "711.11943",
-          cy: "56.01524",
-          r: "54.31516",
-          fill: "#ff6584"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M770.48608,150.94569c0,40.98067-24.36235,55.28958-54.41484,55.28958s-54.41484-14.30891-54.41484-55.28958,54.41484-93.11453,54.41484-93.11453S770.48608,109.965,770.48608,150.94569Z",
-          transform: "translate(-59.51392 -57.83116)",
-          fill: "#f2f2f2"
-        }
-      }),
-      _vm._v(" "),
-      _c("polygon", {
-        attrs: {
-          points:
-            "654.575 142.135 655.132 107.838 678.325 65.408 655.22 102.458 655.47 87.037 671.455 56.339 655.537 82.956 655.537 82.956 655.987 55.22 673.104 30.78 656.058 50.858 656.339 0 654.57 67.327 654.716 64.549 637.313 37.912 654.437 69.881 652.815 100.858 652.767 100.035 632.705 72.003 652.706 102.94 652.503 106.814 652.467 106.872 652.484 107.19 648.37 185.78 653.866 185.78 654.526 145.187 674.478 114.326 654.575 142.135",
-          fill: "#3f3d56"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M901.60331,212.1989c-13.0024,38.86325-40.64594,44.70313-69.14565,35.168s-47.06336-30.8344-34.061-69.69765,81.1468-71.03864,81.1468-71.03864S914.6057,173.33564,901.60331,212.1989Z",
-          transform: "translate(-59.51392 -57.83116)",
-          fill: "#f2f2f2"
-        }
-      }),
-      _vm._v(" "),
-      _c("polygon", {
-        attrs: {
-          points:
-            "773.053 182.962 784.463 150.614 819.92 117.734 786.253 145.539 791.384 130.994 816.282 106.954 792.741 127.145 792.741 127.145 801.969 100.985 825.955 83.239 803.42 96.871 819.823 48.73 796.784 112.017 797.803 109.429 789.751 78.647 795.846 114.397 784.48 143.259 784.696 142.464 774.564 109.515 783.716 145.199 782.295 148.808 782.242 148.852 782.157 149.159 753.32 222.383 758.533 224.127 772.038 185.84 800.751 162.904 773.053 182.962",
-          fill: "#3f3d56"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M631.50463,180.92778c14.73823,38.23871-2.848,60.35189-30.88976,71.15992s-55.92007,6.21815-70.6583-32.02056S547.243,113.61307,547.243,113.61307,616.7664,142.68906,631.50463,180.92778Z",
-          transform: "translate(-59.51392 -57.83116)",
-          fill: "#f2f2f2"
-        }
-      }),
-      _vm._v(" "),
-      _c("polygon", {
-        attrs: {
-          points:
-            "536.997 189.12 525.182 156.917 531.564 108.985 523.329 151.866 518.016 137.386 521.891 102.993 516.611 133.554 516.611 133.554 507.056 107.512 514.238 78.552 505.554 103.417 487.526 55.86 510.088 119.319 509.225 116.675 483.407 98.078 510.882 121.75 520.509 151.237 520.169 150.487 491.368 131.546 521.157 153.219 522.361 156.907 522.348 156.974 522.478 157.265 546.903 232.076 552.032 230.1 538.048 191.985 545.567 156.014 536.997 189.12",
-          fill: "#3f3d56"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M515.93887,505.835c-3.37171,5.37839-7.74636,5.2519-11.69052,2.77931s-5.96425-6.355-2.59254-11.73335,14.80259-7.74354,14.80259-7.74354S519.31058,500.45663,515.93887,505.835Z",
-          transform: "translate(-59.51392 -57.83116)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M918.069,344.64253c.62394,6.31714-2.91364,8.89378-7.54621,9.35133s-8.60587-1.37723-9.22981-7.69437,6.97032-15.182,6.97032-15.182S917.445,338.32539,918.069,344.64253Z",
-          transform: "translate(-59.51392 -57.83116)",
-          fill: "#00bfa6"
-        }
-      }),
-      _vm._v(" "),
-      _c("path", {
-        attrs: {
-          d:
-            "M498.0026,391.28842c-3.37171,5.37839-7.74636,5.2519-11.69051,2.77931s-5.96426-6.35495-2.59255-11.73335,14.80259-7.74355,14.80259-7.74355S501.37431,385.91,498.0026,391.28842Z",
-          transform: "translate(-59.51392 -57.83116)",
-          fill: "#00bfa6"
-        }
-      })
-    ]
-  )
-}
-var staticRenderFns = []
-render._withStripped = true
-
-
-
-/***/ }),
-
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Breadcrumb.vue?vue&type=template&id=c259b9a4&":
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Shared/img/vehicleSVG.vue?vue&type=template&id=622c84c0&":
 /*!*************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Breadcrumb.vue?vue&type=template&id=c259b9a4& ***!
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/Shared/img/vehicleSVG.vue?vue&type=template&id=622c84c0& ***!
   \*************************************************************************************************************************************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -2301,36 +1759,1116 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "ol",
-    { staticClass: "breadcrumb" },
-    _vm._l(_vm.items, function(item) {
-      return _c(
-        "li",
+    "svg",
+    {
+      attrs: {
+        id: "a2004bc7-ef99-430b-b7c9-8e162ba022b9",
+        "data-name": "Layer 1",
+        xmlns: "http://www.w3.org/2000/svg",
+        width: "888.51619",
+        height: "500",
+        viewBox: "0 0 900 900"
+      }
+    },
+    [
+      _c("title", [_vm._v("order_a_car")]),
+      _vm._v(" "),
+      _c("circle", {
+        attrs: {
+          cx: "249.50886",
+          cy: "102.71654",
+          r: "65.61691",
+          fill: "#ff6584"
+        }
+      }),
+      _vm._v(" "),
+      _c("polygon", {
+        attrs: {
+          points:
+            "632.671 121.848 553.963 121.848 553.963 50.296 632.671 121.848",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "245.91639",
+          y: "119.50556",
+          width: "395.95113",
+          height: "547.02946",
+          fill: "#e6e6e6"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "285.41949",
+          y: "157.86021",
+          width: "46.58249",
+          height: "98.15595",
+          fill: "#fff"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "357.47209",
+          y: "157.86021",
+          width: "46.58249",
+          height: "98.15595",
+          fill: "#fff"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "279.28006",
+          y: "296.98317",
+          width: "46.58249",
+          height: "98.15595",
+          fill: "#fff"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "357.47209",
+          y: "296.98317",
+          width: "46.58249",
+          height: "98.15595",
+          fill: "#fff"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "279.28006",
+          y: "425.7095",
+          width: "46.58249",
+          height: "98.15595",
+          fill: "#fff"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "355.71796",
+          y: "423.95538",
+          width: "46.58249",
+          height: "98.15595",
+          fill: "#fff"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "423.42344",
+          y: "568.59889",
+          width: "46.58249",
+          height: "98.15595",
+          fill: "#ccc"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "493.80176",
+          y: "423.95538",
+          width: "46.58249",
+          height: "98.15595",
+          fill: "#fff"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "571.99379",
+          y: "423.95538",
+          width: "46.58249",
+          height: "98.15595",
+          fill: "#fff"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "495.55588",
+          y: "295.94401",
+          width: "46.58249",
+          height: "98.15595",
+          fill: "#fff"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "573.74791",
+          y: "295.94401",
+          width: "46.58249",
+          height: "98.15595",
+          fill: "#fff"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "495.55588",
+          y: "157.86021",
+          width: "46.58249",
+          height: "98.15595",
+          fill: "#fff"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "573.74791",
+          y: "157.86021",
+          width: "46.58249",
+          height: "98.15595",
+          fill: "#fff"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "245.91639",
+          y: "245.94374",
+          width: "395.95113",
+          height: "14.97294",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "245.91639",
+          y: "362.39995",
+          width: "395.95113",
+          height: "8.3183",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "245.91639",
+          y: "335.78139",
+          width: "395.95113",
+          height: "8.3183",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "403.32195",
+          y: "571.00935",
+          width: "66.54641",
+          height: "8.3183",
+          transform: "translate(856.02176 60.56127) rotate(90)",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "449.90444",
+          y: "571.00935",
+          width: "66.54641",
+          height: "8.3183",
+          transform: "translate(902.60424 13.97879) rotate(90)",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "496.48693",
+          y: "571.00935",
+          width: "66.54641",
+          height: "8.3183",
+          transform: "translate(949.18673 -32.6037) rotate(90)",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "543.06941",
+          y: "571.00935",
+          width: "66.54641",
+          height: "8.3183",
+          transform: "translate(995.76921 -79.18619) rotate(90)",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "589.6519",
+          y: "571.00935",
+          width: "66.54641",
+          height: "8.3183",
+          transform: "translate(1042.3517 -125.76867) rotate(90)",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "636.23438",
+          y: "571.00935",
+          width: "66.54641",
+          height: "8.3183",
+          transform: "translate(1088.93418 -172.35116) rotate(90)",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "682.81687",
+          y: "571.00935",
+          width: "66.54641",
+          height: "8.3183",
+          transform: "translate(1135.51667 -218.93364) rotate(90)",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "729.39935",
+          y: "571.00935",
+          width: "66.54641",
+          height: "8.3183",
+          transform: "translate(1182.09916 -265.51613) rotate(90)",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "404.15378",
+          y: "444.57118",
+          width: "66.54641",
+          height: "8.3183",
+          transform: "translate(730.41541 -66.70873) rotate(90)",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "450.73627",
+          y: "444.57118",
+          width: "66.54641",
+          height: "8.3183",
+          transform: "translate(776.9979 -113.29122) rotate(90)",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "497.31876",
+          y: "444.57118",
+          width: "66.54641",
+          height: "8.3183",
+          transform: "translate(823.58038 -159.87371) rotate(90)",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "543.90124",
+          y: "444.57118",
+          width: "66.54641",
+          height: "8.3183",
+          transform: "translate(870.16287 -206.45619) rotate(90)",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "590.48373",
+          y: "444.57118",
+          width: "66.54641",
+          height: "8.3183",
+          transform: "translate(916.74535 -253.03868) rotate(90)",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "637.06621",
+          y: "444.57118",
+          width: "66.54641",
+          height: "8.3183",
+          transform: "translate(963.32784 -299.62116) rotate(90)",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "683.6487",
+          y: "444.57118",
+          width: "66.54641",
+          height: "8.3183",
+          transform: "translate(1009.91032 -346.20365) rotate(90)",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "730.23118",
+          y: "444.57118",
+          width: "66.54641",
+          height: "8.3183",
+          transform: "translate(1056.49281 -392.78614) rotate(90)",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "404.15378",
+          y: "296.50542",
+          width: "66.54641",
+          height: "8.3183",
+          transform: "translate(582.34965 -214.77449) rotate(90)",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "450.73627",
+          y: "296.50542",
+          width: "66.54641",
+          height: "8.3183",
+          transform: "translate(628.93214 -261.35698) rotate(90)",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "497.31876",
+          y: "296.50542",
+          width: "66.54641",
+          height: "8.3183",
+          transform: "translate(675.51462 -307.93946) rotate(90)",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "543.90124",
+          y: "296.50542",
+          width: "66.54641",
+          height: "8.3183",
+          transform: "translate(722.09711 -354.52195) rotate(90)",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "590.48373",
+          y: "296.50542",
+          width: "66.54641",
+          height: "8.3183",
+          transform: "translate(768.67959 -401.10444) rotate(90)",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "637.06621",
+          y: "296.50542",
+          width: "66.54641",
+          height: "8.3183",
+          transform: "translate(815.26208 -447.68692) rotate(90)",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "683.6487",
+          y: "296.50542",
+          width: "66.54641",
+          height: "8.3183",
+          transform: "translate(861.84457 -494.26941) rotate(90)",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "730.23118",
+          y: "296.50542",
+          width: "66.54641",
+          height: "8.3183",
+          transform: "translate(908.42705 -540.85189) rotate(90)",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "245.91639",
+          y: "212.67053",
+          width: "395.95113",
+          height: "8.3183",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "245.91639",
+          y: "186.05197",
+          width: "395.95113",
+          height: "8.3183",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "245.91639",
+          y: "390.68218",
+          width: "395.95113",
+          height: "14.97294",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "227.69606",
+          y: "113.35052",
+          width: "432.39178",
+          height: "22.31203",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("polygon", {
+        attrs: {
+          points:
+            "332.09 589.824 332.09 568.599 306.62 568.599 306.62 589.824 329.967 589.824 332.09 589.824",
+          fill: "#fff"
+        }
+      }),
+      _vm._v(" "),
+      _c("polygon", {
+        attrs: {
+          points:
+            "329.967 606.803 306.62 606.803 306.62 628.028 332.09 628.028 332.09 606.803 329.967 606.803",
+          fill: "#fff"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "349.06967",
+          y: "568.59889",
+          width: "25.46968",
+          height: "21.22474",
+          fill: "#fff"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "349.06967",
+          y: "606.80342",
+          width: "25.46968",
+          height: "21.22474",
+          fill: "#fff"
+        }
+      }),
+      _vm._v(" "),
+      _c("polygon", {
+        attrs: {
+          points:
+            "539.823 589.824 539.823 568.599 514.353 568.599 514.353 589.824 537.7 589.824 539.823 589.824",
+          fill: "#fff"
+        }
+      }),
+      _vm._v(" "),
+      _c("polygon", {
+        attrs: {
+          points:
+            "537.7 606.803 514.353 606.803 514.353 628.028 539.823 628.028 539.823 606.803 537.7 606.803",
+          fill: "#fff"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "556.80238",
+          y: "568.59889",
+          width: "25.46968",
+          height: "21.22474",
+          fill: "#fff"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "556.80238",
+          y: "606.80342",
+          width: "25.46968",
+          height: "21.22474",
+          fill: "#fff"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "245.91639",
+          y: "517.12035",
+          width: "395.95113",
+          height: "14.97294",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "245.91639",
+          y: "490.50179",
+          width: "395.95113",
+          height: "8.3183",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "245.91639",
+          y: "463.88322",
+          width: "395.95113",
+          height: "8.3183",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("path", {
+        attrs: {
+          d:
+            "M521.52948,737.41713q.00127-.69458-.01885-1.38245c-.35566-12.26384-12.52137-15.58992-19.04334-9.78436a11.31359,11.31359,0,0,0-14.83619,0c-6.54992-5.71407-18.47313-2.62465-18.8668,9.5q-.02232.68735-.02366,1.382a71.13,71.13,0,0,0,.46808,7.62981h51.8591A70.394,70.394,0,0,0,521.52948,737.41713Z",
+          transform: "translate(-155.74191 -78.01207)",
+          fill: "#00bfa6"
+        }
+      }),
+      _vm._v(" "),
+      _c("path", {
+        attrs: {
+          d:
+            "M727.63915,737.41713q.00129-.69458-.01884-1.38245c-.35567-12.26384-12.52137-15.58992-19.04335-9.78436a11.31359,11.31359,0,0,0-14.83619,0c-6.54991-5.71407-18.47312-2.62465-18.8668,9.5q-.02232.68735-.02366,1.382a71.13262,71.13262,0,0,0,.46808,7.62981h51.8591A70.394,70.394,0,0,0,727.63915,737.41713Z",
+          transform: "translate(-155.74191 -78.01207)",
+          fill: "#00bfa6"
+        }
+      }),
+      _vm._v(" "),
+      _c("polygon", {
+        attrs: {
+          points:
+            "856.314 667.579 848.294 667.579 850.967 510.911 853.641 510.911 856.314 667.579",
+          fill: "#e6e6e6"
+        }
+      }),
+      _vm._v(" "),
+      _c("path", {
+        attrs: {
+          d:
+            "M1018.73907,490.28874l12.94645-20.00813a299.96218,299.96218,0,0,0-13.28225-31.09245l-8.37159,6.76162,6.62865-10.24416c-6.31716-12.43509-11.28787-20.26986-11.28787-20.26986s-25.96452,40.91589-34.63911,84.23652l16.61329,25.67516L968.955,510.49259a121.35739,121.35739,0,0,0-1.009,15.21765c0,51.30608,16.75638,92.89789,37.42648,92.89789s37.42649-41.59181,37.42649-92.89789c0-15.9054-3.59831-32.54594-8.562-47.939Z",
+          transform: "translate(-155.74191 -78.01207)",
+          fill: "#e6e6e6"
+        }
+      }),
+      _vm._v(" "),
+      _c("polygon", {
+        attrs: {
+          points:
+            "828.074 448.447 656.97 448.447 656.97 574.433 657.074 574.433 657.074 599.516 682.157 574.433 828.074 574.433 828.074 448.447",
+          fill: "#00bfa6"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "459.89195",
+          y: "717.51236",
+          width: "151.80315",
+          height: "6",
+          fill: "#e6e6e6"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "735.89195",
+          y: "717.51236",
+          width: "152.62424",
+          height: "6",
+          fill: "#e6e6e6"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "183.89195",
+          y: "717.51236",
+          width: "152",
+          height: "6",
+          fill: "#e6e6e6"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          y: "666.61904",
+          width: "887.89195",
+          height: "1.67281",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "852.13582",
+          y: "770.69096",
+          width: "17.87573",
+          height: "2.83742",
+          transform: "translate(1565.99262 1466.66741) rotate(-179.96937)",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("path", {
+        attrs: {
+          d:
+            "M722.89188,771.32645l3.68818.8532,140.16838.07492,1.26042-2.93666a29.642,29.642,0,0,0,2.17924-16.028c-.60369-4.05581-2.11645-8.08584-5.55233-9.83623L858.41559,702.024l-77.548-.13878-30.003,24.19934s-14.15287-.25442-21.84173,9.31775a22.4677,22.4677,0,0,0-4.69972,12.3743l-.30344,4.97952Z",
+          transform: "translate(-155.74191 -78.01207)",
+          fill: "#00bfa6"
+        }
+      }),
+      _vm._v(" "),
+      _c("circle", {
+        attrs: {
+          cx: "597.93632",
+          cy: "692.62148",
+          r: "17.30824",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("circle", {
+        attrs: { cx: "597.93632", cy: "692.62148", r: "9.1096", fill: "#ccc" }
+      }),
+      _vm._v(" "),
+      _c("circle", {
+        attrs: {
+          cx: "683.34255",
+          cy: "692.66713",
+          r: "17.30824",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("circle", {
+        attrs: { cx: "683.34255", cy: "692.66713", r: "9.1096", fill: "#ccc" }
+      }),
+      _vm._v(" "),
+      _c("polygon", {
+        attrs: {
+          points:
+            "607.043 645.244 648.913 645.262 654.024 645.262 662.653 645.268 662.653 644.638 662.659 637.051 662.665 628.53 656.925 628.53 651.813 628.524 642.76 628.518 637.649 628.518 627.197 628.512 607.043 645.244",
+          fill: "#fff"
+        }
+      }),
+      _vm._v(" "),
+      _c("polygon", {
+        attrs: {
+          points:
+            "669.466 645.274 691.594 645.286 691.6 640.944 691.6 633.356 691.606 628.548 688.366 628.548 683.255 628.542 669.472 628.536 669.466 645.274",
+          fill: "#fff"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "815.55112",
+          y: "735.76715",
+          width: "2.83742",
+          height: "5.39109",
+          transform: "matrix(-1, -0.00053, 0.00053, -1, 1477.8029, 1399.3499)",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "770.01536",
+          y: "726.80495",
+          width: "2.83742",
+          height: "5.39109",
+          transform: "matrix(-0.00053, 1, -1, -0.00053, 1345.6049, -119.55561)",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("path", {
+        attrs: {
+          d:
+            "M765.90437,717.46856h.31212a5.9302,5.9302,0,0,1,5.9302,5.9302v0a5.9302,5.9302,0,0,1-5.9302,5.9302h-.31212a0,0,0,0,1,0,0v-11.8604A0,0,0,0,1,765.90437,717.46856Z",
+          transform: "translate(1381.92237 1369.1964) rotate(-179.96937)",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("path", {
+        attrs: {
+          d:
+            "M724.01973,752.75617a9.16614,9.16614,0,0,0,5.00316-17.35382,22.4677,22.4677,0,0,0-4.69972,12.3743Z",
+          transform: "translate(-155.74191 -78.01207)",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("polygon", {
+        attrs: {
+          points:
+            "651.813 628.524 662.653 644.638 662.659 637.051 656.925 628.53 651.813 628.524",
+          fill: "#f2f2f2"
+        }
+      }),
+      _vm._v(" "),
+      _c("polygon", {
+        attrs: {
+          points:
+            "683.255 628.542 691.6 640.944 691.6 633.356 688.366 628.548 683.255 628.542",
+          fill: "#f2f2f2"
+        }
+      }),
+      _vm._v(" "),
+      _c("polygon", {
+        attrs: {
+          points:
+            "637.649 628.518 648.913 645.262 654.024 645.262 642.76 628.518 637.649 628.518",
+          fill: "#f2f2f2"
+        }
+      }),
+      _vm._v(" "),
+      _c("path", {
+        attrs: {
+          d:
+            "M566.13894,79.06022l-.11563.063a8.551,8.551,0,0,1-8.15337.0286q-.10842-.05847-.21556-.11547a8.59223,8.59223,0,0,0-8.14418.02812l-.1079.05875a8.551,8.551,0,0,1-8.15337.0286q-.11256-.0607-.22374-.11983a8.54327,8.54327,0,0,0-8.06465-.01427c-3.7924,2.04234-8.91927,5.53425-8.89669,9.4778a4.58691,4.58691,0,0,0,.02648.4668c.441,4.09539,13.79876,5.13891,21.1368,3.20886a37.35786,37.35786,0,0,0,16.621,0c7.30669,1.96094,20.93614.83749,21.33452-3.30489a4.58819,4.58819,0,0,0,.02121-.467c-.02253-3.94569-5.19474-7.401-9.011-9.41459A8.53471,8.53471,0,0,0,566.13894,79.06022Z",
+          transform: "translate(-155.74191 -78.01207)",
+          fill: "#e6e6e6"
+        }
+      }),
+      _vm._v(" "),
+      _c("path", {
+        attrs: {
+          d:
+            "M934.13894,214.27615l-.11563.063a8.551,8.551,0,0,1-8.15337.0286q-.10842-.05847-.21556-.11547a8.59226,8.59226,0,0,0-8.14418.02811l-.1079.05876a8.551,8.551,0,0,1-8.15337.0286q-.11256-.06071-.22374-.11983a8.54324,8.54324,0,0,0-8.06465-.01427c-3.7924,2.04233-8.91927,5.53425-8.89669,9.47779a4.58694,4.58694,0,0,0,.02648.46681c.441,4.09539,13.79876,5.13891,21.1368,3.20885a37.35756,37.35756,0,0,0,16.621,0c7.30669,1.961,20.93614.8375,21.33452-3.30488a4.58839,4.58839,0,0,0,.02121-.467c-.02253-3.94568-5.19474-7.401-9.011-9.41459A8.53474,8.53474,0,0,0,934.13894,214.27615Z",
+          transform: "translate(-155.74191 -78.01207)",
+          fill: "#e6e6e6"
+        }
+      }),
+      _vm._v(" "),
+      _c("path", {
+        attrs: {
+          d:
+            "M289.709,221.82425l-.11563.06294a8.551,8.551,0,0,1-8.15336.02861q-.10842-.05848-.21557-.11548a8.59227,8.59227,0,0,0-8.14417.02812l-.10791.05875a8.551,8.551,0,0,1-8.15336.02861q-.11256-.06072-.22375-.11983a8.54322,8.54322,0,0,0-8.06464-.01428c-3.7924,2.04234-8.91927,5.53425-8.8967,9.4778a4.58658,4.58658,0,0,0,.02648.4668c.441,4.09539,13.79877,5.13891,21.1368,3.20886a37.35771,37.35771,0,0,0,16.621,0c7.30669,1.96094,20.93615.8375,21.33453-3.30488a4.5914,4.5914,0,0,0,.0212-.467c-.02253-3.94569-5.19473-7.401-9.01094-9.41459A8.5347,8.5347,0,0,0,289.709,221.82425Z",
+          transform: "translate(-155.74191 -78.01207)",
+          fill: "#e6e6e6"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "92.27846",
+          y: "726.67936",
+          width: "17.87573",
+          height: "2.83742",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("path", {
+        attrs: {
+          d:
+            "M395.14,805.32693l-3.68818.8532-140.16837.07492-1.26043-2.93666a29.642,29.642,0,0,1-2.17924-16.028c.60369-4.05581,2.11645-8.08584,5.55233-9.83624l6.22018-41.42961,77.548-.13878,30.003,24.19934s14.15287-.25442,21.84173,9.31775a22.4677,22.4677,0,0,1,4.69972,12.3743l.30344,4.97952Z",
+          transform: "translate(-155.74191 -78.01207)",
+          fill: "#00bfa6"
+        }
+      }),
+      _vm._v(" "),
+      _c("circle", {
+        attrs: {
+          cx: "208.61178",
+          cy: "726.62196",
+          r: "17.30824",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("circle", {
+        attrs: { cx: "208.61178", cy: "726.62196", r: "9.1096", fill: "#ccc" }
+      }),
+      _vm._v(" "),
+      _c("circle", {
+        attrs: {
+          cx: "123.20554",
+          cy: "726.66761",
+          r: "17.30824",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("circle", {
+        attrs: { cx: "123.20554", cy: "726.66761", r: "9.1096", fill: "#ccc" }
+      }),
+      _vm._v(" "),
+      _c("polygon", {
+        attrs: {
+          points:
+            "199.505 679.244 157.635 679.263 152.524 679.263 143.895 679.269 143.895 678.639 143.889 671.051 143.883 662.531 149.624 662.531 154.735 662.524 163.788 662.518 168.899 662.518 179.351 662.512 199.505 679.244",
+          fill: "#fff"
+        }
+      }),
+      _vm._v(" "),
+      _c("polygon", {
+        attrs: {
+          points:
+            "137.082 679.275 114.954 679.287 114.948 674.945 114.948 667.357 114.942 662.549 118.182 662.549 123.293 662.543 137.076 662.537 137.082 679.275",
+          fill: "#fff"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "143.90147",
+          y: "691.75556",
+          width: "2.83742",
+          height: "5.39109",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("rect", {
+        attrs: {
+          x: "345.17913",
+          y: "760.80543",
+          width: "2.83742",
+          height: "5.39109",
+          transform: "translate(954.17153 338.483) rotate(89.96937)",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("path", {
+        attrs: {
+          d:
+            "M190.14332,673.457h.31212a5.93019,5.93019,0,0,1,5.93019,5.93019v0a5.9302,5.9302,0,0,1-5.9302,5.9302h-.31212a0,0,0,0,1,0,0V673.457A0,0,0,0,1,190.14332,673.457Z",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("path", {
+        attrs: {
+          d:
+            "M394.01218,786.75665a9.16614,9.16614,0,0,1-5.00316-17.35382,22.4677,22.4677,0,0,1,4.69972,12.3743Z",
+          transform: "translate(-155.74191 -78.01207)",
+          fill: "#3f3d56"
+        }
+      }),
+      _vm._v(" "),
+      _c("polygon", {
+        attrs: {
+          points:
+            "154.735 662.524 143.895 678.639 143.889 671.051 149.624 662.531 154.735 662.524",
+          fill: "#f2f2f2"
+        }
+      }),
+      _vm._v(" "),
+      _c("polygon", {
+        attrs: {
+          points:
+            "123.293 662.543 114.948 674.945 114.948 667.357 118.182 662.549 123.293 662.543",
+          fill: "#f2f2f2"
+        }
+      }),
+      _vm._v(" "),
+      _c("polygon", {
+        attrs: {
+          points:
+            "168.899 662.518 157.635 679.263 152.524 679.263 163.788 662.518 168.899 662.518",
+          fill: "#f2f2f2"
+        }
+      }),
+      _vm._v(" "),
+      _c("polygon", {
+        attrs: {
+          points:
+            "736.528 538.291 714.678 510.199 727.384 500.316 737.729 513.617 772.679 476.725 784.366 487.797 736.528 538.291",
+          fill: "#fff"
+        }
+      }),
+      _vm._v(" "),
+      _c("polygon", {
+        attrs: {
+          points:
+            "6.34 480.325 177.444 480.325 177.444 606.311 177.34 606.311 177.34 631.394 152.257 606.311 6.34 606.311 6.34 480.325",
+          fill: "#00bfa6"
+        }
+      }),
+      _vm._v(" "),
+      _c("polygon", {
+        attrs: {
+          points:
+            "87.042 573.169 65.192 545.077 77.899 535.193 88.244 548.495 123.193 511.603 134.88 522.674 87.042 573.169",
+          fill: "#fff"
+        }
+      })
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CardRequirement.vue?vue&type=template&id=baf86c10&":
+/*!******************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/CardRequirement.vue?vue&type=template&id=baf86c10& ***!
+  \******************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c(
+      "div",
+      {
+        staticClass: "card-header border-0 pt-4 pb-4",
+        class: _vm.background,
+        attrs: { "data-aos": "flip-left" }
+      },
+      [
+        _c(
+          "h3",
+          {
+            staticClass: "my-0 font-weight-normal mb-3",
+            class: _vm.titleColor,
+            attrs: { "data-aos": "fade-in" }
+          },
+          [_vm._v("\n      " + _vm._s(_vm.title) + "\n    ")]
+        )
+      ]
+    ),
+    _vm._v(" "),
+    _c("div", { staticClass: "card-body" }, [
+      _c(
+        "ul",
         {
-          key: item.title,
-          staticClass: "breadcrumb-item",
-          class: { active: item.active }
+          staticClass: "list-unstyled mt-3 mb-4",
+          attrs: { "data-aos": "fade-up" }
         },
         [
-          !item.active
-            ? _c("inertia-link", { attrs: { href: _vm.route(item.href) } }, [
-                item.icon
-                  ? _c("i", { staticClass: "fas", class: item.icon })
-                  : _vm._e(),
-                _vm._v("\n      " + _vm._s(item.title) + "\n    ")
-              ])
-            : _c("span", [
-                item.icon
-                  ? _c("i", { staticClass: "fas", class: item.icon })
-                  : _vm._e(),
-                _vm._v("\n      " + _vm._s(item.title) + "\n    ")
-              ])
-        ],
-        1
+          _c("li", [
+            _vm._v("\n        KTP Pemohon dan Suami / Istri\n        "),
+            _vm.reqLists.ktp
+              ? _c("span", { staticClass: "fa fa-check text-success" })
+              : _c("span", { staticClass: "fa fa-times text-danger" })
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v("\n        Kartu Keluarga & Surat Nikah\n        "),
+            _vm.reqLists.kk
+              ? _c("span", { staticClass: "fa fa-check text-success" })
+              : _c("span", { staticClass: "fa fa-times text-danger" })
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v("\n        Surat Keterangan Kerja\n        "),
+            _vm.reqLists.sk
+              ? _c("span", { staticClass: "fa fa-check text-success" })
+              : _c("span", { staticClass: "fa fa-times text-danger" })
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v("\n        Slip Gaji\n        "),
+            _vm.reqLists.slip
+              ? _c("span", { staticClass: "fa fa-check text-success" })
+              : _c("span", { staticClass: "fa fa-times text-danger" })
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v("\n        NPWP a/n Pemohon/SPT PPh 21 *)\n        "),
+            _vm.reqLists.npwp
+              ? _c("span", { staticClass: "fa fa-check text-success" })
+              : _c("span", { staticClass: "fa fa-times text-danger" })
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v(
+              "\n        Rekening Tabungan/Giro 3 bulan terakhir\n        "
+            ),
+            _vm.reqLists.rek
+              ? _c("span", { staticClass: "fa fa-check text-success" })
+              : _c("span", { staticClass: "fa fa-times text-danger" })
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v("\n        Laporan Keuangan 2 tahun terakhir\n        "),
+            _vm.reqLists.laporanKeu
+              ? _c("span", { staticClass: "fa fa-check text-success" })
+              : _c("span", { staticClass: "fa fa-times text-danger" })
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v("\n        Copy Ijin Praktek\n        "),
+            _vm.reqLists.izinPraktek
+              ? _c("span", { staticClass: "fa fa-check text-success" })
+              : _c("span", { staticClass: "fa fa-times text-danger" })
+          ]),
+          _vm._v(" "),
+          _c("li", [
+            _vm._v("\n        Bukti Kepemilikan Rumah\n        "),
+            _vm.reqLists.bkr
+              ? _c("span", { staticClass: "fa fa-check text-success" })
+              : _c("span", { staticClass: "fa fa-times text-danger" })
+          ])
+        ]
       )
-    }),
-    0
-  )
+    ])
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -2474,6 +3012,332 @@ var staticRenderFns = [
     ])
   }
 ]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ModalFormPengajuan.vue?vue&type=template&id=e2fee0f6&":
+/*!*********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/ModalFormPengajuan.vue?vue&type=template&id=e2fee0f6& ***!
+  \*********************************************************************************************************************************************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return staticRenderFns; });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    [
+      _c(
+        "b-modal",
+        {
+          attrs: {
+            id: "modal-pengajuan",
+            title: "From Pengajuan",
+            size: "lg",
+            "hide-footer": ""
+          }
+        },
+        [
+          _vm.show
+            ? _c(
+                "b-form",
+                {
+                  on: {
+                    submit: function($event) {
+                      $event.preventDefault()
+                      return _vm.onSubmit($event)
+                    },
+                    reset: function($event) {
+                      $event.preventDefault()
+                      return _vm.resetForm($event)
+                    }
+                  }
+                },
+                [
+                  _c(
+                    "b-form-group",
+                    {
+                      attrs: {
+                        id: "input-group-1",
+                        label: "Alamat Email:",
+                        "label-for": "input-1"
+                      }
+                    },
+                    [
+                      _c("b-form-input", {
+                        attrs: {
+                          id: "input-1",
+                          type: "email",
+                          required: "",
+                          placeholder: "Email"
+                        },
+                        model: {
+                          value: _vm.form.email,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "email", $$v)
+                          },
+                          expression: "form.email"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-form-group",
+                    {
+                      attrs: {
+                        id: "input-group-2",
+                        label: "Nama Depan:",
+                        "label-for": "input-2"
+                      }
+                    },
+                    [
+                      _c("b-form-input", {
+                        attrs: {
+                          id: "input-2",
+                          type: "text",
+                          required: "",
+                          placeholder: "Nama depan"
+                        },
+                        model: {
+                          value: _vm.form.firstname,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "firstname", $$v)
+                          },
+                          expression: "form.firstname"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-form-group",
+                    {
+                      attrs: {
+                        id: "input-group-2",
+                        label: "Nama Belakang:",
+                        "label-for": "input-2"
+                      }
+                    },
+                    [
+                      _c("b-form-input", {
+                        attrs: {
+                          id: "input-2",
+                          type: "text",
+                          required: "",
+                          placeholder: "Nama Belakang"
+                        },
+                        model: {
+                          value: _vm.form.lastname,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "lastname", $$v)
+                          },
+                          expression: "form.lastname"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-form-group",
+                    {
+                      attrs: {
+                        id: "input-group-2",
+                        label: "Nomor Telepon:",
+                        "label-for": "input-2"
+                      }
+                    },
+                    [
+                      _c("b-form-input", {
+                        attrs: {
+                          id: "input-2",
+                          type: "tel",
+                          required: "",
+                          placeholder: "Nomor Telepon"
+                        },
+                        model: {
+                          value: _vm.form.no_telp,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "no_telp", $$v)
+                          },
+                          expression: "form.no_telp"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-form-group",
+                    {
+                      attrs: {
+                        id: "input-group-3",
+                        label: "Cabang:",
+                        "label-for": "input-3"
+                      }
+                    },
+                    [
+                      _c("b-form-select", {
+                        attrs: {
+                          id: "input-3",
+                          options: _vm.branchs,
+                          required: ""
+                        },
+                        scopedSlots: _vm._u(
+                          [
+                            {
+                              key: "first",
+                              fn: function() {
+                                return [
+                                  _c(
+                                    "b-form-select-option",
+                                    { attrs: { value: null, disabled: "" } },
+                                    [_vm._v("-- Pilih Cabang --")]
+                                  )
+                                ]
+                              },
+                              proxy: true
+                            }
+                          ],
+                          null,
+                          false,
+                          881741252
+                        ),
+                        model: {
+                          value: _vm.form.branch,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "branch", $$v)
+                          },
+                          expression: "form.branch"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-form-group",
+                    {
+                      attrs: {
+                        id: "input-group-3",
+                        label: "Kategori:",
+                        "label-for": "input-3"
+                      }
+                    },
+                    [
+                      _c("b-form-select", {
+                        attrs: {
+                          id: "input-3",
+                          options: _vm.categories,
+                          required: ""
+                        },
+                        scopedSlots: _vm._u(
+                          [
+                            {
+                              key: "first",
+                              fn: function() {
+                                return [
+                                  _c(
+                                    "b-form-select-option",
+                                    { attrs: { value: null, disabled: "" } },
+                                    [_vm._v("-- Pilih Kategori --")]
+                                  )
+                                ]
+                              },
+                              proxy: true
+                            }
+                          ],
+                          null,
+                          false,
+                          1436664612
+                        ),
+                        model: {
+                          value: _vm.form.category,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "category", $$v)
+                          },
+                          expression: "form.category"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-form-group",
+                    {
+                      attrs: {
+                        id: "input-group-3",
+                        label: "Pesan Tambahan:",
+                        "label-for": "input-3"
+                      }
+                    },
+                    [
+                      _c("b-form-textarea", {
+                        attrs: {
+                          id: "textarea",
+                          placeholder: "Pesan Tambahan...",
+                          rows: "3",
+                          "max-rows": "6"
+                        },
+                        model: {
+                          value: _vm.form.text,
+                          callback: function($$v) {
+                            _vm.$set(_vm.form, "text", $$v)
+                          },
+                          expression: "form.text"
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-button",
+                    {
+                      staticClass: "mt-3 btn-dark",
+                      attrs: { type: "reset" },
+                      on: {
+                        click: function($event) {
+                          return _vm.$bvModal.hide("modal-pengajuan")
+                        }
+                      }
+                    },
+                    [_vm._v("Cancel")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "b-button",
+                    {
+                      staticClass: "mt-3",
+                      attrs: { type: "submit", variant: "primary" }
+                    },
+                    [_vm._v("Submit")]
+                  )
+                ],
+                1
+              )
+            : _vm._e()
+        ],
+        1
+      )
+    ],
+    1
+  )
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -2634,7 +3498,11 @@ var render = function() {
                       "profile.about",
                       "profile.visimisi",
                       "profile.teammanagement",
-                      "profile.pemegangsaham"
+                      "profile.pemegangsaham",
+                      "profile.news",
+                      "profile.newsdetail",
+                      "profile.csrnews",
+                      "profile.csrnewsdetail"
                     )
                       ? "nav-item dropdown active"
                       : "nav-item dropdown"
@@ -2663,6 +3531,34 @@ var render = function() {
                         attrs: { "aria-labelledby": "navbarDropdown" }
                       },
                       [
+                        _c(
+                          "inertia-link",
+                          {
+                            class: _vm.isRoute(
+                              "profile.news",
+                              "profile.newsdetail"
+                            )
+                              ? "dropdown-item active"
+                              : "dropdown-item",
+                            attrs: { href: _vm.route("profile.news") }
+                          },
+                          [_vm._v("Berita")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "inertia-link",
+                          {
+                            class: _vm.isRoute(
+                              "profile.csrnews",
+                              "profile.csrnewsdetail"
+                            )
+                              ? "dropdown-item active"
+                              : "dropdown-item",
+                            attrs: { href: _vm.route("profile.csrnews") }
+                          },
+                          [_vm._v("Tanggung Jawab Sosial")]
+                        ),
+                        _vm._v(" "),
                         _c(
                           "inertia-link",
                           {
@@ -2710,25 +3606,6 @@ var render = function() {
                       1
                     )
                   ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "li",
-                  {
-                    staticClass: "cool-link",
-                    class: _vm.isRoute("news") ? "nav-item active" : "nav-item"
-                  },
-                  [
-                    _c(
-                      "inertia-link",
-                      {
-                        staticClass: "nav-link py-3",
-                        attrs: { href: _vm.route("news") }
-                      },
-                      [_vm._v("Berita")]
-                    )
-                  ],
-                  1
                 ),
                 _vm._v(" "),
                 _c(
@@ -2945,17 +3822,17 @@ function normalizeComponent (
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Profile/Visi/index.vue":
-/*!***************************************************!*\
-  !*** ./resources/js/Pages/Profile/Visi/index.vue ***!
-  \***************************************************/
+/***/ "./resources/js/Pages/Product/PinjamanDana/index.vue":
+/*!***********************************************************!*\
+  !*** ./resources/js/Pages/Product/PinjamanDana/index.vue ***!
+  \***********************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _index_vue_vue_type_template_id_1cf52c3b___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.vue?vue&type=template&id=1cf52c3b& */ "./resources/js/Pages/Profile/Visi/index.vue?vue&type=template&id=1cf52c3b&");
-/* harmony import */ var _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Profile/Visi/index.vue?vue&type=script&lang=js&");
+/* harmony import */ var _index_vue_vue_type_template_id_e51bedec___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.vue?vue&type=template&id=e51bedec& */ "./resources/js/Pages/Product/PinjamanDana/index.vue?vue&type=template&id=e51bedec&");
+/* harmony import */ var _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Product/PinjamanDana/index.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -2966,8 +3843,8 @@ __webpack_require__.r(__webpack_exports__);
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
   _index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _index_vue_vue_type_template_id_1cf52c3b___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _index_vue_vue_type_template_id_1cf52c3b___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _index_vue_vue_type_template_id_e51bedec___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _index_vue_vue_type_template_id_e51bedec___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -2977,38 +3854,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/Pages/Profile/Visi/index.vue"
+component.options.__file = "resources/js/Pages/Product/PinjamanDana/index.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Profile/Visi/index.vue?vue&type=script&lang=js&":
-/*!****************************************************************************!*\
-  !*** ./resources/js/Pages/Profile/Visi/index.vue?vue&type=script&lang=js& ***!
-  \****************************************************************************/
+/***/ "./resources/js/Pages/Product/PinjamanDana/index.vue?vue&type=script&lang=js&":
+/*!************************************************************************************!*\
+  !*** ./resources/js/Pages/Product/PinjamanDana/index.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Profile/Visi/index.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/babel-loader/lib??ref--4-0!../../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Product/PinjamanDana/index.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/Pages/Profile/Visi/index.vue?vue&type=template&id=1cf52c3b&":
-/*!**********************************************************************************!*\
-  !*** ./resources/js/Pages/Profile/Visi/index.vue?vue&type=template&id=1cf52c3b& ***!
-  \**********************************************************************************/
+/***/ "./resources/js/Pages/Product/PinjamanDana/index.vue?vue&type=template&id=e51bedec&":
+/*!******************************************************************************************!*\
+  !*** ./resources/js/Pages/Product/PinjamanDana/index.vue?vue&type=template&id=e51bedec& ***!
+  \******************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_1cf52c3b___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=template&id=1cf52c3b& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Profile/Visi/index.vue?vue&type=template&id=1cf52c3b&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_1cf52c3b___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_e51bedec___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./index.vue?vue&type=template&id=e51bedec& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Pages/Product/PinjamanDana/index.vue?vue&type=template&id=e51bedec&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_e51bedec___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_1cf52c3b___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_index_vue_vue_type_template_id_e51bedec___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -3239,123 +4116,70 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/Shared/img/misiSVG.vue":
-/*!*********************************************!*\
-  !*** ./resources/js/Shared/img/misiSVG.vue ***!
-  \*********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _misiSVG_vue_vue_type_template_id_78beec3a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./misiSVG.vue?vue&type=template&id=78beec3a& */ "./resources/js/Shared/img/misiSVG.vue?vue&type=template&id=78beec3a&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-var script = {}
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
-  script,
-  _misiSVG_vue_vue_type_template_id_78beec3a___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _misiSVG_vue_vue_type_template_id_78beec3a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/Shared/img/misiSVG.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/Shared/img/misiSVG.vue?vue&type=template&id=78beec3a&":
-/*!****************************************************************************!*\
-  !*** ./resources/js/Shared/img/misiSVG.vue?vue&type=template&id=78beec3a& ***!
-  \****************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_misiSVG_vue_vue_type_template_id_78beec3a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./misiSVG.vue?vue&type=template&id=78beec3a& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Shared/img/misiSVG.vue?vue&type=template&id=78beec3a&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_misiSVG_vue_vue_type_template_id_78beec3a___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_misiSVG_vue_vue_type_template_id_78beec3a___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./resources/js/Shared/img/visiSVG.vue":
-/*!*********************************************!*\
-  !*** ./resources/js/Shared/img/visiSVG.vue ***!
-  \*********************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _visiSVG_vue_vue_type_template_id_966d95fa___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./visiSVG.vue?vue&type=template&id=966d95fa& */ "./resources/js/Shared/img/visiSVG.vue?vue&type=template&id=966d95fa&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
-
-var script = {}
-
-
-/* normalize component */
-
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
-  script,
-  _visiSVG_vue_vue_type_template_id_966d95fa___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _visiSVG_vue_vue_type_template_id_966d95fa___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
-  false,
-  null,
-  null,
-  null
-  
-)
-
-/* hot reload */
-if (false) { var api; }
-component.options.__file = "resources/js/Shared/img/visiSVG.vue"
-/* harmony default export */ __webpack_exports__["default"] = (component.exports);
-
-/***/ }),
-
-/***/ "./resources/js/Shared/img/visiSVG.vue?vue&type=template&id=966d95fa&":
-/*!****************************************************************************!*\
-  !*** ./resources/js/Shared/img/visiSVG.vue?vue&type=template&id=966d95fa& ***!
-  \****************************************************************************/
-/*! exports provided: render, staticRenderFns */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_visiSVG_vue_vue_type_template_id_966d95fa___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./visiSVG.vue?vue&type=template&id=966d95fa& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Shared/img/visiSVG.vue?vue&type=template&id=966d95fa&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_visiSVG_vue_vue_type_template_id_966d95fa___WEBPACK_IMPORTED_MODULE_0__["render"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_visiSVG_vue_vue_type_template_id_966d95fa___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
-
-
-
-/***/ }),
-
-/***/ "./resources/js/components/Breadcrumb.vue":
+/***/ "./resources/js/Shared/img/vehicleSVG.vue":
 /*!************************************************!*\
-  !*** ./resources/js/components/Breadcrumb.vue ***!
+  !*** ./resources/js/Shared/img/vehicleSVG.vue ***!
   \************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _Breadcrumb_vue_vue_type_template_id_c259b9a4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Breadcrumb.vue?vue&type=template&id=c259b9a4& */ "./resources/js/components/Breadcrumb.vue?vue&type=template&id=c259b9a4&");
-/* harmony import */ var _Breadcrumb_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Breadcrumb.vue?vue&type=script&lang=js& */ "./resources/js/components/Breadcrumb.vue?vue&type=script&lang=js&");
+/* harmony import */ var _vehicleSVG_vue_vue_type_template_id_622c84c0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./vehicleSVG.vue?vue&type=template&id=622c84c0& */ "./resources/js/Shared/img/vehicleSVG.vue?vue&type=template&id=622c84c0&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+var script = {}
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  script,
+  _vehicleSVG_vue_vue_type_template_id_622c84c0___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _vehicleSVG_vue_vue_type_template_id_622c84c0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/Shared/img/vehicleSVG.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/Shared/img/vehicleSVG.vue?vue&type=template&id=622c84c0&":
+/*!*******************************************************************************!*\
+  !*** ./resources/js/Shared/img/vehicleSVG.vue?vue&type=template&id=622c84c0& ***!
+  \*******************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_vehicleSVG_vue_vue_type_template_id_622c84c0___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./vehicleSVG.vue?vue&type=template&id=622c84c0& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/Shared/img/vehicleSVG.vue?vue&type=template&id=622c84c0&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_vehicleSVG_vue_vue_type_template_id_622c84c0___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_vehicleSVG_vue_vue_type_template_id_622c84c0___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/CardRequirement.vue":
+/*!*****************************************************!*\
+  !*** ./resources/js/components/CardRequirement.vue ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _CardRequirement_vue_vue_type_template_id_baf86c10___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./CardRequirement.vue?vue&type=template&id=baf86c10& */ "./resources/js/components/CardRequirement.vue?vue&type=template&id=baf86c10&");
+/* harmony import */ var _CardRequirement_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CardRequirement.vue?vue&type=script&lang=js& */ "./resources/js/components/CardRequirement.vue?vue&type=script&lang=js&");
 /* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 
@@ -3365,9 +4189,9 @@ __webpack_require__.r(__webpack_exports__);
 /* normalize component */
 
 var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
-  _Breadcrumb_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
-  _Breadcrumb_vue_vue_type_template_id_c259b9a4___WEBPACK_IMPORTED_MODULE_0__["render"],
-  _Breadcrumb_vue_vue_type_template_id_c259b9a4___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  _CardRequirement_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _CardRequirement_vue_vue_type_template_id_baf86c10___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _CardRequirement_vue_vue_type_template_id_baf86c10___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
   null,
   null,
@@ -3377,38 +4201,38 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/components/Breadcrumb.vue"
+component.options.__file = "resources/js/components/CardRequirement.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
 
 /***/ }),
 
-/***/ "./resources/js/components/Breadcrumb.vue?vue&type=script&lang=js&":
-/*!*************************************************************************!*\
-  !*** ./resources/js/components/Breadcrumb.vue?vue&type=script&lang=js& ***!
-  \*************************************************************************/
+/***/ "./resources/js/components/CardRequirement.vue?vue&type=script&lang=js&":
+/*!******************************************************************************!*\
+  !*** ./resources/js/components/CardRequirement.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Breadcrumb_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Breadcrumb.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Breadcrumb.vue?vue&type=script&lang=js&");
-/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Breadcrumb_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CardRequirement_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./CardRequirement.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CardRequirement.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_CardRequirement_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
-/***/ "./resources/js/components/Breadcrumb.vue?vue&type=template&id=c259b9a4&":
-/*!*******************************************************************************!*\
-  !*** ./resources/js/components/Breadcrumb.vue?vue&type=template&id=c259b9a4& ***!
-  \*******************************************************************************/
+/***/ "./resources/js/components/CardRequirement.vue?vue&type=template&id=baf86c10&":
+/*!************************************************************************************!*\
+  !*** ./resources/js/components/CardRequirement.vue?vue&type=template&id=baf86c10& ***!
+  \************************************************************************************/
 /*! exports provided: render, staticRenderFns */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Breadcrumb_vue_vue_type_template_id_c259b9a4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./Breadcrumb.vue?vue&type=template&id=c259b9a4& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Breadcrumb.vue?vue&type=template&id=c259b9a4&");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Breadcrumb_vue_vue_type_template_id_c259b9a4___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CardRequirement_vue_vue_type_template_id_baf86c10___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./CardRequirement.vue?vue&type=template&id=baf86c10& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/CardRequirement.vue?vue&type=template&id=baf86c10&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CardRequirement_vue_vue_type_template_id_baf86c10___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Breadcrumb_vue_vue_type_template_id_c259b9a4___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_CardRequirement_vue_vue_type_template_id_baf86c10___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 
@@ -3480,6 +4304,75 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Footer_vue_vue_type_template_id_61a7c374_scoped_true___WEBPACK_IMPORTED_MODULE_0__["render"]; });
 
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Footer_vue_vue_type_template_id_61a7c374_scoped_true___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
+
+
+
+/***/ }),
+
+/***/ "./resources/js/components/ModalFormPengajuan.vue":
+/*!********************************************************!*\
+  !*** ./resources/js/components/ModalFormPengajuan.vue ***!
+  \********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _ModalFormPengajuan_vue_vue_type_template_id_e2fee0f6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ModalFormPengajuan.vue?vue&type=template&id=e2fee0f6& */ "./resources/js/components/ModalFormPengajuan.vue?vue&type=template&id=e2fee0f6&");
+/* harmony import */ var _ModalFormPengajuan_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ModalFormPengajuan.vue?vue&type=script&lang=js& */ "./resources/js/components/ModalFormPengajuan.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _ModalFormPengajuan_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
+  _ModalFormPengajuan_vue_vue_type_template_id_e2fee0f6___WEBPACK_IMPORTED_MODULE_0__["render"],
+  _ModalFormPengajuan_vue_vue_type_template_id_e2fee0f6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/components/ModalFormPengajuan.vue"
+/* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/ModalFormPengajuan.vue?vue&type=script&lang=js&":
+/*!*********************************************************************************!*\
+  !*** ./resources/js/components/ModalFormPengajuan.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ModalFormPengajuan_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./ModalFormPengajuan.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ModalFormPengajuan.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_ModalFormPengajuan_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
+
+/***/ }),
+
+/***/ "./resources/js/components/ModalFormPengajuan.vue?vue&type=template&id=e2fee0f6&":
+/*!***************************************************************************************!*\
+  !*** ./resources/js/components/ModalFormPengajuan.vue?vue&type=template&id=e2fee0f6& ***!
+  \***************************************************************************************/
+/*! exports provided: render, staticRenderFns */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ModalFormPengajuan_vue_vue_type_template_id_e2fee0f6___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./ModalFormPengajuan.vue?vue&type=template&id=e2fee0f6& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/ModalFormPengajuan.vue?vue&type=template&id=e2fee0f6&");
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "render", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ModalFormPengajuan_vue_vue_type_template_id_e2fee0f6___WEBPACK_IMPORTED_MODULE_0__["render"]; });
+
+/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_ModalFormPengajuan_vue_vue_type_template_id_e2fee0f6___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
 

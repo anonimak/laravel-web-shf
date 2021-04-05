@@ -50,6 +50,13 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
  //import layouts
 
 
@@ -80,7 +87,7 @@ __webpack_require__.r(__webpack_exports__);
     form: {
       handler: lodash_throttle__WEBPACK_IMPORTED_MODULE_4___default()(function () {
         var query = lodash_pickBy__WEBPACK_IMPORTED_MODULE_5___default()(this.form);
-        this.$inertia.replace(this.route("news", Object.keys(query).length ? query : {
+        this.$inertia.replace(this.route("profile.news", Object.keys(query).length ? query : {
           remember: "forget"
         }));
       }, 150),
@@ -400,13 +407,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
     itemid: {
@@ -423,10 +423,6 @@ __webpack_require__.r(__webpack_exports__);
     },
     date: {
       type: String,
-      require: true
-    },
-    category: {
-      type: Object,
       require: true
     },
     image: {
@@ -450,6 +446,17 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -810,7 +817,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* .card {\r\n      max-width:25%;\r\n  } */\r\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* .card {\r\n      max-width:25%;\r\n  } */\r\n", ""]);
 
 // exports
 
@@ -6337,7 +6344,6 @@ var render = function() {
                         title: item.title,
                         date: item.created_at,
                         description: item.description,
-                        category: item.category,
                         image: item.image
                       }
                     })
@@ -6710,7 +6716,7 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c(
     "div",
-    { staticClass: "card mb-4 box-shadow h-xl-200" },
+    { staticClass: "card mb-4 box-shadow h-100" },
     [
       !_vm.simple
         ? _c("b-img", {
@@ -6724,12 +6730,6 @@ var render = function() {
         { staticClass: "card-body d-flex flex-column align-items-start" },
         [
           !_vm.simple
-            ? _c("strong", { staticClass: "d-inline-block mb-2 text-purple" }, [
-                _vm._v(_vm._s(_vm.category.title))
-              ])
-            : _vm._e(),
-          _vm._v(" "),
-          !_vm.simple
             ? _c(
                 "h5",
                 { staticClass: "mb-0" },
@@ -6737,9 +6737,10 @@ var render = function() {
                   _c(
                     "inertia-link",
                     {
-                      staticClass: "text-dark",
                       attrs: {
-                        href: _vm.route("newsdetail", { id: _vm.itemid })
+                        href: _vm.route("profile.newsdetail", {
+                          id: _vm.itemid
+                        })
                       }
                     },
                     [_vm._v(_vm._s(_vm.title))]
@@ -6754,9 +6755,10 @@ var render = function() {
                   _c(
                     "inertia-link",
                     {
-                      staticClass: "text-dark",
                       attrs: {
-                        href: _vm.route("newsdetail", { id: _vm.itemid })
+                        href: _vm.route("profile.newsdetail", {
+                          id: _vm.itemid
+                        })
                       }
                     },
                     [_vm._v(_vm._s(_vm.title))]
@@ -6785,7 +6787,9 @@ var render = function() {
                       "inertia-link",
                       {
                         attrs: {
-                          href: _vm.route("newsdetail", { id: _vm.itemid })
+                          href: _vm.route("profile.newsdetail", {
+                            id: _vm.itemid
+                          })
                         }
                       },
                       [_vm._v("Baca Selengkapnya")]
@@ -7102,7 +7106,11 @@ var render = function() {
                       "profile.about",
                       "profile.visimisi",
                       "profile.teammanagement",
-                      "profile.pemegangsaham"
+                      "profile.pemegangsaham",
+                      "profile.news",
+                      "profile.newsdetail",
+                      "profile.csrnews",
+                      "profile.csrnewsdetail"
                     )
                       ? "nav-item dropdown active"
                       : "nav-item dropdown"
@@ -7131,6 +7139,34 @@ var render = function() {
                         attrs: { "aria-labelledby": "navbarDropdown" }
                       },
                       [
+                        _c(
+                          "inertia-link",
+                          {
+                            class: _vm.isRoute(
+                              "profile.news",
+                              "profile.newsdetail"
+                            )
+                              ? "dropdown-item active"
+                              : "dropdown-item",
+                            attrs: { href: _vm.route("profile.news") }
+                          },
+                          [_vm._v("Berita")]
+                        ),
+                        _vm._v(" "),
+                        _c(
+                          "inertia-link",
+                          {
+                            class: _vm.isRoute(
+                              "profile.csrnews",
+                              "profile.csrnewsdetail"
+                            )
+                              ? "dropdown-item active"
+                              : "dropdown-item",
+                            attrs: { href: _vm.route("profile.csrnews") }
+                          },
+                          [_vm._v("Tanggung Jawab Sosial")]
+                        ),
+                        _vm._v(" "),
                         _c(
                           "inertia-link",
                           {
@@ -7178,25 +7214,6 @@ var render = function() {
                       1
                     )
                   ]
-                ),
-                _vm._v(" "),
-                _c(
-                  "li",
-                  {
-                    staticClass: "cool-link",
-                    class: _vm.isRoute("news") ? "nav-item active" : "nav-item"
-                  },
-                  [
-                    _c(
-                      "inertia-link",
-                      {
-                        staticClass: "nav-link py-3",
-                        attrs: { href: _vm.route("news") }
-                      },
-                      [_vm._v("Berita")]
-                    )
-                  ],
-                  1
                 ),
                 _vm._v(" "),
                 _c(
