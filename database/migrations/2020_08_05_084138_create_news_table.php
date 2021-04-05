@@ -14,20 +14,21 @@ class CreateNewsTable extends Migration
     public function up()
     {
 
-        Schema::create('type_news', function (Blueprint $table) {
-            $table->id();
-            $table->string('type');
-            $table->boolean('status')->default(true);
-            $table->softDeletes();
-            $table->timestamps();
-        });
-
         Schema::create('news', function (Blueprint $table) {
             $table->id();
             $table->foreignId('id_type')->references('id')->on('type_news');
             $table->string('title');
             $table->string('image');
             $table->longText('description')->nullable();
+            $table->boolean('status')->default(true);
+            $table->softDeletes();
+            $table->timestamps();
+        });
+
+        
+        Schema::create('type_news', function (Blueprint $table) {
+            $table->id();
+            $table->string('type');
             $table->boolean('status')->default(true);
             $table->softDeletes();
             $table->timestamps();

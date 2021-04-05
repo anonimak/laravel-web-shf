@@ -31,10 +31,13 @@ class CreateNewsSeeder extends Seeder
                 'status' => true,
             ]
         ];
-        News::create($news);
 
+        
         foreach($types as $type){
             TypeNews::create($type);
         }
+        
+        News::create($news);
+
     }
 }
