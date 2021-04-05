@@ -13,7 +13,15 @@ class CreateNewsTable extends Migration
      */
     public function up()
     {
-        //
+
+        Schema::create('type_news', function (Blueprint $table) {
+            $table->id();
+            $table->string('type');
+            $table->boolean('status')->default(true);
+            $table->softDeletes();
+            $table->timestamps();
+        });
+
         Schema::create('news', function (Blueprint $table) {
             $table->id();
             $table->foreignId('id_type')->references('id')->on('type_news');
@@ -25,13 +33,6 @@ class CreateNewsTable extends Migration
             $table->timestamps();
         });
 
-        Schema::create('type_news', function (Blueprint $table) {
-            $table->id();
-            $table->string('type');
-            $table->boolean('status')->default(true);
-            $table->softDeletes();
-            $table->timestamps();
-        });
     }
 
     /**
@@ -41,6 +42,7 @@ class CreateNewsTable extends Migration
      */
     public function down()
     {
+        Schema::dropIfExists('type_news');
         Schema::dropIfExists('news');
     }
 }
