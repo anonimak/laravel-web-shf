@@ -17,7 +17,7 @@ class CsrNewsController extends Controller
     {
         // Synchronously
         Inertia::share('app.name', Config::get('app.name'));
-        return Inertia::render('CsrNews', [
+        return Inertia::render('Profile/CsrNews', [
             'lists' => ModelNews::getCsrNewsWhereStatus($request->input('search')),
             'listBanner' => ModelNews::where('status',true)->where('id_type',2)->orderBy('created_at', 'DESC')->skip(0)->take(4)->get(),
             'filters' => $request->all(),
@@ -43,7 +43,7 @@ class CsrNewsController extends Controller
                         ->limit(4)->get();
         }
 
-        return Inertia::render('CsrNews/detail', [
+        return Inertia::render('Profile/CsrNews/detail', [
             'data' => $datanews,
             'listNews'  => $listnews,
         ]);

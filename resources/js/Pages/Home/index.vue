@@ -185,39 +185,36 @@
             <hr class="border-secondary" />
           </div>
           <!-- Featured -->
-          <div class="row">
-            <div class="col">
-              <div class="card-deck">
-                <card-news
-                  class="d-none d-md-block"
-                  v-for="item in listNews"
-                  :key="item.id"
-                  :itemid="item.id"
-                  :title="item.title"
-                  :date="item.created_at"
-                  :description="item.description"
-                  :image="item.image"
-                />
-              </div>
-              <media-news
-                class="d-md-none d-sm-flex"
-                v-for="item in listNews"
-                :key="item.id"
-                :itemid="item.id"
-                :title="item.title"
-                :date="item.created_at"
-                :image="item.image"
-              />
+          <div class="row" v-if="listNews.length > 0">
+            <media-news
+              class="col-lx-6 col-md-6 d-none d-md-block"
+              v-for="item in listNews"
+              :key="item.id"
+              :itemid="item.id"
+              :title="item.title"
+              :date="item.created_at"
+              :image="item.image"
+              size="md"
+            />
+            <media-news
+              class="col-12 d-md-none d-sm-flex"
+              v-for="item in listNews"
+              :key="item.id"
+              :itemid="item.id"
+              :title="item.title"
+              :date="item.created_at"
+              :image="item.image"
+              size="sm"
+            />
+            <div class="col-12">
+              <inertia-link
+                class="btn btn-outline-primary"
+                :href="route('profile.news')"
+                >Lihat semua berita</inertia-link
+              >
             </div>
           </div>
-          <p class="text-muted" v-if="listNews == null">
-            Saat ini berita belum tersedia
-          </p>
-          <div class="d-inline bg-gray p-2">
-            <inertia-link :href="route('profile.news')"
-              >Lihat semua berita</inertia-link
-            >
-          </div>
+          <p class="text-muted" v-else>Saat ini berita belum tersedia</p>
         </div>
       </section>
 
@@ -232,9 +229,9 @@
             <hr class="border-secondary" />
           </div>
           <!-- Featured -->
-          <div class="row">
+          <div class="row" v-if="listCsrNews.length > 0">
             <media-csr-news
-              class="col-lx-6 col-md-6"
+              class="col-lx-6 col-md-6 d-none d-md-block"
               v-for="item in listCsrNews"
               :key="item.id"
               :itemid="item.id"
@@ -243,15 +240,27 @@
               :image="item.image"
               size="md"
             />
+            <media-csr-news
+              class="col-12 d-md-none d-sm-flex"
+              v-for="item in listCsrNews"
+              :key="item.id"
+              :itemid="item.id"
+              :title="item.title"
+              :date="item.created_at"
+              :image="item.image"
+              size="sm"
+            />
+            <div class="col">
+              <inertia-link
+                class="btn btn-outline-primary"
+                :href="route('profile.csrnews')"
+                >Lihat semua tanggung jawab sosial</inertia-link
+              >
+            </div>
           </div>
-          <p class="text-muted" v-if="listCsrNews == null">
+          <p class="text-muted" v-else>
             Saat ini berita Tanggung Jawab Sosial belum tersedia
           </p>
-          <div class="d-inline bg-gray p-2">
-            <inertia-link :href="route('profile.csrnews')"
-              >Lihat semua tanggung jawab sosial</inertia-link
-            >
-          </div>
         </div>
       </section>
       <!-- Section Promo -->

@@ -32,7 +32,7 @@
                 :title="item.title"
                 :date="item.created_at"
                 :image="item.image"
-                size="md"
+                size="sm"
               />
             </div>
           </div>

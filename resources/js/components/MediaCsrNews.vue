@@ -12,14 +12,18 @@
       </template>
 
       <h6 v-if="size == 'sm'" class="mt-0 mb-1">
-        <inertia-link :href="route('profile.csrnewsdetail', { id: itemid })">{{
-          title
-        }}</inertia-link>
+        <inertia-link
+          class="text-dark"
+          :href="route('profile.csrnewsdetail', { id: itemid })"
+          >{{ title }}</inertia-link
+        >
       </h6>
       <h4 v-else class="mt-0 mb-1">
-        <inertia-link :href="route('profile.csrnewsdetail', { id: itemid })">{{
-          title
-        }}</inertia-link>
+        <inertia-link
+          class="text-dark"
+          :href="route('profile.csrnewsdetail', { id: itemid })"
+          >{{ title }}</inertia-link
+        >
       </h4>
       <p class="mb-0 text-muted">
         <small

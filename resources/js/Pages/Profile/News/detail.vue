@@ -35,6 +35,7 @@
                     :date="item.created_at"
                     :description="item.description"
                     :image="item.image"
+                    size="sm"
                   />
                 </div>
               </div>

@@ -17,7 +17,7 @@ class NewsController extends Controller
     {
         // Synchronously
         Inertia::share('app.name', Config::get('app.name'));
-        return Inertia::render('News', [
+        return Inertia::render('Profile/News', [
             'lists' => ModelNews::getNewsWhereStatus($request->input('search')),
             'listBanner' => ModelNews::where('status',true)->where('id_type',1)->orderBy('created_at', 'DESC')->skip(0)->take(4)->get(),
             'filters' => $request->all(),
@@ -43,7 +43,7 @@ class NewsController extends Controller
                         ->limit(4)->get();
         }
 
-        return Inertia::render('News/detail', [
+        return Inertia::render('Profile/News/detail', [
             'data' => $datanews,
             'listNews'  => $listnews,
         ]);

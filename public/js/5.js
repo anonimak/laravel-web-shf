@@ -430,6 +430,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
  //import layouts
 
 
@@ -952,6 +961,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ["itemid", "title", "date", "image", "size"]
 });
@@ -989,8 +1002,22 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ["itemid", "title", "date", "image"]
+  props: ["itemid", "title", "date", "image", "size"]
 });
 
 /***/ }),
@@ -1434,7 +1461,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* .card-deck {\r\n  justify-content: space-between;\r\n}\r\n\r\n.card-deck .card {\r\n  margin: 0 0 0.5rem;\r\n}\r\n\r\n@media (min-width: 576px) and (max-width: 767.98px) {\r\n  .card-deck .card {\r\n    -ms-flex: 0 0 48.7%;\r\n    flex: 0 0 48.7%;\r\n  }\r\n}\r\n\r\n@media (min-width: 768px) and (max-width: 991.98px) {\r\n  .card-deck .card {\r\n    -ms-flex: 0 0 32%;\r\n    flex: 0 0 32%;\r\n  }\r\n}\r\n\r\n@media (min-width: 992px) {\r\n  .card-deck .card {\r\n    -ms-flex: 0 0 24%;\r\n    flex: 0 0 24%;\r\n  }\r\n} */\r\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* .card-deck {\r\n  justify-content: space-between;\r\n}\r\n\r\n.card-deck .card {\r\n  margin: 0 0 0.5rem;\r\n}\r\n\r\n@media (min-width: 576px) and (max-width: 767.98px) {\r\n  .card-deck .card {\r\n    -ms-flex: 0 0 48.7%;\r\n    flex: 0 0 48.7%;\r\n  }\r\n}\r\n\r\n@media (min-width: 768px) and (max-width: 991.98px) {\r\n  .card-deck .card {\r\n    -ms-flex: 0 0 32%;\r\n    flex: 0 0 32%;\r\n  }\r\n}\r\n\r\n@media (min-width: 992px) {\r\n  .card-deck .card {\r\n    -ms-flex: 0 0 24%;\r\n    flex: 0 0 24%;\r\n  }\r\n} */\r\n", ""]);
 
 // exports
 
@@ -2061,67 +2088,60 @@ var render = function() {
                 _c("hr", { staticClass: "border-secondary" })
               ]),
               _vm._v(" "),
-              _c("div", { staticClass: "row" }, [
-                _c(
-                  "div",
-                  { staticClass: "col" },
-                  [
-                    _c(
-                      "div",
-                      { staticClass: "card-deck" },
+              _vm.listNews.length > 0
+                ? _c(
+                    "div",
+                    { staticClass: "row" },
+                    [
                       _vm._l(_vm.listNews, function(item) {
-                        return _c("card-news", {
+                        return _c("media-news", {
                           key: item.id,
-                          staticClass: "d-none d-md-block",
+                          staticClass: "col-lx-6 col-md-6 d-none d-md-block",
                           attrs: {
                             itemid: item.id,
                             title: item.title,
                             date: item.created_at,
-                            description: item.description,
-                            image: item.image
+                            image: item.image,
+                            size: "md"
                           }
                         })
                       }),
-                      1
-                    ),
-                    _vm._v(" "),
-                    _vm._l(_vm.listNews, function(item) {
-                      return _c("media-news", {
-                        key: item.id,
-                        staticClass: "d-md-none d-sm-flex",
-                        attrs: {
-                          itemid: item.id,
-                          title: item.title,
-                          date: item.created_at,
-                          image: item.image
-                        }
-                      })
-                    })
-                  ],
-                  2
-                )
-              ]),
-              _vm._v(" "),
-              _vm.listNews == null
-                ? _c("p", { staticClass: "text-muted" }, [
-                    _vm._v(
-                      "\n            Saat ini berita belum tersedia\n          "
-                    )
-                  ])
-                : _vm._e(),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "d-inline bg-gray p-2" },
-                [
-                  _c(
-                    "inertia-link",
-                    { attrs: { href: _vm.route("profile.news") } },
-                    [_vm._v("Lihat semua berita")]
+                      _vm._v(" "),
+                      _vm._l(_vm.listNews, function(item) {
+                        return _c("media-news", {
+                          key: item.id,
+                          staticClass: "col-12 d-md-none d-sm-flex",
+                          attrs: {
+                            itemid: item.id,
+                            title: item.title,
+                            date: item.created_at,
+                            image: item.image,
+                            size: "sm"
+                          }
+                        })
+                      }),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "col-12" },
+                        [
+                          _c(
+                            "inertia-link",
+                            {
+                              staticClass: "btn btn-outline-primary",
+                              attrs: { href: _vm.route("profile.news") }
+                            },
+                            [_vm._v("Lihat semua berita")]
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    2
                   )
-                ],
-                1
-              )
+                : _c("p", { staticClass: "text-muted" }, [
+                    _vm._v("Saat ini berita belum tersedia")
+                  ])
             ])
           ]
         ),
@@ -2139,45 +2159,62 @@ var render = function() {
                 _c("hr", { staticClass: "border-secondary" })
               ]),
               _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "row" },
-                _vm._l(_vm.listCsrNews, function(item) {
-                  return _c("media-csr-news", {
-                    key: item.id,
-                    staticClass: "col-lx-6 col-md-6",
-                    attrs: {
-                      itemid: item.id,
-                      title: item.title,
-                      date: item.created_at,
-                      image: item.image,
-                      size: "md"
-                    }
-                  })
-                }),
-                1
-              ),
-              _vm._v(" "),
-              _vm.listCsrNews == null
-                ? _c("p", { staticClass: "text-muted" }, [
+              _vm.listCsrNews.length > 0
+                ? _c(
+                    "div",
+                    { staticClass: "row" },
+                    [
+                      _vm._l(_vm.listCsrNews, function(item) {
+                        return _c("media-csr-news", {
+                          key: item.id,
+                          staticClass: "col-lx-6 col-md-6 d-none d-md-block",
+                          attrs: {
+                            itemid: item.id,
+                            title: item.title,
+                            date: item.created_at,
+                            image: item.image,
+                            size: "md"
+                          }
+                        })
+                      }),
+                      _vm._v(" "),
+                      _vm._l(_vm.listCsrNews, function(item) {
+                        return _c("media-csr-news", {
+                          key: item.id,
+                          staticClass: "col-12 d-md-none d-sm-flex",
+                          attrs: {
+                            itemid: item.id,
+                            title: item.title,
+                            date: item.created_at,
+                            image: item.image,
+                            size: "sm"
+                          }
+                        })
+                      }),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        { staticClass: "col" },
+                        [
+                          _c(
+                            "inertia-link",
+                            {
+                              staticClass: "btn btn-outline-primary",
+                              attrs: { href: _vm.route("profile.csrnews") }
+                            },
+                            [_vm._v("Lihat semua tanggung jawab sosial")]
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    2
+                  )
+                : _c("p", { staticClass: "text-muted" }, [
                     _vm._v(
                       "\n            Saat ini berita Tanggung Jawab Sosial belum tersedia\n          "
                     )
                   ])
-                : _vm._e(),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "d-inline bg-gray p-2" },
-                [
-                  _c(
-                    "inertia-link",
-                    { attrs: { href: _vm.route("profile.csrnews") } },
-                    [_vm._v("Lihat semua tanggung jawab sosial")]
-                  )
-                ],
-                1
-              )
             ])
           ]
         ),
@@ -6938,6 +6975,7 @@ var render = function() {
                   _c(
                     "inertia-link",
                     {
+                      staticClass: "text-dark",
                       attrs: {
                         href: _vm.route("profile.csrnewsdetail", {
                           id: _vm.itemid
@@ -6956,6 +6994,7 @@ var render = function() {
                   _c(
                     "inertia-link",
                     {
+                      staticClass: "text-dark",
                       attrs: {
                         href: _vm.route("profile.csrnewsdetail", {
                           id: _vm.itemid
@@ -7006,58 +7045,86 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c(
-    "b-media",
-    {
-      staticClass: "my-2",
-      scopedSlots: _vm._u([
-        {
-          key: "aside",
-          fn: function() {
-            return [
-              _c("b-avatar", {
-                attrs: {
-                  rounded: "",
-                  src: _vm.image,
-                  size: "60px",
-                  alt: "placeholder"
-                }
-              })
-            ]
-          },
-          proxy: true
-        }
-      ])
-    },
+    "div",
     [
-      _vm._v(" "),
       _c(
-        "h6",
-        { staticClass: "mt-0 mb-1" },
-        [
-          _c(
-            "inertia-link",
+        "b-media",
+        {
+          staticClass: "my-2",
+          scopedSlots: _vm._u([
             {
-              staticClass: "text-dark",
-              attrs: {
-                href: _vm.route("profile.newsdetail", { id: _vm.itemid })
-              }
-            },
-            [_vm._v(_vm._s(_vm.title))]
-          )
-        ],
-        1
+              key: "aside",
+              fn: function() {
+                return [
+                  _c("b-avatar", {
+                    attrs: {
+                      rounded: "",
+                      src: _vm.image,
+                      size: _vm.size == "sm" ? "60px" : "120px",
+                      alt: "placeholder"
+                    }
+                  })
+                ]
+              },
+              proxy: true
+            }
+          ])
+        },
+        [
+          _vm._v(" "),
+          _vm.size == "sm"
+            ? _c(
+                "h6",
+                { staticClass: "mt-0 mb-1" },
+                [
+                  _c(
+                    "inertia-link",
+                    {
+                      staticClass: "text-dark",
+                      attrs: {
+                        href: _vm.route("profile.newsdetail", {
+                          id: _vm.itemid
+                        })
+                      }
+                    },
+                    [_vm._v(_vm._s(_vm.title))]
+                  )
+                ],
+                1
+              )
+            : _c(
+                "h4",
+                { staticClass: "mt-0 mb-1" },
+                [
+                  _c(
+                    "inertia-link",
+                    {
+                      staticClass: "text-dark",
+                      attrs: {
+                        href: _vm.route("profile.newsdetail", {
+                          id: _vm.itemid
+                        })
+                      }
+                    },
+                    [_vm._v(_vm._s(_vm.title))]
+                  )
+                ],
+                1
+              ),
+          _vm._v(" "),
+          _c("p", { staticClass: "mb-0 text-muted" }, [
+            _c("small", [
+              _c("em", [
+                _vm._v(_vm._s(_vm._f("moment")(_vm.date, "Do MMMM YYYY, h:mm")))
+              ])
+            ])
+          ])
+        ]
       ),
       _vm._v(" "),
-      _c("p", { staticClass: "mb-0" }, [
-        _c("small", [
-          _c("em", [
-            _vm._v(_vm._s(_vm._f("moment")(_vm.date, "Do MMMM YYYY, h:mm")))
-          ])
-        ])
-      ]),
-      _vm._v(" "),
       _c("hr", { staticClass: "border-gray" })
-    ]
+    ],
+    1
   )
 }
 var staticRenderFns = []
