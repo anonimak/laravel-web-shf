@@ -1,9 +1,6 @@
 <template>
-  <GoogleMapLoader
-    :mapConfig="mapConfig"
-    apiKey="AIzaSyCRBUHbaB-2oIAEoLd3aNmab6kuq53cLms"
-  >
-  // insert your google maps api key to render styled map
+  <GoogleMapLoader :mapConfig="mapConfig" :apiKey="apiKey">
+    // insert your google maps api key to render styled map
     <template slot-scope="{ google, map }">
       <GoogleMapMarker
         v-for="marker in markers"
@@ -25,10 +22,10 @@ import { mapSettings } from "@/constants/mapSettings";
 export default {
   components: {
     GoogleMapLoader,
-    GoogleMapMarker
+    GoogleMapMarker,
   },
 
-  props: ["datamarkers"],
+  props: ["datamarkers", "apiKey"],
 
   data() {
     return {
@@ -47,14 +44,17 @@ export default {
       //   }
       // ]
 
-      markers: this.datamarkers.map(function(marker){
+      markers: this.datamarkers.map(function (marker) {
         return {
-            id : marker.id,
-            name : marker.name,
-            address : marker.address,
-            telp : marker.telp,
-            position : {lat: parseFloat(marker.latitude), lng: parseFloat(marker.longitude)}
-        }
+          id: marker.id,
+          name: marker.name,
+          address: marker.address,
+          telp: marker.telp,
+          position: {
+            lat: parseFloat(marker.latitude),
+            lng: parseFloat(marker.longitude),
+          },
+        };
       }),
     };
   },
@@ -63,13 +63,13 @@ export default {
     mapConfig() {
       return {
         ...mapSettings,
-        center: this.mapCenter
+        center: this.mapCenter,
       };
     },
 
     mapCenter() {
       return this.markers[0].position;
-    }
-  }
+    },
+  },
 };
 </script>

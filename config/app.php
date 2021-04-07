@@ -230,4 +230,7 @@ return [
         'Excel' => Maatwebsite\Excel\Facades\Excel::class,
     ],
 
+
+    // maps
+    'gmap_key' => env('GMAP_API_KEY', '')
 ];

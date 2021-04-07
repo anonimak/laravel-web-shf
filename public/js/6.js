@@ -125,6 +125,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
  //import layouts
 
 
@@ -135,10 +141,10 @@ __webpack_require__.r(__webpack_exports__);
   },
   data: function data() {
     return {
-      "offices": this.data_offices
+      offices: this.data_offices
     };
   },
-  props: ["meta", "data_offices"]
+  props: ["meta", "data_offices", "api_key"]
 });
 
 /***/ }),
@@ -576,9 +582,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
-//
 
 
 
@@ -587,7 +590,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     GoogleMapLoader: _components_GoogleMapLoader__WEBPACK_IMPORTED_MODULE_0__["default"],
     GoogleMapMarker: _components_GoogleMapMarker__WEBPACK_IMPORTED_MODULE_1__["default"]
   },
-  props: ["datamarkers"],
+  props: ["datamarkers", "apiKey"],
   data: function data() {
     return {
       // markers: [
@@ -3304,7 +3307,10 @@ var render = function() {
               [
                 _c("hana-map", {
                   staticClass: "hana-map",
-                  attrs: { datamarkers: _vm.data_offices }
+                  attrs: {
+                    datamarkers: _vm.data_offices,
+                    "api-key": _vm.api_key
+                  }
                 })
               ],
               1
@@ -3369,7 +3375,7 @@ var render = function() {
                           { staticClass: "py-0", attrs: { colspan: "4" } },
                           [
                             _vm._v(
-                              "Gedung Roxy Square Lt. 3 B 001 No. 02 Jl. Kyai Tapa No.1,\n                                    Tomang, Grogol Petamburan, Jakarta Barat 11440"
+                              "\n                      Gedung Roxy Square Lt. 3 B 001 No. 02 Jl. Kyai Tapa\n                      No.1, Tomang, Grogol Petamburan, Jakarta Barat 11440\n                    "
                             )
                           ]
                         )
@@ -3980,10 +3986,7 @@ var render = function() {
   return _c(
     "GoogleMapLoader",
     {
-      attrs: {
-        mapConfig: _vm.mapConfig,
-        apiKey: "AIzaSyCRBUHbaB-2oIAEoLd3aNmab6kuq53cLms"
-      },
+      attrs: { mapConfig: _vm.mapConfig, apiKey: _vm.apiKey },
       scopedSlots: _vm._u([
         {
           key: "default",
@@ -4000,7 +4003,7 @@ var render = function() {
         }
       ])
     },
-    [_vm._v("\n// insert your google maps api key to render styled map\n  ")]
+    [_vm._v("\n  // insert your google maps api key to render styled map\n  ")]
   )
 }
 var staticRenderFns = []

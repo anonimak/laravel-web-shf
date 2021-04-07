@@ -20,7 +20,8 @@ class ContactController extends Controller
             'meta' => [
                 'title' => 'tests',
                 'foo' => 'bar'
-            ]
+            ],
+            'api_key' => Config::get('app.gmap_key')
         ]);
     }
 }

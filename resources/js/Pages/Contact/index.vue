@@ -25,7 +25,11 @@
                 tabindex="0"
               ></iframe> -->
 
-            <hana-map class="hana-map" :datamarkers="data_offices"/>
+              <hana-map
+                class="hana-map"
+                :datamarkers="data_offices"
+                :api-key="api_key"
+              />
             </div>
           </div>
           <div class="row mt-4">
@@ -58,8 +62,10 @@
                 <table class="table table-borderless">
                   <tbody>
                     <tr>
-                      <td colspan="4" class="py-0">Gedung Roxy Square Lt. 3 B 001 No. 02 Jl. Kyai Tapa No.1,
-                                      Tomang, Grogol Petamburan, Jakarta Barat 11440</td>
+                      <td colspan="4" class="py-0">
+                        Gedung Roxy Square Lt. 3 B 001 No. 02 Jl. Kyai Tapa
+                        No.1, Tomang, Grogol Petamburan, Jakarta Barat 11440
+                      </td>
                     </tr>
                     <tr>
                       <td class="py-0"><b>Email</b></td>
@@ -107,18 +113,14 @@ import HanaMap from "@/components/HanaMap";
 export default {
   components: {
     Layout,
-    HanaMap
+    HanaMap,
   },
-  data(){
+  data() {
     return {
-      "offices": this.data_offices
-    }
+      offices: this.data_offices,
+    };
   },
-  props: [
-    "meta",
-    "data_offices"
-    ],
-  
+  props: ["meta", "data_offices", "api_key"],
 };
 </script>
 <style lang="scss" scoped>
