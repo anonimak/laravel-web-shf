@@ -60,7 +60,7 @@ const mapSettings = {
   },
   zoom: 5,
   minZoom: 7,
-  maxZoom: 12,
+  maxZoom: 18,
   styles: [
     {
       featureType: "landscape",
