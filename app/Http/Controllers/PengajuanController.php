@@ -20,7 +20,7 @@ class PengajuanController extends Controller
             'text' => ($request->input('text')) ? $request->input('text') : '-',
         ];
 
-        \Mail::to($request->input('email'))->send(new \App\Mail\PengajuanMail($details));
+        \Mail::to($request->input('branch'))->send(new \App\Mail\PengajuanMail($details));
         return Redirect::back()->with('success', 'Email sent.');
     }
 }
