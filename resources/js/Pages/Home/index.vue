@@ -274,7 +274,56 @@
             <hr class="border-secondary" />
           </div>
           <!-- Blog Cards -->
-          <div
+          <section class="pt-4 pb-2 bg-info">
+            <div class="container h-100">
+              <div
+                class="row justify-content-between align-items-center text-md-center text-lg-left"
+              >
+                <div class="col-lg-12">
+                  <div class="row">
+                    <div class="col-lg-5">
+                      <img
+                        class="img flex-auto shadow-lg border-0"
+                        :src="promo.image"
+                      />
+                    </div>
+                    <div class="col-lg-7">
+                      <h4 class="text-white">
+                        Penyerahan reward elektronik program
+                        <em><strong>"Fast and Careious"</strong></em>
+                      </h4>
+                      <p class="card-text text-light">
+                        Penyerahan reward elektronik program “Fast and Careious”
+                        Promo Fast and Careious telah berjalan beberapa pekan
+                        dan sudah terbukti menjadi pilihan terbaik bagi nasabah
+                        Sinarmas Hana Finance di beberapa cabang.
+                      </p>
+                      <p class="card-text text-light">
+                        Berikut adalah beberapa cabang yang telah mendapatkan
+                        Cash Back Reward Fast and Careious Sinarmas Hana
+                        Finance:
+                      </p>
+                    </div>
+                  </div>
+                  <carousel class="mt-4" center loop :nav="false">
+                    <div
+                      v-for="(item, index) in promo.detail"
+                      :key="index"
+                      @click="promo.index = index"
+                    >
+                      <b-avatar
+                        size="300px"
+                        rounded="lg"
+                        :src="item.url"
+                        alt="image"
+                      ></b-avatar>
+                    </div>
+                  </carousel>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- <div
             v-if="listPromo.length > 0"
             class="row gap-y mb-4"
             data-aos="fade-down"
@@ -286,8 +335,10 @@
             >
               <card-promo :itemImage="list" />
             </div>
-          </div>
-          <p v-else class="text-muted">Saat ini promo belum tersedia</p>
+          </div> -->
+          <p v-if="listPromo.length <= 0" class="text-muted">
+            Saat ini promo belum tersedia
+          </p>
           <!-- End Blog Cards -->
         </div>
       </section>
@@ -413,6 +464,12 @@ FEATURES
       <modal-form-pengajuan :databranch="data_offices" />
       <!-- end modal pengajuan -->
     </div>
+    <LightGallery
+      :images="promo.detail"
+      :index="promo.index"
+      :disable-scroll="true"
+      @close="promo.index = null"
+    />
   </Layout>
 </template>
 
@@ -428,6 +485,8 @@ import carousel from "vue-owl-carousel2";
 import ProfileSvg from "@/Shared/img/profileSVG";
 import VehicleSvg from "@/Shared/img/vehicleSVG";
 import CalculatorSvg from "@/Shared/img/calculatorSVG";
+
+import { LightGallery } from "vue-light-gallery";
 
 // modal pengajuan
 import ModalFormPengajuan from "@/components/ModalFormPengajuan";
@@ -445,6 +504,7 @@ export default {
     carousel,
     CardPromo,
     ModalFormPengajuan,
+    LightGallery,
   },
   metaInfo: { title: "Beranda" },
   data() {
@@ -499,6 +559,28 @@ export default {
           src: "/img/galeri/IMG_4173-resize-1280x720.png",
         },
       ],
+      promo: {
+        image: "/storage/promo/promo1.jpeg",
+        detail: [
+          {
+            url: "/storage/promo/detail/malang.jpeg",
+            title: "Malang",
+          },
+          {
+            url: "/storage/promo/detail/jogjakarta.jpeg",
+            title: "Yogya",
+          },
+          {
+            url: "/storage/promo/detail/surabaya.jpeg",
+            title: "Surabaya",
+          },
+          {
+            url: "/storage/promo/detail/surakarta.jpeg",
+            title: "Surakarta",
+          },
+        ],
+        index: null,
+      },
     };
   },
   props: [
@@ -523,6 +605,10 @@ export default {
 </script>
 
 <style scoped>
+/* .box {
+  height: 200px;
+  width: 200px;
+} */
 /* .card-deck {
   justify-content: space-between;
 }

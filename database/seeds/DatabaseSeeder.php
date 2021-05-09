@@ -12,12 +12,11 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call([
-                        CreateUsersSeeder::class,
-                        CreateMenuComponentConfigSeeder::class,
-                        CreateM_OfficeSeeder::class,
-                        CreateSliderSeeder::class
-                    ]);
-        factory(App\Promo::class, 0)->create();
-
+            CreateUsersSeeder::class,
+            CreateMenuComponentConfigSeeder::class,
+            CreateM_OfficeSeeder::class,
+            CreateSliderSeeder::class
+        ]);
+        // factory(App\Promo::class, 10)->create();
     }
 }

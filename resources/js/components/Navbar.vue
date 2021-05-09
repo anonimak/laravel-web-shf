@@ -309,5 +309,8 @@ export default {
   li.active::before {
     width: 100%;
   }
+  .sticky-top {
+    z-index: 1000 !important;
+  }
 }
 </style>

@@ -21,10 +21,19 @@ class CreatePromosTable extends Migration
             $table->longText('description')->nullable();
             $table->dateTime('start_date');
             $table->dateTime('end_date');
-            $table->boolean('status')->default(true);
             $table->boolean('set_banner')->default(false);
             $table->softDeletes();
             $table->timestamps();
+        });
+
+        Schema::create('promo_image', function (Blueprint $table) {
+            $table->id();
+            $table->unsignedBigInteger('id_promo');
+            $table->string('caption');
+            $table->string('image');
+            $table->timestamps();
+            // foreign key
+            $table->foreign('id_promo')->references('id')->on('promos')->nullOnDelete();
         });
     }
 
