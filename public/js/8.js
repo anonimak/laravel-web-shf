@@ -4438,17 +4438,6 @@ var render = function() {
                         _c(
                           "inertia-link",
                           {
-                            class: _vm.isRoute("promo", "promodetail")
-                              ? "dropdown-item active"
-                              : "dropdown-item",
-                            attrs: { href: _vm.route("promo") }
-                          },
-                          [_vm._v(_vm._s(_vm.__("Product.Pr")))]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "inertia-link",
-                          {
                             class: _vm.isRoute("kendaraan")
                               ? "dropdown-item active"
                               : "dropdown-item",

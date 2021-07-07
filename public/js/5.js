@@ -497,6 +497,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
  //import layouts
 
 
@@ -575,7 +580,7 @@ __webpack_require__.r(__webpack_exports__);
         src: "/img/galeri/IMG_4173-resize-1280x720.png"
       }],
       promo: {
-        image: "/storage/promo/promo1.jpeg",
+        image: "/storage/promo/promo2.jpeg",
         detail: [{
           url: "/storage/promo/detail/malang.jpeg",
           title: "Malang"
@@ -1538,7 +1543,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* .box {\r\n  height: 200px;\r\n  width: 200px;\r\n} */\r\n/* .card-deck {\r\n  justify-content: space-between;\r\n}\r\n\r\n.card-deck .card {\r\n  margin: 0 0 0.5rem;\r\n}\r\n\r\n@media (min-width: 576px) and (max-width: 767.98px) {\r\n  .card-deck .card {\r\n    -ms-flex: 0 0 48.7%;\r\n    flex: 0 0 48.7%;\r\n  }\r\n}\r\n\r\n@media (min-width: 768px) and (max-width: 991.98px) {\r\n  .card-deck .card {\r\n    -ms-flex: 0 0 32%;\r\n    flex: 0 0 32%;\r\n  }\r\n}\r\n\r\n@media (min-width: 992px) {\r\n  .card-deck .card {\r\n    -ms-flex: 0 0 24%;\r\n    flex: 0 0 24%;\r\n  }\r\n} */\r\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\r\n/* .box {\r\n  height: 200px;\r\n  width: 200px;\r\n} */\r\n/* .card-deck {\r\n  justify-content: space-between;\r\n}\r\n\r\n.card-deck .card {\r\n  margin: 0 0 0.5rem;\r\n}\r\n\r\n@media (min-width: 576px) and (max-width: 767.98px) {\r\n  .card-deck .card {\r\n    -ms-flex: 0 0 48.7%;\r\n    flex: 0 0 48.7%;\r\n  }\r\n}\r\n\r\n@media (min-width: 768px) and (max-width: 991.98px) {\r\n  .card-deck .card {\r\n    -ms-flex: 0 0 32%;\r\n    flex: 0 0 32%;\r\n  }\r\n}\r\n\r\n@media (min-width: 992px) {\r\n  .card-deck .card {\r\n    -ms-flex: 0 0 24%;\r\n    flex: 0 0 24%;\r\n  }\r\n} */\r\n", ""]);
 
 // exports
 
@@ -2880,96 +2885,19 @@ var render = function() {
                       "div",
                       {
                         staticClass:
-                          "row justify-content-between align-items-center text-md-center text-lg-left"
+                          "\n                  row\n                  justify-content-between\n                  align-items-center\n                  text-md-center text-lg-left\n                "
                       },
                       [
-                        _c(
-                          "div",
-                          { staticClass: "col-lg-12" },
-                          [
-                            _c("div", { staticClass: "row" }, [
-                              _c("div", { staticClass: "col-lg-5" }, [
-                                _c("img", {
-                                  staticClass:
-                                    "img flex-auto shadow-lg border-0",
-                                  attrs: { src: _vm.promo.image }
-                                })
-                              ]),
-                              _vm._v(" "),
-                              _c("div", { staticClass: "col-lg-7" }, [
-                                _c("h4", { staticClass: "text-white" }, [
-                                  _vm._v(
-                                    "\n                        Penyerahan reward elektronik program\n                        "
-                                  ),
-                                  _c("em", [
-                                    _c("strong", [
-                                      _vm._v('"Fast and Careious"')
-                                    ])
-                                  ])
-                                ]),
-                                _vm._v(" "),
-                                _c(
-                                  "p",
-                                  { staticClass: "card-text text-light" },
-                                  [
-                                    _vm._v(
-                                      "\n                        Penyerahan reward elektronik program “Fast and Careious”\n                        Promo Fast and Careious telah berjalan beberapa pekan\n                        dan sudah terbukti menjadi pilihan terbaik bagi nasabah\n                        Sinarmas Hana Finance di beberapa cabang.\n                      "
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "p",
-                                  { staticClass: "card-text text-light" },
-                                  [
-                                    _vm._v(
-                                      "\n                        Berikut adalah beberapa cabang yang telah mendapatkan\n                        Cash Back Reward Fast and Careious Sinarmas Hana\n                        Finance:\n                      "
-                                    )
-                                  ]
-                                )
-                              ])
-                            ]),
-                            _vm._v(" "),
-                            _c(
-                              "carousel",
-                              {
-                                staticClass: "mt-4",
-                                attrs: {
-                                  center: "",
-                                  loop: "",
-                                  lazyload: "",
-                                  nav: false
-                                }
-                              },
-                              _vm._l(_vm.promo.detail, function(item, index) {
-                                return _c(
-                                  "div",
-                                  {
-                                    key: index,
-                                    on: {
-                                      click: function($event) {
-                                        _vm.promo.index = index
-                                      }
-                                    }
-                                  },
-                                  [
-                                    _c("b-avatar", {
-                                      attrs: {
-                                        size: "300px",
-                                        rounded: "lg",
-                                        src: item.url,
-                                        alt: "image"
-                                      }
-                                    })
-                                  ],
-                                  1
-                                )
-                              }),
-                              0
-                            )
-                          ],
-                          1
-                        )
+                        _c("div", { staticClass: "col-lg-12" }, [
+                          _c("div", { staticClass: "row" }, [
+                            _c("div", { staticClass: "col" }, [
+                              _c("img", {
+                                staticClass: "img flex-auto shadow-lg border-0",
+                                attrs: { src: _vm.promo.image }
+                              })
+                            ])
+                          ])
+                        ])
                       ]
                     )
                   ])
@@ -8324,17 +8252,6 @@ var render = function() {
                             attrs: { href: _vm.route("simulasikredit") }
                           },
                           [_vm._v(_vm._s(_vm.__("Product.Cs")))]
-                        ),
-                        _vm._v(" "),
-                        _c(
-                          "inertia-link",
-                          {
-                            class: _vm.isRoute("promo", "promodetail")
-                              ? "dropdown-item active"
-                              : "dropdown-item",
-                            attrs: { href: _vm.route("promo") }
-                          },
-                          [_vm._v(_vm._s(_vm.__("Product.Pr")))]
                         ),
                         _vm._v(" "),
                         _c(

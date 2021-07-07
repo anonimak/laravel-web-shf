@@ -277,17 +277,22 @@
           <section class="pt-4 pb-2 bg-info">
             <div class="container h-100">
               <div
-                class="row justify-content-between align-items-center text-md-center text-lg-left"
+                class="
+                  row
+                  justify-content-between
+                  align-items-center
+                  text-md-center text-lg-left
+                "
               >
                 <div class="col-lg-12">
                   <div class="row">
-                    <div class="col-lg-5">
+                    <div class="col">
                       <img
                         class="img flex-auto shadow-lg border-0"
                         :src="promo.image"
                       />
                     </div>
-                    <div class="col-lg-7">
+                    <!-- <div class="col-lg-7">
                       <h4 class="text-white">
                         Penyerahan reward elektronik program
                         <em><strong>"Fast and Careious"</strong></em>
@@ -303,9 +308,9 @@
                         Cash Back Reward Fast and Careious Sinarmas Hana
                         Finance:
                       </p>
-                    </div>
+                    </div> -->
                   </div>
-                  <carousel class="mt-4" center loop lazyload :nav="false">
+                  <!-- <carousel class="mt-4" center loop lazyload :nav="false">
                     <div
                       v-for="(item, index) in promo.detail"
                       :key="index"
@@ -318,7 +323,7 @@
                         alt="image"
                       ></b-avatar>
                     </div>
-                  </carousel>
+                  </carousel> -->
                 </div>
               </div>
             </div>
@@ -536,23 +541,19 @@ export default {
       listGalery: [
         {
           id: 1,
-          src:
-            "/img/galeri/rakernas-shf-kantor-pusat-leasing-kredit-mobil-dan-pinjaman-dana-online-1280x720.jpg",
+          src: "/img/galeri/rakernas-shf-kantor-pusat-leasing-kredit-mobil-dan-pinjaman-dana-online-1280x720.jpg",
         },
         {
           id: 2,
-          src:
-            "/img/galeri/ulang-tahun-shf-kantor-pusat-leasing-kredit-mobil-dan-pinjaman-dana-online-1280x720.jpg",
+          src: "/img/galeri/ulang-tahun-shf-kantor-pusat-leasing-kredit-mobil-dan-pinjaman-dana-online-1280x720.jpg",
         },
         {
           id: 3,
-          src:
-            "/img/galeri/mr-yoon-visit-shf-perusahaan-leasing-kredit-mobil-dan-pinjaman-dana-online-1280x720.jpg",
+          src: "/img/galeri/mr-yoon-visit-shf-perusahaan-leasing-kredit-mobil-dan-pinjaman-dana-online-1280x720.jpg",
         },
         {
           id: 4,
-          src:
-            "/img/galeri/mr-yoon-visit-shf-kantor-pusat-leasing-kredit-mobil-dan-pinjaman-dana-online-1280x720.jpg",
+          src: "/img/galeri/mr-yoon-visit-shf-kantor-pusat-leasing-kredit-mobil-dan-pinjaman-dana-online-1280x720.jpg",
         },
         {
           id: 5,
@@ -560,7 +561,7 @@ export default {
         },
       ],
       promo: {
-        image: "/storage/promo/promo1.jpeg",
+        image: "/storage/promo/promo2.jpeg",
         detail: [
           {
             url: "/storage/promo/detail/malang.jpeg",
