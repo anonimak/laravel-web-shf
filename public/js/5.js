@@ -2934,7 +2934,12 @@ var render = function() {
                               "carousel",
                               {
                                 staticClass: "mt-4",
-                                attrs: { center: "", loop: "", nav: false }
+                                attrs: {
+                                  center: "",
+                                  loop: "",
+                                  lazyload: "",
+                                  nav: false
+                                }
                               },
                               _vm._l(_vm.promo.detail, function(item, index) {
                                 return _c(

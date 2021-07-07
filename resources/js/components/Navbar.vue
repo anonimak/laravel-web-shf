@@ -56,7 +56,7 @@
                 "
                 >{{ __("Product.Cs") }}</inertia-link
               >
-              <inertia-link
+              <!-- <inertia-link
                 :href="route('promo')"
                 :class="
                   isRoute('promo', 'promodetail')
@@ -64,7 +64,7 @@
                     : 'dropdown-item'
                 "
                 >{{ __("Product.Pr") }}</inertia-link
-              >
+              > -->
               <inertia-link
                 :href="route('kendaraan')"
                 :class="

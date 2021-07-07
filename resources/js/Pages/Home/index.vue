@@ -305,7 +305,7 @@
                       </p>
                     </div>
                   </div>
-                  <carousel class="mt-4" center loop :nav="false">
+                  <carousel class="mt-4" center loop lazyload :nav="false">
                     <div
                       v-for="(item, index) in promo.detail"
                       :key="index"
