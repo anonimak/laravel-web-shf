@@ -341,9 +341,9 @@
               <card-promo :itemImage="list" />
             </div>
           </div> -->
-          <p v-if="listPromo.length <= 0" class="text-muted">
+          <!-- <p v-if="listPromo.length <= 0" class="text-muted">
             Saat ini promo belum tersedia
-          </p>
+          </p> -->
           <!-- End Blog Cards -->
         </div>
       </section>

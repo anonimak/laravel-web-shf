@@ -2901,15 +2901,7 @@ var render = function() {
                       ]
                     )
                   ])
-                ]),
-                _vm._v(" "),
-                _vm.listPromo.length <= 0
-                  ? _c("p", { staticClass: "text-muted" }, [
-                      _vm._v(
-                        "\n            Saat ini promo belum tersedia\n          "
-                      )
-                    ])
-                  : _vm._e()
+                ])
               ])
             ]
           ),
